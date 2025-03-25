@@ -1,0 +1,12 @@
+<com.daps.weather.location.d: void updateLocation()> --> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+<com.daps.weather.location.d: void updateLocation()> --> $r9 := @caughtexception
+<com.daps.weather.base.d: void <clinit>()> --> nop
+<com.daps.weather.base.d: void <clinit>()> --> <com.daps.weather.base.d: boolean a> = $z0
+<com.daps.weather.location.d: void updateLocation()> --> staticinvoke <com.daps.weather.base.d: void a(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, " updateLocation ", $r9)
+<com.daps.weather.location.d: void updateLocation()> --> return
+<com.daps.weather.location.d: void onHandleIntent(android.content.Intent)> --> specialinvoke r0.<com.daps.weather.location.d: void updateLocation()>()
+<com.daps.weather.base.d: void a(java.lang.String,java.lang.String)> --> $z0 = <com.daps.weather.base.d: boolean a>
+<com.daps.weather.base.d: void a(java.lang.String,java.lang.String)> --> if $z0 == 0 goto return
+<com.daps.weather.base.d: void a(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("dap_weather", $r1)
+--------------------------------------------------------
+

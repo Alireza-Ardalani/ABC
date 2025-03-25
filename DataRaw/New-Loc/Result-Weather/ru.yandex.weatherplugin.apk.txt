@@ -1,0 +1,36 @@
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, $r2, "widget_type=?", $r3, null)
+Component=> ru.yandex.weatherplugin.receivers.LocaleChangedReceiver
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> ru.yandex.weatherplugin.receivers.LocaleChangedReceiver
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> ru.yandex.searchlib.lamesearch.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("experiment_time_update", $l0)
+Component=> ru.yandex.weatherplugin.receivers.LocaleChangedReceiver
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("is_default_values_initialized", 1)
+Component=> ru.yandex.weatherplugin.receivers.LocaleChangedReceiver
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $r7 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r6, $r4, $r1, $r2)
+Component=> ru.yandex.weatherplugin.receivers.LocaleChangedReceiver
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

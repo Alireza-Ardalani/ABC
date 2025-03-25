@@ -1,0 +1,1248 @@
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ? OFFSET ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $i3 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke r2.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<java.io.FileOutputStream: void write(byte[],int,int)>(r2, 0, $i0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $i3 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $i3 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r8, $r12)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r5.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke r2.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<java.io.FileOutputStream: void write(byte[],int,int)>(r2, 0, $i0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<java.io.FileOutputStream: void write(byte[],int,int)>(r2, 0, $i0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r5.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r5.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r8, $r12)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r11 = virtualinvoke $r7.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r6, $r9)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r8, $r12)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r11 = virtualinvoke $r7.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r6, $r9)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE rowid > ? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r7 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE id = ? ORDER BY rowid LIMIT 1", $r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE rowid > ? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ? OFFSET ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE rowid > ? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r7 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE id = ? ORDER BY rowid LIMIT 1", $r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r7 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE id = ? ORDER BY rowid LIMIT 1", $r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ? OFFSET ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE rowid > ? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r7 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE id = ? ORDER BY rowid LIMIT 1", $r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ? OFFSET ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<java.io.FileOutputStream: void write(byte[],int,int)>(r2, 0, $i0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ? OFFSET ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r5.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r11 = virtualinvoke $r7.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r6, $r9)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE rowid > ? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r7 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE id = ? ORDER BY rowid LIMIT 1", $r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r7 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE id = ? ORDER BY rowid LIMIT 1", $r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r11 = virtualinvoke $r7.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r6, $r9)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants WHERE rowid > ? ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT merchants.* FROM merchants, categories_merchants WHERE merchants.id=categories_merchants.merchant_id AND categories_merchants.category_id=? ORDER BY rowid LIMIT ? OFFSET ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM merchants ORDER BY rowid LIMIT ?", $r6)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke r2.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $i3 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke r2.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke r2.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke r2.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<java.io.FileOutputStream: void write(byte[],int,int)>(r2, 0, $i0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r11 = virtualinvoke $r7.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r6, $r9)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r8, $r12)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<java.io.FileOutputStream: void write(byte[],int,int)>(r2, 0, $i0)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r5.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r8, $r12)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $i3 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RBPLocationService", $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r8, $r12)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $r11 = virtualinvoke $r7.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r6, $r9)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r5.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>($r3, 1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $i3 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d3 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.retailbenefits.android.services.location.RBPLocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

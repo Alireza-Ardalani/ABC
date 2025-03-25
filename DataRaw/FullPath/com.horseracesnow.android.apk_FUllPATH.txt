@@ -1,0 +1,15 @@
+<com.horseracesnow.ads.LocationTracker: void getLocation()> --> $r7 = virtualinvoke r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.horseracesnow.ads.LocationTracker: void getLocation()> --> r0.<com.horseracesnow.ads.LocationTracker: android.location.Location location> = $r7
+<com.horseracesnow.ads.LocationTracker: void getLocation()> --> if $z0 == 0 goto return
+<com.horseracesnow.ads.LocationTracker: void getLocation()> --> $r7 = r0.<com.horseracesnow.ads.LocationTracker: android.location.Location location>
+<com.horseracesnow.ads.LocationTracker: void getLocation()> --> if $r7 != null goto return
+<com.horseracesnow.ads.LocationTracker: void getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+
+<com.horseracesnow.ads.LocationTracker: void getLocation()> --> $r7 = virtualinvoke r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.horseracesnow.ads.LocationTracker: void getLocation()> --> r0.<com.horseracesnow.ads.LocationTracker: android.location.Location location> = $r7
+<com.horseracesnow.ads.LocationTracker: void getLocation()> --> $r7 = r0.<com.horseracesnow.ads.LocationTracker: android.location.Location location>
+<com.horseracesnow.ads.LocationTracker: void getLocation()> --> if $r7 != null goto return
+<com.horseracesnow.ads.LocationTracker: void getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+

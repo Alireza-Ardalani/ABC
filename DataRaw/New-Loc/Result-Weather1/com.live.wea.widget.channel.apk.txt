@@ -1,0 +1,18 @@
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i3 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.live.wea.widget.channel.pages.LocateActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i3 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.live.wea.widget.channel.pages.LocateActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $i3 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.live.wea.widget.channel.pages.LocateActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

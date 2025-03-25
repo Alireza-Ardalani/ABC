@@ -1,0 +1,1092 @@
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r6)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xm.lastInitialized", $l0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("key", "value")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("senseUserId", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, "XDK will not initialize. App does not have location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putDouble(java.lang.String,double)>("LONGITUDE", $d0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, "XDK will initialize. App has location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> $r9 = virtualinvoke $r2.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r8)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> $r7 = virtualinvoke $r7.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r4)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r5, $r4)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("SDK_VERSION_CODE_KEY", $i0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xm.lastInitialized", $l0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("debug_mode", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putDouble(java.lang.String,double)>("LONGITUDE", $d0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStream: void write(byte[],int,int)>($r3, 0, $i0)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("xm.userAgentString", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("errors", $r5)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("SDK_VERSION_CODE_KEY", $i0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("sdk_started", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putDouble(java.lang.String,double)>("LATITUDE", $d0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("sdk_started", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GeneralEventLogger", $r11)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r6, $r3)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r6, $r3)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xm.lastInitialized", $l0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("key", "value")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("SDK_VERSION_CODE_KEY", $i0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("senseUserId", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = interfaceinvoke $r9.<okhttp3.Call: okhttp3.Response execute()>()
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("sdk_started", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = interfaceinvoke $r9.<okhttp3.Call: okhttp3.Response execute()>()
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, "XDK will initialize. App has location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putDouble(java.lang.String,double)>("LATITUDE", $d0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, "XDK will not initialize. App does not have location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GeneralEventLogger", $r11)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("senseUserId", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStream: void write(byte[],int,int)>($r3, 0, $i0)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r6)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GeneralEventLogger", $r11)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStream: void write(byte[],int,int)>($r3, 0, $i0)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, "XDK will initialize. App has location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> $r7 = virtualinvoke $r7.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r4)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = interfaceinvoke $r9.<okhttp3.Call: okhttp3.Response execute()>()
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, "XDK will initialize. App has location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GeneralEventLogger", $r11)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> $r9 = virtualinvoke $r2.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r8)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("SDK_VERSION_CODE_KEY", $i0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, "XDK will not initialize. App does not have location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r6, $r3)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r6)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStream: void write(byte[],int,int)>($r3, 0, $i0)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("debug_mode", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("xm.userAgentString", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> $r7 = virtualinvoke $r7.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r4)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putDouble(java.lang.String,double)>("LONGITUDE", $d0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r6, $r3)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> $r9 = virtualinvoke $r2.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r8)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = interfaceinvoke $r9.<okhttp3.Call: okhttp3.Response execute()>()
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("debug_mode", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("debug_mode", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r6)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("xm.userAgentString", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r5, $r4)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r5, $r4)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, "XDK will initialize. App has location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r6)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, "XDK will not initialize. App does not have location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("errors", $r5)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> $r7 = virtualinvoke $r7.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r4)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> $r0 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>("application/json; charset=utf-8")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r6)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, "XDK will not initialize. App does not have location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("senseUserId", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r6)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r6)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> $r9 = virtualinvoke $r2.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r8)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("key", "value")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xm.lastInitialized", $l0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("sdk_started", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("debug_mode", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r6)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("key", "value")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> $r0 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>("application/json; charset=utf-8")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xm.lastInitialized", $l0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("debug_mode", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("errors", $r5)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("xm.userAgentString", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xm.lastInitialized", $l0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> $r0 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>("application/json; charset=utf-8")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putDouble(java.lang.String,double)>("LATITUDE", $d0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, "XDK will initialize. App has location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("key", "value")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("errors", $r5)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("SDK_VERSION_CODE_KEY", $i0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("sdk_started", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("key", "value")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> $r0 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>("application/json; charset=utf-8")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("senseUserId", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("senseUserId", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putDouble(java.lang.String,double)>("LATITUDE", $d0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("xm.userAgentString", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r5, $r4)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putDouble(java.lang.String,double)>("LONGITUDE", $d0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>("\n")
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("sdk_started", $z0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r6)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("xm.userAgentString", $r3)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r34.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, "XDK will not initialize. App does not have location permission.")
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<java.io.OutputStreamWriter: void write(java.lang.String)>($r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r34 = virtualinvoke $r33.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("SDK_VERSION_CODE_KEY", $i0)
+Component=> com.kellytechnology.NOAA_Now.TitleView
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.sense360.android.quinoa.lib.visit.VisitLocationIntentService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,13 @@
+<dummyMainClass: com.trailbehind.services.TrackRecordingService dummyMainMethod_com_trailbehind_services_TrackRecordingService(android.content.Intent)> --> virtualinvoke $r0.<com.trailbehind.services.TrackRecordingService: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.trailbehind.services.TrackRecordingService dummyMainMethod_com_trailbehind_services_TrackRecordingService(android.content.Intent)> --> if $i0 == 8 goto (branch)
+<com.trailbehind.services.TrackRecordingService: void onLocationChanged(android.location.Location)> --> r0 := @this: com.trailbehind.services.TrackRecordingService
+<com.trailbehind.services.TrackRecordingService: void onLocationChanged(android.location.Location)> --> $i0 = r0.<com.trailbehind.services.TrackRecordingService: int g>
+<com.trailbehind.services.TrackRecordingService: void onLocationChanged(android.location.Location)> --> $f1 = (float) $i0
+<com.trailbehind.services.TrackRecordingService: void onLocationChanged(android.location.Location)> --> $b1 = $f0 cmpl $f1
+<com.trailbehind.services.TrackRecordingService: void onLocationChanged(android.location.Location)> --> $i0 = (int) $b1
+<com.trailbehind.services.TrackRecordingService: void onLocationChanged(android.location.Location)> --> if $i0 <= 0 goto $r5 = r0.<com.trailbehind.services.TrackRecordingService: com.trailbehind.locations.LocationsProviderUtils m>
+<com.trailbehind.locations.LocationsProviderUtils: com.trailbehind.locations.Track getTrack(long)> --> r0 := @this: com.trailbehind.locations.LocationsProviderUtils
+<com.trailbehind.locations.LocationsProviderUtils: com.trailbehind.locations.Track b(java.lang.String)> --> r0 := @this: com.trailbehind.locations.LocationsProviderUtils
+<com.trailbehind.locations.LocationsProviderUtils: com.trailbehind.locations.Track b(java.lang.String)> --> $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, $r1, null, null)
+--------------------------------------------------------
+

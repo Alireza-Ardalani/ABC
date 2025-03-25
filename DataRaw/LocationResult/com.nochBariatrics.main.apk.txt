@@ -1,0 +1,19 @@
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+Component=> com.nochBariatrics.main.MapViewPage
+ComponentColor=> GREEN
+com.nochBariatrics.main.GPSTracker
+android.util.Log
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+Component=> com.nochBariatrics.main.MapViewPage
+ComponentColor=> GREEN
+com.nochBariatrics.main.GPSTracker
+android.util.Log
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+com.nochBariatrics.main.apk: 1041566

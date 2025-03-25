@@ -1,0 +1,805 @@
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<java.lang.Thread: void run()> --> target = this.<java.lang.Thread: java.lang.Runnable target0>
+<io.branch.referral.ServerRequestQueue$1: void run()> --> r0 := @this: io.branch.referral.ServerRequestQueue$1
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r5 = r0.<io.branch.referral.ServerRequestQueue$1: io.branch.referral.ServerRequestQueue this$0>
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r13 := @caughtexception
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void failure(java.lang.Exception)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.appboy.ui.inappmessage.AppboyInAppMessageManager$1: void run()> --> r0 := @this: com.appboy.ui.inappmessage.AppboyInAppMessageManager$1
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(java.lang.Object)> --> r0 := @this: com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(com.appboy.models.IInAppMessage)> --> r0 := @this: com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r0)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.mixpanel.android.util.HttpService$1: void run()> --> r0 := @this: com.mixpanel.android.util.HttpService$1
+<com.mixpanel.android.util.MPLog: void v(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.mixpanel.android.util.MPLog: void v(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<io.branch.referral.ServerRequestQueue$1: void run()> --> r0 := @this: io.branch.referral.ServerRequestQueue$1
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.mixpanel.android.util.HttpService$1: void run()> --> r0 := @this: com.mixpanel.android.util.HttpService$1
+<com.mixpanel.android.util.HttpService$1: void run()> --> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("decide.mixpanel.com")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<java.util.Timer: void schedule(java.util.TimerTask,long)> --> this := @this: java.util.Timer
+<com.c51.location.TaskWithTimeout$1: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$1
+<com.c51.location.TaskGps: void timeoutInternal()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void timeoutInternal()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Timeout")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$6: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$6
+<com.c51.activity.FindingAreaActivity: void onGeocodeSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.SupportedLocations: com.c51.location.SupportedLocations getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.c51.location.SupportedLocations: void <init>(android.content.Context)> --> r0 := @this: com.c51.location.SupportedLocations
+<com.c51.location.SupportedLocations: void loadJSONFromInternalStorage(android.content.Context,java.lang.String)> --> r0 := @this: com.c51.location.SupportedLocations
+<com.c51.app.InternalStorage: java.lang.String readFile(android.content.Context,java.lang.String)> --> $r2 := @parameter0: android.content.Context
+<com.c51.app.InternalStorage: byte[] readFileBytes(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.c51.app.InternalStorage: byte[] readFileBytes(android.content.Context,java.lang.String)> --> $r4 = virtualinvoke $r0.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>($r1)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGps: void startTask()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for GPS updates")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.c51.activity.SuccessConfirmationActivity$1: void run()> --> r0 := @this: com.c51.activity.SuccessConfirmationActivity$1
+<com.c51.app.Session: void setLastReceiptSentId(java.lang.String)> --> r0 := @this: com.c51.app.Session
+<com.c51.app.Preferences: void putString(java.lang.String,java.lang.String)> --> r0 := @this: com.c51.app.Preferences
+<com.c51.app.Preferences: void putString(java.lang.String,java.lang.String)> --> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r1)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer$1: void run()> --> r0 := @this: com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer$1
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,boolean)> --> $r1 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $r2 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r0)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void failure(java.lang.Exception)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.facebook.AccessTokenManager$1: void run()> --> r0 := @this: com.facebook.AccessTokenManager$1
+<com.facebook.AccessTokenManager: void access$000(com.facebook.AccessTokenManager,com.facebook.AccessToken$AccessTokenRefreshCallback)> --> $r0 := @parameter0: com.facebook.AccessTokenManager
+<com.facebook.AccessTokenManager: void refreshCurrentAccessTokenImpl(com.facebook.AccessToken$AccessTokenRefreshCallback)> --> r0 := @this: com.facebook.AccessTokenManager
+<com.facebook.AccessTokenManager: com.facebook.GraphRequest createGrantedPermissionsRequest(com.facebook.AccessToken,com.facebook.GraphRequest$Callback)> --> $r0 := @parameter0: com.facebook.AccessToken
+<com.facebook.GraphRequest: void <init>(com.facebook.AccessToken,java.lang.String,android.os.Bundle,com.facebook.HttpMethod,com.facebook.GraphRequest$Callback)> --> r0 := @this: com.facebook.GraphRequest
+<com.facebook.GraphRequest: void <init>(com.facebook.AccessToken,java.lang.String,android.os.Bundle,com.facebook.HttpMethod,com.facebook.GraphRequest$Callback,java.lang.String)> --> r0 := @this: com.facebook.GraphRequest
+<com.facebook.FacebookSdk: java.lang.String getGraphApiVersion()> --> $r1 = <com.facebook.FacebookSdk: java.lang.String TAG>
+<com.facebook.internal.Utility: void logd(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.facebook.internal.Utility: void logd(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$6: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$6
+<com.c51.activity.FindingAreaActivity: void onGeocodeSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.SupportedLocations: com.c51.location.SupportedLocations getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.c51.location.SupportedLocations: void <init>(android.content.Context)> --> r0 := @this: com.c51.location.SupportedLocations
+<com.c51.location.SupportedLocations: void loadJSONFromInternalStorage(android.content.Context,java.lang.String)> --> r0 := @this: com.c51.location.SupportedLocations
+<com.c51.app.InternalStorage: java.lang.String readFile(android.content.Context,java.lang.String)> --> $r2 := @parameter0: android.content.Context
+<com.c51.app.InternalStorage: byte[] readFileBytes(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.c51.app.InternalStorage: byte[] readFileBytes(android.content.Context,java.lang.String)> --> virtualinvoke $r9.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>($r6, 0, $i0)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.c51.activity.SuccessConfirmationActivity$1: void run()> --> r0 := @this: com.c51.activity.SuccessConfirmationActivity$1
+<com.c51.activity.SuccessConfirmationActivity$1: void run()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ADJUST_EVENT", $r7)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.mixpanel.android.util.HttpService$1: void run()> --> r0 := @this: com.mixpanel.android.util.HttpService$1
+<com.mixpanel.android.util.HttpService$1: void run()> --> $r2 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("api.mixpanel.com")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGps: void startTask()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for GPS updates")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGps: void startTask()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for Network updates")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsNotAvailable()> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.app.Analytics: void sendEvent(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r2 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r5 = virtualinvoke $r5.<com.google.android.gms.analytics.HitBuilders$EventBuilder: com.google.android.gms.analytics.HitBuilders$EventBuilder setCategory(java.lang.String)>("UIACTION")
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r0 := @caughtexception
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r2 = staticinvoke <java.lang.String: java.lang.String format(java.util.Locale,java.lang.String,java.lang.Object[])>($r8, "ERROR EVENT: %s", $r9)
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r14 := @caughtexception
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r10)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void failure(java.lang.Exception)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.appboy.ui.inappmessage.AppboyInAppMessageManager$1: void run()> --> r0 := @this: com.appboy.ui.inappmessage.AppboyInAppMessageManager$1
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(java.lang.Object)> --> r0 := @this: com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(com.appboy.models.IInAppMessage)> --> r0 := @this: com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r0)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<java.lang.Thread: void run()> --> target = this.<java.lang.Thread: java.lang.Runnable target0>
+<io.branch.referral.ServerRequestQueue$1: void run()> --> r0 := @this: io.branch.referral.ServerRequestQueue$1
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r5 = r0.<io.branch.referral.ServerRequestQueue$1: io.branch.referral.ServerRequestQueue this$0>
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r13 := @caughtexception
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<com.c51.location.TaskGeocode$GeocodeRunnable: void run()> --> r0 := @this: com.c51.location.TaskGeocode$GeocodeRunnable
+<com.c51.location.TaskGeocode$GeocodeRunnable: void run()> --> $r2 = virtualinvoke r0.<com.c51.location.TaskGeocode$GeocodeRunnable: java.lang.String makeGeocodeRequest()>()
+<com.c51.location.TaskGeocode$GeocodeRunnable: void run()> --> $r10 := @caughtexception
+<com.c51.app.C51ExceptionReporter: void handleGeneralException(java.lang.Class,java.lang.Exception)> --> $r1 := @parameter0: java.lang.Class
+<com.c51.app.C51ExceptionReporter: void handleGeneralException(java.lang.Class,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r3)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void failure(java.lang.Exception)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.facebook.AccessTokenManager$1: void run()> --> r0 := @this: com.facebook.AccessTokenManager$1
+<com.facebook.AccessTokenManager: void access$000(com.facebook.AccessTokenManager,com.facebook.AccessToken$AccessTokenRefreshCallback)> --> $r0 := @parameter0: com.facebook.AccessTokenManager
+<com.facebook.AccessTokenManager: void refreshCurrentAccessTokenImpl(com.facebook.AccessToken$AccessTokenRefreshCallback)> --> r0 := @this: com.facebook.AccessTokenManager
+<com.facebook.AccessTokenManager: com.facebook.GraphRequest createExtendAccessTokenRequest(com.facebook.AccessToken,com.facebook.GraphRequest$Callback)> --> $r0 := @parameter0: com.facebook.AccessToken
+<com.facebook.AccessTokenManager: com.facebook.GraphRequest createExtendAccessTokenRequest(com.facebook.AccessToken,com.facebook.GraphRequest$Callback)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsNotAvailable()> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.app.Analytics: void sendEvent(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r2 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r4 = virtualinvoke $r3.<com.c51.app.UserTracking: com.google.android.gms.analytics.Tracker getAnalyticsTracker()>()
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r0 := @caughtexception
+<com.c51.app.Analytics: void analyticsFailed(java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<com.c51.app.UserTracking: void logAnswersEvent(java.lang.String)> --> r0 := @this: com.c51.app.UserTracking
+<com.crashlytics.android.answers.CustomEvent: void <init>(java.lang.String)> --> r0 := @this: com.crashlytics.android.answers.CustomEvent
+<com.crashlytics.android.answers.AnswersEventValidator: java.lang.String limitStringLength(java.lang.String)> --> r0 := @this: com.crashlytics.android.answers.AnswersEventValidator
+<com.crashlytics.android.answers.AnswersEventValidator: void logOrThrowException(java.lang.RuntimeException)> --> r0 := @this: com.crashlytics.android.answers.AnswersEventValidator
+<io.fabric.sdk.android.DefaultLogger: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> r0 := @this: io.fabric.sdk.android.DefaultLogger
+<io.fabric.sdk.android.DefaultLogger: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsNotAvailable()> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.app.Analytics: void sendEvent(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r2 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r2)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<java.util.Timer: void schedule(java.util.TimerTask,long)> --> this := @this: java.util.Timer
+<com.c51.location.TaskWithTimeout$1: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$1
+<com.c51.location.TaskGps: void timeoutInternal()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void timeoutInternal()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Timeout")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$6: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$6
+<com.c51.activity.FindingAreaActivity: void onGeocodeSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.SupportedLocations: com.c51.location.SupportedLocations getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.c51.location.SupportedLocations: void <init>(android.content.Context)> --> r0 := @this: com.c51.location.SupportedLocations
+<com.c51.location.SupportedLocations: void loadJSONFromInternalStorage(android.content.Context,java.lang.String)> --> r0 := @this: com.c51.location.SupportedLocations
+<com.c51.app.InternalStorage: java.lang.String readFile(android.content.Context,java.lang.String)> --> $r2 := @parameter0: android.content.Context
+<com.c51.app.InternalStorage: byte[] readFileBytes(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.c51.app.InternalStorage: byte[] readFileBytes(android.content.Context,java.lang.String)> --> $r4 = virtualinvoke $r0.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>($r1)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.mixpanel.android.util.HttpService$1: void run()> --> r0 := @this: com.mixpanel.android.util.HttpService$1
+<com.mixpanel.android.util.HttpService$1: void run()> --> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("decide.mixpanel.com")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer$1: void run()> --> r0 := @this: com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer$1
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,boolean)> --> $r1 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $r2 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r0)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$6: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$6
+<com.c51.activity.FindingAreaActivity: void onGeocodeFailure(com.c51.location.UserLocation,java.lang.Exception)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.app.Analytics: void sendEvent(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r2 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r4 = virtualinvoke $r3.<com.c51.app.UserTracking: com.google.android.gms.analytics.Tracker getAnalyticsTracker()>()
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r0 := @caughtexception
+<com.c51.app.Analytics: void analyticsFailed(java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<com.c51.app.UserTracking: void logAnswersEvent(java.lang.String)> --> r0 := @this: com.c51.app.UserTracking
+<com.crashlytics.android.answers.CustomEvent: void <init>(java.lang.String)> --> r0 := @this: com.crashlytics.android.answers.CustomEvent
+<com.crashlytics.android.answers.AnswersEventValidator: java.lang.String limitStringLength(java.lang.String)> --> r0 := @this: com.crashlytics.android.answers.AnswersEventValidator
+<com.crashlytics.android.answers.AnswersEventValidator: void logOrThrowException(java.lang.RuntimeException)> --> r0 := @this: com.crashlytics.android.answers.AnswersEventValidator
+<io.fabric.sdk.android.DefaultLogger: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> r0 := @this: io.fabric.sdk.android.DefaultLogger
+<io.fabric.sdk.android.DefaultLogger: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsNotAvailable()> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.app.Analytics: void sendEvent(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r2 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r5 = virtualinvoke $r5.<com.google.android.gms.analytics.HitBuilders$EventBuilder: com.google.android.gms.analytics.HitBuilders$EventBuilder setCategory(java.lang.String)>("UIACTION")
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r0 := @caughtexception
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r2)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<com.c51.location.TaskGeocode$GeocodeRunnable: void run()> --> r0 := @this: com.c51.location.TaskGeocode$GeocodeRunnable
+<com.c51.location.TaskGeocode$GeocodeRunnable: void run()> --> $r4 = virtualinvoke $r3.<com.google.gson.Gson: java.lang.Object fromJson(java.lang.String,java.lang.Class)>($r2, class "Lcom/c51/cache/GMapsModel;")
+<com.c51.location.TaskGeocode$GeocodeRunnable: void run()> --> $r10 := @caughtexception
+<com.c51.app.C51ExceptionReporter: void handleGeneralException(java.lang.Class,java.lang.Exception)> --> $r1 := @parameter0: java.lang.Class
+<com.c51.app.C51ExceptionReporter: void handleGeneralException(java.lang.Class,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r3)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.mixpanel.android.util.HttpService$1: void run()> --> r0 := @this: com.mixpanel.android.util.HttpService$1
+<com.mixpanel.android.util.HttpService$1: void run()> --> $r2 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("api.mixpanel.com")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<java.lang.Thread: void run()> --> target = this.<java.lang.Thread: java.lang.Runnable target0>
+<io.branch.referral.ServerRequestQueue$1: void run()> --> r0 := @this: io.branch.referral.ServerRequestQueue$1
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r5 = r0.<io.branch.referral.ServerRequestQueue$1: io.branch.referral.ServerRequestQueue this$0>
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r14 := @caughtexception
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.mixpanel.android.util.HttpService$1: void run()> --> r0 := @this: com.mixpanel.android.util.HttpService$1
+<com.mixpanel.android.util.MPLog: void v(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.mixpanel.android.util.MPLog: void v(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<io.branch.referral.ServerRequestQueue$1: void run()> --> r0 := @this: io.branch.referral.ServerRequestQueue$1
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void failure(java.lang.Exception)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.appboy.ui.inappmessage.AppboyInAppMessageManager$1: void run()> --> r0 := @this: com.appboy.ui.inappmessage.AppboyInAppMessageManager$1
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(java.lang.Object)> --> r0 := @this: com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(com.appboy.models.IInAppMessage)> --> r0 := @this: com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(com.appboy.models.IInAppMessage)> --> $r3 = staticinvoke <com.appboy.ui.inappmessage.AppboyInAppMessageManager: com.appboy.ui.inappmessage.AppboyInAppMessageManager getInstance()>()
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(com.appboy.models.IInAppMessage)> --> $r8 := @caughtexception
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r2 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$6: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$6
+<com.c51.activity.FindingAreaActivity: void onGeocodeFailure(com.c51.location.UserLocation,java.lang.Exception)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.app.Analytics: void sendEvent(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r2 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r4 = virtualinvoke $r3.<com.c51.app.UserTracking: com.google.android.gms.analytics.Tracker getAnalyticsTracker()>()
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r0 := @caughtexception
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r9 = newarray (java.lang.Object)[1]
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r14 := @caughtexception
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r10)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGps: void startTask()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for Network updates")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<java.lang.Thread: void run()> --> target = this.<java.lang.Thread: java.lang.Runnable target0>
+<io.branch.referral.ServerRequestQueue$1: void run()> --> r0 := @this: io.branch.referral.ServerRequestQueue$1
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r5 = r0.<io.branch.referral.ServerRequestQueue$1: io.branch.referral.ServerRequestQueue this$0>
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r14 := @caughtexception
+<io.branch.referral.ServerRequestQueue$1: void run()> --> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.c51.activity.SuccessConfirmationActivity$1: void run()> --> r0 := @this: com.c51.activity.SuccessConfirmationActivity$1
+<com.c51.activity.SuccessConfirmationActivity$1: void run()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ADJUST_EVENT", $r7)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void failure(java.lang.Exception)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.appboy.ui.inappmessage.AppboyInAppMessageManager$1: void run()> --> r0 := @this: com.appboy.ui.inappmessage.AppboyInAppMessageManager$1
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(java.lang.Object)> --> r0 := @this: com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(com.appboy.models.IInAppMessage)> --> r0 := @this: com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(com.appboy.models.IInAppMessage)> --> $r3 = staticinvoke <com.appboy.ui.inappmessage.AppboyInAppMessageManager: com.appboy.ui.inappmessage.AppboyInAppMessageManager getInstance()>()
+<com.appboy.ui.inappmessage.AppboyAsyncInAppMessageDisplayer: void onPostExecute(com.appboy.models.IInAppMessage)> --> $r8 := @caughtexception
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r2 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$6: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$6
+<com.c51.activity.FindingAreaActivity: void onGeocodeFailure(com.c51.location.UserLocation,java.lang.Exception)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.app.Analytics: void sendEvent(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r2 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r2)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$6: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$6
+<com.c51.activity.FindingAreaActivity: void onGeocodeFailure(com.c51.location.UserLocation,java.lang.Exception)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.app.Analytics: void sendEvent(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r2 := @parameter0: java.lang.String
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r5 = virtualinvoke $r5.<com.google.android.gms.analytics.HitBuilders$EventBuilder: com.google.android.gms.analytics.HitBuilders$EventBuilder setCategory(java.lang.String)>("UIACTION")
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> $r0 := @caughtexception
+<com.c51.app.Analytics: void sendEvent(java.lang.String,long)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r2)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void failure(java.lang.Exception)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.facebook.AccessTokenManager$1: void run()> --> r0 := @this: com.facebook.AccessTokenManager$1
+<com.facebook.AccessTokenManager: void access$000(com.facebook.AccessTokenManager,com.facebook.AccessToken$AccessTokenRefreshCallback)> --> $r0 := @parameter0: com.facebook.AccessTokenManager
+<com.facebook.AccessTokenManager: void refreshCurrentAccessTokenImpl(com.facebook.AccessToken$AccessTokenRefreshCallback)> --> r0 := @this: com.facebook.AccessTokenManager
+<com.facebook.AccessTokenManager: com.facebook.GraphRequest createExtendAccessTokenRequest(com.facebook.AccessToken,com.facebook.GraphRequest$Callback)> --> $r0 := @parameter0: com.facebook.AccessToken
+<com.facebook.AccessTokenManager: com.facebook.GraphRequest createExtendAccessTokenRequest(com.facebook.AccessToken,com.facebook.GraphRequest$Callback)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$2: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$2
+<com.c51.activity.FindingAreaActivity: void onGpsSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.activity.FindingAreaActivity: void geoCode(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.TaskWithTimeout: void start()> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskGeocode: void startTask()> --> r0 := @this: com.c51.location.TaskGeocode
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.c51.activity.SuccessConfirmationActivity$1: void run()> --> r0 := @this: com.c51.activity.SuccessConfirmationActivity$1
+<com.c51.app.Session: void setLastReceiptSentId(java.lang.String)> --> r0 := @this: com.c51.app.Session
+<com.c51.app.Preferences: void putString(java.lang.String,java.lang.String)> --> r0 := @this: com.c51.app.Preferences
+<com.c51.app.Preferences: void putString(java.lang.String,java.lang.String)> --> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r1)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: void startTask()> --> if $z0 != 0 goto return
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void failure(java.lang.Exception)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.facebook.AccessTokenManager$1: void run()> --> r0 := @this: com.facebook.AccessTokenManager$1
+<com.facebook.AccessTokenManager: void access$000(com.facebook.AccessTokenManager,com.facebook.AccessToken$AccessTokenRefreshCallback)> --> $r0 := @parameter0: com.facebook.AccessTokenManager
+<com.facebook.AccessTokenManager: void refreshCurrentAccessTokenImpl(com.facebook.AccessToken$AccessTokenRefreshCallback)> --> r0 := @this: com.facebook.AccessTokenManager
+<com.facebook.AccessTokenManager: com.facebook.GraphRequest createGrantedPermissionsRequest(com.facebook.AccessToken,com.facebook.GraphRequest$Callback)> --> $r0 := @parameter0: com.facebook.AccessToken
+<com.facebook.GraphRequest: void <init>(com.facebook.AccessToken,java.lang.String,android.os.Bundle,com.facebook.HttpMethod,com.facebook.GraphRequest$Callback)> --> r0 := @this: com.facebook.GraphRequest
+<com.facebook.GraphRequest: void <init>(com.facebook.AccessToken,java.lang.String,android.os.Bundle,com.facebook.HttpMethod,com.facebook.GraphRequest$Callback,java.lang.String)> --> r0 := @this: com.facebook.GraphRequest
+<com.facebook.FacebookSdk: java.lang.String getGraphApiVersion()> --> $r1 = <com.facebook.FacebookSdk: java.lang.String TAG>
+<com.facebook.internal.Utility: void logd(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.facebook.internal.Utility: void logd(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.c51.location.TaskGps: void startTask()> --> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.c51.location.TaskGps: void startTask()> --> r0.<com.c51.location.TaskGps: android.location.Location defaultLocation> = $r3
+<com.c51.location.TaskGps: boolean isGPSEnabled()> --> r0 := @this: com.c51.location.TaskGps
+<com.c51.location.TaskGps: void startTask()> --> $z1 = virtualinvoke r0.<com.c51.location.TaskGps: boolean isGPSEnabled()>()
+<com.c51.location.TaskGps: void startTask()> --> $r3 = r0.<com.c51.location.TaskGps: android.location.Location defaultLocation>
+<com.c51.location.TaskGps: void startTask()> --> if $r3 == null goto $r5 = new java.lang.Exception
+<com.c51.location.TaskWithTimeout: void success(java.lang.Object)> --> r0 := @this: com.c51.location.TaskWithTimeout
+<com.c51.location.TaskWithTimeout$3: void run()> --> r0 := @this: com.c51.location.TaskWithTimeout$3
+<com.c51.activity.FindingAreaActivity$6: void onComplete(com.c51.location.TaskWithTimeout,com.c51.location.TaskWithTimeout$CompleteType,java.lang.Object)> --> r0 := @this: com.c51.activity.FindingAreaActivity$6
+<com.c51.activity.FindingAreaActivity: void onGeocodeSuccess(com.c51.location.UserLocation)> --> r0 := @this: com.c51.activity.FindingAreaActivity
+<com.c51.location.SupportedLocations: com.c51.location.SupportedLocations getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.c51.location.SupportedLocations: void <init>(android.content.Context)> --> r0 := @this: com.c51.location.SupportedLocations
+<com.c51.location.SupportedLocations: void loadJSONFromInternalStorage(android.content.Context,java.lang.String)> --> r0 := @this: com.c51.location.SupportedLocations
+<com.c51.app.InternalStorage: java.lang.String readFile(android.content.Context,java.lang.String)> --> $r2 := @parameter0: android.content.Context
+<com.c51.app.InternalStorage: byte[] readFileBytes(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.c51.app.InternalStorage: byte[] readFileBytes(android.content.Context,java.lang.String)> --> virtualinvoke $r9.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>($r6, 0, $i0)
+--------------------------------------------------------
+

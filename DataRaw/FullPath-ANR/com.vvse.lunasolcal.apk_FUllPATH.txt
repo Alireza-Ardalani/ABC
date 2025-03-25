@@ -1,0 +1,1036 @@
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LASTGPSLAT", $f0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("SHOW_JULIAN_DATE", $z0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("PLACE_SORT_ORDER", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.MainActivity: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MainActivity
+<com.vvse.lunasolcal.MainActivityTablet: void updateFields()> --> r0 := @this: com.vvse.lunasolcal.MainActivityTablet
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource CITY_SELECTOR> = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource CITY_SELECTOR>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[1] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[0] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource UNKNOWN>
+<com.vvse.lunasolcal.DataModel: void load(android.app.Activity)> --> $r7 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource UNKNOWN>
+<com.vvse.lunasolcal.DataModel: void load(android.app.Activity)> --> if $r6 != $r7 goto $r6 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.LocationSource mCurrentLocationSource>
+<com.vvse.lunasolcal.DataModel: void load(android.app.Activity)> --> r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.LocationSource mCurrentLocationSource> = $r6
+<com.vvse.lunasolcal.DataModel: void load(android.app.Activity)> --> $r6 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.LocationSource mCurrentLocationSource>
+<com.vvse.lunasolcal.DataModel: void load(android.app.Activity)> --> if $r6 != $r7 goto r0.<com.vvse.lunasolcal.DataModel: boolean mLoaded> = 1
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "DataModel::startGPS")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("EOT_FORMAT", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("NOTIFY_USER", $z0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.MainActivity: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MainActivity
+<com.vvse.lunasolcal.MainActivityPhone: void updateFields()> --> r0 := @this: com.vvse.lunasolcal.MainActivityPhone
+<com.vvse.lunasolcal.MainActivityPhone: void updateFields()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "MainActivityPhone::updateFields()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.DetailsSunPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.DetailsSunPage
+<com.vvse.lunasolcal.DetailsSunPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "DetailsSunPage::updateViews()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("DIST_FORMAT", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "not saving because loading in progress")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> $r3 = interfaceinvoke $r2.<android.content.SharedPreferences: android.content.SharedPreferences$Editor edit()>()
+<com.vvse.lunasolcal.DataModel: void save()> --> $r24 := @caughtexception
+<com.vvse.lunasolcal.DataModel: void save()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LunaSolCal", $r8)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("CURRENT_PLACE", $r8)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("START_PAGE", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.PathPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.PathPage$1
+<com.vvse.lunasolcal.SunPathPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.SunPathPage
+<com.vvse.lunasolcal.Helpers: void DumpDate(java.lang.String,java.util.Calendar)> --> $r1 := @parameter0: java.lang.String
+<com.vvse.lunasolcal.Helpers: void DumpDate(java.lang.String,java.util.Calendar)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", $r1)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> $r2 = virtualinvoke $r1.<android.content.Context: android.content.SharedPreferences getSharedPreferences(java.lang.String,int)>("Overview", 0)
+<com.vvse.lunasolcal.DataModel: void save()> --> $r27 := @caughtexception
+<com.vvse.lunasolcal.DataModel: void save()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LunaSolCal", $r8)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("VERSION", 2)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.MapActivity$1: void run()> --> r0 := @this: com.vvse.lunasolcal.MapActivity$1
+<com.vvse.lunasolcal.MapActivity: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MapActivity
+<com.vvse.lunasolcal.MapActivity: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "MapActivity::updateViews()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("ALWAYS_UTC", $z0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "sending Broadcast")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel$6: void run()> --> r0 := @this: com.vvse.lunasolcal.DataModel$6
+<com.vvse.lunasolcal.DataModel$6: void run()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel$6: com.vvse.lunasolcal.DataModel this$0>
+<com.vvse.lunasolcal.DataModel$6: void run()> --> $r6 := @caughtexception
+<com.vvse.lunasolcal.DataModel$6: void run()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LunaSolCal", $r9)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("WIDGETTEXTCOLOR", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("UPDATEPLACETZ3", $z0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.SolsticeEquinoxPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.SolsticeEquinoxPage
+<com.vvse.lunasolcal.SolsticeEquinoxPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "SolsticeEquinoxPage::updateViews()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("SELECTEDFAV", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r9, $r8)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.MonthViewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MonthViewPage
+<com.vvse.lunasolcal.MonthViewData: void updateCurrentDay(java.util.Calendar)> --> r0 := @this: com.vvse.lunasolcal.MonthViewData
+<com.vvse.lunasolcal.MonthViewData: void updateCurrentDay(java.util.Calendar)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "MonthViewData updateCurrentDay()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.MapActivity$1: void run()> --> r0 := @this: com.vvse.lunasolcal.MapActivity$1
+<com.vvse.lunasolcal.MapActivity: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MapActivity
+<com.vvse.lunasolcal.DateSpinner: void updateFields(java.util.Calendar,boolean,com.vvse.lunasolcal.DateSpinner$Mode)> --> r0 := @this: com.vvse.lunasolcal.DateSpinner
+<com.vvse.lunasolcal.DateSpinner: void updateFields(java.util.Calendar,boolean,com.vvse.lunasolcal.DateSpinner$Mode)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "DateSpinner::updateFields")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("WIDGETBGCOLOR", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletSolsticeEquinoxPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletSolsticeEquinoxPage
+<com.vvse.lunasolcal.TabletSolsticeEquinoxPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "TabletSolsticeEquinoxPage::updateViews() - done")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("VERSION_CODE", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.MonthViewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MonthViewPage
+<com.vvse.lunasolcal.MonthViewPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "MonthViewPage::updateViews() - done")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "saving")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.MainActivity: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MainActivity
+<com.vvse.lunasolcal.DataModel: void doCalc()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void doCalc()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "DataModel::doCalc()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void splitLon(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void splitLon(double)> --> $d1 = staticinvoke <java.lang.Math: double floor(double)>($d0)
+<com.vvse.lunasolcal.Place: void splitLon(double)> --> $i0 = (int) $d1
+<com.vvse.lunasolcal.Place: void splitLon(double)> --> r0.<com.vvse.lunasolcal.Place: int mLonDeg> = $i0
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> specialinvoke r0.<com.vvse.lunasolcal.Place: void splitLon(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d1)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void addCurrentPlaceToRecentList()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void addCurrentPlaceToRecentList()> --> $r5 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: boolean equals(com.vvse.lunasolcal.Place)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: int getLatDeg()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: boolean equals(com.vvse.lunasolcal.Place)> --> $i1 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: int getLatDeg()>()
+<com.vvse.lunasolcal.Place: int getLatMin()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: boolean equals(com.vvse.lunasolcal.Place)> --> $i1 = specialinvoke $r1.<com.vvse.lunasolcal.Place: int getLatMin()>()
+<com.vvse.lunasolcal.Place: int getLatSec()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: boolean equals(com.vvse.lunasolcal.Place)> --> $i1 = specialinvoke $r1.<com.vvse.lunasolcal.Place: int getLatSec()>()
+<com.vvse.lunasolcal.Place: int getLonDeg()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: int getLonDeg()> --> i0 = r0.<com.vvse.lunasolcal.Place: int mLonDeg>
+<com.vvse.lunasolcal.Place: boolean equals(com.vvse.lunasolcal.Place)> --> $i1 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: int getLonDeg()>()
+<com.vvse.lunasolcal.Place: boolean equals(com.vvse.lunasolcal.Place)> --> if $i0 != $i1 goto return 0
+<com.vvse.lunasolcal.DataModel: void addCurrentPlaceToRecentList()> --> $z0 = virtualinvoke $r4.<com.vvse.lunasolcal.Place: boolean equals(com.vvse.lunasolcal.Place)>($r5)
+<com.vvse.lunasolcal.DataModel: void addCurrentPlaceToRecentList()> --> if $z0 == 0 goto $z0 = interfaceinvoke $r2.<java.util.Iterator: boolean hasNext()>()
+<com.vvse.lunasolcal.DataModel: void addCurrentPlaceToRecentList()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "**** Failed to remove Place from recent list")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("DEVICE_FORM_FACTOR", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "startPositionCheckTimer()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "updateWidgets")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.MapActivity$1: void run()> --> r0 := @this: com.vvse.lunasolcal.MapActivity$1
+<com.vvse.lunasolcal.MapActivity: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MapActivity
+<com.vvse.lunasolcal.DataModel: void doCalc(java.util.Calendar)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void doCalc(java.util.Calendar)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "DataModel::doCalc( Calendar date )")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("WIDGETTRANSPARENTBG", $z0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LASTGPSLON", $f0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.MonthViewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MonthViewPage
+<com.vvse.lunasolcal.MonthViewPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "MonthViewPage::updateViews()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("LOC_SRC", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("WIDGETTRANSPARENCYLEVEL", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.DetailsMoonViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.DetailsMoonViewHandler
+<com.vvse.lunasolcal.LunaSolCalApp: void setMoonPhaseImage(android.widget.ImageView,double,boolean)> --> r0 := @this: com.vvse.lunasolcal.LunaSolCalApp
+<com.vvse.lunasolcal.LunaSolCalApp: void setMoonPhaseImage(android.widget.ImageView,double,boolean)> --> $r3 = virtualinvoke r0.<com.vvse.lunasolcal.LunaSolCalApp: android.content.res.Resources getResources()>()
+<com.vvse.lunasolcal.LunaSolCalApp: void setMoonPhaseImage(android.widget.ImageView,double,boolean)> --> $r5 := @caughtexception
+<com.vvse.lunasolcal.LunaSolCalApp: void setMoonPhaseImage(android.widget.ImageView,double,boolean)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LunaSolCal", $r6)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.PathPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.PathPage$1
+<com.vvse.lunasolcal.PageControlPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.PageControlPage
+<com.vvse.lunasolcal.PageControlPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "PageControlPage::updateViews()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.MapActivity$1: void run()> --> r0 := @this: com.vvse.lunasolcal.MapActivity$1
+<com.vvse.lunasolcal.MapActivity: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MapActivity
+<com.vvse.lunasolcal.DataModel: void doCalc(java.util.Calendar)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void doCalc(java.util.Calendar,com.vvse.lunasolcal.DayEvents)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void doCalc(java.util.Calendar,com.vvse.lunasolcal.DayEvents)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "DataModel::doCalc( Calendar deviceLocalDate, DayEvents res )")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("MAP_ZOOM_LEVEL", $f0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("LASTGPSUPDATE", $l1)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.PathPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.PathPage$1
+<com.vvse.lunasolcal.MoonPathPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MoonPathPage
+<com.vvse.lunasolcal.LunaSolCalApp: android.graphics.Bitmap moonAge2Bitmap(android.content.res.Resources,double)> --> $r0 := @parameter0: android.content.res.Resources
+<com.vvse.lunasolcal.LunaSolCalApp: int getMoonPhaseImageIdx(double)> --> $d0 := @parameter0: double
+<com.vvse.lunasolcal.LunaSolCalApp: int getMoonPhaseImageIdx(double)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", $r0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletSolsticeEquinoxPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletSolsticeEquinoxPage
+<com.vvse.lunasolcal.TabletSolsticeEquinoxPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "TabletSolsticeEquinoxPage::updateViews()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "TabletOverviewPage::updateViews()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("GEOCOORD_FORMAT", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r8, $r9)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.PathPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.PathPage$1
+<com.vvse.lunasolcal.MoonPathPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.MoonPathPage
+<com.vvse.lunasolcal.MoonPathPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "MoonPathPage::updateViews()")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("FAVCOUNT", $i0)
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.CurrentLocationViewHandler: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.CurrentLocationViewHandler
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> nop
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource LOCATION_COORDS>
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[3] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r1[2] = $r0
+<com.vvse.lunasolcal.LocationSource: void <clinit>()> --> $r0 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> $r3 = <com.vvse.lunasolcal.LocationSource: com.vvse.lunasolcal.LocationSource GPS_RECEIVER>
+<com.vvse.lunasolcal.MainActivity: void updateGPSLocation()> --> if $r2 == $r3 goto $r1 = r0.<com.vvse.lunasolcal.MainActivity: com.vvse.lunasolcal.DataModel mData>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.SolsticeEquinoxPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.SolsticeEquinoxPage
+<com.vvse.lunasolcal.SolsticeEquinoxPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "SolsticeEquinoxPage::updateViews() - done")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.DetailsSunPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.DetailsSunPage
+<com.vvse.lunasolcal.DetailsSunPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "DetailsSunPage::updateViews() - done")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.lunasolcal.DataModel: double mLastGPSLongitude>
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: void setLongitude(double)> --> r0.<com.vvse.lunasolcal.Place: double mLongitude> = $d0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r8.<com.vvse.lunasolcal.Place: void setLongitude(double)>($d0)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.Place: double getLongitude()> --> r0 := @this: com.vvse.lunasolcal.Place
+<com.vvse.lunasolcal.Place: double getLongitude()> --> d0 = r0.<com.vvse.lunasolcal.Place: double mLongitude>
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.lunasolcal.Place: double getLongitude()>()
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.lunasolcal.DataModel: boolean hasValidPosition()>()
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto return
+<com.vvse.lunasolcal.DataModel: void startPositionCheckTimer()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.lunasolcal.DetailsPage$1: void run()> --> r0 := @this: com.vvse.lunasolcal.DetailsPage$1
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> r0 := @this: com.vvse.lunasolcal.TabletOverviewPage
+<com.vvse.lunasolcal.TabletOverviewPage: void updateViews()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "TabletOverviewPage::updateViews() - done")
+--------------------------------------------------------
+
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.vvse.lunasolcal.DataModel: void startGPS(android.content.Context)> --> if $r10 == null goto $r8 = r0.<com.vvse.lunasolcal.DataModel: com.vvse.lunasolcal.Place mCurrentPlace>
+<com.vvse.lunasolcal.DataModel: void updateWidgets()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> r0 := @this: com.vvse.lunasolcal.DataModel
+<com.vvse.lunasolcal.DataModel: void save()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LunaSolCal", "save")
+--------------------------------------------------------
+

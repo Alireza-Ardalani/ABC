@@ -1,0 +1,30 @@
+<com.moat.analytics.mobile.nas.o: android.location.Location ॱॱ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.moat.analytics.mobile.nas.o: android.location.Location ॱॱ()> --> return $r2
+<com.moat.analytics.mobile.nas.o: void ˏ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.nas.o: android.location.Location ॱॱ()>()
+<com.moat.analytics.mobile.nas.o: android.location.Location ˋ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.nas.o: boolean ˎ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.nas.o: boolean ˎ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.nas.o: android.location.Location ˋ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.nas.o: boolean ˎ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.nas.o: android.location.Location ˋ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.nas.o: void ˏ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.nas.o: android.location.Location ˋ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.nas.o: void ˏ()> --> r0.<com.moat.analytics.mobile.nas.o: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.nas.o: void ˏ()> --> $r2 = r0.<com.moat.analytics.mobile.nas.o: android.location.Location ʽ>
+<com.moat.analytics.mobile.nas.o: void ˏ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.nas.o: void ʼ()>()
+<com.moat.analytics.mobile.nas.o: void ˏ()> --> $r2 = r0.<com.moat.analytics.mobile.nas.o: android.location.Location ʽ>
+<com.moat.analytics.mobile.nas.o: void ˏ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.nas.l: void ॱ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ˎ()> --> entermonitor class "Lcom/moat/analytics/mobile/nas/y;"
+<com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ˎ()> --> $r0 = new com.moat.analytics.mobile.nas.y
+<com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ˎ()> --> <com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ᐝ> = $r0
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> staticinvoke <dummyMainClass: com.nascar.nascarmobile.activity.ToyotaCamryHubActivity dummyMainMethod_com_nascar_nascarmobile_activity_ToyotaCamryHubActivity(android.content.Intent)>(null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> staticinvoke <dummyMainClass: com.appboy.ui.activities.AppboyFeedActivity dummyMainMethod_com_appboy_ui_activities_AppboyFeedActivity(android.content.Intent)>(null)
+<com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ˎ()> --> $r0 = <com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ᐝ>
+<com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ˎ()> --> if $r0 != null goto $r0 = <com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ᐝ>
+<com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ˎ()> --> <com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ᐝ> = $r0
+<com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ˎ()> --> $r0 = <com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ᐝ>
+<com.moat.analytics.mobile.nas.a$4: void ˏ(java.lang.String,java.lang.String)> --> $r2 = staticinvoke <com.moat.analytics.mobile.nas.y: com.moat.analytics.mobile.nas.y ˎ()>()
+<com.moat.analytics.mobile.nas.a$4: void ˏ(java.lang.String,java.lang.String)> --> $z0 = $r2.<com.moat.analytics.mobile.nas.y: boolean ˊ>
+<com.moat.analytics.mobile.nas.a$4: void ˏ(java.lang.String,java.lang.String)> --> if $z0 != 0 goto return
+<com.moat.analytics.mobile.nas.a$4: void ˏ(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($b0, "MoatAnalytics", $r0)
+--------------------------------------------------------
+

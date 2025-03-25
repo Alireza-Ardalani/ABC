@@ -1,0 +1,21 @@
+<com.opensnow.android.LocationService: void startLocationUpdates()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.opensnow.android.LocationService: void setCurrentLocation(android.location.Location)> --> r0 := @this: com.opensnow.android.LocationService
+<com.opensnow.android.LocationService: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.opensnow.android.LocationService
+<com.opensnow.android.LocationService: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r1 != null goto $r3 = virtualinvoke $r1.<android.location.Location: java.lang.String getProvider()>()
+<com.opensnow.android.LocationService: boolean isBetterLocation(android.location.Location,android.location.Location)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LocationService", $r3)
+--------------------------------------------------------
+
+<com.opensnow.android.LocationService: void startLocationUpdates()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.opensnow.android.LocationService: void setCurrentLocation(android.location.Location)> --> r0 := @this: com.opensnow.android.LocationService
+<com.opensnow.android.LocationService: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.opensnow.android.LocationService
+<com.opensnow.android.LocationService: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r1 != null goto $r3 = virtualinvoke $r1.<android.location.Location: java.lang.String getProvider()>()
+<com.opensnow.android.LocationService: boolean isBetterLocation(android.location.Location,android.location.Location)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LocationService", $r3)
+--------------------------------------------------------
+
+<com.opensnow.android.LocationService: void startLocationUpdates()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.opensnow.android.LocationService: void setCurrentLocation(android.location.Location)> --> r0 := @this: com.opensnow.android.LocationService
+<com.opensnow.android.LocationService: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.opensnow.android.LocationService
+<com.opensnow.android.LocationService: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r1 != null goto $r3 = virtualinvoke $r1.<android.location.Location: java.lang.String getProvider()>()
+<com.opensnow.android.LocationService: boolean isBetterLocation(android.location.Location,android.location.Location)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LocationService", $r3)
+--------------------------------------------------------
+

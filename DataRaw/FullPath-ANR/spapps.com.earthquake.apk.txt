@@ -1,0 +1,149 @@
+Source=> r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>(r1)
+Component=> spapps.com.earthquake.ui.MainActivity
+ComponentColor=> GREEN
+okhttp3.HttpUrl$Builder
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.ui.MainActivity
+okhttp3.HttpUrl$Builder
+spapps.com.earthquake.ui.MainActivity$13
+okhttp3.HttpUrl$Builder
+android.location.LocationManager
+spapps.com.earthquake.ui.MainActivity
+okhttp3.HttpUrl
+spapps.com.earthquake.util.SPLocation$GetLastLocation
+retrofit2.Retrofit$Builder
+java.net.InetAddress
+Category: okhttp3.HttpUrl$Builder-*-okhttp3.HttpUrl$Builder-*-okhttp3.HttpUrl$Builder-*-okhttp3.HttpUrl-*-retrofit2.Retrofit$Builder-*-
+-----------------------------------------------------------------
+Source=> r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>($r5)
+Component=> spapps.com.earthquake.ui.MainActivity
+ComponentColor=> GREEN
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.util.interceptors.LoggingInterceptor
+android.location.LocationManager
+spapps.com.earthquake.ui.MainActivity
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.ApiUtil
+okhttp3.ResponseBody
+okhttp3.MediaType
+spapps.com.earthquake.ui.MainActivity
+spapps.com.earthquake.api.util.interceptors.LoggingInterceptor
+spapps.com.earthquake.util.SPLocation$GetLastLocation
+spapps.com.earthquake.ui.MainActivity$13
+Category: okhttp3.ResponseBody-*-okhttp3.MediaType-*-
+-----------------------------------------------------------------
+Source=> r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>(r1)
+Component=> spapps.com.earthquake.ui.MainActivity
+ComponentColor=> GREEN
+okhttp3.HttpUrl$Builder
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.ui.MainActivity
+okhttp3.HttpUrl$Builder
+spapps.com.earthquake.ui.MainActivity$13
+okhttp3.HttpUrl$Builder
+android.location.LocationManager
+spapps.com.earthquake.ui.MainActivity
+okhttp3.HttpUrl
+spapps.com.earthquake.util.SPLocation$GetLastLocation
+retrofit2.Retrofit$Builder
+java.net.InetAddress
+Category: okhttp3.HttpUrl$Builder-*-okhttp3.HttpUrl$Builder-*-okhttp3.HttpUrl$Builder-*-okhttp3.HttpUrl-*-retrofit2.Retrofit$Builder-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>($r5)
+Component=> spapps.com.earthquake.ui.MainActivity
+ComponentColor=> GREEN
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.util.interceptors.LoggingInterceptor
+android.location.LocationManager
+spapps.com.earthquake.ui.MainActivity
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.ApiUtil
+okhttp3.ResponseBody
+okhttp3.MediaType
+spapps.com.earthquake.ui.MainActivity
+spapps.com.earthquake.api.util.interceptors.LoggingInterceptor
+spapps.com.earthquake.util.SPLocation$GetLastLocation
+spapps.com.earthquake.ui.MainActivity$13
+Category: okhttp3.ResponseBody-*-okhttp3.MediaType-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> spapps.com.earthquake.ui.MainActivity
+ComponentColor=> GREEN
+spapps.com.earthquake.util.Utils
+spapps.com.earthquake.util.logger.L
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.ui.MainActivity
+spapps.com.earthquake.api.util.interceptors.LoggingInterceptor
+spapps.com.earthquake.ui.MainActivity$13
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.util.interceptors.LoggingInterceptor
+android.location.LocationManager
+spapps.com.earthquake.ui.MainActivity
+android.util.Log
+spapps.com.earthquake.util.SPLocation$GetLastLocation
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(b1, "OkHttp", $r4)
+Component=> spapps.com.earthquake.ui.MainActivity
+ComponentColor=> GREEN
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.util.interceptors.LoggingInterceptor
+android.location.LocationManager
+okhttp3.internal.platform.AndroidPlatform
+spapps.com.earthquake.ui.MainActivity
+android.util.Log
+spapps.com.earthquake.util.logger.L
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.ui.MainActivity
+spapps.com.earthquake.util.SPLocation$GetLastLocation
+spapps.com.earthquake.ui.MainActivity$13
+Category: okhttp3.internal.platform.AndroidPlatform-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(b1, "OkHttp", $r4)
+Component=> spapps.com.earthquake.ui.MainActivity
+ComponentColor=> GREEN
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.util.interceptors.LoggingInterceptor
+android.location.LocationManager
+okhttp3.internal.platform.AndroidPlatform
+spapps.com.earthquake.ui.MainActivity
+android.util.Log
+spapps.com.earthquake.util.logger.L
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.ui.MainActivity
+spapps.com.earthquake.util.SPLocation$GetLastLocation
+spapps.com.earthquake.ui.MainActivity$13
+Category: okhttp3.internal.platform.AndroidPlatform-*-
+-----------------------------------------------------------------
+Source=> r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> spapps.com.earthquake.ui.MainActivity
+ComponentColor=> GREEN
+spapps.com.earthquake.util.Utils
+spapps.com.earthquake.util.logger.L
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.ui.MainActivity
+spapps.com.earthquake.api.util.interceptors.LoggingInterceptor
+spapps.com.earthquake.ui.MainActivity$13
+spapps.com.earthquake.api.ApiUtil
+spapps.com.earthquake.api.util.interceptors.LoggingInterceptor
+android.location.LocationManager
+spapps.com.earthquake.ui.MainActivity
+android.util.Log
+spapps.com.earthquake.util.SPLocation$GetLastLocation
+Category: LEGIT
+-----------------------------------------------------------------
+spapps.com.earthquake.apk: 1070479

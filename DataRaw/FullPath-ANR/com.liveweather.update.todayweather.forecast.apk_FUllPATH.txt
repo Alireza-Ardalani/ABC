@@ -1,0 +1,283 @@
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> if $r4 == null goto (branch)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void onLocationChanged(android.location.Location)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void onLocationChanged(android.location.Location,android.location.Address)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void onLocationChanged(android.location.Location,android.location.Address)> --> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("longitudee", f1)
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> $r9 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> r1 := @caughtexception
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> $z0 = specialinvoke r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)>(1)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> if $z0 == 0 goto $r7 = virtualinvoke r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: android.content.SharedPreferences getSharedPreferences(java.lang.String,int)>("config", 0)
+<com.firebase.jobdispatcher.FirebaseJobDispatcher: void mustSchedule(com.firebase.jobdispatcher.Job)> --> r0 := @this: com.firebase.jobdispatcher.FirebaseJobDispatcher
+<com.firebase.jobdispatcher.FirebaseJobDispatcher: int schedule(com.firebase.jobdispatcher.Job)> --> r0 := @this: com.firebase.jobdispatcher.FirebaseJobDispatcher
+<com.firebase.jobdispatcher.GooglePlayDriver: int schedule(com.firebase.jobdispatcher.Job)> --> r0 := @this: com.firebase.jobdispatcher.GooglePlayDriver
+<com.firebase.jobdispatcher.GooglePlayDriver: android.content.Intent createScheduleRequest(com.firebase.jobdispatcher.JobParameters)> --> r0 := @this: com.firebase.jobdispatcher.GooglePlayDriver
+<com.firebase.jobdispatcher.GooglePlayJobWriter: android.os.Bundle writeToBundle(com.firebase.jobdispatcher.JobParameters,android.os.Bundle)> --> r0 := @this: com.firebase.jobdispatcher.GooglePlayJobWriter
+<com.firebase.jobdispatcher.GooglePlayJobWriter: void writeTriggerToBundle(com.firebase.jobdispatcher.JobParameters,android.os.Bundle)> --> $r0 := @parameter0: com.firebase.jobdispatcher.JobParameters
+<com.firebase.jobdispatcher.GooglePlayJobWriter: void writeImmediateTriggerToBundle(android.os.Bundle)> --> $r0 := @parameter0: android.os.Bundle
+<com.firebase.jobdispatcher.GooglePlayJobWriter: void writeImmediateTriggerToBundle(android.os.Bundle)> --> virtualinvoke $r0.<android.os.Bundle: void putLong(java.lang.String,long)>("window_end", 1L)
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void onLocationChanged(android.location.Location)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void onLocationChanged(android.location.Location,android.location.Address)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void onLocationChanged(android.location.Location,android.location.Address)> --> if $r1 == null goto (branch)
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> virtualinvoke $r15.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> if $r5 != null goto (branch)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$700(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void startRefreshRotation()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.firebase.jobdispatcher.Job$Builder: com.firebase.jobdispatcher.Job build()> --> r0 := @this: com.firebase.jobdispatcher.Job$Builder
+<com.firebase.jobdispatcher.ValidationEnforcer: void ensureValid(com.firebase.jobdispatcher.JobParameters)> --> r0 := @this: com.firebase.jobdispatcher.ValidationEnforcer
+<com.firebase.jobdispatcher.ValidationEnforcer: java.util.List validate(com.firebase.jobdispatcher.JobParameters)> --> r0 := @this: com.firebase.jobdispatcher.ValidationEnforcer
+<com.firebase.jobdispatcher.DefaultJobValidator: java.util.List validate(com.firebase.jobdispatcher.JobParameters)> --> r0 := @this: com.firebase.jobdispatcher.DefaultJobValidator
+<com.firebase.jobdispatcher.DefaultJobValidator: java.util.List validateService(java.lang.String)> --> r0 := @this: com.firebase.jobdispatcher.DefaultJobValidator
+<com.firebase.jobdispatcher.DefaultJobValidator: java.util.List validateService(java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("FJD.GooglePlayReceiver", $r1)
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> if $r5 != null goto (branch)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$700(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> virtualinvoke $r15.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>(" - ")
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> if $r5 != null goto (branch)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$700(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> virtualinvoke $r15.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)> --> $r9 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> if $r1 == null goto (branch)
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: java.lang.String locationSource> = "G"
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> $r9 = r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: java.lang.Runnable timerRunnable>
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1
+<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: void run()> --> $r2 = r0.<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService this$0>
+<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: void run()> --> $r4 = $r2.<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService: java.lang.Runnable timerRotateIconRunnable>
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$7: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService$7
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$7: void run()> --> $r1 = r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$7: com.liveweather.update.todayweather.forecast.service.LocationUpdateService this$0>
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$700(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> if $z1 == 0 goto $z1 = 0
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean checkLocationProviderPermission()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> $z2 = specialinvoke r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean checkLocationProviderPermission()>()
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> if $z2 == 0 goto $z2 = 0
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> if $z1 != 0 goto specialinvoke r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void wakeUp()>()
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void wakeUp()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void wakeUp()> --> if $i0 < 20 goto $r3 = r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: android.os.PowerManager powerManager>
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void wakeUp()> --> if $z0 != 0 goto return
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void wakeUp()> --> $r7 = r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: java.lang.Runnable timerWakeUpRunnable>
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7: void run()> --> $r1 = r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService this$0>
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void access$500(com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void requestWeatherCheck()> --> $z0 = r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean isRefreshRotationStarted>
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void requestWeatherCheck()> --> if $z0 != 0 goto $z0 = specialinvoke r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)>(1)
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void startRefreshRotation()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void startRefreshRotation()> --> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("action", "android.intent.action.START_ROTATING_UPDATE")
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> if $r4 == null goto (branch)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$700(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void access$500(com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void requestWeatherCheck()> --> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("update_source", $r4)
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void onLocationChanged(android.location.Location)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void onLocationChanged(android.location.Location,android.location.Address)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void onLocationChanged(android.location.Location,android.location.Address)> --> if $r1 == null goto (branch)
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> virtualinvoke $r15.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r2)
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> if $r5 != null goto (branch)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$700(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$8: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService$8
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$900(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void setNoLocationFound()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.utils.Utils: void setNoLocationFound(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.Utils: void setNoLocationFound(android.content.Context)> --> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("geo_district_country", "")
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> $r9 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> if $r1 == null goto (branch)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: java.lang.String locationSource> = "G"
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> $r9 = r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: java.lang.Runnable timerRunnable>
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1
+<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: void run()> --> $r2 = r0.<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService this$0>
+<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: void run()> --> $r4 = $r2.<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService: java.lang.Runnable timerRotateIconRunnable>
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7: void run()> --> $r1 = r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService this$0>
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void access$500(com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)> --> if $z1 == 0 goto $z1 = 0
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean checkLocationProviderPermission()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)> --> $z2 = specialinvoke r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean checkLocationProviderPermission()>()
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)> --> if $z2 == 0 goto $z2 = 0
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)> --> if $z1 != 0 goto specialinvoke r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void wakeUp()>()
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void wakeUp()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void wakeUp()> --> if $i0 < 20 goto $r3 = r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: android.os.PowerManager powerManager>
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void wakeUp()> --> if $z0 != 0 goto return
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void wakeUp()> --> $r7 = r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: java.lang.Runnable timerWakeUpRunnable>
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r2 = r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: com.liveweather.update.todayweather.forecast.service.LocationUpdateService this$0>
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: long access$1000(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: long access$1000(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> l0 = $r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: long lastLocationUpdateTime>
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $l1 = staticinvoke <com.liveweather.update.todayweather.forecast.service.LocationUpdateService: long access$1000(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)>($r2)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $b2 = $l0 cmp $l1
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $i3 = (int) $b2
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> if $i3 >= 0 goto $r2 = r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: com.liveweather.update.todayweather.forecast.service.LocationUpdateService this$0>
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$700(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$8: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService$8
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$900(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void setNoLocationFound()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void updateWidgets()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void stopRefreshRotation()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void stopRefreshRotation()> --> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("action", "android.intent.action.STOP_ROTATING_UPDATE")
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> $r9 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> if $r1 == null goto (branch)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: java.lang.String locationSource> = "G"
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocationByNetwork(android.location.Location,boolean)> --> $r9 = r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: java.lang.Runnable timerRunnable>
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1
+<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: void run()> --> $r2 = r0.<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService this$0>
+<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService$1: void run()> --> $r4 = $r2.<com.liveweather.update.todayweather.forecast.widget.WidgetRefreshIconService: java.lang.Runnable timerRotateIconRunnable>
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7: void run()> --> $r1 = r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService this$0>
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void access$500(com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)> --> if $z1 == 0 goto $z1 = 0
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean checkLocationProviderPermission()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)> --> $z2 = specialinvoke r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean checkLocationProviderPermission()>()
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)> --> if $z2 == 0 goto $z2 = 0
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: boolean updateNetworkLocation(boolean)> --> if $z1 != 0 goto specialinvoke r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void wakeUp()>()
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void wakeUp()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void wakeUp()> --> if $i0 < 20 goto $r3 = r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: android.os.PowerManager powerManager>
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void wakeUp()> --> if $z0 != 0 goto return
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void wakeUp()> --> $r7 = r0.<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: java.lang.Runnable timerWakeUpRunnable>
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$7: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService$7
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$7: void run()> --> $r1 = r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$7: com.liveweather.update.todayweather.forecast.service.LocationUpdateService this$0>
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$700(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> $z0 = r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean isRefreshRotationStarted>
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> if $z0 != 0 goto $z0 = specialinvoke r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)>(1)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void startRefreshRotation()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void startRefreshRotation()> --> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("action", "android.intent.action.START_ROTATING_UPDATE")
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> $r9 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> r1 := @caughtexception
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void checkPreferences(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void checkPreferences(android.content.Context)> --> $r4 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>($z0)
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void checkPreferences(android.content.Context)> --> <com.liveweather.update.todayweather.forecast.utils.LogToFile: java.lang.Boolean logToFileEnabled> = $r4
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void checkPreferences(android.content.Context)> --> $r4 = <com.liveweather.update.todayweather.forecast.utils.LogToFile: java.lang.Boolean logToFileEnabled>
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void checkPreferences(android.content.Context)> --> if $r4 != null goto $r1 = staticinvoke <java.util.Calendar: java.util.Calendar getInstance()>()
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void checkPreferences(android.content.Context)> --> <com.liveweather.update.todayweather.forecast.utils.LogToFile: java.lang.String logFilePathname> = $r5
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> staticinvoke <com.liveweather.update.todayweather.forecast.utils.LogToFile: void checkPreferences(android.content.Context)>($r0)
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> $r7 = <com.liveweather.update.todayweather.forecast.utils.LogToFile: java.lang.String logFilePathname>
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> if $r7 != null goto $r12 = new java.io.File
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> virtualinvoke $r15.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>(" ")
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> if $r4 == null goto (branch)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$700(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> virtualinvoke r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("updateSource", $r6)
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> if $r4 == null goto (branch)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$700(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7: void run()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService$7
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void access$500(com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService: void startRefreshRotation()> --> r0 := @this: com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+<com.firebase.jobdispatcher.FirebaseJobDispatcher: void mustSchedule(com.firebase.jobdispatcher.Job)> --> r0 := @this: com.firebase.jobdispatcher.FirebaseJobDispatcher
+<com.firebase.jobdispatcher.FirebaseJobDispatcher: int schedule(com.firebase.jobdispatcher.Job)> --> r0 := @this: com.firebase.jobdispatcher.FirebaseJobDispatcher
+<com.firebase.jobdispatcher.GooglePlayDriver: int schedule(com.firebase.jobdispatcher.Job)> --> r0 := @this: com.firebase.jobdispatcher.GooglePlayDriver
+<com.firebase.jobdispatcher.GooglePlayDriver: android.content.Intent createScheduleRequest(com.firebase.jobdispatcher.JobParameters)> --> r0 := @this: com.firebase.jobdispatcher.GooglePlayDriver
+<com.firebase.jobdispatcher.GooglePlayJobWriter: android.os.Bundle writeToBundle(com.firebase.jobdispatcher.JobParameters,android.os.Bundle)> --> r0 := @this: com.firebase.jobdispatcher.GooglePlayJobWriter
+<com.firebase.jobdispatcher.GooglePlayJobWriter: android.os.Bundle writeToBundle(com.firebase.jobdispatcher.JobParameters,android.os.Bundle)> --> virtualinvoke $r2.<android.os.Bundle: void putBundle(java.lang.String,android.os.Bundle)>("extras", $r5)
+--------------------------------------------------------
+
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$10: void run()> --> if $r5 != null goto (branch)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$700(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void requestWeatherCheck()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: boolean updateNetworkLocation(boolean)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void startRefreshRotation()> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.firebase.jobdispatcher.FirebaseJobDispatcher: void mustSchedule(com.firebase.jobdispatcher.Job)> --> r0 := @this: com.firebase.jobdispatcher.FirebaseJobDispatcher
+<com.firebase.jobdispatcher.FirebaseJobDispatcher: int schedule(com.firebase.jobdispatcher.Job)> --> r0 := @this: com.firebase.jobdispatcher.FirebaseJobDispatcher
+<com.firebase.jobdispatcher.GooglePlayDriver: int schedule(com.firebase.jobdispatcher.Job)> --> r0 := @this: com.firebase.jobdispatcher.GooglePlayDriver
+<com.firebase.jobdispatcher.GooglePlayDriver: android.content.Intent createScheduleRequest(com.firebase.jobdispatcher.JobParameters)> --> r0 := @this: com.firebase.jobdispatcher.GooglePlayDriver
+<com.firebase.jobdispatcher.GooglePlayJobWriter: android.os.Bundle writeToBundle(com.firebase.jobdispatcher.JobParameters,android.os.Bundle)> --> r0 := @this: com.firebase.jobdispatcher.GooglePlayJobWriter
+<com.firebase.jobdispatcher.GooglePlayJobWriter: android.os.Bundle writeToBundle(com.firebase.jobdispatcher.JobParameters,android.os.Bundle)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("service", $r3)
+--------------------------------------------------------
+
+<dummyMainClass: com.liveweather.update.todayweather.forecast.service.LocationUpdateService dummyMainMethod_com_liveweather_update_todayweather_forecast_service_LocationUpdateService(android.content.Intent)> --> virtualinvoke $r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void onLocationChanged(android.location.Location)>(null)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$1: void <init>(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService$1
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$1: void <init>(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)> --> r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$1: com.liveweather.update.todayweather.forecast.service.LocationUpdateService this$0> = $r1
+<dummyMainClass: com.liveweather.update.todayweather.forecast.service.LocationUpdateService dummyMainMethod_com_liveweather_update_todayweather_forecast_service_LocationUpdateService(android.content.Intent)> --> specialinvoke $r3.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$1: void <init>(com.liveweather.update.todayweather.forecast.service.LocationUpdateService)>($r0)
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$1: void onSensorChanged(android.hardware.SensorEvent)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService$1
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$1: void onSensorChanged(android.hardware.SensorEvent)> --> $r4 = r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService$1: com.liveweather.update.todayweather.forecast.service.LocationUpdateService this$0>
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void access$000(com.liveweather.update.todayweather.forecast.service.LocationUpdateService,android.hardware.SensorEvent)> --> $r0 := @parameter0: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void processSensorEvent(android.hardware.SensorEvent)> --> r0 := @this: com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void processSensorEvent(android.hardware.SensorEvent)> --> $f1 = r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: float currentLength>
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void processSensorEvent(android.hardware.SensorEvent)> --> $d2 = (double) $f1
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void processSensorEvent(android.hardware.SensorEvent)> --> $d2 = $d2 + $d1
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void processSensorEvent(android.hardware.SensorEvent)> --> $f1 = (float) $d2
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void processSensorEvent(android.hardware.SensorEvent)> --> r0.<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: float currentLength> = $f1
+<com.liveweather.update.todayweather.forecast.service.LocationUpdateService: void processSensorEvent(android.hardware.SensorEvent)> --> r2 := @caughtexception
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: android.content.Context
+<com.liveweather.update.todayweather.forecast.utils.LogToFile: void appendLog(android.content.Context,java.lang.String,java.lang.String,java.lang.Throwable)> --> virtualinvoke $r15.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>(" - ")
+--------------------------------------------------------
+

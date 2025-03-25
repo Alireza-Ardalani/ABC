@@ -1,0 +1,121 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_latitude", $f0)
+Component=> com.onelouder.adlib.AdDialog
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+com.onelouder.adlib.AdsManager$2
+android.location.Location
+Category: com.onelouder.adlib.AdsManager$2-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_latitude", $f0)
+Component=> com.onelouder.adlib.AdDialog
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+com.onelouder.adlib.AdsManager
+com.onelouder.adlib.AdsManager$2
+android.location.LocationManager
+Category: com.onelouder.adlib.AdsManager-*-com.onelouder.adlib.AdsManager$2-*-
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.handmark.expressweather.data.UpdateService
+ComponentColor=> GREEN
+com.handmark.debug.Diagnostics
+android.util.Log
+android.location.LocationManager
+com.handmark.expressweather.data.MyLocation
+Category: com.handmark.debug.Diagnostics-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_longitude", $f0)
+Component=> com.onelouder.adlib.AdDialog
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+com.onelouder.adlib.AdsManager$2
+android.location.Location
+Category: com.onelouder.adlib.AdsManager$2-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("pinsightmedia", $r0)
+Component=> com.onelouder.adlib.AdDialog
+ComponentColor=> RED
+android.util.Log
+com.onelouder.adlib.AdsManager
+com.onelouder.adlib.AdsManager$2
+android.location.LocationManager
+com.onelouder.adlib.AdsManager
+Category: com.onelouder.adlib.AdsManager-*-com.onelouder.adlib.AdsManager$2-*-com.onelouder.adlib.AdsManager-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("pinsightmedia", $r0)
+Component=> com.onelouder.adlib.AdDialog
+ComponentColor=> RED
+android.util.Log
+com.onelouder.adlib.AdsManager
+com.onelouder.adlib.AdsManager$2
+android.location.LocationManager
+com.onelouder.adlib.AdsManager
+Category: com.onelouder.adlib.AdsManager-*-com.onelouder.adlib.AdsManager$2-*-com.onelouder.adlib.AdsManager-*-
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.handmark.expressweather.data.UpdateService
+ComponentColor=> GREEN
+com.handmark.debug.Diagnostics
+android.util.Log
+android.location.LocationManager
+com.handmark.expressweather.data.MyLocation
+Category: com.handmark.debug.Diagnostics-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_longitude", $f0)
+Component=> com.onelouder.adlib.AdDialog
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+com.onelouder.adlib.AdsManager
+com.onelouder.adlib.AdsManager$2
+android.location.LocationManager
+Category: com.onelouder.adlib.AdsManager-*-com.onelouder.adlib.AdsManager$2-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r12.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("pinsightmedia", $r0)
+Component=> jp.co.agoop.networkconnectivity.lib.service.AlarmReceiver
+ComponentColor=> RED
+com.onelouder.adlib.RegisterMobileConsumer$1
+android.util.Log
+android.location.Location
+com.onelouder.adlib.AdsManager
+Category: com.onelouder.adlib.RegisterMobileConsumer$1-*-com.onelouder.adlib.AdsManager-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_longitude", $f0)
+Component=> com.onelouder.adlib.AdDialog
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+com.onelouder.adlib.AdsManager
+com.onelouder.adlib.AdsManager$2
+android.location.LocationManager
+Category: com.onelouder.adlib.AdsManager-*-com.onelouder.adlib.AdsManager$2-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r12.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("pinsightmedia", $r0)
+Component=> jp.co.agoop.networkconnectivity.lib.service.AlarmReceiver
+ComponentColor=> RED
+com.onelouder.adlib.RegisterMobileConsumer$1
+android.util.Log
+com.onelouder.adlib.AdsManager
+android.location.Location
+Category: com.onelouder.adlib.RegisterMobileConsumer$1-*-com.onelouder.adlib.AdsManager-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_latitude", $f0)
+Component=> com.onelouder.adlib.AdDialog
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+com.onelouder.adlib.AdsManager
+com.onelouder.adlib.AdsManager$2
+android.location.LocationManager
+Category: com.onelouder.adlib.AdsManager-*-com.onelouder.adlib.AdsManager$2-*-
+-----------------------------------------------------------------
+com.handmark.expressweather.apk: 1138430

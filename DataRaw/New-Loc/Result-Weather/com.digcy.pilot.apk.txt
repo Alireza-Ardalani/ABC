@@ -1,0 +1,36 @@
+Source=> $d2 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r26.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("PREF_NAVMANAGER_LASTLAT", $f0)
+Component=> com.digcy.pilot.BLEConnectionService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r26.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("PREF_NAVMANAGER_LASTLON", $f0)
+Component=> com.digcy.pilot.BLEConnectionService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putDouble(java.lang.String,double)>($r1, $d0)
+Component=> com.digcy.pilot.BLEConnectionService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putDouble(java.lang.String,double)>($r1, $d0)
+Component=> com.digcy.pilot.BLEConnectionService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putDouble(java.lang.String,double)>($r1, $d0)
+Component=> com.digcy.pilot.BLEConnectionService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putDouble(java.lang.String,double)>($r1, $d0)
+Component=> com.digcy.pilot.BLEConnectionService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

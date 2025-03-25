@@ -1,0 +1,37 @@
+<com.bookoo.bkapp.model.Account: android.location.Location getGPSLocation()> --> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.bookoo.bkapp.model.City: com.bookoo.bkapp.model.City getClosest(com.bookoo.bkapp.model.Cities)> --> $r1 = staticinvoke <com.bookoo.bkapp.model.Account: android.location.Location getGPSLocation()>()
+<com.bookoo.bkapp.model.City: com.bookoo.bkapp.model.City getClosest(com.bookoo.bkapp.model.Cities)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.bookoo.bkapp.model.City: com.bookoo.bkapp.model.City getClosest(com.bookoo.bkapp.model.Cities)> --> $r2 = $r3
+<com.bookoo.bkapp.activities.WelcomeActivity: void useGPS(android.view.View)> --> $r3 = staticinvoke <com.bookoo.bkapp.model.City: com.bookoo.bkapp.model.City getClosest(com.bookoo.bkapp.model.Cities)>($r2)
+<com.bookoo.bkapp.activities.WelcomeActivity: void useGPS(android.view.View)> --> if $r3 == null goto staticinvoke <com.bookoo.bkapp.util.Misc: void displayToast(java.lang.String)>("Nearest bookoo could not be selected")
+<com.bookoo.bkapp.model.City: void save(com.bookoo.bkapp.util.API$BasicListener)> --> r1 := @this: com.bookoo.bkapp.model.City
+<com.bookoo.bkapp.model.Account: void localLogin(com.bookoo.bkapp.util.API$BasicListener)> --> $r0 := @parameter0: com.bookoo.bkapp.util.API$BasicListener
+<com.bookoo.bkapp.util.API: void get()> --> r0 := @this: com.bookoo.bkapp.util.API
+<com.bookoo.bkapp.util.API$MyTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.bookoo.bkapp.util.API$MyTask
+<com.bookoo.bkapp.util.API$MyTask: void onPostExecute(java.lang.String)> --> r1 := @this: com.bookoo.bkapp.util.API$MyTask
+<com.bookoo.bkapp.model.ServerResponse: void <init>(java.lang.String)> --> r0 := @this: com.bookoo.bkapp.model.ServerResponse
+<com.bookoo.bkapp.model.ServerResponse: void <init>(java.lang.String)> --> r0.<com.bookoo.bkapp.model.ServerResponse: org.json.JSONObject data> = $r2
+<com.bookoo.bkapp.model.ServerResponse: void <init>(java.lang.String)> --> $r3 := @caughtexception
+<com.bookoo.bkapp.util.Bookoo: void error(java.lang.String,java.lang.Exception)> --> $r1 := @parameter0: java.lang.String
+<com.bookoo.bkapp.util.Bookoo: void error(java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, "exception", $r0)
+--------------------------------------------------------
+
+<com.bookoo.bkapp.model.Account: android.location.Location getGPSLocation()> --> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.bookoo.bkapp.model.City: com.bookoo.bkapp.model.City getClosest(com.bookoo.bkapp.model.Cities)> --> $r1 = staticinvoke <com.bookoo.bkapp.model.Account: android.location.Location getGPSLocation()>()
+<com.bookoo.bkapp.model.City: com.bookoo.bkapp.model.City getClosest(com.bookoo.bkapp.model.Cities)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.bookoo.bkapp.model.City: com.bookoo.bkapp.model.City getClosest(com.bookoo.bkapp.model.Cities)> --> $r2 = $r3
+<com.bookoo.bkapp.activities.WelcomeActivity: void useGPS(android.view.View)> --> $r3 = staticinvoke <com.bookoo.bkapp.model.City: com.bookoo.bkapp.model.City getClosest(com.bookoo.bkapp.model.Cities)>($r2)
+<com.bookoo.bkapp.activities.WelcomeActivity: void useGPS(android.view.View)> --> if $r3 == null goto staticinvoke <com.bookoo.bkapp.util.Misc: void displayToast(java.lang.String)>("Nearest bookoo could not be selected")
+<com.bookoo.bkapp.model.City: void save(com.bookoo.bkapp.util.API$BasicListener)> --> r1 := @this: com.bookoo.bkapp.model.City
+<com.bookoo.bkapp.util.Storage: void putString(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.bookoo.bkapp.util.Storage: void putString(java.lang.String,java.lang.String)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.bookoo.bkapp.model.Account: android.location.Location getGPSLocation()> --> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.bookoo.bkapp.fragments.EditItemForm: void determineLocation()> --> $r3 = staticinvoke <com.bookoo.bkapp.model.Account: android.location.Location getGPSLocation()>()
+<com.bookoo.bkapp.fragments.EditItemForm: void determineLocation()> --> if $r3 == null goto (branch)
+<com.bookoo.bkapp.model.Location: java.lang.String getGPSName(double,double)> --> $d1 := @parameter0: double
+<com.bookoo.bkapp.util.Bookoo: void debug(java.lang.String,java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<com.bookoo.bkapp.util.Bookoo: void debug(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r0)
+--------------------------------------------------------
+

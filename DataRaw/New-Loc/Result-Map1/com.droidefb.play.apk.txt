@@ -1,0 +1,912 @@
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS favorites (_id integer primary key autoincrement, ordinal integer default(0), icao char(10) unique not null, locked boolean default(0) not null)")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r3)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routes", $r9, "name like \'%arrival%\' OR name like \'%departure%\' OR name like \'%transition%\'", null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r12.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS userwaypoints (name CHAR(10) PRIMARY KEY NOT NULL, lat DOUBLE, lon DOUBLE, lonlen DOUBLE, deleted BOOLEAN, updatetime DATETIME)")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r20 = virtualinvoke $r17.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r14.<java.io.DataOutputStream: void writeBytes(java.lang.String)>($r2)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, "Cannot update AIR/SIGMETs")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS pilots (pilotname varchar(255) primary key not null, pilothomebase varchar(255), pilotphone varchar(255), pilotaddress varchar(255))")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routes r, fixes f", $r9, "(r.route = f.route) AND (r.name like \'%route no%\' OR r.name like \'%airway no%\')", null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AirportsDB", $r2)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS plate_scribbles (ident string, title string, scribbles string, page integer)")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BluetoothManager", "Scan finished")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r9, $r6)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("DroidEFB", $r0)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, $r10)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("version", $r2, null, null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r20 = virtualinvoke $r17.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS aircraft (acident varchar(255) primary key not null, actype varchar(255), faaequip varchar(255), icaoequip varchar(255), icaoxpdr varchar(255), emgradio varchar(255), surviveequip varchar(255), jackets varchar(255), dingies varchar(255), dinghiescap varchar(255), dinghiescovered varchar(255), safetyremarks varchar(255), acflighttype varchar(255), acwaketype varchar(255), tas varchar(255), color varchar(255))")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r9, $r21)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r12.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BluetoothManager", "Starting a scan...")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, $r6)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE TestIssue79994")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("XXXXX", $r3)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS flightplan (fptype int, acident varchar(255), actype varchar(255), tas varchar(255), depart varchar(255), deptime varchar(255), altitude varchar(255), route varchar(255), dest varchar(255), timeenroute varchar(255), remarks varchar(255), fuel varchar(255), alternate varchar(255), pilotname varchar(255), pilothomebase varchar(255), pilotphone varchar(255), pilotaddress varchar(255), numsouls varchar(255), color varchar(255), closing varchar(255), faaequip varchar(255), icaoequip varchar(255), icaoxpdr varchar(255), emgradio varchar(255), surviveequip varchar(255), jackets varchar(255), dingies varchar(255), dinghiescap varchar(255), dinghiescovered varchar(255), safetyremarks varchar(255), acflighttype varchar(255), acwaketype varchar(255))")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS TestIssue79994 (TestID int primary key not null)")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS TestIssue79994 (TestID int primary key not null)")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("airports", $r9, null, null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r17.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Login", $r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("fixes", $r9, null, null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, $r8)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("version", $r2, null, null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r20 = virtualinvoke $r17.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, "Cannot update PIREPs")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS flights (_id integer primary key autoincrement,aircraft_id char(20), dep_icao char(10), dep_lat double not null, dep_lon double not null, dep_time datetime not null, route varchar(1024), track blob, arr_icao char(10), arr_lat double not null, arr_lon double not null, duration_s long not null, tach_start float,tach_end float,hobbs_start float,hobbs_end float,comments varchar(1024),updated datetime not null, timer_clean boolean not null, synchronized boolean not null, deleted boolean not null )")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r4.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BluetoothManager", $r3)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r13 = virtualinvoke $r9.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("fixes", $r10, $r12, null, null, null, "_id")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS plate_scribbles (ident string, title string, scribbles string, page integer)")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r9, $r6)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("airports", $r4, "(icao = ?) AND (ident NOT LIKE \'%-%\')", $r0, null, null, "icao")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("com.droidefb.value.tab", $i0)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r4.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r14.<java.io.DataOutputStream: void writeBytes(java.lang.String)>($r2)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("userwaypoints", $r7, null, null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS flightplans (name CHAR(1024) PRIMARY KEY NOT NULL, contents CHAR(1024) UNIQUE, updatetime DATETIME, deleted DATETIME)")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r27.<java.net.URL: void <init>(java.lang.String)>($r6)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[],int,int)>($r2, 0, $i0)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BluetoothManager", $r8)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r9, $r6)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("OutOfMemoryError", "http downloading to string")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("com.droidefb.value.ident", $r2)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r3)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DroidEFB", $r3)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AirportsDB", $r2)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("OutOfMemoryError", "http downloading to string")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("aliases", $r6, "fix=?", $r0, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS aircraft (acident varchar(255) primary key not null, actype varchar(255), faaequip varchar(255), icaoequip varchar(255), icaoxpdr varchar(255), emgradio varchar(255), surviveequip varchar(255), jackets varchar(255), dingies varchar(255), dinghiescap varchar(255), dinghiescovered varchar(255), safetyremarks varchar(255), acflighttype varchar(255), acwaketype varchar(255), tas varchar(255), color varchar(255))")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, "Cannot update AIR/SIGMETs")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("userwaypoints", $r9, "deleted=\'0\'", null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS pilots (pilotname varchar(255) primary key not null, pilothomebase varchar(255), pilotphone varchar(255), pilotaddress varchar(255))")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("com.droidefb.value.directto", $z0)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r27.<java.net.URL: void <init>(java.lang.String)>($r6)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r14.<java.io.DataOutputStream: void writeBytes(java.lang.String)>($r2)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r9, $r21)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routes", $r9, "name like \'%arrival%\' OR name like \'%departure%\' OR name like \'%transition%\'", null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[],int,int)>($r2, 0, $i0)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r20 = virtualinvoke $r17.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r18 = virtualinvoke $r27.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r12.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS flightplans (name CHAR(1024) PRIMARY KEY NOT NULL, contents CHAR(1024) UNIQUE, updatetime DATETIME, deleted DATETIME)")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("userwaypoints", $r7, null, null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS favorites (_id integer primary key autoincrement, ordinal integer default(0), icao char(10) unique not null, locked boolean default(0) not null)")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("DroidEFB", $r0)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r17.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BluetoothManager", "Scan finished")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routes r, fixes f", $r9, "(r.route = f.route) AND (r.name like \'%route no%\' OR r.name like \'%airway no%\')", null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("XXXXX", $r3)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, $r6)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r1, "Cannot update METARs")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r12.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, $r10)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS flightplan (fptype int, acident varchar(255), actype varchar(255), tas varchar(255), depart varchar(255), deptime varchar(255), altitude varchar(255), route varchar(255), dest varchar(255), timeenroute varchar(255), remarks varchar(255), fuel varchar(255), alternate varchar(255), pilotname varchar(255), pilothomebase varchar(255), pilotphone varchar(255), pilotaddress varchar(255), numsouls varchar(255), color varchar(255), closing varchar(255), faaequip varchar(255), icaoequip varchar(255), icaoxpdr varchar(255), emgradio varchar(255), surviveequip varchar(255), jackets varchar(255), dingies varchar(255), dinghiescap varchar(255), dinghiescovered varchar(255), safetyremarks varchar(255), acflighttype varchar(255), acwaketype varchar(255))")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, "Cannot update PIREPs")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BluetoothManager", $r3)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BluetoothManager", "Starting a scan...")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Login", $r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("com.droidefb.value.ident", $r2)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<java.io.FileWriter: void write(java.lang.String)>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS flights (_id integer primary key autoincrement,aircraft_id char(20), dep_icao char(10), dep_lat double not null, dep_lon double not null, dep_time datetime not null, route varchar(1024), track blob, arr_icao char(10), arr_lat double not null, arr_lon double not null, duration_s long not null, tach_start float,tach_end float,hobbs_start float,hobbs_end float,comments varchar(1024),updated datetime not null, timer_clean boolean not null, synchronized boolean not null, deleted boolean not null )")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r17.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, $r8)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE TestIssue79994")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r9, $r6)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r4.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("airports", $r9, null, null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r1, "Cannot update METARs")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("airports", $r4, "(icao = ?) AND (ident NOT LIKE \'%-%\')", $r0, null, null, "icao")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r17.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("com.droidefb.value.tab", $i0)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r13 = virtualinvoke $r9.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("fixes", $r10, $r12, null, null, null, "_id")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BluetoothManager", $r8)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r18 = virtualinvoke $r27.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("com.droidefb.value.directto", $z0)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("userwaypoints", $r9, "deleted=\'0\'", null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DroidEFB", $r3)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("aliases", $r6, "fix=?", $r0, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r4.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS userwaypoints (name CHAR(10) PRIMARY KEY NOT NULL, lat DOUBLE, lon DOUBLE, lonlen DOUBLE, deleted BOOLEAN, updatetime DATETIME)")
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("fixes", $r9, null, null, null, null, null)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r4)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d4 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r14.<java.io.DataOutputStream: void writeBytes(java.lang.String)>($r2)
+Component=> com.droidefb.play.PlayDroidEFBActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

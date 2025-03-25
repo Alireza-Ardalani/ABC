@@ -1,0 +1,30 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("UserManager.UserPremiumEndDate", $l0)
+Component=> com.hudway.glass.controllers.settings.FuelPriceSettingsGlassActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("HWEcoIndex", "Locator has not been set")
+Component=> com.hudway.glass.controllers.settings.FuelPriceSettingsGlassActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("category", $r2)
+Component=> com.hudway.glass.controllers.settings.FuelPriceSettingsGlassActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("HWFuelCalculation", "Stopped")
+Component=> com.hudway.glass.controllers.settings.FuelPriceSettingsGlassActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r5, "No weather update required")
+Component=> com.hudway.glass.controllers.settings.FuelPriceSettingsGlassActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

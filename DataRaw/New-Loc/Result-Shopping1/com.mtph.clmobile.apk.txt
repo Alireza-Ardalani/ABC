@@ -1,0 +1,18 @@
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DataBerriesNatLocation", "catch Exception in DataBerriesNativeLocationReceiver\'s OnReceive")
+Component=> com.databerries.DataBerriesNativeLocationReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("AskingPoint", "Failed to fetch last known location", $r11)
+Component=> com.vungle.warren.ui.VungleActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DataBerriesNatLocation", "catch Exception in DataBerriesNativeLocationReceiver\'s OnReceive")
+Component=> com.databerries.DataBerriesNativeLocationReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,108 @@
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("usersLongitude", $f0)
+Component=> androidDeveloperJoe.babyTimer.MainActivity
+ComponentColor=> GREEN
+android.location.Location
+android.content.SharedPreferences$Editor
+androidDeveloperJoe.babyTimer.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.LogcatLogger
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.AdLocation
+com.amazon.device.ads.MobileAdsLogger
+android.util.Log
+com.amazon.device.ads.MobileAdsLogger
+android.location.LocationManager
+Category: com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.LogcatLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.AdLocation-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("usersLatitude", $f0)
+Component=> androidDeveloperJoe.babyTimer.MainActivity
+ComponentColor=> GREEN
+android.location.Location
+android.content.SharedPreferences$Editor
+androidDeveloperJoe.babyTimer.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("usersLongitude", $f0)
+Component=> androidDeveloperJoe.babyTimer.MainActivity
+ComponentColor=> GREEN
+android.location.Location
+android.content.SharedPreferences$Editor
+androidDeveloperJoe.babyTimer.MainActivity
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("usersLatitude", $f0)
+Component=> androidDeveloperJoe.babyTimer.MainActivity
+ComponentColor=> GREEN
+android.content.SharedPreferences$Editor
+androidDeveloperJoe.babyTimer.MainActivity
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+com.amazon.device.ads.LogcatLogger
+com.amazon.device.ads.MobileAdsLogger
+android.util.Log
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.AdLocation
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+android.location.LocationManager
+Category: com.amazon.device.ads.LogcatLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.AdLocation-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+android.util.Log
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.LogcatLogger
+com.amazon.device.ads.AdLocation
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+android.location.LocationManager
+Category: com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.LogcatLogger-*-com.amazon.device.ads.AdLocation-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+com.amazon.device.ads.MobileAdsLogger
+android.util.Log
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.LogcatLogger
+com.amazon.device.ads.AdLocation
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+android.location.LocationManager
+Category: com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.LogcatLogger-*-com.amazon.device.ads.AdLocation-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+com.amazon.device.ads.LogcatLogger
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.AdLocation
+com.amazon.device.ads.MobileAdsLogger
+android.util.Log
+com.amazon.device.ads.MobileAdsLogger
+android.location.LocationManager
+Category: com.amazon.device.ads.LogcatLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.AdLocation-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-
+-----------------------------------------------------------------
+androidDeveloperJoe.babyTimer.apk: 1063725

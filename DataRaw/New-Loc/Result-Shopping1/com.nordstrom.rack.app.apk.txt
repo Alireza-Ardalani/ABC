@@ -1,0 +1,18 @@
+Source=> $r5 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("prefs", $r2)
+Component=> com.footmarks.footmarkssdk.FootmarksBeaconScanner
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FMSdkPref", $r5)
+Component=> com.footmarks.footmarkssdk.FootmarksBeaconScanner
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r8.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.footmarks.footmarkssdk.FootmarksBeaconScanner
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

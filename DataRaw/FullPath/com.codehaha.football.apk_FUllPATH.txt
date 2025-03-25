@@ -1,0 +1,164 @@
+<com.codehaha.football.GPSTrack: double getLongitude()> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.codehaha.football.GPSTrack: double getLongitude()> --> <com.codehaha.football.GPSTrack: double longitude> = $d0
+<com.codehaha.football.MainActivity: void get_location()> --> $d1 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLongitude()>()
+<com.codehaha.football.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> virtualinvoke r0.<com.codehaha.football.MainActivity: void get_location()>()
+<dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.codehaha.football.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>(0, $r7, $r8)
+<dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)> --> if $i0 == 19 goto (branch)
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.GPSTrack: double getLongitude()> --> $d0 = <com.codehaha.football.GPSTrack: double longitude>
+<com.codehaha.football.MainActivity: void get_location()> --> $d1 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLongitude()>()
+<com.codehaha.football.MainActivity: void get_location()> --> $b1 = $d1 cmpl 0.0
+<com.codehaha.football.MainActivity: void get_location()> --> if $b1 != 0 goto $r4 = <com.codehaha.football.MainActivity: java.lang.String ASWV_URL>
+<com.codehaha.football.MainActivity: void get_location()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("New Updated Location:", "NULL")
+--------------------------------------------------------
+
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> r0.<com.codehaha.football.GPSTrack: android.location.Location location> = $r4
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> if $r4 != null goto $r4 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LOC-TP", "GPS")
+--------------------------------------------------------
+
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> r0.<com.codehaha.football.GPSTrack: android.location.Location location> = $r4
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.GPSTrack: double getLatitude()> --> r0 := @this: com.codehaha.football.GPSTrack
+<com.codehaha.football.GPSTrack: double getLatitude()> --> $r1 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: double getLatitude()> --> if $r1 == null goto $d0 = <com.codehaha.football.GPSTrack: double latitude>
+<com.codehaha.football.GPSTrack: double getLatitude()> --> <com.codehaha.football.GPSTrack: double latitude> = $d0
+<com.codehaha.football.GPSTrack: double getLatitude()> --> $d0 = <com.codehaha.football.GPSTrack: double latitude>
+<com.codehaha.football.MainActivity: void get_location()> --> $d0 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLatitude()>()
+<com.codehaha.football.MainActivity: void get_location()> --> $b1 = $d0 cmpl 0.0
+<com.codehaha.football.MainActivity: void get_location()> --> if $b1 != 0 goto $r4 = <com.codehaha.football.MainActivity: java.lang.String ASWV_URL>
+<com.codehaha.football.MainActivity: void get_location()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("New Updated Location:", "NULL")
+--------------------------------------------------------
+
+<com.codehaha.football.GPSTrack: double getLatitude()> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.codehaha.football.GPSTrack: double getLatitude()> --> <com.codehaha.football.GPSTrack: double latitude> = $d0
+<com.codehaha.football.MainActivity: void get_location()> --> $d0 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLatitude()>()
+<com.codehaha.football.MainActivity$Callback: void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap)> --> virtualinvoke $r4.<com.codehaha.football.MainActivity: void get_location()>()
+<dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)> --> virtualinvoke $r6.<com.codehaha.football.MainActivity$Callback: void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap)>(null, "", null)
+<dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)> --> $r2 = new com.kobakei.ratethisapp.RateThisApp$3
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> r0 := @this: com.codehaha.football.GPSTrack
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.GPSTrack: double getLatitude()> --> $d0 = <com.codehaha.football.GPSTrack: double latitude>
+<com.codehaha.football.MainActivity: void get_location()> --> $d0 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLatitude()>()
+<com.codehaha.football.MainActivity: void get_location()> --> $b1 = $d0 cmpl 0.0
+<com.codehaha.football.MainActivity: void get_location()> --> if $b1 != 0 goto $r4 = <com.codehaha.football.MainActivity: java.lang.String ASWV_URL>
+<com.codehaha.football.MainActivity: void get_location()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("New Updated Location:", "NULL")
+--------------------------------------------------------
+
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> <com.codehaha.football.GPSTrack: double longitude> = $d0
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.MainActivity: void get_location()> --> $d1 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLongitude()>()
+<com.codehaha.football.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> virtualinvoke r0.<com.codehaha.football.MainActivity: void get_location()>()
+<dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.codehaha.football.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>(0, $r7, $r8)
+<dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)> --> if $i0 == 19 goto (branch)
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.GPSTrack: double getLongitude()> --> $d0 = <com.codehaha.football.GPSTrack: double longitude>
+<com.codehaha.football.MainActivity: void get_location()> --> $d1 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLongitude()>()
+<com.codehaha.football.MainActivity: void get_location()> --> $b1 = $d1 cmpl 0.0
+<com.codehaha.football.MainActivity: void get_location()> --> if $b1 != 0 goto $r4 = <com.codehaha.football.MainActivity: java.lang.String ASWV_URL>
+<com.codehaha.football.MainActivity: void get_location()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("New Updated Location:", "NULL")
+--------------------------------------------------------
+
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> r0.<com.codehaha.football.GPSTrack: android.location.Location location> = $r4
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.GPSTrack: double getLatitude()> --> r0 := @this: com.codehaha.football.GPSTrack
+<com.codehaha.football.GPSTrack: double getLatitude()> --> $r1 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: double getLatitude()> --> if $r1 == null goto $d0 = <com.codehaha.football.GPSTrack: double latitude>
+<com.codehaha.football.GPSTrack: double getLatitude()> --> <com.codehaha.football.GPSTrack: double latitude> = $d0
+<com.codehaha.football.GPSTrack: double getLatitude()> --> $d0 = <com.codehaha.football.GPSTrack: double latitude>
+<com.codehaha.football.MainActivity: void get_location()> --> $d0 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLatitude()>()
+<com.codehaha.football.MainActivity: void get_location()> --> $b1 = $d0 cmpl 0.0
+<com.codehaha.football.MainActivity: void get_location()> --> if $b1 != 0 goto $r4 = <com.codehaha.football.MainActivity: java.lang.String ASWV_URL>
+<com.codehaha.football.MainActivity: void get_location()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("New Updated Location:", "NULL")
+--------------------------------------------------------
+
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> r0.<com.codehaha.football.GPSTrack: android.location.Location location> = $r4
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> if $r4 != null goto $r4 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LOC-TP", "GPS")
+--------------------------------------------------------
+
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> <com.codehaha.football.GPSTrack: double latitude> = $d0
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.MainActivity: void get_location()> --> $d0 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLatitude()>()
+<com.codehaha.football.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> virtualinvoke r0.<com.codehaha.football.MainActivity: void get_location()>()
+<dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.codehaha.football.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>(0, $r7, $r8)
+<dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)> --> $r2 = new com.kobakei.ratethisapp.RateThisApp$3
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> r0 := @this: com.codehaha.football.GPSTrack
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.GPSTrack: double getLatitude()> --> $d0 = <com.codehaha.football.GPSTrack: double latitude>
+<com.codehaha.football.MainActivity: void get_location()> --> $d0 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLatitude()>()
+<com.codehaha.football.MainActivity: void get_location()> --> $b1 = $d0 cmpl 0.0
+<com.codehaha.football.MainActivity: void get_location()> --> if $b1 != 0 goto $r4 = <com.codehaha.football.MainActivity: java.lang.String ASWV_URL>
+<com.codehaha.football.MainActivity: void get_location()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("New Updated Location:", "NULL")
+--------------------------------------------------------
+
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> <com.codehaha.football.GPSTrack: double longitude> = $d0
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.MainActivity: void get_location()> --> $d1 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLongitude()>()
+<com.codehaha.football.MainActivity$Callback: void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap)> --> virtualinvoke $r4.<com.codehaha.football.MainActivity: void get_location()>()
+<dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)> --> virtualinvoke $r6.<com.codehaha.football.MainActivity$Callback: void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap)>(null, "", null)
+<dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)> --> if $i0 == 2 goto (branch)
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.GPSTrack: double getLongitude()> --> $d0 = <com.codehaha.football.GPSTrack: double longitude>
+<com.codehaha.football.MainActivity: void get_location()> --> $d1 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLongitude()>()
+<com.codehaha.football.MainActivity: void get_location()> --> $b1 = $d1 cmpl 0.0
+<com.codehaha.football.MainActivity: void get_location()> --> if $b1 != 0 goto $r4 = <com.codehaha.football.MainActivity: java.lang.String ASWV_URL>
+<com.codehaha.football.MainActivity: void get_location()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("New Updated Location:", "NULL")
+--------------------------------------------------------
+
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> <com.codehaha.football.GPSTrack: double latitude> = $d0
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.MainActivity: void get_location()> --> $d0 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLatitude()>()
+<com.codehaha.football.MainActivity: void onResume()> --> virtualinvoke r0.<com.codehaha.football.MainActivity: void get_location()>()
+<dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.codehaha.football.MainActivity: void onResume()>()
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> staticinvoke <dummyMainClass: com.codehaha.football.MainActivity dummyMainMethod_com_codehaha_football_MainActivity(android.content.Intent)>(null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 2 goto (branch)
+<com.codehaha.football.MainActivity: void onCreate(android.os.Bundle)> --> if $z0 == 0 goto $r3 = virtualinvoke r0.<com.codehaha.football.MainActivity: android.view.View findViewById(int)>(2131230886)
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> r0 := @this: com.codehaha.football.GPSTrack
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: void <init>(android.content.Context)> --> virtualinvoke r0.<com.codehaha.football.GPSTrack: android.location.Location getLocation()>()
+<com.codehaha.football.MainActivity: void get_location()> --> specialinvoke $r3.<com.codehaha.football.GPSTrack: void <init>(android.content.Context)>(r0)
+<com.codehaha.football.GPSTrack: double getLatitude()> --> $d0 = <com.codehaha.football.GPSTrack: double latitude>
+<com.codehaha.football.MainActivity: void get_location()> --> $d0 = virtualinvoke $r3.<com.codehaha.football.GPSTrack: double getLatitude()>()
+<com.codehaha.football.MainActivity: void get_location()> --> $b1 = $d0 cmpl 0.0
+<com.codehaha.football.MainActivity: void get_location()> --> if $b1 != 0 goto $r4 = <com.codehaha.football.MainActivity: java.lang.String ASWV_URL>
+<com.codehaha.football.MainActivity: void get_location()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("New Updated Location:", "NULL")
+--------------------------------------------------------
+
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> r0.<com.codehaha.football.GPSTrack: android.location.Location location> = $r4
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> if $r4 != null goto $r4 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LOC-TP", "Network")
+--------------------------------------------------------
+
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> r0.<com.codehaha.football.GPSTrack: android.location.Location location> = $r4
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> $r4 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> if $r4 != null goto $r4 = r0.<com.codehaha.football.GPSTrack: android.location.Location location>
+<com.codehaha.football.GPSTrack: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LOC-TP", "Network")
+--------------------------------------------------------
+

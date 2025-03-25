@@ -1,0 +1,102 @@
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r37 := @caughtexception
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r9 = virtualinvoke $r3.<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)>($r9, 0, 0, 1)
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r6 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r9, "UTF-8")
+--------------------------------------------------------
+
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r37 := @caughtexception
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r8 = virtualinvoke $r3.<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)>($r8, 0, 0, 1)
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r6 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r8, "UTF-8")
+--------------------------------------------------------
+
+<com.mobimento.caponate.util.Location.LocManager: void init()> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.mobimento.caponate.util.Location.LocManager: void init()> --> r0.<com.mobimento.caponate.util.Location.LocManager: android.location.Location currentLocation> = $r8
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> virtualinvoke r0.<com.mobimento.caponate.util.Location.LocManager: void init()>()
+<com.mobimento.caponate.util.Location.LocManager: void stop()> --> r0 := @this: com.mobimento.caponate.util.Location.LocManager
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> virtualinvoke r0.<com.mobimento.caponate.util.Location.LocManager: void stop()>()
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> $r5 = r0.<com.mobimento.caponate.util.Location.LocManager: android.location.Location currentLocation>
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r11 = virtualinvoke $r10.<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)>(1)
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> if $r11 != null goto $r38 = new java.lang.StringBuilder
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r2 = "0.000000,0.000000"
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> if $z0 == 0 goto (branch)
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r2, "UTF-8")
+--------------------------------------------------------
+
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r37 := @caughtexception
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r4 = virtualinvoke $r3.<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)>($r2, 0, 0, 1)
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r2 = $r4
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> if $z0 == 0 goto $r6 = null
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> specialinvoke $r11.<java.net.URL: void <init>(java.lang.String)>($r2)
+--------------------------------------------------------
+
+<com.clevertap.android.sdk.CleverTapAPI: org.json.JSONObject getAppLaunchedFields()> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.clevertap.android.sdk.CleverTapAPI: org.json.JSONObject getAppLaunchedFields()> --> $r11 := @caughtexception
+<com.clevertap.android.sdk.Logger: void v(java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.clevertap.android.sdk.Logger: void v(java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+--------------------------------------------------------
+
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r37 := @caughtexception
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r8 = virtualinvoke $r3.<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)>($r8, 0, 0, 1)
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r6 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r8, "UTF-8")
+--------------------------------------------------------
+
+<com.mobimento.caponate.util.Location.LocManager: void init()> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.mobimento.caponate.util.Location.LocManager: void init()> --> r0.<com.mobimento.caponate.util.Location.LocManager: android.location.Location currentLocation> = $r8
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> virtualinvoke r0.<com.mobimento.caponate.util.Location.LocManager: void init()>()
+<com.mobimento.caponate.util.Location.LocManager: void stop()> --> r0 := @this: com.mobimento.caponate.util.Location.LocManager
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> virtualinvoke r0.<com.mobimento.caponate.util.Location.LocManager: void stop()>()
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> $r5 = r0.<com.mobimento.caponate.util.Location.LocManager: android.location.Location currentLocation>
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r11 = virtualinvoke $r10.<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)>(1)
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> if $r11 != null goto $r38 = new java.lang.StringBuilder
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r2 = "0.000000,0.000000"
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> if $z0 == 0 goto (branch)
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r2, "UTF-8")
+--------------------------------------------------------
+
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r37 := @caughtexception
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r4 = virtualinvoke $r3.<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)>($r2, 0, 0, 1)
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r2 = $r4
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> if $z0 == 0 goto $r6 = null
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> specialinvoke $r11.<java.net.URL: void <init>(java.lang.String)>($r2)
+--------------------------------------------------------
+
+<com.clevertap.android.sdk.CleverTapAPI: org.json.JSONObject getAppLaunchedFields()> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.clevertap.android.sdk.CleverTapAPI: org.json.JSONObject getAppLaunchedFields()> --> $r11 := @caughtexception
+<com.clevertap.android.sdk.Logger: void v(java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.clevertap.android.sdk.Logger: void v(java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+--------------------------------------------------------
+
+<com.mobimento.caponate.util.Location.LocManager: void init()> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.mobimento.caponate.util.Location.LocManager: void init()> --> r0.<com.mobimento.caponate.util.Location.LocManager: android.location.Location currentLocation> = $r8
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> virtualinvoke r0.<com.mobimento.caponate.util.Location.LocManager: void init()>()
+<com.mobimento.caponate.util.Location.LocManager: void stop()> --> r0 := @this: com.mobimento.caponate.util.Location.LocManager
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> virtualinvoke r0.<com.mobimento.caponate.util.Location.LocManager: void stop()>()
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> $r5 = r0.<com.mobimento.caponate.util.Location.LocManager: android.location.Location currentLocation>
+<com.mobimento.caponate.resource.CollectionResource: boolean openAndPrepare(int,com.mobimento.caponate.resource.CollectionFilter[],java.lang.String,com.mobimento.caponate.resource.CollectionResource$SortType)> --> $r11 = virtualinvoke $r10.<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)>(0)
+<com.mobimento.caponate.resource.CollectionResource: boolean openAndPrepare(int,com.mobimento.caponate.resource.CollectionFilter[],java.lang.String,com.mobimento.caponate.resource.CollectionResource$SortType)> --> if $r11 == null goto $r8 = r0.<com.mobimento.caponate.resource.CollectionResource: com.mobimento.caponate.util.db.DbHelper myDb>
+<com.mobimento.caponate.util.db.DbHelper: void sqlCommand(java.lang.String)> --> r0 := @this: com.mobimento.caponate.util.db.DbHelper
+<com.mobimento.caponate.util.db.DbHelper: void sqlCommand(java.lang.String)> --> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r1)
+--------------------------------------------------------
+
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)> --> $r37 := @caughtexception
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r9 = virtualinvoke $r3.<com.mobimento.caponate.util.GlobalVariablesManager: java.lang.String replaceValues(java.lang.String,boolean,boolean,boolean)>($r9, 0, 0, 1)
+<com.mobimento.caponate.action.ActionManager$2: void run()> --> $r6 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r9, "UTF-8")
+--------------------------------------------------------
+
+<com.mobimento.caponate.util.Location.LocManager: void init()> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.mobimento.caponate.util.Location.LocManager: void init()> --> r0.<com.mobimento.caponate.util.Location.LocManager: android.location.Location currentLocation> = $r8
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> virtualinvoke r0.<com.mobimento.caponate.util.Location.LocManager: void init()>()
+<com.mobimento.caponate.util.Location.LocManager: void stop()> --> r0 := @this: com.mobimento.caponate.util.Location.LocManager
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> virtualinvoke r0.<com.mobimento.caponate.util.Location.LocManager: void stop()>()
+<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)> --> $r5 = r0.<com.mobimento.caponate.util.Location.LocManager: android.location.Location currentLocation>
+<com.mobimento.caponate.resource.CollectionResource: boolean openAndPrepare(int,com.mobimento.caponate.resource.CollectionFilter[],java.lang.String,com.mobimento.caponate.resource.CollectionResource$SortType)> --> $r11 = virtualinvoke $r10.<com.mobimento.caponate.util.Location.LocManager: android.location.Location getCurrentLocation(boolean)>(0)
+<com.mobimento.caponate.resource.CollectionResource: boolean openAndPrepare(int,com.mobimento.caponate.resource.CollectionFilter[],java.lang.String,com.mobimento.caponate.resource.CollectionResource$SortType)> --> if $r11 == null goto $r8 = r0.<com.mobimento.caponate.resource.CollectionResource: com.mobimento.caponate.util.db.DbHelper myDb>
+<com.mobimento.caponate.util.db.DbHelper: void sqlCommand(java.lang.String)> --> r0 := @this: com.mobimento.caponate.util.db.DbHelper
+<com.mobimento.caponate.util.db.DbHelper: void sqlCommand(java.lang.String)> --> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r1)
+--------------------------------------------------------
+

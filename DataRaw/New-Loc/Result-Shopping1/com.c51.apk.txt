@@ -1,0 +1,276 @@
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("decide.mixpanel.com")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Timeout")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r0.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>($r1)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for GPS updates")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r0)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r9.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>($r6, 0, $i0)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ADJUST_EVENT", $r7)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("api.mixpanel.com")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for GPS updates")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for Network updates")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r10)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r3)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r2)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Timeout")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r0.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>($r1)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("decide.mixpanel.com")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r0)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r2)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r3)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("api.mixpanel.com")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r10)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for Network updates")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r12)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ADJUST_EVENT", $r7)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r2)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r2)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r1)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r9.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>($r6, 0, $i0)
+Component=> com.c51.activity.FindingAreaActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

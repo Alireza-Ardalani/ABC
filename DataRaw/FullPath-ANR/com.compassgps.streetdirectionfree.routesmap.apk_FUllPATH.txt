@@ -1,0 +1,15 @@
+<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location getLocation()> --> r0.<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location location> = $r4
+<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location getLocation()> --> $z0 = r0.<com.compassgps.streetdirectionfree.routesmap.GPSTracker: boolean isGPSEnabled>
+<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location getLocation()> --> $r4 = r0.<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location location>
+<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location getLocation()> --> if $r4 != null goto $r4 = r0.<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location location>
+<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS", "GPS Enabled")
+--------------------------------------------------------
+
+<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location getLocation()> --> r0.<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location location> = $r4
+<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location getLocation()> --> $r4 = r0.<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location location>
+<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location getLocation()> --> if $r4 != null goto $r4 = r0.<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location location>
+<com.compassgps.streetdirectionfree.routesmap.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS", "GPS Enabled")
+--------------------------------------------------------
+

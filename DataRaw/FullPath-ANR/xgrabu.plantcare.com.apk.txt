@@ -1,0 +1,73 @@
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GET_WEATHER", $r1)
+Component=> xgrabu.plantcare.com.ui.Activity_new_alerta_tractament
+ComponentColor=> GREEN
+xgrabu.plantcare.com.tasks.GetWeatherFiveDTask
+android.location.Location
+android.util.Log
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GET_WEATHER", $r14)
+Component=> xgrabu.plantcare.com.ui.Activity_map
+ComponentColor=> GREEN
+xgrabu.plantcare.com.tasks.GetWeatherOneDTask
+android.util.Log
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GET_WEATHER", $r14)
+Component=> xgrabu.plantcare.com.ui.Activity_map
+ComponentColor=> GREEN
+xgrabu.plantcare.com.tasks.GetWeatherOneDTask
+android.location.Location
+android.util.Log
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GET_WEATHER", $r14)
+Component=> xgrabu.plantcare.com.ui.Activity_map
+ComponentColor=> GREEN
+xgrabu.plantcare.com.tasks.GetWeatherOneDTask
+android.util.Log
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GET_WEATHER", $r1)
+Component=> xgrabu.plantcare.com.ui.Activity_new_alerta_tractament
+ComponentColor=> GREEN
+xgrabu.plantcare.com.tasks.GetWeatherFiveDTask
+android.util.Log
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GET_WEATHER", $r1)
+Component=> xgrabu.plantcare.com.ui.Activity_new_alerta_tractament
+ComponentColor=> GREEN
+xgrabu.plantcare.com.tasks.GetWeatherFiveDTask
+android.util.Log
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GET_WEATHER", $r1)
+Component=> xgrabu.plantcare.com.ui.Activity_new_alerta_tractament
+ComponentColor=> GREEN
+xgrabu.plantcare.com.tasks.GetWeatherFiveDTask
+android.util.Log
+android.location.Location
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GET_WEATHER", $r14)
+Component=> xgrabu.plantcare.com.ui.Activity_map
+ComponentColor=> GREEN
+xgrabu.plantcare.com.tasks.GetWeatherOneDTask
+android.util.Log
+android.location.Location
+Category: LEGIT
+-----------------------------------------------------------------
+xgrabu.plantcare.com.apk: 1106769

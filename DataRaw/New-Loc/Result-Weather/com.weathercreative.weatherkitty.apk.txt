@@ -1,0 +1,24 @@
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MainActivity", "location Updated")
+Component=> com.weathercreative.weatherapps.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MainActivity", "Send to Amazon")
+Component=> com.weathercreative.weatherapps.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MainActivity", "location Updated")
+Component=> com.weathercreative.weatherapps.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MainActivity", "Send to Amazon")
+Component=> com.weathercreative.weatherapps.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,20 @@
+<com.isbx.icuracao.services.UserLocationService: void onCreate()> --> $r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.isbx.icuracao.services.UserLocationService: void onCreate()> --> if $r5 == null goto return
+<com.isbx.icuracao.services.UserLocationService: void sendLocation(java.lang.String,java.lang.String)> --> r0 := @this: com.isbx.icuracao.services.UserLocationService
+<com.isbx.icuracao.managers.NetworkManager: com.isbx.icuracao.managers.NetworkManager getInstance()> --> $r0 = <com.isbx.icuracao.managers.NetworkManager: com.isbx.icuracao.managers.NetworkManager sInstanace>
+<com.isbx.icuracao.managers.NetworkManager: void <init>()> --> r0 := @this: com.isbx.icuracao.managers.NetworkManager
+<com.squareup.okhttp.OkHttpClient: void <clinit>()> --> nop
+<com.squareup.okhttp.Protocol: void <clinit>()> --> nop
+<com.squareup.okhttp.Protocol: void <clinit>()> --> <com.squareup.okhttp.Protocol: com.squareup.okhttp.Protocol HTTP_1_1> = $r0
+<com.squareup.okhttp.internal.io.RealConnection: void connectTls(int,int,com.squareup.okhttp.internal.ConnectionSpecSelector)> --> $r31 = <com.squareup.okhttp.Protocol: com.squareup.okhttp.Protocol HTTP_1_1>
+<com.squareup.okhttp.internal.io.RealConnection: void connectTls(int,int,com.squareup.okhttp.internal.ConnectionSpecSelector)> --> $r22 := @caughtexception
+<com.squareup.okhttp.internal.Util: void closeQuietly(java.net.Socket)> --> $r0 := @parameter0: java.net.Socket
+<com.squareup.okhttp.internal.Util: void closeQuietly(java.net.Socket)> --> virtualinvoke $r0.<java.net.Socket: void close()>()
+--------------------------------------------------------
+
+<dummyMainClass: com.isbx.icuracao.services.UserLocationService dummyMainMethod_com_isbx_icuracao_services_UserLocationService(android.content.Intent)> --> virtualinvoke $r4.<com.isbx.icuracao.services.UserLocationService$LocationListener: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.isbx.icuracao.services.UserLocationService dummyMainMethod_com_isbx_icuracao_services_UserLocationService(android.content.Intent)> --> if $i0 == 10 goto (branch)
+<com.isbx.icuracao.services.UserLocationService$LocationListener: void onProviderDisabled(java.lang.String)> --> r0 := @this: com.isbx.icuracao.services.UserLocationService$LocationListener
+<com.isbx.icuracao.services.UserLocationService$LocationListener: void onProviderDisabled(java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+

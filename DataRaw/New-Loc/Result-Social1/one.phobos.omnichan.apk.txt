@@ -1,0 +1,180 @@
+Source=> $r1 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("UAM Loc Error", $r6)
+Component=> com.mobfox.sdk.interstitialads.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Network", "Network")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", "dmp exception")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxGraylog", "incomplete")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = virtualinvoke $r0.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>("mobfox-uam-bundle")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", "dmp exception")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxBanner", "google play error")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Network", "Network")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Error", "In sending update to server")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxGraylog", "incomplete")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("MobFoxNetwork", "Unable to complete request!", $r12)
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", "dmp.bundle throwable")
+Component=> one.phobos.omnichan.activities.RewardedVideoActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", "getAdvIdTask onPostExecute error")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r8 = virtualinvoke $r5.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>($r6)
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r8 = virtualinvoke $r5.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>($r6)
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", $r5)
+Component=> one.phobos.omnichan.activities.RewardedVideoActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", "dmp throwable")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxBanner", "dmp post failed")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxUtils", "read setting")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("", "getAdvIdTask onPostExecute error")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", "getAdvIdTask onPostExecute error")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", "dmp.bundle exception")
+Component=> one.phobos.omnichan.activities.RewardedVideoActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = virtualinvoke $r0.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>("mobfox-uam-bundle")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("MobFoxNetwork", "Unable to complete request!", $r12)
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxUtils", "read setting")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("", "getAdvIdTask onPostExecute error")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Error", "In sending update to server")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxBanner", "dmp post failed")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", "dmp throwable")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxBanner", "google play error")
+Component=> com.mobfox.sdk.services.MobFoxService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

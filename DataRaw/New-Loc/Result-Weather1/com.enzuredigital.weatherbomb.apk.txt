@@ -1,0 +1,12 @@
+Source=> $d0 = virtualinvoke $r15.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("longitude", $f0)
+Component=> com.enzuredigital.weatherbomb.WidgetUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r15.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("timezoneId", $r4)
+Component=> com.enzuredigital.weatherbomb.WidgetUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

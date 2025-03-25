@@ -1,0 +1,56 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.ridecharge.android.taximagic.view.ActiveRideActivity
+ComponentColor=> GREEN
+net.singular.sdk.Collector
+net.singular.sdk.SingularLog
+net.singular.sdk.SingularLog
+android.util.Log
+android.location.Location
+Category: net.singular.sdk.Collector-*-net.singular.sdk.SingularLog-*-net.singular.sdk.SingularLog-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("singular_sdk", $r2, $r3)
+Component=> com.ridecharge.android.taximagic.view.ActiveRideActivity
+ComponentColor=> GREEN
+net.singular.sdk.Collector
+net.singular.sdk.SingularLog
+android.location.Location
+android.util.Log
+net.singular.sdk.SingularLog
+Category: net.singular.sdk.Collector-*-net.singular.sdk.SingularLog-*-net.singular.sdk.SingularLog-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("singular_sdk", $r2, $r3)
+Component=> com.ridecharge.android.taximagic.view.ActiveRideActivity
+ComponentColor=> GREEN
+net.singular.sdk.Collector
+net.singular.sdk.SingularLog
+android.util.Log
+net.singular.sdk.SingularLog
+android.location.Location
+Category: net.singular.sdk.Collector-*-net.singular.sdk.SingularLog-*-net.singular.sdk.SingularLog-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.ridecharge.android.taximagic.view.ActiveRideActivity
+ComponentColor=> GREEN
+net.singular.sdk.Collector
+net.singular.sdk.SingularLog
+android.location.Location
+net.singular.sdk.SingularLog
+android.util.Log
+Category: net.singular.sdk.Collector-*-net.singular.sdk.SingularLog-*-net.singular.sdk.SingularLog-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("singular_sdk", $r2)
+Component=> com.ridecharge.android.taximagic.view.ActiveRideActivity
+ComponentColor=> GREEN
+net.singular.sdk.Collector
+android.util.Log
+android.location.LocationManager
+net.singular.sdk.Collector
+net.singular.sdk.SingularLog
+Category: net.singular.sdk.Collector-*-net.singular.sdk.Collector-*-net.singular.sdk.SingularLog-*-
+-----------------------------------------------------------------
+com.ridecharge.android.taximagic.apk: 1101704

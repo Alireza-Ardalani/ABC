@@ -1,0 +1,15 @@
+<com.dvtonder.chronus.weather.o: com.dvtonder.chronus.weather.h a(android.location.Location,boolean)> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.dvtonder.chronus.weather.d: java.lang.String a(android.location.Location,java.lang.String)> --> $r0 := @parameter0: android.location.Location
+<com.dvtonder.chronus.weather.d: android.support.v4.h.j a(android.location.Location,boolean)> --> $r0 := @parameter0: android.location.Location
+<com.dvtonder.chronus.weather.d: com.dvtonder.chronus.weather.j$a a(org.json.JSONObject,boolean,android.location.Location)> --> $r1 := @parameter0: org.json.JSONObject
+<com.dvtonder.chronus.weather.d: com.dvtonder.chronus.weather.j$a a(org.json.JSONObject,boolean,android.location.Location)> --> if $r2 != null goto (branch)
+<com.dvtonder.chronus.weather.d: android.location.Location b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.dvtonder.chronus.misc.l: com.dvtonder.chronus.misc.l$a a(java.lang.String,java.util.Map)> --> $r4 := @parameter0: java.lang.String
+<com.dvtonder.chronus.misc.l: com.dvtonder.chronus.misc.l$a a(java.lang.String,java.util.Map)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("HttpRetriever", $r4)
+--------------------------------------------------------
+
+<com.dvtonder.chronus.clock.worldclock.c: com.dvtonder.chronus.clock.worldclock.c$b c()> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+<com.dvtonder.chronus.clock.worldclock.c: com.dvtonder.chronus.clock.worldclock.c$b c()> --> $r18 := @caughtexception
+<com.dvtonder.chronus.clock.worldclock.c: com.dvtonder.chronus.clock.worldclock.c$b c()> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+

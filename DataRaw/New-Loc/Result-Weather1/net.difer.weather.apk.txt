@@ -1,0 +1,30 @@
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT name FROM sqlite_master WHERE type=\'table\'", null)
+Component=> com.tutelatechnologies.sdk.framework.TutelaSDKService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+Component=> com.tutelatechnologies.sdk.framework.TutelaSDKService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("DEVICE_ID_PREFERENCE", $r2)
+Component=> com.tutelatechnologies.sdk.framework.TutelaSDKService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, null)
+Component=> com.tutelatechnologies.sdk.framework.TutelaSDKService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r1, "1", null)
+Component=> com.tutelatechnologies.sdk.framework.TutelaSDKService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

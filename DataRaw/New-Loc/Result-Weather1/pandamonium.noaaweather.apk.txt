@@ -1,0 +1,228 @@
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("mapZoom", 7.0F)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>($r2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putLong(java.lang.String,long)>("id", $l0)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r4, $r3)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r5.<okhttp3.Call: void enqueue(okhttp3.Callback)>($r2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r4, $r3)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r6.<okhttp3.Call: void enqueue(okhttp3.Callback)>($r7)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r6.<okhttp3.Call: void enqueue(okhttp3.Callback)>($r7)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putLong(java.lang.String,long)>("id", $l0)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("imagerySource", $i0)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r5.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r3)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r5.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r3)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putLong(java.lang.String,long)>("id", $l0)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("mapLatBits", $l2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("imagerySource", $i0)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>($r2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("imagerySource", $i0)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("mapLonBits", $l2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r5.<okhttp3.Call: void enqueue(okhttp3.Callback)>($r2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("query_string", $r1)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("query_string", $r1)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("mapLonBits", $l2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("imagerySource", $i0)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r3.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r4)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putLong(java.lang.String,long)>("id", $l0)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("mapZoom", 7.0F)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("mapLatBits", $l2)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r3.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r4)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+Component=> pandamonium.noaaweather.NoaaWeatherActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

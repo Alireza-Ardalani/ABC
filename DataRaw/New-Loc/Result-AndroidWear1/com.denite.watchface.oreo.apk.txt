@@ -1,0 +1,360 @@
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("currentTemp", $i0)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("YahooWeather", $r13)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "onFailFindLocation()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "NOT ready to send request because connection not set")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Location cannot be found")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("currentTemp", $i0)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "onFailFindLocation()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "NOT ready to send request because connection not set")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lat", $r3)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "shutdown()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Location cannot be found")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("City", $r7)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r6)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("weatherCondition", $i0)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Watch weather updated from WeatherService")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r5)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Widget weather updated from WeatherService")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke r6.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lat", $r3)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r9 = virtualinvoke r6.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("YahooWeather", $r13)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r12 = virtualinvoke r10.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "gotWeatherInfo()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "No Results")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "syncData()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lon", $r4)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "onFailParsing()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "OpenWeather - Received Info")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "No Results")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Widget weather updated from WeatherService")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lon", $r4)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SettingsFragment", "getDrawWatchFace()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "OpenWeather - Received Info")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location", $r10)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SettingsFragment", "getDrawWatchFace()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r5)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r9 = virtualinvoke r6.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "gotWeatherInfo()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r12 = virtualinvoke r10.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location", $r10)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "onFailParsing()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "syncData()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "shutdown()")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke r6.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("City", $r7)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r6)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Watch weather updated from WeatherService")
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("weatherCondition", $i0)
+Component=> com.denite.watchface.oreo.services.WeatherService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

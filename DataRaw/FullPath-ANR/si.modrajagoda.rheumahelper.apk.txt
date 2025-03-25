@@ -1,0 +1,25 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("location", $r1)
+Component=> com.localytics.android.LocationUpdateReceiver
+ComponentColor=> RED
+com.localytics.android.LocationManager
+com.localytics.android.LocalyticsManager
+com.localytics.android.AnalyticsHandler
+android.os.Bundle
+com.localytics.android.LocationHandler
+android.location.Location
+Category: com.localytics.android.LocationManager-*-com.localytics.android.LocalyticsManager-*-com.localytics.android.AnalyticsHandler-*-com.localytics.android.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("location", $r1)
+Component=> com.localytics.android.LocationUpdateReceiver
+ComponentColor=> RED
+android.location.Location
+com.localytics.android.LocationManager
+com.localytics.android.LocalyticsManager
+com.localytics.android.AnalyticsHandler
+android.os.Bundle
+com.localytics.android.LocationHandler
+Category: com.localytics.android.LocationManager-*-com.localytics.android.LocalyticsManager-*-com.localytics.android.AnalyticsHandler-*-com.localytics.android.LocationHandler-*-
+-----------------------------------------------------------------
+si.modrajagoda.rheumahelper.apk: 1096790

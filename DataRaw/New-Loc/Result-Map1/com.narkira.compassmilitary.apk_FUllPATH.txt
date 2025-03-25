@@ -1,0 +1,54 @@
+<com.narkira.compassmilitary.MainActivity$9: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.narkira.compassmilitary.MainActivity: android.location.Location access$2302(com.narkira.compassmilitary.MainActivity,android.location.Location)> --> $r0 := @parameter0: com.narkira.compassmilitary.MainActivity
+<com.narkira.compassmilitary.MainActivity: android.location.Location access$2302(com.narkira.compassmilitary.MainActivity,android.location.Location)> --> $r0.<com.narkira.compassmilitary.MainActivity: android.location.Location lastKnownLocation> = $r1
+<com.narkira.compassmilitary.MainActivity$9: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> staticinvoke <com.narkira.compassmilitary.MainActivity: android.location.Location access$2302(com.narkira.compassmilitary.MainActivity,android.location.Location)>($r3, $r6)
+<com.narkira.compassmilitary.MainActivity$9: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> $r3 = r0.<com.narkira.compassmilitary.MainActivity$9: com.narkira.compassmilitary.MainActivity this$0>
+<dummyMainClass: com.narkira.compassmilitary.MainActivity dummyMainMethod_com_narkira_compassmilitary_MainActivity(android.content.Intent)> --> virtualinvoke $r11.<com.narkira.compassmilitary.MainActivity$9: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null)
+<com.narkira.compassmilitary.MainActivity$9: void <init>(com.narkira.compassmilitary.MainActivity)> --> return
+<com.narkira.compassmilitary.MainActivity$9: void <init>(com.narkira.compassmilitary.MainActivity)> --> r0.<com.narkira.compassmilitary.MainActivity$9: com.narkira.compassmilitary.MainActivity this$0> = $r1
+<dummyMainClass: com.narkira.compassmilitary.MainActivity dummyMainMethod_com_narkira_compassmilitary_MainActivity(android.content.Intent)> --> specialinvoke $r11.<com.narkira.compassmilitary.MainActivity$9: void <init>(com.narkira.compassmilitary.MainActivity)>($r0)
+<com.narkira.compassmilitary.MainActivity$5: void <init>(com.narkira.compassmilitary.MainActivity)> --> return
+<dummyMainClass: com.narkira.compassmilitary.MainActivity dummyMainMethod_com_narkira_compassmilitary_MainActivity(android.content.Intent)> --> specialinvoke $r10.<com.narkira.compassmilitary.MainActivity$5: void <init>(com.narkira.compassmilitary.MainActivity)>($r0)
+<com.narkira.compassmilitary.MainActivity$1: void <init>(com.narkira.compassmilitary.MainActivity)> --> return
+<dummyMainClass: com.narkira.compassmilitary.MainActivity dummyMainMethod_com_narkira_compassmilitary_MainActivity(android.content.Intent)> --> specialinvoke $r7.<com.narkira.compassmilitary.MainActivity$1: void <init>(com.narkira.compassmilitary.MainActivity)>($r0)
+<com.narkira.compassmilitary.utilities.CompassMagnetic: void <init>(android.content.Context)> --> return
+<dummyMainClass: com.narkira.compassmilitary.MainActivity dummyMainMethod_com_narkira_compassmilitary_MainActivity(android.content.Intent)> --> specialinvoke $r6.<com.narkira.compassmilitary.utilities.CompassMagnetic: void <init>(android.content.Context)>($r0)
+<com.narkira.compassmilitary.MainActivity$3: void <init>(com.narkira.compassmilitary.MainActivity)> --> return
+<dummyMainClass: com.narkira.compassmilitary.MainActivity dummyMainMethod_com_narkira_compassmilitary_MainActivity(android.content.Intent)> --> specialinvoke $r5.<com.narkira.compassmilitary.MainActivity$3: void <init>(com.narkira.compassmilitary.MainActivity)>($r0)
+<com.narkira.compassmilitary.MainActivity$4: void <init>(com.narkira.compassmilitary.MainActivity)> --> return
+<dummyMainClass: com.narkira.compassmilitary.MainActivity dummyMainMethod_com_narkira_compassmilitary_MainActivity(android.content.Intent)> --> specialinvoke $r4.<com.narkira.compassmilitary.MainActivity$4: void <init>(com.narkira.compassmilitary.MainActivity)>($r0)
+<com.narkira.compassmilitary.MainActivity$6: void <init>(com.narkira.compassmilitary.MainActivity)> --> return
+<dummyMainClass: com.narkira.compassmilitary.MainActivity dummyMainMethod_com_narkira_compassmilitary_MainActivity(android.content.Intent)> --> specialinvoke $r3.<com.narkira.compassmilitary.MainActivity$6: void <init>(com.narkira.compassmilitary.MainActivity)>($r0)
+<com.narkira.compassmilitary.MainActivity: void onResume()> --> return
+<com.narkira.compassmilitary.MainActivity: void locationUpdate()> --> return
+<com.narkira.compassmilitary.MainActivity: void locationUpdateForWeather()> --> return
+<com.narkira.compassmilitary.MainActivity: void locationUpdateForWeather()> --> $r4 = r0.<com.narkira.compassmilitary.MainActivity: android.location.Location lastKnownLocation>
+<com.narkira.compassmilitary.MainActivity: void locationUpdateForWeather()> --> if $r4 != null goto $r4 = r0.<com.narkira.compassmilitary.MainActivity: android.location.Location lastKnownLocation>
+<com.narkira.compassmilitary.MainActivity: void locationUpdateForWeather()> --> r0.<com.narkira.compassmilitary.MainActivity: android.location.Location lastKnownLocation> = $r4
+<com.narkira.compassmilitary.MainActivity: void fetchWeather(android.location.Location)> --> return
+<com.narkira.compassmilitary.MainActivity: void locationUpdateForWeather()> --> specialinvoke r0.<com.narkira.compassmilitary.MainActivity: void fetchWeather(android.location.Location)>($r4)
+<com.narkira.compassmilitary.MainActivity: void locationUpdateForWeather()> --> $r4 = r0.<com.narkira.compassmilitary.MainActivity: android.location.Location lastKnownLocation>
+<com.narkira.compassmilitary.MainActivity: void locationUpdateForWeather()> --> if $r4 == null goto return
+<com.narkira.compassmilitary.MainActivity: void fetchWeather(android.location.Location)> --> r0 := @this: com.narkira.compassmilitary.MainActivity
+<com.narkira.compassmilitary.MainActivity: void fetchWeather(android.location.Location)> --> $r4 = <com.survivingwithandroid.weather.lib.WeatherConfig$UNIT_SYSTEM: com.survivingwithandroid.weather.lib.WeatherConfig$UNIT_SYSTEM I>
+<com.narkira.compassmilitary.MainActivity: void fetchWeather(android.location.Location)> --> $r2.<com.survivingwithandroid.weather.lib.WeatherConfig: com.survivingwithandroid.weather.lib.WeatherConfig$UNIT_SYSTEM unitSystem> = $r4
+<com.survivingwithandroid.weather.lib.WeatherConfig: void <init>()> --> return
+<com.survivingwithandroid.weather.lib.WeatherConfig: void <init>()> --> r0.<com.survivingwithandroid.weather.lib.WeatherConfig: com.survivingwithandroid.weather.lib.WeatherConfig$UNIT_SYSTEM unitSystem> = $r1
+<com.survivingwithandroid.weather.lib.WeatherConfig: void <init>()> --> $r1 = <com.survivingwithandroid.weather.lib.WeatherConfig$UNIT_SYSTEM: com.survivingwithandroid.weather.lib.WeatherConfig$UNIT_SYSTEM M>
+<com.narkira.compassmilitary.MainActivity: void fetchWeather(android.location.Location)> --> specialinvoke $r2.<com.survivingwithandroid.weather.lib.WeatherConfig: void <init>()>()
+<com.narkira.compassmilitary.MainActivity: void locationUpdate()> --> specialinvoke r0.<com.narkira.compassmilitary.MainActivity: void locationUpdateForWeather()>()
+<com.narkira.compassmilitary.MainActivity: void onResume()> --> virtualinvoke r0.<com.narkira.compassmilitary.MainActivity: void locationUpdate()>()
+<dummyMainClass: com.narkira.compassmilitary.MainActivity dummyMainMethod_com_narkira_compassmilitary_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.narkira.compassmilitary.MainActivity: void onResume()>()
+<com.narkira.compassmilitary.MainActivity: void fetchWeather(android.location.Location)> --> $r4 = <com.survivingwithandroid.weather.lib.WeatherConfig$UNIT_SYSTEM: com.survivingwithandroid.weather.lib.WeatherConfig$UNIT_SYSTEM M>
+<com.narkira.compassmilitary.MainActivity: void fetchWeather(android.location.Location)> --> $r10 := @caughtexception
+<com.narkira.compassmilitary.utilities.AppManager: com.narkira.compassmilitary.utilities.AppManager getInstance()> --> $r0 = <com.narkira.compassmilitary.utilities.AppManager: com.narkira.compassmilitary.utilities.AppManager instance>
+<com.narkira.compassmilitary.utilities.AppManager: com.narkira.compassmilitary.utilities.AppManager getInstance()> --> $r0 = new com.narkira.compassmilitary.utilities.AppManager
+<com.narkira.compassmilitary.utilities.AppManager: com.narkira.compassmilitary.utilities.AppManager getInstance()> --> <com.narkira.compassmilitary.utilities.AppManager: com.narkira.compassmilitary.utilities.AppManager instance> = $r0
+<com.narkira.compassmilitary.SettingsActivity$8: void onClick(android.view.View)> --> $r1 = staticinvoke <com.narkira.compassmilitary.utilities.AppManager: com.narkira.compassmilitary.utilities.AppManager getInstance()>()
+<dummyMainClass: com.narkira.compassmilitary.SettingsActivity dummyMainMethod_com_narkira_compassmilitary_SettingsActivity(android.content.Intent)> --> virtualinvoke $r4.<com.narkira.compassmilitary.SettingsActivity$8: void onClick(android.view.View)>($r2)
+<com.narkira.compassmilitary.utilities.AppManager: com.narkira.compassmilitary.utilities.AppManager getInstance()> --> $r0 = <com.narkira.compassmilitary.utilities.AppManager: com.narkira.compassmilitary.utilities.AppManager instance>
+<com.narkira.compassmilitary.SettingsActivity: void onPause()> --> $r1 = staticinvoke <com.narkira.compassmilitary.utilities.AppManager: com.narkira.compassmilitary.utilities.AppManager getInstance()>()
+<com.narkira.compassmilitary.utilities.AppManager: void save()> --> r0 := @this: com.narkira.compassmilitary.utilities.AppManager
+<com.narkira.compassmilitary.utilities.AppManager: void save()> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("cordType", $i0)
+--------------------------------------------------------
+

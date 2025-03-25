@@ -1,0 +1,20 @@
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+Sink=> $l3 = virtualinvoke $r14.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("appmetadata", null, $r20)
+Component=> meddata.patientpay.core.parser.OMSIntentServiceHelper
+ComponentColor=> GREEN
+meddata.patientpay.core.b.k
+android.database.sqlite.SQLiteDatabase
+android.location.Location
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $l3 = virtualinvoke $r14.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("appmetadata", null, $r20)
+Component=> meddata.patientpay.core.parser.OMSIntentServiceHelper
+ComponentColor=> GREEN
+meddata.patientpay.core.b.k
+android.database.sqlite.SQLiteDatabase
+meddata.patientpay.core.b.k
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+meddata.patientpay.apk: 1047971

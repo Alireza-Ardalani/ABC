@@ -1,0 +1,78 @@
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("NBSAgent", $r1, $r2)
+Component=> com.dailyyoga.inc.LoadingActivity
+ComponentColor=> GREEN
+android.util.Log
+com.networkbench.agent.impl.n.i
+com.networkbench.agent.impl.f.e
+com.networkbench.agent.impl.f.g
+android.location.LocationManager
+Category: com.networkbench.agent.impl.n.i-*-com.networkbench.agent.impl.f.e-*-com.networkbench.agent.impl.f.g-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("NBSAgent", $r1, $r2)
+Component=> com.dailyyoga.inc.LoadingActivity
+ComponentColor=> GREEN
+android.util.Log
+android.location.Location
+com.networkbench.agent.impl.harvest.DeviceData
+com.networkbench.agent.impl.f.e
+com.networkbench.agent.impl.f.g
+Category: com.networkbench.agent.impl.harvest.DeviceData-*-com.networkbench.agent.impl.f.e-*-com.networkbench.agent.impl.f.g-*-
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("NBSAgent", $r1, $r2)
+Component=> com.dailyyoga.inc.LoadingActivity
+ComponentColor=> GREEN
+android.util.Log
+com.networkbench.agent.impl.n.i
+com.networkbench.agent.impl.f.e
+com.networkbench.agent.impl.f.g
+android.location.LocationManager
+Category: com.networkbench.agent.impl.n.i-*-com.networkbench.agent.impl.f.e-*-com.networkbench.agent.impl.f.g-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("NBSAgent", $r1, $r2)
+Component=> com.dailyyoga.inc.LoadingActivity
+ComponentColor=> GREEN
+android.util.Log
+com.networkbench.agent.impl.n.i
+com.networkbench.agent.impl.f.e
+com.networkbench.agent.impl.f.g
+android.location.Location
+Category: com.networkbench.agent.impl.n.i-*-com.networkbench.agent.impl.f.e-*-com.networkbench.agent.impl.f.g-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("NBSAgent", $r1, $r2)
+Component=> com.dailyyoga.inc.LoadingActivity
+ComponentColor=> GREEN
+android.util.Log
+com.networkbench.agent.impl.harvest.DeviceData
+com.networkbench.agent.impl.f.e
+com.networkbench.agent.impl.f.g
+android.location.Location
+Category: com.networkbench.agent.impl.harvest.DeviceData-*-com.networkbench.agent.impl.f.e-*-com.networkbench.agent.impl.f.g-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("NBSAgent", $r1, $r2)
+Component=> com.dailyyoga.inc.LoadingActivity
+ComponentColor=> GREEN
+android.util.Log
+android.location.Location
+com.networkbench.agent.impl.n.i
+com.networkbench.agent.impl.f.e
+com.networkbench.agent.impl.f.g
+Category: com.networkbench.agent.impl.n.i-*-com.networkbench.agent.impl.f.e-*-com.networkbench.agent.impl.f.g-*-
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("NBSAgent", $r1, $r2)
+Component=> com.dailyyoga.inc.LoadingActivity
+ComponentColor=> GREEN
+android.util.Log
+com.networkbench.agent.impl.n.i
+com.networkbench.agent.impl.f.e
+com.networkbench.agent.impl.f.g
+android.location.LocationManager
+Category: com.networkbench.agent.impl.n.i-*-com.networkbench.agent.impl.f.e-*-com.networkbench.agent.impl.f.g-*-
+-----------------------------------------------------------------
+com.dailyyoga.inc.apk: 1940523

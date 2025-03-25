@@ -1,0 +1,37 @@
+<com.ds.avare.place.Destination: void found()> --> $d1 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+<com.ds.avare.storage.Preferences: void setLastLocation(double,double)> --> r0 := @this: com.ds.avare.storage.Preferences
+<com.ds.avare.storage.Preferences: void setLastLocation(double,double)> --> $f0 = (float) $d1
+<com.ds.avare.storage.Preferences: void setLastLocation(double,double)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r5, $f0)
+--------------------------------------------------------
+
+<dummyMainClass: com.ds.avare.StorageService dummyMainMethod_com_ds_avare_StorageService(android.content.Intent)> --> virtualinvoke $r6.<com.ds.avare.gps.Gps: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.ds.avare.StorageService dummyMainMethod_com_ds_avare_StorageService(android.content.Intent)> --> if $i0 == 14 goto (branch)
+<com.ds.avare.gps.Gps: void onProviderDisabled(java.lang.String)> --> r0 := @this: com.ds.avare.gps.Gps
+<com.ds.avare.gps.Gps: void onProviderDisabled(java.lang.String)> --> $r3 = r0.<com.ds.avare.gps.Gps: com.ds.avare.gps.GpsInterface mGpsCallback>
+<com.ds.avare.StorageService$1: void enabledCallback(boolean)> --> r0 := @this: com.ds.avare.StorageService$1
+<com.ds.avare.StorageService$1: java.util.LinkedList extracted()> --> r0 := @this: com.ds.avare.StorageService$1
+<com.ds.avare.StorageService$1: void enabledCallback(boolean)> --> $r1 = specialinvoke r0.<com.ds.avare.StorageService$1: java.util.LinkedList extracted()>()
+<com.ds.avare.gps.Gps: void onProviderDisabled(java.lang.String)> --> interfaceinvoke $r3.<com.ds.avare.gps.GpsInterface: void enabledCallback(boolean)>(0)
+<com.ds.avare.gps.Gps: void onProviderDisabled(java.lang.String)> --> $r3 = r0.<com.ds.avare.gps.Gps: com.ds.avare.gps.GpsInterface mGpsCallback>
+<dummyMainClass: com.ds.avare.StorageService dummyMainMethod_com_ds_avare_StorageService(android.content.Intent)> --> virtualinvoke $r6.<com.ds.avare.gps.Gps: void onProviderDisabled(java.lang.String)>("")
+<com.ds.avare.gps.Gps: void onLocationChanged(android.location.Location)> --> return
+<com.ds.avare.gps.Gps: void onLocationChanged(android.location.Location)> --> $r4 = r0.<com.ds.avare.gps.Gps: com.ds.avare.gps.GpsInterface mGpsCallback>
+<com.ds.avare.StorageService$1: void locationCallback(android.location.Location)> --> r0 := @this: com.ds.avare.StorageService$1
+<com.ds.avare.StorageService$1: java.util.LinkedList extracted()> --> r0 := @this: com.ds.avare.StorageService$1
+<com.ds.avare.StorageService$1: void locationCallback(android.location.Location)> --> $r3 = specialinvoke r0.<com.ds.avare.StorageService$1: java.util.LinkedList extracted()>()
+<com.ds.avare.StorageService$1: void locationCallback(android.location.Location)> --> $r2 = r0.<com.ds.avare.StorageService$1: com.ds.avare.StorageService this$0>
+<com.ds.avare.StorageService: com.ds.avare.place.Area access$900(com.ds.avare.StorageService)> --> $r0 := @parameter0: com.ds.avare.StorageService
+<com.ds.avare.StorageService: com.ds.avare.place.Area access$900(com.ds.avare.StorageService)> --> r1 = $r0.<com.ds.avare.StorageService: com.ds.avare.place.Area mArea>
+<com.ds.avare.StorageService$1: void locationCallback(android.location.Location)> --> $r12 = staticinvoke <com.ds.avare.StorageService: com.ds.avare.place.Area access$900(com.ds.avare.StorageService)>($r2)
+<com.ds.avare.place.Area: void updateLocation(com.ds.avare.gps.GpsParams)> --> r0 := @this: com.ds.avare.place.Area
+<com.ds.avare.place.Area: void updateLocation(com.ds.avare.gps.GpsParams)> --> $l1 = r0.<com.ds.avare.place.Area: long mLastTime>
+<com.ds.avare.place.Area: void updateLocation(com.ds.avare.gps.GpsParams)> --> $l0 = $l0 - $l1
+<com.ds.avare.place.Area: void updateLocation(com.ds.avare.gps.GpsParams)> --> $b2 = $l0 cmp 10000L
+<com.ds.avare.place.Area: void updateLocation(com.ds.avare.gps.GpsParams)> --> $i3 = (int) $b2
+<com.ds.avare.place.Area: void updateLocation(com.ds.avare.gps.GpsParams)> --> if $i3 >= 0 goto $l0 = staticinvoke <android.os.SystemClock: long elapsedRealtime()>()
+<com.ds.avare.place.Area$DataBaseAreaTask: java.lang.Void doInBackground(java.lang.Object[])> --> r0 := @this: com.ds.avare.place.Area$DataBaseAreaTask
+<com.ds.avare.content.DataSource: java.util.HashMap findClosestAirports(double,double,java.util.HashMap,java.lang.String)> --> r0 := @this: com.ds.avare.content.DataSource
+<com.ds.avare.content.LocationContentProviderHelper: java.util.HashMap findClosestAirports(android.content.Context,double,double,java.util.HashMap,java.lang.String,boolean)> --> $r0 := @parameter0: android.content.Context
+<com.ds.avare.content.LocationContentProviderHelper: java.util.HashMap findClosestAirports(android.content.Context,double,double,java.util.HashMap,java.lang.String,boolean)> --> $r13 = virtualinvoke $r11.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r12, r3, $r2, null, "distance ASC")
+--------------------------------------------------------
+

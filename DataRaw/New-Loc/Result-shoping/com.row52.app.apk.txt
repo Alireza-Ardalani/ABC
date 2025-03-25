@@ -1,0 +1,12 @@
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke r7.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.row52.app.activities.checkin.CheckInReceiver
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = virtualinvoke $r13.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.row52.app.activities.checkin.CheckInReceiver
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

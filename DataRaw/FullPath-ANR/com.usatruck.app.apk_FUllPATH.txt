@@ -1,0 +1,24 @@
+<com.eleostech.app.loads.StopMapActivity: void enableMyLocation(boolean)> --> virtualinvoke r0.<com.eleostech.app.loads.StopMapActivity: void onLocationChanged(android.location.Location)>($r6)
+<com.eleostech.app.loads.StopMapActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> specialinvoke r0.<com.eleostech.app.loads.StopMapActivity: void enableMyLocation(boolean)>(1)
+<dummyMainClass: com.eleostech.app.loads.StopMapActivity dummyMainMethod_com_eleostech_app_loads_StopMapActivity(android.content.Intent)> --> virtualinvoke $r0.<com.eleostech.app.loads.StopMapActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null)
+<dummyMainClass: com.eleostech.app.loads.StopMapActivity dummyMainMethod_com_eleostech_app_loads_StopMapActivity(android.content.Intent)> --> if $i0 == 6 goto $r6 = new com.eleostech.sdk.loads.PoiManager
+<com.eleostech.app.loads.StopMapActivity: void onLocationChanged(android.location.Location)> --> r0 := @this: com.eleostech.app.loads.StopMapActivity
+<com.eleostech.app.loads.StopMapActivity: void onLocationChanged(android.location.Location)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r7)
+--------------------------------------------------------
+
+<com.eleostech.app.loads.StopMapActivity: void enableMyLocation(boolean)> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<com.eleostech.app.loads.StopMapActivity: void enableMyLocation(boolean)> --> if $r6 == null goto return
+<com.eleostech.app.loads.StopMapActivity: void onLocationChanged(android.location.Location)> --> r0 := @this: com.eleostech.app.loads.StopMapActivity
+<com.eleostech.app.loads.StopMapActivity: void onLocationChanged(android.location.Location)> --> $r10 = virtualinvoke r0.<com.eleostech.app.loads.StopMapActivity: android.content.res.Resources getResources()>()
+<com.eleostech.app.loads.StopMapActivity: void onLocationChanged(android.location.Location)> --> r3 := @caughtexception
+<com.eleostech.app.loads.StopMapActivity: void onLocationChanged(android.location.Location)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r5, $r7)
+--------------------------------------------------------
+
+<dummyMainClass: com.eleostech.sdk.messaging.forms.FormFragment dummyMainMethod_com_eleostech_sdk_messaging_forms_FormFragment(android.content.Intent,android.app.Activity)> --> virtualinvoke $r3.<com.eleostech.sdk.messaging.forms.FormFragment$11: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.eleostech.sdk.messaging.forms.FormFragment dummyMainMethod_com_eleostech_sdk_messaging_forms_FormFragment(android.content.Intent,android.app.Activity)> --> if $i0 == 4 goto (branch)
+<dummyMainClass: com.eleostech.sdk.messaging.forms.FormFragment dummyMainMethod_com_eleostech_sdk_messaging_forms_FormFragment(android.content.Intent,android.app.Activity)> --> if $i0 == 4 goto (branch)
+<dummyMainClass: com.eleostech.sdk.messaging.forms.FormFragment dummyMainMethod_com_eleostech_sdk_messaging_forms_FormFragment(android.content.Intent,android.app.Activity)> --> if $i0 == 5 goto (branch)
+<com.eleostech.sdk.messaging.forms.FormFragment$11: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> r0 := @this: com.eleostech.sdk.messaging.forms.FormFragment$11
+<com.eleostech.sdk.messaging.forms.FormFragment$11: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r1)
+--------------------------------------------------------
+

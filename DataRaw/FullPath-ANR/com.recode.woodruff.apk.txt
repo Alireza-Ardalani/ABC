@@ -1,0 +1,19 @@
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+Component=> com.strivebenefits.activity.BetterDoctorSearchActivity
+ComponentColor=> GREEN
+android.util.Log
+android.location.LocationManager
+com.strivebenefits.util.GPSTracker
+Category: com.strivebenefits.util.GPSTracker-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+Component=> com.strivebenefits.activity.BetterDoctorSearchActivity
+ComponentColor=> GREEN
+android.util.Log
+android.location.LocationManager
+com.strivebenefits.util.GPSTracker
+Category: com.strivebenefits.util.GPSTracker-*-
+-----------------------------------------------------------------
+com.recode.woodruff.apk: 1088031

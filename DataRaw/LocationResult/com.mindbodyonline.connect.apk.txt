@@ -1,0 +1,30 @@
+Source=> $r9 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("PREF_LAST_LOC_ACCURACY", $f0)
+Component=> com.mindbodyonline.connect.activities.details.ClassTypeDetailsActivity
+ComponentColor=> GREEN
+com.mindbodyonline.connect.utils.GeoLocationUtils
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.mindbodyonline.connect.utils.GeoLocationUtils
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("PREF_LAST_LOC_TIME", $l0)
+Component=> com.mindbodyonline.connect.activities.details.ClassTypeDetailsActivity
+ComponentColor=> GREEN
+com.mindbodyonline.connect.utils.GeoLocationUtils
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.mindbodyonline.connect.utils.GeoLocationUtils
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("PREF_LAST_LOC_LATITUDE", $f0)
+Component=> com.mindbodyonline.connect.activities.workflow.SearchLocationMapActivity
+ComponentColor=> GREEN
+com.mindbodyonline.connect.utils.GeoLocationUtils
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.mindbodyonline.connect.activities.custom.AbstractSearchActivity
+Category: LEGIT
+-----------------------------------------------------------------

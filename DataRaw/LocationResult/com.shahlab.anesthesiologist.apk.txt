@@ -1,0 +1,28 @@
+Source=> $d1 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("getLocMgrAddress", $r6)
+Component=> com.shahlab.anesthesiologist.SA_AWSInsertStudyJSON
+ComponentColor=> GREEN
+android.location.Location
+android.util.Log
+com.shahlab.anesthesiologist.SA_AWSInsertStudyJSON
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("getLocMgrAddress", $r6)
+Component=> com.shahlab.anesthesiologist.SA_AWSInsertStudyJSON
+ComponentColor=> GREEN
+android.util.Log
+com.shahlab.anesthesiologist.SA_AWSInsertStudyJSON
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("getLocMgrAddress", $r6)
+Component=> com.shahlab.anesthesiologist.SA_AWSInsertStudyJSON
+ComponentColor=> GREEN
+android.location.Location
+android.util.Log
+com.shahlab.anesthesiologist.SA_AWSInsertStudyJSON
+Category: LEGIT
+-----------------------------------------------------------------
+com.shahlab.anesthesiologist.apk: 1039385

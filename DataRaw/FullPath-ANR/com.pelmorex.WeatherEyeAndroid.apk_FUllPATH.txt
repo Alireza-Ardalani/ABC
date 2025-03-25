@@ -1,0 +1,14 @@
+<com.moat.analytics.mobile.pel.o: boolean ॱ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.moat.analytics.mobile.pel.o: boolean ॱ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.pel.o: boolean ॱ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.pel.o: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.pel.o: boolean ॱ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.pel.o: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.pel.o: void ˋ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.pel.o: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.pel.o: void ˋ()> --> r0.<com.moat.analytics.mobile.pel.o: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.pel.o: void ˋ()> --> $r2 = r0.<com.moat.analytics.mobile.pel.o: android.location.Location ʻ>
+<com.moat.analytics.mobile.pel.o: void ˋ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.pel.o: void ˊॱ()>()
+<com.moat.analytics.mobile.pel.o: void ˋ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.pel.m: void ˊ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.pel.m: void ˊ(java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+--------------------------------------------------------
+

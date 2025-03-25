@@ -1,0 +1,10 @@
+<com.harristeeter.htmobile.fragments.store.StoreSelectorFragment: void checkForLastKnownLocation()> --> $r7 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.harristeeter.htmobile.fragments.store.StoreSelectorFragment: void checkForLastKnownLocation()> --> if $r7 == null goto staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("StoreSelectorFragment", "LAST KNOWN LOCATION IS NULL")
+<com.harristeeter.htmobile.fragments.store.StoreSelectorFragment: void requestGPSLocation()> --> r0 := @this: com.harristeeter.htmobile.fragments.store.StoreSelectorFragment
+<com.harristeeter.htmobile.fragments.store.StoreSelectorFragment: void requestGPSLocation()> --> $r7 = r0.<com.harristeeter.htmobile.fragments.store.StoreSelectorFragment: android.location.LocationManager locationManager>
+<com.harristeeter.htmobile.fragments.store.StoreSelectorFragment: void requestGPSLocation()> --> r16 := @caughtexception
+<com.harristeeter.htmobile.fragments.store.StoreSelectorFragment: void requestGPSLocation()> --> $r7 = r0.<com.harristeeter.htmobile.fragments.store.StoreSelectorFragment: android.location.LocationManager locationManager>
+<com.harristeeter.htmobile.fragments.store.StoreSelectorFragment: void requestGPSLocation()> --> r17 := @caughtexception
+<com.harristeeter.htmobile.fragments.store.StoreSelectorFragment: void requestGPSLocation()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("StoreSelectorFragment", "error determining is gps is enabled")
+--------------------------------------------------------
+

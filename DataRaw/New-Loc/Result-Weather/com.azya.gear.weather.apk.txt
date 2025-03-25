@@ -1,0 +1,54 @@
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("WEATHERFEED", $r1)
+Component=> com.azya.gear.weather.ExtensionServiceSmartWeather
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.azya.gear.weather.ExtensionServiceSmartWeather
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> specialinvoke $r5.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.azya.gear.weather.ExtensionServiceSmartWeather
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.azya.gear.weather.ExtensionServiceSmartWeather
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("WEATHERUPDTIME", $l0)
+Component=> com.azya.gear.weather.ExtensionServiceSmartWeather
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("WEATHERFEED", $r1)
+Component=> com.azya.gear.weather.ExtensionServiceSmartWeather
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r6 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.azya.gear.weather.ExtensionServiceSmartWeather
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r9 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.azya.gear.weather.ExtensionServiceSmartWeather
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("WEATHERFEED", $r1)
+Component=> com.azya.gear.weather.ExtensionServiceSmartWeather
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

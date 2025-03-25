@@ -1,0 +1,24 @@
+Source=> $d0 = virtualinvoke $r12.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r3)
+Component=> com.flayvr.myrollshared.services.UserProfileService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r12.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> com.flayvr.myrollshared.services.UserProfileService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r12.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> com.flayvr.myrollshared.services.UserProfileService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r12.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r3)
+Component=> com.flayvr.myrollshared.services.UserProfileService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

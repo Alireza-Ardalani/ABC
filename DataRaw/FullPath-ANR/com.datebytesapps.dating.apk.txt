@@ -1,0 +1,19 @@
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+Component=> com.datebytesapps.dating.LocationActivity
+ComponentColor=> GREEN
+com.datebytesapps.dating.util.GPSTracker
+android.location.LocationManager
+android.util.Log
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+Component=> com.datebytesapps.dating.LocationActivity
+ComponentColor=> GREEN
+com.datebytesapps.dating.util.GPSTracker
+android.location.LocationManager
+android.util.Log
+Category: LEGIT
+-----------------------------------------------------------------
+com.datebytesapps.dating.apk: 1038944

@@ -1,0 +1,27 @@
+<com.moat.analytics.mobile.trn.n: android.location.Location ᐝ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.moat.analytics.mobile.trn.n: android.location.Location ᐝ()> --> return $r2
+<com.moat.analytics.mobile.trn.n: void ˏ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.trn.n: android.location.Location ᐝ()>()
+<com.moat.analytics.mobile.trn.n: android.location.Location ˊ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.trn.n: boolean ˋ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.trn.n: boolean ˋ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.trn.n: android.location.Location ˊ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.trn.n: boolean ˋ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.trn.n: android.location.Location ˊ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.trn.n: void ˏ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.trn.n: android.location.Location ˊ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.trn.n: void ˏ()> --> r0.<com.moat.analytics.mobile.trn.n: android.location.Location ʼ> = $r2
+<com.moat.analytics.mobile.trn.n: void ˏ()> --> $r2 = r0.<com.moat.analytics.mobile.trn.n: android.location.Location ʼ>
+<com.moat.analytics.mobile.trn.n: void ˏ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.trn.n: void ʼ()>()
+<com.moat.analytics.mobile.trn.n: void ʼ()> --> r0 := @this: com.moat.analytics.mobile.trn.n
+<com.moat.analytics.mobile.trn.i: void ˊ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ॱ()> --> entermonitor class "Lcom/moat/analytics/mobile/trn/t;"
+<com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ॱ()> --> $r0 = new com.moat.analytics.mobile.trn.t
+<com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ॱ()> --> <com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ᐝ> = $r0
+<com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ॱ()> --> $r0 = <com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ᐝ>
+<com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ॱ()> --> if $r0 != null goto $r0 = <com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ᐝ>
+<com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ॱ()> --> <com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ᐝ> = $r0
+<com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ॱ()> --> $r0 = <com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ᐝ>
+<com.moat.analytics.mobile.trn.i: void ॱ(java.lang.String,java.lang.Object,java.lang.String)> --> $r4 = staticinvoke <com.moat.analytics.mobile.trn.t: com.moat.analytics.mobile.trn.t ॱ()>()
+<com.moat.analytics.mobile.trn.i: void ॱ(java.lang.String,java.lang.Object,java.lang.String)> --> $z0 = $r4.<com.moat.analytics.mobile.trn.t: boolean ˏ>
+<com.moat.analytics.mobile.trn.i: void ॱ(java.lang.String,java.lang.Object,java.lang.String)> --> if $z0 == 0 goto return
+<com.moat.analytics.mobile.trn.i: void ॱ(java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(2, $r2, $r0)
+--------------------------------------------------------
+

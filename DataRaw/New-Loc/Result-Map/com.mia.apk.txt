@@ -1,0 +1,12 @@
+Source=> $r7 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> interfaceinvoke $r0.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("inDeparture", $z0)
+Component=> aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> interfaceinvoke $r0.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("inArrival", $z1)
+Component=> aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

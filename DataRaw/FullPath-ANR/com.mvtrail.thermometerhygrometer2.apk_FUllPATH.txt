@@ -1,0 +1,10 @@
+<com.mvtrail.thermometerhygrometer.activitys.MainActivity: void u()> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.mvtrail.thermometerhygrometer.activitys.MainActivity: void u()> --> if $r8 != null goto $r9 = $r8
+<com.mvtrail.thermometerhygrometer.activitys.MainActivity: void u()> --> $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r7, $f0)
+--------------------------------------------------------
+
+<com.mvtrail.thermometerhygrometer.activitys.MainActivity$b: void onLocationChanged(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.mvtrail.thermometerhygrometer.activitys.MainActivity$b: void onLocationChanged(android.location.Location)> --> $f0 = (float) $d0
+<com.mvtrail.thermometerhygrometer.activitys.MainActivity$b: void onLocationChanged(android.location.Location)> --> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+--------------------------------------------------------
+

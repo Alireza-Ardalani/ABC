@@ -1,0 +1,12 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("prefs_last_known_latitude", $f0)
+Component=> com.yahoo.mobile.client.android.weathersdk.service.LocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("prefs_last_known_longitude", $f0)
+Component=> com.yahoo.mobile.client.android.weathersdk.service.LocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

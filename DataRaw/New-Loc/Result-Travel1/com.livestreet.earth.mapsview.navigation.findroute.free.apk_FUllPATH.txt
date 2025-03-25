@@ -1,0 +1,17 @@
+<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: void Get_User_Location()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: void Get_User_Location()> --> r0.<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: android.location.Location Ajiblocation> = $r2
+<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: void Get_User_Location()> --> $r2 = r0.<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: android.location.Location Ajiblocation>
+<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: void Get_User_Location()> --> if $r2 != null goto return
+<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: void Get_User_Location()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+
+<dummyMainClass: com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute dummyMainMethod_com_livestreet_earth_mapsview_navigation_findroute_free_AjibRoute(android.content.Intent)> --> virtualinvoke $r0.<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute dummyMainMethod_com_livestreet_earth_mapsview_navigation_findroute_free_AjibRoute(android.content.Intent)> --> if $i0 == 12 goto (branch)
+<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: void onActivityResult(int,int,android.content.Intent)> --> r0 := @this: com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute
+<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: android.content.Intent getIntent()> --> this := @this: com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute
+<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: void onActivityResult(int,int,android.content.Intent)> --> $r1 = virtualinvoke r0.<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: android.content.Intent getIntent()>()
+<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: void onActivityResult(int,int,android.content.Intent)> --> $i0 = r0.<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: int Ajibcountervalue>
+<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: void onActivityResult(int,int,android.content.Intent)> --> if $i0 != 1 goto $i0 = r0.<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: int Ajibcountervalue>
+<com.livestreet.earth.mapsview.navigation.findroute.free.AjibRoute: void onActivityResult(int,int,android.content.Intent)> --> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("source_lng", $r4)
+--------------------------------------------------------
+

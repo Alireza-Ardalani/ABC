@@ -1,0 +1,22 @@
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()> --> r0.<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location location> = $r5
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()> --> $r5 = r0.<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location location>
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()> --> if $r5 != null goto $r5 = r0.<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location location>
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()> --> r0.<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location location> = $r5
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: void <init>(android.content.Context,com.bibostudio.smartcompass.navigationcompass.callbe.EnableSetting)> --> specialinvoke r0.<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()>()
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: void <init>(android.content.Context,com.bibostudio.smartcompass.navigationcompass.callbe.EnableSetting)> --> r0.<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: com.bibostudio.smartcompass.navigationcompass.callbe.EnableSetting mEnableSetting> = $r2
+<dummyMainClass: com.bibostudio.smartcompass.navigationcompass.yeuhong.ChiTietGpsActivity dummyMainMethod_com_bibostudio_smartcompass_navigationcompass_yeuhong_ChiTietGpsActivity(android.content.Intent)> --> specialinvoke $r10.<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: void <init>(android.content.Context,com.bibostudio.smartcompass.navigationcompass.callbe.EnableSetting)>($r0, $r0)
+<com.bibostudio.smartcompass.navigationcompass.yeuhong.ChiTietGpsActivity: void onActivityResult(int,int,android.content.Intent)> --> return
+<com.bibostudio.smartcompass.navigationcompass.yeuhong.ChiTietGpsActivity: void setUpGPS()> --> return
+<com.bibostudio.smartcompass.navigationcompass.yeuhong.ChiTietGpsActivity: void setUpGPS()> --> r0.<com.bibostudio.smartcompass.navigationcompass.yeuhong.ChiTietGpsActivity: com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation mFoundGpsLocation> = $r14
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: void <init>(android.content.Context,com.bibostudio.smartcompass.navigationcompass.callbe.EnableSetting)> --> return
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()> --> return $r5
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()> --> $r5 = r0.<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location location>
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()> --> if $r5 != null goto $r5 = r0.<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location location>
+<com.bibostudio.smartcompass.navigationcompass.utils.FoundGPSLocation: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+

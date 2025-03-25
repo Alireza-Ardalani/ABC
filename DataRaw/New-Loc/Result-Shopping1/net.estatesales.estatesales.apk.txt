@@ -1,0 +1,702 @@
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> specialinvoke $r18.<java.net.URL: void <init>(java.lang.String)>($r3)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r8.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r5, $f0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r3, $i0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r1)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r5, $i0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r3, $i0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r5, $f0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r5, $f0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r21.<java.net.URL: void <init>(java.lang.String)>(r2)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<net.estatesales.estatesales.ListActivity: void onLocationChanged(android.location.Location)>($r12)
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("stopAskingForReview", 1)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r3, $i0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, 0.0F)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r8.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, 0.0F)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r14.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r5, $f0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r5, $i0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r1)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r8.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r3, $i0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> specialinvoke $r18.<java.net.URL: void <init>(java.lang.String)>($r3)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r5, $f0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r4)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r7 = virtualinvoke $r18.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r3, $i0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r4)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> specialinvoke $r25.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, 0.0F)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r25.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, 0.0F)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r13 = virtualinvoke $r25.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r14.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r8.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, 0.0F)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r13 = virtualinvoke $r25.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r4)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> specialinvoke $r25.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, 0.0F)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r5, $i0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r8.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r7 = virtualinvoke $r18.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r3, $i0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r8.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r1)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r3, $i0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r5, $i0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r5, $f0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r5, $f0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> specialinvoke $r21.<java.net.URL: void <init>(java.lang.String)>(r2)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r21.<java.net.URL: void <init>(java.lang.String)>(r2)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r8.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r8.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke $r21.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, 0.0F)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r4)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r5, $f0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r5, $f0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r25.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void connect()>()
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r1)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r8.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r5, $f0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke r8.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, 0.0F)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r10 = virtualinvoke $r21.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> net.estatesales.estatesales.ListActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r10 = virtualinvoke $r21.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke $r21.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r11.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.FeedbackActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> specialinvoke $r21.<java.net.URL: void <init>(java.lang.String)>(r2)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r3, $i0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r12 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r3, $z0)
+Component=> net.estatesales.estatesales.MapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

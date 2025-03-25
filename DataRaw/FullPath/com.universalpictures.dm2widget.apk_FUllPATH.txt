@@ -1,0 +1,31 @@
+<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()> --> r0.<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location location> = $r5
+<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location location>
+<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()> --> if $r5 != null goto $r5 = r0.<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location location>
+<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+
+<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()> --> r0.<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location location> = $r5
+<com.universalpictures.dm2widget.WeatherUpdateService: boolean loadWeatherData()> --> virtualinvoke $r3.<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()>()
+<com.universalpictures.dm2widget.WeatherUpdateService: boolean loadWeatherData()> --> $r3 = r0.<com.universalpictures.dm2widget.WeatherUpdateService: com.universalpictures.dm2widget.weather.GPSTracker gps>
+<com.universalpictures.dm2widget.WeatherUpdateService: boolean access$000(com.universalpictures.dm2widget.WeatherUpdateService)> --> $z0 = specialinvoke $r0.<com.universalpictures.dm2widget.WeatherUpdateService: boolean loadWeatherData()>()
+<com.universalpictures.dm2widget.WeatherUpdateService$1: void run()> --> $z0 = staticinvoke <com.universalpictures.dm2widget.WeatherUpdateService: boolean access$000(com.universalpictures.dm2widget.WeatherUpdateService)>($r1)
+<com.universalpictures.dm2widget.WeatherUpdateService$1: void run()> --> $r1 = r0.<com.universalpictures.dm2widget.WeatherUpdateService$1: com.universalpictures.dm2widget.WeatherUpdateService this$0>
+<java.util.Timer: void schedule(java.util.TimerTask,long,long)> --> virtualinvoke param0.<java.util.TimerTask: void run()>()
+<com.universalpictures.dm2widget.twitter.TwitterUpdateService: void onCreate()> --> virtualinvoke $r2.<java.util.Timer: void schedule(java.util.TimerTask,long,long)>($r1, 0L, 3600000L)
+<com.universalpictures.dm2widget.twitter.TwitterUpdateService: void onCreate()> --> $r1 = r0.<com.universalpictures.dm2widget.twitter.TwitterUpdateService: java.util.TimerTask timerTask>
+<com.universalpictures.dm2widget.twitter.TwitterUpdateService: void onCreate()> --> r0.<com.universalpictures.dm2widget.twitter.TwitterUpdateService: android.content.Context context> = r0
+<com.universalpictures.dm2widget.twitter.TwitterUpdateService: void onCreate()> --> $r1 = r0.<com.universalpictures.dm2widget.twitter.TwitterUpdateService: java.util.TimerTask timerTask>
+<java.util.Timer: void schedule(java.util.TimerTask,long,long)> --> this := @this: java.util.Timer
+<com.universalpictures.dm2widget.WeatherUpdateService$1: void run()> --> r0 := @this: com.universalpictures.dm2widget.WeatherUpdateService$1
+<com.universalpictures.dm2widget.WeatherUpdateService$1: void run()> --> $r1 = r0.<com.universalpictures.dm2widget.WeatherUpdateService$1: com.universalpictures.dm2widget.WeatherUpdateService this$0>
+<com.universalpictures.dm2widget.WeatherUpdateService: boolean access$000(com.universalpictures.dm2widget.WeatherUpdateService)> --> $r0 := @parameter0: com.universalpictures.dm2widget.WeatherUpdateService
+<com.universalpictures.dm2widget.WeatherUpdateService: boolean loadWeatherData()> --> r0 := @this: com.universalpictures.dm2widget.WeatherUpdateService
+<com.universalpictures.dm2widget.WeatherUpdateService: boolean loadWeatherData()> --> $r3 = r0.<com.universalpictures.dm2widget.WeatherUpdateService: com.universalpictures.dm2widget.weather.GPSTracker gps>
+<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()> --> r0 := @this: com.universalpictures.dm2widget.weather.GPSTracker
+<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location location>
+<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()> --> if $r5 != null goto $r5 = r0.<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location location>
+<com.universalpictures.dm2widget.weather.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+

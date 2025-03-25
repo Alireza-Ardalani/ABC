@@ -1,0 +1,6 @@
+<com.mercadopago.tracking.model.Fingerprint: com.mercadopago.tracking.model.Fingerprint$Location getLocation()> --> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.mercadopago.tracking.model.Fingerprint: com.mercadopago.tracking.model.Fingerprint$Location getLocation()> --> if $r7 == null goto return null
+<com.mercadopago.tracking.model.Fingerprint: void setLocation(com.mercadopago.tracking.model.Fingerprint$Location)> --> r0 := @this: com.mercadopago.tracking.model.Fingerprint
+<com.mercadopago.tracking.model.Fingerprint: void setLocation(com.mercadopago.tracking.model.Fingerprint$Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("FINGERPRINT_LOCATION", $r5)
+--------------------------------------------------------
+

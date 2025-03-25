@@ -1,0 +1,12 @@
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, $r2)
+Component=> org.altbeacon.beacon.service.BeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, $r2)
+Component=> org.altbeacon.beacon.service.BeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

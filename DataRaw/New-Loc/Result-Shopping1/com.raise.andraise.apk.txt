@@ -1,0 +1,72 @@
+Source=> virtualinvoke r0.<acl: void onLocationChanged(android.location.Location)>($r4)
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationChangesListener", $r7)
+Component=> com.forter.mobile.fortersdk.utils.AlarmReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationChangesListener", $r7)
+Component=> com.forter.mobile.fortersdk.utils.AlarmReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLatitude", $f0)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 4)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("longitude", $d0)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r2)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 4)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r2)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 4)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLongitude", $f0)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("latitude", $d0)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

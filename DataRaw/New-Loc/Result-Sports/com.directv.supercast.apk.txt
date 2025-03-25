@@ -1,0 +1,12 @@
+Source=> $r1 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("firstRunForLocationPermission", 0)
+Component=> com.directv.supercast.activity.TabletMainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("firstRunForLocationPermission", 0)
+Component=> com.directv.supercast.activity.TabletMainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

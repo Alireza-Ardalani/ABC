@@ -1,0 +1,314 @@
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r3 = virtualinvoke $r15.<android.location.Geocoder: java.util.List getFromLocation(double,double,int)>($d0, $d1, 1)
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r13 := @caughtexception
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("AndroidLocationGeocoder", $r8, $r13)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d3 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isSameLocation(com.tennumbers.animatedwidgets.model.entities.LocationEntity)> --> r0 := @this: com.tennumbers.animatedwidgets.model.entities.LocationEntity
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isSameLocation(com.tennumbers.animatedwidgets.model.entities.LocationEntity)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationEntity", "In isSameLocation")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AndroidLocationGeocoder", "The Geocoder is not present.")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r2 = interfaceinvoke $r1.<com.tennumbers.animatedwidgets.util.location.LocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)>($d0, $d1)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r3 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("LocationDetectionAggregate", $r5, $r3)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r3 = virtualinvoke $r15.<android.location.Geocoder: java.util.List getFromLocation(double,double,int)>($d0, $d1, 1)
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r13 := @caughtexception
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("AndroidLocationGeocoder", $r8, $r13)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d3 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("LocationEntity", $r5, $r4)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r1 = r0.<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.util.location.LocationGeocoder locationGeocoder>
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r6 = r0.<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.util.AddressUtil addressUtil>
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r12 := @caughtexception
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("AndroidLocationGeocoder", $r8, $r12)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: void <init>(java.lang.String,java.lang.String,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.String)> --> r0 := @this: com.tennumbers.animatedwidgets.model.entities.LocationEntity
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: void <init>(java.lang.String,java.lang.String,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationEntity", "The latitude or longitude has to be different from null")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationDetectionAggregate", "getLocationFromLatitudeLongitude: ")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: void <init>(java.lang.String,java.lang.String,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.String)> --> r0 := @this: com.tennumbers.animatedwidgets.model.entities.LocationEntity
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: void <init>(java.lang.String,java.lang.String,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationEntity", "The latitude or longitude has to be different from null")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationDetectionAggregate", "getLocationFromLatitudeLongitude: ")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r1 = r0.<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.util.location.LocationGeocoder locationGeocoder>
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r6 = r0.<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.util.AddressUtil addressUtil>
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r12 := @caughtexception
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("AndroidLocationGeocoder", $r8, $r12)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: void <init>(java.lang.String,java.lang.String,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.String)> --> r0 := @this: com.tennumbers.animatedwidgets.model.entities.LocationEntity
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: void <init>(java.lang.String,java.lang.String,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationEntity", "The latitude or longitude has to be different from null")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d3 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AndroidLocationGeocoder", "The Geocoder is not present.")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d3 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: void <init>(java.lang.String,java.lang.String,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.String)> --> r0 := @this: com.tennumbers.animatedwidgets.model.entities.LocationEntity
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: void <init>(java.lang.String,java.lang.String,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationEntity", "The latitude or longitude has to be different from null")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AndroidLocationGeocoder", "The Geocoder is not present.")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r3 = virtualinvoke $r15.<android.location.Geocoder: java.util.List getFromLocation(double,double,int)>($d0, $d1, 1)
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r13 := @caughtexception
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("AndroidLocationGeocoder", $r8, $r13)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d3 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r1 = r0.<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.util.location.LocationGeocoder locationGeocoder>
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r6 = r0.<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.util.AddressUtil addressUtil>
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r12 := @caughtexception
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("AndroidLocationGeocoder", $r8, $r12)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AndroidLocationGeocoder", "The Geocoder is not present.")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r2 = interfaceinvoke $r1.<com.tennumbers.animatedwidgets.util.location.LocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)>($d0, $d1)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r3 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("LocationDetectionAggregate", $r5, $r3)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r2 = interfaceinvoke $r1.<com.tennumbers.animatedwidgets.util.location.LocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)>($d0, $d1)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r3 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("LocationDetectionAggregate", $r5, $r3)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r1 = r0.<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.util.location.LocationGeocoder locationGeocoder>
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r6 = r0.<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.util.AddressUtil addressUtil>
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r12 := @caughtexception
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("AndroidLocationGeocoder", $r8, $r12)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d3 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationDetectionAggregate", "getLocationFromLatitudeLongitude: ")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationDetectionAggregate", "getLocationFromLatitudeLongitude: ")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isSameLocation(com.tennumbers.animatedwidgets.model.entities.LocationEntity)> --> r0 := @this: com.tennumbers.animatedwidgets.model.entities.LocationEntity
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isSameLocation(com.tennumbers.animatedwidgets.model.entities.LocationEntity)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationEntity", "In isSameLocation")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isSameLocation(com.tennumbers.animatedwidgets.model.entities.LocationEntity)> --> r0 := @this: com.tennumbers.animatedwidgets.model.entities.LocationEntity
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isSameLocation(com.tennumbers.animatedwidgets.model.entities.LocationEntity)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationEntity", "In isSameLocation")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d3 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r1 = r0.<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.util.location.LocationGeocoder locationGeocoder>
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> $r3 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("LocationDetectionAggregate", $r5, $r3)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> r0 := @this: com.tennumbers.animatedwidgets.model.entities.LocationEntity
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r3 = virtualinvoke r0.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: java.lang.Double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("LocationEntity", $r5, $r4)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isSameLocation(com.tennumbers.animatedwidgets.model.entities.LocationEntity)> --> r0 := @this: com.tennumbers.animatedwidgets.model.entities.LocationEntity
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isSameLocation(com.tennumbers.animatedwidgets.model.entities.LocationEntity)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationEntity", "In isSameLocation")
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> $b0 = $d0 cmpl $d1
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)> --> if $b0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean hasTheSameLatAndLon(android.location.Location)>($r4)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto return 0
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> r0 := @this: com.tennumbers.animatedwidgets.model.entities.LocationEntity
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r3 = virtualinvoke r0.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: java.lang.Double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("LocationEntity", $r5, $r4)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d3 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> $z0 = virtualinvoke $r2.<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)>($r4, 2000.0F)
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: boolean hasLocationChanged()> --> if $z0 != 0 goto $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate: com.tennumbers.animatedwidgets.model.entities.LocationEntity getLocationFromLatitudeLongitude(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.model.agregates.LocationDetectionAggregate
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> r0 := @this: com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r3 = virtualinvoke $r15.<android.location.Geocoder: java.util.List getFromLocation(double,double,int)>($d0, $d1, 1)
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> $r13 := @caughtexception
+<com.tennumbers.animatedwidgets.util.location.AndroidLocationGeocoder: com.tennumbers.animatedwidgets.model.entities.LocationEntity getFromLocation(double,double)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("AndroidLocationGeocoder", $r8, $r13)
+--------------------------------------------------------
+
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> $r4 := @caughtexception
+<com.tennumbers.animatedwidgets.model.entities.LocationEntity: boolean isDistanceBetweenLocationFartherThanDistance(android.location.Location,float)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("LocationEntity", $r5, $r4)
+--------------------------------------------------------
+

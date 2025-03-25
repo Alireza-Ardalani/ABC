@@ -1,0 +1,2730 @@
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r4.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.common.core.Utilities
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.NetworkHandler
+java.net.URL
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.common.core.Utilities-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<java.io.BufferedOutputStream: void write(byte[],int,int)>(r2, 0, $i1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+spark.common.core.Utilities
+java.io.BufferedOutputStream
+android.location.Location
+spark.android.ui.Controller
+spark.android.ui.Field
+spark.common.core.Utilities
+Category: spark.common.core.Utilities-*-spark.android.ui.Controller-*-spark.android.ui.Field-*-spark.common.core.Utilities-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r17 = virtualinvoke r0.<spark.android.ui.Controller: java.io.FileInputStream openFileInput(java.lang.String)>(r15)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+android.location.Location
+android.content.ContextWrapper
+spark.android.ui.Controller
+spark.android.ui.Field
+Category: spark.android.ui.Controller-*-spark.android.ui.Field-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>("ping", "UTF-8")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.URLEncoder
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.common.core.Utilities
+java.net.URL
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.common.core.Utilities-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URL
+android.location.Location
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+android.util.Log
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, "Geocoder not available... using Google geocoding API")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r10.<java.net.HttpURLConnection: java.lang.String getResponseMessage()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>("ping", "UTF-8")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.URLEncoder
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>("ping", "UTF-8")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.URLEncoder
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>($r2)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+android.location.Location
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URL
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r10.<java.net.HttpURLConnection: java.lang.String getResponseMessage()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>("http://google.com")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+java.net.URL
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>($r2)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+java.net.URL
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>("http://google.com")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+java.net.URL
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<java.io.BufferedOutputStream: void write(byte[],int,int)>(r2, 0, $i1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+spark.common.core.Utilities
+android.location.Location
+java.io.BufferedOutputStream
+spark.android.ui.Controller
+spark.android.ui.Field
+spark.common.core.Utilities
+Category: spark.common.core.Utilities-*-spark.android.ui.Controller-*-spark.android.ui.Field-*-spark.common.core.Utilities-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.common.core.Utilities
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.common.core.Utilities
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r4.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.NetworkHandler
+java.net.URL
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r4.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.NetworkHandler
+java.net.URL
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>($r2)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<java.io.BufferedOutputStream: void write(byte[],int,int)>(r2, 0, $i1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+spark.common.core.Utilities
+android.location.Location
+java.io.BufferedOutputStream
+spark.android.ui.Controller
+spark.android.ui.Field
+spark.common.core.Utilities
+Category: spark.common.core.Utilities-*-spark.android.ui.Controller-*-spark.android.ui.Field-*-spark.common.core.Utilities-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>("ping", "UTF-8")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.URLEncoder
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, "Geocoder not available... using Google geocoding API")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.util.Log
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+java.net.URLConnection
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URL
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.common.core.Utilities
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>("http://google.com")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+java.net.URL
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, "Geocoder not available... using Google geocoding API")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.common.core.Utilities
+spark.android.ui.NetworkHandler
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.common.core.Utilities-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<java.io.BufferedOutputStream: void write(byte[],int,int)>(r2, 0, $i1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+spark.common.core.Utilities
+java.io.BufferedOutputStream
+android.location.Location
+spark.android.ui.Controller
+spark.android.ui.Field
+spark.common.core.Utilities
+Category: spark.common.core.Utilities-*-spark.android.ui.Controller-*-spark.android.ui.Field-*-spark.common.core.Utilities-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.util.Log
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r17 = virtualinvoke r0.<spark.android.ui.Controller: java.io.FileInputStream openFileInput(java.lang.String)>(r15)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+android.content.ContextWrapper
+android.location.Location
+spark.android.ui.Controller
+spark.android.ui.Field
+Category: spark.android.ui.Controller-*-spark.android.ui.Field-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("HEAD")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.HttpURLConnection
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("HEAD")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.HttpURLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r17 = virtualinvoke r0.<spark.android.ui.Controller: java.io.FileInputStream openFileInput(java.lang.String)>(r15)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+android.location.Location
+android.content.ContextWrapper
+spark.android.ui.Controller
+spark.android.ui.Field
+Category: spark.android.ui.Controller-*-spark.android.ui.Field-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, "Geocoder not available... using Google geocoding API")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URL
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+java.util.List
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.common.core.Utilities
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("HEAD")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+java.net.HttpURLConnection
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URL
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<java.io.BufferedOutputStream: void write(byte[],int,int)>(r2, 0, $i1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+spark.common.core.Utilities
+java.io.BufferedOutputStream
+android.location.Location
+spark.android.ui.Controller
+spark.android.ui.Field
+spark.common.core.Utilities
+Category: spark.common.core.Utilities-*-spark.android.ui.Controller-*-spark.android.ui.Field-*-spark.common.core.Utilities-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>($r2)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>("ping", "UTF-8")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.URLEncoder
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r10.<java.net.HttpURLConnection: java.lang.String getResponseMessage()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URL
+android.location.Location
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>("http://google.com")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+java.net.URL
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URL
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.common.core.Utilities
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+java.util.List
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>("http://google.com")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URL
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r4.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.NetworkHandler
+java.net.URL
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URL
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+spark.common.core.Utilities
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("HEAD")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.HttpURLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>("ping", "UTF-8")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.URLEncoder
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>($r2)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+spark.common.core.Utilities
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.common.core.Utilities-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.common.core.Utilities
+spark.android.ui.NetworkHandler
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.common.core.Utilities-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r10.<java.net.HttpURLConnection: java.lang.String getResponseMessage()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.common.core.Utilities
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+java.net.URLConnection
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r10.<java.net.HttpURLConnection: java.lang.String getResponseMessage()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+android.location.Location
+spark.android.ui.Field
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+spark.common.core.Utilities
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>("http://google.com")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URL
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("HEAD")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+java.net.HttpURLConnection
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r10.<java.net.HttpURLConnection: java.lang.String getResponseMessage()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r17 = virtualinvoke r0.<spark.android.ui.Controller: java.io.FileInputStream openFileInput(java.lang.String)>(r15)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+android.content.ContextWrapper
+android.location.Location
+spark.android.ui.Controller
+spark.android.ui.Field
+Category: spark.android.ui.Controller-*-spark.android.ui.Field-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URL
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.URLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URLConnection
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.URL
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<java.io.BufferedOutputStream: void write(byte[],int,int)>(r2, 0, $i1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+spark.common.core.Utilities
+android.location.Location
+java.io.BufferedOutputStream
+spark.android.ui.Controller
+spark.android.ui.Field
+spark.common.core.Utilities
+Category: spark.common.core.Utilities-*-spark.android.ui.Controller-*-spark.android.ui.Field-*-spark.common.core.Utilities-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>($r2)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.net.HttpURLConnection
+android.location.Location
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $r17 = virtualinvoke r0.<spark.android.ui.Controller: java.io.FileInputStream openFileInput(java.lang.String)>(r15)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+android.location.Location
+android.content.ContextWrapper
+spark.android.ui.Controller
+spark.android.ui.Field
+spark.common.core.Utilities
+Category: spark.android.ui.Controller-*-spark.android.ui.Field-*-spark.common.core.Utilities-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r4.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.NetworkHandler
+java.net.URL
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.NetworkHandler
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r4.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.NetworkHandler
+java.net.URL
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r11.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+java.net.HttpURLConnection
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r10.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.HttpURLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.common.core.Utilities
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.common.core.Utilities-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, "Geocoder not available... using Google geocoding API")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+android.util.Log
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, "Geocoder not available... using Google geocoding API")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+java.net.HttpURLConnection
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Geocoder
+android.util.Log
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.common.core.Utilities
+android.location.Location
+java.lang.StringBuilder
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.common.core.Utilities-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+android.location.Location
+android.util.Log
+spark.android.ui.Field
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r9, $r12)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+spark.common.core.Utilities
+android.location.Location
+android.util.Log
+spark.android.ui.Field
+spark.android.ui.DisplayUtilities
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.common.core.Utilities-*-spark.android.ui.Field-*-spark.android.ui.DisplayUtilities-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+android.location.Location
+spark.android.ui.NetworkHandler
+spark.android.ui.Field
+spark.android.ui.NetworkHandler
+java.net.URLConnection
+spark.android.ui.Controller
+Category: spark.android.ui.NetworkHandler-*-spark.android.ui.Field-*-spark.android.ui.NetworkHandler-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> $r17 = virtualinvoke r0.<spark.android.ui.Controller: java.io.FileInputStream openFileInput(java.lang.String)>(r15)
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+java.lang.Boolean
+android.content.ContextWrapper
+android.location.Location
+spark.android.ui.Controller
+spark.android.ui.Field
+Category: spark.android.ui.Controller-*-spark.android.ui.Field-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("HEAD")
+Component=> spark.android.ui.Controller
+ComponentColor=> RED
+spark.android.ui.Field$PhotoField
+java.net.HttpURLConnection
+android.location.Location
+spark.android.ui.Field
+spark.android.ui.Controller
+spark.android.ui.Controller
+Category: spark.android.ui.Field$PhotoField-*-spark.android.ui.Field-*-spark.android.ui.Controller-*-spark.android.ui.Controller-*-
+-----------------------------------------------------------------
+com.mobiltal.honestDiscounts.apk: 1067866

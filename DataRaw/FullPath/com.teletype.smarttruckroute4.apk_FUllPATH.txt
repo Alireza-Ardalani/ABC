@@ -1,0 +1,714 @@
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("com.teletype.smarttruckroute4.viaactivity.extra_via_itinerary_label", $r6)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r16 = virtualinvoke r0.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> throw $r2
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r12 = specialinvoke r0.<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)>($r27)
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> throw $r7
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r6 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> if $r6 != null goto $r8 = virtualinvoke $r6.<com.teletype.route_lib.a.h: java.lang.String toString()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r7 = virtualinvoke $r2.<com.teletype.route_lib.m$a: com.teletype.route_lib.m a()>()
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: void onHandleIntent(android.content.Intent)> --> $r8 = virtualinvoke $r6.<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)>($r7, $f1, $f0, $z1)
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: com.teletype.route_lib.m a(com.teletype.route_lib.m)> --> r0 := @this: com.teletype.smarttruckroute4.services.AnalyzeIntentService
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: com.teletype.route_lib.m a(com.teletype.route_lib.m)> --> $i0 = $r1.<com.teletype.route_lib.m: int n>
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: com.teletype.route_lib.m a(com.teletype.route_lib.m)> --> if $i0 != 0 goto return $r1
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: com.teletype.route_lib.a.b b(com.teletype.route_lib.m)> --> r0 := @this: com.teletype.smarttruckroute4.services.AnalyzeIntentService
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: com.teletype.route_lib.a.b b(com.teletype.route_lib.m)> --> $r17 = virtualinvoke $r13.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r14, $r12, $r1, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m> = null
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r1 = r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m>
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> if $r1 != null goto $r1 = r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m>
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> $r4 = staticinvoke <java.lang.Long: java.lang.String toString(long)>($l1)
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> $r3[0] = $r4
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> $r3 = $r1.<com.teletype.route_lib.r: java.lang.String[] b>
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> $r3 = $r1.<com.teletype.route_lib.r: java.lang.String[] b>
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("viewplacemarks", $r2, "_id=?", $r3, null, null, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.preferences.q: void f(android.content.Context,boolean)> --> $r0 := @parameter0: android.content.Context
+<com.teletype.smarttruckroute4.preferences.g: void a(android.content.Context,boolean)> --> $r0 := @parameter0: android.content.Context
+<com.teletype.smarttruckroute4.preferences.g: void a(android.content.Context,boolean)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_AVOID_TOLLS", 0)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r16 = virtualinvoke r0.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> throw $r2
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r12 = specialinvoke r0.<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)>($r27)
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> throw $r7
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r6 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> if $r6 != null goto $r8 = virtualinvoke $r6.<com.teletype.route_lib.a.h: java.lang.String toString()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("lastRouteShapeId", $i0)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m> = null
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r1 = r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m>
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> if $r1 != null goto $r1 = r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m>
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r30 = virtualinvoke $r29.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r27, $r28, null, null, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r16 = virtualinvoke r0.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> return $r12
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r12 = specialinvoke r0.<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)>($r27)
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> throw $r7
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r6 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> if $r6 != null goto $r8 = virtualinvoke $r6.<com.teletype.route_lib.a.h: java.lang.String toString()>()
+<com.teletype.route_lib.s: int a(long)> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: int a(long)> --> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routeshapes", $r3, "_id=?", $r1, null, null, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $r28 = virtualinvoke $r17.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> return $r0
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $r17 = staticinvoke <com.teletype.route_lib.s: com.teletype.route_lib.s a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> if $r0 != null goto $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.smarttruckroute4.MainActivity$34: void onClick(android.view.View)> --> $r4 = staticinvoke <com.teletype.route_lib.s: com.teletype.route_lib.s a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.smarttruckroute4.MainActivity$34: void onClick(android.view.View)> --> $r5 = virtualinvoke $r4.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.smarttruckroute4.MainActivity$34: void onClick(android.view.View)> --> if $r5 == null goto return
+<com.teletype.smarttruckroute4.MainActivity$34: void onClick(android.view.View)> --> $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_SATELLITE", 1)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.smarttruckroute4.RouteSummaryFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> --> $r11 = virtualinvoke $r10.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> return $r0
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> if $r0 != null goto $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.smarttruckroute4.RouteSummaryFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> --> $r10 = staticinvoke <com.teletype.route_lib.s: com.teletype.route_lib.s a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.smarttruckroute4.RouteSummaryFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> --> $r11 = virtualinvoke $r10.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.smarttruckroute4.RouteSummaryFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> --> if $r11 == null goto return $r4
+<com.teletype.route_lib.s: java.util.List m()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: java.util.List m()> --> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> if $r1 == null goto return $r1
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r13 = new android.location.Location
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> r0.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location g> = $r13
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r16 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r17)
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r17 = $r15.<com.teletype.smarttruckroute4.services.LocationUpdateService$b: com.teletype.smarttruckroute4.services.LocationUpdateService a>
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r15 = r0.<com.teletype.smarttruckroute4.MainActivity: com.teletype.smarttruckroute4.services.LocationUpdateService$b as>
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: void h()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> return $i0
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> return -1
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r3 = r0.<com.teletype.smarttruckroute4.MainActivity: com.teletype.smarttruckroute4.services.LocationUpdateService$b as>
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r5 = $r3.<com.teletype.smarttruckroute4.services.LocationUpdateService$b: com.teletype.smarttruckroute4.services.LocationUpdateService a>
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r1 := @parameter0: com.teletype.smarttruckroute4.services.LocationUpdateService
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> r0 := @this: com.teletype.smarttruckroute4.services.LocationUpdateService
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> if $z0 == 0 goto $r2 = r0.<com.teletype.smarttruckroute4.services.LocationUpdateService: com.google.android.gms.common.api.GoogleApiClient a>
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = r0.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location g>
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r4 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r5)
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> if $r4 != null goto $r6 = virtualinvoke $r1.<android.net.Uri: java.lang.String getQuery()>()
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r32 = interfaceinvoke $r32.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_SATELLITE", $z1)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.smarttruckroute4.MainActivity: int d(android.net.Uri)> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.route_lib.s: void f()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: void f()> --> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("routeshapes", null, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> if $r1 == null goto return $r1
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r13 = new android.location.Location
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> r0.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location g> = $r13
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r16 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r17)
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r17 = $r15.<com.teletype.smarttruckroute4.services.LocationUpdateService$b: com.teletype.smarttruckroute4.services.LocationUpdateService a>
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r15 = r0.<com.teletype.smarttruckroute4.MainActivity: com.teletype.smarttruckroute4.services.LocationUpdateService$b as>
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: void h()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> return $i0
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> return -1
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r3 = r0.<com.teletype.smarttruckroute4.MainActivity: com.teletype.smarttruckroute4.services.LocationUpdateService$b as>
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r5 = $r3.<com.teletype.smarttruckroute4.services.LocationUpdateService$b: com.teletype.smarttruckroute4.services.LocationUpdateService a>
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r1 := @parameter0: com.teletype.smarttruckroute4.services.LocationUpdateService
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> r0 := @this: com.teletype.smarttruckroute4.services.LocationUpdateService
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> if $z0 == 0 goto $r2 = r0.<com.teletype.smarttruckroute4.services.LocationUpdateService: com.google.android.gms.common.api.GoogleApiClient a>
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = r0.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location g>
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r4 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r5)
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> if $r4 != null goto $r6 = virtualinvoke $r1.<android.net.Uri: java.lang.String getQuery()>()
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r32 = interfaceinvoke $r32.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_TRAFFIC", $z1)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.smarttruckroute4.RouteDetailsActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r9 = virtualinvoke $r4.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> return $r1
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.smarttruckroute4.RouteDetailsActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r5 = virtualinvoke $r4.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.smarttruckroute4.RouteDetailsActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> if $r5 == null goto return 1
+<com.teletype.route_lib.s: java.util.List n()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: java.util.List n()> --> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("viewplacemarks", $r2, null, null, null, null, "_id ASC")
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r16 = virtualinvoke r0.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> return $r12
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r12 = specialinvoke r0.<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)>($r27)
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> throw $r7
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r6 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> if $r6 != null goto $r8 = virtualinvoke $r6.<com.teletype.route_lib.a.h: java.lang.String toString()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> $r9 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routeshapes", $r4, $r7, $r6, null, null, "_id ASC")
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $r28 = virtualinvoke $r17.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> return $r0
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $r17 = staticinvoke <com.teletype.route_lib.s: com.teletype.route_lib.s a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> if $r0 != null goto $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.smarttruckroute4.MainActivity$34: void onClick(android.view.View)> --> $r4 = staticinvoke <com.teletype.route_lib.s: com.teletype.route_lib.s a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.smarttruckroute4.MainActivity$34: void onClick(android.view.View)> --> $r5 = virtualinvoke $r4.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.smarttruckroute4.MainActivity$34: void onClick(android.view.View)> --> if $r5 == null goto return
+<com.teletype.smarttruckroute4.MainActivity$34: void onClick(android.view.View)> --> $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_SATELLITE", 1)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r16 = virtualinvoke r0.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> throw $r2
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r12 = specialinvoke r0.<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)>($r27)
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> throw $r7
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r6 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> if $r6 != null goto $r8 = virtualinvoke $r6.<com.teletype.route_lib.a.h: java.lang.String toString()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("passedvia", $r8)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m> = null
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r1 = r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m>
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> if $r1 != null goto $r1 = r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m>
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> virtualinvoke $r1.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("com.teletype.smarttruckroute4.viaactivity.extra_via_destination", $r2)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int d(android.net.Uri)> --> $r5 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r6)
+<com.teletype.smarttruckroute4.MainActivity: int d(android.net.Uri)> --> if $r5 != null goto $r7 = virtualinvoke $r1.<android.net.Uri: java.util.List getQueryParameters(java.lang.String)>("daddr")
+<com.teletype.smarttruckroute4.MainActivity: void a(boolean)> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.route_lib.s: boolean e()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.r: android.database.Cursor a()> --> r0 := @this: com.teletype.route_lib.r
+<com.teletype.route_lib.r: android.database.Cursor a()> --> $r3 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("route", $r2, null, null, null, null, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r16 = virtualinvoke r0.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> return $r12
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r12 = specialinvoke r0.<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)>($r27)
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> throw $r7
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r6 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r6 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> if $r6 != null goto $r8 = virtualinvoke $r6.<com.teletype.route_lib.a.h: java.lang.String toString()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("lastRouteShapeId", $i0)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int d(android.net.Uri)> --> $r5 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r6)
+<com.teletype.smarttruckroute4.MainActivity: int d(android.net.Uri)> --> if $r5 != null goto $r7 = virtualinvoke $r1.<android.net.Uri: java.util.List getQueryParameters(java.lang.String)>("daddr")
+<com.teletype.smarttruckroute4.preferences.q: void f(android.content.Context,boolean)> --> $r0 := @parameter0: android.content.Context
+<com.teletype.smarttruckroute4.preferences.g: void a(android.content.Context,boolean)> --> $r0 := @parameter0: android.content.Context
+<com.teletype.smarttruckroute4.preferences.g: void a(android.content.Context,boolean)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_AVOID_TOLLS", 0)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r16 = virtualinvoke r0.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> return $r12
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r12 = specialinvoke r0.<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)>($r27)
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> throw $r7
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r6 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> if $r6 != null goto $r8 = virtualinvoke $r6.<com.teletype.route_lib.a.h: java.lang.String toString()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r7 = virtualinvoke $r2.<com.teletype.route_lib.m$a: com.teletype.route_lib.m a()>()
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: void onHandleIntent(android.content.Intent)> --> $r8 = virtualinvoke $r6.<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)>($r7, $f1, $f0, $z1)
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: com.teletype.route_lib.m a(com.teletype.route_lib.m)> --> r0 := @this: com.teletype.smarttruckroute4.services.AnalyzeIntentService
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: com.teletype.route_lib.a.b b(com.teletype.route_lib.m)> --> r0 := @this: com.teletype.smarttruckroute4.services.AnalyzeIntentService
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: com.teletype.route_lib.a.b b(com.teletype.route_lib.m)> --> $r3 = $r2.<com.teletype.route_lib.m: com.teletype.route_lib.n A>
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: com.teletype.route_lib.a.b b(com.teletype.route_lib.m)> --> if $r3 == null goto return null
+<com.teletype.smarttruckroute4.services.AnalyzeIntentService: com.teletype.route_lib.a.b b(com.teletype.route_lib.m)> --> $r17 = virtualinvoke $r13.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r14, $r12, $r1, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> virtualinvoke $r1.<android.os.Bundle: void putParcelableArrayList(java.lang.String,java.util.ArrayList)>("com.teletype.smarttruckroute4.viaactivity.extra_via_list", $r4)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.preferences.q: void f(android.content.Context,boolean)> --> $r0 := @parameter0: android.content.Context
+<com.teletype.smarttruckroute4.preferences.g: void a(android.content.Context,boolean)> --> $r0 := @parameter0: android.content.Context
+<com.teletype.smarttruckroute4.preferences.g: void a(android.content.Context,boolean)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MINIMIZE_TOLLS", $z0)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $r28 = virtualinvoke $r17.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> return $r0
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $r17 = staticinvoke <com.teletype.route_lib.s: com.teletype.route_lib.s a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> if $r0 != null goto $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.route_lib.s: com.teletype.route_lib.s a()> --> $r0 = <com.teletype.route_lib.s: com.teletype.route_lib.s k>
+<com.teletype.smarttruckroute4.RouteSummaryFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> --> $r10 = staticinvoke <com.teletype.route_lib.s: com.teletype.route_lib.s a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.smarttruckroute4.RouteSummaryFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> --> $r11 = virtualinvoke $r10.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.smarttruckroute4.RouteSummaryFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)> --> if $r11 == null goto return $r4
+<com.teletype.route_lib.s: java.util.List m()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: java.util.List m()> --> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void a(com.teletype.smarttruckroute4.services.LocationUpdateService,com.google.android.gms.location.LocationRequest)> --> $r3 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> r0 := @this: com.teletype.smarttruckroute4.services.LocationUpdateService
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> if $r1 == null goto return
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> virtualinvoke $r15.<android.os.Bundle: void putLong(java.lang.String,long)>("elapsedLastReportedInNanos", $l1)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m> = null
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r1 = r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m>
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> if $r1 != null goto $r1 = r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m>
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> $r4 = staticinvoke <java.lang.Long: java.lang.String toString(long)>($l1)
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> $r3[0] = $r4
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> $r3 = $r1.<com.teletype.route_lib.r: java.lang.String[] b>
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> $r3 = $r1.<com.teletype.route_lib.r: java.lang.String[] b>
+<com.teletype.route_lib.s: com.teletype.route_lib.n a(int)> --> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("viewplacemarks", $r2, "_id=?", $r3, null, null, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r16 = virtualinvoke r0.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> throw $r2
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r12 = specialinvoke r0.<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)>($r27)
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> throw $r7
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r6 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> if $r6 != null goto $r8 = virtualinvoke $r6.<com.teletype.route_lib.a.h: java.lang.String toString()>()
+<com.teletype.route_lib.s: int a(long)> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: int a(long)> --> $r4 = staticinvoke <java.lang.Long: java.lang.String toString(long)>($l0)
+<com.teletype.route_lib.s: int a(long)> --> $r1[0] = $r4
+<com.teletype.route_lib.s: int a(long)> --> $r1 = $r2.<com.teletype.route_lib.r: java.lang.String[] b>
+<com.teletype.route_lib.s: int a(long)> --> $r1 = $r2.<com.teletype.route_lib.r: java.lang.String[] b>
+<com.teletype.route_lib.s: int a(long)> --> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routeshapes", $r3, "_id=?", $r1, null, null, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("com.teletype.smarttruckroute4.viaactivity.extra_via_itinerary_label", $r6)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m> = null
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r1 = r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m>
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> if $r1 != null goto $r1 = r0.<com.teletype.smarttruckroute4.MainActivity: android.os.Bundle m>
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> $r30 = virtualinvoke $r29.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r27, $r28, null, null, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r16 = virtualinvoke r0.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> return $r12
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r12 = specialinvoke r0.<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)>($r27)
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> throw $r7
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r6 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> if $r6 != null goto $r8 = virtualinvoke $r6.<com.teletype.route_lib.a.h: java.lang.String toString()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("passedvia", $r8)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r4 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r5)
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> if $r4 != null goto $r6 = virtualinvoke $r1.<android.net.Uri: java.lang.String getQuery()>()
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r32 = interfaceinvoke $r32.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_TRAFFIC", $z1)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.route_lib.s: void f()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: void f()> --> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("routeshapes", null, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void a(com.teletype.smarttruckroute4.services.LocationUpdateService,com.google.android.gms.location.LocationRequest)> --> $r3 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void a(com.teletype.smarttruckroute4.services.LocationUpdateService,com.google.android.gms.location.LocationRequest)> --> if $r3 == null goto $r4 = staticinvoke <com.google.android.gms.location.LocationServices: com.google.android.gms.location.FusedLocationProviderClient getFusedLocationProviderClient(android.content.Context)>($r1)
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> r0 := @this: com.teletype.smarttruckroute4.services.LocationUpdateService
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> $r14 = new android.location.Location
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> r0.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location s> = $r14
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> $r2 = r0.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location s>
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> if $r2 == null goto $z2 = 0
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> $z2 = 0
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> $z1 = $z2
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> $z2 = 0
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> if $z1 == 0 goto $r14 = new android.location.Location
+<com.teletype.smarttruckroute4.services.LocationUpdateService: void onLocationChanged(android.location.Location)> --> virtualinvoke $r15.<android.os.Bundle: void putLong(java.lang.String,long)>("elapsedLastReportedInNanos", $l1)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.smarttruckroute4.RouteDetailsActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r9 = virtualinvoke $r4.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> return null
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.smarttruckroute4.RouteDetailsActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r5 = virtualinvoke $r4.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.smarttruckroute4.RouteDetailsActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> if $r5 == null goto return 1
+<com.teletype.route_lib.s: java.util.List n()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: java.util.List n()> --> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("viewplacemarks", $r2, null, null, null, null, "_id ASC")
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = virtualinvoke $r4.<com.teletype.route_lib.a.h$a: com.teletype.route_lib.a.h a()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l> = $r1
+<com.teletype.route_lib.s: java.util.List n()> --> $r5 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r16 = virtualinvoke r0.<com.teletype.route_lib.s: java.util.List n()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> throw $r2
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r12 = specialinvoke r0.<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)>($r27)
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> throw $r7
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> if $r1 == null goto $r2 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.r a>
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> $r1 = r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h l>
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> $r6 = virtualinvoke r0.<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()>()
+<com.teletype.route_lib.s: com.teletype.route_lib.m a(com.teletype.route_lib.a.c,float,float,boolean)> --> if $r6 != null goto $r8 = virtualinvoke $r6.<com.teletype.route_lib.a.h: java.lang.String toString()>()
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> $r7 = staticinvoke <java.lang.Double: java.lang.String toString(double)>($d0)
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> $r6[3] = $r7
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> $r6 = $r3.<com.teletype.route_lib.r: java.lang.String[] c>
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> $r6 = $r3.<com.teletype.route_lib.r: java.lang.String[] c>
+<com.teletype.route_lib.s: java.util.List a(com.teletype.route_lib.a.d)> --> $r9 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routeshapes", $r4, $r7, $r6, null, null, "_id ASC")
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> virtualinvoke $r1.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("com.teletype.smarttruckroute4.viaactivity.extra_via_destination", $r2)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.route_lib.s: com.teletype.route_lib.a.h g()> --> r0 := @this: com.teletype.route_lib.s
+<com.teletype.route_lib.r: android.database.Cursor a()> --> r0 := @this: com.teletype.route_lib.r
+<com.teletype.route_lib.r: android.database.Cursor a()> --> $r3 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("route", $r2, null, null, null, null, null)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int d(android.net.Uri)> --> $r5 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r6)
+<com.teletype.smarttruckroute4.MainActivity: int d(android.net.Uri)> --> if $r5 != null goto $r7 = virtualinvoke $r1.<android.net.Uri: java.util.List getQueryParameters(java.lang.String)>("daddr")
+<com.teletype.smarttruckroute4.preferences.q: void f(android.content.Context,boolean)> --> $r0 := @parameter0: android.content.Context
+<com.teletype.smarttruckroute4.preferences.g: void a(android.content.Context,boolean)> --> $r0 := @parameter0: android.content.Context
+<com.teletype.smarttruckroute4.preferences.g: void a(android.content.Context,boolean)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MINIMIZE_TOLLS", $z0)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r4 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r5)
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> if $r4 != null goto $r6 = virtualinvoke $r1.<android.net.Uri: java.lang.String getQuery()>()
+<com.teletype.smarttruckroute4.MainActivity: int b(android.net.Uri)> --> $r32 = interfaceinvoke $r32.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_SATELLITE", $z1)
+--------------------------------------------------------
+
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()> --> $r1 = $r8
+<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)> --> $r0 = specialinvoke $r1.<com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location c()>()
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> $r6 = staticinvoke <com.teletype.smarttruckroute4.services.LocationUpdateService: android.location.Location l(com.teletype.smarttruckroute4.services.LocationUpdateService)>($r7)
+<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)> --> if $r6 != null goto $r2 = virtualinvoke $r1.<android.net.Uri: java.lang.String getSchemeSpecificPart()>()
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> $i0 = specialinvoke r0.<com.teletype.smarttruckroute4.MainActivity: int a(android.net.Uri)>($r27)
+<com.teletype.smarttruckroute4.MainActivity: void onResume()> --> lookupswitch($i0) {     case -1: goto $z0 = 0;     case 0: goto $z0 = 0;     default: goto $z0 = 1; }
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> r0 := @this: com.teletype.smarttruckroute4.MainActivity
+<com.teletype.smarttruckroute4.MainActivity: void h()> --> virtualinvoke $r1.<android.os.Bundle: void putParcelableArrayList(java.lang.String,java.util.ArrayList)>("com.teletype.smarttruckroute4.viaactivity.extra_via_list", $r4)
+--------------------------------------------------------
+

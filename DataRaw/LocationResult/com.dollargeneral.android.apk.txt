@@ -1,0 +1,69 @@
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> r12 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>(r1, "UTF-8")
+Component=> com.dollargeneral.android.locate.LocateMapActivity
+ComponentColor=> GREEN
+android.location.Location
+taqtile.android.sdk.TQAnalytics$1
+com.dollargeneral.android.locate.LocateMapActivity
+taqtile.android.sdk.TQAnalytics
+java.net.URLEncoder
+ly.count.android.api.Countly
+taqtile.android.sdk.TQAnalytics
+ly.count.android.api.Countly
+taqtile.android.sdk.TQAnalytics
+java.util.Timer
+taqtile.android.sdk.analytics.SAGeoEventQueue
+Category: taqtile.android.sdk.TQAnalytics$1-*-taqtile.android.sdk.TQAnalytics-*-ly.count.android.api.Countly-*-taqtile.android.sdk.TQAnalytics-*-ly.count.android.api.Countly-*-taqtile.android.sdk.TQAnalytics-*-taqtile.android.sdk.analytics.SAGeoEventQueue-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> r7 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>(r2, "UTF-8")
+Component=> com.dollargeneral.android.locate.LocateMapActivity
+ComponentColor=> GREEN
+com.dollargeneral.android.locate.LocateMapActivity
+java.net.URLEncoder
+ly.count.android.api.EventQueue
+ly.count.android.api.Countly
+android.location.Location
+Category: ly.count.android.api.EventQueue-*-ly.count.android.api.Countly-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> r12 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>(r1, "UTF-8")
+Component=> com.dollargeneral.android.locate.LocateMapActivity
+ComponentColor=> GREEN
+taqtile.android.sdk.TQAnalytics$1
+com.dollargeneral.android.locate.LocateMapActivity
+taqtile.android.sdk.TQAnalytics
+java.net.URLEncoder
+ly.count.android.api.Countly
+taqtile.android.sdk.TQAnalytics
+ly.count.android.api.Countly
+taqtile.android.sdk.TQAnalytics
+java.util.Timer
+android.location.Location
+taqtile.android.sdk.analytics.SAGeoEventQueue
+Category: taqtile.android.sdk.TQAnalytics$1-*-taqtile.android.sdk.TQAnalytics-*-ly.count.android.api.Countly-*-taqtile.android.sdk.TQAnalytics-*-ly.count.android.api.Countly-*-taqtile.android.sdk.TQAnalytics-*-taqtile.android.sdk.analytics.SAGeoEventQueue-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> r7 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>(r2, "UTF-8")
+Component=> com.dollargeneral.android.locate.LocateMapActivity
+ComponentColor=> GREEN
+android.location.Location
+com.dollargeneral.android.locate.LocateMapActivity
+java.net.URLEncoder
+ly.count.android.api.EventQueue
+ly.count.android.api.Countly
+Category: ly.count.android.api.EventQueue-*-ly.count.android.api.Countly-*-
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r7)
+Component=> com.dollargeneral.android.locate.LocateMapActivity
+ComponentColor=> GREEN
+com.dollargeneral.android.util.Utils
+android.location.LocationManager
+android.util.Log
+com.dollargeneral.android.util.ApplicationHttpClient
+com.dollargeneral.android.model.DGBeaconManager
+com.dollargeneral.android.model.DGBeaconManager
+Category: LEGIT
+-----------------------------------------------------------------
+com.dollargeneral.android.apk: 1146790

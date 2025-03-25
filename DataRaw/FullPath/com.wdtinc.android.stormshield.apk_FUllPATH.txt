@@ -1,0 +1,113 @@
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> $r1 = specialinvoke r0.<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()>()
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> if $r1 == null goto return null
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: java.util.List geocode(android.location.Location)> --> r0 := @this: com.scripps.android.stormshield.domains.CurrentLocationManagerImpl
+<io.reactivex.Observable: java.lang.Object blockingSingle()> --> r0 := @this: io.reactivex.Observable
+<io.reactivex.Maybe: java.lang.Object blockingGet()> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.Maybe: void subscribe(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.internal.operators.maybe.MaybeFilterSingle: void subscribeActual(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.internal.operators.maybe.MaybeFilterSingle
+<io.reactivex.Single: void subscribe(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.Single
+<io.reactivex.internal.operators.single.SingleFromCallable: void subscribeActual(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.internal.operators.single.SingleFromCallable
+<com.scripps.android.stormshield.database.MediaProviderManager$2: java.util.List call()> --> r0 := @this: com.scripps.android.stormshield.database.MediaProviderManager$2
+<com.scripps.android.stormshield.database.MediaProviderManager$2: java.util.List call()> --> $r7 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, $r6)
+--------------------------------------------------------
+
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> $r1 = specialinvoke r0.<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()>()
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> if $r1 == null goto return null
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: java.util.List geocode(android.location.Location)> --> r0 := @this: com.scripps.android.stormshield.domains.CurrentLocationManagerImpl
+<io.reactivex.Observable: java.lang.Object blockingSingle()> --> r0 := @this: io.reactivex.Observable
+<io.reactivex.Maybe: java.lang.Object blockingGet()> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.Maybe: void subscribe(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.internal.operators.maybe.MaybeFilterSingle: void subscribeActual(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.internal.operators.maybe.MaybeFilterSingle
+<io.reactivex.Single: void subscribe(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.Single
+<io.reactivex.internal.operators.single.SingleFromCallable: void subscribeActual(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.internal.operators.single.SingleFromCallable
+<io.reactivex.internal.operators.single.SingleToObservable$SingleToObservableObserver: void onSuccess(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.single.SingleToObservable$SingleToObservableObserver
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.scripps.android.stormshield.ui.settings.SettingsActivity$4: void accept(java.lang.Object)> --> r0 := @this: com.scripps.android.stormshield.ui.settings.SettingsActivity$4
+<com.scripps.android.stormshield.ui.settings.SettingsActivity$4: void accept(com.scripps.android.stormshield.billing.BillingProviderImpl$InventoryUpdate)> --> r0 := @this: com.scripps.android.stormshield.ui.settings.SettingsActivity$4
+<com.scripps.android.stormshield.preferences.StormShieldPreferencesProviderImpl: void setLightningAlertsEnabled(boolean)> --> r0 := @this: com.scripps.android.stormshield.preferences.StormShieldPreferencesProviderImpl
+<com.scripps.android.stormshield.preferences.StormShieldPreferencesProviderImpl: void setLightningAlertsEnabled(boolean)> --> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("pref_is_lightning_alerts_enabled", $z0)
+--------------------------------------------------------
+
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> $r1 = specialinvoke r0.<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()>()
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> if $r1 == null goto return null
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: java.util.List geocode(android.location.Location)> --> r0 := @this: com.scripps.android.stormshield.domains.CurrentLocationManagerImpl
+<io.reactivex.Observable: java.lang.Object blockingSingle()> --> r0 := @this: io.reactivex.Observable
+<io.reactivex.Maybe: java.lang.Object blockingGet()> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.Maybe: void subscribe(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.internal.operators.maybe.MaybeFilterSingle: void subscribeActual(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.internal.operators.maybe.MaybeFilterSingle
+<io.reactivex.Single: void subscribe(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.Single
+<io.reactivex.internal.operators.single.SingleFromCallable: void subscribeActual(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.internal.operators.single.SingleFromCallable
+<io.reactivex.internal.operators.single.SingleToObservable$SingleToObservableObserver: void onSuccess(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.single.SingleToObservable$SingleToObservableObserver
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.scripps.android.stormshield.ui.weathermap.WeatherMapActivity$3: void accept(java.lang.Object)> --> r0 := @this: com.scripps.android.stormshield.ui.weathermap.WeatherMapActivity$3
+<com.scripps.android.stormshield.ui.weathermap.WeatherMapActivity$3: void accept(com.scripps.android.stormshield.domains.CurrentLocationUpdate)> --> r0 := @this: com.scripps.android.stormshield.ui.weathermap.WeatherMapActivity$3
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: void addCurrentLocationUpdate(com.scripps.android.stormshield.domains.CurrentLocationUpdate)> --> r0 := @this: com.scripps.android.stormshield.domains.CurrentLocationManagerImpl
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: void addCurrentLocationUpdate(com.scripps.android.stormshield.domains.CurrentLocationUpdate)> --> $r11 = virtualinvoke $r9.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, $r10)
+--------------------------------------------------------
+
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> $r1 = specialinvoke r0.<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()>()
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> if $r1 == null goto return null
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: java.util.List geocode(android.location.Location)> --> r0 := @this: com.scripps.android.stormshield.domains.CurrentLocationManagerImpl
+<io.reactivex.Observable: java.lang.Object blockingSingle()> --> r0 := @this: io.reactivex.Observable
+<io.reactivex.Maybe: java.lang.Object blockingGet()> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.Maybe: void subscribe(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.internal.operators.maybe.MaybeFilterSingle: void subscribeActual(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.internal.operators.maybe.MaybeFilterSingle
+<io.reactivex.Single: void subscribe(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.Single
+<io.reactivex.internal.operators.single.SingleFromCallable: void subscribeActual(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.internal.operators.single.SingleFromCallable
+<com.scripps.android.stormshield.database.SavedLocationsManager$5: java.util.List call()> --> r0 := @this: com.scripps.android.stormshield.database.SavedLocationsManager$5
+<com.scripps.android.stormshield.database.SavedLocationsManager$5: java.util.List call()> --> $r17 = virtualinvoke $r15.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, $r16)
+--------------------------------------------------------
+
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> $r1 = specialinvoke r0.<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()>()
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> if $r1 == null goto return null
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: java.util.List geocode(android.location.Location)> --> r0 := @this: com.scripps.android.stormshield.domains.CurrentLocationManagerImpl
+<io.reactivex.Observable: java.lang.Object blockingSingle()> --> r0 := @this: io.reactivex.Observable
+<io.reactivex.Maybe: java.lang.Object blockingGet()> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.Maybe: void subscribe(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.internal.operators.maybe.MaybeFilterSingle: void subscribeActual(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.internal.operators.maybe.MaybeFilterSingle
+<io.reactivex.Single: void subscribe(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.Single
+<io.reactivex.internal.operators.single.SingleFromCallable: void subscribeActual(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.internal.operators.single.SingleFromCallable
+<io.reactivex.internal.operators.single.SingleToObservable$SingleToObservableObserver: void onSuccess(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.single.SingleToObservable$SingleToObservableObserver
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.scripps.android.stormshield.ui.settings.SettingsActivity$1: void accept(java.lang.Object)> --> r0 := @this: com.scripps.android.stormshield.ui.settings.SettingsActivity$1
+<com.scripps.android.stormshield.billing.dialog.InAppPurchaseDialogFragment: com.scripps.android.stormshield.billing.dialog.InAppPurchaseDialogFragment newInstance(java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<com.scripps.android.stormshield.billing.dialog.InAppPurchaseDialogFragment: com.scripps.android.stormshield.billing.dialog.InAppPurchaseDialogFragment newInstance(java.lang.String)> --> virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("arg_sku", "lightning_alerts_subscription")
+--------------------------------------------------------
+
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> $r1 = specialinvoke r0.<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()>()
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> if $r1 == null goto return null
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: java.util.List geocode(android.location.Location)> --> r0 := @this: com.scripps.android.stormshield.domains.CurrentLocationManagerImpl
+<io.reactivex.Observable: java.lang.Object blockingSingle()> --> r0 := @this: io.reactivex.Observable
+<io.reactivex.Maybe: java.lang.Object blockingGet()> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.Maybe: void subscribe(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.internal.operators.maybe.MaybeFilterSingle: void subscribeActual(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.internal.operators.maybe.MaybeFilterSingle
+<io.reactivex.Single: void subscribe(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.Single
+<io.reactivex.internal.operators.single.SingleFromCallable: void subscribeActual(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.internal.operators.single.SingleFromCallable
+<io.reactivex.internal.operators.single.SingleToObservable$SingleToObservableObserver: void onSuccess(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.single.SingleToObservable$SingleToObservableObserver
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.scripps.android.stormshield.ui.weathermap.WeatherMapActivity$3: void accept(java.lang.Object)> --> r0 := @this: com.scripps.android.stormshield.ui.weathermap.WeatherMapActivity$3
+<com.scripps.android.stormshield.ui.weathermap.WeatherMapActivity$3: void accept(com.scripps.android.stormshield.domains.CurrentLocationUpdate)> --> r0 := @this: com.scripps.android.stormshield.ui.weathermap.WeatherMapActivity$3
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: void addCurrentLocationUpdate(com.scripps.android.stormshield.domains.CurrentLocationUpdate)> --> r0 := @this: com.scripps.android.stormshield.domains.CurrentLocationManagerImpl
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: void addCurrentLocationUpdate(com.scripps.android.stormshield.domains.CurrentLocationUpdate)> --> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void execute()>()
+--------------------------------------------------------
+
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> $r1 = specialinvoke r0.<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: android.location.Location getLastKnownLocation()>()
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: com.scripps.android.stormshield.domains.CurrentLocation createCurrentLocation()> --> if $r1 == null goto return null
+<com.scripps.android.stormshield.domains.CurrentLocationManagerImpl: java.util.List geocode(android.location.Location)> --> r0 := @this: com.scripps.android.stormshield.domains.CurrentLocationManagerImpl
+<io.reactivex.Observable: java.lang.Object blockingSingle()> --> r0 := @this: io.reactivex.Observable
+<io.reactivex.Maybe: java.lang.Object blockingGet()> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.Maybe: void subscribe(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.Maybe
+<io.reactivex.internal.operators.maybe.MaybeFilterSingle: void subscribeActual(io.reactivex.MaybeObserver)> --> r0 := @this: io.reactivex.internal.operators.maybe.MaybeFilterSingle
+<io.reactivex.Single: void subscribe(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.Single
+<io.reactivex.internal.operators.single.SingleFromCallable: void subscribeActual(io.reactivex.SingleObserver)> --> r0 := @this: io.reactivex.internal.operators.single.SingleFromCallable
+<com.scripps.android.stormshield.database.SavedLocationsManager$6: java.util.List call()> --> r0 := @this: com.scripps.android.stormshield.database.SavedLocationsManager$6
+<com.scripps.android.stormshield.database.SavedLocationsManager$6: java.util.List call()> --> $r7 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r5, $r6)
+--------------------------------------------------------
+

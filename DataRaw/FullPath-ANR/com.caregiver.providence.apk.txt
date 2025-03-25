@@ -1,0 +1,41 @@
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("com.caregiver.RESULT_ADDRESS", $r1)
+Component=> com.caregiver.GeocodeAddressIntentService
+ComponentColor=> RED
+com.caregiver.GeocodeAddressIntentService
+com.caregiver.GeocodeAddressIntentService
+android.location.Location
+android.os.Bundle
+Category: com.caregiver.GeocodeAddressIntentService-*-com.caregiver.GeocodeAddressIntentService-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("com.caregiver.RESULT_ADDRESS", $r1)
+Component=> com.caregiver.GeocodeAddressIntentService
+ComponentColor=> RED
+com.caregiver.GeocodeAddressIntentService
+android.location.Location
+com.caregiver.GeocodeAddressIntentService
+android.os.Bundle
+Category: com.caregiver.GeocodeAddressIntentService-*-com.caregiver.GeocodeAddressIntentService-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("com.caregiver.RESULT_DATA_KEY", $r3)
+Component=> com.caregiver.GeocodeAddressIntentService
+ComponentColor=> RED
+android.os.BaseBundle
+com.caregiver.GeocodeAddressIntentService
+android.location.Location
+com.caregiver.GeocodeAddressIntentService
+Category: com.caregiver.GeocodeAddressIntentService-*-com.caregiver.GeocodeAddressIntentService-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("com.caregiver.RESULT_DATA_KEY", $r3)
+Component=> com.caregiver.GeocodeAddressIntentService
+ComponentColor=> RED
+android.os.BaseBundle
+com.caregiver.GeocodeAddressIntentService
+com.caregiver.GeocodeAddressIntentService
+android.location.Location
+Category: com.caregiver.GeocodeAddressIntentService-*-com.caregiver.GeocodeAddressIntentService-*-
+-----------------------------------------------------------------
+com.caregiver.providence.apk: 1079294

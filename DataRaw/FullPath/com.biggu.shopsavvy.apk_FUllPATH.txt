@@ -1,0 +1,39 @@
+<com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper: void getLocation(android.content.Context,com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper$OnLocationListener)> --> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+<com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper: void getLocation(android.content.Context,com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper$OnLocationListener)> --> $r1 := @caughtexception
+<com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper: void onLocation(android.location.Location)> --> r1 := @this: com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper
+<com.cuebiq.cuebiqsdk.model.processor.LocationProcessor$1: void onLocation(android.location.Location)> --> r0 := @this: com.cuebiq.cuebiqsdk.model.processor.LocationProcessor$1
+<com.cuebiq.cuebiqsdk.CuebiqSDKImpl: void log(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.cuebiq.cuebiqsdk.utils.Logger: void log(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.cuebiq.cuebiqsdk.utils.Logger: void log(java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r3)
+--------------------------------------------------------
+
+<com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper: void getLocation(android.content.Context,com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper$OnLocationListener)> --> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+<com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper: void getLocation(android.content.Context,com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper$OnLocationListener)> --> $r1 := @caughtexception
+<com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper: void onLocation(android.location.Location)> --> r1 := @this: com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper
+<com.cuebiq.cuebiqsdk.CuebiqSDKImpl$3$1: void onLocation(android.location.Location)> --> r7 := @this: com.cuebiq.cuebiqsdk.CuebiqSDKImpl$3$1
+<com.cuebiq.cuebiqsdk.CuebiqSDKImpl: com.cuebiq.cuebiqsdk.model.config.Settings getBeAudienceConfiguration(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.cuebiq.cuebiqsdk.model.persistence.PersistenceManagerImpl: com.cuebiq.cuebiqsdk.model.config.Settings retrieveBeAudienceConfiguration(android.content.Context)> --> r0 := @this: com.cuebiq.cuebiqsdk.model.persistence.PersistenceManagerImpl
+<com.cuebiq.cuebiqsdk.model.persistence.PersistenceManagerImpl: com.cuebiq.cuebiqsdk.model.config.Settings retrieveBeAudienceConfiguration(android.content.Context)> --> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_configuration", $r4)
+--------------------------------------------------------
+
+<com.biggu.shopsavvy.services.GeofenceConstructionsIntentService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.biggu.shopsavvy.services.GeofenceConstructionsIntentService: void onHandleIntent(android.content.Intent)> --> $f0 = (float) $d0
+<com.biggu.shopsavvy.utils.LocationUtils: void setLatLon(float,float)> --> $f1 := @parameter0: float
+<com.biggu.shopsavvy.utils.LocationUtils: void setLatLon(float,float)> --> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("lat", $f1)
+--------------------------------------------------------
+
+<com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper: void getLocation(android.content.Context,com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper$OnLocationListener)> --> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+<com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper: void getLocation(android.content.Context,com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper$OnLocationListener)> --> $r1 := @caughtexception
+<com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper: void onLocation(android.location.Location)> --> r1 := @this: com.cuebiq.cuebiqsdk.model.manager.LocationManagerHelper
+<com.cuebiq.cuebiqsdk.model.processor.LocationProcessor$1: void onLocation(android.location.Location)> --> r0 := @this: com.cuebiq.cuebiqsdk.model.processor.LocationProcessor$1
+<com.cuebiq.cuebiqsdk.CuebiqSDKImpl: void log(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.cuebiq.cuebiqsdk.utils.Logger: void log(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.cuebiq.cuebiqsdk.utils.Logger: void log(java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r0)
+--------------------------------------------------------
+
+<com.biggu.shopsavvy.services.GeofenceConstructionsIntentService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.biggu.shopsavvy.services.GeofenceConstructionsIntentService: void onHandleIntent(android.content.Intent)> --> $f1 = (float) $d0
+<com.biggu.shopsavvy.utils.LocationUtils: void setLatLon(float,float)> --> $f1 := @parameter0: float
+<com.biggu.shopsavvy.utils.LocationUtils: void setLatLon(float,float)> --> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("lon", $f0)
+--------------------------------------------------------
+

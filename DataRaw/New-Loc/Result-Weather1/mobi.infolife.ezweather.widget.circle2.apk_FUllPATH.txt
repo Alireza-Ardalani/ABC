@@ -1,0 +1,114 @@
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> if $r5 == null goto i0 = i0 + 1
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> $r1 = staticinvoke <com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)>($r0)
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> if $r1 == null goto staticinvoke <com.amberweather.location.AddressUtils: void l(java.lang.String)>("locationManager is null")
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> $r3 = $r4
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> if $r3 == null goto return $r5
+<com.amberweather.location.PreferenceUtils: void setLocatedCity(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.amberweather.location.PreferenceUtils: void setLocatedCity(android.content.Context,java.lang.String)> --> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("located_city", $r1)
+--------------------------------------------------------
+
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> if $r5 == null goto i0 = i0 + 1
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> $r1 = staticinvoke <com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)>($r0)
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> if $r1 == null goto staticinvoke <com.amberweather.location.AddressUtils: void l(java.lang.String)>("locationManager is null")
+<com.amberweather.location.AddressUtils: void l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.amberweather.location.AddressUtils: void l(java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+--------------------------------------------------------
+
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> if $r5 == null goto i0 = i0 + 1
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> $r1 = staticinvoke <com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)>($r0)
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> if $r1 == null goto staticinvoke <com.amberweather.location.AddressUtils: void l(java.lang.String)>("locationManager is null")
+<com.amberweather.location.AddressController$1: void run()> --> r1 = staticinvoke <com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)>($r2)
+<com.amberweather.location.AddressController$1: void run()> --> if r1 == null goto $r4 = r0.<com.amberweather.location.AddressController$1: com.amberweather.location.LocationUpdateListener val$locationUpdateListener>
+<com.amberweather.location.PreferenceUtils: void setAddressLastUpdate(android.content.Context,long)> --> $r0 := @parameter0: android.content.Context
+<com.amberweather.location.PreferenceUtils: void setAddressLastUpdate(android.content.Context,long)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("address_last_update", $l0)
+--------------------------------------------------------
+
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> if $i1 >= 0 goto z0 = 0
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> $d2 = (double) $f1
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> if $i1 >= 0 goto z1 = 0
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> $r6 = new java.lang.StringBuilder
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> if z0 == 0 goto staticinvoke <com.amberweather.location.PreferenceUtils: void setGPSCityLat(android.content.Context,double)>($r0, $d0)
+<com.amberweather.location.PreferenceUtils: void setGPSCityLat(android.content.Context,double)> --> $r0 := @parameter0: android.content.Context
+<com.amberweather.location.PreferenceUtils: void setGPSCityLat(android.content.Context,double)> --> f0 = (float) $d0
+<com.amberweather.location.PreferenceUtils: void setGPSCityLat(android.content.Context,double)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLat", f0)
+--------------------------------------------------------
+
+<com.amberweather.location.AddressController$1: void run()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.amberweather.location.AmberLocation: void setLongitude(double)> --> r0 := @this: com.amberweather.location.AmberLocation
+<com.amberweather.location.AmberLocation: void setLongitude(double)> --> r0.<com.amberweather.location.AmberLocation: double longitude> = $d0
+<com.amberweather.location.AddressController$1: void run()> --> virtualinvoke r1.<com.amberweather.location.AmberLocation: void setLongitude(double)>($d0)
+<mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver$1$1: void onSuccess(com.amberweather.location.AmberLocation)> --> r0 := @this: mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver$1$1
+<com.amberweather.location.AmberLocation: double getLatitude()> --> r0 := @this: com.amberweather.location.AmberLocation
+<mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver$1$1: void onSuccess(com.amberweather.location.AmberLocation)> --> $d0 = virtualinvoke $r1.<com.amberweather.location.AmberLocation: double getLatitude()>()
+<com.amberweather.location.AmberLocation: double getLongitude()> --> r0 := @this: com.amberweather.location.AmberLocation
+<com.amberweather.location.AmberLocation: double getLongitude()> --> d0 = r0.<com.amberweather.location.AmberLocation: double longitude>
+<mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver$1$1: void onSuccess(com.amberweather.location.AmberLocation)> --> $d0 = virtualinvoke $r1.<com.amberweather.location.AmberLocation: double getLongitude()>()
+<com.amberweather.location.PreferenceUtils: void setGPSCityLon(android.content.Context,double)> --> $r0 := @parameter0: android.content.Context
+<com.amberweather.location.PreferenceUtils: void setGPSCityLon(android.content.Context,double)> --> f0 = (float) $d0
+<com.amberweather.location.PreferenceUtils: void setGPSCityLon(android.content.Context,double)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLon", f0)
+--------------------------------------------------------
+
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> if $r5 == null goto i0 = i0 + 1
+<com.amberweather.location.AddressController$1: void run()> --> $r3 = staticinvoke <com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)>($r2)
+<com.amberweather.location.AddressController$1: void run()> --> if $r3 == null goto $r4 = r0.<com.amberweather.location.AddressController$1: com.amberweather.location.LocationUpdateListener val$locationUpdateListener>
+<mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver$1$1: void onSuccess(com.amberweather.location.AmberLocation)> --> r0 := @this: mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver$1$1
+<com.amberweather.location.PreferenceUtils: void setGPSCityLat(android.content.Context,double)> --> $r0 := @parameter0: android.content.Context
+<com.amberweather.location.PreferenceUtils: void setGPSCityLat(android.content.Context,double)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLat", f0)
+--------------------------------------------------------
+
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> if $i1 >= 0 goto z0 = 0
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> $d2 = (double) $f1
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> if $i1 >= 0 goto z1 = 0
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> $r6 = new java.lang.StringBuilder
+<com.amberweather.location.PreferenceUtils: void setGPSCityLon(android.content.Context,double)> --> $r0 := @parameter0: android.content.Context
+<com.amberweather.location.PreferenceUtils: void setGPSCityLon(android.content.Context,double)> --> f0 = (float) $d0
+<com.amberweather.location.PreferenceUtils: void setGPSCityLon(android.content.Context,double)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLon", f0)
+--------------------------------------------------------
+
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> if $r5 == null goto i0 = i0 + 1
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> $r1 = staticinvoke <com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)>($r0)
+<com.amberweather.location.AddressUtils: com.amberweather.location.AmberLocation updateAddress(android.content.Context)> --> if $r1 == null goto staticinvoke <com.amberweather.location.AddressUtils: void l(java.lang.String)>("locationManager is null")
+<com.amberweather.location.AddressUtils: java.lang.String getCityFromIP(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.amberweather.location.OKHttpGetClientUtil: java.lang.String getDataStringFromUrl(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.amberweather.location.OKHttpGetClientUtil: java.lang.String getDataStringFromUrl(java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("wzw", $r3)
+--------------------------------------------------------
+
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> if $r5 == null goto i0 = i0 + 1
+<com.amberweather.location.AddressController$1: void run()> --> $r3 = staticinvoke <com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)>($r2)
+<com.amberweather.location.AddressController$1: void run()> --> if $r3 == null goto $r4 = r0.<com.amberweather.location.AddressController$1: com.amberweather.location.LocationUpdateListener val$locationUpdateListener>
+<com.amberweather.location.PreferenceUtils: void setLatLongLastUpdate(android.content.Context,long)> --> $r0 := @parameter0: android.content.Context
+<com.amberweather.location.PreferenceUtils: void setLatLongLastUpdate(android.content.Context,long)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("lat_long_last_update", $l0)
+--------------------------------------------------------
+
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+<com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)> --> if $r5 == null goto i0 = i0 + 1
+<com.amberweather.location.AddressController$1: void run()> --> $r3 = staticinvoke <com.amberweather.location.AddressUtils: android.location.Location getLocation(android.content.Context)>($r2)
+<com.amberweather.location.AddressController$1: void run()> --> if $r3 == null goto $r4 = r0.<com.amberweather.location.AddressController$1: com.amberweather.location.LocationUpdateListener val$locationUpdateListener>
+<mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver$1$1: void onSuccess(com.amberweather.location.AmberLocation)> --> r0 := @this: mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver$1$1
+<com.amberweather.location.PreferenceUtils: void setGPSCityLon(android.content.Context,double)> --> $r0 := @parameter0: android.content.Context
+<com.amberweather.location.PreferenceUtils: void setGPSCityLon(android.content.Context,double)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLon", f0)
+--------------------------------------------------------
+
+<com.amberweather.location.AddressController$1: void run()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<com.amberweather.location.AmberLocation: void setLatitude(double)> --> r0 := @this: com.amberweather.location.AmberLocation
+<com.amberweather.location.AmberLocation: void setLatitude(double)> --> r0.<com.amberweather.location.AmberLocation: double latitude> = $d0
+<com.amberweather.location.AddressController$1: void run()> --> virtualinvoke r1.<com.amberweather.location.AmberLocation: void setLatitude(double)>($d0)
+<com.amberweather.location.AmberLocation: void setLongitude(double)> --> r0 := @this: com.amberweather.location.AmberLocation
+<com.amberweather.location.AddressController$1: void run()> --> virtualinvoke r1.<com.amberweather.location.AmberLocation: void setLongitude(double)>($d0)
+<mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver$1$1: void onSuccess(com.amberweather.location.AmberLocation)> --> r0 := @this: mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver$1$1
+<com.amberweather.location.AmberLocation: double getLatitude()> --> r0 := @this: com.amberweather.location.AmberLocation
+<com.amberweather.location.AmberLocation: double getLatitude()> --> d0 = r0.<com.amberweather.location.AmberLocation: double latitude>
+<mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver$1$1: void onSuccess(com.amberweather.location.AmberLocation)> --> $d0 = virtualinvoke $r1.<com.amberweather.location.AmberLocation: double getLatitude()>()
+<com.amberweather.location.PreferenceUtils: void setGPSCityLat(android.content.Context,double)> --> $r0 := @parameter0: android.content.Context
+<com.amberweather.location.PreferenceUtils: void setGPSCityLat(android.content.Context,double)> --> f0 = (float) $d0
+<com.amberweather.location.PreferenceUtils: void setGPSCityLat(android.content.Context,double)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLat", f0)
+--------------------------------------------------------
+

@@ -1,0 +1,163 @@
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 == 0 goto $r2 = <com.hypertrack.lib.location.MockLocationService: java.lang.String TAG>
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r4)
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 == 0 goto $r2 = <com.hypertrack.lib.location.MockLocationService: java.lang.String TAG>
+<com.hypertrack.hyperlog.HyperLog: void i(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void i(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void i(java.lang.String,java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r4)
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.hypertrack.lib.HyperTrackUtils: boolean isMockLocation(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils: boolean isMockLocation(android.location.Location)> --> r0 := @this: com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils
+<com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils: boolean isMockLocation(android.location.Location)> --> if $r1 == null goto return 0
+<com.hypertrack.lib.HyperTrackUtils: boolean isMockLocation(android.location.Location)> --> $z0 = virtualinvoke $r1.<com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils: boolean isMockLocation(android.location.Location)>($r0)
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $z0 = staticinvoke <com.hypertrack.lib.HyperTrackUtils: boolean isMockLocation(android.location.Location)>($r1)
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $z0 == 0 goto $r4 = <com.hypertrack.lib.location.MockLocationService: java.lang.String TAG>
+<com.hypertrack.lib.CoreManager: void onLocationUpdate(android.location.Location,java.lang.String)> --> r0 := @this: com.hypertrack.lib.CoreManager
+<com.bugfender.sdk.Bugfender: void i(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.bugfender.sdk.Bugfender: boolean isBugfenderInitialized()> --> $r0 = <com.bugfender.sdk.Bugfender: com.bugfender.sdk.a.a.b loggerManager>
+<com.bugfender.sdk.Bugfender: boolean isBugfenderInitialized()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r1, "WARNING: Bugfender SDK is not initialized. You should call first to the method Bugfender.init()")
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 == 0 goto $r2 = <com.hypertrack.lib.location.MockLocationService: java.lang.String TAG>
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: java.lang.String getFormattedLog(int,java.lang.String,java.lang.String)> --> $i0 := @parameter0: int
+<com.hypertrack.hyperlog.HyperLog: boolean isInitialize()> --> $r0 = <com.hypertrack.hyperlog.HyperLog: com.hypertrack.hyperlog.DeviceLogList mDeviceLogList>
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,int,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,int,com.hypertrack.hyperlog.LogFormat)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("HyperLog", "HyperLog isn\'t initialized: Context couldn\'t be null")
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 != 0 goto $r5 = r0.<com.hypertrack.lib.location.MockLocationService: com.hypertrack.lib.internal.common.util.UserPreferences userPreferences>
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: java.lang.String getFormattedLog(int,java.lang.String,java.lang.String)> --> $i0 := @parameter0: int
+<com.hypertrack.hyperlog.HyperLog: boolean isInitialize()> --> $r0 = <com.hypertrack.hyperlog.HyperLog: com.hypertrack.hyperlog.DeviceLogList mDeviceLogList>
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,int,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.utils.Utils: void saveLogFormat(android.content.Context,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.utils.Utils: void saveLogFormat(android.content.Context,com.hypertrack.hyperlog.LogFormat)> --> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("com.hyperlog:LogFormat", $r5)
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.hypertrack.lib.HyperTrackUtils: boolean isMockLocation(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils: boolean isMockLocation(android.location.Location)> --> r0 := @this: com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils
+<com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils: boolean isMockLocation(android.location.Location)> --> if $r1 == null goto return 0
+<com.hypertrack.lib.HyperTrackUtils: boolean isMockLocation(android.location.Location)> --> $z0 = virtualinvoke $r1.<com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils: boolean isMockLocation(android.location.Location)>($r0)
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $z0 = staticinvoke <com.hypertrack.lib.HyperTrackUtils: boolean isMockLocation(android.location.Location)>($r1)
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $z0 == 0 goto $r4 = <com.hypertrack.lib.location.MockLocationService: java.lang.String TAG>
+<com.hypertrack.lib.CoreManager: void onLocationUpdate(android.location.Location,java.lang.String)> --> r0 := @this: com.hypertrack.lib.CoreManager
+<com.hypertrack.lib.CoreManager: void updateHeartbeat()> --> r0 := @this: com.hypertrack.lib.CoreManager
+<com.hypertrack.lib.internal.common.util.UserPreferencesImpl: void setHeartbeat(long)> --> r0 := @this: com.hypertrack.lib.internal.common.util.UserPreferencesImpl
+<com.hypertrack.lib.internal.common.util.UserPreferencesImpl: void setUserTrackingSession(com.hypertrack.lib.models.UserTrackingSession)> --> r0 := @this: com.hypertrack.lib.internal.common.util.UserPreferencesImpl
+<com.hypertrack.lib.internal.common.util.UserPreferencesImpl: void setUserTrackingSession(com.hypertrack.lib.models.UserTrackingSession)> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("com.hypertrack:User.SessionDetails", $r4)
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 != 0 goto $r5 = r0.<com.hypertrack.lib.location.MockLocationService: com.hypertrack.lib.internal.common.util.UserPreferences userPreferences>
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r4)
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 != 0 goto $r5 = r0.<com.hypertrack.lib.location.MockLocationService: com.hypertrack.lib.internal.common.util.UserPreferences userPreferences>
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: java.lang.String getFormattedLog(int,java.lang.String,java.lang.String)> --> $i0 := @parameter0: int
+<com.hypertrack.hyperlog.HyperLog: boolean isInitialize()> --> $r0 = <com.hypertrack.hyperlog.HyperLog: com.hypertrack.hyperlog.DeviceLogList mDeviceLogList>
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,int,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.DeviceLogList: void clearOldLogs(int)> --> r0 := @this: com.hypertrack.hyperlog.DeviceLogList
+<com.hypertrack.hyperlog.DeviceLogDatabaseHelper: void clearOldLogs(int)> --> r0 := @this: com.hypertrack.hyperlog.DeviceLogDatabaseHelper
+<com.hypertrack.hyperlog.DeviceLogTable: void clearOldLogs(android.database.sqlite.SQLiteDatabase,int)> --> $r0 := @parameter0: android.database.sqlite.SQLiteDatabase
+<com.hypertrack.hyperlog.DeviceLogTable: void clearOldLogs(android.database.sqlite.SQLiteDatabase,int)> --> virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("device_logs", "device_log<?", $r5)
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 != 0 goto $r5 = r0.<com.hypertrack.lib.location.MockLocationService: com.hypertrack.lib.internal.common.util.UserPreferences userPreferences>
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r4)
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 == 0 goto $r2 = <com.hypertrack.lib.location.MockLocationService: java.lang.String TAG>
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r4)
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.hypertrack.lib.HyperTrackUtils: boolean isMockLocation(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils: boolean isMockLocation(android.location.Location)> --> r0 := @this: com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils
+<com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils: boolean isMockLocation(android.location.Location)> --> if $r1 == null goto return 0
+<com.hypertrack.lib.HyperTrackUtils: boolean isMockLocation(android.location.Location)> --> $z0 = virtualinvoke $r1.<com.hypertrack.lib.internal.common.util.MockableHyperTrackUtils: boolean isMockLocation(android.location.Location)>($r0)
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $z0 = staticinvoke <com.hypertrack.lib.HyperTrackUtils: boolean isMockLocation(android.location.Location)>($r1)
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $z0 == 0 goto $r4 = <com.hypertrack.lib.location.MockLocationService: java.lang.String TAG>
+<com.hypertrack.lib.CoreManager: void onLocationUpdate(android.location.Location,java.lang.String)> --> r0 := @this: com.hypertrack.lib.CoreManager
+<com.hypertrack.lib.internal.common.util.UserPreferencesImpl: void setCurrentLocation(com.hypertrack.lib.models.HyperTrackLocation)> --> r0 := @this: com.hypertrack.lib.internal.common.util.UserPreferencesImpl
+<com.hypertrack.lib.internal.common.util.UserPreferencesImpl: void setCurrentLocation(com.hypertrack.lib.models.HyperTrackLocation)> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("com.hypertrack:User.LastRecordedLocation", $r4)
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 == 0 goto $r2 = <com.hypertrack.lib.location.MockLocationService: java.lang.String TAG>
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: java.lang.String getFormattedLog(int,java.lang.String,java.lang.String)> --> $i0 := @parameter0: int
+<com.hypertrack.hyperlog.HyperLog: boolean isInitialize()> --> $r0 = <com.hypertrack.hyperlog.HyperLog: com.hypertrack.hyperlog.DeviceLogList mDeviceLogList>
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,int,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.utils.Utils: void saveLogFormat(android.content.Context,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.utils.Utils: void saveLogFormat(android.content.Context,com.hypertrack.hyperlog.LogFormat)> --> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("com.hyperlog:LogFormat", $r5)
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 != 0 goto $r5 = r0.<com.hypertrack.lib.location.MockLocationService: com.hypertrack.lib.internal.common.util.UserPreferences userPreferences>
+<com.hypertrack.hyperlog.HyperLog: void i(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void i(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void i(java.lang.String,java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r4)
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 != 0 goto $r5 = r0.<com.hypertrack.lib.location.MockLocationService: com.hypertrack.lib.internal.common.util.UserPreferences userPreferences>
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: java.lang.String getFormattedLog(int,java.lang.String,java.lang.String)> --> $i0 := @parameter0: int
+<com.hypertrack.hyperlog.HyperLog: boolean isInitialize()> --> $r0 = <com.hypertrack.hyperlog.HyperLog: com.hypertrack.hyperlog.DeviceLogList mDeviceLogList>
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,int,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,int,com.hypertrack.hyperlog.LogFormat)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("HyperLog", "HyperLog isn\'t initialized: Context couldn\'t be null")
+--------------------------------------------------------
+
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> $b0 = $d0 cmpl 0.0
+<com.hypertrack.lib.location.MockLocationService: void onLocationChanged(android.location.Location,java.lang.String)> --> if $b0 == 0 goto $r2 = <com.hypertrack.lib.location.MockLocationService: java.lang.String TAG>
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.hypertrack.hyperlog.HyperLog: java.lang.String getFormattedLog(int,java.lang.String,java.lang.String)> --> $i0 := @parameter0: int
+<com.hypertrack.hyperlog.HyperLog: boolean isInitialize()> --> $r0 = <com.hypertrack.hyperlog.HyperLog: com.hypertrack.hyperlog.DeviceLogList mDeviceLogList>
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.HyperLog: void initialize(android.content.Context,int,com.hypertrack.hyperlog.LogFormat)> --> $r0 := @parameter0: android.content.Context
+<com.hypertrack.hyperlog.DeviceLogList: void clearOldLogs(int)> --> r0 := @this: com.hypertrack.hyperlog.DeviceLogList
+<com.hypertrack.hyperlog.DeviceLogDatabaseHelper: void clearOldLogs(int)> --> r0 := @this: com.hypertrack.hyperlog.DeviceLogDatabaseHelper
+<com.hypertrack.hyperlog.DeviceLogTable: void clearOldLogs(android.database.sqlite.SQLiteDatabase,int)> --> $r0 := @parameter0: android.database.sqlite.SQLiteDatabase
+<com.hypertrack.hyperlog.DeviceLogTable: void clearOldLogs(android.database.sqlite.SQLiteDatabase,int)> --> virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("device_logs", "device_log<?", $r5)
+--------------------------------------------------------
+

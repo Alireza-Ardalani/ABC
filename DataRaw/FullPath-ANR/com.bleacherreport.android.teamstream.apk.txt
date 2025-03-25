@@ -1,0 +1,46 @@
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, $i0)
+Component=> com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+ComponentColor=> GREEN
+com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+android.location.LocationManager
+com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+android.util.Log
+com.bleacherreport.android.teamstream.helpers.LogHelper
+com.bleacherreport.android.teamstream.helpers.LogHelper
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r10 = virtualinvoke $r10.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r6)
+Component=> com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+ComponentColor=> GREEN
+com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+okhttp3.Request$Builder
+android.location.LocationManager
+com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+Category: okhttp3.Request$Builder-*-
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r12 = virtualinvoke r2.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r11)
+Component=> com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+ComponentColor=> GREEN
+com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+android.location.LocationManager
+com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+okhttp3.OkHttpClient
+com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+Category: okhttp3.OkHttpClient-*-
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+ComponentColor=> GREEN
+com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+android.location.LocationManager
+com.bleacherreport.android.teamstream.activities.PickTeamsActivity
+android.util.Log
+com.bleacherreport.android.teamstream.helpers.LogHelper
+Category: LEGIT
+-----------------------------------------------------------------
+com.bleacherreport.android.teamstream.apk: 1367352

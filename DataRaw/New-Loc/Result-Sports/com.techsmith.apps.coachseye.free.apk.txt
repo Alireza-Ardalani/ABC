@@ -1,0 +1,12 @@
+Source=> $r23 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r3, $r2)
+Component=> com.techsmith.androideye.critique.AnalyzeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r23 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r4.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r6, null, null)
+Component=> com.techsmith.androideye.critique.AnalyzeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

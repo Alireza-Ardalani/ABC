@@ -1,0 +1,50 @@
+<com.nearmeoffers.GetAddressIntentService: void onHandleIntent(android.content.Intent)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<com.nearmeoffers.GetAddressIntentService: void onHandleIntent(android.content.Intent)> --> $r1 := @caughtexception
+<com.nearmeoffers.GetAddressIntentService: void a(int,java.lang.String)> --> r0 := @this: com.nearmeoffers.GetAddressIntentService
+<com.nearmeoffers.GetAddressIntentService: void a(int,java.lang.String)> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("address_result", $r2)
+--------------------------------------------------------
+
+<com.nearmeoffers.GetAddressIntentService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<com.nearmeoffers.GetAddressIntentService: void onHandleIntent(android.content.Intent)> --> $r1 := @caughtexception
+<com.nearmeoffers.GetAddressIntentService: void a(int,java.lang.String)> --> r0 := @this: com.nearmeoffers.GetAddressIntentService
+<com.nearmeoffers.GetAddressIntentService: void a(int,java.lang.String)> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("address_result", $r2)
+--------------------------------------------------------
+
+<com.nearmeoffers.GetAddressIntentService: void onHandleIntent(android.content.Intent)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<com.nearmeoffers.GetAddressIntentService: void onHandleIntent(android.content.Intent)> --> $r1 := @caughtexception
+<com.nearmeoffers.GetAddressIntentService: void onHandleIntent(android.content.Intent)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("", "Error in getting address for the location")
+--------------------------------------------------------
+
+<com.nearmeoffers.GetAddressIntentService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<com.nearmeoffers.GetAddressIntentService: void onHandleIntent(android.content.Intent)> --> $r1 := @caughtexception
+<com.nearmeoffers.GetAddressIntentService: void onHandleIntent(android.content.Intent)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("", "Error in getting address for the location")
+--------------------------------------------------------
+
+<com.nearmeoffers.l: android.location.Location a()> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.nearmeoffers.l: android.location.Location a()> --> r0.<com.nearmeoffers.l: android.location.Location o> = $r5
+<com.nearmeoffers.l: android.location.Location a()> --> $r5 = r0.<com.nearmeoffers.l: android.location.Location o>
+<com.nearmeoffers.l: void <init>(android.content.Context)> --> virtualinvoke r0.<com.nearmeoffers.l: android.location.Location a()>()
+<com.nearmeoffers.UploadServer: void onCreate(android.os.Bundle)> --> specialinvoke $r6.<com.nearmeoffers.l: void <init>(android.content.Context)>(r0)
+<com.nearmeoffers.UploadServer: void onCreate(android.os.Bundle)> --> r0.<com.nearmeoffers.UploadServer: com.nearmeoffers.l s> = $r6
+<com.nearmeoffers.UploadServer: void g()> --> r0 := @this: com.nearmeoffers.UploadServer
+<com.nearmeoffers.UploadServer: void g()> --> $r1 = r0.<com.nearmeoffers.UploadServer: com.nearmeoffers.l s>
+<com.nearmeoffers.l: java.lang.String c()> --> r0 := @this: com.nearmeoffers.l
+<com.nearmeoffers.l: java.lang.String c()> --> $r1 = r0.<com.nearmeoffers.l: android.location.Location o>
+<com.nearmeoffers.l: java.lang.String c()> --> if $r1 != null goto $r1 = r0.<com.nearmeoffers.l: android.location.Location o>
+<com.nearmeoffers.l: java.lang.String c()> --> $r3 = r0.<com.nearmeoffers.l: java.lang.String p>
+<com.nearmeoffers.UploadServer: void g()> --> $r2 = virtualinvoke $r1.<com.nearmeoffers.l: java.lang.String c()>()
+<com.nearmeoffers.UploadServer: void g()> --> r0.<com.nearmeoffers.UploadServer: java.lang.String u> = $r2
+<com.nearmeoffers.UploadServer: void h()> --> r0 := @this: com.nearmeoffers.UploadServer
+<com.nearmeoffers.UploadServer: void h()> --> $r1 = r0.<com.nearmeoffers.UploadServer: java.lang.String u>
+<com.nearmeoffers.UploadServer: void h()> --> if $r1 == null goto $r2 = staticinvoke <android.widget.Toast: android.widget.Toast makeText(android.content.Context,java.lang.CharSequence,int)>(r0, "Please enable your location first", 1)
+<com.nearmeoffers.UploadServer: void i()> --> r0 := @this: com.nearmeoffers.UploadServer
+<com.nearmeoffers.UploadServer: void j()> --> r0 := @this: com.nearmeoffers.UploadServer
+<com.nearmeoffers.a.a: retrofit2.Retrofit a()> --> $r0 = <com.nearmeoffers.a.a: retrofit2.Retrofit a>
+<retrofit2.Retrofit$Builder: retrofit2.Retrofit$Builder baseUrl(java.lang.String)> --> r0 := @this: retrofit2.Retrofit$Builder
+<c.s: c.s e(java.lang.String)> --> $r2 := @parameter0: java.lang.String
+<c.s$a: c.s$a$a a(c.s,java.lang.String)> --> r0 := @this: c.s$a
+<c.s$a: java.lang.String e(java.lang.String,int,int)> --> $r0 := @parameter0: java.lang.String
+<c.s$a: java.net.InetAddress f(java.lang.String,int,int)> --> $r1 := @parameter0: java.lang.String
+<c.s$a: java.net.InetAddress f(java.lang.String,int,int)> --> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>($r2)
+--------------------------------------------------------
+

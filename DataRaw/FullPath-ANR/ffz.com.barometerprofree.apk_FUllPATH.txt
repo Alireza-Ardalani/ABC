@@ -1,0 +1,257 @@
+<barometer.ffz.com.barometer.ServizioBackground: void AnalizzaDatiGPS(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<barometer.ffz.com.barometer.ServizioBackground: void AnalizzaDatiGPS(android.location.Location)> --> <barometer.ffz.com.barometer.ServizioBackground: double latitudine> = $d0
+<barometer.ffz.com.barometer.ServizioBackground: void AnalizzaDatiGPS(android.location.Location)> --> staticinvoke <barometer.ffz.com.barometer.ServizioBackground: void ThreadScaricamentoAltitudineInMappa(double,double)>($d0, $d1)
+<barometer.ffz.com.barometer.ServizioBackground: void ScaricaMeteoCheck()> --> $d0 = <barometer.ffz.com.barometer.ServizioBackground: double latitudine>
+<barometer.ffz.com.barometer.ServizioBackground: void ScaricaMeteoCheck()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.ServizioBackground: void ScaricaMeteoCheck()> --> if $b2 == 0 goto return
+<barometer.ffz.com.barometer.ServizioBackground: void ThreadScaricamentoMeteoOW(java.lang.String,java.lang.String)> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground
+<barometer.ffz.com.barometer.ServizioBackground$3: void run()> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground$3
+<barometer.ffz.com.barometer.ServizioBackground: void CaricaMeteoOW(java.lang.String,java.lang.String)> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground
+<barometer.ffz.com.barometer.ServizioBackground: void CaricaMeteoOW(java.lang.String,java.lang.String)> --> specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r1)
+--------------------------------------------------------
+
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> <barometer.ffz.com.barometer.Home: double latitudine> = $d0
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> return $r1
+<barometer.ffz.com.barometer.Home: void setupGps()> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: android.location.Location getLocation()>()
+<barometer.ffz.com.barometer.Home: void SecondoBlocco()> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: void setupGps()>()
+<barometer.ffz.com.barometer.Home: void InizializzaValori()> --> if $r1 == null goto $r1 = new java.util.Timer
+<barometer.ffz.com.barometer.Home: void InizializzaValori()> --> $r1 = r0.<barometer.ffz.com.barometer.Home: java.util.Timer mTimer>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $z0 == 0 goto virtualinvoke $r10.<android.widget.TextView: void setVisibility(int)>(8)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $r1 = r0.<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: barometer.ffz.com.barometer.Home$TimeDisplayTimerTask this$1>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 < 0 goto $f0 = <barometer.ffz.com.barometer.Home: float pressure_value>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $i1 = <barometer.ffz.com.barometer.Home: int contasecondi_AggiornaIcone>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 != 0 goto staticinvoke <barometer.ffz.com.barometer.Home: int access$502(int)>(-1)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double latitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $b2 != 0 goto $d0 = <barometer.ffz.com.barometer.Home: double latitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> <barometer.ffz.com.barometer.Home: double longitudine> = $d0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double latitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double longitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $b2 == 0 goto <barometer.ffz.com.barometer.Home: int contasecondi_ScaricaMeteoWeb> = 0
+<barometer.ffz.com.barometer.Uty: void ThreadScaricamentoMeteo(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<barometer.ffz.com.barometer.ServizioBackground$3: void run()> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground$3
+<barometer.ffz.com.barometer.ServizioBackground: void CaricaMeteoOW(java.lang.String,java.lang.String)> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground
+<barometer.ffz.com.barometer.ServizioBackground: void CaricaMeteoOW(java.lang.String,java.lang.String)> --> specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r1)
+--------------------------------------------------------
+
+<barometer.ffz.com.barometer.ServizioBackground: void AnalizzaDatiGPS(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<barometer.ffz.com.barometer.ServizioBackground: void ThreadScaricamentoAltitudineInMappa(double,double)> --> $d0 := @parameter0: double
+<barometer.ffz.com.barometer.ServizioBackground$1: void <init>(double,double)> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground$1
+<barometer.ffz.com.barometer.ServizioBackground$1: void <init>(double,double)> --> r0.<barometer.ffz.com.barometer.ServizioBackground$1: double val$latitudineL> = $d0
+<barometer.ffz.com.barometer.ServizioBackground: void ThreadScaricamentoAltitudineInMappa(double,double)> --> specialinvoke $r1.<barometer.ffz.com.barometer.ServizioBackground$1: void <init>(double,double)>($d0, $d1)
+<java.lang.Thread: void <init>(java.lang.Runnable)> --> this := @this: java.lang.Thread
+<java.lang.Thread: void <init>(java.lang.Runnable)> --> this.<java.lang.Thread: java.lang.Runnable target0> = p0
+<barometer.ffz.com.barometer.ServizioBackground: void ThreadScaricamentoAltitudineInMappa(double,double)> --> specialinvoke $r0.<java.lang.Thread: void <init>(java.lang.Runnable)>($r1)
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<java.lang.Thread: void run()> --> target = this.<java.lang.Thread: java.lang.Runnable target0>
+<barometer.ffz.com.barometer.ServizioBackground$1: void run()> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground$1
+<barometer.ffz.com.barometer.ServizioBackground$1: void run()> --> $d0 = r0.<barometer.ffz.com.barometer.ServizioBackground$1: double val$latitudineL>
+<barometer.ffz.com.barometer.ServizioBackground: double access$100(double,double)> --> $d1 := @parameter0: double
+<barometer.ffz.com.barometer.ServizioBackground: double getElevationFromGoogleMaps(double,double)> --> $d0 := @parameter0: double
+<barometer.ffz.com.barometer.ServizioBackground: double getElevationFromGoogleMaps(double,double)> --> if $i0 == -1 goto return -100.0
+<barometer.ffz.com.barometer.ServizioBackground: double access$100(double,double)> --> $d1 = staticinvoke <barometer.ffz.com.barometer.ServizioBackground: double getElevationFromGoogleMaps(double,double)>($d1, $d0)
+<barometer.ffz.com.barometer.ServizioBackground$1: void run()> --> $d0 = staticinvoke <barometer.ffz.com.barometer.ServizioBackground: double access$100(double,double)>($d0, $d1)
+<barometer.ffz.com.barometer.ServizioBackground$1: void run()> --> $i0 = (int) $d0
+<barometer.ffz.com.barometer.ServizioBackground$1: void run()> --> $f0 = (float) $i0
+<barometer.ffz.com.barometer.ServizioBackground: void SalvaImpostazioniFloat(java.lang.String,float)> --> $r0 := @parameter0: java.lang.String
+<barometer.ffz.com.barometer.ServizioBackground: void SalvaImpostazioniFloat(java.lang.String,float)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+--------------------------------------------------------
+
+<barometer.ffz.com.barometer.ServizioBackground: void AnalizzaDatiGPS(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<barometer.ffz.com.barometer.ServizioBackground: void AnalizzaDatiGPS(android.location.Location)> --> <barometer.ffz.com.barometer.ServizioBackground: double longitudine> = $d0
+<barometer.ffz.com.barometer.ServizioBackground: void onCreate()> --> virtualinvoke r0.<barometer.ffz.com.barometer.ServizioBackground: void ScaricaMeteoCheck()>()
+<dummyMainClass: barometer.ffz.com.barometer.ServizioBackground dummyMainMethod_barometer_ffz_com_barometer_ServizioBackground(android.content.Intent)> --> virtualinvoke $r0.<barometer.ffz.com.barometer.ServizioBackground: void onCreate()>()
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> staticinvoke <dummyMainClass: barometer.ffz.com.barometer.ServizioBackground dummyMainMethod_barometer_ffz_com_barometer_ServizioBackground(android.content.Intent)>(null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 8 goto (branch)
+<barometer.ffz.com.barometer.ServizioBackground: void onCreate()> --> if $r11 == null goto <barometer.ffz.com.barometer.ServizioBackground: boolean isPressioneSensoreEnabled> = 0
+<barometer.ffz.com.barometer.ServizioBackground: void onCreate()> --> $r10 = r0.<barometer.ffz.com.barometer.ServizioBackground: android.hardware.SensorManager sensorManager>
+<barometer.ffz.com.barometer.ServizioBackground: void ScaricaMeteoCheck()> --> $d0 = <barometer.ffz.com.barometer.ServizioBackground: double longitudine>
+<barometer.ffz.com.barometer.ServizioBackground: void ScaricaMeteoCheck()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.ServizioBackground: void ScaricaMeteoCheck()> --> if $b2 == 0 goto return
+<barometer.ffz.com.barometer.ServizioBackground: void ThreadScaricamentoMeteo(java.lang.String,java.lang.String)> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<barometer.ffz.com.barometer.Uty$1: void run()> --> r0 := @this: barometer.ffz.com.barometer.Uty$1
+<barometer.ffz.com.barometer.Uty: double access$000(double,double)> --> $d1 := @parameter0: double
+<barometer.ffz.com.barometer.Uty: double getElevationFromGoogleMaps(double,double)> --> $d0 := @parameter0: double
+<barometer.ffz.com.barometer.Uty: double getElevationFromGoogleMaps(double,double)> --> specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r2)
+--------------------------------------------------------
+
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> <barometer.ffz.com.barometer.Home: double latitudine> = $d0
+<barometer.ffz.com.barometer.Home: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: android.location.Location getLocation()>()
+<dummyMainClass: barometer.ffz.com.barometer.Home dummyMainMethod_barometer_ffz_com_barometer_Home(android.content.Intent)> --> virtualinvoke $r0.<barometer.ffz.com.barometer.Home: void onRequestPermissionsResult(int,java.lang.String[],int[])>(0, $r5, $r6)
+<dummyMainClass: barometer.ffz.com.barometer.Home dummyMainMethod_barometer_ffz_com_barometer_Home(android.content.Intent)> --> $r2 = new barometer.ffz.com.barometer.Home$3
+<barometer.ffz.com.barometer.Home: void setupGps()> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: android.location.Location getLocation()>()
+<barometer.ffz.com.barometer.Home: void SecondoBlocco()> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: void setupGps()>()
+<barometer.ffz.com.barometer.Home: void InizializzaValori()> --> if $r1 == null goto $r1 = new java.util.Timer
+<barometer.ffz.com.barometer.Home: void InizializzaValori()> --> $r1 = r0.<barometer.ffz.com.barometer.Home: java.util.Timer mTimer>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $z0 == 0 goto virtualinvoke $r10.<android.widget.TextView: void setVisibility(int)>(8)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $r1 = r0.<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: barometer.ffz.com.barometer.Home$TimeDisplayTimerTask this$1>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 < 0 goto $f0 = <barometer.ffz.com.barometer.Home: float pressure_value>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $i1 = <barometer.ffz.com.barometer.Home: int contasecondi_AggiornaIcone>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 != 0 goto staticinvoke <barometer.ffz.com.barometer.Home: int access$502(int)>(-1)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double latitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $b2 == 0 goto <barometer.ffz.com.barometer.Home: int contasecondi_ScaricaMeteoWeb> = 0
+<barometer.ffz.com.barometer.Uty: void ThreadScaricamentoMeteo(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<barometer.ffz.com.barometer.ServizioBackground$1: void run()> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground$1
+<barometer.ffz.com.barometer.ServizioBackground: double access$100(double,double)> --> $d1 := @parameter0: double
+<barometer.ffz.com.barometer.ServizioBackground: double getElevationFromGoogleMaps(double,double)> --> $d0 := @parameter0: double
+<barometer.ffz.com.barometer.ServizioBackground: double getElevationFromGoogleMaps(double,double)> --> $r2 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+--------------------------------------------------------
+
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> <barometer.ffz.com.barometer.Home: double latitudine> = $d0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> virtualinvoke $r2.<barometer.ffz.com.barometer.Home: android.location.Location getLocation()>()
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $r1 = r0.<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: barometer.ffz.com.barometer.Home$TimeDisplayTimerTask this$1>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $z0 == 0 goto virtualinvoke $r10.<android.widget.TextView: void setVisibility(int)>(8)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $r1 = r0.<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: barometer.ffz.com.barometer.Home$TimeDisplayTimerTask this$1>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 < 0 goto $f0 = <barometer.ffz.com.barometer.Home: float pressure_value>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $i1 = <barometer.ffz.com.barometer.Home: int contasecondi_AggiornaIcone>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 != 0 goto staticinvoke <barometer.ffz.com.barometer.Home: int access$502(int)>(-1)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double latitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $b2 == 0 goto <barometer.ffz.com.barometer.Home: int contasecondi_ScaricaMeteoWeb> = 0
+<barometer.ffz.com.barometer.Uty: void ThreadScaricamentoMeteo(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<barometer.ffz.com.barometer.ServizioBackground$2: void run()> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground$2
+<barometer.ffz.com.barometer.ServizioBackground: void CaricaMeteoForecast(java.lang.String,java.lang.String)> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground
+<barometer.ffz.com.barometer.ServizioBackground: void CaricaMeteoForecast(java.lang.String,java.lang.String)> --> $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>()
+--------------------------------------------------------
+
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> <barometer.ffz.com.barometer.Home: double latitudine> = $d0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> virtualinvoke $r2.<barometer.ffz.com.barometer.Home: android.location.Location getLocation()>()
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $r1 = r0.<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: barometer.ffz.com.barometer.Home$TimeDisplayTimerTask this$1>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $z0 == 0 goto virtualinvoke $r10.<android.widget.TextView: void setVisibility(int)>(8)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $r1 = r0.<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: barometer.ffz.com.barometer.Home$TimeDisplayTimerTask this$1>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 < 0 goto $f0 = <barometer.ffz.com.barometer.Home: float pressure_value>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $i1 = <barometer.ffz.com.barometer.Home: int contasecondi_AggiornaIcone>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 != 0 goto staticinvoke <barometer.ffz.com.barometer.Home: int access$502(int)>(-1)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double latitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $b2 == 0 goto <barometer.ffz.com.barometer.Home: int contasecondi_ScaricaMeteoWeb> = 0
+<barometer.ffz.com.barometer.Uty: void ThreadScaricamentoMeteo(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<barometer.ffz.com.barometer.ServizioBackground$3: void run()> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground$3
+<barometer.ffz.com.barometer.ServizioBackground: void CaricaMeteoOW(java.lang.String,java.lang.String)> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground
+<barometer.ffz.com.barometer.ServizioBackground: void CaricaMeteoOW(java.lang.String,java.lang.String)> --> $r7 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+--------------------------------------------------------
+
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> <barometer.ffz.com.barometer.Home: double latitudine> = $d0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> virtualinvoke $r2.<barometer.ffz.com.barometer.Home: android.location.Location getLocation()>()
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $r1 = r0.<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: barometer.ffz.com.barometer.Home$TimeDisplayTimerTask this$1>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $z0 == 0 goto virtualinvoke $r10.<android.widget.TextView: void setVisibility(int)>(8)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $r1 = r0.<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: barometer.ffz.com.barometer.Home$TimeDisplayTimerTask this$1>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 < 0 goto $f0 = <barometer.ffz.com.barometer.Home: float pressure_value>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $i1 = <barometer.ffz.com.barometer.Home: int contasecondi_AggiornaIcone>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 != 0 goto staticinvoke <barometer.ffz.com.barometer.Home: int access$502(int)>(-1)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double latitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $b2 == 0 goto <barometer.ffz.com.barometer.Home: int contasecondi_ScaricaMeteoWeb> = 0
+<barometer.ffz.com.barometer.Uty: void ThreadScaricamentoMeteo(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<barometer.ffz.com.barometer.ServizioBackground$1: void run()> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground$1
+<barometer.ffz.com.barometer.ServizioBackground: void SalvaImpostazioniFloat(java.lang.String,float)> --> $r0 := @parameter0: java.lang.String
+<barometer.ffz.com.barometer.ServizioBackground: void SalvaImpostazioniFloat(java.lang.String,float)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+--------------------------------------------------------
+
+<barometer.ffz.com.barometer.ServizioBackground: void AnalizzaDatiGPS(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<barometer.ffz.com.barometer.ServizioBackground: void AnalizzaDatiGPS(android.location.Location)> --> <barometer.ffz.com.barometer.ServizioBackground: double longitudine> = $d0
+<barometer.ffz.com.barometer.ServizioBackground: void onCreate()> --> virtualinvoke r0.<barometer.ffz.com.barometer.ServizioBackground: void ScaricaMeteoCheck()>()
+<dummyMainClass: barometer.ffz.com.barometer.ServizioBackground dummyMainMethod_barometer_ffz_com_barometer_ServizioBackground(android.content.Intent)> --> virtualinvoke $r0.<barometer.ffz.com.barometer.ServizioBackground: void onCreate()>()
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> staticinvoke <dummyMainClass: barometer.ffz.com.barometer.ServizioBackground dummyMainMethod_barometer_ffz_com_barometer_ServizioBackground(android.content.Intent)>(null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 8 goto (branch)
+<barometer.ffz.com.barometer.ServizioBackground: void onCreate()> --> if $r11 == null goto <barometer.ffz.com.barometer.ServizioBackground: boolean isPressioneSensoreEnabled> = 0
+<barometer.ffz.com.barometer.ServizioBackground: void onCreate()> --> $r10 = r0.<barometer.ffz.com.barometer.ServizioBackground: android.hardware.SensorManager sensorManager>
+<barometer.ffz.com.barometer.ServizioBackground: void ScaricaMeteoCheck()> --> $d0 = <barometer.ffz.com.barometer.ServizioBackground: double longitudine>
+<barometer.ffz.com.barometer.ServizioBackground: void ScaricaMeteoCheck()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.ServizioBackground: void ScaricaMeteoCheck()> --> if $b2 == 0 goto return
+<barometer.ffz.com.barometer.ServizioBackground: void ThreadScaricamentoMeteo(java.lang.String,java.lang.String)> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<barometer.ffz.com.barometer.ServizioBackground$1: void run()> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground$1
+<barometer.ffz.com.barometer.ServizioBackground: double access$100(double,double)> --> $d1 := @parameter0: double
+<barometer.ffz.com.barometer.ServizioBackground: double getElevationFromGoogleMaps(double,double)> --> $d0 := @parameter0: double
+<barometer.ffz.com.barometer.ServizioBackground: double getElevationFromGoogleMaps(double,double)> --> $r3 = virtualinvoke $r2.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> <barometer.ffz.com.barometer.Home: double latitudine> = $d0
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> return $r1
+<barometer.ffz.com.barometer.Home: void setupGps()> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: android.location.Location getLocation()>()
+<barometer.ffz.com.barometer.Home: void SecondoBlocco()> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: void setupGps()>()
+<barometer.ffz.com.barometer.Home: void InizializzaValori()> --> if $r1 == null goto $r1 = new java.util.Timer
+<barometer.ffz.com.barometer.Home: void InizializzaValori()> --> $r1 = r0.<barometer.ffz.com.barometer.Home: java.util.Timer mTimer>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $z0 == 0 goto virtualinvoke $r10.<android.widget.TextView: void setVisibility(int)>(8)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $r1 = r0.<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: barometer.ffz.com.barometer.Home$TimeDisplayTimerTask this$1>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 < 0 goto $f0 = <barometer.ffz.com.barometer.Home: float pressure_value>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $i1 = <barometer.ffz.com.barometer.Home: int contasecondi_AggiornaIcone>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 != 0 goto staticinvoke <barometer.ffz.com.barometer.Home: int access$502(int)>(-1)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double latitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $b2 != 0 goto $d0 = <barometer.ffz.com.barometer.Home: double latitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> <barometer.ffz.com.barometer.Home: double longitudine> = $d0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double latitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double longitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $b2 == 0 goto <barometer.ffz.com.barometer.Home: int contasecondi_ScaricaMeteoWeb> = 0
+<barometer.ffz.com.barometer.Uty: void ThreadScaricamentoMeteo(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<barometer.ffz.com.barometer.ServizioBackground$1: void run()> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground$1
+<barometer.ffz.com.barometer.ServizioBackground: void SalvaImpostazioniFloat(java.lang.String,float)> --> $r0 := @parameter0: java.lang.String
+<barometer.ffz.com.barometer.ServizioBackground: void SalvaImpostazioniFloat(java.lang.String,float)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+--------------------------------------------------------
+
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+<barometer.ffz.com.barometer.Home: android.location.Location getLocation()> --> <barometer.ffz.com.barometer.Home: double longitudine> = $d0
+<barometer.ffz.com.barometer.Home: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: android.location.Location getLocation()>()
+<dummyMainClass: barometer.ffz.com.barometer.Home dummyMainMethod_barometer_ffz_com_barometer_Home(android.content.Intent)> --> virtualinvoke $r0.<barometer.ffz.com.barometer.Home: void onRequestPermissionsResult(int,java.lang.String[],int[])>(0, $r5, $r6)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> staticinvoke <dummyMainClass: barometer.ffz.com.barometer.Home dummyMainMethod_barometer_ffz_com_barometer_Home(android.content.Intent)>(null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 0 goto (branch)
+<barometer.ffz.com.barometer.Home: void setupGps()> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: android.location.Location getLocation()>()
+<barometer.ffz.com.barometer.Home: void SecondoBlocco()> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: void setupGps()>()
+<barometer.ffz.com.barometer.Home: void InizializzaValori()> --> if $r1 == null goto $r1 = new java.util.Timer
+<barometer.ffz.com.barometer.Home: void InizializzaValori()> --> $r1 = r0.<barometer.ffz.com.barometer.Home: java.util.Timer mTimer>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $z0 == 0 goto virtualinvoke $r10.<android.widget.TextView: void setVisibility(int)>(8)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $r1 = r0.<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: barometer.ffz.com.barometer.Home$TimeDisplayTimerTask this$1>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 < 0 goto $f0 = <barometer.ffz.com.barometer.Home: float pressure_value>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $i1 = <barometer.ffz.com.barometer.Home: int contasecondi_AggiornaIcone>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 != 0 goto staticinvoke <barometer.ffz.com.barometer.Home: int access$502(int)>(-1)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double longitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $b2 == 0 goto <barometer.ffz.com.barometer.Home: int contasecondi_ScaricaMeteoWeb> = 0
+<barometer.ffz.com.barometer.Uty: void ThreadScaricamentoMeteo(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<barometer.ffz.com.barometer.ServizioBackground$1: void run()> --> r0 := @this: barometer.ffz.com.barometer.ServizioBackground$1
+<barometer.ffz.com.barometer.ServizioBackground: void SalvaImpostazioniFloat(java.lang.String,float)> --> $r0 := @parameter0: java.lang.String
+<barometer.ffz.com.barometer.ServizioBackground: void SalvaImpostazioniFloat(java.lang.String,float)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+--------------------------------------------------------
+
+<barometer.ffz.com.barometer.Home$MyLocationListener: void onLocationChanged(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<barometer.ffz.com.barometer.Home$MyLocationListener: void onLocationChanged(android.location.Location)> --> <barometer.ffz.com.barometer.Home: double latitudine> = $d0
+<dummyMainClass: barometer.ffz.com.barometer.Home dummyMainMethod_barometer_ffz_com_barometer_Home(android.content.Intent)> --> virtualinvoke $r14.<barometer.ffz.com.barometer.Home$MyLocationListener: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: barometer.ffz.com.barometer.Home dummyMainMethod_barometer_ffz_com_barometer_Home(android.content.Intent)> --> if $i0 == 2 goto (branch)
+<barometer.ffz.com.barometer.Home: void setupGps()> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: android.location.Location getLocation()>()
+<barometer.ffz.com.barometer.Home: void SecondoBlocco()> --> virtualinvoke r0.<barometer.ffz.com.barometer.Home: void setupGps()>()
+<barometer.ffz.com.barometer.Home: void InizializzaValori()> --> if $r1 == null goto $r1 = new java.util.Timer
+<barometer.ffz.com.barometer.Home: void InizializzaValori()> --> $r1 = r0.<barometer.ffz.com.barometer.Home: java.util.Timer mTimer>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $z0 == 0 goto virtualinvoke $r10.<android.widget.TextView: void setVisibility(int)>(8)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $r1 = r0.<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: barometer.ffz.com.barometer.Home$TimeDisplayTimerTask this$1>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 < 0 goto $f0 = <barometer.ffz.com.barometer.Home: float pressure_value>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $i1 = <barometer.ffz.com.barometer.Home: int contasecondi_AggiornaIcone>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $i1 != 0 goto staticinvoke <barometer.ffz.com.barometer.Home: int access$502(int)>(-1)
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $d0 = <barometer.ffz.com.barometer.Home: double latitudine>
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> $b2 = $d0 cmpl -1.0
+<barometer.ffz.com.barometer.Home$TimeDisplayTimerTask$1: void run()> --> if $b2 == 0 goto <barometer.ffz.com.barometer.Home: int contasecondi_ScaricaMeteoWeb> = 0
+<barometer.ffz.com.barometer.Uty: void ThreadScaricamentoMeteo(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<barometer.ffz.com.barometer.Uty$1: void run()> --> r0 := @this: barometer.ffz.com.barometer.Uty$1
+<barometer.ffz.com.barometer.Uty: double access$000(double,double)> --> $d1 := @parameter0: double
+<barometer.ffz.com.barometer.Uty: double getElevationFromGoogleMaps(double,double)> --> $d0 := @parameter0: double
+<barometer.ffz.com.barometer.Uty: double getElevationFromGoogleMaps(double,double)> --> specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r2)
+--------------------------------------------------------
+

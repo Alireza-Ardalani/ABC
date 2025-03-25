@@ -1,0 +1,58 @@
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r1)
+Component=> com.misfitwearables.prometheus.ui.profile.AppGalleryActivity
+ComponentColor=> GREEN
+com.tencent.open.utils.Util
+android.os.BaseBundle
+android.location.LocationManager
+com.tencent.open.c.e
+Category: com.tencent.open.utils.Util-*-com.tencent.open.c.e-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r1)
+Component=> com.misfitwearables.prometheus.ui.profile.AppGalleryActivity
+ComponentColor=> GREEN
+com.tencent.open.utils.Util
+android.location.Location
+android.os.BaseBundle
+com.tencent.open.c.e
+Category: com.tencent.open.utils.Util-*-com.tencent.open.c.e-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("getLocation", "getLocation>>>", $r7)
+Component=> com.misfitwearables.prometheus.ui.profile.AppGalleryActivity
+ComponentColor=> GREEN
+android.util.Log
+com.tencent.open.utils.Util
+android.location.Location
+Category: com.tencent.open.utils.Util-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r1)
+Component=> com.misfitwearables.prometheus.ui.profile.AppGalleryActivity
+ComponentColor=> GREEN
+com.tencent.open.utils.Util
+android.location.Location
+android.os.BaseBundle
+com.tencent.open.c.e
+Category: com.tencent.open.utils.Util-*-com.tencent.open.c.e-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("getLocation", "getLocation>>>", $r7)
+Component=> com.misfitwearables.prometheus.ui.profile.AppGalleryActivity
+ComponentColor=> GREEN
+android.util.Log
+com.tencent.open.utils.Util
+android.location.Location
+Category: com.tencent.open.utils.Util-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("getLocation", "getLocation>>>", $r7)
+Component=> com.misfitwearables.prometheus.ui.profile.AppGalleryActivity
+ComponentColor=> GREEN
+android.util.Log
+com.tencent.open.utils.Util
+android.location.LocationManager
+Category: com.tencent.open.utils.Util-*-
+-----------------------------------------------------------------
+com.misfitwearables.prometheus.apk: 1383234

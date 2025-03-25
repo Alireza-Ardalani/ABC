@@ -1,0 +1,176 @@
+Source=> $r9 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TwilightManager", "Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.")
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.b.k.n$i
+android.util.Log
+android.location.LocationManager
+Category: i.b.k.n$i-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ConfigurationContentLoader", "PhenotypeFlag unable to load ContentProvider, using default values")
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.i.f.b
+i.b.k.n$i
+b.e.b.b.i.n.r1
+i.i.f.b
+b.e.b.b.i.n.m1
+b.e.b.b.i.n.d1
+b.e.b.b.i.n.d1
+i.i.f.b
+b.e.b.b.i.n.d1
+android.util.Log
+b.e.b.b.i.n.m1
+android.location.LocationManager
+Category: i.i.f.b-*-i.b.k.n$i-*-b.e.b.b.i.n.r1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-b.e.b.b.i.n.d1-*-b.e.b.b.i.n.d1-*-i.i.f.b-*-b.e.b.b.i.n.d1-*-b.e.b.b.i.n.m1-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PhenotypeClientHelper", $r3)
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.b.k.n$i
+b.e.b.b.i.n.r1
+i.i.f.b
+b.e.b.b.i.n.m1
+i.i.f.b
+android.util.Log
+b.e.b.b.i.n.m1
+android.location.LocationManager
+b.e.b.b.i.n.p1
+Category: i.b.k.n$i-*-b.e.b.b.i.n.r1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-b.e.b.b.i.n.p1-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("GservicesLoader", $r1, $r6)
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.i.f.b
+i.b.k.n$i
+b.e.b.b.i.n.r1
+i.i.f.b
+b.e.b.b.i.n.m1
+android.util.Log
+i.i.f.b
+b.e.b.b.i.n.m1
+android.location.LocationManager
+Category: i.i.f.b-*-i.b.k.n$i-*-b.e.b.b.i.n.r1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PhenotypeFlag", $r4)
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.b.k.n$i
+b.e.b.b.i.n.r1
+i.i.f.b
+b.e.b.b.i.n.m1
+b.e.b.b.i.n.t1
+i.i.f.b
+android.util.Log
+b.e.b.b.i.n.m1
+android.location.LocationManager
+Category: i.b.k.n$i-*-b.e.b.b.i.n.r1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-b.e.b.b.i.n.t1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PhenotypeFlag", $r5)
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.b.k.n$i
+b.e.b.b.i.n.r1
+i.i.f.b
+b.e.b.b.i.n.m1
+b.e.b.b.i.n.v1
+i.i.f.b
+android.util.Log
+b.e.b.b.i.n.m1
+android.location.LocationManager
+Category: i.b.k.n$i-*-b.e.b.b.i.n.r1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-b.e.b.b.i.n.v1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PhenotypeFlag", $r3)
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.b.k.n$i
+b.e.b.b.i.n.r1
+i.i.f.b
+b.e.b.b.i.n.m1
+i.i.f.b
+android.util.Log
+b.e.b.b.i.n.m1
+android.location.LocationManager
+b.e.b.b.i.n.w1
+Category: i.b.k.n$i-*-b.e.b.b.i.n.r1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-b.e.b.b.i.n.w1-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TwilightManager", "Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.")
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.b.k.n$i
+android.util.Log
+android.location.LocationManager
+Category: i.b.k.n$i-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, $r8, null)
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.i.f.b
+i.b.k.n$i
+b.e.b.b.i.n.r1
+i.i.f.b
+b.e.b.b.i.n.m1
+android.content.ContentResolver
+b.e.b.b.i.n.c1
+b.e.b.b.i.n.l1
+i.i.f.b
+b.e.b.b.i.n.m1
+android.location.LocationManager
+Category: i.i.f.b-*-i.b.k.n$i-*-b.e.b.b.i.n.r1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-b.e.b.b.i.n.c1-*-b.e.b.b.i.n.l1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, null, null, null)
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.i.f.b
+i.b.k.n$i
+b.e.b.b.i.n.r1
+i.i.f.b
+b.e.b.b.i.n.m1
+android.content.ContentResolver
+i.i.f.b
+b.e.b.b.i.n.m1
+b.e.b.b.i.n.h1
+android.location.LocationManager
+Category: i.i.f.b-*-i.b.k.n$i-*-b.e.b.b.i.n.r1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-b.e.b.b.i.n.h1-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("PhenotypeFlag", 3)
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.b.k.n$i
+b.e.b.b.i.n.r1
+i.i.f.b
+b.e.b.b.i.n.m1
+i.i.f.b
+b.e.b.b.i.n.m1
+android.util.Log
+android.location.LocationManager
+Category: i.b.k.n$i-*-b.e.b.b.i.n.r1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, $r8, null)
+Component=> com.szyk.diabetes.ItemInfoActivity
+ComponentColor=> GREEN
+i.i.f.b
+i.b.k.n$i
+b.e.b.b.i.n.r1
+i.i.f.b
+b.e.b.b.i.n.m1
+android.content.ContentResolver
+b.e.b.b.i.n.c1
+b.e.b.b.i.n.l1
+i.i.f.b
+b.e.b.b.i.n.m1
+android.location.LocationManager
+Category: i.i.f.b-*-i.b.k.n$i-*-b.e.b.b.i.n.r1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-b.e.b.b.i.n.c1-*-b.e.b.b.i.n.l1-*-i.i.f.b-*-b.e.b.b.i.n.m1-*-
+-----------------------------------------------------------------
+com.szyk.diabetes.apk: 1223759

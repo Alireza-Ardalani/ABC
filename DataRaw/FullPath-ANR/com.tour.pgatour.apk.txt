@@ -1,0 +1,122 @@
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r13.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("beacon_url", $r4)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.utils.d
+android.os.BaseBundle
+android.location.LocationManager
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+com.krux.androidsdk.aggregator.EventPublisherService
+Category: com.krux.androidsdk.utils.b-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-com.krux.androidsdk.aggregator.EventPublisherService-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tech_browser", "android_app")
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.os.BaseBundle
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r8)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+android.util.Log
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+Category: com.krux.androidsdk.utils.d-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tech_os", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.os.BaseBundle
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("lat", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.os.BaseBundle
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("_kpid", $r9)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.os.BaseBundle
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tech_manufacturer", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.os.BaseBundle
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r8)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+android.util.Log
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+Category: com.krux.androidsdk.utils.d-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tech_device", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.os.BaseBundle
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("_kuid", $r9)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.os.BaseBundle
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("long", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.os.BaseBundle
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tech_browser_lang", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.os.BaseBundle
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+com.tour.pgatour.apk: 1177308

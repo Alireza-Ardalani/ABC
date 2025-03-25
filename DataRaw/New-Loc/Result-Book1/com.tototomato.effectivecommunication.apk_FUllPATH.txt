@@ -1,0 +1,34 @@
+<com.revmob.a.e: org.json.JSONObject e()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.revmob.a.e: org.json.JSONObject e()> --> $r5 := @caughtexception
+<com.revmob.internal.v: void a(java.lang.Throwable,java.lang.String,java.lang.Enum,java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.Throwable
+<com.revmob.internal.x: void run()> --> r0 := @this: com.revmob.internal.x
+<com.revmob.internal.v: void b(java.lang.Throwable,java.lang.String,java.lang.Enum,java.lang.String,java.lang.String)> --> $r6 := @parameter0: java.lang.Throwable
+<com.revmob.b.a: void a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.revmob.internal.d: org.apache.http.HttpResponse a(java.lang.String,java.lang.String)> --> r0 := @this: com.revmob.internal.d
+<com.revmob.internal.d: org.apache.http.HttpResponse a(java.lang.String,java.lang.String)> --> $r4 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.String toString()>()
+<com.revmob.internal.d: org.apache.http.HttpResponse a(java.lang.String,java.lang.String)> --> $r20 := @caughtexception
+<com.revmob.internal.a: void c(java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.revmob.internal.a: void c(java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("[RevMob]", $r0, $r1)
+--------------------------------------------------------
+
+<com.seattleclouds.location.g$d: void onLocationChanged(android.location.Location)> --> interfaceinvoke $r2.<android.location.LocationListener: void onLocationChanged(android.location.Location)>($r1)
+<com.seattleclouds.location.g: boolean a(android.location.Location,android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.seattleclouds.location.g: boolean a(android.location.Location,android.location.Location)> --> if $r0 != null goto $l1 = virtualinvoke $r0.<android.location.Location: long getTime()>()
+<com.seattleclouds.location.g$d: void onLocationChanged(android.location.Location)> --> $z0 = staticinvoke <com.seattleclouds.location.g: boolean a(android.location.Location,android.location.Location)>($r1, $r5)
+<com.seattleclouds.location.g$d: void onLocationChanged(android.location.Location)> --> if $z0 == 0 goto return
+<com.seattleclouds.modules.savephoto.SavePhotoActivity$10: void a(android.location.Location)> --> r0 := @this: com.seattleclouds.modules.savephoto.SavePhotoActivity$10
+<com.seattleclouds.modules.savephoto.SavePhotoActivity: void c(com.seattleclouds.modules.savephoto.SavePhotoActivity,android.location.Location)> --> $r0 := @parameter0: com.seattleclouds.modules.savephoto.SavePhotoActivity
+<com.seattleclouds.modules.savephoto.SavePhotoActivity: void b(android.location.Location)> --> r0 := @this: com.seattleclouds.modules.savephoto.SavePhotoActivity
+<com.seattleclouds.location.a: void a(android.location.Location)> --> r0 := @this: com.seattleclouds.location.a
+<com.seattleclouds.location.a: void a(double,double,boolean)> --> r0 := @this: com.seattleclouds.location.a
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.seattleclouds.a.a$1: void run()> --> r0 := @this: com.seattleclouds.a.a$1
+<com.seattleclouds.a.a: boolean b(com.seattleclouds.a.a)> --> $r0 := @parameter0: com.seattleclouds.a.a
+<com.seattleclouds.a.a: boolean a()> --> r0 := @this: com.seattleclouds.a.a
+<com.seattleclouds.a.a: boolean b(int)> --> r0 := @this: com.seattleclouds.a.a
+<com.seattleclouds.util.HTTPUtil: java.lang.String b(java.lang.String,java.util.Map)> --> $r1 := @parameter0: java.lang.String
+<com.seattleclouds.util.HTTPUtil: java.lang.String b(java.lang.String,java.util.Map,int)> --> $r0 := @parameter0: java.lang.String
+<com.seattleclouds.util.HTTPUtil: java.lang.String a(java.lang.String,java.lang.String,int)> --> $r1 := @parameter0: java.lang.String
+<com.seattleclouds.util.HTTPUtil: java.lang.String a(java.lang.String,java.lang.String,int)> --> virtualinvoke $r6.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+--------------------------------------------------------
+

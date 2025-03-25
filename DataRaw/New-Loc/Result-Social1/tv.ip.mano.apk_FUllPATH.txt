@@ -1,0 +1,13 @@
+<dummyMainClass: tv.ip.my.activities.MyMainActivity dummyMainMethod_tv_ip_my_activities_MyMainActivity(android.content.Intent)> --> virtualinvoke $r0.<tv.ip.my.activities.MyMainActivity: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: tv.ip.my.activities.MyMainActivity dummyMainMethod_tv_ip_my_activities_MyMainActivity(android.content.Intent)> --> if $i0 == 21 goto (branch)
+<tv.ip.my.activities.MyMainActivity: void onBackPressed()> --> r0 := @this: tv.ip.my.activities.MyMainActivity
+<tv.ip.my.activities.MyMainActivity: void onBackPressed()> --> $r1 = r0.<tv.ip.my.activities.MyMainActivity: com.github.clans.fab.FloatingActionMenu mBtnFloatActionMenu>
+<com.github.clans.fab.FloatingActionMenu: boolean isOpened()> --> r0 := @this: com.github.clans.fab.FloatingActionMenu
+<com.github.clans.fab.FloatingActionMenu: boolean isOpened()> --> z0 = r0.<com.github.clans.fab.FloatingActionMenu: boolean mMenuOpened>
+<tv.ip.my.activities.MyMainActivity: void onBackPressed()> --> $z0 = virtualinvoke $r1.<com.github.clans.fab.FloatingActionMenu: boolean isOpened()>()
+<tv.ip.my.activities.MyMainActivity: void onBackPressed()> --> if $z0 == 0 goto $r2 = r0.<tv.ip.my.activities.MyMainActivity: android.view.ViewGroup mSearchBar>
+<tv.ip.my.controller.AppController: void uninitEngine()> --> r0 := @this: tv.ip.my.controller.AppController
+<tv.ip.my.controller.SponsorController: void uninit()> --> r0 := @this: tv.ip.my.controller.SponsorController
+<tv.ip.my.controller.SponsorController: void uninit()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SponsorController", "SponsorController uninit")
+--------------------------------------------------------
+

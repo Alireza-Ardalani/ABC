@@ -1,0 +1,84 @@
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DataBerriesNatLocation", "catch Exception in DataBerriesNativeLocationReceiver\'s OnReceive")
+Component=> com.databerries.DataBerriesNativeLocationReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_lon", $f1)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_provider", $r3)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_city", $r6)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_zip", $r4)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_name", $r3)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_state", $r3)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_state", $r3)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DataBerriesNatLocation", "catch Exception in DataBerriesNativeLocationReceiver\'s OnReceive")
+Component=> com.databerries.DataBerriesNativeLocationReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_name", $r3)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_city", $r6)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_provider", $r3)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_zip", $r4)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_lat", $f0)
+Component=> com.keyring.location.GeocoderService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,10 @@
+<com.yayandroid.locationmanager.providers.locationprovider.DefaultLocationSource: android.location.Location b(java.lang.String)> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3)
+<com.yayandroid.locationmanager.providers.locationprovider.DefaultLocationProvider: boolean i()> --> $r3 = virtualinvoke $r1.<com.yayandroid.locationmanager.providers.locationprovider.DefaultLocationSource: android.location.Location b(java.lang.String)>($r2)
+<com.yayandroid.locationmanager.providers.locationprovider.DefaultLocationSource: boolean a(android.location.Location,long,float)> --> r0 := @this: com.yayandroid.locationmanager.providers.locationprovider.DefaultLocationSource
+<com.yayandroid.locationmanager.providers.locationprovider.DefaultLocationSource: boolean a(android.location.Location,long,float)> --> if $r1 != null goto $f1 = virtualinvoke $r1.<android.location.Location: float getAccuracy()>()
+<com.yayandroid.locationmanager.providers.locationprovider.DefaultLocationProvider: boolean i()> --> $z0 = virtualinvoke $r1.<com.yayandroid.locationmanager.providers.locationprovider.DefaultLocationSource: boolean a(android.location.Location,long,float)>($r3, $l0, $f0)
+<com.yayandroid.locationmanager.providers.locationprovider.DefaultLocationProvider: boolean i()> --> if $z0 == 0 goto staticinvoke <com.yayandroid.locationmanager.helper.LogUtils: void b(java.lang.String)>("LastKnowLocation is not usable.")
+<com.yayandroid.locationmanager.helper.LogUtils: void b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.yayandroid.locationmanager.helper.LogUtils: void b(java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r0)
+--------------------------------------------------------
+

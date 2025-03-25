@@ -1,0 +1,7 @@
+<com.ScanLife.BarcodeScanner.SLLocationManager: void locationUpdateHelper(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.ScanLife.BarcodeScanner.SLLocationManager: void locationUpdateHelper(android.location.Location)> --> $b0 = $d0 cmpl -180.0
+<com.ScanLife.BarcodeScanner.SLLocationManager: void locationUpdateHelper(android.location.Location)> --> $i1 = (int) $b0
+<com.ScanLife.BarcodeScanner.SLLocationManager: void locationUpdateHelper(android.location.Location)> --> if $i1 < 0 goto return
+<com.ScanLife.BarcodeScanner.SLLocationManager: void locationUpdateHelper(android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lat", $r5)
+--------------------------------------------------------
+

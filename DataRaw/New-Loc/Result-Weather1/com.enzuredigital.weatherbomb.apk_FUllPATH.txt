@@ -1,0 +1,30 @@
+<com.enzuredigital.flowxlib.service.j: void f()> --> $d0 = virtualinvoke $r15.<android.location.Location: double getLongitude()>()
+<com.enzuredigital.flowxlib.service.j: void f()> --> $f0 = (float) $d0
+<com.enzuredigital.flowxlib.service.j: void f()> --> r0.<com.enzuredigital.flowxlib.service.j: float e> = $f0
+<com.enzuredigital.flowxlib.service.j: void i()> --> r0 := @this: com.enzuredigital.flowxlib.service.j
+<com.enzuredigital.flowxlib.service.j: void i()> --> $f0 = r0.<com.enzuredigital.flowxlib.service.j: float e>
+<com.enzuredigital.flowxlib.service.j: void i()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("longitude", $f0)
+--------------------------------------------------------
+
+<com.enzuredigital.flowxlib.service.j: void f()> --> $d0 = virtualinvoke $r15.<android.location.Location: double getLatitude()>()
+<com.enzuredigital.flowxlib.service.j: void f()> --> $f0 = (float) $d0
+<com.enzuredigital.flowxlib.service.j: void f()> --> r0.<com.enzuredigital.flowxlib.service.j: float d> = $f0
+<com.enzuredigital.flowxlib.service.j: void f()> --> $f0 = r0.<com.enzuredigital.flowxlib.service.j: float d>
+<com.enzuredigital.flowxlib.service.j: void f()> --> $d0 = (double) $f0
+<b.e.b.h: java.lang.String a(double,double)> --> $d1 := @parameter0: double
+<b.e.b.h: java.lang.String a(double,double)> --> $f1 = (float) $d1
+<b.e.b.h: int a(float,float)> --> $f0 := @parameter0: float
+<b.e.b.h: int a(float,float)> --> $b0 = $f0 cmpg 58.776028F
+<b.e.b.h: int a(float,float)> --> $i1 = (int) $b0
+<b.e.b.h: int a(float,float)> --> if $i1 >= 0 goto $i1 = staticinvoke <b.e.b.h: int E(float,float)>($f0, $f1)
+<b.e.b.h: int a(float,float)> --> $b0 = $f1 cmpg 11.307861F
+<b.e.b.h: int a(float,float)> --> $i1 = (int) $b0
+<b.e.b.h: java.lang.String a(double,double)> --> $i0 = staticinvoke <b.e.b.h: int a(float,float)>($f1, $f0)
+<b.e.b.h: java.lang.String a(double,double)> --> $r1 = $r0[$i0]
+<com.enzuredigital.flowxlib.service.j: void f()> --> $r16 = staticinvoke <b.e.b.h: java.lang.String a(double,double)>($d0, $d1)
+<com.enzuredigital.flowxlib.service.j: void f()> --> r0.<com.enzuredigital.flowxlib.service.j: java.lang.String f> = $r16
+<com.enzuredigital.flowxlib.service.j: void i()> --> r0 := @this: com.enzuredigital.flowxlib.service.j
+<com.enzuredigital.flowxlib.service.j: void i()> --> $r4 = r0.<com.enzuredigital.flowxlib.service.j: java.lang.String f>
+<com.enzuredigital.flowxlib.service.j: void i()> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("timezoneId", $r4)
+--------------------------------------------------------
+

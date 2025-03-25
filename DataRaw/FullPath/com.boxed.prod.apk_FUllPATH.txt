@@ -1,0 +1,20 @@
+<com.boxed.util.GPSTracker: void getLocation()> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.boxed.util.GPSTracker: void getLocation()> --> $r5 := @caughtexception
+<com.boxed.util.GPSTracker: void getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Location error", $r6)
+--------------------------------------------------------
+
+<com.boxed.util.GPSTracker: void getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.boxed.util.GPSTracker: void getLocation()> --> $r5 := @caughtexception
+<com.boxed.util.GPSTracker: void getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Location error", $r6)
+--------------------------------------------------------
+
+<com.boxed.util.GPSTracker: void getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.boxed.util.GPSTracker: void getLocation()> --> $r5 := @caughtexception
+<com.boxed.util.GPSTracker: void getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Location error", $r6)
+--------------------------------------------------------
+
+<com.boxed.util.GPSTracker: void getLocation()> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<com.boxed.util.GPSTracker: void getLocation()> --> $r5 := @caughtexception
+<com.boxed.util.GPSTracker: void getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Location error", $r6)
+--------------------------------------------------------
+

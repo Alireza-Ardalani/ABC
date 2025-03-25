@@ -1,0 +1,96 @@
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("longitudee", f1)
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r0.<android.os.Bundle: void putLong(java.lang.String,long)>("window_end", 1L)
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("FJD.GooglePlayReceiver", $r1)
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>(" - ")
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("action", "android.intent.action.START_ROTATING_UPDATE")
+Component=> com.liveweather.update.todayweather.forecast.jobSchedulerServices.JobSchedulerLocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("update_source", $r4)
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r2)
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("geo_district_country", "")
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("action", "android.intent.action.STOP_ROTATING_UPDATE")
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("action", "android.intent.action.START_ROTATING_UPDATE")
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r9 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>(" ")
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("updateSource", $r6)
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putBundle(java.lang.String,android.os.Bundle)>("extras", $r5)
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("service", $r3)
+Component=> com.liveweather.update.todayweather.forecast.service.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

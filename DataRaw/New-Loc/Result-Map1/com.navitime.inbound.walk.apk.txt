@@ -1,0 +1,1320 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r12.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r7, "_tag_flag = ? AND _type = ? AND _type_key = ?", $r14)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.os.PersistableBundle: void putInt(java.lang.String,int)>("BUNDLE_JOB_TASK_NETWORK_FLAG", 1)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>(" SELECT key,value FROM pp_logger_cfg WHERE  type = ?", $r5)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r2, $z0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String,java.lang.Object[])>("DELETE FROM tn_logging WHERE id IN (SELECT id FROM tn_logging WHERE detail LIKE \'%cp_type=\'||?||\'&%\' ESCAPE \'$\' ORDER BY id ASC LIMIT 1)", $r5)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>($r3, null, null, null, null, null, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT id,detail FROM tn_logging WHERE detail LIKE \'%cp_type=\'||?||\'%\' ESCAPE \'$\'", $r7)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT id,detail FROM tn_logging WHERE detail LIKE \'%cp_type=\'||?||\'%\' ESCAPE \'$\'", $r7)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.os.PersistableBundle: void putInt(java.lang.String,int)>("BUNDLE_JOB_KIND", 0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.os.PersistableBundle: void putInt(java.lang.String,int)>("BUNDLE_JOB_TASK_NETWORK_FLAG", 1)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r1, null, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: long executeInsert()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>($r7, $r1, $r2, $r3)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $l0 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>($r3, null, $r1)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String,java.lang.Object[])>("DELETE FROM tn_logging WHERE id IN (SELECT id FROM tn_logging WHERE detail LIKE \'%cp_type=\'||?||\'&%\' ESCAPE \'$\' ORDER BY id ASC LIMIT 1)", $r5)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $l0 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>($r3, null, $r1)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.os.PersistableBundle: void putInt(java.lang.String,int)>("BUNDLE_JOB_TASK_NETWORK_FLAG", 0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r12.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String,java.lang.Object[])>(" DELETE FROM pp_logger_cfg WHERE key = ?", $r5)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $l0 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>($r3, null, $r1)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: long executeInsert()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r2, $l0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r1, null, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>($r7, $r1, $r2, $r3)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r3)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: long executeInsert()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r2)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>($r7, $r1, $r2, $r3)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r1)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $i0 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r1, null, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r10.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r1, null, null)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r7, "_tag_flag = ? AND _type = ? AND _type_key = ?", $r14)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: long executeInsert()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $i0 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>($r7, $r1, $r2, $r3)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r2, $l0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r7.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r11.<android.os.PersistableBundle: void putString(java.lang.String,java.lang.String)>("intent_key_send_log_type", $r1)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r3, $l0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r3)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.os.PersistableBundle: void putInt(java.lang.String,int)>("BUNDLE_JOB_TASK_NETWORK_FLAG", 0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String,java.lang.Object[])>(" DELETE FROM pp_logger_cfg WHERE key = ?", $r5)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $l0 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>($r3, null, $r1)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r3, $l0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r1, $z0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r11.<android.os.PersistableBundle: void putString(java.lang.String,java.lang.String)>("intent_key_send_log_type", $r1)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r2, $i0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>($r3, null, null, null, null, null, null)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>($r3, null, null, null, null, null, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String,java.lang.Object[])>("INSERT INTO tn_logging (detail,created) values (?,?)", $r8)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r1)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r10.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String,java.lang.Object[])>("INSERT INTO tn_logging (detail,created) values (?,?)", $r8)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $l0 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>($r3, null, $r1)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r7, "_tag_flag = ? AND _type = ? AND _type_key = ?", $r14)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.os.PersistableBundle: void putInt(java.lang.String,int)>("BUNDLE_JOB_KIND", 0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r12.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>($r7, $r1, $r2, $r3)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r2, $i0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>($r3, null, null, null, null, null, null)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r1, null, null)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r2)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r12.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r12.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r7, "_tag_flag = ? AND _type = ? AND _type_key = ?", $r14)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r7, "_tag_flag = ? AND _type = ? AND _type_key = ?", $r14)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>($r3, null, null, null, null, null, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>(" SELECT key,value FROM pp_logger_cfg WHERE  type = ?", $r5)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: long executeInsert()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r2, $z0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteStatement: void close()>()
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("networkLocationType", $r4)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r2)
+Component=> jp.profilepassport.android.geoarea.service.PPGeoAreaService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r1, $z0)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r2 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> jp.profilepassport.android.wifi.service.PPWifiScanService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,68 @@
+<com.gimbal.proximity.core.g.a.a: com.gimbal.proximity.core.g.c a()> --> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.gimbal.proximity.core.g.a.a: com.gimbal.proximity.core.g.c a()> --> if $r4 == null goto return null
+<com.gimbal.proximity.core.g.a.a: com.gimbal.proximity.core.g.c a()> --> $r5 = staticinvoke <com.gimbal.proximity.core.g.a.a: com.gimbal.proximity.core.g.c a(android.location.Location)>($r4)
+<com.gimbal.internal.location.services.a: void b(com.gimbal.proximity.impl.InternalBeaconFenceVisit)> --> $r16 = interfaceinvoke $r15.<com.gimbal.proximity.core.g.a: com.gimbal.proximity.core.g.c a()>()
+<com.gimbal.internal.location.services.a: void b(com.gimbal.proximity.impl.InternalBeaconFenceVisit)> --> if $r16 == null goto $r19 = staticinvoke <com.gimbal.internal.location.services.a: com.gimbal.internal.location.services.InternalPlaceEvent$InternalPlaceEventFenceType c(com.gimbal.proximity.impl.InternalBeaconFenceVisit)>($r1)
+<com.gimbal.internal.location.services.a: void <clinit>()> --> nop
+<com.gimbal.d.b: com.gimbal.d.a a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.gimbal.d.a: void <init>(java.lang.String)> --> r0 := @this: com.gimbal.d.a
+<org.slf4j.LoggerFactory: org.slf4j.Logger getLogger(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<org.slf4j.LoggerFactory: org.slf4j.ILoggerFactory getILoggerFactory()> --> $i0 = <org.slf4j.LoggerFactory: int INITIALIZATION_STATE>
+<org.slf4j.impl.StaticLoggerBinder: void <clinit>()> --> nop
+<org.slf4j.impl.StaticLoggerBinder: void <init>()> --> r0 := @this: org.slf4j.impl.StaticLoggerBinder
+<org.slf4j.impl.StaticLoggerBinder: void <init>()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("-----", "Using android logger factory")
+--------------------------------------------------------
+
+<com.gimbal.internal.location.services.a: void b(com.gimbal.proximity.impl.InternalBeaconFenceVisit)> --> $d0 = virtualinvoke $r18.<android.location.Location: double getLatitude()>()
+<com.gimbal.internal.location.services.a: void b(com.gimbal.proximity.impl.InternalBeaconFenceVisit)> --> $r10 := @caughtexception
+<com.gimbal.internal.persistance.q$a: void a()> --> r0 := @this: com.gimbal.internal.persistance.q$a
+<com.gimbal.internal.persistance.q: void <clinit>()> --> nop
+<com.gimbal.d.b: com.gimbal.d.a a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.gimbal.d.a: void <init>(java.lang.String)> --> r0 := @this: com.gimbal.d.a
+<org.slf4j.LoggerFactory: org.slf4j.Logger getLogger(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<org.slf4j.LoggerFactory: org.slf4j.ILoggerFactory getILoggerFactory()> --> $i0 = <org.slf4j.LoggerFactory: int INITIALIZATION_STATE>
+<org.slf4j.impl.StaticLoggerBinder: void <clinit>()> --> nop
+<org.slf4j.impl.StaticLoggerBinder: void <init>()> --> r0 := @this: org.slf4j.impl.StaticLoggerBinder
+<org.slf4j.impl.StaticLoggerBinder: void <init>()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("-----", "Using android logger factory")
+--------------------------------------------------------
+
+<com.forter.mobile.fortersdk.integrationkit.LocationChangesListener: void registerForUpdates(android.content.Context,int,int)> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.forter.mobile.fortersdk.integrationkit.LocationChangesListener: void registerForUpdates(android.content.Context,int,int)> --> $r5 := @caughtexception
+<com.forter.mobile.fortersdk.integrationkit.LocationChangesListener: void registerForUpdates(android.content.Context,int,int)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationChangesListener", $r7)
+--------------------------------------------------------
+
+<com.forter.mobile.fortersdk.integrationkit.LocationChangesListener: void registerForUpdates(android.content.Context,int,int)> --> virtualinvoke r0.<com.forter.mobile.fortersdk.integrationkit.LocationChangesListener: void onLocationChanged(android.location.Location)>($r4)
+<com.forter.mobile.fortersdk.integrationkit.LocationChangesListener: void registerForUpdates(android.content.Context,int,int)> --> $r5 := @caughtexception
+<com.forter.mobile.fortersdk.integrationkit.LocationChangesListener: void registerForUpdates(android.content.Context,int,int)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationChangesListener", $r7)
+--------------------------------------------------------
+
+<com.forter.mobile.fortersdk.integrationkit.LocationChangesListener: void registerForUpdates(android.content.Context,int,int)> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.forter.mobile.fortersdk.integrationkit.LocationChangesListener: void registerForUpdates(android.content.Context,int,int)> --> $r5 := @caughtexception
+<com.forter.mobile.fortersdk.integrationkit.ForterHelper: void generateAndQueueNoLocationPermissionEvent(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.forter.mobile.fortersdk.integrationkit.ForterHelper: void generateAndQueueNoLocationPermissionEvent(android.content.Context)> --> $r2 = new com.forter.mobile.fortersdk.models.g
+<com.forter.mobile.fortersdk.integrationkit.ForterHelper: void generateAndQueueNoLocationPermissionEvent(android.content.Context)> --> $r3 := @caughtexception
+<com.forter.mobile.fortersdk.utils.SDKLogger: void <clinit>()> --> nop
+<com.forter.mobile.fortersdk.utils.SDKLogger: void <clinit>()> --> <com.forter.mobile.fortersdk.utils.SDKLogger: boolean h> = 0
+<com.forter.mobile.fortersdk.integrationkit.ForterHelper: void generateAndQueueNoLocationPermissionEvent(android.content.Context)> --> staticinvoke <com.forter.mobile.fortersdk.utils.SDKLogger: void a(java.lang.String,java.lang.String,java.lang.Throwable)>("ForterHelper", "Failed to create a thread and queue a Location event.", $r3)
+<com.forter.mobile.fortersdk.api.ForterClient: void registerForLocationUpdatesIfEnabled(android.content.Context)> --> virtualinvoke $r2.<com.forter.mobile.fortersdk.integrationkit.LocationChangesListener: void registerForUpdates(android.content.Context,int,int)>($r1, $i0, $i1)
+<com.forter.mobile.fortersdk.api.ForterClient: void registerForLocationUpdatesIfEnabled(android.content.Context)> --> return
+<com.forter.mobile.fortersdk.api.ForterClient: void finishInit()> --> virtualinvoke r0.<com.forter.mobile.fortersdk.api.ForterClient: void registerForLocationUpdatesIfEnabled(android.content.Context)>($r1)
+<com.forter.mobile.fortersdk.api.ForterClient: void finishInit()> --> virtualinvoke r0.<com.forter.mobile.fortersdk.api.ForterClient: void onMessage(com.forter.mobile.fortersdk.models.m,java.lang.Object)>($r2, null)
+<com.forter.mobile.fortersdk.utils.SDKLogger: void f(java.lang.String,java.lang.String)> --> $z0 = <com.forter.mobile.fortersdk.utils.SDKLogger: boolean h>
+<com.forter.mobile.fortersdk.utils.SDKLogger: void f(java.lang.String,java.lang.String)> --> if $z0 == 0 goto return
+<com.forter.mobile.fortersdk.utils.SDKLogger: void f(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.gimbal.internal.location.services.a: void b(com.gimbal.proximity.impl.InternalBeaconFenceVisit)> --> $d1 = virtualinvoke $r18.<android.location.Location: double getLongitude()>()
+<com.gimbal.internal.location.services.a: void b(com.gimbal.proximity.impl.InternalBeaconFenceVisit)> --> $r10 := @caughtexception
+<com.gimbal.internal.persistance.q$a: void a()> --> r0 := @this: com.gimbal.internal.persistance.q$a
+<com.gimbal.internal.persistance.q: void <clinit>()> --> nop
+<com.gimbal.d.b: com.gimbal.d.a a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.gimbal.d.a: void <init>(java.lang.String)> --> r0 := @this: com.gimbal.d.a
+<org.slf4j.LoggerFactory: org.slf4j.Logger getLogger(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<org.slf4j.LoggerFactory: org.slf4j.ILoggerFactory getILoggerFactory()> --> $i0 = <org.slf4j.LoggerFactory: int INITIALIZATION_STATE>
+<org.slf4j.impl.StaticLoggerBinder: void <clinit>()> --> nop
+<org.slf4j.impl.StaticLoggerBinder: void <init>()> --> r0 := @this: org.slf4j.impl.StaticLoggerBinder
+<org.slf4j.impl.StaticLoggerBinder: void <init>()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("-----", "Using android logger factory")
+--------------------------------------------------------
+

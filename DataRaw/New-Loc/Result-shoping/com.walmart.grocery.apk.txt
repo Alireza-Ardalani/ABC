@@ -1,0 +1,24 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLongitude", $f0)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLatitude", $f0)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r3.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("latitude", $d0)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r3.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("longitude", $d0)
+Component=> com.onradar.sdk._RadarReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

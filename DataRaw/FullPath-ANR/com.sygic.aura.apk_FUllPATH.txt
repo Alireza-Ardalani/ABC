@@ -1,0 +1,324 @@
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0
+<com.sygic.traffic.movement.sender.TrafficDataSender: void onDataReceived(java.util.List)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendData(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> $r7 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+--------------------------------------------------------
+
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $b0 = $d0 cmpl $d1
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> if $b0 == 0 goto return null
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $r7 = new java.net.URL
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> $r16 = specialinvoke r0.<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)>($r11, $r28, $r9)
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> if $r16 != null goto $r17 = virtualinvoke $r16.<java.net.URL: java.net.URLConnection openConnection()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> $r17 = virtualinvoke $r16.<java.net.URL: java.net.URLConnection openConnection()>()
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.collector.TrafficDataCollector$$Lambda$2: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.collector.TrafficDataCollector$$Lambda$2
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void lambda$null$0$TrafficDataCollector(android.location.LocationManager,java.util.Collection)> --> r0 := @this: com.sygic.traffic.movement.collector.TrafficDataCollector
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void stopLocationUpdates(android.location.LocationManager)> --> r0 := @this: com.sygic.traffic.movement.collector.TrafficDataCollector
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void stopLocationUpdates(android.location.LocationManager)> --> $r4 = r0.<com.sygic.traffic.movement.collector.TrafficDataCollector: android.location.LocationListener mListener>
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void stopLocationUpdates(android.location.LocationManager)> --> $r5 := @caughtexception
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void stopLocationUpdates(android.location.LocationManager)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("TrafficDataCollector", $r2)
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0
+<com.sygic.traffic.movement.sender.TrafficDataSender: void onDataReceived(java.util.List)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendData(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> virtualinvoke $r23.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0
+<com.sygic.traffic.movement.sender.TrafficDataSender: void onDataReceived(java.util.List)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendData(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> $r4 = virtualinvoke r0.<com.sygic.traffic.utils.sender.AzureSender: java.lang.String getEventHubServiceNamespace()>()
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> $r18 := @caughtexception
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> virtualinvoke $r23.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0
+<com.sygic.traffic.movement.sender.TrafficDataSender: void onDataReceived(java.util.List)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendData(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> virtualinvoke $r23.<java.net.HttpURLConnection: void setDoInput(boolean)>(0)
+--------------------------------------------------------
+
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $b0 = $d0 cmpl $d1
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> if $b0 == 0 goto return null
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $r7 = new java.net.URL
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> $r16 = specialinvoke r0.<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)>($r11, $r28, $r9)
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> if $r16 != null goto $r17 = virtualinvoke $r16.<java.net.URL: java.net.URLConnection openConnection()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> virtualinvoke $r24.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r25, $r34, "lat=? AND lon=?", $r26)
+--------------------------------------------------------
+
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> if $r1 == null goto virtualinvoke $r0.<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)>($i0)
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> $i0 = staticinvoke <com.sygic.traffic.utils.Utils$Conversion: int geoCoordinateDoubeToInt(double)>($d0)
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> r0 := @this: com.sygic.traffic.utils.LittleEndianDataOutputStream
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> $i3 = $i0 >>> 8
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> $i3 = $i3 & 255
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> virtualinvoke $r1.<java.io.OutputStream: void write(int)>($i3)
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0
+<com.sygic.traffic.movement.sender.TrafficDataSender: void onDataReceived(java.util.List)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendData(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> $r4 = virtualinvoke r0.<com.sygic.traffic.utils.sender.AzureSender: java.lang.String getEventHubServiceNamespace()>()
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> $r18 := @caughtexception
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> virtualinvoke $r23.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.collector.TrafficDataCollector$$Lambda$2: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.collector.TrafficDataCollector$$Lambda$2
+<com.sygic.traffic.movement.collector.TrafficDataCollector$$Lambda$2: void accept(java.lang.Object)> --> $r1 = r0.<com.sygic.traffic.movement.collector.TrafficDataCollector$$Lambda$2: com.sygic.traffic.movement.collector.TrafficDataCollector arg$1>
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void lambda$null$0$TrafficDataCollector(android.location.LocationManager,java.util.Collection)> --> r0 := @this: com.sygic.traffic.movement.collector.TrafficDataCollector
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void stopLocationUpdates(android.location.LocationManager)> --> r0 := @this: com.sygic.traffic.movement.collector.TrafficDataCollector
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void lambda$null$0$TrafficDataCollector(android.location.LocationManager,java.util.Collection)> --> specialinvoke r0.<com.sygic.traffic.movement.collector.TrafficDataCollector: void stopLocationUpdates(android.location.LocationManager)>($r1)
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void startLocationUpdates(android.location.LocationManager,java.util.Collection,android.os.Looper)> --> r0 := @this: com.sygic.traffic.movement.collector.TrafficDataCollector
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void startLocationUpdates(android.location.LocationManager,java.util.Collection,android.os.Looper)> --> $r2 = r0.<com.sygic.traffic.movement.collector.TrafficDataCollector: android.location.LocationListener mListener>
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void startLocationUpdates(android.location.LocationManager,java.util.Collection,android.os.Looper)> --> $r8 := @caughtexception
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void startLocationUpdates(android.location.LocationManager,java.util.Collection,android.os.Looper)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("TrafficDataCollector", $r7)
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.collector.TrafficDataCollector$$Lambda$2: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.collector.TrafficDataCollector$$Lambda$2
+<com.sygic.traffic.movement.collector.TrafficDataCollector$$Lambda$2: void accept(java.lang.Object)> --> $r1 = r0.<com.sygic.traffic.movement.collector.TrafficDataCollector$$Lambda$2: com.sygic.traffic.movement.collector.TrafficDataCollector arg$1>
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void lambda$null$0$TrafficDataCollector(android.location.LocationManager,java.util.Collection)> --> r0 := @this: com.sygic.traffic.movement.collector.TrafficDataCollector
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void stopLocationUpdates(android.location.LocationManager)> --> r0 := @this: com.sygic.traffic.movement.collector.TrafficDataCollector
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void lambda$null$0$TrafficDataCollector(android.location.LocationManager,java.util.Collection)> --> specialinvoke r0.<com.sygic.traffic.movement.collector.TrafficDataCollector: void stopLocationUpdates(android.location.LocationManager)>($r1)
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void startLocationUpdates(android.location.LocationManager,java.util.Collection,android.os.Looper)> --> r0 := @this: com.sygic.traffic.movement.collector.TrafficDataCollector
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void startLocationUpdates(android.location.LocationManager,java.util.Collection,android.os.Looper)> --> $r2 = r0.<com.sygic.traffic.movement.collector.TrafficDataCollector: android.location.LocationListener mListener>
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void startLocationUpdates(android.location.LocationManager,java.util.Collection,android.os.Looper)> --> $r8 := @caughtexception
+<com.sygic.traffic.movement.collector.TrafficDataCollector: void startLocationUpdates(android.location.LocationManager,java.util.Collection,android.os.Looper)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("TrafficDataCollector", "requesting location on calling thread")
+--------------------------------------------------------
+
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> if $r1 == null goto virtualinvoke $r0.<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)>($i0)
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> $i0 = staticinvoke <com.sygic.traffic.utils.Utils$Conversion: int geoCoordinateDoubeToInt(double)>($d0)
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> r0 := @this: com.sygic.traffic.utils.LittleEndianDataOutputStream
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> $i0 = $i0 >>> 0
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> $i0 = $i0 & 255
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> virtualinvoke $r1.<java.io.OutputStream: void write(int)>($i0)
+--------------------------------------------------------
+
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $b0 = $d0 cmpl $d1
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> if $b0 == 0 goto return null
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $r7 = new java.net.URL
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> $r16 = specialinvoke r0.<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)>($r11, $r28, $r9)
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> if $r16 != null goto $r17 = virtualinvoke $r16.<java.net.URL: java.net.URLConnection openConnection()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> virtualinvoke $r18.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.operators.observable.ObservableConcatMap$SourceObserver$InnerObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableConcatMap$SourceObserver$InnerObserver
+<io.reactivex.observers.SerializedObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.observers.SerializedObserver
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.signal.sender.SignalSender$$Lambda$0: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.signal.sender.SignalSender$$Lambda$0
+<com.sygic.traffic.signal.sender.SignalSender: void bridge$lambda$0$SignalSender(java.util.List)> --> r0 := @this: com.sygic.traffic.signal.sender.SignalSender
+<com.sygic.traffic.signal.sender.SignalSender: void onDataReceived(java.util.List)> --> r0 := @this: com.sygic.traffic.signal.sender.SignalSender
+<com.sygic.traffic.signal.sender.SignalSender: void cacheData(java.util.List)> --> r0 := @this: com.sygic.traffic.signal.sender.SignalSender
+<com.squareup.sqlbrite2.BriteDatabase: com.squareup.sqlbrite2.BriteDatabase$Transaction newTransaction()> --> r0 := @this: com.squareup.sqlbrite2.BriteDatabase
+<com.squareup.sqlbrite2.BriteDatabase: void log(java.lang.String,java.lang.Object[])> --> r0 := @this: com.squareup.sqlbrite2.BriteDatabase
+<com.squareup.sqlbrite2.SqlBrite$1: void log(java.lang.String)> --> r0 := @this: com.squareup.sqlbrite2.SqlBrite$1
+<com.squareup.sqlbrite2.SqlBrite$1: void log(java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SqlBrite", $r1)
+--------------------------------------------------------
+
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> virtualinvoke $r0.<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)>($i1)
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> if $r1 == null goto virtualinvoke $r0.<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)>($i0)
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> $i0 = staticinvoke <com.sygic.traffic.utils.Utils$Conversion: int geoCoordinateDoubeToInt(double)>($d0)
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> r0 := @this: com.sygic.traffic.utils.LittleEndianDataOutputStream
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> $i1 = $i0 >>> 24
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> $i1 = $i1 & 255
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> virtualinvoke $r1.<java.io.OutputStream: void write(int)>($i1)
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0
+<com.sygic.traffic.movement.sender.TrafficDataSender: void onDataReceived(java.util.List)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendData(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> virtualinvoke $r23.<java.net.HttpURLConnection: void setDoInput(boolean)>(0)
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0
+<com.sygic.traffic.movement.sender.TrafficDataSender: void onDataReceived(java.util.List)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendData(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> $r4 = virtualinvoke r0.<com.sygic.traffic.utils.sender.AzureSender: java.lang.String getEventHubServiceNamespace()>()
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> $r18 := @caughtexception
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> virtualinvoke $r23.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0
+<com.sygic.traffic.movement.sender.TrafficDataSender: void onDataReceived(java.util.List)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendData(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> $r4 = virtualinvoke r0.<com.sygic.traffic.utils.sender.AzureSender: java.lang.String getEventHubServiceNamespace()>()
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> $r16 := @caughtexception
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> virtualinvoke $r23.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> virtualinvoke $r0.<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)>($i1)
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> if $r1 == null goto virtualinvoke $r0.<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)>($i0)
+<com.sygic.traffic.utils.Utils$Stream: void writeLocation(com.sygic.traffic.utils.LittleEndianDataOutputStream,android.location.Location,boolean)> --> $i0 = staticinvoke <com.sygic.traffic.utils.Utils$Conversion: int geoCoordinateDoubeToInt(double)>($d0)
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> r0 := @this: com.sygic.traffic.utils.LittleEndianDataOutputStream
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> $i2 = $i0 >>> 16
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> $i2 = $i2 & 255
+<com.sygic.traffic.utils.LittleEndianDataOutputStream: void writeInt(int)> --> virtualinvoke $r1.<java.io.OutputStream: void write(int)>($i2)
+--------------------------------------------------------
+
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $b0 = $d0 cmpl $d1
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> if $b0 == 0 goto return null
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r5)
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0
+<com.sygic.traffic.movement.sender.TrafficDataSender: void onDataReceived(java.util.List)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendData(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> virtualinvoke $r23.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+--------------------------------------------------------
+
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $b0 = $d0 cmpl $d1
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> if $b0 == 0 goto return null
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $r7 = new java.net.URL
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> $r16 = specialinvoke r0.<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)>($r11, $r28, $r9)
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> if $r16 != null goto $r17 = virtualinvoke $r16.<java.net.URL: java.net.URLConnection openConnection()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> $r19 = virtualinvoke $r18.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $b0 = $d0 cmpl $d1
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> if $b0 == 0 goto return null
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $r7 = new java.net.URL
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> $r16 = specialinvoke r0.<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)>($r11, $r28, $r9)
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> if $r16 != null goto $r17 = virtualinvoke $r16.<java.net.URL: java.net.URLConnection openConnection()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> virtualinvoke $r18.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $b0 = $d0 cmpl $d1
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> if $b0 == 0 goto return null
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $r7 = new java.net.URL
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> $r16 = specialinvoke r0.<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)>($r11, $r28, $r9)
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> if $r16 != null goto $r17 = virtualinvoke $r16.<java.net.URL: java.net.URLConnection openConnection()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: void onHandleIntent(android.content.Intent)> --> $r19 = virtualinvoke $r18.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> r0 := @this: com.sygic.traffic.signal.collector.SignalCollector
+<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)> --> if $r1 != null goto return 1
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> $z0 = specialinvoke r0.<com.sygic.traffic.signal.collector.SignalCollector: boolean isRecentLocation(android.location.Location)>($r5)
+<com.sygic.traffic.signal.collector.SignalCollector: void lambda$null$2$SignalCollector(android.location.LocationManager,android.telephony.TelephonyManager,java.lang.Boolean,io.reactivex.ObservableEmitter)> --> if $z0 == 0 goto return
+<io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.operators.observable.ObservableCreate$CreateEmitter
+<io.reactivex.internal.observers.LambdaObserver: void onNext(java.lang.Object)> --> r0 := @this: io.reactivex.internal.observers.LambdaObserver
+<com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0: void accept(java.lang.Object)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender$$Lambda$0
+<com.sygic.traffic.movement.sender.TrafficDataSender: void onDataReceived(java.util.List)> --> r0 := @this: com.sygic.traffic.movement.sender.TrafficDataSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendData(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> r0 := @this: com.sygic.traffic.utils.sender.AzureSender
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> $r4 = virtualinvoke r0.<com.sygic.traffic.utils.sender.AzureSender: java.lang.String getEventHubServiceNamespace()>()
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> $r16 := @caughtexception
+<com.sygic.traffic.utils.sender.AzureSender: boolean sendDataInternal(java.lang.Object,com.sygic.identification.Session)> --> virtualinvoke $r23.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> $b0 = $d0 cmpl $d1
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> if $b0 == 0 goto return null
+<com.sygic.widget.tomtom.TomTomTrafficService: java.net.URL buildUrl(android.location.Location,android.location.Location,com.sygic.aura.map.data.MemoItem$EMemoType)> --> specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r5)
+--------------------------------------------------------
+

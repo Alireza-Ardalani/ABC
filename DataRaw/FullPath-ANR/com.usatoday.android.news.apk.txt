@@ -1,0 +1,41 @@
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("longitude", $r2)
+Component=> com.gannett.android.news.ui.activity.ActivityVideo
+ComponentColor=> GREEN
+android.os.BaseBundle
+android.location.LocationManager
+com.gannett.android.ads.AdParams
+com.gannett.android.utils.LocationUtility
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("latitude", $r2)
+Component=> com.gannett.android.news.ui.activity.ActivityVideo
+ComponentColor=> GREEN
+android.os.BaseBundle
+android.location.LocationManager
+com.gannett.android.ads.AdParams
+com.gannett.android.utils.LocationUtility
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("latitude", $r2)
+Component=> com.gannett.android.news.ui.activity.ActivityVideo
+ComponentColor=> GREEN
+android.os.BaseBundle
+android.location.LocationManager
+com.gannett.android.ads.AdParams
+com.gannett.android.utils.LocationUtility
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r6.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("longitude", $r2)
+Component=> com.gannett.android.news.ui.activity.ActivityVideo
+ComponentColor=> GREEN
+android.os.BaseBundle
+android.location.LocationManager
+com.gannett.android.ads.AdParams
+com.gannett.android.utils.LocationUtility
+Category: LEGIT
+-----------------------------------------------------------------
+com.usatoday.android.news.apk: 1530018

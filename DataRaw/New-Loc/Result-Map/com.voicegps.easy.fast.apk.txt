@@ -1,0 +1,288 @@
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("Error", "Cannot process JSON results", r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("Error", "Cannot process JSON results", r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("null", "null")
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke r5.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("null", "null")
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke r5.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("null", "null")
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("null", "null")
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke r5.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke r5.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = virtualinvoke r5.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke r5.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("address", $r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r7 = virtualinvoke r5.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke r5.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("address", $r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r7 = virtualinvoke r5.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke r5.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r7 = virtualinvoke r5.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("Error", "Cannot process JSON results", r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r7 = virtualinvoke r5.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("Error", "Cannot process JSON results", r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("Error", "Cannot process JSON results", r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = virtualinvoke r5.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("address", $r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("Error", "Cannot process JSON results", r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke r5.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r7 = virtualinvoke r5.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r7 = virtualinvoke r5.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("Error", "Cannot process JSON results", r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("address", $r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("Error", "Cannot process JSON results", r2)
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = virtualinvoke r8.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.voicegps.easy.fast.EmergencyActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

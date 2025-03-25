@@ -1,0 +1,66 @@
+Source=> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("located_city", $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("address_last_update", $l0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLat", f0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLon", f0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLat", f0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLon", f0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("wzw", $r3)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("lat_long_last_update", $l0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLon", f0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLat", f0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.TimeTickerReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,622 @@
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("currentTemp", $i0)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("YahooWeather", $r13)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r4 == null goto (branch)
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void onFailFindLocation(java.lang.Exception)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void onFailFindLocation(java.lang.Exception)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "onFailFindLocation()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void sendData(com.google.android.gms.wearable.PutDataRequest)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void sendData(com.google.android.gms.wearable.PutDataRequest)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "NOT ready to send request because connection not set")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Location cannot be found")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("currentTemp", $i0)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r4 == null goto (branch)
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.services.WeatherService: void onFailFindLocation(java.lang.Exception)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void onFailFindLocation(java.lang.Exception)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "onFailFindLocation()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void sendData(com.google.android.gms.wearable.PutDataRequest)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void sendData(com.google.android.gms.wearable.PutDataRequest)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "NOT ready to send request because connection not set")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lat", $r3)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void shutdown()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void shutdown()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "shutdown()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Location cannot be found")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("City", $r7)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r6)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("weatherCondition", $i0)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Watch weather updated from WeatherService")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r4 == null goto (branch)
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $i0 = (int) $d0
+<com.denite.watchface.oreo.services.WeatherService: int access$202(com.denite.watchface.oreo.services.WeatherService,int)> --> $r0 := @parameter0: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: int access$202(com.denite.watchface.oreo.services.WeatherService,int)> --> $r0.<com.denite.watchface.oreo.services.WeatherService: int currentTemp> = $i0
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> staticinvoke <com.denite.watchface.oreo.services.WeatherService: int access$202(com.denite.watchface.oreo.services.WeatherService,int)>($r10, $i0)
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $r10 = $r9.<com.denite.watchface.oreo.services.WeatherService$1: com.denite.watchface.oreo.services.WeatherService this$0>
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $r9 = r0.<com.denite.watchface.oreo.services.WeatherService$1$2: com.denite.watchface.oreo.services.WeatherService$1 this$1>
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $r9 = r0.<com.denite.watchface.oreo.services.WeatherService$1$2: com.denite.watchface.oreo.services.WeatherService$1 this$1>
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $r10 = $r9.<com.denite.watchface.oreo.services.WeatherService$1: com.denite.watchface.oreo.services.WeatherService this$0>
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> $i0 = r0.<com.denite.watchface.oreo.services.WeatherService: int currentTemp>
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> if $i0 == $i1 goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> z0 = 1
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> if z0 == 0 goto $r4 = r0.<com.denite.watchface.oreo.services.WeatherService: android.content.SharedPreferences sharedPrefs>
+<com.denite.watchface.oreo.services.WeatherService: void sendData(com.google.android.gms.wearable.PutDataRequest)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void sendData(com.google.android.gms.wearable.PutDataRequest)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r5)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Widget weather updated from WeatherService")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> specialinvoke r6.<java.net.URL: void <init>(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lat", $r3)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> $r9 = virtualinvoke r6.<java.net.URL: java.net.URLConnection openConnection()>()
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r4 == null goto (branch)
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("YahooWeather", $r13)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> $r12 = virtualinvoke r10.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "gotWeatherInfo()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r4 == null goto (branch)
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "No Results")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "syncData()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lon", $r4)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r4 == null goto (branch)
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: com.denite.watchface.oreo.weather.WeatherInfo doInBackground(java.lang.String[])> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: com.denite.watchface.oreo.weather.WeatherInfo doInBackground(java.lang.String[])> --> $r9 = virtualinvoke $r3.<com.denite.watchface.oreo.weather.WOEIDUtils: com.denite.watchface.oreo.weather.WOEIDInfo getWoeidInfo()>()
+<com.denite.watchface.oreo.weather.YahooWeather: com.denite.watchface.oreo.weather.WeatherInfo access$700(com.denite.watchface.oreo.weather.YahooWeather,android.content.Context,org.w3c.dom.Document,com.denite.watchface.oreo.weather.WOEIDInfo)> --> $r0 := @parameter0: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: com.denite.watchface.oreo.weather.WeatherInfo parseWeatherInfo(android.content.Context,org.w3c.dom.Document,com.denite.watchface.oreo.weather.WOEIDInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: com.denite.watchface.oreo.weather.WeatherInfo parseWeatherInfo(android.content.Context,org.w3c.dom.Document,com.denite.watchface.oreo.weather.WOEIDInfo)> --> $r8 = $r3.<com.denite.watchface.oreo.weather.WOEIDInfo: java.lang.String mNeighborhood>
+<com.denite.watchface.oreo.weather.YahooWeather: com.denite.watchface.oreo.weather.WeatherInfo parseWeatherInfo(android.content.Context,org.w3c.dom.Document,com.denite.watchface.oreo.weather.WOEIDInfo)> --> r4 := @caughtexception
+<com.denite.watchface.oreo.services.WeatherService: void onFailParsing(java.lang.Exception)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void onFailParsing(java.lang.Exception)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "onFailParsing()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "OpenWeather - Received Info")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "No Results")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Widget weather updated from WeatherService")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lon", $r4)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.fragments.SettingsFragment: com.denite.watchface.oreo.watchface.DrawWatchFace getDrawWatchFace()> --> r0 := @this: com.denite.watchface.oreo.fragments.SettingsFragment
+<com.denite.watchface.oreo.fragments.SettingsFragment: com.denite.watchface.oreo.watchface.DrawWatchFace getDrawWatchFace()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SettingsFragment", "getDrawWatchFace()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "OpenWeather - Received Info")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r4 == null goto (branch)
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location", $r10)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.fragments.SettingsFragment: com.denite.watchface.oreo.watchface.DrawWatchFace getDrawWatchFace()> --> r0 := @this: com.denite.watchface.oreo.fragments.SettingsFragment
+<com.denite.watchface.oreo.fragments.SettingsFragment: com.denite.watchface.oreo.watchface.DrawWatchFace getDrawWatchFace()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SettingsFragment", "getDrawWatchFace()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $i0 = (int) $d0
+<com.denite.watchface.oreo.services.WeatherService: int access$202(com.denite.watchface.oreo.services.WeatherService,int)> --> $r0 := @parameter0: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: int access$202(com.denite.watchface.oreo.services.WeatherService,int)> --> $r0.<com.denite.watchface.oreo.services.WeatherService: int currentTemp> = $i0
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> staticinvoke <com.denite.watchface.oreo.services.WeatherService: int access$202(com.denite.watchface.oreo.services.WeatherService,int)>($r10, $i0)
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $r10 = $r9.<com.denite.watchface.oreo.services.WeatherService$1: com.denite.watchface.oreo.services.WeatherService this$0>
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $r9 = r0.<com.denite.watchface.oreo.services.WeatherService$1$2: com.denite.watchface.oreo.services.WeatherService$1 this$1>
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $r9 = r0.<com.denite.watchface.oreo.services.WeatherService$1$2: com.denite.watchface.oreo.services.WeatherService$1 this$1>
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $r10 = $r9.<com.denite.watchface.oreo.services.WeatherService$1: com.denite.watchface.oreo.services.WeatherService this$0>
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> $i0 = r0.<com.denite.watchface.oreo.services.WeatherService: int currentTemp>
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> if $i0 == $i1 goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> z0 = 1
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> if z0 == 0 goto $r4 = r0.<com.denite.watchface.oreo.services.WeatherService: android.content.SharedPreferences sharedPrefs>
+<com.denite.watchface.oreo.services.WeatherService: void sendData(com.google.android.gms.wearable.PutDataRequest)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void sendData(com.google.android.gms.wearable.PutDataRequest)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r5)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> $r9 = virtualinvoke r6.<java.net.URL: java.net.URLConnection openConnection()>()
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r4 == null goto (branch)
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "gotWeatherInfo()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r3)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> $r12 = virtualinvoke r10.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r4 == null goto (branch)
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location", $r10)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: com.denite.watchface.oreo.weather.WeatherInfo doInBackground(java.lang.String[])> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather: com.denite.watchface.oreo.weather.WeatherInfo access$700(com.denite.watchface.oreo.weather.YahooWeather,android.content.Context,org.w3c.dom.Document,com.denite.watchface.oreo.weather.WOEIDInfo)> --> $r0 := @parameter0: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: com.denite.watchface.oreo.weather.WeatherInfo parseWeatherInfo(android.content.Context,org.w3c.dom.Document,com.denite.watchface.oreo.weather.WOEIDInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: com.denite.watchface.oreo.weather.WeatherInfo parseWeatherInfo(android.content.Context,org.w3c.dom.Document,com.denite.watchface.oreo.weather.WOEIDInfo)> --> $r8 = $r3.<com.denite.watchface.oreo.weather.WOEIDInfo: java.lang.String mCounty>
+<com.denite.watchface.oreo.weather.YahooWeather: com.denite.watchface.oreo.weather.WeatherInfo parseWeatherInfo(android.content.Context,org.w3c.dom.Document,com.denite.watchface.oreo.weather.WOEIDInfo)> --> r5.<com.denite.watchface.oreo.weather.WeatherInfo: java.lang.String mWOEIDCounty> = $r8
+<com.denite.watchface.oreo.weather.YahooWeather: com.denite.watchface.oreo.weather.WeatherInfo parseWeatherInfo(android.content.Context,org.w3c.dom.Document,com.denite.watchface.oreo.weather.WOEIDInfo)> --> r4 := @caughtexception
+<com.denite.watchface.oreo.services.WeatherService: void onFailParsing(java.lang.Exception)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void onFailParsing(java.lang.Exception)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "onFailParsing()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "syncData()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r7)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather
+<com.denite.watchface.oreo.weather.YahooWeather: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(java.lang.Object)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask: void onPostExecute(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.weather.YahooWeather$WeatherQueryByPlaceTask
+<com.denite.watchface.oreo.services.WeatherService: void gotWeatherInfo(com.denite.watchface.oreo.weather.WeatherInfo)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void shutdown()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void shutdown()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "shutdown()")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.denite.watchface.oreo.weather.OpenWeather.RemoteFetch: org.json.JSONObject getJSON(java.lang.String,java.lang.String,java.lang.String)> --> specialinvoke r6.<java.net.URL: void <init>(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("City", $r7)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> if $r1 != null goto $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r6)
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", "Watch weather updated from WeatherService")
+--------------------------------------------------------
+
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> $r1 = r0.<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: com.denite.watchface.oreo.weather.UserLocationUtils this$0>
+<com.denite.watchface.oreo.weather.UserLocationUtils$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.denite.watchface.oreo.services.WeatherService: void gotLocation(android.location.Location,android.content.Context)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void getOpenWeatherLatLon(java.lang.String,java.lang.String)> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService$1: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.denite.watchface.oreo.services.WeatherService$1$2: void run()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService$1$2
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> r0 := @this: com.denite.watchface.oreo.services.WeatherService
+<com.denite.watchface.oreo.services.WeatherService: void syncData()> --> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("weatherCondition", $i0)
+--------------------------------------------------------
+

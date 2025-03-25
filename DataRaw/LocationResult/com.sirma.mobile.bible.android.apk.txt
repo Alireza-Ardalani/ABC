@@ -1,0 +1,9 @@
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("RegIntentService", "Failed to complete token refresh", $r13)
+Component=> com.youversion.push.gcm.RegistrationIntentService
+ComponentColor=> RED
+com.youversion.push.gcm.RegistrationIntentService
+android.util.Log
+android.location.LocationManager
+Category: com.youversion.push.gcm.RegistrationIntentService-*-
+-----------------------------------------------------------------

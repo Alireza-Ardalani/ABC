@@ -1,0 +1,95 @@
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $b2 = $d0 cmpl 0.0
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> if $b2 != 0 goto $r15 = new android.location.Location
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> r0.<net.indigitall.pushsdk.service.IndigitallService: boolean m> = 1
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $z0 = r0.<net.indigitall.pushsdk.service.IndigitallService: boolean m>
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> if $z0 == 0 goto return 1
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("indigitallService", "Launching Device Data...")
+--------------------------------------------------------
+
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $b2 = $d0 cmpl 0.0
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> if $b2 != 0 goto $r15 = new android.location.Location
+<net.indigitall.pushsdk.utils.PreferenceUtils: double getLastLatitude(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: java.lang.String a(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: android.content.SharedPreferences a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: android.content.SharedPreferences a(android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PreferenceUtils", "ERROR: SharedPreferences not found.")
+--------------------------------------------------------
+
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $b2 = $d0 cmpl 0.0
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> if $b2 != 0 goto $r15 = new android.location.Location
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> r0.<net.indigitall.pushsdk.service.IndigitallJobService: boolean n> = 1
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $z0 = r0.<net.indigitall.pushsdk.service.IndigitallJobService: boolean n>
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> if $z0 == 0 goto return 1
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("indigitallJobService", "Launching Device Data...")
+--------------------------------------------------------
+
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $b2 = $d0 cmpl 0.0
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> if $b2 != 0 goto $r15 = new android.location.Location
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> r0.<net.indigitall.pushsdk.service.IndigitallService: boolean m> = 1
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $z0 = r0.<net.indigitall.pushsdk.service.IndigitallService: boolean m>
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> if $z0 == 0 goto return 1
+<net.indigitall.pushsdk.api.IndigitallAPIClient: void <clinit>()> --> nop
+<net.indigitall.pushsdk.api.IndigitallAPIClient: void <clinit>()> --> $r0 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>("application/json; charset=utf-8")
+--------------------------------------------------------
+
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $b2 = $d0 cmpl 0.0
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> if $b2 == 0 goto $b2 = $l0 cmp 0L
+<net.indigitall.pushsdk.utils.PreferenceUtils: double getLastLatitude(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: java.lang.String a(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: android.content.SharedPreferences a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: android.content.SharedPreferences a(android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PreferenceUtils", "ERROR: SharedPreferences not found.")
+--------------------------------------------------------
+
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $b2 = $d0 cmpl 0.0
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> if $b2 != 0 goto $r15 = new android.location.Location
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> r0.<net.indigitall.pushsdk.service.IndigitallJobService: boolean n> = 1
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $z0 = r0.<net.indigitall.pushsdk.service.IndigitallJobService: boolean n>
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> if $z0 == 0 goto return 1
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("indigitallJobService", "Starting process to register device...")
+--------------------------------------------------------
+
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $b2 = $d0 cmpl 0.0
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> if $b2 == 0 goto $b2 = $l0 cmp 0L
+<net.indigitall.pushsdk.utils.PreferenceUtils: double getLastLatitude(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: java.lang.String a(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: android.content.SharedPreferences a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: android.content.SharedPreferences a(android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PreferenceUtils", "ERROR: SharedPreferences not found.")
+--------------------------------------------------------
+
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $b2 = $d0 cmpl 0.0
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> if $b2 != 0 goto $r15 = new android.location.Location
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> r0.<net.indigitall.pushsdk.service.IndigitallService: boolean m> = 1
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> $z0 = r0.<net.indigitall.pushsdk.service.IndigitallService: boolean m>
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> if $z0 == 0 goto return 1
+<net.indigitall.pushsdk.service.IndigitallService: boolean b()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("indigitallService", "Starting process to register device...")
+--------------------------------------------------------
+
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $b2 = $d0 cmpl 0.0
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> if $b2 != 0 goto $r15 = new android.location.Location
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> r0.<net.indigitall.pushsdk.service.IndigitallJobService: boolean n> = 1
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $z0 = r0.<net.indigitall.pushsdk.service.IndigitallJobService: boolean n>
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> if $z0 == 0 goto return 1
+<net.indigitall.pushsdk.utils.PreferenceUtils: boolean getDeviceRegistered(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: boolean e(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: android.content.SharedPreferences a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<net.indigitall.pushsdk.utils.PreferenceUtils: android.content.SharedPreferences a(android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PreferenceUtils", "ERROR: SharedPreferences not found.")
+--------------------------------------------------------
+
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $b2 = $d0 cmpl 0.0
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> if $b2 != 0 goto $r15 = new android.location.Location
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> r0.<net.indigitall.pushsdk.service.IndigitallJobService: boolean n> = 1
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> $z0 = r0.<net.indigitall.pushsdk.service.IndigitallJobService: boolean n>
+<net.indigitall.pushsdk.service.IndigitallJobService: boolean b()> --> if $z0 == 0 goto return 1
+<net.indigitall.pushsdk.api.IndigitallAPIClient: void <clinit>()> --> nop
+<net.indigitall.pushsdk.api.IndigitallAPIClient: void <clinit>()> --> $r0 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>("application/json; charset=utf-8")
+--------------------------------------------------------
+

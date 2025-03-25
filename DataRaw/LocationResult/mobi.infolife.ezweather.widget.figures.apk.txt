@@ -1,0 +1,313 @@
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> $r0 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r0, "utf-8")
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.FragmentManagerActivity
+ComponentColor=> RED
+com.mobvista.msdk.base.b.c.b
+java.net.URLEncoder
+android.location.Location
+Category: com.mobvista.msdk.base.b.c.b-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLat", f0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService
+ComponentColor=> RED
+com.amberweather.location.AmberLocation
+com.amberweather.location.PreferenceUtils
+com.amberweather.location.AmberLocation
+mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService$2$1
+android.location.Location
+com.amberweather.location.AddressController$1
+com.amberweather.location.AmberLocation
+android.content.SharedPreferences$Editor
+Category: com.amberweather.location.AmberLocation-*-com.amberweather.location.PreferenceUtils-*-com.amberweather.location.AmberLocation-*-mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService$2$1-*-com.amberweather.location.AddressController$1-*-com.amberweather.location.AmberLocation-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+android.util.Log
+com.mobvista.msdk.base.utils.d
+com.mobvista.msdk.base.utils.e
+android.location.Location
+Category: com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService
+ComponentColor=> RED
+com.amberweather.location.AddressUtils
+com.amberweather.location.AddressUtils
+com.amberweather.location.AddressUtils
+android.util.Log
+android.location.LocationManager
+Category: com.amberweather.location.AddressUtils-*-com.amberweather.location.AddressUtils-*-com.amberweather.location.AddressUtils-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("located_city", $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService
+ComponentColor=> RED
+com.amberweather.location.AddressUtils
+android.content.SharedPreferences$Editor
+com.amberweather.location.AddressUtils
+com.amberweather.location.PreferenceUtils
+android.location.LocationManager
+Category: com.amberweather.location.AddressUtils-*-com.amberweather.location.AddressUtils-*-com.amberweather.location.PreferenceUtils-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+com.mobvista.msdk.mvnative.c.a
+java.lang.Runnable
+java.lang.Thread
+com.mobvista.msdk.base.utils.d
+android.location.Location
+com.mobvista.msdk.base.utils.e
+com.mobvista.msdk.base.utils.e
+com.mobvista.msdk.base.utils.e
+java.lang.Thread
+com.mobvista.msdk.base.c.b$2
+android.util.Log
+Category: com.mobvista.msdk.mvnative.c.a-*-com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.c.b$2-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLat", f0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService
+ComponentColor=> RED
+com.amberweather.location.PreferenceUtils
+mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService$2$1
+com.amberweather.location.AddressUtils
+com.amberweather.location.AddressController$1
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+Category: com.amberweather.location.PreferenceUtils-*-mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService$2$1-*-com.amberweather.location.AddressUtils-*-com.amberweather.location.AddressController$1-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+com.mobvista.msdk.base.utils.d
+android.util.Log
+android.location.LocationManager
+com.mobvista.msdk.base.utils.e
+Category: com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+com.mobvista.msdk.mvnative.c.a
+com.mobvista.msdk.base.utils.d
+android.location.Location
+com.mobvista.msdk.base.utils.e
+com.mobvista.msdk.base.utils.e
+com.mobvista.msdk.base.utils.e
+android.util.Log
+com.mobvista.msdk.base.adapter.MyTargetAdapter
+Category: com.mobvista.msdk.mvnative.c.a-*-com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.adapter.MyTargetAdapter-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+com.mobvista.msdk.base.adapter.a
+com.mobvista.msdk.mvnative.c.a
+com.mobvista.msdk.base.utils.d
+com.mobvista.msdk.base.utils.e
+com.mobvista.msdk.base.utils.e
+android.location.LocationManager
+android.util.Log
+Category: com.mobvista.msdk.base.adapter.a-*-com.mobvista.msdk.mvnative.c.a-*-com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("RequestParams", "\u4e0d\u80fd\u5411\u63a5\u53e3\u4f20\u9012null")
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.FragmentManagerActivity
+ComponentColor=> RED
+android.util.Log
+com.mobvista.msdk.base.b.c.b
+com.mobvista.msdk.base.b.b.l
+android.location.Location
+Category: com.mobvista.msdk.base.b.c.b-*-com.mobvista.msdk.base.b.b.l-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+android.util.Log
+com.mobvista.msdk.base.utils.d
+com.mobvista.msdk.base.utils.e
+android.location.Location
+Category: com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.FragmentManagerActivity
+ComponentColor=> RED
+android.util.Log
+com.mobvista.msdk.base.b.c.b
+com.mobvista.msdk.base.a.a.a
+com.mobvista.msdk.b.b
+com.mobvista.msdk.base.utils.e
+android.location.Location
+Category: com.mobvista.msdk.base.b.c.b-*-com.mobvista.msdk.base.a.a.a-*-com.mobvista.msdk.b.b-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Located_CityLon", $f0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService
+ComponentColor=> RED
+mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService$2$1
+com.amberweather.location.AddressUtils
+com.amberweather.location.AddressController$1
+com.amberweather.location.PreferenceUtils
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+Category: mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService$2$1-*-com.amberweather.location.AddressUtils-*-com.amberweather.location.AddressController$1-*-com.amberweather.location.PreferenceUtils-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> $r0 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r0, "utf-8")
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.FragmentManagerActivity
+ComponentColor=> RED
+com.mobvista.msdk.base.b.c.b
+java.net.URLEncoder
+android.location.Location
+com.mobvista.msdk.b.a
+Category: com.mobvista.msdk.base.b.c.b-*-com.mobvista.msdk.b.a-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+com.mobvista.msdk.mvnative.c.a
+com.mobvista.msdk.base.utils.d
+com.mobvista.msdk.base.utils.e
+com.mobvista.msdk.base.utils.e
+com.mobvista.msdk.base.utils.e
+android.location.Location
+android.util.Log
+com.mobvista.msdk.base.adapter.MyTargetAdapter
+Category: com.mobvista.msdk.mvnative.c.a-*-com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.adapter.MyTargetAdapter-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("lat_long_last_update", $l0)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService
+ComponentColor=> RED
+com.amberweather.location.PreferenceUtils
+com.amberweather.location.AddressUtils
+com.amberweather.location.AddressController$1
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+Category: com.amberweather.location.PreferenceUtils-*-com.amberweather.location.AddressUtils-*-com.amberweather.location.AddressController$1-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+android.util.Log
+com.mobvista.msdk.base.utils.d
+com.mobvista.msdk.base.utils.e
+android.location.LocationManager
+Category: com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+com.mobvista.msdk.mvnative.c.a
+com.mobvista.msdk.base.utils.d
+com.mobvista.msdk.base.utils.e
+com.mobvista.msdk.base.utils.e
+com.mobvista.msdk.base.utils.e
+android.location.LocationManager
+android.util.Log
+com.mobvista.msdk.base.adapter.MyTargetAdapter
+Category: com.mobvista.msdk.mvnative.c.a-*-com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.adapter.MyTargetAdapter-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("RequestParams", "\u4e0d\u80fd\u5411\u63a5\u53e3\u4f20\u9012null")
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.FragmentManagerActivity
+ComponentColor=> RED
+android.util.Log
+com.mobvista.msdk.base.b.c.b
+com.mobvista.msdk.base.b.b.l
+android.location.Location
+com.mobvista.msdk.b.a
+Category: com.mobvista.msdk.base.b.c.b-*-com.mobvista.msdk.base.b.b.l-*-com.mobvista.msdk.b.a-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+android.util.Log
+com.mobvista.msdk.base.utils.d
+com.mobvista.msdk.base.utils.e
+android.location.LocationManager
+Category: com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+com.mobvista.msdk.base.utils.d
+android.util.Log
+android.location.LocationManager
+com.mobvista.msdk.base.utils.e
+Category: com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+com.mobvista.msdk.mvnative.c.a
+com.mobvista.msdk.base.c.a$1
+com.mobvista.msdk.base.utils.d
+com.mobvista.msdk.base.utils.e
+com.mobvista.msdk.base.utils.e
+android.location.Location
+android.util.Log
+Category: com.mobvista.msdk.mvnative.c.a-*-com.mobvista.msdk.base.c.a$1-*-com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.FragmentManagerActivity
+ComponentColor=> RED
+android.util.Log
+com.mobvista.msdk.base.b.c.b
+com.mobvista.msdk.base.a.a.a
+android.location.Location
+com.mobvista.msdk.b.b
+com.mobvista.msdk.base.utils.e
+Category: com.mobvista.msdk.base.b.c.b-*-com.mobvista.msdk.base.a.a.a-*-com.mobvista.msdk.b.b-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+android.util.Log
+com.mobvista.msdk.base.utils.d
+android.location.Location
+com.mobvista.msdk.base.utils.e
+Category: com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("wzw", $r3)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.daemon.HandleTimeService
+ComponentColor=> RED
+com.amberweather.location.AddressUtils
+com.amberweather.location.AddressUtils
+com.amberweather.location.OKHttpGetClientUtil
+android.util.Log
+android.location.LocationManager
+com.amberweather.location.AddressUtils
+Category: com.amberweather.location.AddressUtils-*-com.amberweather.location.AddressUtils-*-com.amberweather.location.OKHttpGetClientUtil-*-com.amberweather.location.AddressUtils-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> mobi.infolife.ezweather.widget.common.mulWidget.otherActivitys.CityManageActivity
+ComponentColor=> RED
+android.util.Log
+com.mobvista.msdk.base.utils.d
+android.location.Location
+com.mobvista.msdk.base.utils.e
+Category: com.mobvista.msdk.base.utils.d-*-com.mobvista.msdk.base.utils.e-*-
+-----------------------------------------------------------------
+mobi.infolife.ezweather.widget.figures.apk: 1230888

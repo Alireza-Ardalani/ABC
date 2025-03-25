@@ -1,0 +1,12 @@
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

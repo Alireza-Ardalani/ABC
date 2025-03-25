@@ -1,0 +1,474 @@
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tag", $r5)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r8 = virtualinvoke $r7.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r9.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("cachedUUID", $r1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tag", $r5)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($b0, "MoatAnalytics", $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r9.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void setDoInput(boolean)>(1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void connect()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void setDoInput(boolean)>(1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($b0, "MoatAnalytics", $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> $r11 = virtualinvoke $r9.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $r11 = virtualinvoke $r9.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void connect()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("profile", $z0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r9.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tag", $r5)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("profile", $z0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r9.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void setDoInput(boolean)>(1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = virtualinvoke $r9.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(2, $r2, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r7.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r9.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("profile", $z0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(2, $r2, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r8 = virtualinvoke $r7.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void setDoInput(boolean)>(1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r10, "UTF-8")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r9.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = virtualinvoke $r9.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = virtualinvoke $r9.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("cachedUUID", $r1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $r10 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r10, "UTF-8")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("cachedUUID", $r1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void connect()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r7.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $r11 = virtualinvoke $r9.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void setDoInput(boolean)>(1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void connect()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void setDoInput(boolean)>(1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r10, "UTF-8")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r9.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("cachedUUID", $r1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = virtualinvoke $r9.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($b0, "MoatAnalytics", $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void connect()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void setDoInput(boolean)>(1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void connect()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> $r11 = virtualinvoke $r9.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void setDoInput(boolean)>(1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($b0, "MoatAnalytics", $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void connect()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r9.<java.net.URLConnection: void connect()>()
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r10, "UTF-8")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r9.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tag", $r5)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(2, $r2, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("profile", $z0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,12 @@
+<com.yahoo.mobile.client.android.weathersdk.service.g: void a(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.yahoo.mobile.client.android.weathersdk.i.a: void a(android.content.Context,double,double)> --> $r0 := @parameter0: android.content.Context
+<com.yahoo.mobile.client.android.weathersdk.i.a: void a(android.content.Context,double,double)> --> $f0 = (float) $d1
+<com.yahoo.mobile.client.android.weathersdk.i.a: void a(android.content.Context,double,double)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("prefs_last_known_latitude", $f0)
+--------------------------------------------------------
+
+<com.yahoo.mobile.client.android.weathersdk.service.g: void a(android.location.Location)> --> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.yahoo.mobile.client.android.weathersdk.i.a: void a(android.content.Context,double,double)> --> $r0 := @parameter0: android.content.Context
+<com.yahoo.mobile.client.android.weathersdk.i.a: void a(android.content.Context,double,double)> --> $f0 = (float) $d0
+<com.yahoo.mobile.client.android.weathersdk.i.a: void a(android.content.Context,double,double)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("prefs_last_known_longitude", $f0)
+--------------------------------------------------------
+

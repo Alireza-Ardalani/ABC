@@ -1,0 +1,123 @@
+<com.tweakersoft.aroundme.WeatherSchedulingService: android.location.Location getLastKnowLocation(android.content.Context)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.tweakersoft.aroundme.WeatherSchedulingService: android.location.Location getLastKnowLocation(android.content.Context)> --> $r6 = $r8
+<com.tweakersoft.aroundme.WeatherSchedulingService: void onHandleIntent(android.content.Intent)> --> $r8 = specialinvoke r0.<com.tweakersoft.aroundme.WeatherSchedulingService: android.location.Location getLastKnowLocation(android.content.Context)>($r2)
+<com.tweakersoft.aroundme.WeatherSchedulingService: void onHandleIntent(android.content.Intent)> --> if $r8 != null goto $z0 = specialinvoke r0.<com.tweakersoft.aroundme.WeatherSchedulingService: boolean isOnline(android.content.Context)>($r2)
+<com.tweakersoft.aroundme.WeatherSchedulingService: void onHandleIntent(android.content.Intent)> --> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r6, $i0)
+--------------------------------------------------------
+
+<com.tweakersoft.aroundme.CategoryActivity: void onSaveInstanceState(android.os.Bundle)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tweakersoft.aroundme.CategoryActivity: void onSaveInstanceState(android.os.Bundle)> --> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>("lat", $d0)
+--------------------------------------------------------
+
+<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()> --> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()> --> if $r3 == null goto $r2 = r0.<jp.co.agoop.networkconnectivity.lib.util.k: android.location.LocationManager b>
+<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()> --> if $r4 == null goto $r1 = r0.<jp.co.agoop.networkconnectivity.lib.util.k: android.content.Context d>
+<jp.co.agoop.networkconnectivity.lib.util.i: void a(android.content.Context,java.lang.String,java.lang.String)> --> $r2 := @parameter0: android.content.Context
+<jp.co.agoop.networkconnectivity.lib.util.i: void a(android.content.Context,java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.tweakersoft.aroundme.CategoryActivity: void onSaveInstanceState(android.os.Bundle)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<com.tweakersoft.aroundme.CategoryActivity: void onSaveInstanceState(android.os.Bundle)> --> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>("lng", $d0)
+--------------------------------------------------------
+
+<com.tweakersoft.aroundme.WeatherSchedulingService: android.location.Location getLastKnowLocation(android.content.Context)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.tweakersoft.aroundme.WeatherSchedulingService: android.location.Location getLastKnowLocation(android.content.Context)> --> $r6 = $r8
+<com.tweakersoft.aroundme.WeatherSchedulingService: void onHandleIntent(android.content.Intent)> --> $r8 = specialinvoke r0.<com.tweakersoft.aroundme.WeatherSchedulingService: android.location.Location getLastKnowLocation(android.content.Context)>($r2)
+<com.tweakersoft.aroundme.WeatherSchedulingService: void onHandleIntent(android.content.Intent)> --> if $r8 != null goto $z0 = specialinvoke r0.<com.tweakersoft.aroundme.WeatherSchedulingService: boolean isOnline(android.content.Context)>($r2)
+<com.tweakersoft.consts.Consts: void LogD(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tweakersoft.consts.Consts: void LogD(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)> --> $r7 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)> --> $r4 = $r7
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> $r3 = specialinvoke r0.<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)>($l0)
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> $r4 = $r3
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> if $r4 == null goto $r8 = <com.tweakersoft.aroundme.AroundMe: android.location.LocationManager _locationManager>
+<com.tweakersoft.aroundme.AroundMe$mGeocoder: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: com.tweakersoft.aroundme.AroundMe$mGeocoder
+<com.tweakersoft.aroundme.AroundMe$mGeocoder: com.tweakersoft.aroundme.LocationInfo doInBackground(com.tweakersoft.aroundme.LocationInfo[])> --> r0 := @this: com.tweakersoft.aroundme.AroundMe$mGeocoder
+<com.tweakersoft.consts.Consts: void LogI(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tweakersoft.consts.Consts: void LogI(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()> --> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()> --> if $r3 == null goto $r2 = r0.<jp.co.agoop.networkconnectivity.lib.util.k: android.location.LocationManager b>
+<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()> --> if $r4 == null goto $r1 = r0.<jp.co.agoop.networkconnectivity.lib.util.k: android.content.Context d>
+<jp.co.agoop.networkconnectivity.lib.c.e: boolean a(java.lang.String,int)> --> $r10 = virtualinvoke $r23.<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()>()
+<jp.co.agoop.networkconnectivity.lib.c.e: boolean a(java.lang.String,int)> --> if $r10 != null goto $r18 = new jp.co.agoop.networkconnectivity.lib.db.dto.h
+<jp.co.agoop.networkconnectivity.lib.util.k: void b()> --> r0 := @this: jp.co.agoop.networkconnectivity.lib.util.k
+<jp.co.agoop.networkconnectivity.lib.util.k: void b()> --> $r6 = (java.util.List) $r3
+<jp.co.agoop.networkconnectivity.lib.util.k: void b()> --> $r9 := @caughtexception
+<jp.co.agoop.networkconnectivity.lib.util.i: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.Exception)> --> $r3 := @parameter0: android.content.Context
+<jp.co.agoop.networkconnectivity.lib.util.i: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r2)
+--------------------------------------------------------
+
+<com.tweakersoft.aroundme.WeatherSchedulingService: java.util.HashMap parsedCountryName(android.location.Location)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<com.tweakersoft.aroundme.WeatherSchedulingService: java.util.HashMap parsedCountryName(android.location.Location)> --> $r2 := @caughtexception
+<com.tweakersoft.consts.Consts: void LogD(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tweakersoft.consts.Consts: void LogD(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<jp.co.agoop.networkconnectivity.lib.c.e: boolean a(java.lang.String,int)> --> $r10 = virtualinvoke $r23.<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()>()
+<jp.co.agoop.networkconnectivity.lib.c.e: boolean a(java.lang.String,int)> --> if $r10 != null goto $r18 = new jp.co.agoop.networkconnectivity.lib.db.dto.h
+<jp.co.agoop.networkconnectivity.lib.util.i: void a(android.content.Context,java.lang.String,java.lang.String)> --> $r2 := @parameter0: android.content.Context
+<jp.co.agoop.networkconnectivity.lib.util.i: void a(android.content.Context,java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<jp.co.agoop.networkconnectivity.lib.c.e: boolean a(java.lang.String,int)> --> $r10 = virtualinvoke $r23.<jp.co.agoop.networkconnectivity.lib.util.k: android.location.Location a()>()
+<jp.co.agoop.networkconnectivity.lib.c.e: boolean a(java.lang.String,int)> --> if $r10 != null goto $r18 = new jp.co.agoop.networkconnectivity.lib.db.dto.h
+<jp.co.agoop.networkconnectivity.lib.util.k: void b()> --> r0 := @this: jp.co.agoop.networkconnectivity.lib.util.k
+<jp.co.agoop.networkconnectivity.lib.util.k: void b()> --> $r6 = (java.util.List) $r3
+<jp.co.agoop.networkconnectivity.lib.util.k: void b()> --> $r9 := @caughtexception
+<jp.co.agoop.networkconnectivity.lib.util.i: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.Exception)> --> $r3 := @parameter0: android.content.Context
+<jp.co.agoop.networkconnectivity.lib.util.i: void a(android.content.Context,java.lang.String,java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r2)
+--------------------------------------------------------
+
+<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)> --> $r7 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)> --> $r4 = $r7
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> $r3 = specialinvoke r0.<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)>($l0)
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> $r4 = $r3
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> if $r4 == null goto $r8 = <com.tweakersoft.aroundme.AroundMe: android.location.LocationManager _locationManager>
+<com.tweakersoft.aroundme.AroundMe$mGeocoder: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: com.tweakersoft.aroundme.AroundMe$mGeocoder
+<com.tweakersoft.aroundme.AroundMe$mGeocoder: com.tweakersoft.aroundme.LocationInfo doInBackground(com.tweakersoft.aroundme.LocationInfo[])> --> r0 := @this: com.tweakersoft.aroundme.AroundMe$mGeocoder
+<com.tweakersoft.consts.Consts: void LogV(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tweakersoft.consts.Consts: void LogV(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.tweakersoft.aroundme.WeatherSchedulingService: java.util.HashMap parsedCountryName(android.location.Location)> --> $d1 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.tweakersoft.aroundme.WeatherSchedulingService: java.util.HashMap parsedCountryName(android.location.Location)> --> $r2 := @caughtexception
+<com.tweakersoft.consts.Consts: void LogD(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tweakersoft.consts.Consts: void LogD(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)> --> $r7 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)> --> $r4 = $r7
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> $r3 = specialinvoke r0.<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)>($l0)
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> $r4 = $r3
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> if $r4 == null goto $r8 = <com.tweakersoft.aroundme.AroundMe: android.location.LocationManager _locationManager>
+<com.tweakersoft.consts.Consts: void LogD(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tweakersoft.consts.Consts: void LogD(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)> --> $r7 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)> --> $r4 = $r7
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> $r3 = specialinvoke r0.<com.tweakersoft.aroundme.AroundMe: android.location.Location getLastBestLocation(long)>($l0)
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> $r4 = $r3
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> if $r4 == null goto $r8 = <com.tweakersoft.aroundme.AroundMe: android.location.LocationManager _locationManager>
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> $r9 = r0.<com.tweakersoft.aroundme.AroundMe: android.location.LocationListener locationListener>
+<com.tweakersoft.aroundme.AroundMe: void turnOnGPS()> --> $r2 := @caughtexception
+<com.tweakersoft.consts.Consts: void LogE(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tweakersoft.consts.Consts: void LogE(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.tweakersoft.aroundme.DetailActivity: void onSaveInstanceState(android.os.Bundle)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<com.tweakersoft.aroundme.DetailActivity: void onSaveInstanceState(android.os.Bundle)> --> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>("lng", $d0)
+--------------------------------------------------------
+
+<com.tweakersoft.aroundme.DetailActivity: void onSaveInstanceState(android.os.Bundle)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.tweakersoft.aroundme.DetailActivity: void onSaveInstanceState(android.os.Bundle)> --> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>("lat", $d0)
+--------------------------------------------------------
+

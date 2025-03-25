@@ -1,0 +1,24 @@
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.vervewireless.advert.VerveSupportJobService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.vervewireless.advert.VerveSupportJobService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<com.roximity.sdk.location.RoxLocation: double getLongitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("last_nearby_lon", $f0)
+Component=> com.roximity.sdk.activities.FullscreenActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<com.roximity.sdk.location.RoxLocation: double getLatitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("last_nearby_lat", $f0)
+Component=> com.roximity.sdk.activities.FullscreenActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

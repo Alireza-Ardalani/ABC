@@ -1,0 +1,31 @@
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("TAPDAQ_WARNING", $r0)
+Component=> com.app.sweatcoin.service.StepCounterService
+ComponentColor=> GREEN
+android.util.Log
+android.location.Location
+com.tapdaq.sdk.helpers.TLog
+com.tapdaq.sdk.model.launch.TMGeo
+Category: com.tapdaq.sdk.helpers.TLog-*-com.tapdaq.sdk.model.launch.TMGeo-*-
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("TAPDAQ_WARNING", $r0)
+Component=> com.app.sweatcoin.service.StepCounterService
+ComponentColor=> GREEN
+android.location.LocationManager
+android.util.Log
+com.tapdaq.sdk.helpers.TLog
+com.tapdaq.sdk.model.launch.TMGeo
+Category: com.tapdaq.sdk.helpers.TLog-*-com.tapdaq.sdk.model.launch.TMGeo-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("TAPDAQ_WARNING", $r0)
+Component=> com.app.sweatcoin.service.StepCounterService
+ComponentColor=> GREEN
+android.util.Log
+android.location.Location
+com.tapdaq.sdk.helpers.TLog
+com.tapdaq.sdk.model.launch.TMGeo
+Category: com.tapdaq.sdk.helpers.TLog-*-com.tapdaq.sdk.model.launch.TMGeo-*-
+-----------------------------------------------------------------
+in.sweatco.app.apk: 1168982

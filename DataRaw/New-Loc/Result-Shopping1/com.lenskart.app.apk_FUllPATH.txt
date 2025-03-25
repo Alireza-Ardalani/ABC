@@ -1,0 +1,17 @@
+<mn: android.location.Location y(java.lang.String)> --> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+<mn: android.location.Location y(java.lang.String)> --> $r4 := @caughtexception
+<mn: android.location.Location y(java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("TwilightManager", "Failed to get last known location", $r4)
+--------------------------------------------------------
+
+<agq: org.json.JSONObject wa()> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<agq: org.json.JSONObject wa()> --> $r11 := @caughtexception
+<ahf: void c(java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<ahf: void c(java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+--------------------------------------------------------
+
+<agq: org.json.JSONObject wa()> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<agq: org.json.JSONObject wa()> --> $r11 := @caughtexception
+<ahf: void c(java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<ahf: void c(java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+--------------------------------------------------------
+

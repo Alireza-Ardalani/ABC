@@ -1,0 +1,64 @@
+<acl: void a(android.content.Context,int,int)> --> virtualinvoke r0.<acl: void onLocationChanged(android.location.Location)>($r4)
+<acl: void a(android.content.Context,int,int)> --> $r5 := @caughtexception
+<acl: void a(android.content.Context,int,int)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationChangesListener", $r7)
+--------------------------------------------------------
+
+<acl: void a(android.content.Context,int,int)> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<acl: void a(android.content.Context,int,int)> --> $r5 := @caughtexception
+<acl: void a(android.content.Context,int,int)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationChangesListener", $r7)
+--------------------------------------------------------
+
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $r12 := @caughtexception
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<ecx: void a(android.content.Context,android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<ecx: void a(android.content.Context,android.location.Location)> --> $f0 = (float) $d0
+<ecx: void a(android.content.Context,android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLatitude", $f0)
+--------------------------------------------------------
+
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $r12 := @caughtexception
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 4)
+--------------------------------------------------------
+
+<ecs: void a(android.location.Location,boolean,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<ecs: void a(android.location.Location,boolean,boolean)> --> virtualinvoke $r4.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("longitude", $d0)
+--------------------------------------------------------
+
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $r11 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r2)
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $r12 := @caughtexception
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $r12 := @caughtexception
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 4)
+--------------------------------------------------------
+
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $r11 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r2)
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $r12 := @caughtexception
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 4)
+--------------------------------------------------------
+
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+<com.threatmetrix.TrustDefender.internal.U6: android.location.Location else()> --> $r12 := @caughtexception
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.threatmetrix.TrustDefender.internal.Z2: void for(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<ecx: void a(android.content.Context,android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<ecx: void a(android.content.Context,android.location.Location)> --> $f0 = (float) $d0
+<ecx: void a(android.content.Context,android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLongitude", $f0)
+--------------------------------------------------------
+
+<ecs: void a(android.location.Location,boolean,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<ecs: void a(android.location.Location,boolean,boolean)> --> virtualinvoke $r4.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("latitude", $d0)
+--------------------------------------------------------
+

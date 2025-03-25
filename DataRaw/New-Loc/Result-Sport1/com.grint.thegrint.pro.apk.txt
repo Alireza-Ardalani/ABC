@@ -1,0 +1,24 @@
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.grint.thegrint.pro.core.secondActivities.liveLeaderboard.preGame.GrintCreateLeaderboardActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>("text/plain")
+Component=> com.grint.thegrint.pro.core.secondActivities.roundSetupProcess.GrintRoundSetupActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.grint.thegrint.pro.core.secondActivities.liveLeaderboard.preGame.GrintCreateLeaderboardActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.grint.thegrint.pro.core.mainActivities.tabBar.home.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

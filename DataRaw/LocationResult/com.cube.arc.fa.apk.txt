@@ -1,0 +1,280 @@
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r1 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>("application/json")
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.atomcode.bearing.location.CurrentLocationTask$1
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+android.location.LocationManager
+okhttp3.MediaType
+net.callumtaylor.asynchttp.obj.JsonBody
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+Category: net.atomcode.bearing.location.CurrentLocationTask$1-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-okhttp3.MediaType-*-net.callumtaylor.asynchttp.obj.JsonBody-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r25 = interfaceinvoke $r24.<okhttp3.Call: okhttp3.Response execute()>()
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.callumtaylor.asynchttp.AsyncHttpClient
+okhttp3.Call
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+net.atomcode.bearing.location.LocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+net.callumtaylor.asynchttp.ClientExecutorTask
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+Category: net.callumtaylor.asynchttp.AsyncHttpClient-*-okhttp3.Call-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.location.LocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("developer_timeout", $l0)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.ClientExecutorTask
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+net.atomcode.bearing.location.CurrentLocationTask$1
+com.cube.storm.content.developer.lib.helper.DeveloperHelper$1
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+Category: net.atomcode.bearing.location.provider.LegacyLocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-net.atomcode.bearing.location.CurrentLocationTask$1-*-com.cube.storm.content.developer.lib.helper.DeveloperHelper$1-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke $r14.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>($r4, 0, $i0)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.callumtaylor.asynchttp.AsyncHttpClient
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+net.atomcode.bearing.location.LocationProvider
+com.cube.storm.content.lib.manager.UpdateManager
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+java.io.ByteArrayOutputStream
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+com.cube.storm.util.lib.manager.FileManager
+net.callumtaylor.asynchttp.ClientExecutorTask
+com.cube.storm.util.lib.manager.FileManager
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+com.cube.storm.util.lib.manager.FileManager
+com.cube.storm.content.lib.manager.UpdateManager$3
+Category: net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.location.LocationProvider-*-com.cube.storm.content.lib.manager.UpdateManager-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-com.cube.storm.util.lib.manager.FileManager-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-com.cube.storm.util.lib.manager.FileManager-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-com.cube.storm.util.lib.manager.FileManager-*-com.cube.storm.content.lib.manager.UpdateManager$3-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r1 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>($r5)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+net.atomcode.bearing.location.LocationProvider
+okhttp3.MediaType
+net.callumtaylor.asynchttp.obj.JsonBody
+okhttp3.RequestBody
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+Category: net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.location.LocationProvider-*-okhttp3.MediaType-*-net.callumtaylor.asynchttp.obj.JsonBody-*-okhttp3.RequestBody-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r12 = virtualinvoke $r15.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r14)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.callumtaylor.asynchttp.AsyncHttpClient
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+net.atomcode.bearing.location.LocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+okhttp3.Request$Builder
+net.callumtaylor.asynchttp.ClientExecutorTask
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+Category: net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.location.LocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-okhttp3.Request$Builder-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r2)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.callumtaylor.asynchttp.AsyncHttpClient
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+net.atomcode.bearing.location.LocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.arc.fa.StreamedContentActivity$3
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.storm.util.lib.manager.FileManager
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+com.cube.storm.util.lib.manager.FileManager
+net.callumtaylor.asynchttp.ClientExecutorTask
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+java.io.FileOutputStream
+Category: net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.location.LocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-com.cube.storm.util.lib.manager.FileManager-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-com.cube.storm.util.lib.manager.FileManager-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r24 = virtualinvoke $r2.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r23)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.callumtaylor.asynchttp.AsyncHttpClient
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+net.atomcode.bearing.location.LocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+okhttp3.OkHttpClient
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+net.callumtaylor.asynchttp.ClientExecutorTask
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+Category: net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.location.LocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-okhttp3.OkHttpClient-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke $r17.<java.io.BufferedOutputStream: void write(byte[],int,int)>($r7, 0, $i1)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.callumtaylor.asynchttp.AsyncHttpClient
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+net.atomcode.bearing.location.LocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+com.cube.storm.content.lib.handler.GZIPTarCacheResponseHandler
+net.callumtaylor.asynchttp.ClientExecutorTask
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+java.io.BufferedOutputStream
+com.cube.storm.content.lib.manager.UpdateManager$3
+Category: net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.location.LocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-com.cube.storm.content.lib.handler.GZIPTarCacheResponseHandler-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-com.cube.storm.content.lib.manager.UpdateManager$3-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("$push_token", $r1)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.ClientExecutorTask
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+net.atomcode.bearing.location.LocationProvider
+com.cube.lib.receiver.PushListener$1
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+android.content.SharedPreferences$Editor
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+Category: net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.location.LocationProvider-*-com.cube.lib.receiver.PushListener$1-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke $r6.<android.os.Bundle: void putAll(android.os.Bundle)>($r8)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.ClientExecutorTask
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+net.atomcode.bearing.location.LocationProvider
+com.cube.arc.fa.StreamedContentActivity$2
+com.cube.arc.fa.StreamedContentActivity
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+android.os.Bundle
+com.cube.arc.fa.StreamedContentActivity
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+Category: net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.location.LocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("developer_token", $r4)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.ClientExecutorTask
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+net.atomcode.bearing.location.LocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+com.cube.storm.content.developer.lib.helper.DeveloperHelper$1
+android.content.SharedPreferences$Editor
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+Category: net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.location.LocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-com.cube.storm.content.developer.lib.helper.DeveloperHelper$1-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("developer_mode", 1)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.ClientExecutorTask
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+net.atomcode.bearing.location.CurrentLocationTask$1
+com.cube.storm.content.developer.lib.helper.DeveloperHelper$1
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+Category: net.atomcode.bearing.location.provider.LegacyLocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-net.atomcode.bearing.location.CurrentLocationTask$1-*-com.cube.storm.content.developer.lib.helper.DeveloperHelper$1-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> virtualinvoke $r16.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("stormui.uri", $r5)
+Component=> com.cube.storm.message.lib.service.TokenService
+ComponentColor=> RED
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.ClientExecutorTask
+com.cube.storm.ui.lib.factory.IntentFactory
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+net.atomcode.bearing.location.LocationProvider
+com.cube.arc.fa.StreamedContentActivity$2
+com.cube.arc.fa.StreamedContentActivity
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+com.cube.lib.receiver.PushListener$2
+com.cube.lib.receiver.PushListener
+com.cube.arc.fa.StreamedContentActivity
+android.os.BaseBundle
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.callumtaylor.asynchttp.AsyncHttpClient
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+com.cube.storm.ui.lib.factory.IntentFactory
+net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask
+Category: net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.ClientExecutorTask-*-com.cube.storm.ui.lib.factory.IntentFactory-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.location.LocationProvider-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-com.cube.lib.receiver.PushListener$2-*-com.cube.lib.receiver.PushListener-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.callumtaylor.asynchttp.AsyncHttpClient-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-com.cube.storm.ui.lib.factory.IntentFactory-*-net.callumtaylor.asynchttp.AsyncHttpClient$AsyncClientExecutorTask-*-
+-----------------------------------------------------------------
+com.cube.arc.fa.apk: 1094799

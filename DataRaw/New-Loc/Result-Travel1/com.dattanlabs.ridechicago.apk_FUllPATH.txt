@@ -1,0 +1,199 @@
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r3 == null goto (branch)
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> $r5 = r0.<com.dattanlabs.ridechicago.MyLocation: com.dattanlabs.ridechicago.MyLocation$MyLocationResult locationResult>
+<com.dattanlabs.ridechicago.BusStopActivity$8: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.BusStopActivity$8
+<com.dattanlabs.ridechicago.BusStopActivity$8: void gotLocation(android.location.Location)> --> $r4 = r0.<com.dattanlabs.ridechicago.BusStopActivity$8: com.dattanlabs.ridechicago.BusStopActivity this$0>
+<com.dattanlabs.ridechicago.BusStopActivity$8: void gotLocation(android.location.Location)> --> r3 := @caughtexception
+<com.dattanlabs.ridechicago.BusStopActivity$8: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_STOP_ACTIVITY", $r10)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> $z0 = r0.<com.dattanlabs.ridechicago.MyLocation: boolean network_enabled>
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.BusStopActivity$8: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.BusStopActivity$8
+<com.dattanlabs.ridechicago.BusStopActivity$8: void gotLocation(android.location.Location)> --> r3 := @caughtexception
+<com.dattanlabs.ridechicago.BusStopActivity$8: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_STOP_ACTIVITY", $r10)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> $z0 = r0.<com.dattanlabs.ridechicago.MyLocation: boolean network_enabled>
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyMapActivity$5
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $d1 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r24 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r19)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> $z0 = r0.<com.dattanlabs.ridechicago.MyLocation: boolean network_enabled>
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyMapActivity$5
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r17 = (com.dattanlabs.ridechicago.TrainStop) $r16
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r19 = r17.<com.dattanlabs.ridechicago.TrainStop: java.lang.String StopName>
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r23 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r19)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $d1 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r24 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r2 = r0.<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: com.dattanlabs.ridechicago.StopNearbyMapActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyMapActivity: void access$7(com.dattanlabs.ridechicago.StopNearbyMapActivity)> --> $r0 := @parameter0: com.dattanlabs.ridechicago.StopNearbyMapActivity
+<com.dattanlabs.ridechicago.StopNearbyMapActivity: void hideProgress()> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyMapActivity
+<com.dattanlabs.ridechicago.StopNearbyMapActivity: void access$7(com.dattanlabs.ridechicago.StopNearbyMapActivity)> --> specialinvoke $r0.<com.dattanlabs.ridechicago.StopNearbyMapActivity: void hideProgress()>()
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> staticinvoke <com.dattanlabs.ridechicago.StopNearbyMapActivity: void access$7(com.dattanlabs.ridechicago.StopNearbyMapActivity)>($r2)
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r2 = r0.<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: com.dattanlabs.ridechicago.StopNearbyMapActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r2 = r0.<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: com.dattanlabs.ridechicago.StopNearbyMapActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r5 = $r2.<com.dattanlabs.ridechicago.StopNearbyMapActivity: java.util.ArrayList trainItems>
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r23 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r19)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r3 == null goto (branch)
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyMapActivity$5
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r16 = virtualinvoke $r5.<java.util.ArrayList: java.lang.Object get(int)>($i0)
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r21 = (com.dattanlabs.ridechicago.BusStop) $r16
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r19 = r21.<com.dattanlabs.ridechicago.BusStop: java.lang.String StopName>
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r23 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r19)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $d1 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r17 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity: void access$2(com.dattanlabs.ridechicago.StopNearbyListActivity)> --> $r0 := @parameter0: com.dattanlabs.ridechicago.StopNearbyListActivity
+<com.dattanlabs.ridechicago.StopNearbyListActivity: void hideProgress()> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyListActivity
+<com.dattanlabs.ridechicago.StopNearbyListActivity: void access$2(com.dattanlabs.ridechicago.StopNearbyListActivity)> --> specialinvoke $r0.<com.dattanlabs.ridechicago.StopNearbyListActivity: void hideProgress()>()
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> staticinvoke <com.dattanlabs.ridechicago.StopNearbyListActivity: void access$2(com.dattanlabs.ridechicago.StopNearbyListActivity)>($r3)
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r16 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r7)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $d1 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r17 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r7)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $d1 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r24 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r19)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r3 == null goto (branch)
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyMapActivity$5
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r16 = virtualinvoke $r5.<java.util.ArrayList: java.lang.Object get(int)>($i0)
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r21 = (com.dattanlabs.ridechicago.BusStop) $r16
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r19 = r21.<com.dattanlabs.ridechicago.BusStop: java.lang.String StopName>
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r23 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r19 = virtualinvoke r23.<java.lang.Exception: java.lang.String getMessage()>()
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r24 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r19)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r17 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity: void access$2(com.dattanlabs.ridechicago.StopNearbyListActivity)> --> $r0 := @parameter0: com.dattanlabs.ridechicago.StopNearbyListActivity
+<com.dattanlabs.ridechicago.StopNearbyListActivity: void hideProgress()> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyListActivity
+<com.dattanlabs.ridechicago.StopNearbyListActivity: void access$2(com.dattanlabs.ridechicago.StopNearbyListActivity)> --> specialinvoke $r0.<com.dattanlabs.ridechicago.StopNearbyListActivity: void hideProgress()>()
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> staticinvoke <com.dattanlabs.ridechicago.StopNearbyListActivity: void access$2(com.dattanlabs.ridechicago.StopNearbyListActivity)>($r3)
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r16 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r7)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r24 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r2 = r0.<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: com.dattanlabs.ridechicago.StopNearbyMapActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyMapActivity: void access$10(com.dattanlabs.ridechicago.StopNearbyMapActivity,java.lang.String)> --> $r0 := @parameter0: com.dattanlabs.ridechicago.StopNearbyMapActivity
+<com.dattanlabs.ridechicago.StopNearbyMapActivity: void showProgress(java.lang.String)> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyMapActivity
+<com.dattanlabs.ridechicago.StopNearbyMapActivity: void access$10(com.dattanlabs.ridechicago.StopNearbyMapActivity,java.lang.String)> --> specialinvoke $r0.<com.dattanlabs.ridechicago.StopNearbyMapActivity: void showProgress(java.lang.String)>($r1)
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> staticinvoke <com.dattanlabs.ridechicago.StopNearbyMapActivity: void access$10(com.dattanlabs.ridechicago.StopNearbyMapActivity,java.lang.String)>($r2, "Acquiring Stops")
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r2 = r0.<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: com.dattanlabs.ridechicago.StopNearbyMapActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r2 = r0.<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: com.dattanlabs.ridechicago.StopNearbyMapActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $r5 = $r2.<com.dattanlabs.ridechicago.StopNearbyMapActivity: java.util.ArrayList trainItems>
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r23 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r19)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r17 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r7)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyListActivity$4
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> if $r1 == null goto $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity: void access$4(com.dattanlabs.ridechicago.StopNearbyListActivity,java.lang.String)> --> $r0 := @parameter0: com.dattanlabs.ridechicago.StopNearbyListActivity
+<com.dattanlabs.ridechicago.StopNearbyListActivity: void showProgress(java.lang.String)> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyListActivity
+<com.dattanlabs.ridechicago.StopNearbyListActivity: void access$4(com.dattanlabs.ridechicago.StopNearbyListActivity,java.lang.String)> --> specialinvoke $r0.<com.dattanlabs.ridechicago.StopNearbyListActivity: void showProgress(java.lang.String)>($r1)
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> staticinvoke <com.dattanlabs.ridechicago.StopNearbyListActivity: void access$4(com.dattanlabs.ridechicago.StopNearbyListActivity,java.lang.String)>($r3, "Acquiring Stops")
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r17 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r7)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r3 == null goto (branch)
+<com.dattanlabs.ridechicago.TrainStopActivity$6: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.TrainStopActivity$6
+<com.dattanlabs.ridechicago.TrainStopActivity$6: void gotLocation(android.location.Location)> --> $r4 = r0.<com.dattanlabs.ridechicago.TrainStopActivity$6: com.dattanlabs.ridechicago.TrainStopActivity this$0>
+<com.dattanlabs.ridechicago.TrainStopActivity$6: void gotLocation(android.location.Location)> --> r3 := @caughtexception
+<com.dattanlabs.ridechicago.TrainStopActivity$6: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("TAG_TRAIN_STOP_ACTIVITY", $r10)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> $z0 = r0.<com.dattanlabs.ridechicago.MyLocation: boolean network_enabled>
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> $r5 = r0.<com.dattanlabs.ridechicago.MyLocation: com.dattanlabs.ridechicago.MyLocation$MyLocationResult locationResult>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyListActivity$4
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r16 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r7)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyListActivity$4
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> if $r1 == null goto $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r15 = (com.dattanlabs.ridechicago.TrainStop) $r12
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $i1 = r15.<com.dattanlabs.ridechicago.TrainStop: int ParentStopId>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r16 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r7)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> r24 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyMapActivity$5: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r19)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> $z0 = r0.<com.dattanlabs.ridechicago.MyLocation: boolean network_enabled>
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.TrainStopActivity$6: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.TrainStopActivity$6
+<com.dattanlabs.ridechicago.TrainStopActivity$6: void gotLocation(android.location.Location)> --> r3 := @caughtexception
+<com.dattanlabs.ridechicago.TrainStopActivity$6: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("TAG_TRAIN_STOP_ACTIVITY", $r10)
+--------------------------------------------------------
+
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> $z0 = r0.<com.dattanlabs.ridechicago.MyLocation: boolean network_enabled>
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> if r4 == null goto (branch)
+<com.dattanlabs.ridechicago.MyLocation: void getLastKnownLocation()> --> $r5 = r0.<com.dattanlabs.ridechicago.MyLocation: com.dattanlabs.ridechicago.MyLocation$MyLocationResult locationResult>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r0 := @this: com.dattanlabs.ridechicago.StopNearbyListActivity$4
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> $r3 = r0.<com.dattanlabs.ridechicago.StopNearbyListActivity$4: com.dattanlabs.ridechicago.StopNearbyListActivity this$0>
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> r17 := @caughtexception
+<com.dattanlabs.ridechicago.StopNearbyListActivity$4: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BUS_NEARBY_MAP_ACTIVITY", $r7)
+--------------------------------------------------------
+

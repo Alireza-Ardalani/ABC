@@ -1,0 +1,18 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("customer_lat", $f0)
+Component=> com.ibotta.android.receiver.LocationChangeReceiver
+ComponentColor=> GREEN
+android.content.SharedPreferences$Editor
+com.ibotta.android.state.user.UserStateImpl
+android.location.Location
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("customer_long", $f0)
+Component=> com.ibotta.android.receiver.LocationChangeReceiver
+ComponentColor=> GREEN
+android.location.Location
+android.content.SharedPreferences$Editor
+com.ibotta.android.state.user.UserStateImpl
+Category: LEGIT
+-----------------------------------------------------------------

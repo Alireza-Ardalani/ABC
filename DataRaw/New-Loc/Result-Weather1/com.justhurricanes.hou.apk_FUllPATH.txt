@@ -1,0 +1,26 @@
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void <init>(android.content.Context)> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void <init>(android.content.Context)> --> r0.<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: android.location.Location mCurrentBestLocation> = $r4
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void <init>(android.content.Context)> --> $r4 = r0.<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: android.location.Location mCurrentBestLocation>
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void <init>(android.content.Context)> --> if $r4 != null goto $r4 = r0.<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: android.location.Location mCurrentBestLocation>
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void <init>(android.content.Context)> --> r0.<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: android.location.Location mCurrentBestLocation> = $r4
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void <init>(android.content.Context)> --> $r4 = r0.<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: android.location.Location mCurrentBestLocation>
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void <init>(android.content.Context)> --> if $r4 == null goto staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("PnsDigital", "CustomLocationManager : Last known location is not available")
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void <init>(android.content.Context)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("PnsDigital", "CustomLocationManager : Last known location is not available")
+--------------------------------------------------------
+
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void enable()> --> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void enable()> --> r0.<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: android.location.Location mCurrentBestLocation> = $r3
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void enable()> --> $r3 = r0.<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: android.location.Location mCurrentBestLocation>
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void enable()> --> if $r3 != null goto $r3 = r0.<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: android.location.Location mCurrentBestLocation>
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void enable()> --> r0.<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: android.location.Location mCurrentBestLocation> = $r3
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void enable()> --> $r3 = r0.<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: android.location.Location mCurrentBestLocation>
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void enable()> --> if $r3 == null goto staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("PnsDigital", "CustomLocationManager : Last known location is not available")
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void enable()> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("PnsDigital", $r5)
+--------------------------------------------------------
+
+<dummyMainClass: com.pnsdigital.androidhurricanesapp.view.LocalRadarActivity dummyMainMethod_com_pnsdigital_androidhurricanesapp_view_LocalRadarActivity(android.content.Intent)> --> virtualinvoke $r5.<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.pnsdigital.androidhurricanesapp.view.LocalRadarActivity dummyMainMethod_com_pnsdigital_androidhurricanesapp_view_LocalRadarActivity(android.content.Intent)> --> if $i0 == 4 goto (branch)
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void onProviderEnabled(java.lang.String)> --> r0 := @this: com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager
+<com.pnsdigital.androidhurricanesapp.presenter.location.CustomLocationManager: void onProviderEnabled(java.lang.String)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("PnsDigital", $r2)
+--------------------------------------------------------
+

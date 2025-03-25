@@ -1,0 +1,434 @@
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d1 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r7 = $r8
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r2 = r7
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r10 = interfaceinvoke $r9.<com.digby.mm.android.library.utils.ILocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> if $r10 != null goto $r7 = r0.<com.digby.mm.android.library.utils.impl.SharedPrefsManager: android.content.Context mContext>
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("State", $r2)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r6 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r7 = $r8
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r2 = r7
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r10 = interfaceinvoke $r9.<com.digby.mm.android.library.utils.ILocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> if $r10 != null goto $r7 = r0.<com.digby.mm.android.library.utils.impl.SharedPrefsManager: android.content.Context mContext>
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("Date", $l0)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r6 = $r8
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r2 = r7
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r10 = interfaceinvoke $r9.<com.digby.mm.android.library.utils.ILocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> if $r10 != null goto $r7 = r0.<com.digby.mm.android.library.utils.impl.SharedPrefsManager: android.content.Context mContext>
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Latitude", $f0)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r1 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> nop
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> <com.digby.mm.android.library.utils.Logger: boolean initialized> = 0
+<com.digby.mm.android.library.services.impl.BootCompleteService$2: void onLocationChanged(android.location.Location)> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)>("MyLocationListener_onLocationChanged", r2)
+<dummyMainClass: com.digby.mm.android.library.services.impl.BootCompleteService dummyMainMethod_com_digby_mm_android_library_services_impl_BootCompleteService(android.content.Intent)> --> virtualinvoke $r2.<com.digby.mm.android.library.services.impl.BootCompleteService$2: void onLocationChanged(android.location.Location)>(null)
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> $z0 = <com.digby.mm.android.library.utils.Logger: boolean initialized>
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> if $z0 == 0 goto entermonitor class "Lcom/digby/mm/android/library/utils/Logger;"
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r1 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> nop
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> <com.digby.mm.android.library.utils.Logger: com.digby.mm.android.library.utils.FileLogger fileLoggerExt> = null
+<com.digby.mm.android.library.services.impl.BootCompleteService: void onCreate()> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void Debug(java.lang.String,android.content.Context)>("Subscribing to location updates", r0)
+<com.digby.mm.android.library.services.impl.BootCompleteService: void onCreate()> --> r13 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r1 = <com.digby.mm.android.library.utils.Logger: com.digby.mm.android.library.utils.FileLogger fileLoggerExt>
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> if $r1 == null goto return
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> nop
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> <com.digby.mm.android.library.utils.Logger: com.digby.mm.android.library.utils.FileLogger fileLoggerExt> = null
+<com.digby.mm.android.library.location.impl.ProximityAlertGeofenceManager: void addGeofences(java.util.List,boolean)> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void Debug(java.lang.String,android.content.Context)>("geoshapes is empty, nothing to add.", $r4)
+<com.digby.mm.android.library.services.impl.BootCompleteService$1: void onReceive(java.util.List)> --> interfaceinvoke $r8.<com.digby.mm.android.library.location.IGeofenceManager: void addGeofences(java.util.List,boolean)>(r2, 1)
+<com.digby.mm.android.library.geofence.impl.GetGeoFencesTask: void onPostExecute(java.lang.Integer)> --> interfaceinvoke $r4.<com.digby.mm.android.library.geofence.IGeoFenceListReceiver: void onReceive(java.util.List)>($r3)
+<com.digby.mm.android.library.geofence.impl.GetGeoFencesTask: void onPostExecute(java.lang.Integer)> --> r2 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r1 = <com.digby.mm.android.library.utils.Logger: com.digby.mm.android.library.utils.FileLogger fileLoggerExt>
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> if $r1 == null goto return
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d1 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r6 = $r8
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r2 = r6
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.location.impl.ProximityAlertGeofenceManager: void addGeofences(java.util.List,boolean)> --> $r5 = virtualinvoke $r3.<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.location.impl.ProximityAlertGeofenceManager: void addGeofences(java.util.List,boolean)> --> if $r5 != null goto (branch)
+<com.digby.mm.android.library.utils.Logger: void Debug(java.lang.String,android.content.Context)> --> $r2 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Debug(java.lang.String,android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DigbyLibrary", $r2)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $f0 = (float) $d0
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Latitude", $f0)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r1 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r7 = $r8
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r2 = r7
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r10 = interfaceinvoke $r9.<com.digby.mm.android.library.utils.ILocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> if $r10 != null goto $r7 = r0.<com.digby.mm.android.library.utils.impl.SharedPrefsManager: android.content.Context mContext>
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Latitude", $f0)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r1 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r6 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r1 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r6 = $r8
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r2 = r7
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r10 = interfaceinvoke $r9.<com.digby.mm.android.library.utils.ILocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> if $r10 != null goto $r7 = r0.<com.digby.mm.android.library.utils.impl.SharedPrefsManager: android.content.Context mContext>
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("Date", $l0)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> nop
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> <com.digby.mm.android.library.utils.Logger: boolean initialized> = 0
+<com.digby.mm.android.library.services.impl.GeofenceTransitionsService: int onStartCommand(android.content.Intent,int,int)> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)>("Error in onStartCommand", r2)
+<dummyMainClass: com.digby.mm.android.library.services.impl.GeofenceTransitionsService dummyMainMethod_com_digby_mm_android_library_services_impl_GeofenceTransitionsService(android.content.Intent)> --> virtualinvoke $r0.<com.digby.mm.android.library.services.impl.GeofenceTransitionsService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0)
+<dummyMainClass: com.digby.mm.android.library.services.impl.GeofenceTransitionsService dummyMainMethod_com_digby_mm_android_library_services_impl_GeofenceTransitionsService(android.content.Intent)> --> if $i0 == 1 goto (branch)
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> $z0 = <com.digby.mm.android.library.utils.Logger: boolean initialized>
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> if $z0 == 0 goto entermonitor class "Lcom/digby/mm/android/library/utils/Logger;"
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r6 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r6 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r1 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r7 = $r8
+<com.digby.mm.android.library.location.impl.ProximityAlertGeofenceManager: void addGeofences(java.util.List,boolean)> --> $r5 = virtualinvoke $r3.<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.location.impl.ProximityAlertGeofenceManager: void addGeofences(java.util.List,boolean)> --> if $r5 != null goto (branch)
+<com.digby.mm.android.library.utils.Logger: void Debug(java.lang.String,android.content.Context)> --> $r2 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Debug(java.lang.String,android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DigbyLibrary", $r2)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r6 = $r8
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r2 = r7
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r10 = interfaceinvoke $r9.<com.digby.mm.android.library.utils.ILocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> if $r10 != null goto $r7 = r0.<com.digby.mm.android.library.utils.impl.SharedPrefsManager: android.content.Context mContext>
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("State", $r2)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> nop
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> <com.digby.mm.android.library.utils.Logger: boolean initialized> = 0
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)>("Error in addGeofenceWhenConnected", r3)
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> return
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofences(java.util.List,boolean)> --> specialinvoke r0.<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)>(r1)
+<com.digby.mm.android.library.utils.Logger: void Debug(java.lang.String,android.content.Context)> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void init(android.content.Context)>($r0)
+<com.digby.mm.android.library.services.impl.GeofenceTransitionsService: void sendEvent(android.location.Location)> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void Debug(java.lang.String,android.content.Context)>("GTS_sendEvent", r0)
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> $z0 = <com.digby.mm.android.library.utils.Logger: boolean initialized>
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> if $z0 == 0 goto entermonitor class "Lcom/digby/mm/android/library/utils/Logger;"
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> nop
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> <com.digby.mm.android.library.utils.Logger: boolean initialized> = 0
+<com.digby.mm.android.library.services.impl.BootCompleteService: void onCreate()> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void Debug(java.lang.String,android.content.Context)>("Subscribing to location updates", r0)
+<dummyMainClass: com.digby.mm.android.library.services.impl.BootCompleteService dummyMainMethod_com_digby_mm_android_library_services_impl_BootCompleteService(android.content.Intent)> --> virtualinvoke $r0.<com.digby.mm.android.library.services.impl.BootCompleteService: void onCreate()>()
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> $z0 = <com.digby.mm.android.library.utils.Logger: boolean initialized>
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> if $z0 == 0 goto entermonitor class "Lcom/digby/mm/android/library/utils/Logger;"
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r6 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r1 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d1 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r7 = $r8
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r2 = r7
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r10 = interfaceinvoke $r9.<com.digby.mm.android.library.utils.ILocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> if $r10 != null goto $r7 = r0.<com.digby.mm.android.library.utils.impl.SharedPrefsManager: android.content.Context mContext>
+<com.digby.mm.android.library.utils.Logger: void Warn(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Warn(java.lang.String)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DigbyLibrary", $r0)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void initLogFile()> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r6 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r7 = $r8
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r2 = r7
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r10 = interfaceinvoke $r9.<com.digby.mm.android.library.utils.ILocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> if $r10 != null goto $r7 = r0.<com.digby.mm.android.library.utils.impl.SharedPrefsManager: android.content.Context mContext>
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Longitude", $f0)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void initLogFile()> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r6 = $r8
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r2 = r7
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r10 = interfaceinvoke $r9.<com.digby.mm.android.library.utils.ILocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> if $r10 != null goto $r7 = r0.<com.digby.mm.android.library.utils.impl.SharedPrefsManager: android.content.Context mContext>
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Longitude", $f0)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> nop
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> <com.digby.mm.android.library.utils.Logger: com.digby.mm.android.library.utils.FileLogger fileLoggerExt> = null
+<com.digby.mm.android.library.location.impl.ProximityAlertGeofenceManager: void addGeofences(java.util.List,boolean)> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void Debug(java.lang.String,android.content.Context)>("geoshapes is empty, nothing to add.", $r4)
+<com.digby.mm.android.library.services.impl.BootCompleteService$1: void onReceive(java.util.List)> --> interfaceinvoke $r8.<com.digby.mm.android.library.location.IGeofenceManager: void addGeofences(java.util.List,boolean)>(r2, 1)
+<com.digby.mm.android.library.geofence.impl.GetGeoFencesTask: void onPostExecute(java.lang.Integer)> --> interfaceinvoke $r4.<com.digby.mm.android.library.geofence.IGeoFenceListReceiver: void onReceive(java.util.List)>($r3)
+<com.digby.mm.android.library.geofence.impl.GetGeoFencesTask: void onPostExecute(java.lang.Integer)> --> r2 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r1 = <com.digby.mm.android.library.utils.Logger: com.digby.mm.android.library.utils.FileLogger fileLoggerExt>
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> if $r1 == null goto return
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d1 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> nop
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> <com.digby.mm.android.library.utils.Logger: boolean initialized> = 0
+<com.digby.mm.android.library.services.impl.GeofenceTransitionsService: int onStartCommand(android.content.Intent,int,int)> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)>("Error in onStartCommand", r2)
+<dummyMainClass: com.digby.mm.android.library.services.impl.GeofenceTransitionsService dummyMainMethod_com_digby_mm_android_library_services_impl_GeofenceTransitionsService(android.content.Intent)> --> virtualinvoke $r0.<com.digby.mm.android.library.services.impl.GeofenceTransitionsService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0)
+<dummyMainClass: com.digby.mm.android.library.services.impl.GeofenceTransitionsService dummyMainMethod_com_digby_mm_android_library_services_impl_GeofenceTransitionsService(android.content.Intent)> --> if $i0 == 3 goto virtualinvoke $r0.<com.digby.mm.android.library.services.impl.GeofenceTransitionsService: android.os.IBinder onBind(android.content.Intent)>(null)
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> $z0 = <com.digby.mm.android.library.utils.Logger: boolean initialized>
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> if $z0 == 0 goto entermonitor class "Lcom/digby/mm/android/library/utils/Logger;"
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> nop
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> <com.digby.mm.android.library.utils.Logger: com.digby.mm.android.library.utils.FileLogger fileLoggerExt> = null
+<com.digby.mm.android.library.services.impl.BootCompleteService: void onCreate()> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void Debug(java.lang.String,android.content.Context)>("Subscribing to location updates", r0)
+<com.digby.mm.android.library.services.impl.BootCompleteService: void onCreate()> --> r13 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> $r1 = <com.digby.mm.android.library.utils.Logger: com.digby.mm.android.library.utils.FileLogger fileLoggerExt>
+<com.digby.mm.android.library.utils.Logger: void logToFile(java.lang.String)> --> if $r1 == null goto return
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> r0 := @this: com.digby.mm.android.library.utils.FileLogger
+<com.digby.mm.android.library.utils.FileLogger: void appendToLog(java.lang.String)> --> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r6 = $r8
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r2 = r6
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> if r2 == null goto return r2
+<com.digby.mm.android.library.location.impl.ProximityAlertGeofenceManager: void addGeofences(java.util.List,boolean)> --> $r5 = virtualinvoke $r3.<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.location.impl.ProximityAlertGeofenceManager: void addGeofences(java.util.List,boolean)> --> if $r5 != null goto (branch)
+<com.digby.mm.android.library.location.impl.ProximityAlertGeofenceManager: void addGeofences(java.util.List,boolean)> --> r6 = virtualinvoke $r3.<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()>()
+<com.digby.mm.android.library.location.impl.ProximityAlertGeofenceManager: void addGeofences(java.util.List,boolean)> --> if r6 == null goto (branch)
+<com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.controller.IDigbyController getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.controller.IDigbyController getInstance(android.content.Context)> --> $r2 = new com.digby.mm.android.library.controller.impl.DigbyController
+<com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.controller.IDigbyController getInstance(android.content.Context)> --> <com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.controller.impl.DigbyController theController> = $r2
+<com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.controller.IDigbyController getInstance(android.content.Context)> --> $r2 = <com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.controller.impl.DigbyController theController>
+<com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.controller.IDigbyController getInstance(android.content.Context)> --> if $r2 == null goto $r1 = null
+<com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.controller.IDigbyController getInstance(android.content.Context)> --> $r2 = <com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.controller.impl.DigbyController theController>
+<com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.controller.IDigbyController getInstance(android.content.Context)> --> exitmonitor class "Lcom/digby/mm/android/library/controller/impl/DigbyController;"
+<com.digby.mm.android.library.services.impl.BootCompleteService$2: void onLocationChanged(android.location.Location)> --> $r5 = staticinvoke <com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.controller.IDigbyController getInstance(android.content.Context)>($r3)
+<com.digby.mm.android.library.controller.impl.DigbyController: boolean startLocationServices()> --> r0 := @this: com.digby.mm.android.library.controller.impl.DigbyController
+<com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.utils.ISharedPrefsManager getSharedPrefsManager()> --> r0 := @this: com.digby.mm.android.library.controller.impl.DigbyController
+<com.digby.mm.android.library.controller.impl.DigbyController: boolean startLocationServices()> --> $r1 = virtualinvoke r0.<com.digby.mm.android.library.controller.impl.DigbyController: com.digby.mm.android.library.utils.ISharedPrefsManager getSharedPrefsManager()>()
+<com.digby.mm.android.library.controller.impl.DigbyController: boolean startLocationServices()> --> if $z0 != 0 goto return 0
+<com.digby.mm.android.library.controller.impl.DigbyController: void initGCM()> --> r0 := @this: com.digby.mm.android.library.controller.impl.DigbyController
+<com.digby.mm.android.library.controller.impl.DigbyController: void initGCM()> --> $r4 = r0.<com.digby.mm.android.library.controller.impl.DigbyController: android.content.Context mContext>
+<com.digby.mm.android.library.controller.impl.DigbyController: void initGCM()> --> r1 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Warn(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Warn(java.lang.String)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DigbyLibrary", $r0)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.digby.mm.android.library.utils.impl.LocationHelper: android.location.Location getBestCachedLocation()> --> r1 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> nop
+<com.digby.mm.android.library.utils.Logger: void <clinit>()> --> <com.digby.mm.android.library.utils.Logger: boolean initialized> = 0
+<com.digby.mm.android.library.services.impl.BootCompleteService$2: void onLocationChanged(android.location.Location)> --> staticinvoke <com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)>("MyLocationListener_onLocationChanged", r2)
+<dummyMainClass: com.digby.mm.android.library.services.impl.BootCompleteService dummyMainMethod_com_digby_mm_android_library_services_impl_BootCompleteService(android.content.Intent)> --> virtualinvoke $r2.<com.digby.mm.android.library.services.impl.BootCompleteService$2: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.digby.mm.android.library.services.impl.BootCompleteService dummyMainMethod_com_digby_mm_android_library_services_impl_BootCompleteService(android.content.Intent)> --> $r2 = new com.digby.mm.android.library.services.impl.BootCompleteService$2
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> $z0 = <com.digby.mm.android.library.utils.Logger: boolean initialized>
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> if $z0 == 0 goto entermonitor class "Lcom/digby/mm/android/library/utils/Logger;"
+<com.digby.mm.android.library.utils.Logger: void init(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> $d0 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.location.impl.GeofencingGeofenceManager: void addGeofenceWhenConnected(java.util.List)> --> r3 := @caughtexception
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.digby.mm.android.library.utils.Logger: void Error(java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+--------------------------------------------------------
+
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $f0 = (float) $d0
+<com.digby.mm.android.library.utils.impl.SharedPrefsManager: void setLastDownloadInfo(com.digby.mm.android.library.geofence.IDownloadInfo$eDownloadStates,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Longitude", $f0)
+--------------------------------------------------------
+

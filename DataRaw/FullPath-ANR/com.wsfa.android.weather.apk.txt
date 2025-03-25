@@ -1,0 +1,1141 @@
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r13.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("beacon_url", $r4)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+android.os.BaseBundle
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void connect()>()
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+java.net.URLConnection
+android.location.LocationManager
+com.krux.androidsdk.aggregator.e
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.e-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r4 = virtualinvoke $r3.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.e
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+java.net.URLConnection
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.e-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tech_os", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+android.os.BaseBundle
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tech_manufacturer", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+android.os.BaseBundle
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+java.net.URLConnection
+com.krux.androidsdk.aggregator.e
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.e-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> specialinvoke $r5.<java.net.URL: void <init>(java.lang.String)>($r4)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+java.net.URL
+android.location.LocationManager
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.os.Handler
+com.facebook.AccessTokenManager
+com.vervewireless.advert.location.LocationProxy
+com.facebook.AccessTokenManager$1
+com.facebook.AccessTokenManager
+com.vervewireless.advert.location.LocationHandler
+android.os.BaseBundle
+com.facebook.AccessTokenManager
+Category: com.vervewireless.advert.location.a-*-com.facebook.AccessTokenManager-*-com.vervewireless.advert.location.LocationProxy-*-com.facebook.AccessTokenManager$1-*-com.facebook.AccessTokenManager-*-com.vervewireless.advert.location.LocationHandler-*-com.facebook.AccessTokenManager-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $i0 = virtualinvoke $r3.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.e
+com.krux.androidsdk.utils.b
+java.net.HttpURLConnection
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.e-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r8)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+android.util.Log
+Category: com.krux.androidsdk.utils.d-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.e
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+java.net.HttpURLConnection
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.e-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r8)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+android.util.Log
+Category: com.krux.androidsdk.utils.d-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("_kuid", $r9)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+android.os.BaseBundle
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r7)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+android.util.Log
+com.krux.androidsdk.aggregator.e
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.e-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.os.Handler
+com.facebook.AccessTokenManager
+com.vervewireless.advert.location.LocationProxy
+com.facebook.AccessTokenManager$1
+com.facebook.AccessTokenManager
+com.vervewireless.advert.location.LocationHandler
+android.os.BaseBundle
+com.facebook.AccessTokenManager
+Category: com.vervewireless.advert.location.a-*-com.facebook.AccessTokenManager-*-com.vervewireless.advert.location.LocationProxy-*-com.facebook.AccessTokenManager$1-*-com.facebook.AccessTokenManager-*-com.vervewireless.advert.location.LocationHandler-*-com.facebook.AccessTokenManager-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r2 = virtualinvoke $r0.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+java.net.URL
+android.location.LocationManager
+com.krux.androidsdk.aggregator.e
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.e-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r6, $r7)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+java.net.URL
+android.location.LocationManager
+com.krux.androidsdk.aggregator.e
+android.util.Log
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.e-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r4 = virtualinvoke $r3.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.e
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+java.net.URLConnection
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.e-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tech_browser", "android_app")
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+android.os.BaseBundle
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<com.roximity.sdk.location.RoxLocation: double getLongitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("last_nearby_lon", $f0)
+Component=> com.roximity.sdk.activities.FullscreenActivity
+ComponentColor=> RED
+android.location.Location
+com.roximity.sdk.a.b
+android.content.SharedPreferences$Editor
+Category: com.roximity.sdk.a.b-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void connect()>()
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+java.net.URLConnection
+android.location.LocationManager
+com.krux.androidsdk.aggregator.e
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.e-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.aggregator.EventPublisherService
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+java.net.URLConnection
+com.krux.androidsdk.aggregator.e
+com.krux.androidsdk.utils.b
+com.krux.androidsdk.aggregator.a
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.aggregator.EventPublisherService-*-com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.e-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.a-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tech_device", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+android.os.BaseBundle
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("lat", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+android.os.BaseBundle
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.os.Handler
+com.facebook.AccessTokenManager
+com.vervewireless.advert.location.LocationProxy
+com.facebook.AccessTokenManager$1
+com.facebook.AccessTokenManager
+com.vervewireless.advert.location.LocationHandler
+android.os.BaseBundle
+com.facebook.AccessTokenManager
+Category: com.vervewireless.advert.location.a-*-com.facebook.AccessTokenManager-*-com.vervewireless.advert.location.LocationProxy-*-com.facebook.AccessTokenManager$1-*-com.facebook.AccessTokenManager-*-com.vervewireless.advert.location.LocationHandler-*-com.facebook.AccessTokenManager-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tech_browser_lang", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+android.os.BaseBundle
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("long", $r3)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+android.os.BaseBundle
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<com.roximity.sdk.location.RoxLocation: double getLatitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("last_nearby_lat", $f0)
+Component=> com.roximity.sdk.activities.FullscreenActivity
+ComponentColor=> RED
+com.roximity.sdk.a.b
+android.location.Location
+android.content.SharedPreferences$Editor
+Category: com.roximity.sdk.a.b-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.os.Handler
+com.facebook.AccessTokenManager
+com.vervewireless.advert.location.LocationProxy
+com.facebook.AccessTokenManager$1
+com.facebook.AccessTokenManager
+com.vervewireless.advert.location.LocationHandler
+android.os.BaseBundle
+com.facebook.AccessTokenManager
+Category: com.vervewireless.advert.location.a-*-com.facebook.AccessTokenManager-*-com.vervewireless.advert.location.LocationProxy-*-com.facebook.AccessTokenManager$1-*-com.facebook.AccessTokenManager-*-com.vervewireless.advert.location.LocationHandler-*-com.facebook.AccessTokenManager-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r7, $r0)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+android.util.Log
+com.krux.androidsdk.utils.b
+android.net.Uri
+com.krux.androidsdk.aggregator.m
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.utils.b-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+android.content.SharedPreferences$Editor
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("_kpid", $r9)
+Component=> com.krux.androidsdk.aggregator.EventPublisherService
+ComponentColor=> RED
+com.krux.androidsdk.utils.d
+android.location.LocationManager
+com.krux.androidsdk.aggregator.m
+android.os.BaseBundle
+Category: com.krux.androidsdk.utils.d-*-com.krux.androidsdk.aggregator.m-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+android.location.LocationManager
+com.vervewireless.advert.location.a
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+com.vervewireless.advert.location.LocationProxy
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-com.vervewireless.advert.location.LocationProxy-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r5)
+Component=> com.vervewireless.advert.adattribution.VerveSupportService
+ComponentColor=> RED
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.a
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationProxy
+com.vervewireless.advert.location.LocationHandler
+Category: com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.a-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationProxy-*-com.vervewireless.advert.location.LocationHandler-*-
+-----------------------------------------------------------------
+com.wsfa.android.weather.apk: 1247383

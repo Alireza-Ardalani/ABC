@@ -1,0 +1,36 @@
+Source=> $r11 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.urbandroid.sleep.alarmclock.RatingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r2)
+Component=> com.urbandroid.sleep.alarmclock.RatingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r2)
+Component=> com.urbandroid.sleep.alarmclock.RatingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r2)
+Component=> com.urbandroid.sleep.alarmclock.RatingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.urbandroid.sleep.alarmclock.RatingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.urbandroid.sleep.alarmclock.RatingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

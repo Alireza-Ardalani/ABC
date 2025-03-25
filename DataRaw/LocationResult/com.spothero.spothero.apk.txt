@@ -1,0 +1,28 @@
+Source=> $d0 = virtualinvoke $r26.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r3, "Failed To Register", $r29)
+Component=> com.pushio.manager.PushIOGCMIntentService
+ComponentColor=> RED
+com.pushio.manager.c.f
+android.location.Location
+android.util.Log
+Category: com.pushio.manager.c.f-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r26.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r3, "Failed To Register", $r29)
+Component=> com.pushio.manager.PushIOGCMIntentService
+ComponentColor=> RED
+android.location.Location
+com.pushio.manager.c.f
+android.util.Log
+Category: com.pushio.manager.c.f-*-
+-----------------------------------------------------------------
+Source=> $r26 = virtualinvoke $r23.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r3, "Failed To Register", $r29)
+Component=> com.pushio.manager.PushIOGCMIntentService
+ComponentColor=> RED
+android.location.LocationManager
+com.pushio.manager.c.f
+android.util.Log
+Category: com.pushio.manager.c.f-*-
+-----------------------------------------------------------------
+com.spothero.spothero.apk: 1058887

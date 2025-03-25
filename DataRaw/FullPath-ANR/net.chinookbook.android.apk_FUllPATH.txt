@@ -1,0 +1,187 @@
+<net.chinookbook.android.location.CBMarketMonitor: boolean checkMarketChange(android.location.Location)> --> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<net.chinookbook.android.CBPreferencesManager: void setMarketCenterLastCheckLocation(android.location.Location)> --> r0 := @this: net.chinookbook.android.CBPreferencesManager
+<net.chinookbook.android.CBPreferencesManager: void setMarketCenterLastCheckLocation(android.location.Location)> --> if $r3 == null goto $r5 = null
+<net.chinookbook.android.CBPreferencesManager: void setMarketCenterLastCheckLocation(android.location.Location)> --> $r5 = null
+<net.chinookbook.android.CBPreferencesManager: void setMarketCenterLastCheckLocation(android.location.Location)> --> $r1 = r0.<net.chinookbook.android.CBPreferencesManager: com.celilo.android.preferences.PreferencesManager mPreferencesManager>
+<com.celilo.android.preferences.PreferencesManager: boolean set(java.lang.String,java.lang.String)> --> r0 := @this: com.celilo.android.preferences.PreferencesManager
+<com.celilo.android.preferences.PreferencesManager: boolean set(java.lang.String,java.lang.String)> --> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> if $r13 == $r14 goto $r11 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(1)
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> $r21 = new android.os.Bundle
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> virtualinvoke $r21.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("REFERENCE_LOCATION", $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBMoreActivity: void loadPaymentDetails(android.location.Location)> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.GetPaymentDetailsParams: net.chinookbook.sdk.requests.params.GetPaymentDetailsParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.GetPaymentDetailsParams
+<net.chinookbook.sdk.requests.params.GetPaymentDetailsParams: net.chinookbook.sdk.requests.params.GetPaymentDetailsParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.GetPaymentDetailsParams: double mLongitude> = $d0
+<net.chinookbook.android.activity.CBMoreActivity: void loadPaymentDetails(android.location.Location)> --> virtualinvoke $r4.<net.chinookbook.android.api.params.CBGetPaymentDetailsParams: net.chinookbook.sdk.requests.params.GetPaymentDetailsParams setLongitude(double)>($d0)
+<net.chinookbook.android.activity.CBMoreActivity: void loadPaymentDetails(android.location.Location)> --> virtualinvoke $r5.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("GET_PAYMENT_DETAILS_PARAMS", $r4)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBActivationCodeActivity: void activateCode(java.lang.String,android.location.Location)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams
+<net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams: double mLongitude> = $d0
+<net.chinookbook.android.activity.CBActivationCodeActivity: void activateCode(java.lang.String,android.location.Location)> --> virtualinvoke $r11.<net.chinookbook.android.api.params.CBConsumeActivationCodeParams: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams setLongitude(double)>($d0)
+<net.chinookbook.android.activity.CBActivationCodeActivity: void activateCode(java.lang.String,android.location.Location)> --> virtualinvoke $r12.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("EXTRA_ACTIVATION_CODE_PARAMS", $r11)
+--------------------------------------------------------
+
+<net.chinookbook.android.location.CBMarketMonitor: void onSignificantLocationChange(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<net.chinookbook.android.location.CBMarketMonitor: void onSignificantLocationChange(android.location.Location)> --> virtualinvoke $r14.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("longitude", $d0)
+--------------------------------------------------------
+
+<net.chinookbook.android.location.CBSignificantLocationChangeMonitor: void onSignificantLocationChange(com.google.android.gms.location.GeofencingEvent)> --> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<net.chinookbook.android.location.CBSignificantLocationChangeMonitor: void setupMonitorGeofence(double,double)> --> r0 := @this: net.chinookbook.android.location.CBSignificantLocationChangeMonitor
+<net.chinookbook.android.location.CBSignificantLocationChangeMonitor: void setupMonitorGeofence(double,double)> --> virtualinvoke $r6.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("latitude", $d0)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<net.chinookbook.sdk.requests.params.GetCouponFiltersParams: net.chinookbook.sdk.requests.params.GetCouponFiltersParams setLatitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.GetCouponFiltersParams
+<net.chinookbook.sdk.requests.params.GetCouponFiltersParams: net.chinookbook.sdk.requests.params.GetCouponFiltersParams setLatitude(double)> --> r0.<net.chinookbook.sdk.requests.params.GetCouponFiltersParams: double mLatitude> = $d0
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> virtualinvoke $r2.<net.chinookbook.android.api.params.CBGetCouponFiltersParams: net.chinookbook.sdk.requests.params.GetCouponFiltersParams setLatitude(double)>($d0)
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> $r2 = r0.<net.chinookbook.android.activity.CBFilterCategoriesActivity: net.chinookbook.android.api.params.CBGetCouponFiltersParams mPendingGetCouponFiltersParams>
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> $r2 = r0.<net.chinookbook.android.activity.CBFilterCategoriesActivity: net.chinookbook.android.api.params.CBGetCouponFiltersParams mPendingGetCouponFiltersParams>
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> $r2 = r0.<net.chinookbook.android.activity.CBFilterCategoriesActivity: net.chinookbook.android.api.params.CBGetCouponFiltersParams mPendingGetCouponFiltersParams>
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("EXTRA_COUPON_FILTERS_PARAMS", $r2)
+--------------------------------------------------------
+
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> if $r13 == $r14 goto $r11 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(1)
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> $r21 = new android.os.Bundle
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> virtualinvoke $r21.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("REFERENCE_LOCATION", $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignInWithGoogle(net.chinookbook.android.api.params.CBLoginGoogleParams)> --> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.LoginGoogleParams: net.chinookbook.sdk.requests.params.LoginGoogleParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.LoginGoogleParams
+<net.chinookbook.sdk.requests.params.LoginGoogleParams: net.chinookbook.sdk.requests.params.LoginGoogleParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.LoginGoogleParams: double mLongitude> = $d0
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignInWithGoogle(net.chinookbook.android.api.params.CBLoginGoogleParams)> --> virtualinvoke $r1.<net.chinookbook.android.api.params.CBLoginGoogleParams: net.chinookbook.sdk.requests.params.LoginGoogleParams setLongitude(double)>($d0)
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignInWithGoogle(net.chinookbook.android.api.params.CBLoginGoogleParams)> --> $r10 = new android.os.Bundle
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignInWithGoogle(net.chinookbook.android.api.params.CBLoginGoogleParams)> --> virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("LOGIN_GOOGLE_PARAMS", $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignIn(net.chinookbook.android.api.params.CBLoginParams)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.LoginParams: net.chinookbook.sdk.requests.params.LoginParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.LoginParams
+<net.chinookbook.sdk.requests.params.LoginParams: net.chinookbook.sdk.requests.params.LoginParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.LoginParams: double mLongitude> = $d0
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignIn(net.chinookbook.android.api.params.CBLoginParams)> --> virtualinvoke $r1.<net.chinookbook.android.api.params.CBLoginParams: net.chinookbook.sdk.requests.params.LoginParams setLongitude(double)>($d0)
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignIn(net.chinookbook.android.api.params.CBLoginParams)> --> $r11 = new android.os.Bundle
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignIn(net.chinookbook.android.api.params.CBLoginParams)> --> virtualinvoke $r11.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("LOGIN_PARAMS", $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccountWithFacebook(net.chinookbook.android.api.params.CBLoginFacebookParams)> --> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.LoginFacebookParams: net.chinookbook.sdk.requests.params.LoginFacebookParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.LoginFacebookParams
+<net.chinookbook.sdk.requests.params.LoginFacebookParams: net.chinookbook.sdk.requests.params.LoginFacebookParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.LoginFacebookParams: double mLongitude> = $d0
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccountWithFacebook(net.chinookbook.android.api.params.CBLoginFacebookParams)> --> virtualinvoke $r1.<net.chinookbook.android.api.params.CBLoginFacebookParams: net.chinookbook.sdk.requests.params.LoginFacebookParams setLongitude(double)>($d0)
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccountWithFacebook(net.chinookbook.android.api.params.CBLoginFacebookParams)> --> $r10 = new android.os.Bundle
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccountWithFacebook(net.chinookbook.android.api.params.CBLoginFacebookParams)> --> virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("LOGIN_FACEBOOK_PARAMS", $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.fragment.CBOnboardingActivationFragment: void activateCode(java.lang.String,android.location.Location)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams
+<net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams: double mLongitude> = $d0
+<net.chinookbook.android.fragment.CBOnboardingActivationFragment: void activateCode(java.lang.String,android.location.Location)> --> virtualinvoke $r10.<net.chinookbook.android.api.params.CBConsumeActivationCodeParams: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams setLongitude(double)>($d0)
+<net.chinookbook.android.fragment.CBOnboardingActivationFragment: void activateCode(java.lang.String,android.location.Location)> --> virtualinvoke $r11.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("EXTRA_ACTIVATION_CODE_PARAMS", $r10)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBManagePaymentActivity: void loadPaymentDetails(android.location.Location)> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.GetPaymentDetailsParams: net.chinookbook.sdk.requests.params.GetPaymentDetailsParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.GetPaymentDetailsParams
+<net.chinookbook.sdk.requests.params.GetPaymentDetailsParams: net.chinookbook.sdk.requests.params.GetPaymentDetailsParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.GetPaymentDetailsParams: double mLongitude> = $d0
+<net.chinookbook.android.activity.CBManagePaymentActivity: void loadPaymentDetails(android.location.Location)> --> virtualinvoke $r9.<net.chinookbook.android.api.params.CBGetPaymentDetailsParams: net.chinookbook.sdk.requests.params.GetPaymentDetailsParams setLongitude(double)>($d0)
+<net.chinookbook.android.activity.CBManagePaymentActivity: void loadPaymentDetails(android.location.Location)> --> virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("EXTRA_GET_PAYMENT_DETAILS_PARAMS", $r9)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccountWithGoogle(net.chinookbook.android.api.params.CBLoginGoogleParams)> --> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.LoginGoogleParams: net.chinookbook.sdk.requests.params.LoginGoogleParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.LoginGoogleParams
+<net.chinookbook.sdk.requests.params.LoginGoogleParams: net.chinookbook.sdk.requests.params.LoginGoogleParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.LoginGoogleParams: double mLongitude> = $d0
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccountWithGoogle(net.chinookbook.android.api.params.CBLoginGoogleParams)> --> virtualinvoke $r1.<net.chinookbook.android.api.params.CBLoginGoogleParams: net.chinookbook.sdk.requests.params.LoginGoogleParams setLongitude(double)>($d0)
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccountWithGoogle(net.chinookbook.android.api.params.CBLoginGoogleParams)> --> $r10 = new android.os.Bundle
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccountWithGoogle(net.chinookbook.android.api.params.CBLoginGoogleParams)> --> virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("LOGIN_GOOGLE_PARAMS", $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.location.CBMarketMonitor: boolean checkMarketChange(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<net.chinookbook.android.CBPreferencesManager: void setMarketCenterLastCheckLocation(android.location.Location)> --> r0 := @this: net.chinookbook.android.CBPreferencesManager
+<net.chinookbook.android.CBPreferencesManager: void setMarketCenterLastCheckLocation(android.location.Location)> --> if $r3 == null goto $r5 = null
+<net.chinookbook.android.CBPreferencesManager: void setMarketCenterLastCheckLocation(android.location.Location)> --> $r5 = null
+<net.chinookbook.android.CBPreferencesManager: void setMarketCenterLastCheckLocation(android.location.Location)> --> $r1 = r0.<net.chinookbook.android.CBPreferencesManager: com.celilo.android.preferences.PreferencesManager mPreferencesManager>
+<com.celilo.android.preferences.PreferencesManager: boolean set(java.lang.String,java.lang.String)> --> r0 := @this: com.celilo.android.preferences.PreferencesManager
+<com.celilo.android.preferences.PreferencesManager: boolean set(java.lang.String,java.lang.String)> --> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.location.CBMarketMonitor: void onSignificantLocationChange(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<net.chinookbook.android.location.CBMarketMonitor: void onSignificantLocationChange(android.location.Location)> --> virtualinvoke $r14.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("latitude", $d0)
+--------------------------------------------------------
+
+<net.chinookbook.android.location.CBLocationRemindersManager$GenericBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d1 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+<net.chinookbook.android.location.CBLocationRemindersManager$GenericBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)> --> if $r9 == null goto staticinvoke <net.chinookbook.android.location.CBLocationRemindersManager: void access$1200(net.chinookbook.android.location.CBLocationRemindersManager,double,double)>($r3, $d1, $d0)
+<net.chinookbook.android.location.CBLocationRemindersManager: void access$1200(net.chinookbook.android.location.CBLocationRemindersManager,double,double)> --> $r0 := @parameter0: net.chinookbook.android.location.CBLocationRemindersManager
+<net.chinookbook.android.location.CBLocationRemindersManager: void setupGeofences(double,double)> --> r0 := @this: net.chinookbook.android.location.CBLocationRemindersManager
+<net.chinookbook.android.location.CBLocationRemindersManager: void setupGeofences(double,double)> --> virtualinvoke $r4.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("latitude", $d0)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.GetCouponFiltersParams: net.chinookbook.sdk.requests.params.GetCouponFiltersParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.GetCouponFiltersParams
+<net.chinookbook.sdk.requests.params.GetCouponFiltersParams: net.chinookbook.sdk.requests.params.GetCouponFiltersParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.GetCouponFiltersParams: double mLongitude> = $d0
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> virtualinvoke $r2.<net.chinookbook.android.api.params.CBGetCouponFiltersParams: net.chinookbook.sdk.requests.params.GetCouponFiltersParams setLongitude(double)>($d0)
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> $r2 = r0.<net.chinookbook.android.activity.CBFilterCategoriesActivity: net.chinookbook.android.api.params.CBGetCouponFiltersParams mPendingGetCouponFiltersParams>
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> $r2 = r0.<net.chinookbook.android.activity.CBFilterCategoriesActivity: net.chinookbook.android.api.params.CBGetCouponFiltersParams mPendingGetCouponFiltersParams>
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> $r2 = r0.<net.chinookbook.android.activity.CBFilterCategoriesActivity: net.chinookbook.android.api.params.CBGetCouponFiltersParams mPendingGetCouponFiltersParams>
+<net.chinookbook.android.activity.CBFilterCategoriesActivity: void loadCouponFilters(net.chinookbook.android.api.params.CBGetCouponFiltersParams)> --> virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("EXTRA_COUPON_FILTERS_PARAMS", $r2)
+--------------------------------------------------------
+
+<net.chinookbook.android.location.CBLocationRemindersManager$GenericBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+<net.chinookbook.android.location.CBLocationRemindersManager: void access$1200(net.chinookbook.android.location.CBLocationRemindersManager,double,double)> --> $r0 := @parameter0: net.chinookbook.android.location.CBLocationRemindersManager
+<net.chinookbook.android.location.CBLocationRemindersManager: void setupGeofences(double,double)> --> r0 := @this: net.chinookbook.android.location.CBLocationRemindersManager
+<net.chinookbook.android.location.CBLocationRemindersManager: void setupGeofences(double,double)> --> virtualinvoke $r4.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("longitude", $d1)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBClosestOrganizationLocationActivity: void loadClosestOrganizationLocation(net.chinookbook.android.api.params.CBGetClosestOrganizationLocationParams)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.GetClosestOrganizationLocationParams: net.chinookbook.sdk.requests.params.GetClosestOrganizationLocationParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.GetClosestOrganizationLocationParams
+<net.chinookbook.sdk.requests.params.GetClosestOrganizationLocationParams: net.chinookbook.sdk.requests.params.GetClosestOrganizationLocationParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.GetClosestOrganizationLocationParams: double mLongitude> = $d0
+<net.chinookbook.android.activity.CBClosestOrganizationLocationActivity: void loadClosestOrganizationLocation(net.chinookbook.android.api.params.CBGetClosestOrganizationLocationParams)> --> virtualinvoke $r1.<net.chinookbook.android.api.params.CBGetClosestOrganizationLocationParams: net.chinookbook.sdk.requests.params.GetClosestOrganizationLocationParams setLongitude(double)>($d0)
+<net.chinookbook.android.activity.CBClosestOrganizationLocationActivity: void loadClosestOrganizationLocation(net.chinookbook.android.api.params.CBGetClosestOrganizationLocationParams)> --> $r8 = new android.os.Bundle
+<net.chinookbook.android.activity.CBClosestOrganizationLocationActivity: void loadClosestOrganizationLocation(net.chinookbook.android.api.params.CBGetClosestOrganizationLocationParams)> --> virtualinvoke $r8.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("GET_CLOSEST_ORGANIZATION_LOCATION_PARAMS", $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> $r20 = new net.chinookbook.android.api.params.CBGetLocationsParams
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> if $r13 == $r14 goto $r11 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(1)
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> $r21 = new android.os.Bundle
+<net.chinookbook.android.fragment.CBFeedFragment: void loadNearbyLocation(android.location.Location)> --> virtualinvoke $r21.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("REFERENCE_LOCATION", $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.fragment.CBDeepLinkHandlerFragment: void unlockCode(java.lang.String,android.location.Location)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams
+<net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams: double mLongitude> = $d0
+<net.chinookbook.android.fragment.CBDeepLinkHandlerFragment: void unlockCode(java.lang.String,android.location.Location)> --> virtualinvoke $r9.<net.chinookbook.android.api.params.CBConsumeActivationCodeParams: net.chinookbook.sdk.requests.params.ConsumeActivationCodeParams setLongitude(double)>($d0)
+<net.chinookbook.android.fragment.CBDeepLinkHandlerFragment: void unlockCode(java.lang.String,android.location.Location)> --> virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("UNLOCK_CODE_PARAMS", $r9)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignInWithFacebook(net.chinookbook.android.api.params.CBLoginFacebookParams)> --> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.LoginFacebookParams: net.chinookbook.sdk.requests.params.LoginFacebookParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.LoginFacebookParams
+<net.chinookbook.sdk.requests.params.LoginFacebookParams: net.chinookbook.sdk.requests.params.LoginFacebookParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.LoginFacebookParams: double mLongitude> = $d0
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignInWithFacebook(net.chinookbook.android.api.params.CBLoginFacebookParams)> --> virtualinvoke $r1.<net.chinookbook.android.api.params.CBLoginFacebookParams: net.chinookbook.sdk.requests.params.LoginFacebookParams setLongitude(double)>($d0)
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignInWithFacebook(net.chinookbook.android.api.params.CBLoginFacebookParams)> --> $r10 = new android.os.Bundle
+<net.chinookbook.android.activity.CBSignInAccountActivity: void onSignInWithFacebook(net.chinookbook.android.api.params.CBLoginFacebookParams)> --> virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("LOGIN_FACEBOOK_PARAMS", $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccount(net.chinookbook.android.api.params.CBRegisterParams)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+<net.chinookbook.sdk.requests.params.RegisterParams: net.chinookbook.sdk.requests.params.RegisterParams setLongitude(double)> --> r0 := @this: net.chinookbook.sdk.requests.params.RegisterParams
+<net.chinookbook.sdk.requests.params.RegisterParams: net.chinookbook.sdk.requests.params.RegisterParams setLongitude(double)> --> r0.<net.chinookbook.sdk.requests.params.RegisterParams: double mLongitude> = $d0
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccount(net.chinookbook.android.api.params.CBRegisterParams)> --> virtualinvoke $r1.<net.chinookbook.android.api.params.CBRegisterParams: net.chinookbook.sdk.requests.params.RegisterParams setLongitude(double)>($d0)
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccount(net.chinookbook.android.api.params.CBRegisterParams)> --> $r11 = new android.os.Bundle
+<net.chinookbook.android.activity.CBCreateAccountActivity: void onCreateAccount(net.chinookbook.android.api.params.CBRegisterParams)> --> virtualinvoke $r11.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("REGISTER_PARAMS", $r1)
+--------------------------------------------------------
+
+<net.chinookbook.android.location.CBLocationRemindersManager$GenericBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d1 = virtualinvoke $r9.<android.location.Location: double getLatitude()>()
+<net.chinookbook.android.location.CBLocationRemindersManager$GenericBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)> --> if $r9 == null goto staticinvoke <net.chinookbook.android.location.CBLocationRemindersManager: void access$1200(net.chinookbook.android.location.CBLocationRemindersManager,double,double)>($r3, $d1, $d0)
+<net.chinookbook.android.location.CBLocationRemindersManager$GenericBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>()
+<net.chinookbook.android.location.CBLocationRemindersManager: void access$1200(net.chinookbook.android.location.CBLocationRemindersManager,double,double)> --> $r0 := @parameter0: net.chinookbook.android.location.CBLocationRemindersManager
+<net.chinookbook.android.location.CBLocationRemindersManager: void setupGeofences(double,double)> --> r0 := @this: net.chinookbook.android.location.CBLocationRemindersManager
+<net.chinookbook.android.location.CBLocationRemindersManager: void setupGeofences(double,double)> --> virtualinvoke $r4.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("longitude", $d1)
+--------------------------------------------------------
+
+<net.chinookbook.android.location.CBSignificantLocationChangeMonitor: void onSignificantLocationChange(com.google.android.gms.location.GeofencingEvent)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<net.chinookbook.android.location.CBSignificantLocationChangeMonitor: void setupMonitorGeofence(double,double)> --> r0 := @this: net.chinookbook.android.location.CBSignificantLocationChangeMonitor
+<net.chinookbook.android.location.CBSignificantLocationChangeMonitor: void setupMonitorGeofence(double,double)> --> virtualinvoke $r6.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("longitude", $d1)
+--------------------------------------------------------
+

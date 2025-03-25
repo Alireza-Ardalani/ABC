@@ -1,0 +1,19 @@
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+Component=> com.csquare.sfa.HomePage_Common_Activity
+ComponentColor=> GREEN
+android.location.LocationManager
+android.util.Log
+com.csquare.helper.GPSTracker
+Category: com.csquare.helper.GPSTracker-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+Component=> com.csquare.sfa.HomePage_Common_Activity
+ComponentColor=> GREEN
+android.location.LocationManager
+android.util.Log
+com.csquare.helper.GPSTracker
+Category: com.csquare.helper.GPSTracker-*-
+-----------------------------------------------------------------
+com.csquare.sfa.apk: 1323762

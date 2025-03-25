@@ -1,0 +1,2676 @@
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r9, "Wifi is not connected yet")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceIdHash", $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("reporterror", $r1, null, null, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS mt")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip downloadFile")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table ads (_id integer primary key autoincrement, app_info_id int UNIQUE ON CONFLICT REPLACE, title text not null,  transactionId text,  icon_url text not null,  cover_url text not null,  desc text not null,  rating text not null,  favors text not null,  package_name text not null,  imp_temp text not null,  click_temp text not null,  offers text not null,  category text,  rv_cache_time int not null,  rv_value text ,  create_time text ,  rv_status int not null,  rv_retry_count int not null,  click_status int not null,  offer_id text,  uuid text, extra_info text );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("showRateCount", $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid context in screen interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip downloadFile")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("self_ads", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("exitadCode", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<java.net.Socket: void close()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("self_ads", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("crasheslog", 32768)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r9, "Wifi is not connected yet")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table mt (_id integer primary key autoincrement, package_name text not null UNIQUE ON CONFLICT REPLACE,  rv_value text ,  click_temp text not null,  rv_cache_time text not null  );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r1, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r7.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "Show card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FBAudienceNetworkLog", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<java.net.Socket: void close()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, "Exception in window info check", $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("select count(*) from click_time", null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid window in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip downloadFile")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("reporterror", $r1, null, null, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r1, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid Window info in window interactive check, assuming not obstructed by Keyguard.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table mt (_id integer primary key autoincrement, package_name text not null UNIQUE ON CONFLICT REPLACE,  rv_value text ,  click_temp text not null,  rv_cache_time text not null  );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("exitadCode", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table ads (_id integer primary key autoincrement, app_info_id int UNIQUE ON CONFLICT REPLACE, title text not null,  transactionId text,  icon_url text not null,  cover_url text not null,  desc text not null,  rating text not null,  favors text not null,  package_name text not null,  imp_temp text not null,  click_temp text not null,  offers text not null,  category text,  rv_cache_time int not null,  rv_value text ,  create_time text ,  rv_status int not null,  rv_retry_count int not null,  click_status int not null,  offer_id text,  uuid text, extra_info text );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceIdHash", $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "Show card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("self_ads", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("exitadCode", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("crasheslog", 32768)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r7)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table ads (_id integer primary key autoincrement, app_info_id int UNIQUE ON CONFLICT REPLACE, title text not null,  transactionId text,  icon_url text not null,  cover_url text not null,  desc text not null,  rating text not null,  favors text not null,  package_name text not null,  imp_temp text not null,  click_temp text not null,  offers text not null,  category text,  rv_cache_time int not null,  rv_value text ,  create_time text ,  rv_status int not null,  rv_retry_count int not null,  click_status int not null,  offer_id text,  uuid text, extra_info text );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r33.<java.io.FileOutputStream: void write(byte[],int,int)>($r10, 0, $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FBAudienceNetworkLog", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip thread started")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r6, "Failed to store crash", $r8)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.net.Socket: void close()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, "Exception in screen interactive check, assuming interactive.", $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_post_time", $l0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FBAudienceNetworkLog", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r1, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS mt")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "destroy card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("crasheslog", 32768)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceIdHash", $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip downloadFile")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r6, "Failed to store crash", $r8)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table ads (_id integer primary key autoincrement, app_info_id int UNIQUE ON CONFLICT REPLACE, title text not null,  transactionId text,  icon_url text not null,  cover_url text not null,  desc text not null,  rating text not null,  favors text not null,  package_name text not null,  imp_temp text not null,  click_temp text not null,  offers text not null,  category text,  rv_cache_time int not null,  rv_value text ,  create_time text ,  rv_status int not null,  rv_retry_count int not null,  click_status int not null,  offer_id text,  uuid text, extra_info text );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r2.<java.net.Socket: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("select count(*) from click_time", null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceIdHash", $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r33.<java.io.FileOutputStream: void write(byte[],int,int)>($r10, 0, $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = virtualinvoke $r5.<java.net.Socket: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("showRateCount", $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("reporterror", $r1, null, null, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid window in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r9, "Wifi is not connected yet")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "Show card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r6 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS ads")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("RateCastCount", 0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = virtualinvoke $r2.<java.net.Socket: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid context in screen interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = virtualinvoke $r7.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Mopub", $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "destroy card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r2.<java.net.Socket: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r7)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table ads (_id integer primary key autoincrement, app_info_id int UNIQUE ON CONFLICT REPLACE, title text not null,  transactionId text,  icon_url text not null,  cover_url text not null,  desc text not null,  rating text not null,  favors text not null,  package_name text not null,  imp_temp text not null,  click_temp text not null,  offers text not null,  category text,  rv_cache_time int not null,  rv_value text ,  create_time text ,  rv_status int not null,  rv_retry_count int not null,  click_status int not null,  offer_id text,  uuid text, extra_info text );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<java.net.Socket: void close()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid Activity context in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = virtualinvoke $r5.<java.net.Socket: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip thread started")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_post_time", $l0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Mopub", $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r7)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("select count(*) from click_time", null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip downloadFile")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS mt")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS ads")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("checkUpdate", "stop.....")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Mopub", $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, "Exception in screen interactive check, assuming interactive.", $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FBAudienceNetworkLog", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table mt (_id integer primary key autoincrement, package_name text not null UNIQUE ON CONFLICT REPLACE,  rv_value text ,  click_temp text not null,  rv_cache_time text not null  );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("showRateCount", $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FBAudienceNetworkLog", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r1, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Mopub", $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid window in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid window in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "destroy card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table ads (_id integer primary key autoincrement, app_info_id int UNIQUE ON CONFLICT REPLACE, title text not null,  transactionId text,  icon_url text not null,  cover_url text not null,  desc text not null,  rating text not null,  favors text not null,  package_name text not null,  imp_temp text not null,  click_temp text not null,  offers text not null,  category text,  rv_cache_time int not null,  rv_value text ,  create_time text ,  rv_status int not null,  rv_retry_count int not null,  click_status int not null,  offer_id text,  uuid text, extra_info text );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r6, "Failed to store crash", $r8)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceIdHash", $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("RateCastCount", 0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r7)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS mt")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<java.net.Socket: void close()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("crasheslog", 32768)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r7.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("checkUpdate", "stop.....")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table mt (_id integer primary key autoincrement, package_name text not null UNIQUE ON CONFLICT REPLACE,  rv_value text ,  click_temp text not null,  rv_cache_time text not null  );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS ads")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r33.<java.io.FileOutputStream: void write(byte[],int,int)>($r10, 0, $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, "Exception in window info check", $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("select count(*) from click_time", null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r6, "Failed to store crash", $r8)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "destroy card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid Activity context in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r7)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, "Exception in window info check", $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "Show card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r6 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = virtualinvoke $r2.<java.net.Socket: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS ads")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r7.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip thread started")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, "attempt unexpected adapter type")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid Activity context in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Mopub", $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("reporterror", $r1, null, null, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("crasheslog", 32768)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "Show card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("select count(*) from click_time", null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid window in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r6, "Failed to store crash", $r8)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r7.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r33.<java.io.FileOutputStream: void write(byte[],int,int)>($r10, 0, $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r33.<java.io.FileOutputStream: void write(byte[],int,int)>($r10, 0, $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("showRateCount", $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("checkUpdate", "stop.....")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("RateCastCount", 0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, "Exception in screen interactive check, assuming interactive.", $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS mt")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid Window info in window interactive check, assuming not obstructed by Keyguard.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip downloadFile")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("RateCastCount", 0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "destroy card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("select count(*) from click_time", null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_post_time", $l0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip thread started")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, "attempt unexpected adapter type")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, "Exception in screen interactive check, assuming interactive.", $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "destroy card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS ads")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = virtualinvoke $r7.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("checkUpdate", "stop.....")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid Activity context in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r6, "Failed to store crash", $r8)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FBAudienceNetworkLog", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS mt")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r2.<java.net.Socket: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, "Exception in window info check", $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r6 = virtualinvoke $r5.<java.net.Socket: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r6 = virtualinvoke $r5.<java.net.Socket: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("checkUpdate", "stop.....")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r7)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("showRateCount", $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid context in screen interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FunnyAd", "Show card ad.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid window in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Mopub", $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<java.net.Socket: void close()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("checkUpdate", "stop.....")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("RateCastCount", 0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid Window info in window interactive check, assuming not obstructed by Keyguard.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceIdHash", $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r2.<java.net.Socket: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table mt (_id integer primary key autoincrement, package_name text not null UNIQUE ON CONFLICT REPLACE,  rv_value text ,  click_temp text not null,  rv_cache_time text not null  );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r33.<java.io.FileOutputStream: void write(byte[],int,int)>($r10, 0, $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid context in screen interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("DROP TABLE IF EXISTS ads")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid Activity context in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, "Exception in window info check", $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("showRateCount", $i0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("crasheslog", 32768)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, "attempt unexpected adapter type")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid context in screen interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("RateCastCount", 0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r9, "Wifi is not connected yet")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r9, "Wifi is not connected yet")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, "Exception in window info check", $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("reporterror", $r1, null, null, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, "attempt unexpected adapter type")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = virtualinvoke $r5.<java.net.Socket: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("self_ads", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("exitadCode", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip thread started")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid Window info in window interactive check, assuming not obstructed by Keyguard.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("self_ads", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("exitadCode", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("create table mt (_id integer primary key autoincrement, package_name text not null UNIQUE ON CONFLICT REPLACE,  rv_value text ,  click_temp text not null,  rv_cache_time text not null  );")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_post_time", $l0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PG_UTILS", "downLoadGuideZip thread started")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, $r6)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r1, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, "attempt unexpected adapter type")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r8 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid Window info in window interactive check, assuming not obstructed by Keyguard.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, "Invalid Activity context in window interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, "Exception in screen interactive check, assuming interactive.", $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("self_ads", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r9, "Wifi is not connected yet")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_post_time", $l0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_post_time", $l0)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r11 = virtualinvoke $r7.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r10, "attempt unexpected adapter type")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = virtualinvoke $r5.<java.net.Socket: java.io.InputStream getInputStream()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("exitadCode", $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid Window info in window interactive check, assuming not obstructed by Keyguard.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r0.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r1, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("reporterror", $r1, null, null, null, null, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, "Exception in screen interactive check, assuming interactive.", $r4)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<java.io.OutputStream: void write(byte[])>($r10)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, "Invalid context in screen interactive check, assuming interactive.")
+Component=> com.cc.promote.service.DownloadService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

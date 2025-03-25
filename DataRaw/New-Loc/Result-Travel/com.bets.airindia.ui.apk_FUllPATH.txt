@@ -1,0 +1,1000 @@
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> if $r2 == null goto $r8 = virtualinvoke r0.<aero.developer.iTravel.foo.i: android.content.pm.PackageManager getPackageManager()>()
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = new aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e> = $r0
+<aero.developer.iTravel.foo.e.b: void <init>()> --> $r5 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.NotificationAlarm: void onReceive(android.content.Context,android.content.Intent)> --> specialinvoke $r29.<aero.developer.iTravel.foo.e.b: void <init>()>()
+<dummyMainClass: aero.developer.iTravel.foo.NotificationAlarm dummyMainMethod_aero_developer_iTravel_foo_NotificationAlarm(android.content.Intent)> --> virtualinvoke $r0.<aero.developer.iTravel.foo.NotificationAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null)
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.e.b: void <init>()> --> $r5 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.e.b: void <init>()> --> r0.<aero.developer.iTravel.foo.e.b: aero.developer.iTravel.foo.e.a a> = $r5
+<aero.developer.iTravel.foo.NotificationAlarm: void onReceive(android.content.Context,android.content.Intent)> --> specialinvoke $r29.<aero.developer.iTravel.foo.e.b: void <init>()>()
+<aero.developer.iTravel.foo.e.b: java.lang.String b(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.e.b
+<aero.developer.iTravel.foo.NotificationAlarm: void onReceive(android.content.Context,android.content.Intent)> --> $r7 = virtualinvoke $r29.<aero.developer.iTravel.foo.e.b: java.lang.String b(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>("FlightsNotifications", "t_notificationText", "t_flightId", $r6)
+<aero.developer.iTravel.foo.e.b: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.e.b
+<aero.developer.iTravel.foo.e.b: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r5 = r0.<aero.developer.iTravel.foo.e.b: aero.developer.iTravel.foo.e.a a>
+<aero.developer.iTravel.foo.e.b: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> if $r5 == null goto return null
+<aero.developer.iTravel.foo.e.b: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r9 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.List getAirports()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.lang.Object getFromDbAndUnSerialize(java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = new aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e> = $r0
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>($r6, null, $r4)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.List getAirports()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.lang.Object getFromDbAndUnSerialize(java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.e.a: byte[] a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: byte[] a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r8 = virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, null)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 90 goto (branch)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 92 goto (branch)
+<aero.developer.iTravel.foo.b.a: void a(java.lang.String)> --> staticinvoke <aero.developer.iTravel.foo.b.d: aero.developer.iTravel.foo.b.d a()>()
+<aero.developer.iTravel.foo.b.a: void a(int)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(java.lang.String)>($r1)
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void onCreate(android.os.Bundle)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(int)>(2131624234)
+<aero.developer.iTravel.foo.i: void j()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 != null goto $r6 = virtualinvoke $r3.<java.util.HashMap: java.lang.Object get(java.lang.Object)>($r10)
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 == null goto $z1 = 0
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap functionAvailable>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r3 = virtualinvoke $r2.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()>()
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> if $r3 == null goto return 0
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper> = $r1
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> specialinvoke $r0.<aero.developer.iTravel.foo.objects.UserProfile: void <init>()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance> = $r0
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> r0 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.MainNavigation: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper>
+<aero.developer.iTravel.foo.e.a: void a(java.util.List)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: void a(java.util.List)> --> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("Passengers", null, $r1)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> if $r2 == null goto $r8 = virtualinvoke r0.<aero.developer.iTravel.foo.i: android.content.pm.PackageManager getPackageManager()>()
+<aero.developer.iTravel.foo.utils.Serializer: byte[] serializeObject(java.lang.Object)> --> $r1 := @parameter0: java.lang.Object
+<aero.developer.iTravel.foo.utils.Serializer: byte[] serializeObject(java.lang.Object)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("serializeObject", "Object is null")
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 90 goto (branch)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 92 goto (branch)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: void <init>()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> specialinvoke $r0.<aero.developer.iTravel.foo.objects.AppConfig: void <init>()>()
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.MainNavigation: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)> --> $r5 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.objects.AppConfig: void reNewTheCorruptedData()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: void reNewTheCorruptedData()> --> $l0 = virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("ConfigCache", null, $r12)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> if $r2 == null goto $r8 = virtualinvoke r0.<aero.developer.iTravel.foo.i: android.content.pm.PackageManager getPackageManager()>()
+<aero.developer.iTravel.foo.utils.Serializer: byte[] serializeObject(java.lang.Object)> --> $r1 := @parameter0: java.lang.Object
+<aero.developer.iTravel.foo.utils.Serializer: byte[] serializeObject(java.lang.Object)> --> interfaceinvoke $r4.<java.io.ObjectOutput: void writeObject(java.lang.Object)>($r1)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.List getAirports()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.lang.Object getFromDbAndUnSerialize(java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = new aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e> = $r0
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "announcementMap", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $z2 == 0 goto $i2 = $i0
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r27 != null goto $r2 = $r34.<aero.developer.iTravel.foo.i.i: java.util.List a>
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> $r35 = new aero.developer.iTravel.foo.i.b
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r1 != null goto $r3 = $r35.<aero.developer.iTravel.foo.i.b: java.util.List a>
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "addressPattern", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $z5 == 0 goto $r43 = new aero.developer.iTravel.foo.i.m
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> $r43 = new aero.developer.iTravel.foo.i.m
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "companyDetails", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r4 == null goto $r4 = $r58
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "authorisedAPI", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "success", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $i2 <= 0 goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $i1 < 0 goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $i1 < 0 goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r15 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r15 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r16 == null goto (branch)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "nativeSpecificInfo", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "cabinClasses", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "callCenters", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "airlineOffices", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "passengerTypes", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "termsAndConditions", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "askForFFNumberWhenBooking", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "askForFFNumberWhenCheckingIn", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "askForFFNumberForNextPax", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "payPalEnabled", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r46 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r50 == null goto (branch)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "customerJourneyAirline", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "cjpShowBookingsFromDay", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "oneWorldSupported", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "enableGstRefund", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "gstUrl", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r47 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r48 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r48 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r49 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r49 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r22 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r22 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r37 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r37 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r53 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r53 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r54 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r56 == null goto $r60 = $r14
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> $r60 = $r14
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r57 == null goto virtualinvoke $r60.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String)>("ConfigCache", "t_configItem_Name", "legalText")
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String)> --> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void close()>()
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 90 goto (branch)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 92 goto (branch)
+<aero.developer.iTravel.foo.b.a: void a(java.lang.String)> --> staticinvoke <aero.developer.iTravel.foo.b.d: aero.developer.iTravel.foo.b.d a()>()
+<aero.developer.iTravel.foo.b.a: void a(int)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(java.lang.String)>($r1)
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void onCreate(android.os.Bundle)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(int)>(2131624234)
+<aero.developer.iTravel.foo.i: void j()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 != null goto $r6 = virtualinvoke $r3.<java.util.HashMap: java.lang.Object get(java.lang.Object)>($r10)
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 == null goto $z1 = 0
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap functionAvailable>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r3 = virtualinvoke $r2.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()>()
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> if $r3 == null goto return 0
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper> = $r1
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> specialinvoke $r0.<aero.developer.iTravel.foo.objects.UserProfile: void <init>()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance> = $r0
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> r0 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.MainNavigation: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper>
+<aero.developer.iTravel.foo.e.a: void a(java.util.List)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: void a(java.util.List)> --> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void close()>()
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.List getAirports()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.lang.Object getFromDbAndUnSerialize(java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = new aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e> = $r0
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void close()>()
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> if $r2 == null goto $r8 = virtualinvoke r0.<aero.developer.iTravel.foo.i: android.content.pm.PackageManager getPackageManager()>()
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = new aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e> = $r0
+<aero.developer.iTravel.foo.e.b: void <init>()> --> $r5 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.NotificationAlarm: void onReceive(android.content.Context,android.content.Intent)> --> specialinvoke $r29.<aero.developer.iTravel.foo.e.b: void <init>()>()
+<dummyMainClass: aero.developer.iTravel.foo.NotificationAlarm dummyMainMethod_aero_developer_iTravel_foo_NotificationAlarm(android.content.Intent)> --> virtualinvoke $r0.<aero.developer.iTravel.foo.NotificationAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null)
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.e.b: void <init>()> --> $r5 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.e.b: void <init>()> --> r0.<aero.developer.iTravel.foo.e.b: aero.developer.iTravel.foo.e.a a> = $r5
+<aero.developer.iTravel.foo.NotificationAlarm: void onReceive(android.content.Context,android.content.Intent)> --> specialinvoke $r29.<aero.developer.iTravel.foo.e.b: void <init>()>()
+<aero.developer.iTravel.foo.e.b: java.lang.String b(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.e.b
+<aero.developer.iTravel.foo.NotificationAlarm: void onReceive(android.content.Context,android.content.Intent)> --> $r7 = virtualinvoke $r29.<aero.developer.iTravel.foo.e.b: java.lang.String b(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>("FlightsNotifications", "t_notificationText", "t_flightId", $r6)
+<aero.developer.iTravel.foo.e.b: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.e.b
+<aero.developer.iTravel.foo.e.b: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r5 = r0.<aero.developer.iTravel.foo.e.b: aero.developer.iTravel.foo.e.a a>
+<aero.developer.iTravel.foo.e.b: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> if $r5 == null goto return null
+<aero.developer.iTravel.foo.e.b: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r13 = new java.lang.StringBuilder
+<aero.developer.iTravel.foo.e.b: java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r12 := @caughtexception
+<aero.developer.iTravel.foo.e.b: boolean a(android.database.sqlite.SQLiteDatabase)> --> $r1 := @parameter0: android.database.sqlite.SQLiteDatabase
+<aero.developer.iTravel.foo.e.b: boolean a(android.database.sqlite.SQLiteDatabase)> --> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void close()>()
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 90 goto (branch)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 92 goto (branch)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: void <init>()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> specialinvoke $r0.<aero.developer.iTravel.foo.objects.AppConfig: void <init>()>()
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.MainNavigation: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)> --> $r5 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.objects.AppConfig: void reNewTheCorruptedData()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: void reNewTheCorruptedData()> --> virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: void close()>()
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z1 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z1 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.List getAirports()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.lang.Object getFromDbAndUnSerialize(java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.e.a: byte[] a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: byte[] a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: void close()>()
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 90 goto (branch)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 92 goto (branch)
+<aero.developer.iTravel.foo.b.a: void a(java.lang.String)> --> staticinvoke <aero.developer.iTravel.foo.b.d: aero.developer.iTravel.foo.b.d a()>()
+<aero.developer.iTravel.foo.b.a: void a(int)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(java.lang.String)>($r1)
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void onCreate(android.os.Bundle)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(int)>(2131624234)
+<aero.developer.iTravel.foo.i: void j()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 != null goto $r6 = virtualinvoke $r3.<java.util.HashMap: java.lang.Object get(java.lang.Object)>($r10)
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 == null goto $z1 = 0
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap functionAvailable>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r3 = virtualinvoke $r2.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()>()
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> if $r3 == null goto return 0
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper> = $r1
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> specialinvoke $r0.<aero.developer.iTravel.foo.objects.UserProfile: void <init>()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance> = $r0
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> r0 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.MainNavigation: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTrips()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTrips()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper>
+<aero.developer.iTravel.foo.e.a: void b(java.util.List)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: void b(java.util.List)> --> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void close()>()
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.List getAirports()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.lang.Object getFromDbAndUnSerialize(java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = new aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e> = $r0
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()> --> $r0 = <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a e>
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.e.a a()>()
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "announcementMap", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $z2 == 0 goto $i2 = $i0
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r27 != null goto $r2 = $r34.<aero.developer.iTravel.foo.i.i: java.util.List a>
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> $r35 = new aero.developer.iTravel.foo.i.b
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r1 != null goto $r3 = $r35.<aero.developer.iTravel.foo.i.b: java.util.List a>
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "addressPattern", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $z5 == 0 goto $r43 = new aero.developer.iTravel.foo.i.m
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> $r43 = new aero.developer.iTravel.foo.i.m
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "companyDetails", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r4 == null goto $r4 = $r58
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "authorisedAPI", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "success", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $i2 <= 0 goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $i1 < 0 goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $i1 < 0 goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r15 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r15 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r16 == null goto (branch)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "nativeSpecificInfo", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "cabinClasses", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "callCenters", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "airlineOffices", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "passengerTypes", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "termsAndConditions", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "askForFFNumberWhenBooking", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "askForFFNumberWhenCheckingIn", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "askForFFNumberForNextPax", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "payPalEnabled", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r46 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r50 == null goto (branch)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "customerJourneyAirline", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "cjpShowBookingsFromDay", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "oneWorldSupported", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "enableGstRefund", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> virtualinvoke $r14.<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])>("ConfigCache", "t_configItem_Name", "gstUrl", "b_configItem_Value", $r20)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r47 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r48 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r48 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r49 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r49 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r22 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r22 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r37 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r37 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r53 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r53 == null goto (branch)
+<aero.developer.iTravel.foo.i.e: void c(org.json.JSONObject)> --> if $r54 == null goto (branch)
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: void a(java.lang.String,java.lang.String,java.lang.String)> --> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String,java.lang.Object[])>($r2, $r6)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> virtualinvoke $r11.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("toAirport", $r14)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 90 goto (branch)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 92 goto (branch)
+<aero.developer.iTravel.foo.b.a: void a(java.lang.String)> --> staticinvoke <aero.developer.iTravel.foo.b.d: aero.developer.iTravel.foo.b.d a()>()
+<aero.developer.iTravel.foo.b.a: void a(int)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(java.lang.String)>($r1)
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void onCreate(android.os.Bundle)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(int)>(2131624234)
+<aero.developer.iTravel.foo.i: void j()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 != null goto $r6 = virtualinvoke $r3.<java.util.HashMap: java.lang.Object get(java.lang.Object)>($r10)
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 == null goto $z1 = 0
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap functionAvailable>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r3 = virtualinvoke $r2.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()>()
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> if $r3 == null goto return 0
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper> = $r1
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> specialinvoke $r0.<aero.developer.iTravel.foo.objects.UserProfile: void <init>()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance> = $r0
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> r0 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.MainNavigation: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper>
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> if $r39 == null goto $r7 = null
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> $z0 = 1
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> if $r5 == null goto $z1 = 0
+<aero.developer.iTravel.foo.e.a: void a(int,int,java.lang.String,int)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: void a(int,int,java.lang.String,int)> --> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("Preferences", null, $r1)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.List getAirports()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.lang.Object getFromDbAndUnSerialize(java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.e.a: byte[] a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: byte[] a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $z0 = interfaceinvoke $r8.<android.database.Cursor: boolean moveToFirst()>()
+<aero.developer.iTravel.foo.e.a: byte[] a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> $r9 := @caughtexception
+<aero.developer.iTravel.foo.e.a: byte[] a(java.lang.String,java.lang.String,java.lang.String,java.lang.String)> --> virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: void close()>()
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 90 goto (branch)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 92 goto (branch)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: void <init>()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> specialinvoke $r0.<aero.developer.iTravel.foo.objects.AppConfig: void <init>()>()
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.MainNavigation: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)> --> $r5 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.objects.AppConfig: void reNewTheCorruptedData()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: void reNewTheCorruptedData()> --> virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("ConfigCache", null, $r12)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 90 goto (branch)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 92 goto (branch)
+<aero.developer.iTravel.foo.b.a: void a(java.lang.String)> --> staticinvoke <aero.developer.iTravel.foo.b.d: aero.developer.iTravel.foo.b.d a()>()
+<aero.developer.iTravel.foo.b.a: void a(int)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(java.lang.String)>($r1)
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void onCreate(android.os.Bundle)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(int)>(2131624234)
+<aero.developer.iTravel.foo.i: void j()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 != null goto $r6 = virtualinvoke $r3.<java.util.HashMap: java.lang.Object get(java.lang.Object)>($r10)
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 == null goto $z1 = 0
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap functionAvailable>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r3 = virtualinvoke $r2.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()>()
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> if $r3 == null goto return 0
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper> = $r1
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> specialinvoke $r0.<aero.developer.iTravel.foo.objects.UserProfile: void <init>()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance> = $r0
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> r0 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.MainNavigation: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper>
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> if $r39 == null goto $r7 = null
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> $z0 = 1
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> if $r5 == null goto $z1 = 0
+<aero.developer.iTravel.foo.e.a: void a(int,int,java.lang.String,int)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: void a(int,int,java.lang.String,int)> --> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void close()>()
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> virtualinvoke $r11.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("fromAirport", $r14)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 90 goto (branch)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 92 goto (branch)
+<aero.developer.iTravel.foo.b.a: void a(java.lang.String)> --> staticinvoke <aero.developer.iTravel.foo.b.d: aero.developer.iTravel.foo.b.d a()>()
+<aero.developer.iTravel.foo.b.a: void a(int)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(java.lang.String)>($r1)
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void onCreate(android.os.Bundle)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(int)>(2131624234)
+<aero.developer.iTravel.foo.i: void j()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 != null goto $r6 = virtualinvoke $r3.<java.util.HashMap: java.lang.Object get(java.lang.Object)>($r10)
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 == null goto $z1 = 0
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap functionAvailable>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r3 = virtualinvoke $r2.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()>()
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> if $r3 == null goto return 0
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper> = $r1
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> specialinvoke $r0.<aero.developer.iTravel.foo.objects.UserProfile: void <init>()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance> = $r0
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> r0 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.utils.f: android.content.Intent a(aero.developer.iTravel.foo.ParseDeepLinkActivity,java.lang.String)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.Book getBooking(java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.Book getBooking(java.lang.String)> --> $r1 = r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper>
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.objects.Book b(java.lang.String)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: aero.developer.iTravel.foo.objects.Book b(java.lang.String)> --> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT book FROM trips WHERE bookRef=?", $r3)
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 90 goto (branch)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 92 goto (branch)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: void <init>()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> specialinvoke $r0.<aero.developer.iTravel.foo.objects.AppConfig: void <init>()>()
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.MainNavigation: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)> --> $r5 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.objects.AppConfig: void reNewTheCorruptedData()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: void reNewTheCorruptedData()> --> virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: void close()>()
+--------------------------------------------------------
+
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)> --> $r1 = $r6
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> $r2 = staticinvoke <aero.developer.iTravel.foo.utils.g: android.location.Location a(android.content.Context)>($r0)
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport a(android.content.Context,java.util.List)> --> if $r2 == null goto return null
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $r14 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> if $r1 == null goto return 0
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> $z0 = staticinvoke <aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)>($r8)
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: void a(android.net.Uri)> --> if $z0 == 0 goto $i0 = lengthof $r12
+<aero.developer.iTravel.foo.ParseDeepLinkActivity: boolean a(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> entermonitor class "Laero/developer/iTravel/foo/objects/AppConfig;"
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = new aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)> --> $r1 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void a(java.lang.String,java.lang.String)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.utils.g: aero.developer.iTravel.foo.objects.Airport l(java.lang.String)>($r3)
+<aero.developer.iTravel.foo.i: void a(android.os.Bundle,int)> --> specialinvoke $r19.<aero.developer.iTravel.foo.i.e: void <init>(java.lang.String,org.json.JSONObject)>(null, null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 90 goto (branch)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 92 goto (branch)
+<aero.developer.iTravel.foo.b.a: void a(java.lang.String)> --> staticinvoke <aero.developer.iTravel.foo.b.d: aero.developer.iTravel.foo.b.d a()>()
+<aero.developer.iTravel.foo.b.a: void a(int)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(java.lang.String)>($r1)
+<aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity: void onCreate(android.os.Bundle)> --> staticinvoke <aero.developer.iTravel.foo.b.a: void a(int)>(2131624234)
+<aero.developer.iTravel.foo.i: void j()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 != null goto $r6 = virtualinvoke $r3.<java.util.HashMap: java.lang.Object get(java.lang.Object)>($r10)
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.i: void j()> --> if $r3 == null goto $z1 = 0
+<aero.developer.iTravel.foo.i: void j()> --> if $z1 == 0 goto $r5 = staticinvoke <aero.developer.iTravel.foo.fragments.profilev2.a: java.lang.String e()>()
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> if $r0 != null goto $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance> = $r0
+<aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig instance>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r2 = staticinvoke <aero.developer.iTravel.foo.objects.AppConfig: aero.developer.iTravel.foo.objects.AppConfig getInstance()>()
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> r0 := @this: aero.developer.iTravel.foo.objects.AppConfig
+<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap functionAvailable>
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> $r3 = virtualinvoke $r2.<aero.developer.iTravel.foo.objects.AppConfig: java.util.HashMap getFunctionAvailable()>()
+<aero.developer.iTravel.foo.utils.g: boolean e()> --> if $r3 == null goto return 0
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void <init>()> --> r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper> = $r1
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> specialinvoke $r0.<aero.developer.iTravel.foo.objects.UserProfile: void <init>()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance> = $r0
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTravelersToPassengers()> --> r0 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()> --> $r0 = <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile instance>
+<aero.developer.iTravel.foo.MainNavigation: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)> --> $r4 = staticinvoke <aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.objects.UserProfile getInstance()>()
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTrips()> --> r0 := @this: aero.developer.iTravel.foo.objects.UserProfile
+<aero.developer.iTravel.foo.objects.UserProfile: void migrateTrips()> --> $r1 = r0.<aero.developer.iTravel.foo.objects.UserProfile: aero.developer.iTravel.foo.e.a databaseHelper>
+<aero.developer.iTravel.foo.e.a: void b(java.util.List)> --> r0 := @this: aero.developer.iTravel.foo.e.a
+<aero.developer.iTravel.foo.e.a: void b(java.util.List)> --> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("trips", null, $r1)
+--------------------------------------------------------
+

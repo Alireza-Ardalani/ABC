@@ -1,0 +1,21 @@
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r7.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("location", $r1)
+Component=> com.localytics.android.LocationUpdateReceiver
+ComponentColor=> RED
+com.localytics.android.LocationHandler
+android.location.Location
+android.os.Bundle
+com.localytics.android.LocationManager
+Category: com.localytics.android.LocationHandler-*-com.localytics.android.LocationManager-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r7.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("location", $r1)
+Component=> com.localytics.android.LocationUpdateReceiver
+ComponentColor=> RED
+android.location.Location
+com.localytics.android.LocationHandler
+android.os.Bundle
+com.localytics.android.LocationManager
+Category: com.localytics.android.LocationHandler-*-com.localytics.android.LocationManager-*-
+-----------------------------------------------------------------
+com.evs.doctor.apk: 1100506

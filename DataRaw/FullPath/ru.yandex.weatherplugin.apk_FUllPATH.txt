@@ -1,0 +1,99 @@
+<ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)> --> if $b0 == 0 goto return 0
+<ru.yandex.weatherplugin.geoobject.GeoObjectController: void a(ru.yandex.weatherplugin.geoobject.GeoObjectController,ru.yandex.weatherplugin.location.LocationMessage)> --> $z0 = staticinvoke <ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)>($r8)
+<ru.yandex.weatherplugin.geoobject.GeoObjectController: void a(ru.yandex.weatherplugin.geoobject.GeoObjectController,ru.yandex.weatherplugin.location.LocationMessage)> --> if $z0 == 0 goto (branch)
+<ru.yandex.weatherplugin.core.weatherx.Single: void b(ru.yandex.weatherplugin.core.weatherx.SingleObserver)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.Single
+<ru.yandex.weatherplugin.core.weatherx.ObservableSingleSingle: void a(ru.yandex.weatherplugin.core.weatherx.SingleObserver)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.ObservableSingleSingle
+<ru.yandex.weatherplugin.core.weatherx.Observable: void a(ru.yandex.weatherplugin.core.weatherx.Observer)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.Observable
+<ru.yandex.weatherplugin.core.weatherx.internal.operators.observable.ObservableFromCallable: void b(ru.yandex.weatherplugin.core.weatherx.Observer)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.internal.operators.observable.ObservableFromCallable
+<ru.yandex.weatherplugin.core.weatherx.internal.observers.DeferredScalarDisposable: void a(java.lang.Object)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.internal.observers.DeferredScalarDisposable
+<ru.yandex.weatherplugin.experiment.ExperimentController$1: void a(java.lang.Object)> --> r0 := @this: ru.yandex.weatherplugin.experiment.ExperimentController$1
+<ru.yandex.weatherplugin.experiment.ExperimentController: void c()> --> r0 := @this: ru.yandex.weatherplugin.experiment.ExperimentController
+<ru.yandex.weatherplugin.core.weatherx.Completable: void a(ru.yandex.weatherplugin.core.weatherx.CompletableObserver)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.Completable
+<ru.yandex.weatherplugin.core.weatherx.internal.operators.completable.CompletableFromAction: void b(ru.yandex.weatherplugin.core.weatherx.CompletableObserver)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.internal.operators.completable.CompletableFromAction
+<ru.yandex.weatherplugin.helpers.AsyncRunner$$Lambda$0: void a()> --> r0 := @this: ru.yandex.weatherplugin.helpers.AsyncRunner$$Lambda$0
+<ru.yandex.weatherplugin.widgets.oreo.WidgetsPlanner$$Lambda$5: void run()> --> r0 := @this: ru.yandex.weatherplugin.widgets.oreo.WidgetsPlanner$$Lambda$5
+<ru.yandex.weatherplugin.core.content.dao.AbstractDao: boolean a(java.lang.Object,java.lang.String)> --> r0 := @this: ru.yandex.weatherplugin.core.content.dao.AbstractDao
+<ru.yandex.weatherplugin.core.content.dao.AbstractDao: boolean a(java.lang.Object,java.lang.String)> --> $r8 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, $r2, "widget_type=?", $r3, null)
+--------------------------------------------------------
+
+<ru.yandex.weatherplugin.core.utils.LocationUtils: boolean a(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<ru.yandex.weatherplugin.core.utils.LocationUtils: boolean a(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<ru.yandex.weatherplugin.core.utils.LocationUtils: boolean a(android.location.Location)> --> if $b0 == 0 goto return 0
+<ru.yandex.weatherplugin.barometer.BarometerController: void a(ru.yandex.weatherplugin.barometer.BarometerController,ru.yandex.weatherplugin.core.content.data.experiment.CoreExperiment)> --> $z0 = staticinvoke <ru.yandex.weatherplugin.core.utils.LocationUtils: boolean a(android.location.Location)>($r5)
+<ru.yandex.weatherplugin.barometer.BarometerController: void a(ru.yandex.weatherplugin.barometer.BarometerController,ru.yandex.weatherplugin.core.content.data.experiment.CoreExperiment)> --> if $z0 == 0 goto $z1 = 0
+<ru.yandex.weatherplugin.barometer.BarometerAlarmReceiver: void a(android.content.Context,boolean)> --> $r0 := @parameter0: android.content.Context
+<ru.yandex.weatherplugin.dagger.DaggerApplicationComponent: ru.yandex.weatherplugin.barometer.BarometerController q()> --> r0 := @this: ru.yandex.weatherplugin.dagger.DaggerApplicationComponent
+<ru.yandex.weatherplugin.config.ConfigModule_ProvideConfigFactory: java.lang.Object get()> --> r0 := @this: ru.yandex.weatherplugin.config.ConfigModule_ProvideConfigFactory
+<ru.yandex.weatherplugin.config.ConfigModule: ru.yandex.weatherplugin.config.Config a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<ru.yandex.weatherplugin.config.Config: void <init>(android.content.Context)> --> r0 := @this: ru.yandex.weatherplugin.config.Config
+<ru.yandex.weatherplugin.core.config.CoreConfig: void a(ru.yandex.weatherplugin.core.utils.WindUnit)> --> r0 := @this: ru.yandex.weatherplugin.core.config.CoreConfig
+<ru.yandex.weatherplugin.core.config.CoreConfig: void a(java.lang.String,java.lang.String)> --> r0 := @this: ru.yandex.weatherplugin.core.config.CoreConfig
+<ru.yandex.weatherplugin.core.config.CoreConfig: void a(java.lang.String,java.lang.String)> --> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+
+<ru.yandex.searchlib.search.LocationUtils: android.location.Location a(java.lang.String,java.lang.String,long)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+<ru.yandex.searchlib.search.LocationUtils: android.location.Location a(java.lang.String,java.lang.String,long)> --> if $r5 != null goto $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+<ru.yandex.searchlib.util.Log: void b(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<ru.yandex.searchlib.util.Log: void b(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)> --> if $b0 == 0 goto return 0
+<ru.yandex.weatherplugin.geoobject.GeoObjectController: void a(ru.yandex.weatherplugin.geoobject.GeoObjectController,ru.yandex.weatherplugin.location.LocationMessage)> --> $z0 = staticinvoke <ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)>($r8)
+<ru.yandex.weatherplugin.geoobject.GeoObjectController: void a(ru.yandex.weatherplugin.geoobject.GeoObjectController,ru.yandex.weatherplugin.location.LocationMessage)> --> if $z0 == 0 goto (branch)
+<ru.yandex.weatherplugin.core.weatherx.Single: void b(ru.yandex.weatherplugin.core.weatherx.SingleObserver)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.Single
+<ru.yandex.weatherplugin.core.weatherx.ObservableSingleSingle: void a(ru.yandex.weatherplugin.core.weatherx.SingleObserver)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.ObservableSingleSingle
+<ru.yandex.weatherplugin.core.weatherx.Observable: void a(ru.yandex.weatherplugin.core.weatherx.Observer)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.Observable
+<ru.yandex.weatherplugin.core.weatherx.internal.operators.observable.ObservableFromCallable: void b(ru.yandex.weatherplugin.core.weatherx.Observer)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.internal.operators.observable.ObservableFromCallable
+<ru.yandex.weatherplugin.core.weatherx.internal.observers.DeferredScalarDisposable: void a(java.lang.Object)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.internal.observers.DeferredScalarDisposable
+<ru.yandex.weatherplugin.experiment.ExperimentController$1: void a(java.lang.Object)> --> r0 := @this: ru.yandex.weatherplugin.experiment.ExperimentController$1
+<ru.yandex.weatherplugin.experiment.ExperimentController: void c()> --> r0 := @this: ru.yandex.weatherplugin.experiment.ExperimentController
+<ru.yandex.weatherplugin.core.weatherx.Completable: void a(ru.yandex.weatherplugin.core.weatherx.CompletableObserver)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.Completable
+<ru.yandex.weatherplugin.core.weatherx.internal.operators.completable.CompletableFromAction: void b(ru.yandex.weatherplugin.core.weatherx.CompletableObserver)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.internal.operators.completable.CompletableFromAction
+<ru.yandex.weatherplugin.core.weatherx.internal.operators.completable.CompletablePeek$CompletableObserverImplementation: void a()> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.internal.operators.completable.CompletablePeek$CompletableObserverImplementation
+<ru.yandex.weatherplugin.experiment.ExperimentLocalRepository$$Lambda$2: void a()> --> r0 := @this: ru.yandex.weatherplugin.experiment.ExperimentLocalRepository$$Lambda$2
+<ru.yandex.weatherplugin.config.Config: void e()> --> r0 := @this: ru.yandex.weatherplugin.config.Config
+<ru.yandex.weatherplugin.config.Config: void e()> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("experiment_time_update", $l0)
+--------------------------------------------------------
+
+<ru.yandex.weatherplugin.barometer.BarometerController: boolean a(java.util.List,android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<ru.yandex.weatherplugin.barometer.BarometerController: boolean a(java.util.List,android.location.Location)> --> $b0 = $d0 cmpg $d1
+<ru.yandex.weatherplugin.barometer.BarometerController: boolean a(java.util.List,android.location.Location)> --> $i1 = (int) $b0
+<ru.yandex.weatherplugin.barometer.BarometerController: boolean a(java.util.List,android.location.Location)> --> if $i1 > 0 goto $z0 = interfaceinvoke $r2.<java.util.Iterator: boolean hasNext()>()
+<ru.yandex.weatherplugin.barometer.BarometerController: void a(ru.yandex.weatherplugin.barometer.BarometerController,ru.yandex.weatherplugin.core.content.data.experiment.CoreExperiment)> --> $z0 = staticinvoke <ru.yandex.weatherplugin.barometer.BarometerController: boolean a(java.util.List,android.location.Location)>($r8, $r5)
+<ru.yandex.weatherplugin.barometer.BarometerController: void a(ru.yandex.weatherplugin.barometer.BarometerController,ru.yandex.weatherplugin.core.content.data.experiment.CoreExperiment)> --> if $z0 == 0 goto $z1 = 0
+<ru.yandex.weatherplugin.barometer.BarometerAlarmReceiver: void a(android.content.Context,boolean)> --> $r0 := @parameter0: android.content.Context
+<ru.yandex.weatherplugin.dagger.DaggerApplicationComponent: ru.yandex.weatherplugin.barometer.BarometerController q()> --> r0 := @this: ru.yandex.weatherplugin.dagger.DaggerApplicationComponent
+<ru.yandex.weatherplugin.config.ConfigModule_ProvideConfigFactory: java.lang.Object get()> --> r0 := @this: ru.yandex.weatherplugin.config.ConfigModule_ProvideConfigFactory
+<ru.yandex.weatherplugin.config.ConfigModule: ru.yandex.weatherplugin.config.Config a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<ru.yandex.weatherplugin.config.Config: void <init>(android.content.Context)> --> r0 := @this: ru.yandex.weatherplugin.config.Config
+<ru.yandex.weatherplugin.config.Config: void <init>(android.content.Context)> --> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("is_default_values_initialized", 1)
+--------------------------------------------------------
+
+<ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)> --> if $b0 == 0 goto return 0
+<ru.yandex.weatherplugin.geoobject.GeoObjectController: void a(ru.yandex.weatherplugin.geoobject.GeoObjectController,ru.yandex.weatherplugin.location.LocationMessage)> --> $z0 = staticinvoke <ru.yandex.weatherplugin.location.LocationUtils: boolean a(android.location.Location)>($r8)
+<ru.yandex.weatherplugin.geoobject.GeoObjectController: void a(ru.yandex.weatherplugin.geoobject.GeoObjectController,ru.yandex.weatherplugin.location.LocationMessage)> --> if $z0 == 0 goto (branch)
+<ru.yandex.weatherplugin.core.weatherx.Single: void b(ru.yandex.weatherplugin.core.weatherx.SingleObserver)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.Single
+<ru.yandex.weatherplugin.core.weatherx.internal.operators.single.SingleFromCallable: void a(ru.yandex.weatherplugin.core.weatherx.SingleObserver)> --> r0 := @this: ru.yandex.weatherplugin.core.weatherx.internal.operators.single.SingleFromCallable
+<ru.yandex.weatherplugin.favorites.FavoritesController$$Lambda$2: java.lang.Object call()> --> r0 := @this: ru.yandex.weatherplugin.favorites.FavoritesController$$Lambda$2
+<ru.yandex.weatherplugin.core.content.dao.AbstractDao: java.util.List e()> --> r0 := @this: ru.yandex.weatherplugin.core.content.dao.AbstractDao
+<ru.yandex.weatherplugin.core.content.dao.AbstractDao: java.util.List a(java.lang.String,java.lang.String[],java.lang.String)> --> r0 := @this: ru.yandex.weatherplugin.core.content.dao.AbstractDao
+<ru.yandex.weatherplugin.core.content.dao.AbstractDao: java.util.List a(java.lang.String,java.lang.String[],java.lang.String)> --> $r7 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r6, $r4, $r1, $r2)
+--------------------------------------------------------
+
+<ru.yandex.searchlib.informers.InformerDataUpdateJobService$InformerUpdateHandler$1: void onLocationChanged(android.location.Location)> --> specialinvoke r0.<ru.yandex.searchlib.search.LocationUtils$EmptyLocationListener: void onLocationChanged(android.location.Location)>($r1)
+<ru.yandex.searchlib.informers.InformerDataUpdateJobService$InformerUpdateHandler$1: void onLocationChanged(android.location.Location)> --> $r2 = r0.<ru.yandex.searchlib.informers.InformerDataUpdateJobService$InformerUpdateHandler$1: ru.yandex.searchlib.informers.InformerDataUpdateJobService$InformerUpdateHandler a>
+<ru.yandex.searchlib.informers.InformerDataUpdateJobService$InformerUpdateHandler: void a()> --> r0 := @this: ru.yandex.searchlib.informers.InformerDataUpdateJobService$InformerUpdateHandler
+<ru.yandex.searchlib.informers.InformerDataUpdateJobService$InformerUpdateHandler: void a()> --> $r1 = r0.<ru.yandex.searchlib.informers.InformerDataUpdateJobService$InformerUpdateHandler: java.util.List a>
+<ru.yandex.searchlib.informers.InformerDataUpdateJobService: void a(java.util.List,java.util.List,android.app.job.JobParameters)> --> r0 := @this: ru.yandex.searchlib.informers.InformerDataUpdateJobService
+<ru.yandex.searchlib.informers.InformerDataUpdater: void a(android.content.Context,java.util.List,java.util.List)> --> r0 := @this: ru.yandex.searchlib.informers.InformerDataUpdater
+<ru.yandex.searchlib.informers.InformerDataUpdater: void a(android.content.Context,java.util.List,java.util.List)> --> if $r2 == null goto staticinvoke <ru.yandex.searchlib.util.Log: void b(java.lang.String,java.lang.String)>("[SL:InformerDataUpdater]", "No main informers to update is specified")
+<ru.yandex.searchlib.util.Log: void b(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<ru.yandex.searchlib.util.Log: void b(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+

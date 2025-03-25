@@ -1,0 +1,30 @@
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("loc", $r2)
+Component=> o.ﻪ
+ComponentColor=> RED
+android.os.Bundle
+o.ﺰ
+o.ﻪ
+android.location.LocationManager
+Category: o.ﺰ-*-o.ﻪ-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("TwilightManager", "Failed to get last known location", $r2)
+Component=> o.ﺌ
+ComponentColor=> RED
+o.ᐦ
+android.util.Log
+android.location.LocationManager
+Category: o.ᐦ-*-
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("loc", $r2)
+Component=> o.ﻪ
+ComponentColor=> RED
+android.os.Bundle
+o.ﺰ
+o.ﻪ
+android.location.LocationManager
+Category: o.ﺰ-*-o.ﻪ-*-
+-----------------------------------------------------------------
+com.ctt.celltrak2.apk: 1102096

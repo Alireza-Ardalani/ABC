@@ -1,0 +1,1385 @@
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("regid", $r0)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.content.SharedPreferences$Editor
+com.tapcrowd.app.utils.PushUtil$2
+android.location.LocationManager
+com.tapcrowd.app.utils.PushUtil
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r0, null)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.database.DB
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.modules.launcher.TileLauncherFragment$4
+org.json.JSONArray
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.modules.notifications.NotificationsFragment
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-org.json.JSONArray-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r17 = virtualinvoke r16.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.images.FastImageLoader
+java.net.URLConnection
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.images.FastImageLoader$1
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.images.FastImageLoader
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r5)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+com.tapcrowd.app.Splash$1
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_LNG", $r3)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.localization.Localization
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.localization.Localization
+com.tapcrowd.app.utils.User
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+com.tapcrowd.app.utils.localization.Localization
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r9 = virtualinvoke $r16.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r2)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+okhttp3.Request$Builder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.Internet
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-okhttp3.Request$Builder-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("api.mixpanel.com")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.mixpanel.android.util.HttpService$1
+android.location.LocationManager
+java.net.InetAddress
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.mixpanel.android.util.HttpService$1-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>(r8, $r10)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.database.DB
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+com.tapcrowd.app.Splash$1
+com.tapcrowd.app.utils.database.DB
+android.location.LocationManager
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, $r2)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.localization.LocalizationDatabase
+com.tapcrowd.app.utils.localization.Localization
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.localization.Localization
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.localization.Localization
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_RequestCallback", "RequestCallback.start()")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+com.tapcrowd.app.utils.RequestBuilder$RequestCallback
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SESSIONID", $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+android.util.Log
+com.tapcrowd.app.Splash$4
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BUNDLE_ID", $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.tcanalytics.DB
+com.tapcrowd.app.Splash$4
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.DB-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke r3.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.images.FastImageLoader
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.images.FastImageLoader$1
+android.location.LocationManager
+java.net.URL
+java.lang.Thread
+com.tapcrowd.app.utils.images.FastImageLoader
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r0, null)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+java.util.Timer
+com.tapcrowd.tcanalytics.DB
+com.tapcrowd.tcanalytics.BulkTimerClass
+com.tapcrowd.app.Splash$4
+com.tapcrowd.app.Splash$1
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.tcanalytics.BulkTimerClass$Task
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.DB-*-com.tapcrowd.tcanalytics.BulkTimerClass-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.BulkTimerClass$Task-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r15 = virtualinvoke r3.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.images.FastImageLoader
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.images.FastImageLoader$1
+java.net.URL
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.images.FastImageLoader
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_PARSE", $r13)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_RequestCallback", $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.RequestBuilder$RequestCallback
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r17 = virtualinvoke r16.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.images.FastImageLoader
+java.net.URLConnection
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.images.FastImageLoader$1
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.images.FastImageLoader
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r5)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.mixpanel.android.util.HttpService$1
+com.mixpanel.android.util.MPLog
+android.util.Log
+android.location.LocationManager
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.mixpanel.android.util.HttpService$1-*-com.mixpanel.android.util.MPLog-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r5)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+com.tapcrowd.app.Splash$1
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r0, null)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.GeoFenceResetReceiver
+ComponentColor=> RED
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.DB
+com.tapcrowd.tcanalytics.utils.beacon.TCGeoFences
+android.location.LocationManager
+Category: com.tapcrowd.tcanalytics.DB-*-com.tapcrowd.tcanalytics.utils.beacon.TCGeoFences-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("regid", $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.tcanalytics.TcaGCMIntentService
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.tcanalytics.TcaGCMIntentService
+android.content.SharedPreferences$Editor
+com.tapcrowd.app.utils.PushUtil$2
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TcaGCMIntentService-*-com.tapcrowd.tcanalytics.TcaGCMIntentService-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke r4.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("MODULE_TYPE_ID", "65")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+android.os.BaseBundle
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.modules.notifications.NotificationsFragment
+com.tapcrowd.app.modules.launcher.LauncherDrawer$1
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_USERMODULE", "Saved settings after incorrect login")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>(r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+java.net.InetAddress
+okhttp3.HttpUrl
+okhttp3.HttpUrl$Builder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+okhttp3.HttpUrl$Builder
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.Internet
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+okhttp3.HttpUrl$Builder
+com.tapcrowd.app.utils.PushUtil
+Category: okhttp3.HttpUrl-*-okhttp3.HttpUrl$Builder-*-okhttp3.HttpUrl$Builder-*-com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-okhttp3.HttpUrl$Builder-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("request", "function=? AND parameters=?", $r2)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+java.util.Timer
+com.tapcrowd.tcanalytics.DB
+com.tapcrowd.tcanalytics.BulkTimerClass
+com.tapcrowd.app.Splash$4
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+com.tapcrowd.tcanalytics.BulkTimerClass$Task
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.DB-*-com.tapcrowd.tcanalytics.BulkTimerClass-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.BulkTimerClass$Task-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>($r0, $r1, $r2, null)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.Parser
+com.tapcrowd.app.utils.database.DB
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.Parser
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>(r5, $r9)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.database.DB
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r15 = virtualinvoke r3.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.images.FastImageLoader
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.images.FastImageLoader$1
+java.net.URL
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.images.FastImageLoader
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>(r7, $r9)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.PushUtil
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.database.DB
+com.tapcrowd.app.utils.database.DB
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PushUtil$2
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_PARSE", r11)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_LNG", $r3)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.localization.Localization
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.localization.Localization
+com.tapcrowd.app.utils.User
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+com.tapcrowd.app.utils.localization.Localization
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_USERMODULE", "Saved settings after incorrect login")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("regid", $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.tcanalytics.TcaGCMIntentService
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.tcanalytics.TcaGCMIntentService
+android.content.SharedPreferences$Editor
+com.tapcrowd.app.utils.PushUtil$2
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TcaGCMIntentService-*-com.tapcrowd.tcanalytics.TcaGCMIntentService-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("decide.mixpanel.com")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.mixpanel.android.util.HttpService$1
+android.location.LocationManager
+java.net.InetAddress
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.mixpanel.android.util.HttpService$1-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>(r5, $r9)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.database.DB
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_PARSE", r11)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+org.json.JSONObject
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-org.json.JSONObject-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>(r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+java.net.InetAddress
+okhttp3.HttpUrl
+okhttp3.HttpUrl$Builder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+okhttp3.HttpUrl$Builder
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.Internet
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+okhttp3.HttpUrl$Builder
+com.tapcrowd.app.utils.PushUtil
+Category: okhttp3.HttpUrl-*-okhttp3.HttpUrl$Builder-*-okhttp3.HttpUrl$Builder-*-com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-okhttp3.HttpUrl$Builder-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>(r7, $r9)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.PushUtil
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.database.DB
+com.tapcrowd.app.utils.database.DB
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PushUtil$2
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SEARCH", r6)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+android.util.Log
+com.tapcrowd.app.utils.PersonalProgramSync
+com.tapcrowd.app.utils.PersonalProgramSync$3
+android.location.LocationManager
+com.tapcrowd.app.utils.PersonalProgramSync
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SEARCH", r6)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+android.util.Log
+com.tapcrowd.app.utils.PersonalProgramSync
+com.tapcrowd.app.utils.PersonalProgramSync$3
+android.location.LocationManager
+com.tapcrowd.app.utils.PersonalProgramSync
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+com.tapcrowd.app.Splash$1
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_RequestCallback", "RequestCallback.start()")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+com.tapcrowd.app.utils.RequestBuilder$RequestCallback
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.mixpanel.android.util.HttpService$1
+com.mixpanel.android.util.MPLog
+android.util.Log
+android.location.LocationManager
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.mixpanel.android.util.HttpService$1-*-com.mixpanel.android.util.MPLog-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_PARSE", r11)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+org.json.JSONObject
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-org.json.JSONObject-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, $r2)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.localization.LocalizationDatabase
+com.tapcrowd.app.utils.localization.Localization
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.localization.Localization
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.localization.Localization
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("api.mixpanel.com")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.mixpanel.android.util.HttpService$1
+android.location.LocationManager
+java.net.InetAddress
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.mixpanel.android.util.HttpService$1-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r9 = virtualinvoke $r16.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r2)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+okhttp3.Request$Builder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.Internet
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-okhttp3.Request$Builder-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>("decide.mixpanel.com")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.mixpanel.android.util.HttpService$1
+android.location.LocationManager
+java.net.InetAddress
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.mixpanel.android.util.HttpService$1-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BUNDLE_ID", $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.tcanalytics.DB
+com.tapcrowd.app.Splash$4
+android.content.SharedPreferences$Editor
+com.tapcrowd.app.Splash$1
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.DB-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r17 = virtualinvoke r16.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.images.FastImageLoader
+java.net.URLConnection
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.images.FastImageLoader$1
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.images.FastImageLoader
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_PARSE", r11)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $l0 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>($r0, null, $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.Parser
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.database.DB
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.app.utils.Parser
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SESSIONID", $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+android.util.Log
+com.tapcrowd.app.Splash$4
+com.tapcrowd.app.Splash$1
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>($r0, $r1, $r2, null)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.Parser
+com.tapcrowd.app.utils.database.DB
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.Parser
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r0, null)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+java.util.Timer
+com.tapcrowd.tcanalytics.DB
+com.tapcrowd.tcanalytics.BulkTimerClass
+com.tapcrowd.app.Splash$4
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+com.tapcrowd.tcanalytics.BulkTimerClass$Task
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.DB-*-com.tapcrowd.tcanalytics.BulkTimerClass-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.BulkTimerClass$Task-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r0, null)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.database.DB
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.modules.launcher.TileLauncherFragment$4
+org.json.JSONObject
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.modules.notifications.NotificationsFragment
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-org.json.JSONObject-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r5)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r5)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+com.tapcrowd.app.Splash$1
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r5)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.Splash$4
+java.net.URLEncoder
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TCAnalytics-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("request", "function=? AND parameters=?", $r2)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+java.util.Timer
+com.tapcrowd.tcanalytics.DB
+com.tapcrowd.tcanalytics.BulkTimerClass
+com.tapcrowd.app.Splash$4
+com.tapcrowd.app.Splash$1
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.tcanalytics.BulkTimerClass$Task
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.DB-*-com.tapcrowd.tcanalytics.BulkTimerClass-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.BulkTimerClass$Task-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_PARSE", $r13)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke r4.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("MODULE_TYPE_ID", "65")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.modules.launcher.TileLauncherFragment$4
+android.os.BaseBundle
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.modules.notifications.NotificationsFragment
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r17 = virtualinvoke r16.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.images.FastImageLoader
+java.net.URLConnection
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.images.FastImageLoader$1
+android.location.LocationManager
+java.lang.Thread
+com.tapcrowd.app.utils.images.FastImageLoader
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("regid", $r0)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.content.SharedPreferences$Editor
+com.tapcrowd.app.utils.PushUtil$2
+android.location.LocationManager
+com.tapcrowd.app.utils.PushUtil
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r0, null, null)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PersonalProgramSync
+com.tapcrowd.app.utils.PersonalProgramSync$3
+com.tapcrowd.app.utils.database.DB
+android.location.LocationManager
+com.tapcrowd.app.utils.PersonalProgramSync
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r0, null, null)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PersonalProgramSync
+com.tapcrowd.app.utils.PersonalProgramSync$3
+com.tapcrowd.app.utils.database.DB
+android.location.LocationManager
+com.tapcrowd.app.utils.PersonalProgramSync
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r7 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r7, "UTF-8")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.images.FastImageLoader
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.images.FastImageLoader$1
+android.location.LocationManager
+java.net.URLEncoder
+java.lang.Thread
+com.tapcrowd.app.utils.images.FastImageLoader
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_RequestCallback", $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.RequestBuilder$RequestCallback
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("synced", $z0)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.tcanalytics.TcaGCMIntentService
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PushUtil$2
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TcaGCMIntentService
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TcaGCMIntentService-*-com.tapcrowd.tcanalytics.TcaGCMIntentService-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("request", null, null)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+java.util.Timer
+com.tapcrowd.tcanalytics.BulkTimerClass
+com.tapcrowd.app.Splash$4
+com.tapcrowd.tcanalytics.DB
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.app.Splash$2
+com.tapcrowd.tcanalytics.BulkTimerClass$Task
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.BulkTimerClass-*-com.tapcrowd.tcanalytics.DB-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.BulkTimerClass$Task-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>(r8, $r10)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.TCActivity$2
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.database.DB
+com.tapcrowd.app.utils.database.DB
+android.location.LocationManager
+com.tapcrowd.app.utils.User
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke r3.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.images.FastImageLoader
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.images.FastImageLoader$1
+android.location.LocationManager
+java.net.URL
+java.lang.Thread
+com.tapcrowd.app.utils.images.FastImageLoader
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r7, "UTF-8")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.images.FastImageLoader
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.images.FastImageLoader$1
+android.location.LocationManager
+java.net.URLEncoder
+java.lang.Thread
+com.tapcrowd.app.utils.images.FastImageLoader
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $l0 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>($r0, null, $r1)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.Parser
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.database.DB
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.app.utils.Parser
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("request", null, null)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+android.database.sqlite.SQLiteDatabase
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+java.util.Timer
+com.tapcrowd.tcanalytics.BulkTimerClass
+com.tapcrowd.app.Splash$4
+com.tapcrowd.app.Splash$1
+com.tapcrowd.tcanalytics.DB
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.tcanalytics.TCAnalytics
+com.tapcrowd.tcanalytics.BulkTimerClass$Task
+java.lang.Thread
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.BulkTimerClass-*-com.tapcrowd.tcanalytics.DB-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.TCAnalytics-*-com.tapcrowd.tcanalytics.BulkTimerClass$Task-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("synced", $z0)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.tcanalytics.TcaGCMIntentService
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PushUtil$2
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.tapcrowd.tcanalytics.TcaGCMIntentService
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-com.tapcrowd.tcanalytics.TcaGCMIntentService-*-com.tapcrowd.tcanalytics.TcaGCMIntentService-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = virtualinvoke $r15.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r10)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+okhttp3.OkHttpClient
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.Internet
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: okhttp3.OkHttpClient-*-com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r15.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r10)
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+okhttp3.OkHttpClient
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.Internet
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: okhttp3.OkHttpClient-*-com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r12 = interfaceinvoke $r11.<okhttp3.Call: okhttp3.Response execute()>()
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+okhttp3.Call
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.Internet
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-okhttp3.Call-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r12 = interfaceinvoke $r11.<okhttp3.Call: okhttp3.Response execute()>()
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+okhttp3.Call
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.Internet
+com.tapcrowd.app.utils.RequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+java.lang.Thread
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-okhttp3.Call-*-
+-----------------------------------------------------------------
+Source=> r11 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_RequestCallback", "RequestCallback.end()")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.RequestBuilder$RequestCallback
+com.tapcrowd.app.utils.PushUtil
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke r9.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("FRD_RequestCallback", "RequestCallback.end()")
+Component=> com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+ComponentColor=> RED
+com.tapcrowd.app.utils.Event$1
+com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver
+com.tapcrowd.app.utils.PushUtil
+android.util.Log
+android.location.LocationManager
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+com.tapcrowd.app.utils.RequestBuilder
+java.lang.Thread
+com.tapcrowd.app.utils.RequestBuilder$RequestCallback
+com.tapcrowd.app.utils.PushUtil
+com.tapcrowd.app.utils.PagedRequestBuilder
+com.tapcrowd.app.utils.RequestBuilder$RequestAsyncTask
+Category: com.tapcrowd.tcanalytics.utils.geofence.receiver.FenceReceiver-*-
+-----------------------------------------------------------------
+com.tapcrowd.eaueventapp5270.apk: 1076563

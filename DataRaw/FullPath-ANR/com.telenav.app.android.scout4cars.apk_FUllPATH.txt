@@ -1,0 +1,6 @@
+<com.telenav.core.location.TnLocationManager: void onLocationChanged(android.location.Location)> --> interfaceinvoke r13.<android.location.LocationListener: void onLocationChanged(android.location.Location)>($r1)
+<com.telenav.core.location.TnLocationManager: void saveLastKnownLocation(android.location.Location)> --> r0 := @this: com.telenav.core.location.TnLocationManager
+<com.telenav.core.location.TnLocationManager: void saveLastKnownLocation(android.location.Location)> --> if $r1 != null goto $r2 = new java.lang.StringBuilder
+<com.telenav.core.location.TnLocationManager: void saveLastKnownLocation(android.location.Location)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("last_location", $r3)
+--------------------------------------------------------
+

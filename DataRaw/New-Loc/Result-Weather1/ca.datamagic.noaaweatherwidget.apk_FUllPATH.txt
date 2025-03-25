@@ -1,0 +1,1212 @@
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r10 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r14 = (ca.datamagic.noaa.widget.ObservationFragment) $r2
+<ca.datamagic.noaa.widget.ObservationFragment: void setSunriseSunset(ca.datamagic.noaa.dto.SunriseSunsetDTO)> --> r0 := @this: ca.datamagic.noaa.widget.ObservationFragment
+<ca.datamagic.noaa.widget.ObservationFragment: void setSunriseSunset(ca.datamagic.noaa.dto.SunriseSunsetDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("sunriseSunset", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: ca.datamagic.noaa.widget.RadarFragment newInstance(ca.datamagic.noaa.dto.StringListDTO,ca.datamagic.noaa.dto.StringListDTO)> --> $r3 := @parameter0: ca.datamagic.noaa.dto.StringListDTO
+<ca.datamagic.noaa.widget.RadarFragment: ca.datamagic.noaa.widget.RadarFragment newInstance(ca.datamagic.noaa.dto.StringListDTO,ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("backgroundImages", $r3)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r7 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = (ca.datamagic.noaa.widget.SkewTFragment) $r2
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("skewTStation", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r12 = virtualinvoke $r11.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("skewTStation", $r0)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r7 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = (ca.datamagic.noaa.widget.SkewTFragment) $r2
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("skewTStation", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r6 = (ca.datamagic.noaa.widget.RadarFragment) $r2
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("radarImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r10 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r7 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = (ca.datamagic.noaa.widget.SkewTFragment) $r2
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("skewTStation", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r10 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.ObservationFragment: ca.datamagic.noaa.widget.ObservationFragment newInstance(ca.datamagic.noaa.dto.ObservationDTO,ca.datamagic.noaa.dto.SunriseSunsetDTO)> --> $r3 := @parameter0: ca.datamagic.noaa.dto.ObservationDTO
+<ca.datamagic.noaa.widget.ObservationFragment: ca.datamagic.noaa.widget.ObservationFragment newInstance(ca.datamagic.noaa.dto.ObservationDTO,ca.datamagic.noaa.dto.SunriseSunsetDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("observation", $r3)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r6 = (ca.datamagic.noaa.widget.RadarFragment) $r2
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("backgroundImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r6 = (ca.datamagic.noaa.widget.RadarFragment) $r2
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("backgroundImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r10 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r7 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = (ca.datamagic.noaa.widget.SkewTFragment) $r2
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("skewTStation", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r10 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r7 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = (ca.datamagic.noaa.widget.SkewTFragment) $r2
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("skewTStation", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r2)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r6 = new java.net.URL
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r19 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r6 = new java.net.URL
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r19 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r4 = new java.lang.StringBuilder
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r23 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r6 = (ca.datamagic.noaa.widget.RadarFragment) $r2
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("radarImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.RadarFragment: ca.datamagic.noaa.widget.RadarFragment newInstance(ca.datamagic.noaa.dto.StringListDTO,ca.datamagic.noaa.dto.StringListDTO)> --> $r3 := @parameter0: ca.datamagic.noaa.dto.StringListDTO
+<ca.datamagic.noaa.widget.RadarFragment: ca.datamagic.noaa.widget.RadarFragment newInstance(ca.datamagic.noaa.dto.StringListDTO,ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("backgroundImages", $r3)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r10 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r6 = (ca.datamagic.noaa.widget.RadarFragment) $r2
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("radarImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r6 = new java.net.URL
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r19 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r10 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r6 = (ca.datamagic.noaa.widget.RadarFragment) $r2
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("radarImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r12 = virtualinvoke $r11.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r2 = virtualinvoke $r6.<java.net.URL: java.lang.String getPath()>()
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r19 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("discussion", $r0)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r2)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r10 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r6 = (ca.datamagic.noaa.widget.RadarFragment) $r2
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("backgroundImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.ForecastFragment: ca.datamagic.noaa.widget.ForecastFragment newInstance(ca.datamagic.noaa.dto.ForecastsDTO)> --> $r0 := @parameter0: ca.datamagic.noaa.dto.ForecastsDTO
+<ca.datamagic.noaa.widget.ForecastFragment: ca.datamagic.noaa.widget.ForecastFragment newInstance(ca.datamagic.noaa.dto.ForecastsDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("forecasts", $r0)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r2 = virtualinvoke $r6.<java.net.URL: java.lang.String getPath()>()
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r19 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r6 = new java.net.URL
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r19 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r4 = new java.lang.StringBuilder
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r23 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r6 = (ca.datamagic.noaa.widget.RadarFragment) $r2
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("radarImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r11 = (ca.datamagic.noaa.widget.ForecastFragment) $r2
+<ca.datamagic.noaa.widget.ForecastFragment: void setForecasts(ca.datamagic.noaa.dto.ForecastsDTO)> --> r0 := @this: ca.datamagic.noaa.widget.ForecastFragment
+<ca.datamagic.noaa.widget.ForecastFragment: void setForecasts(ca.datamagic.noaa.dto.ForecastsDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("forecasts", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = (ca.datamagic.noaa.widget.DiscussionFragment) $r2
+<ca.datamagic.noaa.widget.DiscussionFragment: void setDiscussion(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.DiscussionFragment
+<ca.datamagic.noaa.widget.DiscussionFragment: void setDiscussion(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("discussion", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.ObservationFragment: void setObservation(ca.datamagic.noaa.dto.ObservationDTO)> --> r0 := @this: ca.datamagic.noaa.widget.ObservationFragment
+<ca.datamagic.noaa.widget.ObservationFragment: void setObservation(ca.datamagic.noaa.dto.ObservationDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("observation", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r12 = virtualinvoke $r11.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r12 = virtualinvoke $r11.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r6 = (ca.datamagic.noaa.widget.RadarFragment) $r2
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("backgroundImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void connect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r7 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getSkewTStation()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = (ca.datamagic.noaa.widget.SkewTFragment) $r2
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> if $r3 == null goto (branch)
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> if $r3 != null goto (branch)
+<ca.datamagic.noaa.widget.SkewTFragment: void setSkewTStation(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("skewTStation", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r5 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getRadarImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r4 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.StringListDTO getBackgroundImages()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r14 = (ca.datamagic.noaa.widget.ObservationFragment) $r2
+<ca.datamagic.noaa.widget.ObservationFragment: void setSunriseSunset(ca.datamagic.noaa.dto.SunriseSunsetDTO)> --> r0 := @this: ca.datamagic.noaa.widget.ObservationFragment
+<ca.datamagic.noaa.widget.ObservationFragment: void setSunriseSunset(ca.datamagic.noaa.dto.SunriseSunsetDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("sunriseSunset", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r10 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getDiscussion()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r7 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: java.lang.String getDiscussion()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = (ca.datamagic.noaa.widget.DiscussionFragment) $r2
+<ca.datamagic.noaa.widget.DiscussionFragment: void setDiscussion(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.DiscussionFragment
+<ca.datamagic.noaa.widget.DiscussionFragment: void setDiscussion(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("discussion", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r10 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r11 = (ca.datamagic.noaa.widget.ForecastFragment) $r2
+<ca.datamagic.noaa.widget.ForecastFragment: void setForecasts(ca.datamagic.noaa.dto.ForecastsDTO)> --> r0 := @this: ca.datamagic.noaa.widget.ForecastFragment
+<ca.datamagic.noaa.widget.ForecastFragment: void setForecasts(ca.datamagic.noaa.dto.ForecastsDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("forecasts", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setRadarImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("radarImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("skewTStation", $r0)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.ForecastFragment: ca.datamagic.noaa.widget.ForecastFragment newInstance(ca.datamagic.noaa.dto.ForecastsDTO)> --> $r0 := @parameter0: ca.datamagic.noaa.dto.ForecastsDTO
+<ca.datamagic.noaa.widget.ForecastFragment: ca.datamagic.noaa.widget.ForecastFragment newInstance(ca.datamagic.noaa.dto.ForecastsDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("forecasts", $r0)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)> --> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("discussion", $r0)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r10 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.ForecastsDTO getForecasts()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r9 = staticinvoke <ca.datamagic.noaa.widget.DiscussionFragment: ca.datamagic.noaa.widget.DiscussionFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r9
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()> --> return r1
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r13 = virtualinvoke r0.<ca.datamagic.noaa.widget.MainPageAdapter: ca.datamagic.noaa.dto.SunriseSunsetDTO getSunriseSunset()>()
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r6 = (ca.datamagic.noaa.widget.RadarFragment) $r2
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("backgroundImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void setBackgroundImages(ca.datamagic.noaa.dto.StringListDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("backgroundImages", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r10 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r8 = staticinvoke <ca.datamagic.noaa.widget.SkewTFragment: ca.datamagic.noaa.widget.SkewTFragment newInstance(java.lang.String)>($r7)
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3[$i0] = $r8
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r3 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r1 = r0.<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment[] _fragments>
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> $r2 = $r1[$i0]
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> if $r2 != null goto (branch)
+<ca.datamagic.noaa.widget.ObservationFragment: void setObservation(ca.datamagic.noaa.dto.ObservationDTO)> --> r0 := @this: ca.datamagic.noaa.widget.ObservationFragment
+<ca.datamagic.noaa.widget.ObservationFragment: void setObservation(ca.datamagic.noaa.dto.ObservationDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("observation", $r1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r6 = new java.net.URL
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r19 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r3 = <ca.datamagic.noaa.dao.ImageDAO: java.util.logging.Logger _logger>
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r23 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.MainPageAdapter: android.support.v4.app.Fragment getItem(int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.ObservationFragment: ca.datamagic.noaa.widget.ObservationFragment newInstance(ca.datamagic.noaa.dto.ObservationDTO,ca.datamagic.noaa.dto.SunriseSunsetDTO)> --> $r3 := @parameter0: ca.datamagic.noaa.dto.ObservationDTO
+<ca.datamagic.noaa.widget.ObservationFragment: ca.datamagic.noaa.widget.ObservationFragment newInstance(ca.datamagic.noaa.dto.ObservationDTO,ca.datamagic.noaa.dto.SunriseSunsetDTO)> --> virtualinvoke $r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("observation", $r3)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.RadarFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.widget.RadarFragment: void initializeBackgroundBitmaps(ca.datamagic.noaa.dto.StringListDTO)> --> r0 := @this: ca.datamagic.noaa.widget.RadarFragment
+<ca.datamagic.noaa.async.RadarBitmapsTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.async.RadarBitmapsTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.RadarBitmapsTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+--------------------------------------------------------
+
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<ca.datamagic.noaa.widget.MainActivity: void myLocation()> --> $r4 := @caughtexception
+<ca.datamagic.noaa.widget.MainActivity: void actionRefresh()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainActivity: void resetView()> --> r0 := @this: ca.datamagic.noaa.widget.MainActivity
+<ca.datamagic.noaa.widget.MainPageAdapter: void refreshPage(android.support.v4.app.FragmentManager,int)> --> r0 := @this: ca.datamagic.noaa.widget.MainPageAdapter
+<ca.datamagic.noaa.widget.SkewTFragment: void render()> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.widget.SkewTFragment: void initializeSkewTBitmap(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.widget.SkewTFragment
+<ca.datamagic.noaa.async.SkewTTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.async.SkewTTask: ca.datamagic.noaa.async.AsyncTaskResult doInBackground(java.lang.Void[])> --> r0 := @this: ca.datamagic.noaa.async.SkewTTask
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> r0 := @this: ca.datamagic.noaa.dao.ImageDAO
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r6 = new java.net.URL
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r19 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r3 = <ca.datamagic.noaa.dao.ImageDAO: java.util.logging.Logger _logger>
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> $r23 := @caughtexception
+<ca.datamagic.noaa.dao.ImageDAO: android.graphics.Bitmap load(java.lang.String)> --> virtualinvoke $r11.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+

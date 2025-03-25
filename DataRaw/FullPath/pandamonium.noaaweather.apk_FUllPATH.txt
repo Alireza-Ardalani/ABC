@@ -1,0 +1,698 @@
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("mapZoom", 7.0F)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f: okhttp3.Request b(double,double)> --> $d1 := @parameter0: double
+<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)> --> r0 := @this: okhttp3.Request$Builder
+<okhttp3.HttpUrl: okhttp3.HttpUrl get(java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<okhttp3.HttpUrl$Builder: okhttp3.HttpUrl$Builder parse(okhttp3.HttpUrl,java.lang.String)> --> r0 := @this: okhttp3.HttpUrl$Builder
+<okhttp3.HttpUrl$Builder: java.lang.String canonicalizeHost(java.lang.String,int,int)> --> $r0 := @parameter0: java.lang.String
+<okhttp3.internal.Util: java.lang.String canonicalizeHost(java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<okhttp3.internal.Util: java.net.InetAddress decodeIpv6(java.lang.String,int,int)> --> $r1 := @parameter0: java.lang.String
+<okhttp3.internal.Util: java.net.InetAddress decodeIpv6(java.lang.String,int,int)> --> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>($r2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.util.f$1$2: void run()> --> r0 := @this: pandamonium.noaaweather.util.f$1$2
+<pandamonium.noaaweather.NoaaWeatherActivity$5: void a(pandamonium.noaaweather.util.f$a)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$5
+<pandamonium.noaaweather.e: pandamonium.noaaweather.e a(long)> --> $l0 := @parameter0: long
+<pandamonium.noaaweather.e: pandamonium.noaaweather.e a(long)> --> virtualinvoke $r1.<android.os.Bundle: void putLong(java.lang.String,long)>("id", $l0)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f: okhttp3.Request b(double,double)> --> $d1 := @parameter0: double
+<pandamonium.noaaweather.util.f: okhttp3.Request b(double,double)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r4, $r3)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.util.f$1$2: void run()> --> r0 := @this: pandamonium.noaaweather.util.f$1$2
+<pandamonium.noaaweather.NoaaWeatherActivity$5: void a(pandamonium.noaaweather.util.f$a)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$5
+<pandamonium.noaaweather.e: pandamonium.noaaweather.e a(java.lang.String,double,double,boolean)> --> $r2 := @parameter0: java.lang.String
+<pandamonium.noaaweather.e: pandamonium.noaaweather.e a(java.lang.String,double,double,boolean)> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> interfaceinvoke $r5.<okhttp3.Call: void enqueue(okhttp3.Callback)>($r2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f: okhttp3.Request b(double,double)> --> $d1 := @parameter0: double
+<pandamonium.noaaweather.util.f: okhttp3.Request b(double,double)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r4, $r3)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r2.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>(r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onCreate(android.os.Bundle)> --> r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q> = $r2
+<pandamonium.noaaweather.util.d: okhttp3.Call a(android.content.Context,pandamonium.noaaweather.util.d$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.d$1: void <init>(android.content.Context,pandamonium.noaaweather.util.d$b)> --> r0 := @this: pandamonium.noaaweather.util.d$1
+<pandamonium.noaaweather.util.d$1: void <init>(android.content.Context,pandamonium.noaaweather.util.d$b)> --> r0.<pandamonium.noaaweather.util.d$1: pandamonium.noaaweather.util.d$b b> = $r2
+<pandamonium.noaaweather.util.d: okhttp3.Call a(android.content.Context,pandamonium.noaaweather.util.d$b)> --> specialinvoke $r7.<pandamonium.noaaweather.util.d$1: void <init>(android.content.Context,pandamonium.noaaweather.util.d$b)>($r0, $r1)
+<pandamonium.noaaweather.util.d: okhttp3.Call a(android.content.Context,pandamonium.noaaweather.util.d$b)> --> interfaceinvoke $r6.<okhttp3.Call: void enqueue(okhttp3.Callback)>($r7)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.NoaaWeatherActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r2.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>(r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onCreate(android.os.Bundle)> --> r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q> = $r2
+<pandamonium.noaaweather.util.d: okhttp3.Call a(android.content.Context,pandamonium.noaaweather.util.d$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.d$1: void <init>(android.content.Context,pandamonium.noaaweather.util.d$b)> --> r0 := @this: pandamonium.noaaweather.util.d$1
+<pandamonium.noaaweather.util.d$1: void <init>(android.content.Context,pandamonium.noaaweather.util.d$b)> --> r0.<pandamonium.noaaweather.util.d$1: pandamonium.noaaweather.util.d$b b> = $r2
+<pandamonium.noaaweather.util.d: okhttp3.Call a(android.content.Context,pandamonium.noaaweather.util.d$b)> --> specialinvoke $r7.<pandamonium.noaaweather.util.d$1: void <init>(android.content.Context,pandamonium.noaaweather.util.d$b)>($r0, $r1)
+<pandamonium.noaaweather.util.d: okhttp3.Call a(android.content.Context,pandamonium.noaaweather.util.d$b)> --> interfaceinvoke $r6.<okhttp3.Call: void enqueue(okhttp3.Callback)>($r7)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.util.f$1$2: void run()> --> r0 := @this: pandamonium.noaaweather.util.f$1$2
+<pandamonium.noaaweather.NoaaWeatherActivity$5: void a(pandamonium.noaaweather.util.f$a)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$5
+<pandamonium.noaaweather.f: pandamonium.noaaweather.f a(long)> --> $l0 := @parameter0: long
+<pandamonium.noaaweather.f: pandamonium.noaaweather.f a(long)> --> virtualinvoke $r1.<android.os.Bundle: void putLong(java.lang.String,long)>("id", $l0)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.NoaaWeatherActivity$2: void run()> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$2
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int,java.lang.String)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int,java.lang.String)> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("imagerySource", $i0)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f: okhttp3.Request b(double,double)> --> $d1 := @parameter0: double
+<pandamonium.noaaweather.util.f: okhttp3.Request b(double,double)> --> $r5 = virtualinvoke $r5.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r3)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f: okhttp3.Request b(double,double)> --> $d1 := @parameter0: double
+<pandamonium.noaaweather.util.f: okhttp3.Request b(double,double)> --> $r5 = virtualinvoke $r5.<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)>($r3)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.util.f$1$2: void run()> --> r0 := @this: pandamonium.noaaweather.util.f$1$2
+<pandamonium.noaaweather.NoaaWeatherActivity$5: void a(pandamonium.noaaweather.util.f$a)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$5
+<pandamonium.noaaweather.f: pandamonium.noaaweather.f a(long)> --> $l0 := @parameter0: long
+<pandamonium.noaaweather.f: pandamonium.noaaweather.f a(long)> --> virtualinvoke $r1.<android.os.Bundle: void putLong(java.lang.String,long)>("id", $l0)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("mapLatBits", $l2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.NoaaWeatherActivity$2: void run()> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$2
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int,java.lang.String)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int,java.lang.String)> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("imagerySource", $i0)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f: okhttp3.Request b(double,double)> --> $d1 := @parameter0: double
+<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)> --> r0 := @this: okhttp3.Request$Builder
+<okhttp3.HttpUrl: okhttp3.HttpUrl get(java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<okhttp3.HttpUrl$Builder: okhttp3.HttpUrl$Builder parse(okhttp3.HttpUrl,java.lang.String)> --> r0 := @this: okhttp3.HttpUrl$Builder
+<okhttp3.HttpUrl$Builder: java.lang.String canonicalizeHost(java.lang.String,int,int)> --> $r0 := @parameter0: java.lang.String
+<okhttp3.internal.Util: java.lang.String canonicalizeHost(java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<okhttp3.internal.Util: java.net.InetAddress decodeIpv6(java.lang.String,int,int)> --> $r1 := @parameter0: java.lang.String
+<okhttp3.internal.Util: java.net.InetAddress decodeIpv6(java.lang.String,int,int)> --> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>($r2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.NoaaWeatherActivity$2: void run()> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$2
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int,java.lang.String)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.i: void a(double,double,int)> --> r0 := @this: pandamonium.noaaweather.i
+<pandamonium.noaaweather.i: void a(double,double,int)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("imagerySource", $i0)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("mapLonBits", $l2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> interfaceinvoke $r5.<okhttp3.Call: void enqueue(okhttp3.Callback)>($r2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.NoaaWeatherActivity$2: void run()> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$2
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int,java.lang.String)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.i: pandamonium.noaaweather.i b(java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<pandamonium.noaaweather.i: pandamonium.noaaweather.i b(java.lang.String)> --> virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("query_string", $r1)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.NoaaWeatherActivity$2: void run()> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$2
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int,java.lang.String)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.i: pandamonium.noaaweather.i b(java.lang.String)> --> $r1 := @parameter0: java.lang.String
+<pandamonium.noaaweather.i: pandamonium.noaaweather.i b(java.lang.String)> --> virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("query_string", $r1)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.util.f$1$2: void run()> --> r0 := @this: pandamonium.noaaweather.util.f$1$2
+<pandamonium.noaaweather.NoaaWeatherActivity$5: void a(pandamonium.noaaweather.util.f$a)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$5
+<pandamonium.noaaweather.e: pandamonium.noaaweather.e a(java.lang.String,double,double,boolean)> --> $r2 := @parameter0: java.lang.String
+<pandamonium.noaaweather.e: pandamonium.noaaweather.e a(java.lang.String,double,double,boolean)> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("name", $r2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("mapLonBits", $l2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.NoaaWeatherActivity$2: void run()> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$2
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(double,double,int,java.lang.String)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.i: void a(double,double,int)> --> r0 := @this: pandamonium.noaaweather.i
+<pandamonium.noaaweather.i: void a(double,double,int)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("imagerySource", $i0)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r5 = virtualinvoke $r3.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r4)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<pandamonium.noaaweather.util.f$1$2: void run()> --> r0 := @this: pandamonium.noaaweather.util.f$1$2
+<pandamonium.noaaweather.NoaaWeatherActivity$5: void a(pandamonium.noaaweather.util.f$a)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity$5
+<pandamonium.noaaweather.e: pandamonium.noaaweather.e a(long)> --> $l0 := @parameter0: long
+<pandamonium.noaaweather.e: pandamonium.noaaweather.e a(long)> --> virtualinvoke $r1.<android.os.Bundle: void putLong(java.lang.String,long)>("id", $l0)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("mapZoom", 7.0F)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("mapLatBits", $l2)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r5 = virtualinvoke $r3.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r4)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+--------------------------------------------------------
+
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.location.Location a> = $r5
+<pandamonium.noaaweather.util.j: void <init>(android.content.Context)> --> r0.<pandamonium.noaaweather.util.j: android.content.Context d> = $r1
+<dummyMainClass: pandamonium.noaaweather.NoaaWeatherActivity dummyMainMethod_pandamonium_noaaweather_NoaaWeatherActivity(android.content.Intent)> --> specialinvoke $r4.<pandamonium.noaaweather.util.j: void <init>(android.content.Context)>($r0)
+<pandamonium.noaaweather.NoaaWeatherActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> return
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r2 = r0.<pandamonium.noaaweather.NoaaWeatherActivity: pandamonium.noaaweather.util.j q>
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r0 := @this: pandamonium.noaaweather.util.j
+<pandamonium.noaaweather.util.j: android.location.Location b()> --> r1 = r0.<pandamonium.noaaweather.util.j: android.location.Location a>
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> $r1 = virtualinvoke $r2.<pandamonium.noaaweather.util.j: android.location.Location b()>()
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long)> --> if $r1 == null goto $i2 = staticinvoke <android.support.v4.a.b: int a(android.content.Context,java.lang.String)>(r0, "android.permission.ACCESS_FINE_LOCATION")
+<pandamonium.noaaweather.NoaaWeatherActivity: void a(long,java.lang.String,double,double,boolean,boolean)> --> r0 := @this: pandamonium.noaaweather.NoaaWeatherActivity
+<pandamonium.noaaweather.util.f: okhttp3.Call a(android.content.Context,double,double,pandamonium.noaaweather.util.f$b)> --> $r0 := @parameter0: android.content.Context
+<pandamonium.noaaweather.util.f$1: void onFailure(okhttp3.Call,java.io.IOException)> --> r0 := @this: pandamonium.noaaweather.util.f$1
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<pandamonium.noaaweather.shared.a.a: void a(java.lang.String,java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r1)
+--------------------------------------------------------
+

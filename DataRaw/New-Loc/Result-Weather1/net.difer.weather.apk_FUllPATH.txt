@@ -1,0 +1,85 @@
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $d1 := @parameter0: double
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $b0 = -90.0 cmpg $d1
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $i1 = (int) $b0
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> if $i1 > 0 goto return 0
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)>($d0, $d1)
+<com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)>($r1)
+<com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)> --> if $z0 != 0 goto $r2 = virtualinvoke $r0.<java.util.ArrayList: java.util.Iterator iterator()>()
+<com.tutelatechnologies.sdk.framework.TUz1: boolean bw(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)>($r3, 0, null)
+<com.tutelatechnologies.sdk.framework.TUD: void F(boolean)> --> $z1 = staticinvoke <com.tutelatechnologies.sdk.framework.TUz1: boolean bw(android.content.Context)>($r0)
+<com.tutelatechnologies.sdk.framework.TUD: void F(boolean)> --> if $z1 != 0 goto $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+<com.tutelatechnologies.sdk.framework.TUD: void l(long)> --> $l0 := @parameter0: long
+<com.tutelatechnologies.sdk.framework.TUD: java.lang.String i(android.content.Context,long)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.sdk.framework.TUxq: int d(android.database.sqlite.SQLiteDatabase)> --> $r0 := @parameter0: android.database.sqlite.SQLiteDatabase
+<com.tutelatechnologies.sdk.framework.TUxq: int d(android.database.sqlite.SQLiteDatabase)> --> $r2 = virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT name FROM sqlite_master WHERE type=\'table\'", null)
+--------------------------------------------------------
+
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $d1 := @parameter0: double
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $b0 = -90.0 cmpg $d1
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $i1 = (int) $b0
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> if $i1 > 0 goto return 0
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)>($d0, $d1)
+<com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)>($r1)
+<com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)> --> if $z0 != 0 goto $r2 = virtualinvoke $r0.<java.util.ArrayList: java.util.Iterator iterator()>()
+<com.tutelatechnologies.sdk.framework.TUz1: boolean a(android.content.Context,double,double)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)>($r4, 0, $r0)
+<com.tutelatechnologies.sdk.framework.TUD: void a(long,boolean,boolean,com.tutelatechnologies.sdk.framework.TUN,boolean,int,android.os.Bundle)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUz1: boolean a(android.content.Context,double,double)>($r5, $d0, $d1)
+<com.tutelatechnologies.sdk.framework.TUD: void a(long,boolean,boolean,com.tutelatechnologies.sdk.framework.TUN,boolean,int,android.os.Bundle)> --> if $z0 == 0 goto $r5 = staticinvoke <com.tutelatechnologies.sdk.framework.TUo: android.content.Context aw()>()
+<com.tutelatechnologies.sdk.framework.TUH: boolean a(android.content.Context,long)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.sdk.framework.TUp: boolean a(android.content.Context,long)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.sdk.framework.TUp: boolean a(android.content.Context,java.lang.String,long)> --> $r1 := @parameter0: android.content.Context
+<com.tutelatechnologies.sdk.framework.TUp: boolean a(android.content.Context,java.lang.String,long)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l0)
+--------------------------------------------------------
+
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $d1 := @parameter0: double
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $b0 = -90.0 cmpg $d1
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $i1 = (int) $b0
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> if $i1 > 0 goto return 0
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)>($d0, $d1)
+<com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)>($r1)
+<com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)> --> if $z0 != 0 goto $r2 = virtualinvoke $r0.<java.util.ArrayList: java.util.Iterator iterator()>()
+<com.tutelatechnologies.sdk.framework.TUz1: boolean bw(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)>($r3, 0, null)
+<com.tutelatechnologies.sdk.framework.TUD: void F(boolean)> --> $z1 = staticinvoke <com.tutelatechnologies.sdk.framework.TUz1: boolean bw(android.content.Context)>($r0)
+<com.tutelatechnologies.sdk.framework.TUD: void F(boolean)> --> if $z1 != 0 goto $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+<com.tutelatechnologies.sdk.framework.TUD: void l(long)> --> $l0 := @parameter0: long
+<com.tutelatechnologies.sdk.framework.TUD: java.lang.String i(android.content.Context,long)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.sdk.framework.TUp: boolean d(android.content.Context,java.lang.String)> --> $r1 := @parameter0: android.content.Context
+<com.tutelatechnologies.sdk.framework.TUp: boolean a(android.content.Context,java.lang.String,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.sdk.framework.TUp: boolean a(android.content.Context,java.lang.String,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("DEVICE_ID_PREFERENCE", $r2)
+--------------------------------------------------------
+
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $d1 := @parameter0: double
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $b0 = -90.0 cmpg $d1
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $i1 = (int) $b0
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> if $i1 > 0 goto return 0
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)>($d0, $d1)
+<com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)>($r1)
+<com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)> --> if $z0 != 0 goto $r2 = virtualinvoke $r0.<java.util.ArrayList: java.util.Iterator iterator()>()
+<com.tutelatechnologies.sdk.framework.TUz1: boolean bw(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)>($r3, 0, null)
+<com.tutelatechnologies.sdk.framework.TUD: void F(boolean)> --> $z1 = staticinvoke <com.tutelatechnologies.sdk.framework.TUz1: boolean bw(android.content.Context)>($r0)
+<com.tutelatechnologies.sdk.framework.TUD: void F(boolean)> --> if $z1 != 0 goto $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+<com.tutelatechnologies.sdk.framework.TUc: void p()> --> $r0 = <com.tutelatechnologies.sdk.framework.TUc: java.lang.String K>
+<com.tutelatechnologies.sdk.framework.TUn: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.sdk.framework.TUxq: int e(android.database.sqlite.SQLiteDatabase,java.lang.String)> --> $r1 := @parameter0: android.database.sqlite.SQLiteDatabase
+<com.tutelatechnologies.sdk.framework.TUxq: int e(android.database.sqlite.SQLiteDatabase,java.lang.String)> --> $r5 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, null)
+--------------------------------------------------------
+
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $d1 := @parameter0: double
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $b0 = -90.0 cmpg $d1
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> $i1 = (int) $b0
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)> --> if $i1 > 0 goto return 0
+<com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUNq: boolean a(double,double)>($d0, $d1)
+<com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUNq: boolean a(android.location.Location)>($r1)
+<com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)> --> if $z0 != 0 goto $r2 = virtualinvoke $r0.<java.util.ArrayList: java.util.Iterator iterator()>()
+<com.tutelatechnologies.sdk.framework.TUz1: boolean bw(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.sdk.framework.TUz1: boolean a(java.util.ArrayList,boolean,android.location.Location)>($r3, 0, null)
+<com.tutelatechnologies.sdk.framework.TUD: void F(boolean)> --> $z1 = staticinvoke <com.tutelatechnologies.sdk.framework.TUz1: boolean bw(android.content.Context)>($r0)
+<com.tutelatechnologies.sdk.framework.TUD: void F(boolean)> --> if $z1 != 0 goto $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+<com.tutelatechnologies.sdk.framework.TUc: void p()> --> $r0 = <com.tutelatechnologies.sdk.framework.TUc: java.lang.String K>
+<com.tutelatechnologies.sdk.framework.TUxq: boolean a(android.database.sqlite.SQLiteDatabase,java.lang.String)> --> $r0 := @parameter0: android.database.sqlite.SQLiteDatabase
+<com.tutelatechnologies.sdk.framework.TUxq: boolean a(android.database.sqlite.SQLiteDatabase,java.lang.String)> --> $i0 = virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>($r1, "1", null)
+--------------------------------------------------------
+

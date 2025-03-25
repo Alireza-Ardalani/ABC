@@ -1,0 +1,5 @@
+<kf: android.location.Location a(java.lang.String)> --> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+<kf: android.location.Location a(java.lang.String)> --> $r4 := @caughtexception
+<kf: android.location.Location a(java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("TwilightManager", "Failed to get last known location", $r4)
+--------------------------------------------------------
+

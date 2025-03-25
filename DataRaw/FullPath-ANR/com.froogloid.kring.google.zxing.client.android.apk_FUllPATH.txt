@@ -1,0 +1,98 @@
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r9 := @caughtexception
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DataBerriesNatLocation", "catch Exception in DataBerriesNativeLocationReceiver\'s OnReceive")
+--------------------------------------------------------
+
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.content.SharedPreferences$Editor,android.location.Location)> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.content.SharedPreferences$Editor,android.location.Location)> --> $f1 = (float) $d0
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.content.SharedPreferences$Editor,android.location.Location)> --> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_lon", $f1)
+--------------------------------------------------------
+
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $b1 = $d2 cmpl $d1
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> if $b1 != 0 goto return 1
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.content.SharedPreferences$Editor,android.location.Location)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.content.SharedPreferences$Editor,android.location.Location)> --> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_provider", $r3)
+--------------------------------------------------------
+
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $b1 = $d2 cmpl $d1
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> if $b1 != 0 goto return 1
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_city", $r6)
+--------------------------------------------------------
+
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $d2 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $b1 = $d2 cmpl $d0
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> if $b1 != 0 goto return 1
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_zip", $r4)
+--------------------------------------------------------
+
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $b1 = $d2 cmpl $d1
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> if $b1 != 0 goto return 1
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_name", $r3)
+--------------------------------------------------------
+
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $d2 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $b1 = $d2 cmpl $d0
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> if $b1 != 0 goto return 1
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_state", $r3)
+--------------------------------------------------------
+
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $b1 = $d2 cmpl $d1
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> if $b1 != 0 goto return 1
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_state", $r3)
+--------------------------------------------------------
+
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r9 := @caughtexception
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DataBerriesNatLocation", "catch Exception in DataBerriesNativeLocationReceiver\'s OnReceive")
+--------------------------------------------------------
+
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $d2 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $b1 = $d2 cmpl $d0
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> if $b1 != 0 goto return 1
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_name", $r3)
+--------------------------------------------------------
+
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $d2 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $b1 = $d2 cmpl $d0
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> if $b1 != 0 goto return 1
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_city", $r6)
+--------------------------------------------------------
+
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $d2 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $b1 = $d2 cmpl $d0
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> if $b1 != 0 goto return 1
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.content.SharedPreferences$Editor,android.location.Location)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.content.SharedPreferences$Editor,android.location.Location)> --> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_provider", $r3)
+--------------------------------------------------------
+
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $d2 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> $b1 = $d2 cmpl $d1
+<com.keyring.location.GeocoderService: boolean reverseGeocodeCoordinates(double,double)> --> if $b1 != 0 goto return 1
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.location.Address,android.location.Location,java.lang.String)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> r0 := @this: com.keyring.location.LocationPreferenceStore
+<com.keyring.location.LocationPreferenceStore: void putAddress(android.content.SharedPreferences$Editor,android.location.Address)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("location_zip", $r4)
+--------------------------------------------------------
+
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.content.SharedPreferences$Editor,android.location.Location)> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.content.SharedPreferences$Editor,android.location.Location)> --> $f0 = (float) $d0
+<com.keyring.location.LocationPreferenceStore: void putLocation(android.content.SharedPreferences$Editor,android.location.Location)> --> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_lat", $f0)
+--------------------------------------------------------
+

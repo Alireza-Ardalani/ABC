@@ -1,0 +1,18 @@
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("TwilightManager", "Failed to get last known location", $r4)
+Component=> com.payu.magicretry.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+Component=> com.betaout.sdk.push.LandingPageActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+Component=> com.betaout.sdk.push.LandingPageActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

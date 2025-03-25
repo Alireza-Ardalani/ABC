@@ -1,0 +1,24 @@
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void startGPS()> --> $r7 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void updateLocation(android.location.Location)> --> r0 := @this: com.relevantmobile.smoothieking.util.GetLatLongFromGPS
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void updateLocation(android.location.Location)> --> if $r1 == null goto staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Sorry", "LOC not found")
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void updateLocation(android.location.Location)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Lat  &  Lon", $r3)
+--------------------------------------------------------
+
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void startGPS()> --> $r7 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void updateLocation(android.location.Location)> --> r0 := @this: com.relevantmobile.smoothieking.util.GetLatLongFromGPS
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void updateLocation(android.location.Location)> --> if $r1 == null goto staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Sorry", "LOC not found")
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void updateLocation(android.location.Location)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Sorry", "LOC not found")
+--------------------------------------------------------
+
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void startGPS()> --> $r6 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void updateLocation(android.location.Location)> --> r0 := @this: com.relevantmobile.smoothieking.util.GetLatLongFromGPS
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void updateLocation(android.location.Location)> --> if $r1 == null goto staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Sorry", "LOC not found")
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS: void updateLocation(android.location.Location)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Lat  &  Lon", $r3)
+--------------------------------------------------------
+
+<dummyMainClass: com.appsmyth.mobile.smoothieking.MainActivity dummyMainMethod_com_appsmyth_mobile_smoothieking_MainActivity(android.content.Intent)> --> virtualinvoke $r3.<com.relevantmobile.smoothieking.util.GetLatLongFromGPS$MyLocationListener: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.appsmyth.mobile.smoothieking.MainActivity dummyMainMethod_com_appsmyth_mobile_smoothieking_MainActivity(android.content.Intent)> --> if $i0 == 6 goto $r4 = new com.appsmyth.mobile.smoothieking.MainActivity$1
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS$MyLocationListener: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> r0 := @this: com.relevantmobile.smoothieking.util.GetLatLongFromGPS$MyLocationListener
+<com.relevantmobile.smoothieking.util.GetLatLongFromGPS$MyLocationListener: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("StatusChange", $r1)
+--------------------------------------------------------
+

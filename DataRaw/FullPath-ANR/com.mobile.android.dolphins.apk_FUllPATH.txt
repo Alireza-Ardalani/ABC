@@ -1,0 +1,7 @@
+<com.emcards.emkit.main.EmkitGPSTracker: android.location.Location getLocation()> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.emcards.emkit.main.EmkitGPSTracker: android.location.Location getLocation()> --> r0.<com.emcards.emkit.main.EmkitGPSTracker: android.location.Location mLocation> = $r5
+<com.emcards.emkit.main.EmkitGPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.emcards.emkit.main.EmkitGPSTracker: android.location.Location mLocation>
+<com.emcards.emkit.main.EmkitGPSTracker: android.location.Location getLocation()> --> if $r5 != null goto $r5 = r0.<com.emcards.emkit.main.EmkitGPSTracker: android.location.Location mLocation>
+<com.emcards.emkit.main.EmkitGPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+

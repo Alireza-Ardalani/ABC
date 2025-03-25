@@ -1,0 +1,156 @@
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("pref_key_is_match_started", 1)
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("rc_analyze_events", null, null)
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r3, $r1)
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("permission_request_first_start", 0)
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Main", $r2)
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r4, "Warning: Callback issues while activity not available.")
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Main", "**** onMatchPermissionsCheck SettingAuthority ****")
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r1 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>("application/json; charset=utf-8")
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("message", null, "content_type=?", $r1, null, null, null)
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("PhotoViewAttacher", "ImageView no longer exists. You should not use this PhotoViewAttacher any more.")
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r5 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("rc_analyze_events", null, null, null, null, null, null)
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("PhotoViewAttacher", 3)
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PhotoViewAttacher", "Cancel Fling")
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("pref_key_aaid", $r1)
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Main", $r4)
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Main", "**** onMatchPermissionsCheck checkPermissions ****")
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.rcplatform.livechat.ui.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

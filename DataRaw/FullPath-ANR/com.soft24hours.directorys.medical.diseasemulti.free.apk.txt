@@ -1,0 +1,4807 @@
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+java.net.HttpURLConnection
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("pref_tv", $r6)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+android.content.SharedPreferences$Editor
+cl
+ao
+bt
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+de$b$2
+ec
+android.os.Handler
+cx
+Category: de$b-*-cl-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-bt-*-ar$1-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("QIFinishedListener", $r4)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+adx$1
+cz
+af$1
+cl
+com.appbrain.a.av
+android.util.Log
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+adv$2$1
+android.location.Location
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: cl-*-adx$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-adv$2$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r5, $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+com.appbrain.c.j$1$1
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+cl
+ao
+android.location.LocationManager
+android.location.Location
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+de$b$2
+ec
+cx
+Category: de$b-*-cl-*-com.appbrain.c.j$1$1-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r14 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+java.net.URLConnection
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r14.<java.io.OutputStream: void write(byte[])>($r13)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+java.io.OutputStream
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_app_alert_discard", $l3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+cb
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+ca$1
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-cb-*-com.appbrain.AdOptions-*-ca$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r6)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.b.c
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+cx
+com.appbrain.b.c
+android.util.Log
+Category: com.appbrain.b.c-*-com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-com.appbrain.b.c-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>("ConnectivityMonitor", "Failed to determine connectivity status when connectivity changed", $r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+mc
+cl
+android.net.ConnectivityManager
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+mf
+mf
+android.location.LocationManager
+android.location.Location
+fq$1
+com.appbrain.AdOptions
+mf
+ec
+android.os.Handler
+cx
+android.util.Log
+Category: mc-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-mf-*-mf-*-fq$1-*-com.appbrain.AdOptions-*-mf-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", "The AppBrain SDK requires changes to your ProGuard config as detailed in the documentation!")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ck$2
+cz
+af$1
+cl
+ch
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+android.util.Log
+Category: cl-*-ck$2-*-cz-*-af$1-*-cl-*-ch-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+android.content.SharedPreferences$Editor
+cl
+ao
+com.appbrain.b.i
+com.appbrain.b.i
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+cx
+com.appbrain.b.c
+cq$6
+Category: com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.b.i-*-com.appbrain.b.i-*-com.appbrain.AdOptions-*-ec-*-cx-*-com.appbrain.b.c-*-cq$6-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("screen", "offerwall")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.location.LocationManager
+com.appbrain.AdOptions
+android.os.BaseBundle
+ec
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+java.net.URLConnection
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+ahb$6$1
+adv
+cl
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+adv
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+de$b$1
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+de$b
+android.os.Handler
+adv
+android.util.Log
+af$1
+com.appbrain.a.av
+adx
+cz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+adv
+Category: de$b-*-com.appbrain.a.u-*-ahb$6$1-*-adv-*-cl-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-adv-*-de$b$1-*-de$b-*-adv-*-af$1-*-com.appbrain.a.av-*-adx-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-adv-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r3.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("com.appbrain.ping", 0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+android.content.Context
+bq
+cl
+cz
+bq
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+bq$3
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: bq-*-cl-*-cz-*-bq-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-bq$3-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+ahb$6$1
+cl
+android.util.Log
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+de$b$1
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+de$b
+android.os.Handler
+adv
+af$1
+com.appbrain.a.av
+adx
+cz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+adv
+ec
+cx
+adv
+Category: de$b-*-com.appbrain.a.u-*-ahb$6$1-*-cl-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-de$b$1-*-de$b-*-adv-*-af$1-*-com.appbrain.a.av-*-adx-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-adv-*-ec-*-cx-*-adv-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r8.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("label", $r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity$1
+com.medicalgroupsoft.medical.app.utils.analytics.TrackerUtils
+cl
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+android.os.BaseBundle
+ec
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Interstitial loading error while showing")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cq
+com.appbrain.a.aw
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+com.appbrain.a.aw$5
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+com.appbrain.a.aw
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+cq
+cx
+com.appbrain.b.c
+cq$6
+android.util.Log
+Category: cq-*-com.appbrain.a.aw-*-com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-com.appbrain.a.aw$5-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-com.appbrain.a.aw-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cq-*-cx-*-com.appbrain.b.c-*-cq$6-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+android.os.BaseBundle
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$a$1
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+cx
+bh
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$a$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-bh-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+ahb$6$1
+cl
+android.util.Log
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+de$b$1
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+de$b
+android.os.Handler
+adv
+af$1
+com.appbrain.a.av
+adx
+cz
+android.location.LocationManager
+com.appbrain.AdOptions
+dx$1
+adv
+ec
+cx
+adv
+Category: de$b-*-com.appbrain.a.u-*-ahb$6$1-*-cl-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-de$b$1-*-de$b-*-adv-*-af$1-*-com.appbrain.a.av-*-adx-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-adv-*-ec-*-cx-*-adv-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r7, $r9)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+are
+are
+cl
+cz
+af$1
+cl
+com.google.android.gms.internal.ads.zzlz
+com.appbrain.a.av
+android.util.Log
+com.appbrain.AdOptions$Type
+com.google.android.gms.internal.ads.zzjf
+are
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+com.google.android.gms.internal.ads.zzkd
+com.google.android.gms.internal.ads.zzmk
+ec
+android.os.Handler
+ace$1
+cx
+Category: are-*-are-*-cl-*-cz-*-af$1-*-cl-*-com.google.android.gms.internal.ads.zzlz-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-com.google.android.gms.internal.ads.zzjf-*-are-*-cl-*-ao-*-com.appbrain.AdOptions-*-com.google.android.gms.internal.ads.zzkd-*-com.google.android.gms.internal.ads.zzmk-*-ec-*-ace$1-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r7, $r9)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+are
+are
+cl
+cz
+af$1
+cl
+com.google.android.gms.internal.ads.zzlz
+com.appbrain.a.av
+android.util.Log
+com.appbrain.AdOptions$Type
+com.google.android.gms.internal.ads.zzjf
+are
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+com.google.android.gms.internal.ads.zzkd
+com.google.android.gms.internal.ads.zzmk
+ec
+android.os.Handler
+ace$1
+cx
+Category: are-*-are-*-cl-*-cz-*-af$1-*-cl-*-com.google.android.gms.internal.ads.zzlz-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-com.google.android.gms.internal.ads.zzjf-*-are-*-cl-*-ao-*-com.appbrain.AdOptions-*-com.google.android.gms.internal.ads.zzkd-*-com.google.android.gms.internal.ads.zzmk-*-ec-*-ace$1-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, 0L)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+cl
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+android.content.SharedPreferences$Editor
+de$b$1
+de$b
+com.appbrain.a.aw
+android.os.Handler
+com.appbrain.a.aw
+com.appbrain.a.aw
+af$1
+com.appbrain.a.av
+ba
+com.appbrain.a.aw
+ba
+cz
+android.location.LocationManager
+com.appbrain.a.aw$1
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+Category: de$b-*-com.appbrain.a.u-*-cl-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-de$b$1-*-de$b-*-com.appbrain.a.aw-*-com.appbrain.a.aw-*-com.appbrain.a.aw-*-af$1-*-com.appbrain.a.av-*-ba-*-com.appbrain.a.aw-*-ba-*-cz-*-com.appbrain.a.aw$1-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_check_ping", 0L)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+ch$2
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ch
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: ch$2-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ch-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Interstitial loading error while showing")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cq
+com.appbrain.a.aw
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+com.appbrain.a.aw$5
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+com.appbrain.a.aw
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+cq
+cx
+com.appbrain.b.c
+cq$6
+android.util.Log
+Category: cq-*-com.appbrain.a.aw-*-com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-com.appbrain.a.aw$5-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-com.appbrain.a.aw-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cq-*-cx-*-com.appbrain.b.c-*-cq$6-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("ConnectivityMonitor", 5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+mc
+cl
+android.net.ConnectivityManager
+android.util.Log
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+mf
+mf
+android.location.LocationManager
+fq$1
+com.appbrain.AdOptions
+mf
+ec
+android.os.Handler
+cx
+Category: mc-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-mf-*-mf-*-fq$1-*-com.appbrain.AdOptions-*-mf-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+ahb$6$1
+adv
+cl
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+adv
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+de$b$1
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+de$b
+android.os.Handler
+adv
+android.util.Log
+af$1
+com.appbrain.a.av
+adx
+cz
+android.location.LocationManager
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+adv
+Category: de$b-*-com.appbrain.a.u-*-ahb$6$1-*-adv-*-cl-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-adv-*-de$b$1-*-de$b-*-adv-*-af$1-*-com.appbrain.a.av-*-adx-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-adv-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r3.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("com.appbrain.ping", 0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+android.content.Context
+bq
+cl
+cz
+bq
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+bq$3
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: bq-*-cl-*-cz-*-bq-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-bq$3-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.io.OutputStream: void write(byte[],int,int)>($r1, $i1, $i2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+java.io.OutputStream
+ed
+cl
+ao
+ay$a$1
+com.appbrain.e.g$d
+com.appbrain.e.g$b
+android.location.LocationManager
+com.appbrain.d.a$d
+android.location.Location
+com.appbrain.e.e$g
+com.appbrain.AdOptions
+ec
+cx
+bh
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-ed-*-cl-*-ao-*-ay$a$1-*-com.appbrain.e.g$d-*-com.appbrain.e.g$b-*-com.appbrain.d.a$d-*-com.appbrain.e.e$g-*-com.appbrain.AdOptions-*-ec-*-cx-*-bh-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdsBannerAdMobHelper", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.google.android.gms.internal.ads.zzlz
+com.appbrain.a.av
+android.util.Log
+com.appbrain.AdOptions$Type
+com.google.android.gms.internal.ads.zzjf
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+com.google.android.gms.internal.ads.zzkd
+com.google.android.gms.internal.ads.zzmk
+ec
+android.os.Handler
+ace$1
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.google.android.gms.internal.ads.zzlz-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-com.google.android.gms.internal.ads.zzjf-*-cl-*-ao-*-com.appbrain.AdOptions-*-com.google.android.gms.internal.ads.zzkd-*-com.google.android.gms.internal.ads.zzmk-*-ec-*-ace$1-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i1 = virtualinvoke $r5.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+java.net.HttpURLConnection
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_intload_time", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+ahb$6$1
+com.appbrain.a.aw
+cl
+af
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+ba
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+android.content.SharedPreferences$Editor
+de$b$1
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+de$b
+android.os.Handler
+af$1
+com.appbrain.a.av
+cz
+android.location.LocationManager
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+Category: de$b-*-com.appbrain.a.u-*-ahb$6$1-*-com.appbrain.a.aw-*-cl-*-af-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-ba-*-de$b$1-*-de$b-*-af$1-*-com.appbrain.a.av-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_app_alert_discard", $l3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.u
+cl
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+android.location.LocationManager
+android.location.Location
+cb
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+ca$1
+ec
+cx
+Category: com.appbrain.a.u-*-cl-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-cb-*-com.appbrain.AdOptions-*-ca$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("InAppHelper", $r4)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+ahb$6$1
+cl
+android.util.Log
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+de$b$1
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+de$b
+android.os.Handler
+adv
+af$1
+com.appbrain.a.av
+adx$2
+adx
+cz
+android.location.LocationManager
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+adv
+Category: de$b-*-com.appbrain.a.u-*-ahb$6$1-*-cl-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-de$b$1-*-de$b-*-adv-*-af$1-*-com.appbrain.a.av-*-adx$2-*-adx-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-adv-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("update_ping_deadline", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+bq$6
+cz
+af$1
+cl
+com.appbrain.a.av
+bq
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+bq
+ec
+android.os.Handler
+cx
+Category: cl-*-bq$6-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-bq-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-bq-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+android.content.SharedPreferences$Editor
+cl
+ao
+com.appbrain.b.i
+com.appbrain.b.i
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+cx
+com.appbrain.b.c
+cq$6
+Category: com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.b.i-*-com.appbrain.b.i-*-com.appbrain.AdOptions-*-ec-*-cx-*-com.appbrain.b.c-*-cq$6-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("bo", $z0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.os.BaseBundle
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+af$1
+android.os.BaseBundle
+com.appbrain.a.av
+cl
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cl-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+com.appbrain.b.c
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+cx
+com.appbrain.b.c
+android.util.Log
+Category: com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-com.appbrain.b.c-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-com.appbrain.b.c-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac30", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+android.content.SharedPreferences$Editor
+com.appbrain.c.j$1$1
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+cl
+ao
+bt
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+de$b$2
+ec
+cx
+Category: de$b-*-cl-*-com.appbrain.c.j$1$1-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-bt-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r7)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b$1
+de$b
+com.appbrain.a.u
+de$b
+cl
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+cz
+android.location.LocationManager
+com.appbrain.AdOptions
+dx$1
+ec
+com.appbrain.b.c$1
+cx
+android.util.Log
+Category: de$b$1-*-de$b-*-com.appbrain.a.u-*-de$b-*-cl-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-com.appbrain.b.c$1-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r5, $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+cl
+ao
+android.location.LocationManager
+ar$1
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+de$b$2
+ec
+android.os.Handler
+cx
+Category: de$b-*-cl-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-ar$1-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+bn$2
+bm$b
+bm$b
+cl
+ax
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+android.content.SharedPreferences$Editor
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+bm
+ax
+ec
+android.os.Handler
+cx
+Category: bn$2-*-bm$b-*-bm$b-*-cl-*-ax-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-bm-*-ax-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("pref_tv", $r6)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+com.appbrain.c.j$1$1
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+android.content.SharedPreferences$Editor
+cl
+ao
+bt
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+de$b$2
+ec
+cx
+Category: de$b-*-cl-*-com.appbrain.c.j$1$1-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-bt-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("QIFinishedListener", "Query inventory finished.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+adx$1
+cz
+af$1
+cl
+com.appbrain.a.av
+android.util.Log
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+adv$2$1
+android.location.Location
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: cl-*-adx$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-adv$2$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r0.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+aq
+cl
+aq
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+java.io.FileOutputStream
+com.appbrain.AdOptions
+com.appbrain.a.c$1
+ec
+cx
+Category: aq-*-cl-*-aq-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-com.appbrain.a.c$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b$1
+de$b
+com.appbrain.a.u
+de$b
+com.appbrain.a.aw
+cl
+android.os.Handler
+com.appbrain.a.aw
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.appbrain.a.aw
+cz
+android.location.LocationManager
+com.appbrain.a.aw$1
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+android.util.Log
+Category: de$b$1-*-de$b-*-com.appbrain.a.u-*-de$b-*-com.appbrain.a.aw-*-cl-*-com.appbrain.a.aw-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-com.appbrain.a.aw-*-cz-*-com.appbrain.a.aw$1-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("QIFinishedListener", "Query inventory was successful.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+adx$1
+cz
+af$1
+cl
+com.appbrain.a.av
+android.util.Log
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+adv$2$1
+android.location.Location
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: cl-*-adx$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-adv$2$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r14.<java.io.OutputStream: void write(byte[])>($r13)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+java.io.OutputStream
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r15 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+java.net.URLConnection
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r14 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+java.net.URLConnection
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r23.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+java.net.URL
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r8.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("action", $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity$1
+com.medicalgroupsoft.medical.app.utils.analytics.TrackerUtils
+cl
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+android.os.BaseBundle
+ec
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("bt", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+android.os.BaseBundle
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r14.<java.io.OutputStream: void write(byte[])>($r13)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+java.io.OutputStream
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+java.net.HttpURLConnection
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+rr$1
+rr
+cl
+rr
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+rr
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+android.os.BaseBundle
+ec
+android.os.Handler
+cx
+Category: rr$1-*-rr-*-cl-*-rr-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-rr-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+java.net.URLConnection
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("maybe", $z0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.os.BaseBundle
+android.location.LocationManager
+cl
+android.location.Location
+com.appbrain.AdOptions
+ec
+af$1
+com.appbrain.a.av
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-cl-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("QIFinishedListener", $r4)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+adx$1
+cz
+af$1
+cl
+com.appbrain.a.av
+android.util.Log
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+adv$2$1
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: cl-*-adx$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-adv$2$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("screen", "interstitial")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.location.LocationManager
+cl
+com.appbrain.AdOptions
+android.os.BaseBundle
+ec
+af$1
+com.appbrain.a.av
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-cl-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", "Interstitial is not yet preloaded. Preloading now.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b$1
+de$b
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+com.appbrain.a.u
+ahb$6$1
+de$b
+com.appbrain.a.aw
+cl
+android.os.Handler
+af
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+cz
+android.location.LocationManager
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+android.util.Log
+Category: de$b$1-*-de$b-*-com.appbrain.a.u-*-ahb$6$1-*-de$b-*-com.appbrain.a.aw-*-cl-*-af-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r6)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.b.c
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+cx
+com.appbrain.b.c
+android.util.Log
+Category: com.appbrain.b.c-*-com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-com.appbrain.b.c-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$a$1
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+cx
+bh
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$a$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-bh-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+java.net.HttpURLConnection
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>("Event", $r10, $r7)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+are
+cl
+are
+are
+com.google.android.gms.internal.ads.zzlz
+com.appbrain.AdOptions$Type
+cl
+ao
+ard
+com.google.android.gms.internal.ads.zzkd
+android.os.Handler
+android.util.Log
+are
+cz
+af$1
+cl
+com.appbrain.a.av
+com.google.android.gms.internal.ads.zzjf
+are
+ard
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+com.google.android.gms.internal.ads.zzmk
+ec
+ace$1
+cx
+Category: are-*-cl-*-are-*-are-*-com.google.android.gms.internal.ads.zzlz-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ard-*-com.google.android.gms.internal.ads.zzkd-*-are-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.google.android.gms.internal.ads.zzjf-*-are-*-ard-*-com.appbrain.AdOptions-*-com.google.android.gms.internal.ads.zzmk-*-ec-*-ace$1-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.location.LocationManager
+cl
+com.appbrain.AdOptions
+ec
+af$1
+android.os.BaseBundle
+com.appbrain.a.av
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-cl-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, 0L)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+cl
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+android.content.SharedPreferences$Editor
+de$b$1
+de$b
+com.appbrain.a.aw
+android.os.Handler
+com.appbrain.a.aw
+com.appbrain.a.aw
+af$1
+com.appbrain.a.av
+ba
+com.appbrain.a.aw
+ba
+cz
+android.location.LocationManager
+com.appbrain.a.aw$1
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+Category: de$b-*-com.appbrain.a.u-*-cl-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-de$b$1-*-de$b-*-com.appbrain.a.aw-*-com.appbrain.a.aw-*-com.appbrain.a.aw-*-af$1-*-com.appbrain.a.av-*-ba-*-com.appbrain.a.aw-*-ba-*-cz-*-com.appbrain.a.aw$1-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+android.os.BaseBundle
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+java.net.HttpURLConnection
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_check_ping", $l1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+ch$2
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ch
+android.location.LocationManager
+android.location.Location
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: ch$2-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ch-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r8.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("label", $r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity$1
+com.medicalgroupsoft.medical.app.utils.analytics.TrackerUtils
+cl
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+android.os.BaseBundle
+ec
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("discarded_app_alert_ids", $r8)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+android.content.SharedPreferences$Editor
+cl
+ao
+android.location.LocationManager
+cb
+com.appbrain.AdOptions
+ca$1
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-cb-*-com.appbrain.AdOptions-*-ca$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("pref_ola", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+cl
+ao
+bt
+android.location.LocationManager
+ar$1
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+de$b$2
+ec
+android.os.Handler
+cx
+Category: de$b-*-cl-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-bt-*-ar$1-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.e.g$d
+bq
+com.appbrain.e.g$d
+cl
+cz
+bq
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+java.io.OutputStream
+cl
+ao
+ed
+bq$3
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: com.appbrain.e.g$d-*-bq-*-com.appbrain.e.g$d-*-cl-*-cz-*-bq-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ed-*-bq$3-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r7)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b$1
+de$b
+com.appbrain.a.u
+de$b
+cl
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+cz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+ec
+com.appbrain.b.c$1
+cx
+android.util.Log
+Category: de$b$1-*-de$b-*-com.appbrain.a.u-*-de$b-*-cl-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-com.appbrain.b.c$1-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("update_ping_deadline", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.u
+cl
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+bq
+cl
+cz
+ao
+bq
+android.location.LocationManager
+android.location.Location
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+bq
+ec
+bq$4
+cx
+Category: com.appbrain.a.u-*-cl-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-bq-*-cl-*-cz-*-ao-*-bq-*-com.appbrain.AdOptions-*-bq-*-ec-*-bq$4-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+aq
+aq
+ea
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+java.io.OutputStream
+cl
+ao
+ea
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+com.appbrain.a.c$2
+ec
+cx
+Category: aq-*-aq-*-ea-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ea-*-com.appbrain.AdOptions-*-com.appbrain.a.c$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_intload_time", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+ahb$6$1
+com.appbrain.a.aw
+cl
+af
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+ba
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+android.content.SharedPreferences$Editor
+de$b$1
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+de$b
+android.os.Handler
+af$1
+com.appbrain.a.av
+cz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+Category: de$b-*-com.appbrain.a.u-*-ahb$6$1-*-com.appbrain.a.aw-*-cl-*-af-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-ba-*-de$b$1-*-de$b-*-af$1-*-com.appbrain.a.av-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("disabledADS", $z0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+adx$1
+android.content.SharedPreferences$Editor
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+adv$2$1
+android.location.Location
+com.appbrain.AdOptions
+com.medicalgroupsoft.medical.app.utils.InAppBilling.PreferencesHelper
+ec
+android.os.Handler
+cx
+Category: cl-*-adx$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-adv$2$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("converted_old_app_events", 1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+bn$2
+cl
+ax
+android.content.SharedPreferences$Editor
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ax
+ec
+android.os.Handler
+cx
+Category: bn$2-*-cl-*-ax-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ax-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r4)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+com.appbrain.c.j$1$1
+bt$1
+cz
+af$1
+cl
+de$a
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+android.content.SharedPreferences$Editor
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+de$b$2
+ec
+cx
+Category: de$b-*-cl-*-com.appbrain.c.j$1$1-*-bt$1-*-cz-*-af$1-*-cl-*-de$a-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+java.net.URLConnection
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+java.net.HttpURLConnection
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("intlop", $r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.location.LocationManager
+cl
+com.appbrain.AdOptions
+android.os.Bundle
+ec
+af$1
+com.appbrain.a.av
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-cl-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("bt", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+android.os.BaseBundle
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+java.net.HttpURLConnection
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+com.appbrain.b.c
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+cx
+com.appbrain.b.c
+android.util.Log
+Category: com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-com.appbrain.b.c-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-com.appbrain.b.c-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r0.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+aq
+aq
+cl
+aq
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+java.io.FileOutputStream
+android.location.Location
+com.appbrain.AdOptions
+com.appbrain.a.c$2
+ec
+cx
+Category: aq-*-aq-*-cl-*-aq-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-com.appbrain.a.c$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+java.net.HttpURLConnection
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("QIFinishedListener", "Query inventory finished.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+adx$1
+cz
+af$1
+cl
+com.appbrain.a.av
+android.util.Log
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+adv$2$1
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: cl-*-adx$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-adv$2$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", "The AppBrain SDK was not automatically initialized. Please integrate the AppBrain SDK as detailed in the documentation.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+ch
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ch
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+com.appbrain.AppBrainService$1
+ec
+android.os.Handler
+cx
+android.util.Log
+Category: ch-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ch-*-ao-*-com.appbrain.AdOptions-*-com.appbrain.AppBrainService$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("sest_totta", $l1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+bo
+com.appbrain.a.u
+cl
+bo$2
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+bo
+bo
+android.location.LocationManager
+android.location.Location
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+ec
+cx
+Category: bo-*-com.appbrain.a.u-*-cl-*-bo$2-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-bo-*-bo-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("intlop", $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.location.LocationManager
+com.appbrain.AdOptions
+android.os.Bundle
+ec
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b$1
+de$b
+com.appbrain.a.u
+de$b
+com.appbrain.a.aw
+cl
+android.os.Handler
+com.appbrain.a.aw
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.appbrain.a.aw
+cz
+android.location.LocationManager
+com.appbrain.a.aw$1
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+android.util.Log
+Category: de$b$1-*-de$b-*-com.appbrain.a.u-*-de$b-*-com.appbrain.a.aw-*-cl-*-com.appbrain.a.aw-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-com.appbrain.a.aw-*-cz-*-com.appbrain.a.aw$1-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+com.appbrain.b.c
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+cx
+com.appbrain.b.c
+android.util.Log
+Category: com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-com.appbrain.b.c-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-com.appbrain.b.c-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("QIFinishedListener", "Query inventory was successful.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+adx$1
+cz
+af$1
+cl
+com.appbrain.a.av
+android.util.Log
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+adv$2$1
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: cl-*-adx$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-adv$2$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r14.<java.io.OutputStream: void write(byte[])>($r13)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+java.io.OutputStream
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("screen", "interstitial")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.location.LocationManager
+cl
+android.location.Location
+com.appbrain.AdOptions
+android.os.BaseBundle
+ec
+af$1
+com.appbrain.a.av
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-cl-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+java.net.HttpURLConnection
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$a$1
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+bh
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$a$1-*-ar$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-bh-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", "The AppBrain SDK was not automatically initialized. Please integrate the AppBrain SDK as detailed in the documentation.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+ch
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ch
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+com.appbrain.AppBrainService$1
+ec
+android.os.Handler
+cx
+android.util.Log
+Category: ch-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ch-*-ao-*-com.appbrain.AdOptions-*-com.appbrain.AppBrainService$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+java.net.HttpURLConnection
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("forcedows", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.location.LocationManager
+cl
+android.location.Location
+com.appbrain.AdOptions
+android.os.Bundle
+ec
+af$1
+com.appbrain.a.av
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-cl-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+java.net.HttpURLConnection
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("usrcmbtr_timestamp", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+bs$3
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+bs
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-bs$3-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-bs-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.location.LocationManager
+cl
+android.location.Location
+com.appbrain.AdOptions
+ec
+af$1
+android.os.BaseBundle
+com.appbrain.a.av
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-cl-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r4)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+bt$1
+cz
+af$1
+cl
+de$a
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+android.content.SharedPreferences$Editor
+cl
+ao
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+de$b$2
+ec
+android.os.Handler
+cx
+Category: de$b-*-cl-*-bt$1-*-cz-*-af$1-*-cl-*-de$a-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-ar$1-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", "Interstitial is not yet preloaded. Preloading now.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+ahb$6$1
+com.appbrain.a.aw
+cl
+af
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+android.util.Log
+de$b$1
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+de$b
+android.os.Handler
+af$1
+com.appbrain.a.av
+cz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+Category: de$b-*-com.appbrain.a.u-*-ahb$6$1-*-com.appbrain.a.aw-*-cl-*-af-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-de$b$1-*-de$b-*-af$1-*-com.appbrain.a.av-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("intlop", $r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.location.LocationManager
+cl
+android.location.Location
+com.appbrain.AdOptions
+android.os.Bundle
+ec
+af$1
+com.appbrain.a.av
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-cl-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+rr$1
+rr
+cl
+rr
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+rr
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+android.os.BaseBundle
+ec
+android.os.Handler
+cx
+Category: rr$1-*-rr-*-cl-*-rr-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-rr-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r15 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+java.net.URLConnection
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+java.net.HttpURLConnection
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b$1
+de$b
+com.appbrain.a.u
+de$b
+com.appbrain.a.aw
+cl
+android.os.Handler
+com.appbrain.a.aw
+com.appbrain.a.av
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.appbrain.a.aw
+cz
+android.location.LocationManager
+com.appbrain.a.aw$1
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+android.util.Log
+Category: de$b$1-*-de$b-*-com.appbrain.a.u-*-de$b-*-com.appbrain.a.aw-*-cl-*-com.appbrain.a.aw-*-com.appbrain.a.av-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-com.appbrain.a.aw-*-cz-*-com.appbrain.a.aw$1-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", "Interstitial is showing, preload is scheduled for when interstitial is closed.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b$1
+de$b
+com.appbrain.a.u
+de$b
+com.appbrain.a.aw
+cl
+android.os.Handler
+com.appbrain.a.aw
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.appbrain.a.aw
+cz
+android.location.LocationManager
+com.appbrain.a.aw$1
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+android.util.Log
+Category: de$b$1-*-de$b-*-com.appbrain.a.u-*-de$b-*-com.appbrain.a.aw-*-cl-*-com.appbrain.a.aw-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-com.appbrain.a.aw-*-cz-*-com.appbrain.a.aw$1-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("maybe", $z0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.os.BaseBundle
+android.location.LocationManager
+cl
+com.appbrain.AdOptions
+ec
+af$1
+com.appbrain.a.av
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-cl-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r15 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+java.net.URLConnection
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ar$1$1
+ec
+java.net.InetAddress
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ar$1$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+android.content.SharedPreferences$Editor
+com.appbrain.c.j$1$1
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+cl
+ao
+bt
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+de$b$2
+ec
+cx
+Category: de$b-*-cl-*-com.appbrain.c.j$1$1-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-bt-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("discarded_app_alert_ids", $r8)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.u
+cl
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+android.content.SharedPreferences$Editor
+cl
+cz
+ao
+android.location.LocationManager
+android.location.Location
+cb
+com.appbrain.AdOptions
+ca$1
+ec
+cx
+Category: com.appbrain.a.u-*-cl-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-cb-*-com.appbrain.AdOptions-*-ca$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r14 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+java.net.URLConnection
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_check_ping", $l1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+ch$2
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ch
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: ch$2-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ch-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", $r9)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+ahb$6$1
+com.appbrain.a.aw
+cl
+af
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+android.util.Log
+de$b$1
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+de$b
+android.os.Handler
+af$1
+com.appbrain.a.av
+cz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+Category: de$b-*-com.appbrain.a.u-*-ahb$6$1-*-com.appbrain.a.aw-*-cl-*-af-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-de$b$1-*-de$b-*-af$1-*-com.appbrain.a.av-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("pref_ola", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+com.appbrain.c.j$1$1
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+cl
+ao
+bt
+android.location.LocationManager
+android.location.Location
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+de$b$2
+ec
+cx
+Category: de$b-*-cl-*-com.appbrain.c.j$1$1-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-bt-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.e.g$d
+bq
+com.appbrain.e.g$d
+cl
+cz
+bq
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+java.io.OutputStream
+cl
+ao
+ed
+bq$3
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: com.appbrain.e.g$d-*-bq-*-com.appbrain.e.g$d-*-cl-*-cz-*-bq-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ed-*-bq$3-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>("Event", $r10, $r7)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+are
+cl
+are
+are
+com.google.android.gms.internal.ads.zzlz
+com.appbrain.AdOptions$Type
+cl
+ao
+ard
+com.google.android.gms.internal.ads.zzkd
+android.os.Handler
+android.util.Log
+are
+cz
+af$1
+cl
+com.appbrain.a.av
+com.google.android.gms.internal.ads.zzjf
+are
+ard
+android.location.LocationManager
+com.appbrain.AdOptions
+com.google.android.gms.internal.ads.zzmk
+ec
+ace$1
+cx
+Category: are-*-cl-*-are-*-are-*-com.google.android.gms.internal.ads.zzlz-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ard-*-com.google.android.gms.internal.ads.zzkd-*-are-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.google.android.gms.internal.ads.zzjf-*-are-*-ard-*-com.appbrain.AdOptions-*-com.google.android.gms.internal.ads.zzmk-*-ec-*-ace$1-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r23.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+java.net.URL
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+android.content.SharedPreferences$Editor
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+cl
+ao
+bt
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+de$b$2
+ec
+android.os.Handler
+cx
+Category: de$b-*-cl-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-bt-*-ar$1-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+java.net.HttpURLConnection
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$a$1
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+bh
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$a$1-*-ar$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-bh-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Interstitial already preloaded, ignoring preload")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b$1
+de$b
+com.appbrain.a.u
+de$b
+com.appbrain.a.aw
+cl
+android.os.Handler
+com.appbrain.a.aw
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.appbrain.a.aw
+cz
+android.location.LocationManager
+com.appbrain.a.aw$1
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+android.util.Log
+Category: de$b$1-*-de$b-*-com.appbrain.a.u-*-de$b-*-com.appbrain.a.aw-*-cl-*-com.appbrain.a.aw-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-com.appbrain.a.aw-*-cz-*-com.appbrain.a.aw$1-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+java.net.HttpURLConnection
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+aq
+aq
+ea
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+java.io.OutputStream
+cl
+ao
+ea
+android.location.LocationManager
+com.appbrain.AdOptions
+com.appbrain.a.c$1
+ec
+cx
+Category: aq-*-aq-*-ea-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ea-*-com.appbrain.AdOptions-*-com.appbrain.a.c$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("src", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+android.os.BaseBundle
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($b1, "AppBrain", $r10)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ck$2
+cz
+af$1
+cl
+ch
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+android.util.Log
+Category: cl-*-ck$2-*-cz-*-af$1-*-cl-*-ch-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+java.net.HttpURLConnection
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+java.net.HttpURLConnection
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("disabledADS", $z0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+adx$1
+android.content.SharedPreferences$Editor
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+adv$2$1
+com.appbrain.AdOptions
+com.medicalgroupsoft.medical.app.utils.InAppBilling.PreferencesHelper
+ec
+android.os.Handler
+cx
+Category: cl-*-adx$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-adv$2$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r8.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("action", $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity$1
+com.medicalgroupsoft.medical.app.utils.analytics.TrackerUtils
+cl
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+android.os.BaseBundle
+ec
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("converted_old_app_events", 1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+bn$2
+cl
+ax
+android.content.SharedPreferences$Editor
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+ax
+ec
+android.os.Handler
+cx
+Category: bn$2-*-cl-*-ax-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ax-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac7", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+android.content.SharedPreferences$Editor
+com.appbrain.c.j$1$1
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+cl
+ao
+bt
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+de$b$2
+ec
+cx
+Category: de$b-*-cl-*-com.appbrain.c.j$1$1-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-bt-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Preloaded InterstitialBuilder is being reused unpreloaded, forcing preload now.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cq
+com.appbrain.a.aw
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+com.appbrain.a.aw$5
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+com.appbrain.a.aw
+cl
+ao
+com.appbrain.a.aw
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+cq
+cx
+com.appbrain.b.c
+cq$6
+android.util.Log
+Category: cq-*-com.appbrain.a.aw-*-com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-com.appbrain.a.aw$5-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-com.appbrain.a.aw-*-cl-*-ao-*-com.appbrain.a.aw-*-com.appbrain.AdOptions-*-ec-*-cq-*-cx-*-com.appbrain.b.c-*-cq$6-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+com.appbrain.b.c
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+cx
+com.appbrain.b.c
+android.util.Log
+Category: com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-com.appbrain.b.c-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-com.appbrain.b.c-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("intlop", $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+android.os.Bundle
+ec
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+ar$1$1
+ec
+android.os.Handler
+java.net.InetAddress
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ar$1-*-com.appbrain.AdOptions-*-ar$1$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+cl
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+android.util.Log
+de$b$1
+de$b
+com.appbrain.a.aw
+android.os.Handler
+com.appbrain.a.aw
+com.appbrain.a.av
+af$1
+com.appbrain.a.av
+com.appbrain.a.aw
+cz
+android.location.LocationManager
+com.appbrain.a.aw$1
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+Category: de$b-*-com.appbrain.a.u-*-cl-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-de$b$1-*-de$b-*-com.appbrain.a.aw-*-com.appbrain.a.aw-*-com.appbrain.a.av-*-af$1-*-com.appbrain.a.av-*-com.appbrain.a.aw-*-cz-*-com.appbrain.a.aw$1-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac30", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+android.content.SharedPreferences$Editor
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+cl
+ao
+bt
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+de$b$2
+ec
+android.os.Handler
+cx
+Category: de$b-*-cl-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-bt-*-ar$1-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("screen", "offerwall")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+android.os.BaseBundle
+ec
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("sest_totta", $l1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+bo
+cl
+bo$2
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+bo
+bo
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: bo-*-cl-*-bo$2-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-bo-*-bo-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$a$1
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+bh
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$a$1-*-ar$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-bh-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+java.net.URLConnection
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("usrcmbtr_timestamp", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+bs$3
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+bs
+android.location.LocationManager
+android.location.Location
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-bs$3-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-bs-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+bn$2
+bm$b
+bm$b
+cl
+ax
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+android.content.SharedPreferences$Editor
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bm
+ax
+ec
+android.os.Handler
+cx
+Category: bn$2-*-bm$b-*-bm$b-*-cl-*-ax-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-bm-*-ax-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("bo", $z0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.os.BaseBundle
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("InAppHelper", $r4)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+com.appbrain.a.u
+ahb$6$1
+cl
+android.util.Log
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+de$b$1
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+de$b
+android.os.Handler
+adv
+af$1
+com.appbrain.a.av
+adx$2
+adx
+cz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+adv
+Category: de$b-*-com.appbrain.a.u-*-ahb$6$1-*-cl-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-de$b$1-*-de$b-*-adv-*-af$1-*-com.appbrain.a.av-*-adx$2-*-adx-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-adv-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+java.net.HttpURLConnection
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$a$1
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+cx
+bh
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$a$1-*-com.appbrain.AdOptions-*-ec-*-cx-*-bh-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdsBannerAdMobHelper", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.google.android.gms.internal.ads.zzlz
+com.appbrain.a.av
+android.util.Log
+com.appbrain.AdOptions$Type
+com.google.android.gms.internal.ads.zzjf
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+com.google.android.gms.internal.ads.zzkd
+com.google.android.gms.internal.ads.zzmk
+ec
+android.os.Handler
+ace$1
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.google.android.gms.internal.ads.zzlz-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-com.google.android.gms.internal.ads.zzjf-*-cl-*-ao-*-com.appbrain.AdOptions-*-com.google.android.gms.internal.ads.zzkd-*-com.google.android.gms.internal.ads.zzmk-*-ec-*-ace$1-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r14 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+java.net.URLConnection
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", "Interstitial is showing, preload is scheduled for when interstitial is closed.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b$1
+de$b
+com.appbrain.a.u
+de$b
+com.appbrain.a.aw
+cl
+android.os.Handler
+com.appbrain.a.aw
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.appbrain.a.aw
+cz
+android.location.LocationManager
+com.appbrain.a.aw$1
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+android.util.Log
+Category: de$b$1-*-de$b-*-com.appbrain.a.u-*-de$b-*-com.appbrain.a.aw-*-cl-*-com.appbrain.a.aw-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-com.appbrain.a.aw-*-cz-*-com.appbrain.a.aw$1-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>("ConnectivityMonitor", "Failed to determine connectivity status when connectivity changed", $r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+mc
+cl
+android.net.ConnectivityManager
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+mf
+mf
+android.location.LocationManager
+fq$1
+com.appbrain.AdOptions
+mf
+ec
+android.os.Handler
+cx
+android.util.Log
+Category: mc-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-mf-*-mf-*-fq$1-*-com.appbrain.AdOptions-*-mf-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($b1, "AppBrain", $r10)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ck$2
+cz
+af$1
+cl
+ch
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+android.util.Log
+Category: cl-*-ck$2-*-cz-*-af$1-*-cl-*-ch-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", $r9)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b$1
+de$b
+com.medicalgroupsoft.medical.app.ui.mainscreen.BaseItemListActivity$2
+com.appbrain.a.u
+ahb$6$1
+de$b
+com.appbrain.a.aw
+cl
+android.os.Handler
+af
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+cz
+android.location.LocationManager
+com.medicalgroupsoft.medical.app.ui.mainscreen.ItemsListActivity
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+android.util.Log
+Category: de$b$1-*-de$b-*-com.appbrain.a.u-*-ahb$6$1-*-de$b-*-com.appbrain.a.aw-*-cl-*-af-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-cz-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+java.net.HttpURLConnection
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("src", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+com.appbrain.a.c$5
+ay
+cl
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ay$7
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+ec
+android.os.BaseBundle
+cx
+Category: com.appbrain.a.c$5-*-ay-*-cl-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ay$7-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Interstitial already preloaded, ignoring preload")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b$1
+de$b
+com.appbrain.a.u
+de$b
+com.appbrain.a.aw
+cl
+android.os.Handler
+com.appbrain.a.aw
+af$1
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+cz
+ao
+com.appbrain.a.aw
+cz
+android.location.LocationManager
+com.appbrain.a.aw$1
+android.location.Location
+com.appbrain.AdOptions
+dx$1
+ec
+cx
+android.util.Log
+Category: de$b$1-*-de$b-*-com.appbrain.a.u-*-de$b-*-com.appbrain.a.aw-*-cl-*-com.appbrain.a.aw-*-af$1-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-cz-*-ao-*-com.appbrain.a.aw-*-cz-*-com.appbrain.a.aw$1-*-com.appbrain.AdOptions-*-dx$1-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<java.io.OutputStream: void write(byte[],int,int)>($r1, $i1, $i2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+java.io.OutputStream
+ed
+cl
+ao
+ay$a$1
+com.appbrain.e.g$d
+com.appbrain.e.g$b
+android.location.LocationManager
+com.appbrain.d.a$d
+ar$1
+com.appbrain.e.e$g
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+bh
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-ed-*-cl-*-ao-*-ay$a$1-*-com.appbrain.e.g$d-*-com.appbrain.e.g$b-*-com.appbrain.d.a$d-*-ar$1-*-com.appbrain.e.e$g-*-com.appbrain.AdOptions-*-ec-*-cx-*-bh-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("forcedows", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.location.LocationManager
+cl
+com.appbrain.AdOptions
+android.os.Bundle
+ec
+af$1
+com.appbrain.a.av
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-cl-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", "The AppBrain SDK requires changes to your ProGuard config as detailed in the documentation!")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ck$2
+cz
+af$1
+cl
+ch
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+android.util.Log
+Category: cl-*-ck$2-*-cz-*-af$1-*-cl-*-ch-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r15 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+java.net.URLConnection
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+java.net.HttpURLConnection
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r23.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+java.net.URL
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+java.net.HttpURLConnection
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r23.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+java.net.URL
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("ConnectivityMonitor", 5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+mc
+cl
+android.net.ConnectivityManager
+android.util.Log
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+mf
+mf
+android.location.LocationManager
+android.location.Location
+fq$1
+com.appbrain.AdOptions
+mf
+ec
+android.os.Handler
+cx
+Category: mc-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-mf-*-mf-*-fq$1-*-com.appbrain.AdOptions-*-mf-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+java.io.FilterOutputStream
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+bb
+dz
+ec
+android.os.Handler
+cx
+Category: cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-ar$1-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+java.net.HttpURLConnection
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i1 = virtualinvoke $r5.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+java.net.HttpURLConnection
+cl
+com.appbrain.c.j$1$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+cl
+dz
+ao
+ay$a$1
+dz
+android.location.LocationManager
+android.location.Location
+com.appbrain.AdOptions
+bb
+dz
+ec
+cx
+Category: cl-*-com.appbrain.c.j$1$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-cl-*-dz-*-ao-*-ay$a$1-*-dz-*-com.appbrain.AdOptions-*-bb-*-dz-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r36 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_check_ping", 0L)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+ch$2
+cl
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+cl
+ao
+ch
+android.location.LocationManager
+android.location.Location
+android.content.SharedPreferences$Editor
+com.appbrain.AdOptions
+ec
+android.os.Handler
+cx
+Category: ch$2-*-cl-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-cl-*-ao-*-ch-*-com.appbrain.AdOptions-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Preloaded InterstitialBuilder is being reused unpreloaded, forcing preload now.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cq
+com.appbrain.a.aw
+com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1
+cl
+com.appbrain.a.aw$5
+cz
+af$1
+cl
+com.appbrain.a.aw$3
+com.appbrain.a.av
+com.appbrain.AdOptions$Type
+com.appbrain.a.aw
+cl
+ao
+com.appbrain.a.aw
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+cq
+cx
+com.appbrain.b.c
+cq$6
+android.util.Log
+Category: cq-*-com.appbrain.a.aw-*-com.appbrain.mediation.AppBrainAppBrainInterstitialAdapter$1-*-cl-*-com.appbrain.a.aw$5-*-cz-*-af$1-*-cl-*-com.appbrain.a.aw$3-*-com.appbrain.a.av-*-com.appbrain.AdOptions$Type-*-com.appbrain.a.aw-*-cl-*-ao-*-com.appbrain.a.aw-*-com.appbrain.AdOptions-*-ec-*-cq-*-cx-*-com.appbrain.b.c-*-cq$6-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac7", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+de$b
+cl
+android.content.SharedPreferences$Editor
+bt$1
+cz
+af$1
+cl
+com.appbrain.a.av
+com.appbrain.c.ae
+com.appbrain.AdOptions$Type
+de$b
+cl
+ao
+bt
+android.location.LocationManager
+ar$1
+com.appbrain.AdOptions
+de$b$2
+ec
+android.os.Handler
+cx
+Category: de$b-*-cl-*-bt$1-*-cz-*-af$1-*-cl-*-com.appbrain.a.av-*-com.appbrain.c.ae-*-com.appbrain.AdOptions$Type-*-de$b-*-cl-*-ao-*-bt-*-ar$1-*-com.appbrain.AdOptions-*-de$b$2-*-ec-*-cx-*-
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+cl
+ao
+android.location.LocationManager
+com.appbrain.AdOptions
+ec
+af$1
+android.os.BaseBundle
+com.appbrain.a.av
+cl
+cx
+com.appbrain.AdOptions$Type
+Category: cl-*-ao-*-com.appbrain.AdOptions-*-ec-*-af$1-*-com.appbrain.a.av-*-cl-*-cx-*-com.appbrain.AdOptions$Type-*-
+-----------------------------------------------------------------
+com.soft24hours.directorys.medical.diseasemulti.free.apk: 1214354

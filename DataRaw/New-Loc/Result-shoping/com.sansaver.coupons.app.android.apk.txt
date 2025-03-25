@@ -1,0 +1,396 @@
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r5 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>("application/json; charset=utf-8")
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Glide", "Unable to load null model, setting placeholder only")
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($b0, "MoatAnalytics", $r0)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("GenericRequest", 3)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $i0 = virtualinvoke $r4.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_configuration", $r4)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r3)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("GenericRequest", "load failed", $r1)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r7.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r1)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("device_uuid", $r2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("bea_location_on", $z0)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("q_scheduler_status", $r5)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_configuration", $r5)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r6 = virtualinvoke $r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, "Finishing due to inactivity")
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r0, $r2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void connect()>()
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r6)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("Glide", 3)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r2, $r3)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("q_scheduler_sleep_dwell_counter", 0)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("GenericRequest", 2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("isForeGround", $z0)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r0)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r6)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r0, $r2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("q_temp_information", $r4)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_appkey", $r2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r6 = virtualinvoke $r4.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("q_scheduler_sleep_high_counter", 0)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r2 = staticinvoke <java.net.URLDecoder: java.lang.String decode(java.lang.String,java.lang.String)>($r2, "UTF-8")
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("device_uuid_source", $r1)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("GenericRequest", 2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("MemorySizeCalculator", 3)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r6)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("q_next_flush_counter", $i0)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.geofence.locations.LocationFixService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MemorySizeCalculator", $r5)
+Component=> com.inmarket.m2m.internal.radiusnetworks.ibeacon.service.IBeaconService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

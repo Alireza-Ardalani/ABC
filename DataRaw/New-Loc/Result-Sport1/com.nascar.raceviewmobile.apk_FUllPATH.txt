@@ -1,0 +1,13 @@
+<bo.app.ax: void a(android.content.Intent)> --> $d1 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+<bo.app.ax: void a(android.content.Intent)> --> $r11 := @caughtexception
+<com.appboy.support.AppboyLogger: void <clinit>()> --> nop
+<com.appboy.support.AppboyLogger: void <clinit>()> --> <com.appboy.support.AppboyLogger: int LogLevel> = 4
+<bo.app.ax$1: void onReceive(android.content.Context,android.content.Intent)> --> staticinvoke <com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)>($r3, "Location broadcast receiver received null intent.")
+<dummyMainClass: bo.app.ax$1 dummyMainMethod_bo_app_ax$1(android.content.Intent)> --> virtualinvoke $r3.<bo.app.ax$1: void onReceive(android.content.Context,android.content.Intent)>(null, null)
+<dummyMainClass: bo.app.ax$1 dummyMainMethod_bo_app_ax$1(android.content.Intent)> --> if $i0 == 0 goto return $r3
+<com.appboy.unity.AppboyUnityPlayerNativeActivityWrapper: void onCreateCalled(com.unity3d.player.UnityPlayerNativeActivity)> --> $r2 = new com.appboy.unity.configuration.UnityConfigurationProvider
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)> --> $i0 = <com.appboy.support.AppboyLogger: int LogLevel>
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)> --> if $i0 > 3 goto return 0
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+

@@ -1,0 +1,22 @@
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> r4 = virtualinvoke r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> if r4 == null goto return r4
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> $r7 = virtualinvoke r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> r4 = $r7
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> if r4 == null goto return r4
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Session", $r3)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> r4 = virtualinvoke r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> if r4 == null goto return r4
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Session", $r3)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> $r7 = virtualinvoke r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> r4 = $r7
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> if r4 == null goto return r4
+<com.sessionm.core.Session: android.location.Location getLocation(boolean)> --> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+--------------------------------------------------------
+

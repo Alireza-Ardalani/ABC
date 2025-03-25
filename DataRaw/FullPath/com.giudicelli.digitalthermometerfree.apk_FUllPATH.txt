@@ -1,0 +1,225 @@
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> r0.<com.giudicelli.digitalthermometer.WeatherStationActivity: double latitude> = $d0
+<dummyMainClass: com.giudicelli.digitalthermometer.WeatherStationActivity dummyMainMethod_com_giudicelli_digitalthermometer_WeatherStationActivity(android.content.Intent)> --> virtualinvoke $r0.<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)>(null)
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> return
+<com.giudicelli.digitalthermometer.WeatherStationActivity$4: void <init>(com.giudicelli.digitalthermometer.WeatherStationActivity)> --> return
+<com.giudicelli.digitalthermometer.WeatherStationActivity$4: void <init>(com.giudicelli.digitalthermometer.WeatherStationActivity)> --> r0.<com.giudicelli.digitalthermometer.WeatherStationActivity$4: com.giudicelli.digitalthermometer.WeatherStationActivity this$0> = $r1
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> specialinvoke $r14.<com.giudicelli.digitalthermometer.WeatherStationActivity$4: void <init>(com.giudicelli.digitalthermometer.WeatherStationActivity)>(r0)
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0.<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.FutureCallback callback> = $r1
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> interfaceinvoke $r12.<com.koushikdutta.ion.future.ResponseFuture: com.koushikdutta.async.future.Future setCallback(com.koushikdutta.async.future.FutureCallback)>($r14)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture asString()> --> return $r1
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser)> --> return $r1
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> return $r13
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> return
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception)> --> return $z0
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)> --> return 1
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> return
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> $r2 = r0.<com.koushikdutta.async.future.SimpleFuture: java.lang.Object result>
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,java.lang.Object)> --> $r3 = (com.koushikdutta.async.http.AsyncHttpRequest) $r2
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,com.koushikdutta.async.http.AsyncHttpRequest)> --> $r1.<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: com.koushikdutta.async.http.AsyncHttpRequest finalRequest> = $r3
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,com.koushikdutta.async.http.AsyncHttpRequest)> --> $r1 = r0.<com.koushikdutta.ion.IonRequestBuilder$4: com.koushikdutta.ion.IonRequestBuilder$EmitterTransform val$ret>
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,java.lang.Object)> --> virtualinvoke r0.<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,com.koushikdutta.async.http.AsyncHttpRequest)>($r1, $r3)
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> interfaceinvoke $r1.<com.koushikdutta.async.future.FutureCallback: void onCompleted(java.lang.Exception,java.lang.Object)>($r3, $r2)
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)> --> specialinvoke r0.<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)>($r3)
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.FutureCallback handleCompleteLocked()> --> return r1
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.FutureCallback handleCompleteLocked()> --> r1 = r0.<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.FutureCallback callback>
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)> --> $r3 = specialinvoke r0.<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.FutureCallback handleCompleteLocked()>()
+<com.koushikdutta.async.future.SimpleFuture: void releaseWaiterLocked()> --> return
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)> --> virtualinvoke r0.<com.koushikdutta.async.future.SimpleFuture: void releaseWaiterLocked()>()
+<com.koushikdutta.async.future.SimpleCancellable: boolean setComplete()> --> throw $r1
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)> --> $z0 = specialinvoke r0.<com.koushikdutta.async.future.SimpleCancellable: boolean setComplete()>()
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception)> --> $z0 = virtualinvoke r0.<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)>($r1, null)
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> virtualinvoke $r1.<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: boolean setComplete(java.lang.Exception)>($r3)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)>($r13)
+<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)> --> return
+<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)> --> r0.<com.koushikdutta.ion.IonRequestBuilder$6: com.koushikdutta.ion.IonRequestBuilder$EmitterTransform self> = r0
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> specialinvoke $r13.<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)>(r0, null, $r2)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> if $r4 != null goto $r13.<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: com.koushikdutta.async.http.AsyncHttpRequest initialRequest> = $r5
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: void resolveAndLoadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder$4: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder$4: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0.<com.koushikdutta.ion.IonRequestBuilder$4: com.koushikdutta.ion.IonRequestBuilder$EmitterTransform val$ret> = $r2
+<com.koushikdutta.ion.IonRequestBuilder$4: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0.<com.koushikdutta.ion.IonRequestBuilder$4: com.koushikdutta.ion.IonRequestBuilder this$0> = $r1
+<com.koushikdutta.ion.IonRequestBuilder: void resolveAndLoadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> specialinvoke $r3.<com.koushikdutta.ion.IonRequestBuilder$4: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)>(r0, $r2, $r1)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.future.Future recursiveResolveRequest(com.koushikdutta.async.http.AsyncHttpRequest)> --> return $r2
+<com.koushikdutta.ion.IonRequestBuilder$3: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.async.future.SimpleFuture)> --> return
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.future.Future recursiveResolveRequest(com.koushikdutta.async.http.AsyncHttpRequest)> --> specialinvoke $r3.<com.koushikdutta.ion.IonRequestBuilder$3: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.async.future.SimpleFuture)>(r0, $r1, $r2)
+<com.koushikdutta.ion.IonRequestBuilder: void resolveAndLoadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> $r4 = virtualinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.future.Future recursiveResolveRequest(com.koushikdutta.async.http.AsyncHttpRequest)>($r1)
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> virtualinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: void resolveAndLoadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)>($r2, $r1)
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)>($r1, $r4)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.http.AsyncHttpRequest prepareRequest(android.net.Uri)> --> return $r7
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> $r4 = specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.http.AsyncHttpRequest prepareRequest(android.net.Uri)>($r2)
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> return null
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> $r2 = specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()>()
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)>($r13)
+<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)> --> return
+<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)> --> return
+<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)> --> specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)>($r1, null)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> specialinvoke $r13.<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)>(r0, null, $r2)
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> return null
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> $r4 = specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()>()
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser)> --> $r1 = virtualinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)>($r2, null)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture asString()> --> $r1 = virtualinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser)>($r2)
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> $r12 = interfaceinvoke $r11.<com.koushikdutta.ion.builder.Builders$Any$B: com.koushikdutta.ion.future.ResponseFuture asString()>()
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> $r11 = (com.koushikdutta.ion.builder.Builders$Any$B) $r10
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> $r11 = (com.koushikdutta.ion.builder.Builders$Any$B) $r10
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture asString()> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> $r2 = r0.<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.http.Multimap query>
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> $r1 := @caughtexception
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> $r4 = null
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> if $r4 == null goto return null
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> if $r3 != null goto return $r4
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> $r4 = specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()>()
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> if $r4 == null goto $r13 = new com.koushikdutta.ion.IonRequestBuilder$6
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> $r5 = $r6
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> $r13 = new com.koushikdutta.ion.IonRequestBuilder$6
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> $r13.<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: com.koushikdutta.async.http.AsyncHttpRequest initialRequest> = $r5
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleCancellable: boolean setComplete()> --> r0 := @this: com.koushikdutta.async.future.SimpleCancellable
+<com.koushikdutta.async.future.SimpleCancellable: boolean setComplete()> --> $z0 = r0.<com.koushikdutta.async.future.SimpleCancellable: boolean complete>
+<com.koushikdutta.async.future.SimpleCancellable: boolean setComplete()> --> if $z0 == 0 goto r0.<com.koushikdutta.async.future.SimpleCancellable: boolean complete> = 1
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)> --> $z0 = specialinvoke r0.<com.koushikdutta.async.future.SimpleCancellable: boolean setComplete()>()
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)> --> if $z0 != 0 goto r0.<com.koushikdutta.async.future.SimpleFuture: java.lang.Object result> = $r1
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder: void invokeLoadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: void loadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.async.http.AsyncHttpRequest: void logi(java.lang.String)> --> r0 := @this: com.koushikdutta.async.http.AsyncHttpRequest
+<com.koushikdutta.async.http.AsyncHttpRequest: void logi(java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+
+<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)> --> r0.<com.giudicelli.digitalthermometer.MainActivity: double latitude> = $d0
+<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)> --> if $b1 != 0 goto $r3 = r0.<com.giudicelli.digitalthermometer.MainActivity: android.widget.TextView altitudeTextView>
+<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)> --> $d0 = r0.<com.giudicelli.digitalthermometer.MainActivity: double latitude>
+<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)> --> $b1 = $d0 cmpl $d1
+<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)> --> if $b1 != 0 goto $d0 = r0.<com.giudicelli.digitalthermometer.MainActivity: double latitude>
+<com.koushikdutta.ion.Ion: com.koushikdutta.ion.builder.LoadBuilder 'with'(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.koushikdutta.ion.Ion: com.koushikdutta.ion.Ion getDefault(android.content.Context)> --> $r1 := @parameter0: android.content.Context
+<com.koushikdutta.ion.Ion: com.koushikdutta.ion.Ion getInstance(android.content.Context,java.lang.String)> --> $r2 := @parameter0: android.content.Context
+<com.koushikdutta.ion.Ion: void <init>(android.content.Context,java.lang.String)> --> r0 := @this: com.koushikdutta.ion.Ion
+<com.koushikdutta.ion.Ion: void <init>(android.content.Context,java.lang.String)> --> $r11 = staticinvoke <com.koushikdutta.async.http.cache.ResponseCacheMiddleware: com.koushikdutta.async.http.cache.ResponseCacheMiddleware addCache(com.koushikdutta.async.http.AsyncHttpClient,java.io.File,long)>($r5, $r24, 10485760L)
+<com.koushikdutta.ion.Ion: void <init>(android.content.Context,java.lang.String)> --> $r12 := @caughtexception
+<com.koushikdutta.ion.IonLog: void w(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.koushikdutta.ion.IonLog: void w(java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>("ION", $r0, $r1)
+--------------------------------------------------------
+
+<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)> --> r0.<com.giudicelli.digitalthermometer.MainActivity: double longitude> = $d0
+<dummyMainClass: com.giudicelli.digitalthermometer.MainActivity dummyMainMethod_com_giudicelli_digitalthermometer_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)>(null)
+<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)> --> return
+<com.giudicelli.digitalthermometer.MainActivity$3: void <init>(com.giudicelli.digitalthermometer.MainActivity)> --> return
+<com.giudicelli.digitalthermometer.MainActivity$3: void <init>(com.giudicelli.digitalthermometer.MainActivity)> --> r0.<com.giudicelli.digitalthermometer.MainActivity$3: com.giudicelli.digitalthermometer.MainActivity this$0> = $r1
+<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)> --> specialinvoke $r15.<com.giudicelli.digitalthermometer.MainActivity$3: void <init>(com.giudicelli.digitalthermometer.MainActivity)>(r0)
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0.<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.FutureCallback callback> = $r1
+<com.giudicelli.digitalthermometer.MainActivity: void onLocationChanged(android.location.Location)> --> interfaceinvoke $r14.<com.koushikdutta.ion.future.ResponseFuture: com.koushikdutta.async.future.Future setCallback(com.koushikdutta.async.future.FutureCallback)>($r15)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture asString()> --> return $r1
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser)> --> return $r1
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> return $r13
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception)> --> return $z0
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)> --> throw $r4
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception)> --> $z0 = virtualinvoke r0.<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)>($r1, null)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> virtualinvoke $r13.<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: boolean setComplete(java.lang.Exception)>($r14)
+<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)> --> return
+<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)> --> return
+<com.koushikdutta.ion.Ion: void addFutureInFlight(com.koushikdutta.async.future.Future,java.lang.Object)> --> return
+<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)> --> virtualinvoke $r2.<com.koushikdutta.ion.Ion: void addFutureInFlight(com.koushikdutta.async.future.Future,java.lang.Object)>(r0, $r5)
+<com.koushikdutta.async.future.TransformFuture: void <init>()> --> return
+<com.koushikdutta.async.future.SimpleFuture: void <init>()> --> return
+<com.koushikdutta.async.future.SimpleCancellable: void <init>()> --> return
+<com.koushikdutta.async.future.SimpleFuture: void <init>()> --> specialinvoke r0.<com.koushikdutta.async.future.SimpleCancellable: void <init>()>()
+<com.koushikdutta.async.future.TransformFuture: void <init>()> --> specialinvoke r0.<com.koushikdutta.async.future.SimpleFuture: void <init>()>()
+<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)> --> specialinvoke r0.<com.koushikdutta.async.future.TransformFuture: void <init>()>()
+<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)> --> r0.<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: com.koushikdutta.ion.IonRequestBuilder this$0> = $r1
+<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)> --> specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)>($r1, null)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> specialinvoke $r13.<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)>(r0, null, $r2)
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> $r2 = specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()>()
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)>($r13)
+<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)> --> return
+<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)> --> return
+<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)> --> specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)>($r1, null)
+<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)> --> r0.<com.koushikdutta.ion.IonRequestBuilder$6: com.koushikdutta.ion.IonRequestBuilder this$0> = $r1
+<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$EmitterTransform
+<com.koushikdutta.async.future.TransformFuture: void <init>()> --> r0 := @this: com.koushikdutta.async.future.TransformFuture
+<com.koushikdutta.async.future.SimpleFuture: void <init>()> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleCancellable: void <init>()> --> r0 := @this: com.koushikdutta.async.future.SimpleCancellable
+<com.koushikdutta.async.future.SimpleFuture: void <init>()> --> specialinvoke r0.<com.koushikdutta.async.future.SimpleCancellable: void <init>()>()
+<com.koushikdutta.async.future.TransformFuture: void <init>()> --> specialinvoke r0.<com.koushikdutta.async.future.SimpleFuture: void <init>()>()
+<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)> --> specialinvoke r0.<com.koushikdutta.async.future.TransformFuture: void <init>()>()
+<com.koushikdutta.ion.Ion: void addFutureInFlight(com.koushikdutta.async.future.Future,java.lang.Object)> --> r0 := @this: com.koushikdutta.ion.Ion
+<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)> --> virtualinvoke $r2.<com.koushikdutta.ion.Ion: void addFutureInFlight(com.koushikdutta.async.future.Future,java.lang.Object)>(r0, $r5)
+<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)> --> specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable)>($r1, null)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.ion.future.ResponseFuture execute(com.koushikdutta.async.parser.AsyncParser,java.lang.Runnable)> --> specialinvoke $r13.<com.koushikdutta.ion.IonRequestBuilder$6: void <init>(com.koushikdutta.ion.IonRequestBuilder,java.lang.Runnable,com.koushikdutta.async.parser.AsyncParser)>(r0, null, $r2)
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder$2: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$2
+<com.koushikdutta.ion.IonRequestBuilder$2: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0.<com.koushikdutta.ion.IonRequestBuilder$2: com.koushikdutta.ion.IonRequestBuilder$EmitterTransform val$ret> = $r2
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> specialinvoke $r4.<com.koushikdutta.ion.IonRequestBuilder$2: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)>(r0, $r1)
+<com.koushikdutta.ion.RequestBodyUploadObserver: void <init>(com.koushikdutta.async.http.body.AsyncHttpRequestBody,com.koushikdutta.ion.ProgressCallback)> --> r0 := @this: com.koushikdutta.ion.RequestBodyUploadObserver
+<com.koushikdutta.ion.RequestBodyUploadObserver: void <init>(com.koushikdutta.async.http.body.AsyncHttpRequestBody,com.koushikdutta.ion.ProgressCallback)> --> r0.<com.koushikdutta.ion.RequestBodyUploadObserver: com.koushikdutta.ion.ProgressCallback callback> = $r2
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> specialinvoke $r8.<com.koushikdutta.ion.RequestBodyUploadObserver: void <init>(com.koushikdutta.async.http.body.AsyncHttpRequestBody,com.koushikdutta.ion.ProgressCallback)>($r3, $r4)
+<com.koushikdutta.async.http.AsyncHttpRequest: void setBody(com.koushikdutta.async.http.body.AsyncHttpRequestBody)> --> r0 := @this: com.koushikdutta.async.http.AsyncHttpRequest
+<com.koushikdutta.async.http.AsyncHttpRequest: void setBody(com.koushikdutta.async.http.body.AsyncHttpRequestBody)> --> r0.<com.koushikdutta.async.http.AsyncHttpRequest: com.koushikdutta.async.http.body.AsyncHttpRequestBody mBody> = $r1
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> virtualinvoke $r2.<com.koushikdutta.async.http.AsyncHttpRequest: void setBody(com.koushikdutta.async.http.body.AsyncHttpRequestBody)>($r8)
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)>($r1, $r4)
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> $r1.<com.koushikdutta.ion.IonRequestBuilder$EmitterTransform: com.koushikdutta.async.http.AsyncHttpRequest initialRequest> = $r4
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: void resolveAndLoadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder$4: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder$4: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0.<com.koushikdutta.ion.IonRequestBuilder$4: com.koushikdutta.ion.IonRequestBuilder$EmitterTransform val$ret> = $r2
+<com.koushikdutta.ion.IonRequestBuilder$4: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0.<com.koushikdutta.ion.IonRequestBuilder$4: com.koushikdutta.ion.IonRequestBuilder this$0> = $r1
+<com.koushikdutta.ion.IonRequestBuilder: void resolveAndLoadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> specialinvoke $r3.<com.koushikdutta.ion.IonRequestBuilder$4: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)>(r0, $r2, $r1)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.future.Future recursiveResolveRequest(com.koushikdutta.async.http.AsyncHttpRequest)> --> return $r2
+<com.koushikdutta.ion.IonRequestBuilder$3: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.async.future.SimpleFuture)> --> return
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.future.Future recursiveResolveRequest(com.koushikdutta.async.http.AsyncHttpRequest)> --> specialinvoke $r3.<com.koushikdutta.ion.IonRequestBuilder$3: void <init>(com.koushikdutta.ion.IonRequestBuilder,com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.async.future.SimpleFuture)>(r0, $r1, $r2)
+<com.koushikdutta.ion.IonRequestBuilder: void resolveAndLoadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> $r4 = virtualinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.future.Future recursiveResolveRequest(com.koushikdutta.async.http.AsyncHttpRequest)>($r1)
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)> --> virtualinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: void resolveAndLoadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)>($r2, $r1)
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform,com.koushikdutta.async.http.AsyncHttpRequest)>($r1, $r4)
+<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.http.AsyncHttpRequest prepareRequest(android.net.Uri)> --> return $r7
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> $r4 = specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.http.AsyncHttpRequest prepareRequest(android.net.Uri)>($r2)
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> return null
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> $r2 = r0.<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.http.Multimap query>
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> $r1 := @caughtexception
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> $r4 = null
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> if $r4 == null goto return null
+<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()> --> if $r3 != null goto return $r4
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> $r2 = specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: android.net.Uri prepareURI()>()
+<com.koushikdutta.ion.IonRequestBuilder: void getLoaderEmitter(com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> if $r2 != null goto $r4 = specialinvoke r0.<com.koushikdutta.ion.IonRequestBuilder: com.koushikdutta.async.http.AsyncHttpRequest prepareRequest(android.net.Uri)>($r2)
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: boolean setComplete(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder: void invokeLoadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: void loadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.async.http.AsyncHttpRequest: void logi(java.lang.String)> --> r0 := @this: com.koushikdutta.async.http.AsyncHttpRequest
+<com.koushikdutta.async.http.AsyncHttpRequest: void logi(java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+
+<dummyMainClass: com.giudicelli.digitalthermometer.WeatherStationActivity dummyMainMethod_com_giudicelli_digitalthermometer_WeatherStationActivity(android.content.Intent)> --> virtualinvoke $r0.<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.giudicelli.digitalthermometer.WeatherStationActivity dummyMainMethod_com_giudicelli_digitalthermometer_WeatherStationActivity(android.content.Intent)> --> if $i0 == 3 goto (branch)
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> r0 := @this: com.giudicelli.digitalthermometer.WeatherStationActivity
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> $d0 = r0.<com.giudicelli.digitalthermometer.WeatherStationActivity: double oldLatitude>
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> $b1 = $d1 cmpl $d0
+<com.giudicelli.digitalthermometer.WeatherStationActivity: void onLocationChanged(android.location.Location)> --> if $b1 != 0 goto $d0 = r0.<com.giudicelli.digitalthermometer.WeatherStationActivity: double latitude>
+<com.koushikdutta.ion.Ion: com.koushikdutta.ion.builder.LoadBuilder 'with'(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.koushikdutta.ion.Ion: com.koushikdutta.ion.builder.LoadBuilder build(android.content.Context)> --> r0 := @this: com.koushikdutta.ion.Ion
+<com.koushikdutta.ion.IonRequestBuilder: void <init>(com.koushikdutta.ion.ContextReference,com.koushikdutta.ion.Ion)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: void <init>(com.koushikdutta.ion.ContextReference,com.koushikdutta.ion.Ion)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("Ion", $r5)
+--------------------------------------------------------
+

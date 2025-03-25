@@ -1,0 +1,28 @@
+Source=> $r6 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r2)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GeoLocation", "Last known location was null")
+Component=> com.fox.now.exoplayer.CrouchingVideoPlayerHiddenActivity
+ComponentColor=> GREEN
+android.util.Log
+android.location.LocationManager
+com.fox.now.network.provider.FoxNowSyncProvider
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("FoxNowSyncProvider", "Error loading channel info api", r19)
+Component=> com.fox.now.exoplayer.CrouchingVideoPlayerHiddenActivity
+ComponentColor=> GREEN
+android.util.Log
+android.location.Location
+com.fox.now.network.provider.FoxNowSyncProvider
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("FoxNowSyncProvider", "Error loading channel info api", r19)
+Component=> com.fox.now.exoplayer.CrouchingVideoPlayerHiddenActivity
+ComponentColor=> GREEN
+android.util.Log
+android.location.Location
+com.fox.now.network.provider.FoxNowSyncProvider
+Category: LEGIT
+-----------------------------------------------------------------
+com.fox.now.apk: 1286876

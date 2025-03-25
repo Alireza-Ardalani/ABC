@@ -1,0 +1,212 @@
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Session", $r7)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", "Missing context! Unable to get push notification from shared preferences! Returning false.")
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> $z1 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Util", 3)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", "Missing context! Unable to get push notification from shared preferences! Returning false.")
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.String q(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.sessionm.core.m: java.lang.String q(java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Server URL is null! ")
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.String q(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.sessionm.core.m: java.lang.String q(java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Server URL is null! ")
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> $r2 = staticinvoke <com.sessionm.core.m: com.sessionm.core.m p(java.lang.String)>("com.sessionm.push.notification")
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> $r4 := @caughtexception
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", $r6)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Util", $r1)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> $r2 = staticinvoke <com.sessionm.core.m: com.sessionm.core.m p(java.lang.String)>("com.sessionm.push.notification")
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> $r4 := @caughtexception
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", $r6)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Util", $r1)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.String q(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.sessionm.core.m: java.lang.String q(java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Server URL is null! ")
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.String q(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.sessionm.core.m: java.lang.String q(java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Server URL is null! ")
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Util", $r1)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", "Missing context! Unable to get push notification from shared preferences! Returning false.")
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> $r2 = staticinvoke <com.sessionm.core.m: com.sessionm.core.m p(java.lang.String)>("com.sessionm.push.notification")
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> $r4 := @caughtexception
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", $r6)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Util", $r1)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: boolean aw()> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: boolean aw()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Tried to get value from preferences before session was started")
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> $r2 = staticinvoke <com.sessionm.core.m: com.sessionm.core.m p(java.lang.String)>("com.sessionm.push.notification")
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> $r4 := @caughtexception
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", $r6)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", "Missing context! Unable to get push notification from shared preferences! Returning false.")
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: boolean aw()> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: boolean aw()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Tried to get value from preferences before session was started")
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: boolean aw()> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: boolean aw()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Tried to get value from preferences before session was started")
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Session", $r7)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> $z1 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Util", 3)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> $z1 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Util", 3)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> $z1 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Util", 3)
+--------------------------------------------------------
+
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: com.sessionm.b.a ak()> --> if $r25 == null goto $r26 = null
+<com.sessionm.core.Session: boolean isPushNotificationEnabled(android.content.Context)> --> r0 := @this: com.sessionm.core.Session
+<com.sessionm.core.m: java.lang.Boolean b(java.lang.String,boolean)> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: boolean aw()> --> r0 := @this: com.sessionm.core.m
+<com.sessionm.core.m: boolean aw()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Tried to get value from preferences before session was started")
+--------------------------------------------------------
+

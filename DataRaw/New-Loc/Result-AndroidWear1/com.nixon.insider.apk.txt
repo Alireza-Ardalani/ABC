@@ -1,0 +1,36 @@
+Source=> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r7, "getForecast: conditions obtained")
+Component=> com.nixon.insider.push.WeatherApiService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r6, "getForecast: geolocation lookup failed (bad response from API)")
+Component=> com.nixon.insider.push.WeatherApiService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r9, $r10)
+Component=> com.nixon.insider.push.WeatherApiService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r7, "getForecast: location unknown")
+Component=> com.nixon.insider.push.WeatherApiService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r6, "getForecast: geolocation lookup failed (null response)")
+Component=> com.nixon.insider.push.WeatherApiService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, "getForecast: current conditions failed (bad response from API)")
+Component=> com.nixon.insider.push.WeatherApiService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

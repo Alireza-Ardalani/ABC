@@ -1,0 +1,14 @@
+<com.appriss.mobilepatrol.GPSTracker: android.location.Location getLocation()> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.appriss.mobilepatrol.GPSTracker: android.location.Location getLocation()> --> r0.<com.appriss.mobilepatrol.GPSTracker: android.location.Location location> = $r5
+<com.appriss.mobilepatrol.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.appriss.mobilepatrol.GPSTracker: android.location.Location location>
+<com.appriss.mobilepatrol.GPSTracker: android.location.Location getLocation()> --> if $r5 != null goto $d0 = r0.<com.appriss.mobilepatrol.GPSTracker: double latitude>
+<com.appriss.mobilepatrol.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+
+<com.appriss.mobilepatrol.GPSTracker: android.location.Location getLocation()> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.appriss.mobilepatrol.GPSTracker: android.location.Location getLocation()> --> r0.<com.appriss.mobilepatrol.GPSTracker: android.location.Location location> = $r5
+<com.appriss.mobilepatrol.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.appriss.mobilepatrol.GPSTracker: android.location.Location location>
+<com.appriss.mobilepatrol.GPSTracker: android.location.Location getLocation()> --> if $r5 != null goto $d0 = r0.<com.appriss.mobilepatrol.GPSTracker: double latitude>
+<com.appriss.mobilepatrol.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+

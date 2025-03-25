@@ -1,0 +1,26 @@
+<com.directv.supercast.util.e: void startLocationService()> --> $r1 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.directv.supercast.util.e: void startLocationService()> --> r0.<com.directv.supercast.util.e: android.location.Location i> = $r1
+<com.directv.supercast.util.f: boolean hasLocationPermission()> --> return 0
+<com.directv.supercast.util.f: boolean isFirstRunForLocationPermission()> --> return 0
+<com.directv.supercast.util.f: boolean hasLocationPermission()> --> $z0 = specialinvoke r0.<com.directv.supercast.util.f: boolean isFirstRunForLocationPermission()>()
+<com.directv.supercast.util.e: void startLocationService()> --> $z0 = virtualinvoke r0.<com.directv.supercast.util.e: boolean hasLocationPermission()>()
+<com.directv.supercast.util.e: void startLocationService()> --> $r1 = r0.<com.directv.supercast.util.e: android.location.Location i>
+<com.directv.supercast.util.e: void startLocationService()> --> if $r1 == null goto $z0 = virtualinvoke r0.<com.directv.supercast.util.e: boolean hasLocationPermission()>()
+<com.directv.supercast.util.f: boolean hasLocationPermission()> --> r0 := @this: com.directv.supercast.util.f
+<com.directv.supercast.util.f: boolean isFirstRunForLocationPermission()> --> r0 := @this: com.directv.supercast.util.f
+<com.directv.supercast.util.f: boolean isFirstRunForLocationPermission()> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("firstRunForLocationPermission", 0)
+--------------------------------------------------------
+
+<com.directv.supercast.util.e: void startLocationService()> --> $r1 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.directv.supercast.util.e: void startLocationService()> --> r0.<com.directv.supercast.util.e: android.location.Location i> = $r1
+<com.directv.supercast.util.f: boolean hasLocationPermission()> --> return 0
+<com.directv.supercast.util.f: boolean isFirstRunForLocationPermission()> --> return 0
+<com.directv.supercast.util.f: boolean hasLocationPermission()> --> $z0 = specialinvoke r0.<com.directv.supercast.util.f: boolean isFirstRunForLocationPermission()>()
+<com.directv.supercast.util.e: void startLocationService()> --> $z0 = virtualinvoke r0.<com.directv.supercast.util.e: boolean hasLocationPermission()>()
+<com.directv.supercast.util.e: void startLocationService()> --> $r1 = r0.<com.directv.supercast.util.e: android.location.Location i>
+<com.directv.supercast.util.e: void startLocationService()> --> if $r1 == null goto $z0 = virtualinvoke r0.<com.directv.supercast.util.e: boolean hasLocationPermission()>()
+<com.directv.supercast.util.f: boolean hasLocationPermission()> --> r0 := @this: com.directv.supercast.util.f
+<com.directv.supercast.util.f: boolean isFirstRunForLocationPermission()> --> r0 := @this: com.directv.supercast.util.f
+<com.directv.supercast.util.f: boolean isFirstRunForLocationPermission()> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("firstRunForLocationPermission", 0)
+--------------------------------------------------------
+

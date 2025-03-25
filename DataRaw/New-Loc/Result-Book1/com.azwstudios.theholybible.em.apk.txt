@@ -1,0 +1,936 @@
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("discarded_app_alert_ids", $r8)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("intlop", $r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("update_ping_deadline", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Preloaded InterstitialBuilder is being reused unpreloaded, forcing preload now.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r6)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r7)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r15 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("update_ping_deadline", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("bo", $z0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Preloaded InterstitialBuilder is being reused unpreloaded, forcing preload now.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("usrcmbtr_timestamp", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("intlop", $r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r3.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("com.appbrain.ping", 0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i1 = virtualinvoke $r5.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("discarded_app_alert_ids", $r8)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("src", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Interstitial loading error while showing")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_check_ping", $l1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", "The AppBrain SDK was not automatically initialized. Please integrate the AppBrain SDK as detailed in the documentation.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i1 = virtualinvoke $r5.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r7)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("usrcmbtr_timestamp", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("screen", "interstitial")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r15 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("forcedows", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r15 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r14 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("maybe", $z0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Interstitial loading error while showing")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("converted_old_app_events", 1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", "The AppBrain SDK was not automatically initialized. Please integrate the AppBrain SDK as detailed in the documentation.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_check_ping", $l1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("bt", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("screen", "interstitial")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($b1, "AppBrain", $r10)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r14.<java.io.OutputStream: void write(byte[])>($r13)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, 0L)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("bo", $z0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r5, $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("pref_ola", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("pref_tv", $r6)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("src", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac30", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("intlop", $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r6)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r3.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("com.appbrain.ping", 0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r14 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("sest_totta", $l1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, 0L)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<java.io.OutputStream: void write(byte[],int,int)>($r1, $i1, $i2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("pref_tv", $r6)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Interstitial already preloaded, ignoring preload")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r23.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("screen", "offerwall")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r14 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r23.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r0.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", "Interstitial is showing, preload is scheduled for when interstitial is closed.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(5, "AppBrain", "Interstitial already preloaded, ignoring preload")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", "The AppBrain SDK requires changes to your ProGuard config as detailed in the documentation!")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac30", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r14.<java.io.OutputStream: void write(byte[])>($r13)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("current_dialyverse", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("sest_totta", $l1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r5, $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", "The AppBrain SDK requires changes to your ProGuard config as detailed in the documentation!")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r23.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_app_alert_discard", $l3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r14.<java.io.OutputStream: void write(byte[])>($r13)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r14 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r4)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_check_ping", 0L)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r15 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("converted_old_app_events", 1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac7", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("current_dialyverse", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("screen", "offerwall")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_app_alert_discard", $l3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("bt", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r4)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("pref_ola", $l0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r23.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putInt(java.lang.String,int)>("aid", $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(3, "AppBrain", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("pref_ac7", $i1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("forcedows", $r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("intlop", $r3)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("last_check_ping", 0L)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("maybe", $z0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r0.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.io.OutputStream: void write(byte[],int,int)>($r1, $i1, $i2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($b1, "AppBrain", $r10)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i0)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(4, "AppBrain", "Interstitial is showing, preload is scheduled for when interstitial is closed.")
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r38 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r25.<java.util.zip.GZIPOutputStream: void write(byte[])>($r2)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r14.<java.io.OutputStream: void write(byte[])>($r13)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r31 = virtualinvoke $r37.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r7.<java.util.zip.GZIPOutputStream: void write(byte[])>($r5)
+Component=> com.appbrain.AppBrainInitProvider
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

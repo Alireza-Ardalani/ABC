@@ -1,0 +1,12 @@
+<o.ܢ: android.location.Location ˊ(java.lang.String)> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+<o.ܢ: android.location.Location ˊ(java.lang.String)> --> $r2 := @caughtexception
+<o.ܢ: android.location.Location ˊ(java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("TwilightManager", "Failed to get last known location", $r2)
+--------------------------------------------------------
+
+<o.ܢ: android.location.Location ˊ(java.lang.String)> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+<o.ܢ: android.location.Location ˎ()> --> $r1 = specialinvoke r0.<o.ܢ: android.location.Location ˊ(java.lang.String)>("network")
+<o.ܢ: boolean ॱ()> --> $r2 = specialinvoke r0.<o.ܢ: android.location.Location ˎ()>()
+<o.ܢ: boolean ॱ()> --> if $r2 == null goto staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TwilightManager", "Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.")
+<o.ܢ: boolean ॱ()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TwilightManager", "Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.")
+--------------------------------------------------------
+

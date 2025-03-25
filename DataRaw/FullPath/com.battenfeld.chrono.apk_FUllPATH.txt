@@ -1,0 +1,20 @@
+<com.battenfeld.chrono.NewGroupFragment$3: void onLocationChanged(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.battenfeld.chrono.NewGroupFragment$3: void onLocationChanged(android.location.Location)> --> r0 := @this: com.battenfeld.chrono.NewGroupFragment$3
+<com.battenfeld.chrono.NewGroupFragment$3: void onLocationChanged(android.location.Location)> --> if $z0 == 0 goto $r4 = r0.<com.battenfeld.chrono.NewGroupFragment$3: com.battenfeld.chrono.NewGroupFragment this$0>
+<com.battenfeld.chrono.NewGroupFragment: void access$10(com.battenfeld.chrono.NewGroupFragment,android.location.Location)> --> $r0 := @parameter0: com.battenfeld.chrono.NewGroupFragment
+<com.battenfeld.chrono.NewGroupFragment: void access$10(com.battenfeld.chrono.NewGroupFragment,android.location.Location)> --> $r0.<com.battenfeld.chrono.NewGroupFragment: android.location.Location mCurrentLocation> = $r1
+<com.battenfeld.chrono.NewGroupFragment$3: void onLocationChanged(android.location.Location)> --> staticinvoke <com.battenfeld.chrono.NewGroupFragment: void access$10(com.battenfeld.chrono.NewGroupFragment,android.location.Location)>($r4, $r1)
+<com.battenfeld.chrono.NewGroupFragment$3: void onLocationChanged(android.location.Location)> --> $r4 = r0.<com.battenfeld.chrono.NewGroupFragment$3: com.battenfeld.chrono.NewGroupFragment this$0>
+<com.battenfeld.chrono.NewGroupFragment$3: void onLocationChanged(android.location.Location)> --> $r4 = r0.<com.battenfeld.chrono.NewGroupFragment$3: com.battenfeld.chrono.NewGroupFragment this$0>
+<com.battenfeld.chrono.NewGroupFragment: void getConditions()> --> r0 := @this: com.battenfeld.chrono.NewGroupFragment
+<com.battenfeld.chrono.NewGroupFragment: boolean hasNetworkConnectivity()> --> r0 := @this: com.battenfeld.chrono.NewGroupFragment
+<com.battenfeld.chrono.NewGroupFragment: void getConditions()> --> $z0 = virtualinvoke r0.<com.battenfeld.chrono.NewGroupFragment: boolean hasNetworkConnectivity()>()
+<com.battenfeld.chrono.NewGroupFragment: void getConditions()> --> $r9 = r0.<com.battenfeld.chrono.NewGroupFragment: android.location.Location mCurrentLocation>
+<com.battenfeld.chrono.NewGroupFragment: void getConditions()> --> if $r9 != null goto $r9 = r0.<com.battenfeld.chrono.NewGroupFragment: android.location.Location mCurrentLocation>
+<com.battenfeld.chrono.NewGroupFragment: void getConditions()> --> $r27 = new java.util.Date
+<com.battenfeld.chrono.NewGroupFragment: void getConditions()> --> r0.<com.battenfeld.chrono.NewGroupFragment: java.util.Date mConditionsLastUpdated> = $r27
+<com.battenfeld.chrono.NewGroupFragment: void getConditions()> --> $r10 = r0.<com.battenfeld.chrono.NewGroupFragment: java.util.Date mConditionsLastUpdated>
+<com.battenfeld.chrono.NewGroupFragment: void getConditions()> --> if $r10 != null goto $r27 = new java.util.Date
+<com.battenfeld.chrono.NewGroupFragment: void getConditions()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("NewGroup", $r6)
+--------------------------------------------------------
+

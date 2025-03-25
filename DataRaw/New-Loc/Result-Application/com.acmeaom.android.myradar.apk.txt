@@ -1,0 +1,654 @@
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>($r4, $d0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("toast", $r0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r11 = virtualinvoke $r5.<java.net.HttpURLConnection: java.lang.String getResponseMessage()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r3 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("app.rating.inplay", 1)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r4 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r4)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r0, $z0)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r10)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r3)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r0, $i0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("app.launch.count", $l0)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $i0 = virtualinvoke $r5.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r5)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r7 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("debugToast", $r1)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r3)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r0)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>($r4, $d0)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r7 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("opened_from", $r3)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r10)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r5 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("app.launch.time", $l0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("opened_from", $r3)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r2)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r5)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r5 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("app.launch.time", $l0)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_configuration", $r4)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r0, $i0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>($r4, $d0)
+Component=> com.acmeaom.android.myradar.app.services.forecast.wear.WearListener
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = virtualinvoke $r5.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r7 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("app.launch.count", $l0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r2)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r3 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("app.rating.inplay", 1)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r0, $z0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("opened_from", $r3)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putFloat(java.lang.String,float)>($r4, $f0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("debugToast", $r1)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r10)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>($r4, $d0)
+Component=> com.acmeaom.android.myradar.app.services.forecast.wear.WearListener
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DLog", $r2)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r4 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r4)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("debugToast", $r1)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r0, $i0)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_configuration", $r4)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>($r4, $d0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r11 = virtualinvoke $r5.<java.net.HttpURLConnection: java.lang.String getResponseMessage()>()
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>($r4, $d0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>($r4)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>($r4, $d0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DLog", $r2)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("toast", $r0)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("toast", $r0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_configuration", $r4)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r3)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r5.<java.net.HttpURLConnection: java.lang.String getResponseMessage()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r7 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r5)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r3)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r0, $z0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r2)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("app.rating.inplay", 1)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("app.launch.time", $l0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_configuration", $r4)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DLog", $r2)
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("app.launch.count", $l0)
+Component=> com.acmeaom.android.myradar.app.activity.MyRadarActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> $i0 = virtualinvoke $r5.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.acmeaom.android.myradar.app.services.forecast.ForecastService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

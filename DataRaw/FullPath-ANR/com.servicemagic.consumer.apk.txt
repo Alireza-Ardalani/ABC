@@ -1,0 +1,28 @@
+Source=> $r27 = virtualinvoke r24.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r5, "Failed To Register", r2)
+Component=> com.pushio.manager.PushIOGCMIntentService
+ComponentColor=> RED
+android.util.Log
+com.pushio.manager.tasks.PushIORegisterTask
+android.location.LocationManager
+Category: com.pushio.manager.tasks.PushIORegisterTask-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r27.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r5, "Failed To Register", r2)
+Component=> com.pushio.manager.PushIOGCMIntentService
+ComponentColor=> RED
+android.location.Location
+android.util.Log
+com.pushio.manager.tasks.PushIORegisterTask
+Category: com.pushio.manager.tasks.PushIORegisterTask-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r27.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r5, "Failed To Register", r2)
+Component=> com.pushio.manager.PushIOGCMIntentService
+ComponentColor=> RED
+android.location.Location
+android.util.Log
+com.pushio.manager.tasks.PushIORegisterTask
+Category: com.pushio.manager.tasks.PushIORegisterTask-*-
+-----------------------------------------------------------------
+com.servicemagic.consumer.apk: 1120137

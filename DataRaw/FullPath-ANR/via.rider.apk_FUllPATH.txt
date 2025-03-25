@@ -1,0 +1,34 @@
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean)> --> virtualinvoke $r4.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("latitude", $d0)
+--------------------------------------------------------
+
+<com.onradar.sdk.k: void a(android.content.Context,android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.onradar.sdk.k: void a(android.content.Context,android.location.Location)> --> $f0 = (float) $d0
+<com.onradar.sdk.k: void a(android.content.Context,android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLatitude", $f0)
+--------------------------------------------------------
+
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean,com.onradar.sdk.c)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean,com.onradar.sdk.c)> --> $b0 = $d0 cmpg -180.0
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean,com.onradar.sdk.c)> --> $i3 = (int) $b0
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean,com.onradar.sdk.c)> --> if $i3 < 0 goto $r11 = <com.onradar.sdk.b$c: com.onradar.sdk.b$c e>
+<com.onradar.sdk.j: void a(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.onradar.sdk.j: void a(android.content.Context,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("_RadarLogger", $r1)
+--------------------------------------------------------
+
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean,com.onradar.sdk.c)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean,com.onradar.sdk.c)> --> $b0 = $d0 cmpg -180.0
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean,com.onradar.sdk.c)> --> $i3 = (int) $b0
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean,com.onradar.sdk.c)> --> if $i3 < 0 goto $r11 = <com.onradar.sdk.b$c: com.onradar.sdk.b$c e>
+<com.onradar.sdk.k: void j(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.onradar.sdk.k: void j(android.content.Context)> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("radar-sentAt", $l0)
+--------------------------------------------------------
+
+<com.onradar.sdk.k: void a(android.content.Context,android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.onradar.sdk.k: void a(android.content.Context,android.location.Location)> --> $f0 = (float) $d0
+<com.onradar.sdk.k: void a(android.content.Context,android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLongitude", $f0)
+--------------------------------------------------------
+
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.onradar.sdk.f: void a(android.location.Location,boolean,boolean)> --> virtualinvoke $r4.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("longitude", $d0)
+--------------------------------------------------------
+

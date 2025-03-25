@@ -1,0 +1,32 @@
+Source=> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+Sink=> $r9 = interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("zip", 1)
+Component=> com.cube.arc.blood.RapidPassCardActivity
+ComponentColor=> GREEN
+com.cube.arc.blood.MainApplication$5$1
+net.atomcode.bearing.geocoding.GeocodingTask
+android.location.LocationManager
+net.atomcode.bearing.location.LocationTask$2
+com.cube.arc.blood.MainApplication$5
+net.atomcode.bearing.geocoding.GeocodingTask
+android.content.SharedPreferences$Editor
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+net.atomcode.bearing.location.LocationProvider
+net.atomcode.bearing.geocoding.GeocodingTask
+Category: net.atomcode.bearing.geocoding.GeocodingTask-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.geocoding.GeocodingTask-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-net.atomcode.bearing.location.LocationProvider-*-net.atomcode.bearing.geocoding.GeocodingTask-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("Bearing", "Invalid lat,lng supplied to ReverseGeocoder")
+Component=> com.cube.arc.blood.RapidPassCardActivity
+ComponentColor=> GREEN
+net.atomcode.bearing.geocoding.GeocodingTask
+net.atomcode.bearing.geocoding.ReverseGeocodingTask
+android.location.LocationManager
+android.util.Log
+net.atomcode.bearing.location.LocationTask$2
+com.cube.arc.blood.MainApplication$5
+net.atomcode.bearing.geocoding.ReverseGeocodingTask
+net.atomcode.bearing.location.provider.LegacyLocationProvider
+net.atomcode.bearing.location.LocationProvider
+Category: net.atomcode.bearing.geocoding.GeocodingTask-*-net.atomcode.bearing.geocoding.ReverseGeocodingTask-*-net.atomcode.bearing.location.LocationTask$2-*-net.atomcode.bearing.geocoding.ReverseGeocodingTask-*-net.atomcode.bearing.location.provider.LegacyLocationProvider-*-net.atomcode.bearing.location.LocationProvider-*-
+-----------------------------------------------------------------
+com.cube.arc.blood.apk: 1107891

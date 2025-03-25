@@ -1,0 +1,66 @@
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> if $i3 >= $i1 goto (branch)
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> if $i3 >= $i1 goto (branch)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $r8 = staticinvoke <mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)>($r4)
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> r0 := @this: mobi.byss.instaweather.watchface.d.a
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> if $r1 != null goto $l0 = staticinvoke <android.os.SystemClock: long elapsedRealtimeNanos()>()
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $z5 = specialinvoke r0.<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)>($r8)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> if $z5 != 0 goto (branch)
+<mobi.byss.instaweather.watchface.common.settings.a: void a(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<mobi.byss.instaweather.watchface.common.settings.a: void a(android.location.Location)> --> virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r2)
+--------------------------------------------------------
+
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $r8 = staticinvoke <mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)>($r4)
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> r0 := @this: mobi.byss.instaweather.watchface.d.a
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> if $r1 != null goto $l0 = staticinvoke <android.os.SystemClock: long elapsedRealtimeNanos()>()
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $z5 = specialinvoke r0.<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)>($r8)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> if $z5 != 0 goto (branch)
+<mobi.byss.instaweather.watchface.common.settings.a: void a(mobi.byss.instaweather.watchface.common.model.WeatherModel)> --> $r0 := @parameter0: mobi.byss.instaweather.watchface.common.model.WeatherModel
+<mobi.byss.instaweather.watchface.common.settings.a: void a(mobi.byss.instaweather.watchface.common.model.WeatherModel)> --> $r5 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("weather_model", 0)
+--------------------------------------------------------
+
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $r8 = staticinvoke <mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)>($r4)
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> r0 := @this: mobi.byss.instaweather.watchface.d.a
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> if $r1 != null goto $l0 = staticinvoke <android.os.SystemClock: long elapsedRealtimeNanos()>()
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $z5 = specialinvoke r0.<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)>($r8)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> if $z5 != 0 goto (branch)
+<mobi.byss.instaweather.watchface.common.settings.a: void a(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<mobi.byss.instaweather.watchface.common.settings.a: void a(android.location.Location)> --> $r5 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("location", 0)
+--------------------------------------------------------
+
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $r8 = staticinvoke <mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)>($r4)
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> r0 := @this: mobi.byss.instaweather.watchface.d.a
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> if $r1 != null goto $l0 = staticinvoke <android.os.SystemClock: long elapsedRealtimeNanos()>()
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $z5 = specialinvoke r0.<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)>($r8)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> if $z5 != 0 goto (branch)
+<mobi.byss.instaweather.watchface.common.settings.a: void a(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<mobi.byss.instaweather.watchface.common.settings.a: void a(android.location.Location)> --> virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r2)
+--------------------------------------------------------
+
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> if $i3 >= $i1 goto (branch)
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> if $i3 >= $i1 goto (branch)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $r8 = staticinvoke <mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)>($r4)
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> r0 := @this: mobi.byss.instaweather.watchface.d.a
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> if $r1 != null goto $l0 = staticinvoke <android.os.SystemClock: long elapsedRealtimeNanos()>()
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $z5 = specialinvoke r0.<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)>($r8)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> if $z5 != 0 goto (branch)
+<mobi.byss.instaweather.watchface.common.settings.a: void a(mobi.byss.instaweather.watchface.common.model.WeatherModel)> --> $r0 := @parameter0: mobi.byss.instaweather.watchface.common.model.WeatherModel
+<mobi.byss.instaweather.watchface.common.settings.a: void a(mobi.byss.instaweather.watchface.common.model.WeatherModel)> --> $r5 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("weather_model", 0)
+--------------------------------------------------------
+
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> if $i3 >= $i1 goto (branch)
+<mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)> --> if $i3 >= $i1 goto (branch)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $r8 = staticinvoke <mobi.byss.instaweather.watchface.common.f.e: android.location.Location a(android.content.Context)>($r4)
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> r0 := @this: mobi.byss.instaweather.watchface.d.a
+<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)> --> if $r1 != null goto $l0 = staticinvoke <android.os.SystemClock: long elapsedRealtimeNanos()>()
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> $z5 = specialinvoke r0.<mobi.byss.instaweather.watchface.d.a: boolean a(android.location.Location)>($r8)
+<mobi.byss.instaweather.watchface.d.a: java.lang.Boolean a()> --> if $z5 != 0 goto (branch)
+<mobi.byss.instaweather.watchface.common.settings.a: void a(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<mobi.byss.instaweather.watchface.common.settings.a: void a(android.location.Location)> --> $r5 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("location", 0)
+--------------------------------------------------------
+

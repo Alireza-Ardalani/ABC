@@ -1,0 +1,7 @@
+<com.rideallinone.gps.GPSTracker: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.rideallinone.gps.GPSTracker: android.location.Location getLocation()> --> r0.<com.rideallinone.gps.GPSTracker: android.location.Location location> = $r4
+<com.rideallinone.gps.GPSTracker: android.location.Location getLocation()> --> $r4 = r0.<com.rideallinone.gps.GPSTracker: android.location.Location location>
+<com.rideallinone.gps.GPSTracker: android.location.Location getLocation()> --> if $r4 != null goto $r4 = r0.<com.rideallinone.gps.GPSTracker: android.location.Location location>
+<com.rideallinone.gps.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+

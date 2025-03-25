@@ -1,0 +1,12 @@
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d2 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r2 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+--------------------------------------------------------
+
+<com.youversion.util.r: java.lang.Object a(android.content.Context,android.support.v4.app.Fragment,com.youversion.util.r$a,boolean)> --> $r4 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3)
+<com.youversion.util.r: java.lang.Object a(android.content.Context,android.support.v4.app.Fragment,com.youversion.util.r$a,boolean)> --> if $r4 == null goto return $r13
+<com.youversion.ui.events.search.b: void a(android.location.Location)> --> r0 := @this: com.youversion.ui.events.search.b
+<com.youversion.ui.events.search.b: void a(android.location.Location)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("Events", "onLocationUpdate")
+--------------------------------------------------------
+

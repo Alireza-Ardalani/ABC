@@ -1,0 +1,25 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("location", $r1)
+Component=> com.localytics.android.LocationUpdateReceiver
+ComponentColor=> RED
+com.localytics.android.LocationHandler
+com.localytics.android.LocationManager
+android.location.Location
+com.localytics.android.AnalyticsHandler
+com.localytics.android.LocalyticsManager
+android.os.Bundle
+Category: com.localytics.android.LocationHandler-*-com.localytics.android.LocationManager-*-com.localytics.android.AnalyticsHandler-*-com.localytics.android.LocalyticsManager-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("location", $r1)
+Component=> com.localytics.android.LocationUpdateReceiver
+ComponentColor=> RED
+com.localytics.android.LocationHandler
+com.localytics.android.LocationManager
+android.location.Location
+com.localytics.android.AnalyticsHandler
+com.localytics.android.LocalyticsManager
+android.os.Bundle
+Category: com.localytics.android.LocationHandler-*-com.localytics.android.LocationManager-*-com.localytics.android.AnalyticsHandler-*-com.localytics.android.LocalyticsManager-*-
+-----------------------------------------------------------------
+com.gnresound.tinnitus.apk: 1082502

@@ -1,0 +1,28 @@
+<aero.developer.aca.foo.g.h: android.location.Location h()> --> $r7 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> $r15 = staticinvoke <aero.developer.aca.foo.g.h: android.location.Location h()>()
+<aero.developer.aca.foo.g.h: float a(android.location.Location,android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<aero.developer.aca.foo.g.h: float a(android.location.Location,android.location.Location)> --> if $r1 == null goto return 0.0F
+<aero.developer.aca.foo.g.h: float a(android.location.Location,android.location.Location)> --> $f0 = $f0 / 1000.0F
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> $f1 = staticinvoke <aero.developer.aca.foo.g.h: float a(android.location.Location,android.location.Location)>($r15, $r14)
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> $b1 = $f1 cmpl $f0
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> $i0 = (int) $b1
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> if $i0 <= 0 goto $z0 = $z4
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> $z1 = 0
+<aero.developer.aca.foo.m.g: void a(boolean,boolean)> --> $z0 := @parameter0: boolean
+<aero.developer.aca.foo.m.g: void a(boolean,boolean)> --> interfaceinvoke $r0.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("inDeparture", $z0)
+--------------------------------------------------------
+
+<aero.developer.aca.foo.g.h: android.location.Location h()> --> $r7 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> $r15 = staticinvoke <aero.developer.aca.foo.g.h: android.location.Location h()>()
+<aero.developer.aca.foo.g.h: float a(android.location.Location,android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<aero.developer.aca.foo.g.h: float a(android.location.Location,android.location.Location)> --> if $r1 == null goto return 0.0F
+<aero.developer.aca.foo.g.h: float a(android.location.Location,android.location.Location)> --> $f0 = $f0 / 1000.0F
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> $f1 = staticinvoke <aero.developer.aca.foo.g.h: float a(android.location.Location,android.location.Location)>($r15, $r14)
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> $b1 = $f1 cmpl $f0
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> $i0 = (int) $b1
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> if $i0 <= 0 goto $z0 = $z4
+<aero.developer.aca.foo.geofancing.GeofenceTransitionsIntentReciver: void onReceive(android.content.Context,android.content.Intent)> --> $z0 = $z4
+<aero.developer.aca.foo.m.g: void a(boolean,boolean)> --> $z0 := @parameter0: boolean
+<aero.developer.aca.foo.m.g: void a(boolean,boolean)> --> interfaceinvoke $r0.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("inArrival", $z1)
+--------------------------------------------------------
+

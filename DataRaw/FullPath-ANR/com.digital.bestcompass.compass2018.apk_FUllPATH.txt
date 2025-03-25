@@ -1,0 +1,24 @@
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()> --> r0.<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location location> = $r5
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: void <init>(android.content.Context,com.digital.bestcompass.compass2018.intercall.EnableSetting)> --> specialinvoke r0.<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()>()
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: void <init>(android.content.Context,com.digital.bestcompass.compass2018.intercall.EnableSetting)> --> r0.<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.content.Context mContext> = $r1
+<dummyMainClass: com.digital.bestcompass.compass2018.screencompass.DetailLocationGpsActivity dummyMainMethod_com_digital_bestcompass_compass2018_screencompass_DetailLocationGpsActivity(android.content.Intent)> --> specialinvoke $r5.<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: void <init>(android.content.Context,com.digital.bestcompass.compass2018.intercall.EnableSetting)>($r0, $r0)
+<com.digital.bestcompass.compass2018.utils.GetAddressAsyn: void <init>(android.content.Context,com.digital.bestcompass.compass2018.intercall.UpdateGpsAddress)> --> return
+<dummyMainClass: com.digital.bestcompass.compass2018.screencompass.DetailLocationGpsActivity dummyMainMethod_com_digital_bestcompass_compass2018_screencompass_DetailLocationGpsActivity(android.content.Intent)> --> specialinvoke $r3.<com.digital.bestcompass.compass2018.utils.GetAddressAsyn: void <init>(android.content.Context,com.digital.bestcompass.compass2018.intercall.UpdateGpsAddress)>($r0, $r0)
+<com.digital.bestcompass.compass2018.screencompass.DetailLocationGpsActivity: void onActivityResult(int,int,android.content.Intent)> --> return
+<com.digital.bestcompass.compass2018.screencompass.DetailLocationGpsActivity: void setUpGPS()> --> return
+<com.digital.bestcompass.compass2018.screencompass.DetailLocationGpsActivity: void setUpGPS()> --> r0.<com.digital.bestcompass.compass2018.screencompass.DetailLocationGpsActivity: com.digital.bestcompass.compass2018.utils.FoundGPSLocation mFoundGpsLocation> = $r14
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: void <init>(android.content.Context,com.digital.bestcompass.compass2018.intercall.EnableSetting)> --> return
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()> --> return $r5
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()> --> $r5 = r0.<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location location>
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()> --> if $r5 != null goto $r5 = r0.<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location location>
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()> --> r0.<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location location> = $r5
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()> --> $r5 = r0.<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location location>
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()> --> if $r5 != null goto $r5 = r0.<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location location>
+<com.digital.bestcompass.compass2018.utils.FoundGPSLocation: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+

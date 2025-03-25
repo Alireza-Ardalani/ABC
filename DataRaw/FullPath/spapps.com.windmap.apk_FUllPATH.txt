@@ -1,0 +1,16 @@
+<spapps.com.windmap.SPLocation$GetLastLocation: void run()> --> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<spapps.com.windmap.SPLocation$GetLastLocation: void run()> --> $r1 = r0.<spapps.com.windmap.SPLocation$GetLastLocation: spapps.com.windmap.SPLocation this$0>
+<spapps.com.windmap.SPLocation$GetLastLocation: void run()> --> if $z0 == 0 goto $r6 = null
+<spapps.com.windmap.SPLocation$GetLastLocation: void run()> --> if $r5 == null goto (branch)
+<spapps.com.windmap.MainActivity$19: void gotLocation(android.location.Location)> --> r0 := @this: spapps.com.windmap.MainActivity$19
+<spapps.com.windmap.MainActivity$19: void gotLocation(android.location.Location)> --> if $r3 == null goto $r4 = r0.<spapps.com.windmap.MainActivity$19: spapps.com.windmap.MainActivity this$0>
+<spapps.com.windmap.MainActivity$19: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("gotLocation", $r6)
+--------------------------------------------------------
+
+<spapps.com.windmap.SPLocation$GetLastLocation: void run()> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<spapps.com.windmap.SPLocation$GetLastLocation: void run()> --> if $r5 == null goto (branch)
+<spapps.com.windmap.SPLocation$GetLastLocation: void run()> --> if $r6 == null goto $r1 = r0.<spapps.com.windmap.SPLocation$GetLastLocation: spapps.com.windmap.SPLocation this$0>
+<spapps.com.windmap.MainActivity$19: void gotLocation(android.location.Location)> --> r0 := @this: spapps.com.windmap.MainActivity$19
+<spapps.com.windmap.MainActivity$19: void gotLocation(android.location.Location)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("gotLocation", $r6)
+--------------------------------------------------------
+

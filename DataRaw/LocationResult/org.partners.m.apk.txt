@@ -1,0 +1,1692 @@
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void connect()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+java.net.URLConnection
+vw
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-vw-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> specialinvoke $r23.<java.net.URL: void <init>(java.net.URL,java.lang.String)>($r13, $r6)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+android.location.LocationManager
+java.net.URL
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+wg
+xe
+wy
+vr
+Category: vw-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("SiteInfo", $r2)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+xc
+xc
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+vw
+wy$1
+wy
+xc
+vr
+Category: vw-*-xc-*-xc-*-vw-*-wy$1-*-wy-*-xc-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> specialinvoke $r24.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+wd$1
+xl
+xl
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+java.net.URL
+wg
+xe
+wy
+vr
+Category: wd$1-*-xl-*-xl-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r3 = virtualinvoke $r1.<java.net.HttpURLConnection: java.lang.String getResponseMessage()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+vw
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+java.net.HttpURLConnection
+Category: vw$1-*-vw-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r22.<java.io.BufferedWriter: void write(java.lang.String,int,int)>($r6, 0, $i1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+java.io.BufferedWriter
+wg
+xe
+wy
+vr
+Category: vw-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void connect()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+java.net.URLConnection
+wd$1
+xl
+xl
+xl
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-xl-*-xl-*-xl-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("SignInClientImpl", "Remote service probably died when clearAccountFromSessionStore is called")
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.location.LocationManager
+vw
+vk
+ix
+iz
+iv
+iv
+iv
+wy$1
+wy
+wy
+vr
+android.util.Log
+vr
+Category: xe-*-vw-*-vk-*-ix-*-iz-*-iv-*-iv-*-iv-*-wy$1-*-wy-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("LastSavedLocationTime", $l0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.content.SharedPreferences$Editor
+xe$4
+android.location.LocationManager
+xe
+wy$1
+xe
+xe
+Category: xe-*-xe$4-*-xe-*-wy$1-*-xe-*-xe-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LastSavedLocationLongitude", $f0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+xe$4
+android.location.LocationManager
+xe
+wy$1
+xe
+xe
+android.content.SharedPreferences$Editor
+Category: xe-*-xe$4-*-xe-*-wy$1-*-xe-*-xe-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoConnection", $r8)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+android.location.LocationManager
+wg
+vw
+wy$1
+wy
+vr
+Category: wg-*-vw-*-wy$1-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LastSavedLocationLatitude", $f0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.location.LocationManager
+xe
+wy$1
+android.content.SharedPreferences$Editor
+Category: xe-*-xe-*-wy$1-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $i1 = virtualinvoke $r1.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+java.net.HttpURLConnection
+vw
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-vw-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoActivity", "fragment did not process response")
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+xe$4
+wd$1
+android.location.LocationManager
+wg
+xe
+vw
+xe
+xe
+wy
+vr
+Category: xe$4-*-wd$1-*-wg-*-xe-*-vw-*-xe-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> specialinvoke $r4.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+xc
+java.net.URL
+android.location.LocationManager
+vw
+wy$1
+xc
+wy
+xc
+vr
+Category: vw-*-xc-*-vw-*-wy$1-*-xc-*-wy-*-xc-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("AppRequiresGeolocation", $z0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.location.LocationManager
+vw
+wy$1
+wy
+wy
+vr
+vr
+android.content.SharedPreferences$Editor
+Category: xe-*-vw-*-wy$1-*-wy-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $i1 = virtualinvoke $r3.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+wd$1
+xl
+xl
+java.net.HttpURLConnection
+xl
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-xl-*-xl-*-xl-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("SiteIdsList", $r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+wy
+android.location.LocationManager
+xe
+vw
+xe
+xc
+xc
+xc$1
+vo
+xe$4
+android.content.SharedPreferences$Editor
+wg
+vo
+wy
+android.os.Handler
+xe
+wy
+vr
+vr
+Category: wy-*-xe-*-vw-*-xe-*-xc-*-xc-*-xc$1-*-vo-*-xe$4-*-wg-*-vo-*-wy-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+wd$1
+xl
+xl
+xl
+java.net.URL
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-xl-*-xl-*-xl-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("GmsSupportLifecycleFrag", 3)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+jh
+ii$a$1
+android.location.LocationManager
+vw
+java.lang.Class
+wy$1
+wy
+android.os.Handler
+jh
+android.util.Log
+wy
+vr
+vr
+Category: jh-*-ii$a$1-*-vw-*-wy$1-*-wy-*-jh-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("GmsSupportLifecycleFrag", "Unable to find connection error message resources (Did you include play-services-base and the proper proguard rules?); error dialogs may be unavailable.")
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+jh
+ii$a$1
+android.location.LocationManager
+xe
+vw
+xe
+xe$4
+wg
+wy
+android.os.Handler
+xe
+wy
+vr
+android.util.Log
+vr
+Category: jh-*-ii$a$1-*-xe-*-vw-*-xe-*-xe$4-*-wg-*-wy-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r2 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+java.net.URL
+xe$4
+android.location.LocationManager
+xe
+vw
+xe
+xe
+wy
+vr
+Category: vw-*-xe$4-*-xe-*-vw-*-xe-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("GmsSupportLifecycleFrag", 3)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+jh
+ii$a$1
+android.location.LocationManager
+vw
+wy$1
+wy
+android.os.Handler
+jh
+android.util.Log
+wy
+vr
+vr
+Category: jh-*-ii$a$1-*-vw-*-wy$1-*-wy-*-jh-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("GmsSupportLifecycleFrag", 3)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+jh
+ii$a$1
+android.location.LocationManager
+xe
+vw
+xe
+xe$4
+wg
+wy
+android.os.Handler
+jh
+xe
+android.util.Log
+wy
+vr
+vr
+Category: jh-*-ii$a$1-*-xe-*-vw-*-xe-*-xe$4-*-wg-*-wy-*-jh-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("GmsClientEvents", $r5)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+ii$a
+ii$a$1
+ki
+android.location.LocationManager
+vw
+ix
+jh$a
+wy$1
+wy
+android.os.Handler
+wy
+vr
+android.util.Log
+vr
+Category: ii$a-*-ii$a$1-*-ki-*-vw-*-ix-*-jh$a-*-wy$1-*-wy-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> specialinvoke $r24.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+wd$1
+xl
+xl
+java.net.URL
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-xl-*-xl-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r22.<java.io.BufferedWriter: void write(java.lang.String,int,int)>($r6, 0, $i1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+java.io.BufferedWriter
+vw
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-vw-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("LastRootServer", $r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+xc
+xc
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+vw
+wy$1
+wy
+xc
+vr
+Category: vw-*-xc-*-xc-*-vw-*-wy$1-*-wy-*-xc-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoURL", $r1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+wd$1
+xl
+xl
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+xl
+wg
+xe
+wy
+vr
+Category: wd$1-*-xl-*-xl-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-xl-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("GmsSupportLifecycleFrag", "Unable to find connection error message resources (Did you include play-services-base and the proper proguard rules?); error dialogs may be unavailable.")
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+jh
+ii$a$1
+android.location.LocationManager
+vw
+wy$1
+wy
+android.os.Handler
+wy
+vr
+android.util.Log
+vr
+Category: jh-*-ii$a$1-*-vw-*-wy$1-*-wy-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoSite", $r2)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+android.util.Log
+android.location.LocationManager
+vw
+wy$1
+wy
+xc
+vr
+Category: vw-*-vw-*-wy$1-*-wy-*-xc-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r2 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+java.net.URL
+vw$1
+wd$1
+xl
+xl
+xl
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-xl-*-xl-*-xl-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void connect()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+java.net.URLConnection
+vw
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-vw-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+vw
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+java.net.URLConnection
+Category: vw$1-*-vw-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r2 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+java.net.URL
+wd$1
+xl
+xl
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+xl
+wg
+xe
+wy
+vr
+Category: wd$1-*-xl-*-xl-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-xl-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("GmsSupportLifecycleFrag", "Unable to instantiate SupportLifecycleFragmentImpl class", $r4)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+jh
+ii$a$1
+android.location.LocationManager
+vw
+android.util.Log
+java.lang.Class
+wy$1
+wy
+android.os.Handler
+jh
+wy
+vr
+vr
+Category: jh-*-ii$a$1-*-vw-*-wy$1-*-wy-*-jh-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoNavigation", $r6)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+xa
+xe$4
+android.location.LocationManager
+wg
+xe
+vw
+xe
+xe
+wy
+vr
+vr
+Category: xa-*-xe$4-*-wg-*-xe-*-vw-*-xe-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r7 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+vw
+android.location.LocationManager
+vw
+java.net.URLConnection
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-vw-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("LastBuiltSite", "https://m.partners.org")
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+vw
+wy$1
+wy
+xc
+vr
+Category: vw-*-vw-*-wy$1-*-wy-*-xc-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoConnection", $r8)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+xe$4
+android.location.LocationManager
+wg
+xe
+vw
+xe
+xe
+wy
+vr
+Category: xe$4-*-wg-*-xe-*-vw-*-xe-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("GmsSupportLifecycleFrag", "Unable to find SupportLifecycleFragmentImpl class", $r3)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+jh
+ii$a$1
+android.location.LocationManager
+vw
+wy$1
+wy
+android.os.Handler
+jh
+android.util.Log
+wy
+vr
+vr
+Category: jh-*-ii$a$1-*-vw-*-wy$1-*-wy-*-jh-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> specialinvoke $r23.<java.net.URL: void <init>(java.net.URL,java.lang.String)>($r13, $r6)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+vw
+android.location.LocationManager
+java.net.URL
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-vw-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> specialinvoke $r10.<java.net.URL: void <init>(java.lang.String)>($r3)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe$4
+java.net.URL
+android.location.LocationManager
+xe
+xe
+xe
+wy
+vr
+Category: xe$4-*-xe-*-xe-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void connect()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+java.net.URLConnection
+wd$1
+xl
+xl
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+xl
+wg
+xe
+wy
+vr
+Category: wd$1-*-xl-*-xl-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-xl-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoActivity", $r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+android.util.Log
+xk
+vw
+android.location.LocationManager
+vw
+wy$1
+vo
+wy
+vr
+vw
+Category: vw$1-*-xk-*-vw-*-vw-*-wy$1-*-vo-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoConnection", $r10)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+wd$1
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+wg
+xe
+wy
+vr
+Category: wd$1-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LastSavedLocationLongitude", $f0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.location.LocationManager
+xe
+android.content.SharedPreferences$Editor
+Category: xe-*-xe-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LastSavedLocationLatitude", $f0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.content.SharedPreferences$Editor
+android.location.Location
+Category: xe-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoURL", $r1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+android.util.Log
+wd$1
+xl
+wg
+xl
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-xl-*-wg-*-xl-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GmsClient", $r5)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+xe
+kh
+android.location.LocationManager
+xe
+vw
+kh
+kh
+xe
+ix
+iz
+iv
+iv
+xe$4
+wg
+iv
+wy
+xe
+vk
+wy
+vr
+vr
+Category: xe-*-kh-*-xe-*-vw-*-kh-*-kh-*-xe-*-ix-*-iz-*-iv-*-iv-*-xe$4-*-wg-*-iv-*-wy-*-xe-*-vk-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("LastRootServer", $r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xc
+wy
+android.location.LocationManager
+xe
+vw
+xe
+xc
+xc
+xc$1
+xc
+xe$4
+android.content.SharedPreferences$Editor
+wg
+wy
+android.os.Handler
+xe
+wy
+vr
+vr
+Category: xc-*-wy-*-xe-*-vw-*-xe-*-xc-*-xc-*-xc$1-*-xc-*-xe$4-*-wg-*-wy-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoConnection", $r10)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+android.util.Log
+wd$1
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r7 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+wg
+java.net.URLConnection
+xe
+wy
+vr
+Category: vw-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> specialinvoke $r10.<java.net.URL: void <init>(java.lang.String)>($r3)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+java.net.URL
+android.location.LocationManager
+wy$1
+wy
+vr
+Category: wy$1-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoActivity", $r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+xk
+vw
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+wg
+vo
+xe
+wy
+vr
+Category: xk-*-vw-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-vo-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r2 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+java.net.URL
+vw$1
+wd$1
+xl
+xl
+xl
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-xl-*-xl-*-xl-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("LastBuiltSite", "https://m.partners.org")
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+xe
+xc
+Category: xe-*-xe-*-xc-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GmsClient", $r5)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+xe
+kh
+android.location.LocationManager
+vw
+kh
+kh
+ix
+iz
+iv
+iv
+iv
+wy$1
+wy
+vk
+wy
+vr
+vr
+Category: xe-*-kh-*-vw-*-kh-*-kh-*-ix-*-iz-*-iv-*-iv-*-iv-*-wy$1-*-wy-*-vk-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoNavigation", $r6)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+xa
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vr
+Category: xa-*-vw-*-wy$1-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("AppRequiresGeolocation", $z0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.location.LocationManager
+xe
+vw
+xe
+xe$4
+wg
+wy
+xe
+wy
+vr
+vr
+android.content.SharedPreferences$Editor
+Category: xe-*-xe-*-vw-*-xe-*-xe$4-*-wg-*-wy-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void connect()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+java.net.URLConnection
+vw
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+wg
+xe
+wy
+vr
+Category: vw-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+wg
+xe
+wy
+vr
+java.net.URLConnection
+Category: vw-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("GmsSupportLifecycleFrag", "Unable to find SupportLifecycleFragmentImpl class", $r3)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+jh
+ii$a$1
+android.location.LocationManager
+xe
+vw
+android.util.Log
+xe
+xe$4
+wg
+wy
+android.os.Handler
+jh
+xe
+wy
+vr
+vr
+Category: jh-*-ii$a$1-*-xe-*-vw-*-xe-*-xe$4-*-wg-*-wy-*-jh-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoURL", $r1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+android.util.Log
+wd$1
+xl
+wg
+xl
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-xl-*-wg-*-xl-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r2 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+java.net.URL
+wd$1
+xl
+xl
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+xl
+wg
+xe
+wy
+vr
+Category: wd$1-*-xl-*-xl-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-xl-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoSite", $r2)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+wy
+android.location.LocationManager
+xe
+vw
+xe
+xc
+xc
+xc$1
+xe$4
+wg
+wy
+android.os.Handler
+xe
+wy
+vr
+vr
+Category: wy-*-xe-*-vw-*-xe-*-xc-*-xc-*-xc$1-*-xe$4-*-wg-*-wy-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+wd$1
+xl
+xl
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+xl
+java.net.URL
+wg
+xe
+wy
+vr
+Category: wd$1-*-xl-*-xl-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-xl-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("modo_notifications", $r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+wy
+android.location.LocationManager
+xe
+vw
+xe
+xc
+xc
+xc$1
+xc
+xe$4
+wr
+android.content.SharedPreferences$Editor
+wg
+com.modolabs.kurogo.core.notifications.RegistrationIntentService
+wy
+android.os.Handler
+xe
+wy
+vr
+vr
+Category: wy-*-xe-*-vw-*-xe-*-xc-*-xc-*-xc$1-*-xc-*-xe$4-*-wr-*-wg-*-wy-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("GmsClientEvents", $r5)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+ii$a
+ii$a$1
+ki
+android.location.LocationManager
+xe
+vw
+xe
+ix
+jh$a
+xe$4
+wg
+wy
+android.os.Handler
+xe
+wy
+vr
+android.util.Log
+vr
+Category: ii$a-*-ii$a$1-*-ki-*-xe-*-vw-*-xe-*-ix-*-jh$a-*-xe$4-*-wg-*-wy-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r24.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+java.net.URL
+wd$1
+xl
+xl
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+wg
+xe
+wy
+vr
+Category: wd$1-*-xl-*-xl-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("GmsSupportLifecycleFrag", 3)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+jh
+ii$a$1
+android.location.LocationManager
+xe
+vw
+xe
+java.lang.Class
+xe$4
+wg
+wy
+android.os.Handler
+jh
+xe
+android.util.Log
+wy
+vr
+vr
+Category: jh-*-ii$a$1-*-xe-*-vw-*-xe-*-xe$4-*-wg-*-wy-*-jh-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> virtualinvoke $r24.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+java.net.URL
+vw$1
+wd$1
+xl
+xl
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-xl-*-xl-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $i1 = virtualinvoke $r1.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+java.net.HttpURLConnection
+wg
+xe
+wy
+vr
+Category: vw-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("SiteIdsList", $r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+xc
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+vw
+wy$1
+wy
+xc
+vr
+vo
+Category: vw-*-xc-*-vw-*-wy$1-*-wy-*-xc-*-vr-*-vo-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("GmsSupportLifecycleFrag", "Unable to instantiate SupportLifecycleFragmentImpl class", $r4)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+jh
+ii$a$1
+android.location.LocationManager
+xe
+vw
+android.util.Log
+xe
+java.lang.Class
+xe$4
+wg
+wy
+android.os.Handler
+jh
+xe
+wy
+vr
+vr
+Category: jh-*-ii$a$1-*-xe-*-vw-*-xe-*-xe$4-*-wg-*-wy-*-jh-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> specialinvoke $r4.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+xc
+vw
+android.location.LocationManager
+xe
+vw
+xe
+xc
+vw
+vw$1
+xe$4
+java.net.URL
+wg
+xe
+xc
+wy
+vr
+Category: vw-*-xc-*-vw-*-xe-*-vw-*-xe-*-xc-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-xc-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r3 = virtualinvoke $r1.<java.net.HttpURLConnection: java.lang.String getResponseMessage()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+wg
+xe
+wy
+vr
+java.net.HttpURLConnection
+Category: vw-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("SignInClientImpl", "Remote service probably died when clearAccountFromSessionStore is called")
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.location.LocationManager
+xe
+vw
+xe
+vk
+ix
+iz
+iv
+iv
+xe$4
+wg
+iv
+wy
+xe
+wy
+vr
+android.util.Log
+vr
+Category: xe-*-xe-*-vw-*-xe-*-vk-*-ix-*-iz-*-iv-*-iv-*-xe$4-*-wg-*-iv-*-wy-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r2 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+java.net.URL
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+Category: vw-*-vw-*-wy$1-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LastSavedLocationLatitude", $f0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.location.LocationManager
+xe
+xe
+android.content.SharedPreferences$Editor
+Category: xe-*-xe-*-xe-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoURL", $r1)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+wd$1
+xl
+xl
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+xl
+wg
+xe
+wy
+vr
+Category: wd$1-*-xl-*-xl-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-xl-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $i1 = virtualinvoke $r3.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+wd$1
+xl
+xl
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+java.net.HttpURLConnection
+xl
+wg
+xe
+wy
+vr
+Category: wd$1-*-xl-*-xl-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-xl-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+vw
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+java.net.URLConnection
+Category: vw$1-*-vw-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void connect()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+java.net.URLConnection
+vw
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+wg
+xe
+wy
+vr
+Category: vw-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> specialinvoke $r11.<java.net.URL: void <init>(java.net.URL,java.lang.String)>($r9, $r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+wd$1
+xl
+xl
+xl
+android.location.LocationManager
+java.net.URL
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-xl-*-xl-*-xl-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("KurogoActivity", "fragment did not process response")
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+android.util.Log
+wd$1
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+Category: wd$1-*-vw-*-wy$1-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("LastSavedLocationTime", $l0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+xe
+xe
+Category: xe-*-xe-*-xe-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("modo_notifications", $r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+xc
+wr
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.modolabs.kurogo.core.notifications.RegistrationIntentService
+vw
+wy$1
+wy
+xc
+vr
+Category: vw-*-xc-*-wr-*-vw-*-wy$1-*-wy-*-xc-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+wg
+xe
+wy
+vr
+java.net.URLConnection
+Category: vw-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("SiteInfo", $r2)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xc
+wy
+android.location.LocationManager
+xe
+vw
+xe
+xc
+xc
+xc$1
+xc
+xe$4
+android.content.SharedPreferences$Editor
+wg
+wy
+android.os.Handler
+xe
+wy
+vr
+vr
+Category: xc-*-wy-*-xe-*-vw-*-xe-*-xc-*-xc-*-xc$1-*-xc-*-xe$4-*-wg-*-wy-*-xe-*-wy-*-vr-*-vr-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LastSavedLocationLongitude", $f0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+xe
+android.location.Location
+android.content.SharedPreferences$Editor
+Category: xe-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> specialinvoke $r11.<java.net.URL: void <init>(java.net.URL,java.lang.String)>($r9, $r0)
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+wd$1
+xl
+xl
+android.location.LocationManager
+java.net.URL
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+xl
+wg
+xe
+wy
+vr
+Category: wd$1-*-xl-*-xl-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-xl-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $i0 = virtualinvoke $r12.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+wd$1
+xl
+xl
+android.location.LocationManager
+xe
+vw
+xe
+vw
+vw$1
+xe$4
+java.net.HttpURLConnection
+wg
+xe
+wy
+vr
+Category: wd$1-*-xl-*-xl-*-xe-*-vw-*-xe-*-vw-*-vw$1-*-xe$4-*-wg-*-xe-*-wy-*-vr-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+Sink=> $i0 = virtualinvoke $r12.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.modolabs.kurogo.core.notifications.RegistrationIntentService
+ComponentColor=> GREEN
+vw$1
+wd$1
+xl
+xl
+java.net.HttpURLConnection
+android.location.LocationManager
+vw
+wy$1
+wy
+vr
+vw
+Category: vw$1-*-wd$1-*-xl-*-xl-*-vw-*-wy$1-*-wy-*-vr-*-vw-*-
+-----------------------------------------------------------------
+org.partners.m.apk: 1036833

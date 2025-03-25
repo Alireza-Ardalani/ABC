@@ -1,0 +1,13 @@
+<com.yahoo.f.a.a.d: android.location.Location o()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.yahoo.f.a.a.d: void b()> --> $r6 = specialinvoke r0.<com.yahoo.f.a.a.d: android.location.Location o()>()
+<com.yahoo.f.a.a.d: android.location.Location a(android.location.Location,android.location.Location)> --> r0 := @this: com.yahoo.f.a.a.d
+<com.yahoo.f.a.a.d: android.location.Location a(android.location.Location,android.location.Location)> --> if $r1 == null goto (branch)
+<com.yahoo.f.a.a.d: void b()> --> $r6 = virtualinvoke r0.<com.yahoo.f.a.a.d: android.location.Location a(android.location.Location,android.location.Location)>($r5, $r6)
+<com.yahoo.f.a.a.d: void b()> --> if $r6 != null goto $r8 = new org.json.JSONArray
+<com.yahoo.f.a.a.d: void b()> --> $r15 = (android.net.wifi.ScanResult) $r14
+<com.yahoo.f.a.a.d: void b()> --> $r16 = $r15.<android.net.wifi.ScanResult: java.lang.String SSID>
+<com.yahoo.f.a.a.d: void b()> --> $r1 := @caughtexception
+<com.yahoo.f.a.a.f: void b(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.yahoo.f.a.a.f: void b(java.lang.String,java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>("LocationDataProvider", $r1, $r2)
+--------------------------------------------------------
+

@@ -1,0 +1,24 @@
+Source=> r4 = virtualinvoke r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Session", $r3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Session", $r3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

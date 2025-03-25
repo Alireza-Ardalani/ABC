@@ -1,0 +1,180 @@
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Session", $r7)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", "Missing context! Unable to get push notification from shared preferences! Returning false.")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+Sink=> $z1 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Util", 3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", "Missing context! Unable to get push notification from shared preferences! Returning false.")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Server URL is null! ")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Server URL is null! ")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", $r6)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Util", $r1)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", $r6)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Util", $r1)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Server URL is null! ")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Server URL is null! ")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Util", $r1)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", "Missing context! Unable to get push notification from shared preferences! Returning false.")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", $r6)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Util", $r1)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Tried to get value from preferences before session was started")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", $r6)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", "Missing context! Unable to get push notification from shared preferences! Returning false.")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Tried to get value from preferences before session was started")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Tried to get value from preferences before session was started")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Session", $r7)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z1 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Util", 3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $z1 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Util", 3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r25.<android.location.Location: double getLatitude()>()
+Sink=> $z1 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Util", 3)
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r25 = virtualinvoke $r35.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Util", "Tried to get value from preferences before session was started")
+Component=> com.sessionm.ui.SessionMActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

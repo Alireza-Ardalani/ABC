@@ -1,0 +1,280 @@
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a> = $r1
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> if $r1 == null goto $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.ui.common.e: void a(sinet.startup.inDriver.ui.common.NavigationDrawerActivity)> --> $r5 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r1)
+<sinet.startup.inDriver.preferences.g: void c(boolean)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void c(boolean)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("another_sim_dialog_showed", 1)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> r0 := @this: sinet.startup.inDriver.services.GeocodingService
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> virtualinvoke $r4.<android.os.Bundle: void putStringArrayList(java.lang.String,java.util.ArrayList)>("sinet.startup.inDriver.Geocoding.RESULT_DATA_KEY", $r1)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> r0 := @this: sinet.startup.inDriver.services.GeocodingService
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> virtualinvoke $r4.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("sinet.startup.inDriver.Geocoding.LOCATION_DATA_EXTRA", $r2)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context,java.lang.String)> --> r0 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: void f(java.lang.String)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void f(java.lang.String)> --> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("language", $r1)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void <init>(android.content.Context)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> specialinvoke $r1.<sinet.startup.inDriver.preferences.g: void <init>(android.content.Context)>($r0)
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a> = $r1
+<sinet.startup.inDriver.ui.common.e: void a(sinet.startup.inDriver.ui.common.NavigationDrawerActivity)> --> $r5 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r1)
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> if $r1 == null goto $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.services.synchronizer.d.a: void a()> --> $r11 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r4)
+<sinet.startup.inDriver.preferences.g: void a(java.lang.String)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void a(java.lang.String)> --> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("settedStreetVersion", $r1)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a> = $r1
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> if $r1 == null goto $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.h: void a(android.content.Context)> --> $r1 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r0)
+<sinet.startup.inDriver.preferences.g: void a(int)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void a(int)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("preferences_version", 6)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: void e()> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void e()> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("first_launch_locale_checked_key", 1)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> r0 := @this: sinet.startup.inDriver.services.GeocodingService
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> virtualinvoke $r4.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("sinet.startup.inDriver.Geocoding.LOCATION_DATA_EXTRA", $r2)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> r0 := @this: sinet.startup.inDriver.services.GeocodingService
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> virtualinvoke $r4.<android.os.Bundle: void putStringArrayList(java.lang.String,java.util.ArrayList)>("sinet.startup.inDriver.Geocoding.RESULT_DATA_KEY", $r1)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> r0 := @this: sinet.startup.inDriver.services.GeocodingService
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> virtualinvoke $r4.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("sinet.startup.inDriver.Geocoding.LOCATION_DATA_EXTRA", $r2)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> r0 := @this: sinet.startup.inDriver.services.GeocodingService
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> virtualinvoke $r4.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("sinet.startup.inDriver.Geocoding.LOCATION_DATA_EXTRA", $r2)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void <init>(android.content.Context)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> specialinvoke $r1.<sinet.startup.inDriver.preferences.g: void <init>(android.content.Context)>($r0)
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a> = $r1
+<sinet.startup.inDriver.ui.common.e: void a(sinet.startup.inDriver.ui.common.NavigationDrawerActivity)> --> $r5 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r1)
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> if $r1 == null goto $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.h: void a(android.content.Context)> --> $r1 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r0)
+<sinet.startup.inDriver.preferences.g: void a(int)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void a(int)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("preferences_version", 6)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> r0 := @this: sinet.startup.inDriver.services.GeocodingService
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> virtualinvoke $r4.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("sinet.startup.inDriver.Geocoding.LOCATION_DATA_EXTRA", $r2)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a> = $r1
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> if $r1 == null goto $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> $r2 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r0)
+<sinet.startup.inDriver.preferences.g: void e()> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void e()> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("first_launch_locale_checked_key", 1)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void <init>(android.content.Context)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> specialinvoke $r1.<sinet.startup.inDriver.preferences.g: void <init>(android.content.Context)>($r0)
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a> = $r1
+<sinet.startup.inDriver.ui.common.e: void a(sinet.startup.inDriver.ui.common.NavigationDrawerActivity)> --> $r5 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r1)
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> if $r1 == null goto $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.ui.common.e: void a(sinet.startup.inDriver.ui.common.NavigationDrawerActivity)> --> $r5 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r1)
+<sinet.startup.inDriver.preferences.g: void c(boolean)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void c(boolean)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("another_sim_dialog_showed", 1)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a> = $r1
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> if $r1 == null goto $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.webview.WebViewLayout: void a(org.json.JSONObject)> --> $r7 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r6)
+<sinet.startup.inDriver.preferences.g: void a(org.json.JSONObject)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void a(org.json.JSONObject)> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("vars", $r4)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context,java.lang.String)> --> r0 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: void f(java.lang.String)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void f(java.lang.String)> --> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("language", $r1)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d1 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> r0 := @this: sinet.startup.inDriver.services.GeocodingService
+<sinet.startup.inDriver.services.GeocodingService: void a(int,java.util.ArrayList,android.location.Location)> --> virtualinvoke $r4.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("sinet.startup.inDriver.Geocoding.LOCATION_DATA_EXTRA", $r2)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a> = $r1
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> if $r1 == null goto $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.ui.tutorial.InitTutorialActivity: void onClick(android.view.View)> --> $r4 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r3)
+<sinet.startup.inDriver.preferences.g: void a(java.lang.String,java.lang.String,java.util.ArrayList)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void a(java.lang.String,java.lang.String,java.util.HashSet)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void a(java.lang.String,java.lang.String,java.util.HashSet)> --> interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a> = $r1
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> if $r1 == null goto $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.services.synchronizer.d.a: void a()> --> $r11 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r4)
+<sinet.startup.inDriver.preferences.g: void a(java.lang.String)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void a(java.lang.String)> --> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("settedStreetVersion", $r1)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void <init>(android.content.Context)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> specialinvoke $r1.<sinet.startup.inDriver.preferences.g: void <init>(android.content.Context)>($r0)
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a> = $r1
+<sinet.startup.inDriver.ui.common.e: void a(sinet.startup.inDriver.ui.common.NavigationDrawerActivity)> --> $r5 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r1)
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> if $r1 == null goto $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.webview.WebViewLayout: void a(org.json.JSONObject)> --> $r7 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r6)
+<sinet.startup.inDriver.preferences.g: void a(org.json.JSONObject)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void a(org.json.JSONObject)> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("vars", $r4)
+--------------------------------------------------------
+
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> $b0 = $d0 cmpl 0.0
+<sinet.startup.inDriver.services.GeocodingService: void onHandleIntent(android.content.Intent)> --> if $b0 == 0 goto return
+<sinet.startup.inDriver.utils.q: java.util.Locale b(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f: void a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.f$a: void a(android.content.Context)> --> r1 := @this: sinet.startup.inDriver.preferences.f$a
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void <init>(android.content.Context)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> specialinvoke $r1.<sinet.startup.inDriver.preferences.g: void <init>(android.content.Context)>($r0)
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a> = $r1
+<sinet.startup.inDriver.ui.common.e: void a(sinet.startup.inDriver.ui.common.NavigationDrawerActivity)> --> $r5 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r1)
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> if $r1 == null goto $r1 = new sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)> --> $r1 = <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a>
+<sinet.startup.inDriver.ui.tutorial.InitTutorialActivity: void onClick(android.view.View)> --> $r4 = staticinvoke <sinet.startup.inDriver.preferences.g: sinet.startup.inDriver.preferences.g a(android.content.Context)>($r3)
+<sinet.startup.inDriver.preferences.g: void a(java.lang.String,java.lang.String,java.util.ArrayList)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void a(java.lang.String,java.lang.String,java.util.HashSet)> --> r0 := @this: sinet.startup.inDriver.preferences.g
+<sinet.startup.inDriver.preferences.g: void a(java.lang.String,java.lang.String,java.util.HashSet)> --> interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+--------------------------------------------------------
+
