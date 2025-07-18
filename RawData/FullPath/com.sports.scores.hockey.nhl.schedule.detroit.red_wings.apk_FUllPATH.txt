@@ -1,0 +1,230 @@
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> return $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ʻ()> --> r0 := @this: com.moat.analytics.mobile.aol.n
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.mopub.common.LocationService: android.location.Location getLocationFromProvider(android.content.Context,com.mopub.common.LocationService$ValidLocationProvider)> --> $r8 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.mopub.common.LocationService: android.location.Location getLocationFromProvider(android.content.Context,com.mopub.common.LocationService$ValidLocationProvider)> --> $r2 := @caughtexception
+<com.mopub.common.logging.MoPubLog: void <clinit>()> --> nop
+<com.mopub.common.logging.MoPubLog$MoPubLogHandler: void <clinit>()> --> nop
+<java.lang.Integer: void <clinit>()> --> nop
+<java.lang.Integer: void <clinit>()> --> <java.lang.Integer: java.lang.Class TYPE> = null
+<com.mobfox.sdk.dmp.Bundle: void addData(android.content.Context,java.util.List,java.lang.String,java.lang.String)> --> $r15 = <java.lang.Integer: java.lang.Class TYPE>
+<com.mobfox.sdk.dmp.Bundle: void addData(android.content.Context,java.util.List,java.lang.String,java.lang.String)> --> $r22 := @caughtexception
+<com.mobfox.sdk.dmp.Bundle: void addData(android.content.Context,java.util.List,java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", $r5)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> return $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ʻ()> --> r0 := @this: com.moat.analytics.mobile.aol.n
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ʻ()> --> r0 := @this: com.moat.analytics.mobile.aol.n
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> return $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r5 = virtualinvoke $r2.<android.location.Location: java.lang.String toString()>()
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.aol.o: void ˎ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.aol.o: void ˎ(java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.aol.o: void ˎ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.aol.o: void ˎ(java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> return $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.aol.o: void ˎ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.aol.o: void ˎ(java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+--------------------------------------------------------
+
+<com.sports.schedules.library.utils.Util: android.location.Location getLastKnownLocation()> --> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.sports.schedules.library.utils.Util: android.location.Location getLastKnownLocation()> --> $r4 := @caughtexception
+<com.sports.schedules.library.utils.Util: android.location.Location getLastKnownLocation()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("Util", "getLastKnownLocation", $r4)
+--------------------------------------------------------
+
+<com.mopub.common.LocationService: android.location.Location getLocationFromProvider(android.content.Context,com.mopub.common.LocationService$ValidLocationProvider)> --> $r8 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.mopub.common.LocationService: android.location.Location getLocationFromProvider(android.content.Context,com.mopub.common.LocationService$ValidLocationProvider)> --> $r2 := @caughtexception
+<com.mopub.common.logging.MoPubLog: void <clinit>()> --> nop
+<com.mopub.common.logging.MoPubLog$MoPubLogHandler: void <clinit>()> --> nop
+<java.lang.Integer: void <clinit>()> --> nop
+<java.lang.Integer: void <clinit>()> --> <java.lang.Integer: java.lang.Class TYPE> = null
+<com.mobfox.sdk.dmp.Bundle: void addData(android.content.Context,java.util.List,java.lang.String,java.lang.String)> --> $r15 = <java.lang.Integer: java.lang.Class TYPE>
+<com.mobfox.sdk.dmp.Bundle: void addData(android.content.Context,java.util.List,java.lang.String,java.lang.String)> --> $r2 := @caughtexception
+<com.mobfox.sdk.dmp.Bundle: void addData(android.content.Context,java.util.List,java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", "dmp.bundle throwable")
+--------------------------------------------------------
+
+<com.mopub.common.LocationService: android.location.Location getLocationFromProvider(android.content.Context,com.mopub.common.LocationService$ValidLocationProvider)> --> $r8 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r7)
+<com.mopub.common.LocationService: android.location.Location getLocationFromProvider(android.content.Context,com.mopub.common.LocationService$ValidLocationProvider)> --> $r2 := @caughtexception
+<com.mopub.common.logging.MoPubLog: void <clinit>()> --> nop
+<com.mopub.common.logging.MoPubLog$MoPubLogHandler: void <clinit>()> --> nop
+<java.lang.Integer: void <clinit>()> --> nop
+<java.lang.Integer: void <clinit>()> --> <java.lang.Integer: java.lang.Class TYPE> = null
+<com.mobfox.sdk.dmp.Bundle: void addData(android.content.Context,java.util.List,java.lang.String,java.lang.String)> --> $r15 = <java.lang.Integer: java.lang.Class TYPE>
+<com.mobfox.sdk.dmp.Bundle: void addData(android.content.Context,java.util.List,java.lang.String,java.lang.String)> --> $r22 := @caughtexception
+<com.mobfox.sdk.dmp.Bundle: void addData(android.content.Context,java.util.List,java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MobFoxDMP", "dmp.bundle exception")
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> return $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ʻ()> --> r0 := @this: com.moat.analytics.mobile.aol.n
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ʻ()> --> r0 := @this: com.moat.analytics.mobile.aol.n
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z0 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r1)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z0 != 0 goto (branch)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ʻ()> --> r0 := @this: com.moat.analytics.mobile.aol.n
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z0 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r1)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z0 != 0 goto (branch)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.aol.o: void ˎ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.aol.o: void ˎ(java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()> --> return $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʽ()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ʻ()> --> r0 := @this: com.moat.analytics.mobile.aol.n
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.sports.schedules.library.utils.Util: android.location.Location getLastKnownLocation()> --> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sports.schedules.library.utils.Util: android.location.Location getLastKnownLocation()> --> $r4 := @caughtexception
+<com.sports.schedules.library.utils.Util: android.location.Location getLastKnownLocation()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("Util", "getLastKnownLocation", $r4)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> $z0 = staticinvoke <com.moat.analytics.mobile.aol.n: boolean ॱ(android.location.Location)>($r1)
+<com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)> --> if $z0 != 0 goto (branch)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.aol.n: android.location.Location ॱ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ> = $r2
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> $r2 = r0.<com.moat.analytics.mobile.aol.n: android.location.Location ʻ>
+<com.moat.analytics.mobile.aol.n: void ˎ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.aol.n: void ʻ()>()
+<com.moat.analytics.mobile.aol.n: void ʻ()> --> r0 := @this: com.moat.analytics.mobile.aol.n
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.aol.a: void ˏ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+

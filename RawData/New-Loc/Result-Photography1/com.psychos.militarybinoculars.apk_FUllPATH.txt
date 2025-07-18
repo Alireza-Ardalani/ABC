@@ -1,0 +1,21 @@
+<dummyMainClass: com.psychos.militarybinoculars.MainActivity dummyMainMethod_com_psychos_militarybinoculars_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.psychos.militarybinoculars.MainActivity: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.psychos.militarybinoculars.MainActivity dummyMainMethod_com_psychos_militarybinoculars_MainActivity(android.content.Intent)> --> if $i0 == 13 goto (branch)
+<com.psychos.militarybinoculars.MainActivity: void onClick(android.view.View)> --> r0 := @this: com.psychos.militarybinoculars.MainActivity
+<com.psychos.militarybinoculars.MainActivity: android.hardware.Camera getCamera()> --> r0 := @this: com.psychos.militarybinoculars.MainActivity
+<com.psychos.militarybinoculars.MainActivity: void onClick(android.view.View)> --> $r7 = specialinvoke r0.<com.psychos.militarybinoculars.MainActivity: android.hardware.Camera getCamera()>()
+<dummyMainClass: com.psychos.militarybinoculars.MainActivity dummyMainMethod_com_psychos_militarybinoculars_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.psychos.militarybinoculars.MainActivity: void onClick(android.view.View)>($r4)
+<com.psychos.militarybinoculars.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> return
+<com.psychos.militarybinoculars.MainActivity$17: void <init>(com.psychos.militarybinoculars.MainActivity)> --> return
+<com.psychos.militarybinoculars.MainActivity$17: void <init>(com.psychos.militarybinoculars.MainActivity)> --> r0.<com.psychos.militarybinoculars.MainActivity$17: com.psychos.militarybinoculars.MainActivity this$0> = $r1
+<com.psychos.militarybinoculars.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> specialinvoke $r5.<com.psychos.militarybinoculars.MainActivity$17: void <init>(com.psychos.militarybinoculars.MainActivity)>(r0)
+<com.psychos.militarybinoculars.MainActivity$17: void run()> --> r0 := @this: com.psychos.militarybinoculars.MainActivity$17
+<com.psychos.militarybinoculars.MainActivity$17: void run()> --> $r2 = r0.<com.psychos.militarybinoculars.MainActivity$17: com.psychos.militarybinoculars.MainActivity this$0>
+<com.psychos.militarybinoculars.MainActivity: void access$2600(com.psychos.militarybinoculars.MainActivity)> --> $r0 := @parameter0: com.psychos.militarybinoculars.MainActivity
+<com.psychos.militarybinoculars.MainActivity: void toggleRecording()> --> r0 := @this: com.psychos.militarybinoculars.MainActivity
+<com.psychos.militarybinoculars.MainActivity: void toggleRecording()> --> $z0 = r0.<com.psychos.militarybinoculars.MainActivity: boolean isRecording>
+<com.psychos.militarybinoculars.MainActivity: void toggleRecording()> --> if $z0 == 0 goto specialinvoke r0.<com.psychos.militarybinoculars.MainActivity: void startRecording()>()
+<com.psychos.militarybinoculars.MainActivity: void stopRecording()> --> r0 := @this: com.psychos.militarybinoculars.MainActivity
+<com.psychos.militarybinoculars.MainActivity: void addToGallery(java.io.File,android.content.ContentValues)> --> r0 := @this: com.psychos.militarybinoculars.MainActivity
+<com.psychos.militarybinoculars.MainActivity: void addToGallery(java.io.File,android.content.ContentValues)> --> virtualinvoke $r5.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r1, $r4)
+--------------------------------------------------------
+

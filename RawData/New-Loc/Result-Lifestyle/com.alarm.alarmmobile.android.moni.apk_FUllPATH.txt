@@ -1,0 +1,10 @@
+<com.alarm.alarmmobile.android.feature.geoservices.service.LocationService: void onCreate()> --> $r9 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r2)
+<com.alarm.alarmmobile.android.feature.geoservices.service.LocationService: void onCreate()> --> r0.<com.alarm.alarmmobile.android.feature.geoservices.service.LocationService: android.location.Location mLastLocation> = $r9
+<com.alarm.alarmmobile.android.feature.geoservices.service.LocationService: void onCreate()> --> $r9 = r0.<com.alarm.alarmmobile.android.feature.geoservices.service.LocationService: android.location.Location mLastLocation>
+<com.alarm.alarmmobile.android.feature.geoservices.service.LocationService: void onCreate()> --> if $r9 != null goto $r5 = r0.<com.alarm.alarmmobile.android.feature.geoservices.service.LocationService: com.alarm.alarmmobile.android.feature.geoservices.database.LocationPreferencesAdapter mLocationPreferencesAdapter>
+<com.alarm.alarmmobile.android.feature.geoservices.database.LocationPreferencesAdapter: void saveLastLocation(android.location.Location)> --> r0 := @this: com.alarm.alarmmobile.android.feature.geoservices.database.LocationPreferencesAdapter
+<com.alarm.alarmmobile.android.database.BasePreferencesAdapter: void putString(java.lang.String,java.lang.String)> --> r0 := @this: com.alarm.alarmmobile.android.database.BasePreferencesAdapter
+<com.alarm.alarmmobile.android.database.BasePreferencesAdapter: void putString(java.lang.String,java.lang.String,boolean)> --> r0 := @this: com.alarm.alarmmobile.android.database.BasePreferencesAdapter
+<com.alarm.alarmmobile.android.database.BasePreferencesAdapter: void putString(java.lang.String,java.lang.String,boolean)> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+--------------------------------------------------------
+

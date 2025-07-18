@@ -1,0 +1,14 @@
+<com.techsmith.androideye.critique.AnalyzeActivity: com.techsmith.androideye.data.RecordingContainer b(int,boolean,android.app.ProgressDialog)> --> $r23 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.techsmith.androideye.critique.AnalyzeActivity: com.techsmith.androideye.data.RecordingContainer b(int,boolean,android.app.ProgressDialog)> --> if $r23 == null goto $z0 = r0.<com.techsmith.androideye.critique.AnalyzeActivity: boolean u>
+<com.techsmith.androideye.data.Recording: void a(java.lang.String,java.lang.String)> --> r0 := @this: com.techsmith.androideye.data.Recording
+<com.techsmith.androideye.data.z: void a(long,java.lang.String,java.lang.String,boolean,boolean)> --> $l0 := @parameter0: long
+<com.techsmith.androideye.data.z: void a(long,java.lang.String,java.lang.String,boolean,boolean)> --> virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r3, $r2)
+--------------------------------------------------------
+
+<com.techsmith.androideye.critique.AnalyzeActivity: com.techsmith.androideye.data.RecordingContainer b(int,boolean,android.app.ProgressDialog)> --> $r23 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.techsmith.androideye.critique.AnalyzeActivity: com.techsmith.androideye.data.RecordingContainer b(int,boolean,android.app.ProgressDialog)> --> if $r23 == null goto $z0 = r0.<com.techsmith.androideye.critique.AnalyzeActivity: boolean u>
+<com.techsmith.androideye.data.Recording: void a(java.lang.String,java.lang.String)> --> r0 := @this: com.techsmith.androideye.data.Recording
+<com.techsmith.androideye.data.z: void a(long,java.lang.String,java.lang.String,boolean,boolean)> --> $l0 := @parameter0: long
+<com.techsmith.androideye.data.z: void a(long,java.lang.String,java.lang.String,boolean,boolean)> --> virtualinvoke $r4.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r6, null, null)
+--------------------------------------------------------
+

@@ -1,0 +1,240 @@
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("com.teletype.smarttruckroute4.viaactivity.extra_via_itinerary_label", $r6)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r17 = virtualinvoke $r13.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r14, $r12, $r1, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("viewplacemarks", $r2, "_id=?", $r3, null, null, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_AVOID_TOLLS", 0)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("lastRouteShapeId", $i0)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r30 = virtualinvoke $r29.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r27, $r28, null, null, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routeshapes", $r3, "_id=?", $r1, null, null, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_SATELLITE", 1)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r32 = interfaceinvoke $r32.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_SATELLITE", $z1)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("routeshapes", null, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r32 = interfaceinvoke $r32.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_TRAFFIC", $z1)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("viewplacemarks", $r2, null, null, null, null, "_id ASC")
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r9 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routeshapes", $r4, $r7, $r6, null, null, "_id ASC")
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_SATELLITE", 1)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("passedvia", $r8)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("com.teletype.smarttruckroute4.viaactivity.extra_via_destination", $r2)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("route", $r2, null, null, null, null, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("lastRouteShapeId", $i0)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_AVOID_TOLLS", 0)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r17 = virtualinvoke $r13.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r14, $r12, $r1, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putParcelableArrayList(java.lang.String,java.util.ArrayList)>("com.teletype.smarttruckroute4.viaactivity.extra_via_list", $r4)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MINIMIZE_TOLLS", $z0)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<android.os.Bundle: void putLong(java.lang.String,long)>("elapsedLastReportedInNanos", $l1)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("viewplacemarks", $r2, "_id=?", $r3, null, null, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r6 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routeshapes", $r3, "_id=?", $r1, null, null, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("com.teletype.smarttruckroute4.viaactivity.extra_via_itinerary_label", $r6)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r30 = virtualinvoke $r29.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r27, $r28, null, null, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r21 = interfaceinvoke $r21.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("passedvia", $r8)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r32 = interfaceinvoke $r32.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_TRAFFIC", $z1)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("routeshapes", null, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<android.os.Bundle: void putLong(java.lang.String,long)>("elapsedLastReportedInNanos", $l1)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("viewplacemarks", $r2, null, null, null, null, "_id ASC")
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r9 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("routeshapes", $r4, $r7, $r6, null, null, "_id ASC")
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("com.teletype.smarttruckroute4.viaactivity.extra_via_destination", $r2)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("route", $r2, null, null, null, null, null)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MINIMIZE_TOLLS", $z0)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r32 = interfaceinvoke $r32.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("PREFS_MAP_OPTIONS_SATELLITE", $z1)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putParcelableArrayList(java.lang.String,java.util.ArrayList)>("com.teletype.smarttruckroute4.viaactivity.extra_via_list", $r4)
+Component=> com.teletype.smarttruckroute4.services.LocationUpdateService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

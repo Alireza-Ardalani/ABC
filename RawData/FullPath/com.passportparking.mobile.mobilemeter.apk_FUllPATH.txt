@@ -1,0 +1,17 @@
+<com.passportparking.mobile.services.GPSService$MyGPSLocationListener: void onLocationChanged(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.passportparking.mobile.services.GPSService: void access$3(com.passportparking.mobile.services.GPSService,double)> --> $r0 := @parameter0: com.passportparking.mobile.services.GPSService
+<com.passportparking.mobile.services.GPSService: void access$3(com.passportparking.mobile.services.GPSService,double)> --> $r0.<com.passportparking.mobile.services.GPSService: double gpsLatitude> = $d0
+<com.passportparking.mobile.services.GPSService$MyGPSLocationListener: void onLocationChanged(android.location.Location)> --> staticinvoke <com.passportparking.mobile.services.GPSService: void access$3(com.passportparking.mobile.services.GPSService,double)>($r2, $d0)
+<com.passportparking.mobile.services.GPSService$MyGPSLocationListener: void onLocationChanged(android.location.Location)> --> $r2 = r0.<com.passportparking.mobile.services.GPSService$MyGPSLocationListener: com.passportparking.mobile.services.GPSService this$0>
+<com.passportparking.mobile.services.GPSService$MyGPSLocationListener: void onLocationChanged(android.location.Location)> --> $r2 = r0.<com.passportparking.mobile.services.GPSService$MyGPSLocationListener: com.passportparking.mobile.services.GPSService this$0>
+<com.passportparking.mobile.services.GPSService: void access$6(com.passportparking.mobile.services.GPSService)> --> $r0 := @parameter0: com.passportparking.mobile.services.GPSService
+<com.passportparking.mobile.services.GPSService: void saveCoordinate()> --> r0 := @this: com.passportparking.mobile.services.GPSService
+<com.passportparking.mobile.services.GPSService: void saveCoordinate()> --> $d0 = r0.<com.passportparking.mobile.services.GPSService: double gpsLatitude>
+<com.passportparking.mobile.services.GPSService: void saveCoordinate()> --> $b0 = $d0 cmpl 0.0
+<com.passportparking.mobile.services.GPSService: void saveCoordinate()> --> if $b0 == 0 goto $d0 = r0.<com.passportparking.mobile.services.GPSService: double gpsLongitude>
+<com.passportparking.mobile.utils.ApplicationSettings: void setUserLatitude(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.passportparking.mobile.utils.SecurePreferences: void put(java.lang.String,java.lang.String)> --> r0 := @this: com.passportparking.mobile.utils.SecurePreferences
+<com.passportparking.mobile.utils.SecurePreferences: void putValue(java.lang.String,java.lang.String)> --> r0 := @this: com.passportparking.mobile.utils.SecurePreferences
+<com.passportparking.mobile.utils.SecurePreferences: void putValue(java.lang.String,java.lang.String)> --> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+--------------------------------------------------------
+

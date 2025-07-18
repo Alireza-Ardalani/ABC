@@ -1,0 +1,12 @@
+Source=> $r19 = virtualinvoke $r26.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.io.OutputStream: void write(byte[],int,int)>($r1, 0, $i0)
+Component=> com.appbrain.AppBrainService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r19 = virtualinvoke $r26.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.io.OutputStream: void write(byte[],int,int)>($r1, 0, $i0)
+Component=> com.appbrain.AppBrainService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

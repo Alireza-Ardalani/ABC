@@ -1,0 +1,12 @@
+<com.fusepowered.location.LocationService: android.location.Location getRawLastKnownLocation(android.content.Context)> --> $r4 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.fusepowered.location.LocationService: android.location.Location getRawLastKnownLocation(android.content.Context)> --> r8 := @caughtexception
+<com.fusepowered.log.FuseLog: void d(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.fusepowered.log.FuseLog: void d(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.fusepowered.location.LocationService: android.location.Location getRawLastKnownLocation(android.content.Context)> --> $r5 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.fusepowered.location.LocationService: android.location.Location getRawLastKnownLocation(android.content.Context)> --> r11 := @caughtexception
+<com.fusepowered.log.FuseLog: void d(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.fusepowered.log.FuseLog: void d(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+

@@ -1,0 +1,12 @@
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>("INTENT_LAT", $d0)
+Component=> com.cp.ui.activity.places.AddPlaceActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>("INTENT_LON", $d0)
+Component=> com.cp.ui.activity.places.AddPlaceActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

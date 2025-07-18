@@ -1,0 +1,41 @@
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("address_result", $r2)
+Component=> glass.round.cross.doctor.util.GetAddressIntentService
+ComponentColor=> GREEN
+glass.round.cross.doctor.util.GetAddressIntentService
+android.location.Location
+glass.round.cross.doctor.util.GetAddressIntentService
+android.os.BaseBundle
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> glass.round.cross.doctor.util.GetAddressIntentService
+ComponentColor=> GREEN
+android.util.Log
+glass.round.cross.doctor.util.GetAddressIntentService
+android.location.Location
+glass.round.e.c
+Category: glass.round.e.c-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r3, $r2)
+Component=> glass.round.cross.doctor.util.GetAddressIntentService
+ComponentColor=> GREEN
+android.util.Log
+glass.round.cross.doctor.util.GetAddressIntentService
+android.location.Location
+glass.round.e.c
+Category: glass.round.e.c-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("address_result", $r2)
+Component=> glass.round.cross.doctor.util.GetAddressIntentService
+ComponentColor=> GREEN
+glass.round.cross.doctor.util.GetAddressIntentService
+android.location.Location
+glass.round.cross.doctor.util.GetAddressIntentService
+android.os.BaseBundle
+Category: LEGIT
+-----------------------------------------------------------------
+glass.round.cross.doctor.apk: 250022

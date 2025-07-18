@@ -1,0 +1,630 @@
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("CurrentXMLoader", "date to old from current forecast")
+Component=> com.nstudio.weatherhere.WeatherActivity
+ComponentColor=> GREEN
+com.nstudio.weatherhere.forecast.WeatherStations
+com.nstudio.weatherhere.forecast.a$1
+com.nstudio.weatherhere.forecast.a
+com.nstudio.weatherhere.forecast.a
+android.location.Location
+android.util.Log
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>("ADSDK", $r0, $r1)
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+android.util.Log
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.forecast.h$1
+com.nstudio.weatherhere.WearUpdateService$1
+com.adsdk.sdk.video.d$8
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.adsdk.sdk.h
+com.nstudio.weatherhere.location.c
+java.lang.Thread
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.location.GeoLocator$1
+android.os.Handler
+Category: com.adsdk.sdk.video.d$8-*-com.adsdk.sdk.h-*-
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WearUpdateService", "Not connected to Google API client.")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.WearUpdateService$6
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.WearUpdateService$1
+android.util.Log
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.forecast.i$1
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.forecast.b$1
+com.nstudio.weatherhere.WearUpdateService
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+java.lang.Thread
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.location.GeoLocator$1
+android.os.Handler
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Analytics", "not tracking event, null app")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.google.android.gms.ads.internal.client.j$1
+com.google.android.gms.ads.internal.client.o
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.WeatherActivity$6
+com.nstudio.weatherhere.WeatherActivity
+com.nstudio.weatherhere.location.GeoLocator
+com.google.android.gms.ads.internal.client.f$1
+com.google.android.gms.ads.internal.client.aa
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.util.a
+com.nstudio.weatherhere.util.a
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.WeatherActivity
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.WeatherActivity
+com.nstudio.weatherhere.location.GeoLocator$1
+android.util.Log
+android.os.Handler
+Category: com.google.android.gms.ads.internal.client.j$1-*-com.google.android.gms.ads.internal.client.o-*-com.google.android.gms.ads.internal.client.f$1-*-com.google.android.gms.ads.internal.client.aa-*-
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r17.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.maps.h$16
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.util.d
+com.nstudio.weatherhere.WearUpdateService$1
+com.nstudio.weatherhere.maps.h$14
+com.nstudio.weatherhere.maps.h
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.forecast.Icon$1
+com.nstudio.weatherhere.forecast.b$1
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.maps.h$19
+java.lang.Thread
+com.nstudio.weatherhere.WearUpdateService
+android.os.Handler
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+java.net.URL
+com.nstudio.weatherhere.maps.h
+com.nstudio.weatherhere.location.GeoLocator$1
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LegacyGeoLocator", "LM - removing location updates")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.widget.c
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.widget.c
+com.nstudio.weatherhere.widget.c$2
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.widget.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.widget.c
+android.location.Location
+android.util.Log
+android.os.Handler
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ForecastFragment", "downloadfinished")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.forecast.d$2
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator$1
+android.util.Log
+android.os.Handler
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, "Update Error!")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator
+android.content.SharedPreferences$Editor
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.widget.c$1
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator$1
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r0, "UTF-8")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+java.net.URLEncoder
+com.inmobi.a.e.j
+com.inmobi.a.e.j
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.WearUpdateService$1
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.forecast.Icon
+com.inmobi.a.f.g
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+java.lang.Thread
+com.nstudio.weatherhere.WearUpdateService
+com.inmobi.a.f.c$1
+com.nstudio.weatherhere.location.GeoLocator$1
+android.os.Handler
+Category: com.inmobi.a.e.j-*-com.inmobi.a.e.j-*-com.inmobi.a.f.g-*-com.inmobi.a.f.c$1-*-
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherProviderNote", "update location")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.forecast.h$1
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.widget.c$1
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.widget.b
+com.nstudio.weatherhere.location.GeoLocator$1
+android.util.Log
+android.os.Handler
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+java.net.HttpURLConnection
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.util.d
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.forecast.h$1
+com.nstudio.weatherhere.WearUpdateService$1
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.forecast.Icon$1
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+java.lang.Thread
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.location.GeoLocator$1
+android.os.Handler
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("ADSDK", $r1, null)
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.google.android.gms.ads.internal.client.j$1
+com.google.android.gms.ads.internal.client.o
+com.adsdk.sdk.h
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.WeatherActivity$6
+com.nstudio.weatherhere.WeatherActivity
+com.nstudio.weatherhere.location.GeoLocator
+com.google.android.gms.ads.internal.client.f$1
+android.util.Log
+com.google.android.gms.ads.internal.client.aa
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.WeatherActivity
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.WeatherActivity
+com.adsdk.sdk.banner.a
+com.nstudio.weatherhere.location.GeoLocator$1
+com.adsdk.sdk.banner.a
+com.adsdk.sdk.banner.a
+android.os.Handler
+Category: com.google.android.gms.ads.internal.client.j$1-*-com.google.android.gms.ads.internal.client.o-*-com.adsdk.sdk.h-*-com.google.android.gms.ads.internal.client.f$1-*-com.google.android.gms.ads.internal.client.aa-*-com.adsdk.sdk.banner.a-*-com.adsdk.sdk.banner.a-*-com.adsdk.sdk.banner.a-*-
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r6 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.adsdk.sdk.mraid.aa
+com.nstudio.weatherhere.location.GeoLocator
+com.adsdk.sdk.mraid.aa
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.maps.h$16
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.util.d
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.maps.h$14
+com.nstudio.weatherhere.maps.h
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.forecast.Icon$1
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.maps.h
+java.lang.Thread
+java.net.URLConnection
+com.nstudio.weatherhere.location.GeoLocator$1
+com.adsdk.sdk.mraid.aa$4$1
+android.os.Handler
+Category: com.adsdk.sdk.mraid.aa-*-com.adsdk.sdk.mraid.aa-*-com.adsdk.sdk.mraid.aa$4$1-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("CurrentXMLoader", "date to old from current forecast")
+Component=> com.nstudio.weatherhere.WeatherActivity
+ComponentColor=> GREEN
+com.nstudio.weatherhere.forecast.WeatherStations
+com.nstudio.weatherhere.forecast.a$1
+com.nstudio.weatherhere.forecast.a
+com.nstudio.weatherhere.forecast.a
+android.location.Location
+android.util.Log
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>("ADSDK", $r0, $r1)
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+android.util.Log
+com.nstudio.weatherhere.forecast.h$2
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.WearUpdateService$1
+com.adsdk.sdk.video.d$8
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.adsdk.sdk.h
+com.nstudio.weatherhere.location.c
+java.lang.Thread
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.location.GeoLocator$1
+android.os.Handler
+Category: com.adsdk.sdk.video.d$8-*-com.adsdk.sdk.h-*-
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WearUpdateService", "Not connected to Google API client.")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.WearUpdateService$6
+com.nstudio.weatherhere.location.GeoLocator
+android.util.Log
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.WearUpdateService
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator$1
+android.os.Handler
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Analytics", "not tracking event, null app")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.google.android.gms.ads.internal.client.j$1
+com.google.android.gms.ads.internal.client.o
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.WeatherActivity$6
+com.nstudio.weatherhere.WeatherActivity
+com.nstudio.weatherhere.location.GeoLocator
+com.google.android.gms.ads.internal.client.f$1
+com.google.android.gms.ads.internal.client.aa
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.util.a
+com.nstudio.weatherhere.util.a
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.WeatherActivity
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.WeatherActivity
+com.nstudio.weatherhere.location.GeoLocator$1
+android.util.Log
+android.os.Handler
+Category: com.google.android.gms.ads.internal.client.j$1-*-com.google.android.gms.ads.internal.client.o-*-com.google.android.gms.ads.internal.client.f$1-*-com.google.android.gms.ads.internal.client.aa-*-
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r17.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.maps.h
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.util.d
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.maps.g
+com.nstudio.weatherhere.maps.h
+com.nstudio.weatherhere.maps.h$15
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.forecast.Icon$1
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+java.net.URL
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+java.lang.Thread
+com.nstudio.weatherhere.location.GeoLocator$1
+android.os.Handler
+com.nstudio.weatherhere.maps.h
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LegacyGeoLocator", "LM - removing location updates")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.widget.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.widget.c
+com.nstudio.weatherhere.widget.c$2
+com.nstudio.weatherhere.widget.c
+com.nstudio.weatherhere.location.GeoLocator
+android.location.Location
+com.nstudio.weatherhere.widget.c
+android.util.Log
+com.nstudio.weatherhere.location.GeoLocator
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ForecastFragment", "downloadfinished")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.forecast.d$2
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator$1
+android.util.Log
+android.os.Handler
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, "Update Error!")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.location.GeoLocator
+android.content.SharedPreferences$Editor
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.widget.c$1
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator$1
+android.os.Handler
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r0, "UTF-8")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+java.net.URLEncoder
+com.inmobi.a.e.j
+com.inmobi.a.e.j
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.forecast.h$2
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.WearUpdateService$1
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.forecast.Icon
+com.inmobi.a.f.g
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+java.lang.Thread
+com.nstudio.weatherhere.WearUpdateService
+com.inmobi.a.f.c$1
+com.nstudio.weatherhere.location.GeoLocator$1
+android.os.Handler
+Category: com.inmobi.a.e.j-*-com.inmobi.a.e.j-*-com.inmobi.a.f.g-*-com.inmobi.a.f.c$1-*-
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherProviderNote", "update location")
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.widget.c$1
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.widget.b
+com.nstudio.weatherhere.location.GeoLocator$1
+android.util.Log
+android.os.Handler
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.util.d
+com.nstudio.weatherhere.forecast.h$1
+com.nstudio.weatherhere.WearUpdateService$1
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.forecast.f
+com.nstudio.weatherhere.forecast.Icon$1
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+java.lang.Thread
+com.nstudio.weatherhere.WearUpdateService
+android.os.Handler
+java.net.HttpURLConnection
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.forecast.f$5
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.forecast.f
+com.nstudio.weatherhere.location.GeoLocator$1
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("ADSDK", $r1, null)
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.adsdk.sdk.h
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.maps.h$16
+com.nstudio.weatherhere.location.GeoLocator
+com.adsdk.sdk.h
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.maps.h$14
+com.adsdk.sdk.video.d$8
+com.nstudio.weatherhere.maps.h
+android.util.Log
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.maps.h
+java.lang.Thread
+com.nstudio.weatherhere.location.GeoLocator$1
+android.os.Handler
+Category: com.adsdk.sdk.h-*-com.adsdk.sdk.h-*-com.adsdk.sdk.video.d$8-*-
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r6 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.nstudio.weatherhere.WearUpdateService
+ComponentColor=> GREEN
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.GeoLocator$a
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.util.d
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.WearUpdateService$1
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.forecast.Icon
+com.nstudio.weatherhere.forecast.Icon$1
+com.nstudio.weatherhere.location.GeoLocator
+android.location.LocationManager
+com.nstudio.weatherhere.location.c
+com.nstudio.weatherhere.location.GeoLocator
+com.nstudio.weatherhere.location.c
+java.lang.Thread
+java.net.URLConnection
+com.nstudio.weatherhere.WearUpdateService
+com.nstudio.weatherhere.location.GeoLocator$1
+android.os.Handler
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,1197 @@
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+qg
+android.location.LocationManager
+jc
+java.net.URLConnection
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("PORTALUSERS", $r2, $r4, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qz
+pt
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.PatientActivity$3
+qf
+jc$1
+qf
+android.database.sqlite.SQLiteDatabase
+Category: qz-*-pt-*-jc-*-qf-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("HEALOWUSERS", $r4, $r1, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+jc
+hv
+qf
+hv$a
+jc$1
+qf
+qz
+android.database.sqlite.SQLiteDatabase
+Category: pt-*-jc-*-hv-*-qf-*-hv$a-*-jc$1-*-qf-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+android.location.LocationManager
+jc
+qg
+java.net.URL
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("PORTALUSERS", $r1, $r4, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qz
+pt
+android.location.LocationManager
+jc
+hv
+qf
+hv$a
+jc$1
+qf
+android.database.sqlite.SQLiteDatabase
+Category: qz-*-pt-*-jc-*-hv-*-qf-*-hv$a-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("select * from PRIMARYHEALOWUSERS where DelFlag = 0", null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+hv$a
+android.database.sqlite.SQLiteDatabase
+hv
+pt
+hv
+qz
+com.ecw.healow.MainActivity
+android.location.LocationManager
+jc
+qf
+jc$1
+Category: hv$a-*-hv-*-pt-*-hv-*-qz-*-jc-*-qf-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+qg
+android.location.LocationManager
+jc
+java.net.URLConnection
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("PRIMARYHEALOWUSERS", null, $r1)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+qz
+android.database.sqlite.SQLiteDatabase
+jc$1
+qf
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-qz-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("HEALOWUSERS", null, $r4)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+android.database.sqlite.SQLiteDatabase
+jc$1
+qf
+qz
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-jc$1-*-qf-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r1, $z0)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+pi
+android.location.LocationManager
+jc
+hw$2
+qf
+android.content.SharedPreferences$Editor
+jc$1
+Category: pt-*-pi-*-jc-*-hw$2-*-qf-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r4.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+java.net.URL
+pt
+qg
+android.location.LocationManager
+jc
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r2, "UTF-8")
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+java.net.URLEncoder
+jc
+jc$1
+Category: pt-*-jc-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("HEALOWUSERS", $r4, $r3, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+jc$1
+qf
+qz
+android.database.sqlite.SQLiteDatabase
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-jc$1-*-qf-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+java.net.URL
+pt
+qg
+android.location.LocationManager
+jc
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+java.net.HttpURLConnection
+qg
+android.location.LocationManager
+jc
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+java.net.URLEncoder
+jc
+jc$1
+Category: pt-*-jc-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r10.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("HEALOWUSERS", $r4, $r3, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+jc$1
+qf
+qz
+android.database.sqlite.SQLiteDatabase
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-jc$1-*-qf-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i1 = virtualinvoke $r5.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+android.location.LocationManager
+jc
+java.net.HttpURLConnection
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("HEALOWUSERS", $r2, "HealowUid=? AND DelFlag=0", $r5, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+com.ecw.healow.authentication.CreatePINActivity
+pt
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.CreatePINActivity$2$1
+qf
+jc$1
+qz
+pi$5
+Category: pt-*-jc-*-qf-*-jc$1-*-qz-*-pi$5-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("current_version_code", $i0)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+im
+im
+pi
+android.content.SharedPreferences$Editor
+pt
+im$1
+android.location.LocationManager
+jc
+qf
+jc$1
+Category: im-*-im-*-pi-*-pt-*-im$1-*-jc-*-qf-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("HEALOWUSERS", $r2, "HealowUid=? AND DelFlag=0", $r5, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+com.ecw.healow.authentication.CreatePINActivity
+pt
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.CreatePINActivity$2$1
+qf
+jc$1
+qz
+pi$5
+Category: pt-*-jc-*-qf-*-jc$1-*-qz-*-pi$5-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+java.net.HttpURLConnection
+qg
+android.location.LocationManager
+jc
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r4, $r3)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.util.Log
+pt
+com.ecw.healow.modules.openaccess.OaPhoneNoVerificationActvity$2
+android.location.LocationManager
+jc
+qf
+jc$1
+Category: pt-*-jc-*-qf-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r17.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+java.net.URL
+pt
+qg
+android.location.LocationManager
+jc
+qg
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+java.net.URLEncoder
+jc
+jc$1
+Category: pt-*-jc-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r5, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+qz
+jc$1
+qf
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-qz-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("PORTALUSERS", null, "DelFlag=0 AND PrimaryHealowUid=? AND HealowUid=? AND Authorized=?", $r3, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+com.ecw.healow.authentication.PatientActivity
+qz
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.PatientActivity$3
+qf
+jc$1
+qf
+Category: pt-*-qz-*-jc-*-qf-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+java.net.HttpURLConnection
+qg
+android.location.LocationManager
+jc
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("PRIMARYHEALOWUSERS", $r1, $r4, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+qz
+jc$1
+qf
+android.database.sqlite.SQLiteDatabase
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-qz-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+android.location.LocationManager
+jc
+qg
+java.net.URL
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("PORTALUSERS", null, "RelationId = ? AND DelFlag = ? AND  HealowUid = ? AND  Authorized = ?", $r2, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+com.ecw.healow.authentication.PatientActivity
+qz
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.PatientActivity$3
+qf
+jc$1
+qf
+Category: pt-*-qz-*-jc-*-qf-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("PORTALUSERS", $r2, $r4, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qz
+pt
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.PatientActivity$3
+qf
+jc$1
+qf
+android.database.sqlite.SQLiteDatabase
+Category: qz-*-pt-*-jc-*-qf-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r10.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("HEALOWUSERS", null, $r4)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+android.database.sqlite.SQLiteDatabase
+jc$1
+qf
+qz
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-jc$1-*-qf-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("PORTALUSERS", $r1, $r4, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qz
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+jc$1
+qf
+android.database.sqlite.SQLiteDatabase
+Category: qz-*-pt-*-jc-*-hv-*-hv$b-*-qf-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+hv
+hv
+qz
+com.ecw.healow.MainActivity
+hv$a
+android.database.sqlite.SQLiteDatabase
+hw
+pt
+pi
+android.location.LocationManager
+jc
+qf
+jc$1
+Category: hv-*-hv-*-qz-*-hv$a-*-hw-*-pt-*-pi-*-jc-*-qf-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("PORTALUSERS", $r1, "PrimaryHealowUid=? AND DelFlag=0", $r2, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+qz
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.PatientActivity$3
+qf
+jc$1
+qf
+Category: pt-*-qz-*-jc-*-qf-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r2, "UTF-8")
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+java.net.URLEncoder
+jc
+jc$1
+Category: pt-*-jc-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r1, $z0)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+pi
+android.location.LocationManager
+jc
+hw$2
+qf
+android.content.SharedPreferences$Editor
+jc$1
+Category: pt-*-pi-*-jc-*-hw$2-*-qf-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+qg
+android.location.LocationManager
+jc
+java.net.URLConnection
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("select * from PRIMARYHEALOWUSERS where DelFlag = 0", null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+hv$a
+android.database.sqlite.SQLiteDatabase
+hv
+pt
+hv
+qz
+com.ecw.healow.MainActivity
+android.location.LocationManager
+jc
+qf
+jc$1
+Category: hv$a-*-hv-*-pt-*-hv-*-qz-*-jc-*-qf-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("PRIMARYHEALOWUSERS", null, $r1)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+qz
+android.database.sqlite.SQLiteDatabase
+jc$1
+qf
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-qz-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+com.ecw.healow.modules.appointments.AppointmentsFragmentActivity$2
+android.content.SharedPreferences$Editor
+pi
+pi
+Category: pt-*-pi-*-pi-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i1 = virtualinvoke $r5.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+android.location.LocationManager
+jc
+java.net.HttpURLConnection
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r5, "UTF-8")
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+java.net.URLEncoder
+com.ecw.healow.modules.medication.PharmacySearchActivity$2
+Category: pt-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+java.net.URLEncoder
+jc
+jc$1
+Category: pt-*-jc-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+java.net.URL
+pt
+qg
+android.location.LocationManager
+jc
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+android.location.LocationManager
+jc
+qg
+java.net.URL
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("PORTALUSERS", $r1, "PrimaryHealowUid=? AND DelFlag=0", $r2, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+qz
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.PatientActivity$3
+qf
+jc$1
+qf
+Category: pt-*-qz-*-jc-*-qf-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r17.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+java.net.URL
+pt
+qg
+android.location.LocationManager
+jc
+qg
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("PRIMARYHEALOWUSERS", $r1, $r4, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+qz
+jc$1
+qf
+android.database.sqlite.SQLiteDatabase
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-qz-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("HEALOWUSERS", null, "HealowUid=? AND DelFlag=0", $r2, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+com.ecw.healow.authentication.CreatePINActivity
+pt
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.CreatePINActivity$2$1
+qf
+jc$1
+qz
+pi$5
+Category: pt-*-jc-*-qf-*-jc$1-*-qz-*-pi$5-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+java.net.HttpURLConnection
+qg
+android.location.LocationManager
+jc
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("PORTALUSERS", null, "DelFlag=? AND HealowUid=? AND PrimaryHealowUid=? AND Authorized=?", $r2, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+qz
+android.location.LocationManager
+com.ecw.healow.modules.appointments.AppointmentsFragmentActivity$2
+Category: pt-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r7 = virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r5, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+qz
+jc$1
+qf
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-qz-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r10.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r6, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+jc$1
+qf
+qz
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-jc$1-*-qf-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("PORTALUSERS", null, "RelationId = ? AND DelFlag = ? AND  HealowUid = ? AND  Authorized = ?", $r2, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+com.ecw.healow.authentication.PatientActivity
+qz
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.PatientActivity$3
+qf
+jc$1
+qf
+Category: pt-*-qz-*-jc-*-qf-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("PORTALUSERS", null, "DelFlag=0 AND PrimaryHealowUid=? AND HealowUid=? AND Authorized=?", $r3, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+com.ecw.healow.authentication.PatientActivity
+qz
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.PatientActivity$3
+qf
+jc$1
+qf
+Category: pt-*-qz-*-jc-*-qf-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r4.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+java.net.URL
+pt
+qg
+android.location.LocationManager
+jc
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("CropImage", "not defined image url")
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.util.Log
+pt
+android.location.LocationManager
+com.ecw.healow.modules.appointments.AppointmentsFragmentActivity$2
+a
+android.os.Handler
+eu.janmuller.android.simplecropimage.CropImage$6
+pi
+rb
+eu.janmuller.android.simplecropimage.CropImage
+Category: pt-*-a-*-eu.janmuller.android.simplecropimage.CropImage$6-*-pi-*-rb-*-eu.janmuller.android.simplecropimage.CropImage-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+im
+im
+android.database.sqlite.SQLiteDatabase
+pt
+im$1
+android.location.LocationManager
+jc
+qf
+jc$1
+qz
+Category: im-*-im-*-pt-*-im$1-*-jc-*-qf-*-jc$1-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("PORTALUSERS", $r1, $r4, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qz
+pt
+android.location.LocationManager
+jc
+hv
+qf
+hv$a
+jc$1
+qf
+android.database.sqlite.SQLiteDatabase
+Category: qz-*-pt-*-jc-*-hv-*-qf-*-hv$a-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("HEALOWUSERS", $r4, $r1, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+jc
+hv
+qf
+hv$a
+jc$1
+qf
+qz
+android.database.sqlite.SQLiteDatabase
+Category: pt-*-jc-*-hv-*-qf-*-hv$a-*-jc$1-*-qf-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r4, $r3)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.util.Log
+pt
+com.ecw.healow.modules.openaccess.OaPhoneNoVerificationActvity$2
+android.location.LocationManager
+jc
+qf
+jc$1
+Category: pt-*-jc-*-qf-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("CropImage", "not defined image url")
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.util.Log
+pt
+android.location.LocationManager
+com.ecw.healow.modules.appointments.AppointmentsFragmentActivity$2
+a
+android.os.Handler
+eu.janmuller.android.simplecropimage.CropImage$6
+pi
+rb
+eu.janmuller.android.simplecropimage.CropImage
+Category: pt-*-a-*-eu.janmuller.android.simplecropimage.CropImage$6-*-pi-*-rb-*-eu.janmuller.android.simplecropimage.CropImage-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("HEALOWUSERS", null, "HealowUid=? AND DelFlag=0", $r2, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+com.ecw.healow.authentication.CreatePINActivity
+pt
+android.location.LocationManager
+jc
+com.ecw.healow.authentication.CreatePINActivity$2$1
+qf
+jc$1
+qz
+pi$5
+Category: pt-*-jc-*-qf-*-jc$1-*-qz-*-pi$5-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = virtualinvoke $r10.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r6, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+jc$1
+qf
+qz
+Category: pt-*-jc-*-hv-*-hv$b-*-qf-*-jc$1-*-qf-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("current_version_code", $i0)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+im
+im
+pi
+android.content.SharedPreferences$Editor
+pt
+im$1
+android.location.LocationManager
+jc
+qf
+jc$1
+Category: im-*-im-*-pi-*-pt-*-im$1-*-jc-*-qf-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i1 = virtualinvoke $r5.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+android.location.LocationManager
+jc
+java.net.HttpURLConnection
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+java.net.URL
+pt
+qg
+android.location.LocationManager
+jc
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i1 = virtualinvoke $r5.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+android.location.LocationManager
+jc
+java.net.HttpURLConnection
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+im
+im
+android.database.sqlite.SQLiteDatabase
+pt
+im$1
+android.location.LocationManager
+jc
+qf
+jc$1
+qz
+Category: im-*-im-*-pt-*-im$1-*-jc-*-qf-*-jc$1-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+qg
+android.location.LocationManager
+jc
+java.net.URLConnection
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+com.ecw.healow.modules.appointments.AppointmentsFragmentActivity$2
+android.content.SharedPreferences$Editor
+pi
+pi
+Category: pt-*-pi-*-pi-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+hv
+hv
+qz
+com.ecw.healow.MainActivity
+hv$a
+android.database.sqlite.SQLiteDatabase
+hw
+pt
+pi
+android.location.LocationManager
+jc
+qf
+jc$1
+Category: hv-*-hv-*-qz-*-hv$a-*-hw-*-pt-*-pi-*-jc-*-qf-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+pt
+qg
+android.location.LocationManager
+jc
+qg
+java.net.URL
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])>("PORTALUSERS", $r1, $r4, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qz
+pt
+android.location.LocationManager
+jc
+hv
+hv$b
+qf
+jc$1
+qf
+android.database.sqlite.SQLiteDatabase
+Category: qz-*-pt-*-jc-*-hv-*-hv$b-*-qf-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+java.net.URLEncoder
+jc
+jc$1
+Category: pt-*-jc-*-jc$1-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+qf
+java.net.URL
+pt
+qg
+android.location.LocationManager
+jc
+qg
+jc$1
+qf
+Category: qf-*-pt-*-qg-*-jc-*-qg-*-jc$1-*-qf-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("PORTALUSERS", null, "DelFlag=? AND HealowUid=? AND PrimaryHealowUid=? AND Authorized=?", $r2, null, null, null)
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+android.database.sqlite.SQLiteDatabase
+pt
+qz
+android.location.LocationManager
+com.ecw.healow.modules.appointments.AppointmentsFragmentActivity$2
+Category: pt-*-qz-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r5, "UTF-8")
+Component=> com.ecw.healow.modules.appointments.MyAppointmentsMapActivity
+ComponentColor=> GREEN
+pt
+android.location.LocationManager
+java.net.URLEncoder
+com.ecw.healow.modules.medication.PharmacySearchActivity$2
+Category: pt-*-
+-----------------------------------------------------------------
+com.ecw.healow.apk: 1068344

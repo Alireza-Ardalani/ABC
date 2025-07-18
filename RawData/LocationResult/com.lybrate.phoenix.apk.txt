@@ -1,0 +1,41 @@
+Source=> $r4 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("last_known_latitude", $r1)
+Component=> com.lybrate.core.ui.activity.NearbyAmbulanceActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.lybrate.core.utils.GPSLocationReceiver
+com.lybrate.core.utils.AppPreferences
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("last_known_latitude", $r1)
+Component=> com.lybrate.core.ui.activity.NearbyAmbulanceActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.lybrate.core.utils.GPSLocationReceiver
+com.lybrate.core.utils.AppPreferences
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("last_known_longitude", $r1)
+Component=> com.lybrate.core.ui.activity.NearbyAmbulanceActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.lybrate.core.utils.AppPreferences
+com.lybrate.core.utils.GPSLocationReceiver
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("last_known_longitude", $r1)
+Component=> com.lybrate.core.ui.activity.NearbyAmbulanceActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.lybrate.core.utils.AppPreferences
+com.lybrate.core.utils.GPSLocationReceiver
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+com.lybrate.phoenix.apk: 1218903

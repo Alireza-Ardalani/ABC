@@ -1,0 +1,24 @@
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("sdk_current_location", $r4)
+Component=> com.poqstudio.app.client.view.main.BelkMainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("PREF_CURRENT_LOC", $r6)
+Component=> com.gpshopper.sdk.geofences.LocationChangedService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("PREF_CURRENT_LOC", $r6)
+Component=> com.gpshopper.sdk.geofences.LocationChangedService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("sdk_current_location", $r4)
+Component=> com.poqstudio.app.client.view.main.BelkMainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

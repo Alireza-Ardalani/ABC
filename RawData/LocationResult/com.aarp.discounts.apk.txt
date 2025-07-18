@@ -1,0 +1,161 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("URL", $r0)
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+android.location.Location
+android.util.Log
+com.aarp.utilities.NotificationsManager
+com.aarp.api.WebService
+com.aarp.settings.UpdateLocationFragment$4
+com.aarp.api.WebService
+Category: com.aarp.utilities.NotificationsManager-*-com.aarp.api.WebService-*-com.aarp.api.WebService-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r4, "UTF-8")
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+android.location.Location
+com.aarp.utilities.NotificationsManager
+java.net.URLEncoder
+com.aarp.api.WebService
+com.aarp.settings.UpdateLocationFragment$4
+com.aarp.api.WebService
+Category: com.aarp.utilities.NotificationsManager-*-com.aarp.api.WebService-*-com.aarp.api.WebService-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("SETTING_LATITUDE", $f0)
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+com.aarp.utilities.DiscountsLocation
+android.content.SharedPreferences$Editor
+android.location.Location
+Category: com.aarp.utilities.DiscountsLocation-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Response", $r1)
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+android.location.Location
+com.aarp.api.WebService$6
+android.util.Log
+com.aarp.utilities.NotificationsManager
+com.aarp.api.WebService
+com.aarp.api.WebService$6
+com.aarp.settings.UpdateLocationFragment$4
+Category: com.aarp.api.WebService$6-*-com.aarp.utilities.NotificationsManager-*-com.aarp.api.WebService-*-com.aarp.api.WebService$6-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Error.Response", $r4)
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+com.aarp.api.WebService
+android.location.Location
+android.util.Log
+com.aarp.utilities.NotificationsManager
+com.aarp.api.WebService
+com.aarp.api.WebService$7
+com.aarp.settings.UpdateLocationFragment$4
+Category: com.aarp.api.WebService-*-com.aarp.utilities.NotificationsManager-*-com.aarp.api.WebService-*-com.aarp.api.WebService$7-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("SETTING_LONGITUDE", $f0)
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+com.aarp.utilities.DiscountsLocation
+android.content.SharedPreferences$Editor
+android.location.Location
+Category: com.aarp.utilities.DiscountsLocation-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> $r9 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r9, "UTF-8")
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+android.location.Location
+com.aarp.utilities.NotificationsManager
+java.net.URLEncoder
+com.aarp.api.WebService
+com.aarp.settings.UpdateLocationFragment$4
+com.aarp.api.WebService
+Category: com.aarp.utilities.NotificationsManager-*-com.aarp.api.WebService-*-com.aarp.api.WebService-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>($r12, "Error sending GA metric: ", r2)
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+android.location.Location
+com.aarp.settings.UpdateLocationFragment$4
+android.util.Log
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r4, "UTF-8")
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+android.location.Location
+com.aarp.utilities.NotificationsManager
+java.net.URLEncoder
+com.aarp.api.WebService
+com.aarp.settings.UpdateLocationFragment$4
+com.aarp.api.WebService
+Category: com.aarp.utilities.NotificationsManager-*-com.aarp.api.WebService-*-com.aarp.api.WebService-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("URL", $r0)
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+android.location.Location
+android.util.Log
+com.aarp.utilities.NotificationsManager
+com.aarp.api.WebService
+com.aarp.settings.UpdateLocationFragment$4
+com.aarp.api.WebService
+Category: com.aarp.utilities.NotificationsManager-*-com.aarp.api.WebService-*-com.aarp.api.WebService-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Response", $r1)
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+android.location.Location
+com.aarp.api.WebService$6
+android.util.Log
+com.aarp.utilities.NotificationsManager
+com.aarp.api.WebService
+com.aarp.api.WebService$6
+com.aarp.settings.UpdateLocationFragment$4
+Category: com.aarp.api.WebService$6-*-com.aarp.utilities.NotificationsManager-*-com.aarp.api.WebService-*-com.aarp.api.WebService$6-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>($r12, "Error sending GA metric: ", r2)
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+android.location.Location
+com.aarp.settings.UpdateLocationFragment$4
+android.util.Log
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Error.Response", $r4)
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+com.aarp.api.WebService
+android.location.Location
+android.util.Log
+com.aarp.utilities.NotificationsManager
+com.aarp.api.WebService
+com.aarp.api.WebService$7
+com.aarp.settings.UpdateLocationFragment$4
+Category: com.aarp.api.WebService-*-com.aarp.utilities.NotificationsManager-*-com.aarp.api.WebService-*-com.aarp.api.WebService$7-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r9 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r9, "UTF-8")
+Component=> com.urbanairship.CoreReceiver
+ComponentColor=> RED
+android.location.Location
+com.aarp.utilities.NotificationsManager
+java.net.URLEncoder
+com.aarp.api.WebService
+com.aarp.settings.UpdateLocationFragment$4
+com.aarp.api.WebService
+Category: com.aarp.utilities.NotificationsManager-*-com.aarp.api.WebService-*-com.aarp.api.WebService-*-
+-----------------------------------------------------------------
+com.aarp.discounts.apk: 1067143

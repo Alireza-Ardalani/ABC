@@ -1,0 +1,24 @@
+Source=> $r7 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("android.support.sortKey", $r6)
+Component=> com.weather.greensoft.view.activity.TestActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> virtualinvoke $r8.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("android.support.allowGeneratedReplies", $z0)
+Component=> com.weather.greensoft.view.activity.TestActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r7 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, $r6)
+Component=> com.weather.greensoft.view.activity.TestActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r6 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, $r5)
+Component=> com.weather.greensoft.view.activity.TestActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

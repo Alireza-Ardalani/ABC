@@ -1,0 +1,18 @@
+Source=> $r7 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.passportparking.mobile.pplibrary.services.GPSService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.passportparking.mobile.pplibrary.services.GPSService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("PassportMobile", $r0)
+Component=> com.passportparking.mobile.pplibrary.services.GPSService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

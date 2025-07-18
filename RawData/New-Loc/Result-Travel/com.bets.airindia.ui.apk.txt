@@ -1,0 +1,144 @@
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r9 = virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>($r6, null, $r4)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r8 = virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, null)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("Passengers", null, $r1)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("serializeObject", "Object is null")
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $l0 = virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("ConfigCache", null, $r12)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> interfaceinvoke $r4.<java.io.ObjectOutput: void writeObject(java.lang.Object)>($r1)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String,java.lang.Object[])>($r2, $r6)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r11.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("toAirport", $r14)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("Preferences", null, $r1)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("ConfigCache", null, $r12)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r11.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("fromAirport", $r14)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT book FROM trips WHERE bookRef=?", $r3)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("trips", null, $r1)
+Component=> aero.developer.iTravel.foo.fragments.schedule.FlightSchedule_Activity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

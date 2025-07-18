@@ -1,0 +1,270 @@
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> if $z0 != 0 goto r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_accuracy_actual", $f1)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xytime_actual", $l0)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("latitude_actual", $r6)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("longitude_actual", $r6)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> if $z0 != 0 goto r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xytime_actual", $l0)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_speed_actual", $f0)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xytime_actual_before", $l2)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("longitude_actual", $r6)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_accuracy_actual", $f1)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xytime_actual", $l0)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_accuracy_actual", $f1)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_speed_actual", $f0)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xytime_actual_before", $l2)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_speed_actual", $f0)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xytime_actual_before", $l2)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> if $z0 != 0 goto r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("latitude_actual", $r6)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xytime_actual", $l0)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> if $z0 != 0 goto r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("xytime_actual_before", $l2)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> if $z0 != 0 goto r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("longitude_actual", $r6)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_accuracy_actual", $f1)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("latitude_actual", $r6)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("longitude_actual", $r6)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $b2 = $d0 cmpl $d1
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $b2 == 0 goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("latitude_actual", $r6)
+--------------------------------------------------------
+
+<de.mdiener.android.core.location.c: void b()> --> $r4 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<de.mdiener.android.core.location.c: void b()> --> r0.<de.mdiener.android.core.location.c: android.location.Location c> = $r4
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> specialinvoke r0.<de.mdiener.android.core.location.c: void b()>()
+<de.mdiener.android.core.location.c: void <init>(android.content.Context)> --> return
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> specialinvoke $r6.<de.mdiener.android.core.location.c: void <init>(android.content.Context)>($r0)
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r0 := @this: de.mdiener.android.core.location.c
+<de.mdiener.android.core.location.c: android.location.Location a()> --> if $z0 != 0 goto r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.c: android.location.Location a()> --> r3 = r0.<de.mdiener.android.core.location.c: android.location.Location c>
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> $r5 = virtualinvoke $r6.<de.mdiener.android.core.location.c: android.location.Location a()>()
+<de.mdiener.android.core.location.a: double[] getLastLocation(android.content.Context,java.lang.String)> --> if $r5 == null goto return $r3
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<de.mdiener.android.core.location.a: void automaticLocationChanged(android.content.Context,double[],long,float,float,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_speed_actual", $f0)
+--------------------------------------------------------
+

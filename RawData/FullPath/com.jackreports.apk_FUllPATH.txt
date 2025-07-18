@@ -1,0 +1,6 @@
+<com.jackreports.main.map.mapSet: void setPosition()> --> $r7 = virtualinvoke r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.jackreports.main.map.mapSet: void setPosition()> --> if $r7 == null goto $r8 = r0.<com.jackreports.main.map.mapSet: com.jackreports.main.map.SetMarkers2 setMarkers2>
+<com.jackreports.db.MyPref: void setCurrentPosition1(android.location.Location,android.content.Context)> --> $r0 := @parameter0: android.location.Location
+<com.jackreports.db.MyPref: void setCurrentPosition1(android.location.Location,android.content.Context)> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("accurancy1", $f0)
+--------------------------------------------------------
+

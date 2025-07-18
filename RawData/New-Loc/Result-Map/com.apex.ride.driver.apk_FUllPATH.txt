@@ -1,0 +1,30 @@
+<com.apex.ride.driver.SignupActivity: void onCreate(android.os.Bundle)> --> $r23 = virtualinvoke r15.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r22)
+<com.apex.ride.driver.SignupActivity: void onCreate(android.os.Bundle)> --> if $r23 == null goto staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("No Location Provider Found", "")
+<com.apex.ride.driver.SignupActivity: void onLocationChanged(android.location.Location)> --> r0 := @this: com.apex.ride.driver.SignupActivity
+<com.apex.ride.driver.SignupActivity: void onLocationChanged(android.location.Location)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LATLANG==>", $r3)
+--------------------------------------------------------
+
+<dummyMainClass: com.apex.ride.driver.SignupActivity dummyMainMethod_com_apex_ride_driver_SignupActivity(android.content.Intent)> --> virtualinvoke $r0.<com.apex.ride.driver.SignupActivity: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.apex.ride.driver.SignupActivity dummyMainMethod_com_apex_ride_driver_SignupActivity(android.content.Intent)> --> $r4 = new com.apex.ride.driver.SignupActivity$2
+<com.apex.ride.driver.SignupActivity$2: void <init>(com.apex.ride.driver.SignupActivity)> --> r0 := @this: com.apex.ride.driver.SignupActivity$2
+<dummyMainClass: com.apex.ride.driver.SignupActivity dummyMainMethod_com_apex_ride_driver_SignupActivity(android.content.Intent)> --> specialinvoke $r4.<com.apex.ride.driver.SignupActivity$2: void <init>(com.apex.ride.driver.SignupActivity)>($r0)
+<com.apex.ride.driver.SignupActivity$3: void <init>(com.apex.ride.driver.SignupActivity)> --> return
+<com.apex.ride.driver.SignupActivity$3: void <init>(com.apex.ride.driver.SignupActivity)> --> r0.<com.apex.ride.driver.SignupActivity$3: com.apex.ride.driver.SignupActivity this$0> = $r1
+<dummyMainClass: com.apex.ride.driver.SignupActivity dummyMainMethod_com_apex_ride_driver_SignupActivity(android.content.Intent)> --> specialinvoke $r7.<com.apex.ride.driver.SignupActivity$3: void <init>(com.apex.ride.driver.SignupActivity)>($r0)
+<com.apex.ride.driver.SignupActivity$3: void onTextChanged(java.lang.CharSequence,int,int,int)> --> r0 := @this: com.apex.ride.driver.SignupActivity$3
+<com.apex.ride.driver.SignupActivity$3: void onTextChanged(java.lang.CharSequence,int,int,int)> --> $r3 = r0.<com.apex.ride.driver.SignupActivity$3: com.apex.ride.driver.SignupActivity this$0>
+<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: void <init>(com.apex.ride.driver.SignupActivity,com.apex.ride.driver.SignupActivity$1)> --> r0 := @this: com.apex.ride.driver.SignupActivity$AsyncTaskapexstring
+<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: void <init>(com.apex.ride.driver.SignupActivity)> --> r0 := @this: com.apex.ride.driver.SignupActivity$AsyncTaskapexstring
+<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: void <init>(com.apex.ride.driver.SignupActivity)> --> r0.<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: com.apex.ride.driver.SignupActivity this$0> = $r1
+<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: void <init>(com.apex.ride.driver.SignupActivity,com.apex.ride.driver.SignupActivity$1)> --> specialinvoke r0.<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: void <init>(com.apex.ride.driver.SignupActivity)>($r1)
+<com.apex.ride.driver.SignupActivity$3: void onTextChanged(java.lang.CharSequence,int,int,int)> --> specialinvoke r2.<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: void <init>(com.apex.ride.driver.SignupActivity,com.apex.ride.driver.SignupActivity$1)>($r3, null)
+<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: com.apex.ride.driver.SignupActivity$AsyncTaskapexstring
+<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: java.lang.String doInBackground(java.lang.String[])> --> r0 := @this: com.apex.ride.driver.SignupActivity$AsyncTaskapexstring
+<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: java.lang.String doInBackground(java.lang.String[])> --> $r4 = r0.<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: com.apex.ride.driver.SignupActivity this$0>
+<com.apex.ride.driver.SignupActivity$AsyncTaskapexstring: java.lang.String doInBackground(java.lang.String[])> --> $r3 = $r4.<com.apex.ride.driver.SignupActivity: java.lang.String APEXSTRING>
+<com.calling.webservice.CallingWebService: java.lang.String sendPostRequest(java.lang.String,java.util.HashMap,android.content.Context)> --> r0 := @this: com.calling.webservice.CallingWebService
+<com.calling.webservice.CallingWebService: java.lang.String sendPostRequest(java.lang.String,java.util.HashMap,android.content.Context)> --> $r3 := @parameter2: android.content.Context
+<com.calling.webservice.CallingWebService: java.lang.String sendPostRequest(java.lang.String,java.util.HashMap,android.content.Context)> --> $r13 = new java.net.URL
+<com.calling.webservice.CallingWebService: java.lang.String sendPostRequest(java.lang.String,java.util.HashMap,android.content.Context)> --> specialinvoke $r13.<java.net.URL: void <init>(java.lang.String)>($r1)
+--------------------------------------------------------
+

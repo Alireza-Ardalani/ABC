@@ -1,0 +1,32 @@
+<com.speedymarks.android.windfree.Main: void updateLocation()> --> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.speedymarks.android.windfree.Main: void updateLocation()> --> r0.<com.speedymarks.android.windfree.Main: android.location.Location lastLocation> = $r4
+<com.speedymarks.android.windfree.Main: void sendLocationUpdate(java.lang.String)> --> return
+<com.speedymarks.android.windfree.Main: void updateLocation()> --> specialinvoke r0.<com.speedymarks.android.windfree.Main: void sendLocationUpdate(java.lang.String)>("updated")
+<com.speedymarks.android.windfree.Main: void updateLocation()> --> $r4 = r0.<com.speedymarks.android.windfree.Main: android.location.Location lastLocation>
+<com.speedymarks.android.windfree.Main: void updateLocation()> --> if $r4 != null goto $r4 = r0.<com.speedymarks.android.windfree.Main: android.location.Location lastLocation>
+<com.speedymarks.android.windfree.Main: void updateLocation()> --> r0.<com.speedymarks.android.windfree.Main: android.location.Location lastLocation> = $r4
+<com.speedymarks.android.windfree.Main: void updateLocation()> --> $r4 = r0.<com.speedymarks.android.windfree.Main: android.location.Location lastLocation>
+<com.speedymarks.android.windfree.Main: void sendLocationUpdate(java.lang.String)> --> r0 := @this: com.speedymarks.android.windfree.Main
+<com.speedymarks.android.windfree.Main: void sendLocationUpdate(java.lang.String)> --> $r2 = r0.<com.speedymarks.android.windfree.Main: android.location.Location lastLocation>
+<com.speedymarks.android.windfree.Main: void sendLocationUpdate(java.lang.String)> --> if $r2 == null goto $r3 = r0.<com.speedymarks.android.windfree.Main: android.os.Handler mHandler>
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.speedymarks.android.windfree.Main$LocationJavaScriptInterface$1: void run()> --> r0 := @this: com.speedymarks.android.windfree.Main$LocationJavaScriptInterface$1
+<com.speedymarks.android.windfree.Main$LocationJavaScriptInterface$1: void run()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Wind Free", $r6)
+--------------------------------------------------------
+
+<dummyMainClass: com.speedymarks.android.windfree.Main dummyMainMethod_com_speedymarks_android_windfree_Main(android.content.Intent)> --> virtualinvoke $r0.<com.speedymarks.android.windfree.Main: void onLocationChanged(android.location.Location)>(null)
+<com.speedymarks.android.windfree.Main: void onPause()> --> r0 := @this: com.speedymarks.android.windfree.Main
+<com.speedymarks.android.windfree.Main: void stopListening()> --> r0 := @this: com.speedymarks.android.windfree.Main
+<com.speedymarks.android.windfree.Main: void onPause()> --> specialinvoke r0.<com.speedymarks.android.windfree.Main: void stopListening()>()
+<dummyMainClass: com.speedymarks.android.windfree.Main dummyMainMethod_com_speedymarks_android_windfree_Main(android.content.Intent)> --> virtualinvoke $r0.<com.speedymarks.android.windfree.Main: void onPause()>()
+<com.speedymarks.android.windfree.Main: void onResume()> --> r0 := @this: com.speedymarks.android.windfree.Main
+<com.speedymarks.android.windfree.Main: void startListening()> --> r0 := @this: com.speedymarks.android.windfree.Main
+<com.speedymarks.android.windfree.Main: void updateLocation()> --> r0 := @this: com.speedymarks.android.windfree.Main
+<com.speedymarks.android.windfree.Main: void sendLocationUpdate(java.lang.String)> --> r0 := @this: com.speedymarks.android.windfree.Main
+<com.speedymarks.android.windfree.Main: void sendLocationUpdate(java.lang.String)> --> $z0 = r0.<com.speedymarks.android.windfree.Main: boolean pauseUpdates>
+<com.speedymarks.android.windfree.Main: void sendLocationUpdate(java.lang.String)> --> if $z0 == 0 goto $r2 = r0.<com.speedymarks.android.windfree.Main: android.location.Location lastLocation>
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.speedymarks.android.windfree.Main$LocationJavaScriptInterface$1: void run()> --> r0 := @this: com.speedymarks.android.windfree.Main$LocationJavaScriptInterface$1
+<com.speedymarks.android.windfree.Main$LocationJavaScriptInterface$1: void run()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Wind Free", $r6)
+--------------------------------------------------------
+

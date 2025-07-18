@@ -1,0 +1,19 @@
+Source=> $d0 = virtualinvoke $r2.<com.roximity.sdk.location.RoxLocation: double getLatitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("last_nearby_lat", $f0)
+Component=> com.roximity.sdk.ROXIMITYService
+ComponentColor=> RED
+com.roximity.sdk.a.e
+android.content.SharedPreferences$Editor
+android.location.Location
+Category: com.roximity.sdk.a.e-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<com.roximity.sdk.location.RoxLocation: double getLongitude()>()
+Sink=> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("last_nearby_lon", $f0)
+Component=> com.roximity.sdk.ROXIMITYService
+ComponentColor=> RED
+android.location.Location
+com.roximity.sdk.a.e
+android.content.SharedPreferences$Editor
+Category: com.roximity.sdk.a.e-*-
+-----------------------------------------------------------------
+com.cmgdigital.android.wsbweather.apk: 1358812

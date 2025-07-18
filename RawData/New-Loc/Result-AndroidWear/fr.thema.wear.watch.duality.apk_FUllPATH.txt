@@ -1,0 +1,205 @@
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> r11 = $r10
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if r11 == null goto $r14 = staticinvoke <com.google.android.gms.location.LocationRequest: com.google.android.gms.location.LocationRequest create()>()
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void run()> --> r0 := @this: fr.thema.wear.watch.duality.data.AbstractDataSequence$1
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void access$000(fr.thema.wear.watch.duality.data.AbstractDataSequence)> --> $r0 := @parameter0: fr.thema.wear.watch.duality.data.AbstractDataSequence
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> r0 := @this: fr.thema.wear.watch.duality.data.AbstractDataSequence
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: com.google.android.gms.common.api.GoogleApiClient mGoogleApiClient> = null
+<fr.thema.wear.watch.duality.data.WeatherSequence: void onDisconnect()> --> return
+<fr.thema.wear.watch.duality.data.WeatherSequence: void removeLocationUpdates()> --> return
+<fr.thema.wear.watch.duality.data.WeatherSequence: void onDisconnect()> --> specialinvoke r0.<fr.thema.wear.watch.duality.data.WeatherSequence: void removeLocationUpdates()>()
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> virtualinvoke r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: void onDisconnect()>()
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> $r3 = r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: com.google.android.gms.common.api.GoogleApiClient mGoogleApiClient>
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> if $r3 != null goto $r3 = r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: com.google.android.gms.common.api.GoogleApiClient mGoogleApiClient>
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: com.google.android.gms.common.api.GoogleApiClient mGoogleApiClient> = null
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void access$000(fr.thema.wear.watch.duality.data.AbstractDataSequence)> --> specialinvoke $r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()>()
+<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void run()> --> staticinvoke <fr.thema.wear.watch.duality.data.AbstractDataSequence: void access$000(fr.thema.wear.watch.duality.data.AbstractDataSequence)>($r3)
+<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void run()> --> $r3 = r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: fr.thema.wear.watch.duality.data.AbstractDataSequence this$0>
+<java.lang.Thread: void run()> --> interfaceinvoke target.<java.lang.Runnable: void run()>()
+<java.lang.Thread: void run()> --> target = this.<java.lang.Thread: java.lang.Runnable target0>
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void send(java.lang.String,byte[])> --> virtualinvoke $r3.<java.lang.Thread: void start()>()
+<java.lang.Thread: void <init>(java.lang.Runnable)> --> return
+<java.lang.Thread: void <init>(java.lang.Runnable)> --> this.<java.lang.Thread: java.lang.Runnable target0> = p0
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void send(java.lang.String,byte[])> --> specialinvoke $r3.<java.lang.Thread: void <init>(java.lang.Runnable)>($r4)
+<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void <init>(fr.thema.wear.watch.duality.data.AbstractDataSequence,java.lang.String,byte[])> --> return
+<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void <init>(fr.thema.wear.watch.duality.data.AbstractDataSequence,java.lang.String,byte[])> --> r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: fr.thema.wear.watch.duality.data.AbstractDataSequence this$0> = $r1
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void send(java.lang.String,byte[])> --> specialinvoke $r4.<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void <init>(fr.thema.wear.watch.duality.data.AbstractDataSequence,java.lang.String,byte[])>(r0, $r1, $r2)
+<fr.thema.wear.watch.duality.data.SmsSequence: void retrieve()> --> virtualinvoke r0.<fr.thema.wear.watch.duality.data.SmsSequence: void send(java.lang.String,byte[])>("/watch_face_config/themaduality/phoneunreadsms", $r3)
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void execute()> --> virtualinvoke r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: void retrieve()>()
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void execute()> --> $r1 = r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: com.google.android.gms.common.api.GoogleApiClient mGoogleApiClient>
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void execute()> --> if $r1 != null goto r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: boolean mShouldDispose> = 0
+<fr.thema.wear.watch.duality.data.CallsSequence: void retrieve()> --> r0 := @this: fr.thema.wear.watch.duality.data.CallsSequence
+<fr.thema.wear.watch.duality.data.CallsSequence: void retrieve()> --> $r11 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, r1, $r8, $r9, "date DESC")
+--------------------------------------------------------
+
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> r11 = $r10
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if r11 == null goto $r14 = staticinvoke <com.google.android.gms.location.LocationRequest: com.google.android.gms.location.LocationRequest create()>()
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<fr.thema.wear.watch.duality.util.IabHelper$2: void run()> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper$2
+<fr.thema.wear.watch.duality.util.IabHelper: void flagEndAsync()> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper
+<fr.thema.wear.watch.duality.util.IabHelper: void logDebug(java.lang.String)> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper
+<fr.thema.wear.watch.duality.util.IabHelper: void logDebug(java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> r11 = $r10
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if r11 == null goto $r14 = staticinvoke <com.google.android.gms.location.LocationRequest: com.google.android.gms.location.LocationRequest create()>()
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<fr.thema.wear.watch.duality.faces.FacesLoader$1: void run()> --> r0 := @this: fr.thema.wear.watch.duality.faces.FacesLoader$1
+<fr.thema.wear.watch.duality.faces.FacesParser: fr.thema.wear.watch.duality.faces.FacesTable parseFaces(org.w3c.dom.Document,java.lang.String,boolean)> --> $r0 := @parameter0: org.w3c.dom.Document
+<fr.thema.wear.watch.duality.faces.FacesParser: fr.thema.wear.watch.duality.faces.FacesTable parseFaces(org.w3c.dom.Document,java.lang.String,boolean)> --> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("FACES", $r1)
+--------------------------------------------------------
+
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> r11 = $r10
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if r11 == null goto $r14 = staticinvoke <com.google.android.gms.location.LocationRequest: com.google.android.gms.location.LocationRequest create()>()
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void run()> --> r0 := @this: fr.thema.wear.watch.duality.data.AbstractDataSequence$1
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void access$000(fr.thema.wear.watch.duality.data.AbstractDataSequence)> --> $r0 := @parameter0: fr.thema.wear.watch.duality.data.AbstractDataSequence
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> r0 := @this: fr.thema.wear.watch.duality.data.AbstractDataSequence
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: com.google.android.gms.common.api.GoogleApiClient mGoogleApiClient> = null
+<fr.thema.wear.watch.duality.data.WeatherSequence: void onDisconnect()> --> return
+<fr.thema.wear.watch.duality.data.WeatherSequence: void removeLocationUpdates()> --> return
+<fr.thema.wear.watch.duality.data.WeatherSequence: void onDisconnect()> --> specialinvoke r0.<fr.thema.wear.watch.duality.data.WeatherSequence: void removeLocationUpdates()>()
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> virtualinvoke r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: void onDisconnect()>()
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> $r3 = r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: com.google.android.gms.common.api.GoogleApiClient mGoogleApiClient>
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> if $r3 != null goto $r3 = r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: com.google.android.gms.common.api.GoogleApiClient mGoogleApiClient>
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()> --> r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: com.google.android.gms.common.api.GoogleApiClient mGoogleApiClient> = null
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void access$000(fr.thema.wear.watch.duality.data.AbstractDataSequence)> --> specialinvoke $r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: void disconnect()>()
+<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void run()> --> staticinvoke <fr.thema.wear.watch.duality.data.AbstractDataSequence: void access$000(fr.thema.wear.watch.duality.data.AbstractDataSequence)>($r3)
+<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void run()> --> $r3 = r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: fr.thema.wear.watch.duality.data.AbstractDataSequence this$0>
+<java.lang.Thread: void run()> --> interfaceinvoke target.<java.lang.Runnable: void run()>()
+<java.lang.Thread: void run()> --> target = this.<java.lang.Thread: java.lang.Runnable target0>
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void send(java.lang.String,byte[])> --> virtualinvoke $r3.<java.lang.Thread: void start()>()
+<java.lang.Thread: void <init>(java.lang.Runnable)> --> return
+<java.lang.Thread: void <init>(java.lang.Runnable)> --> this.<java.lang.Thread: java.lang.Runnable target0> = p0
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void send(java.lang.String,byte[])> --> specialinvoke $r3.<java.lang.Thread: void <init>(java.lang.Runnable)>($r4)
+<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void <init>(fr.thema.wear.watch.duality.data.AbstractDataSequence,java.lang.String,byte[])> --> return
+<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void <init>(fr.thema.wear.watch.duality.data.AbstractDataSequence,java.lang.String,byte[])> --> r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: fr.thema.wear.watch.duality.data.AbstractDataSequence this$0> = $r1
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void send(java.lang.String,byte[])> --> specialinvoke $r4.<fr.thema.wear.watch.duality.data.AbstractDataSequence$1: void <init>(fr.thema.wear.watch.duality.data.AbstractDataSequence,java.lang.String,byte[])>(r0, $r1, $r2)
+<fr.thema.wear.watch.duality.data.SmsSequence: void retrieve()> --> virtualinvoke r0.<fr.thema.wear.watch.duality.data.SmsSequence: void send(java.lang.String,byte[])>("/watch_face_config/themaduality/phoneunreadsms", $r3)
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void execute()> --> virtualinvoke r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: void retrieve()>()
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void execute()> --> $r1 = r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: com.google.android.gms.common.api.GoogleApiClient mGoogleApiClient>
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void execute()> --> if $r1 != null goto r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: boolean mShouldDispose> = 0
+<fr.thema.wear.watch.duality.data.SmsSequence: void retrieve()> --> r0 := @this: fr.thema.wear.watch.duality.data.SmsSequence
+<fr.thema.wear.watch.duality.SmsUtils: java.lang.String getSmsData(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<fr.thema.wear.watch.duality.SmsUtils: java.lang.String getSmsData(android.content.Context)> --> $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, r1, "read = 0", null, null)
+--------------------------------------------------------
+
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if $r10 == null goto (branch)
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> r0 := @this: fr.thema.wear.watch.duality.widget.UpdateWidgetService$2
+<fr.thema.wear.watch.duality.Logger: void d(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<fr.thema.wear.watch.duality.Logger: void d(java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+--------------------------------------------------------
+
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if $r10 == null goto (branch)
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<fr.thema.wear.watch.duality.SMSReceiver$1: void run()> --> r0 := @this: fr.thema.wear.watch.duality.SMSReceiver$1
+<fr.thema.wear.watch.duality.Logger: void d(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<fr.thema.wear.watch.duality.Logger: void d(java.lang.String)> --> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r1, 3)
+--------------------------------------------------------
+
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> r11 = $r10
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if r11 == null goto $r14 = staticinvoke <com.google.android.gms.location.LocationRequest: com.google.android.gms.location.LocationRequest create()>()
+<fr.thema.wear.watch.duality.data.WeatherSequence$1: void run()> --> r0 := @this: fr.thema.wear.watch.duality.data.WeatherSequence$1
+<fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask
+<fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask: fr.thema.wear.watch.duality.data.WeatherSequence$SimpleWeatherData doInBackground(java.lang.String[])> --> r0 := @this: fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask
+<fr.thema.wear.watch.duality.weather.owm.OwmWeather: void <clinit>()> --> nop
+<fr.thema.wear.watch.duality.weather.owm.OwmWeather: void <clinit>()> --> <fr.thema.wear.watch.duality.weather.owm.OwmWeather: java.lang.String BASE_URL> = "http://api.openweathermap.org/data/2.5/weather?"
+<fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask: fr.thema.wear.watch.duality.data.WeatherSequence$SimpleWeatherData doInBackground(java.lang.String[])> --> $r9 = staticinvoke <fr.thema.wear.watch.duality.weather.owm.OwmWeather: fr.thema.wear.watch.duality.weather.owm.OwmWeatherData getWeatherDataForLocation(java.lang.String,java.lang.String,java.lang.String)>(r2, r3, $r8)
+<fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask: java.lang.Object doInBackground(java.lang.Object[])> --> $r1 = virtualinvoke r0.<fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask: fr.thema.wear.watch.duality.data.WeatherSequence$SimpleWeatherData doInBackground(java.lang.String[])>($r3)
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> virtualinvoke r2.<fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask: android.os.AsyncTask execute(java.lang.Object[])>($r7)
+<fr.thema.wear.watch.duality.data.AbstractDataSequence: void execute()> --> virtualinvoke r0.<fr.thema.wear.watch.duality.data.AbstractDataSequence: void retrieve()>()
+<fr.thema.wear.watch.duality.WatchFaceDataService: void onMessageReceived(com.google.android.gms.wearable.MessageEvent)> --> virtualinvoke $r11.<fr.thema.wear.watch.duality.data.AbstractDataSequence: void execute()>()
+<fr.thema.wear.watch.duality.weather.owm.OwmWeather: java.lang.String getWeatherData(java.lang.String,java.lang.String,java.lang.String)> --> $r11 = <fr.thema.wear.watch.duality.weather.owm.OwmWeather: java.lang.String BASE_URL>
+<fr.thema.wear.watch.duality.weather.owm.OwmWeather: java.lang.String getWeatherData(java.lang.String,java.lang.String,java.lang.String)> --> r6 := @caughtexception
+<fr.thema.wear.watch.duality.weather.owm.OwmWeather: java.lang.String getWeatherData(java.lang.String,java.lang.String,java.lang.String)> --> virtualinvoke r7.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> r11 = $r10
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if r11 == null goto $r14 = staticinvoke <com.google.android.gms.location.LocationRequest: com.google.android.gms.location.LocationRequest create()>()
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<fr.thema.wear.watch.duality.util.IabHelper$2: void run()> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper$2
+<fr.thema.wear.watch.duality.util.IabHelper: fr.thema.wear.watch.duality.util.Inventory queryInventory(boolean,java.util.List)> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper
+<fr.thema.wear.watch.duality.util.IabHelper: fr.thema.wear.watch.duality.util.Inventory queryInventory(boolean,java.util.List,java.util.List)> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper
+<fr.thema.wear.watch.duality.util.IabHelper: int querySkuDetails(java.lang.String,fr.thema.wear.watch.duality.util.Inventory,java.util.List)> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper
+<fr.thema.wear.watch.duality.util.IabHelper: int querySkuDetails(java.lang.String,fr.thema.wear.watch.duality.util.Inventory,java.util.List)> --> virtualinvoke $r17.<android.os.Bundle: void putStringArrayList(java.lang.String,java.util.ArrayList)>("ITEM_ID_LIST", r6)
+--------------------------------------------------------
+
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> r11 = $r10
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if r11 == null goto $r14 = staticinvoke <com.google.android.gms.location.LocationRequest: com.google.android.gms.location.LocationRequest create()>()
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> r0 := @this: fr.thema.wear.watch.duality.widget.UpdateWidgetService$2
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> $r6 = new fr.thema.wear.watch.duality.widget.WatchFaceWidgetView
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView access$202(fr.thema.wear.watch.duality.widget.UpdateWidgetService,fr.thema.wear.watch.duality.widget.WatchFaceWidgetView)> --> $r0 := @parameter0: fr.thema.wear.watch.duality.widget.UpdateWidgetService
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView access$202(fr.thema.wear.watch.duality.widget.UpdateWidgetService,fr.thema.wear.watch.duality.widget.WatchFaceWidgetView)> --> $r0.<fr.thema.wear.watch.duality.widget.UpdateWidgetService: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView mWidgetView> = $r1
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> staticinvoke <fr.thema.wear.watch.duality.widget.UpdateWidgetService: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView access$202(fr.thema.wear.watch.duality.widget.UpdateWidgetService,fr.thema.wear.watch.duality.widget.WatchFaceWidgetView)>($r3, $r6)
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> $r3 = r0.<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: fr.thema.wear.watch.duality.widget.UpdateWidgetService this$0>
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> $r3 = r0.<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: fr.thema.wear.watch.duality.widget.UpdateWidgetService this$0>
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView access$200(fr.thema.wear.watch.duality.widget.UpdateWidgetService)> --> $r0 := @parameter0: fr.thema.wear.watch.duality.widget.UpdateWidgetService
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView access$200(fr.thema.wear.watch.duality.widget.UpdateWidgetService)> --> r1 = $r0.<fr.thema.wear.watch.duality.widget.UpdateWidgetService: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView mWidgetView>
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> $r6 = staticinvoke <fr.thema.wear.watch.duality.widget.UpdateWidgetService: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView access$200(fr.thema.wear.watch.duality.widget.UpdateWidgetService)>($r3)
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> $r6 = staticinvoke <fr.thema.wear.watch.duality.widget.UpdateWidgetService: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView access$200(fr.thema.wear.watch.duality.widget.UpdateWidgetService)>($r3)
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> if $r6 != null goto r1 = r0.<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: fr.thema.wear.watch.duality.widget.UpdateWidgetService this$0>
+<fr.thema.wear.watch.duality.widget.WatchFaceWidgetView: void <init>(android.content.Context)> --> r0 := @this: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView
+<fr.thema.wear.watch.duality.widget.WatchFaceWidgetView: void init()> --> r0 := @this: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView
+<fr.thema.wear.watch.duality.Logger: void <clinit>()> --> nop
+<fr.thema.wear.watch.duality.Logger: void <clinit>()> --> <fr.thema.wear.watch.duality.Logger: java.lang.String TAG> = "Duality"
+<fr.thema.wear.watch.duality.widget.WatchFaceWidgetView: void init()> --> staticinvoke <fr.thema.wear.watch.duality.Logger: void d(java.lang.String)>("")
+<fr.thema.wear.watch.duality.widget.WatchFaceWidgetView: void <init>(android.content.Context)> --> specialinvoke r0.<fr.thema.wear.watch.duality.widget.WatchFaceWidgetView: void init()>()
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> specialinvoke $r6.<fr.thema.wear.watch.duality.widget.WatchFaceWidgetView: void <init>(android.content.Context)>(r1)
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> r1 = r0.<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: fr.thema.wear.watch.duality.widget.UpdateWidgetService this$0>
+<fr.thema.wear.watch.duality.PreviewView: void refreshConfig(fr.thema.wear.watch.duality.widget.UpdateWidgetService$WidgetFeeder)> --> staticinvoke <fr.thema.wear.watch.duality.Logger: void d(java.lang.String)>($r11)
+<fr.thema.wear.watch.duality.Logger: void w(java.lang.String)> --> $r1 = <fr.thema.wear.watch.duality.Logger: java.lang.String TAG>
+<fr.thema.wear.watch.duality.Logger: void w(java.lang.String)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r1, $r0)
+--------------------------------------------------------
+
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if $r10 == null goto (branch)
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService$2: void run()> --> r0 := @this: fr.thema.wear.watch.duality.widget.UpdateWidgetService$2
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService: void access$100(fr.thema.wear.watch.duality.widget.UpdateWidgetService,boolean)> --> $r0 := @parameter0: fr.thema.wear.watch.duality.widget.UpdateWidgetService
+<fr.thema.wear.watch.duality.widget.UpdateWidgetService: void updateWidgetBitmap(boolean)> --> r0 := @this: fr.thema.wear.watch.duality.widget.UpdateWidgetService
+<fr.thema.wear.watch.duality.widget.WatchFaceWidgetView: void refreshData(fr.thema.wear.watch.duality.widget.UpdateWidgetService$WidgetFeeder)> --> r0 := @this: fr.thema.wear.watch.duality.widget.WatchFaceWidgetView
+<fr.thema.wear.watch.duality.PreviewView: void refreshData(fr.thema.wear.watch.duality.widget.UpdateWidgetService$WidgetFeeder)> --> r0 := @this: fr.thema.wear.watch.duality.PreviewView
+<fr.thema.wear.watch.duality.PreviewView: void refreshData(fr.thema.wear.watch.duality.widget.UpdateWidgetService$WidgetFeeder)> --> $f0 = virtualinvoke $r1.<fr.thema.wear.watch.duality.widget.UpdateWidgetService$WidgetFeeder: float getWeatherDegree()>()
+<fr.thema.wear.watch.duality.PreviewView: void refreshData(fr.thema.wear.watch.duality.widget.UpdateWidgetService$WidgetFeeder)> --> r0.<fr.thema.wear.watch.duality.PreviewView: float mWeatherDegree> = $f0
+<fr.thema.wear.watch.duality.PreviewView: void refreshData(fr.thema.wear.watch.duality.widget.UpdateWidgetService$WidgetFeeder)> --> r2 := @caughtexception
+<fr.thema.wear.watch.duality.Logger: void e(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<fr.thema.wear.watch.duality.Logger: void e(java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r0)
+--------------------------------------------------------
+
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> r11 = $r10
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if r11 == null goto $r14 = staticinvoke <com.google.android.gms.location.LocationRequest: com.google.android.gms.location.LocationRequest create()>()
+<fr.thema.wear.watch.duality.data.WeatherSequence$1: void run()> --> r0 := @this: fr.thema.wear.watch.duality.data.WeatherSequence$1
+<fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask
+<fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask: fr.thema.wear.watch.duality.data.WeatherSequence$SimpleWeatherData doInBackground(java.lang.String[])> --> r0 := @this: fr.thema.wear.watch.duality.data.WeatherSequence$JSONWeatherTask
+<fr.thema.wear.watch.duality.weather.yr.YrWeather: void <clinit>()> --> nop
+<fr.thema.wear.watch.duality.weather.yr.YrWeather: void <clinit>()> --> <fr.thema.wear.watch.duality.weather.yr.YrWeather: org.xmlpull.v1.XmlPullParserFactory sXmlPullParserFactory> = $r1
+<fr.thema.wear.watch.duality.weather.yr.YrWeather: fr.thema.wear.watch.duality.weather.yr.YrWeatherData getWeatherDataForLocation(java.lang.String,java.lang.String)> --> $r0 = staticinvoke <fr.thema.wear.watch.duality.weather.yr.YrWeather: java.lang.String buildWeatherQueryUrl(java.lang.String,java.lang.String)>($r0, $r1)
+<fr.thema.wear.watch.duality.weather.yr.YrWeather: fr.thema.wear.watch.duality.weather.yr.YrWeatherData getWeatherDataForLocation(java.lang.String,java.lang.String)> --> $r5 = <fr.thema.wear.watch.duality.weather.yr.YrWeather: org.xmlpull.v1.XmlPullParserFactory sXmlPullParserFactory>
+<fr.thema.wear.watch.duality.weather.yr.YrWeather: fr.thema.wear.watch.duality.weather.yr.YrWeatherData getWeatherDataForLocation(java.lang.String,java.lang.String)> --> $r12 := @caughtexception
+<fr.thema.wear.watch.duality.weather.yr.YrWeather: fr.thema.wear.watch.duality.weather.yr.YrWeatherData getWeatherDataForLocation(java.lang.String,java.lang.String)> --> virtualinvoke r3.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> $r10 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> r11 = $r10
+<fr.thema.wear.watch.duality.data.WeatherSequence: void retrieve()> --> if r11 == null goto $r14 = staticinvoke <com.google.android.gms.location.LocationRequest: com.google.android.gms.location.LocationRequest create()>()
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<fr.thema.wear.watch.duality.util.IabHelper$2: void run()> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper$2
+<fr.thema.wear.watch.duality.util.IabHelper: fr.thema.wear.watch.duality.util.Inventory queryInventory(boolean,java.util.List)> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper
+<fr.thema.wear.watch.duality.util.IabHelper: fr.thema.wear.watch.duality.util.Inventory queryInventory(boolean,java.util.List,java.util.List)> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper
+<fr.thema.wear.watch.duality.util.IabHelper: void checkSetupDone(java.lang.String)> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper
+<fr.thema.wear.watch.duality.util.IabHelper: void logError(java.lang.String)> --> r0 := @this: fr.thema.wear.watch.duality.util.IabHelper
+<fr.thema.wear.watch.duality.util.IabHelper: void logError(java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+

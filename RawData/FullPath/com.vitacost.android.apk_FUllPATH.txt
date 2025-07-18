@@ -1,0 +1,6 @@
+<com.bb.framework.utils.BBLocationManager: android.location.Location getLastLocation(android.content.Context)> --> $r3 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.bb.framework.ActionType: void executeAction(android.os.Bundle,com.bb.framework.pagetypes.BasePageActivity)> --> $r45 = staticinvoke <com.bb.framework.utils.BBLocationManager: android.location.Location getLastLocation(android.content.Context)>($r1)
+<com.bb.framework.ActionType: void executeAction(android.os.Bundle,com.bb.framework.pagetypes.BasePageActivity)> --> if $r45 == null goto return
+<com.bb.framework.ActionType: void executeAction(android.os.Bundle,com.bb.framework.pagetypes.BasePageActivity)> --> virtualinvoke r4.<android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)>("com.bb.framework.EXTRA_REQUEST_TYPE", $r25)
+--------------------------------------------------------
+

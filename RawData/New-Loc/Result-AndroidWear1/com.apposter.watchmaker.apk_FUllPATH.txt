@@ -1,0 +1,77 @@
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> if $r4 != null goto staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "Get GPS Location")
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "Get NETWORK Location")
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> if $r4 == null goto return $r4
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "Get NETWORK Location")
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> $r5 = specialinvoke r0.<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()>()
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> if $r5 != null goto staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> $r5 = specialinvoke r0.<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()>()
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> if $r5 != null goto staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc5c6\uc74c")
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> $r5 = specialinvoke r0.<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()>()
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> if $r5 != null goto staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc5c6\uc74c")
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> $r5 = specialinvoke r0.<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()>()
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> if $r5 != null goto staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r10)
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> $r5 = specialinvoke r0.<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()>()
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> if $r5 != null goto staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> if $r4 != null goto staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "Get GPS Location")
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "Get GPS Location")
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> if $r4 == null goto return $r4
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> $r5 = specialinvoke r0.<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()>()
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> if $r5 != null goto staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r10)
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> if $r4 == null goto return $r4
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> $r5 = specialinvoke r0.<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()>()
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> if $r5 != null goto staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> $r5 = specialinvoke r0.<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()>()
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> if $r5 != null goto staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherService", $r10)
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> if $r4 == null goto return $r4
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "Get NETWORK Location")
+--------------------------------------------------------
+
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()> --> if $r4 == null goto return $r4
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> $r5 = specialinvoke r0.<com.apposter.watchmaker.weathers.services.WeatherService: android.location.Location getLastKnownLocation()>()
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> if $r5 != null goto staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc788\uc74c")
+<com.apposter.watchmaker.weathers.services.WeatherService: void onHandleWork(android.content.Intent)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("WeatherService", "\uc54c\uace0 \uc788\ub294 \uc704\uce58 \uc5c6\uc74c")
+--------------------------------------------------------
+

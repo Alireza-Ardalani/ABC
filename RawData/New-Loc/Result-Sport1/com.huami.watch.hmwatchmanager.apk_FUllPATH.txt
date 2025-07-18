@@ -1,0 +1,39 @@
+<com.tencent.open.utils.i: java.lang.String c(android.content.Context)> --> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<com.tencent.open.utils.i: java.lang.String c(android.content.Context)> --> $r7 := @caughtexception
+<com.tencent.open.b.g$2: void run()> --> $r3 = staticinvoke <com.tencent.open.utils.i: java.lang.String c(android.content.Context)>($r2)
+<com.tencent.open.b.g$2: void run()> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r3)
+--------------------------------------------------------
+
+<com.amap.api.location.AMapLocation: org.json.JSONObject a(int)> --> $d0 = virtualinvoke r0.<com.amap.api.location.AMapLocation: double getLatitude()>()
+<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String toStr(int)> --> $r1 = specialinvoke r0.<com.amap.api.location.AMapLocation: org.json.JSONObject a(int)>(1)
+<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String toStr(int)> --> $r3 = r0.<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String n>
+<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String toStr(int)> --> if $r2 != null goto $r3 = virtualinvoke $r2.<org.json.JSONObject: java.lang.String toString()>()
+<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String toStr(int)> --> if $r2 != null goto $r3 = virtualinvoke $r2.<org.json.JSONObject: java.lang.String toString()>()
+<com.loc.e: void b(com.loc.e,android.os.Messenger,android.os.Bundle)> --> $r4 = virtualinvoke $r5.<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String toStr(int)>(1)
+<com.loc.e: void a(android.os.Messenger,java.lang.String,int,boolean)> --> $r0 := @parameter0: android.os.Messenger
+<com.loc.e: void a(android.os.Messenger,java.lang.String,int,boolean)> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("locationJson", $r2)
+--------------------------------------------------------
+
+<com.tencent.open.utils.i: java.lang.String c(android.content.Context)> --> $r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+<com.tencent.open.utils.i: java.lang.String c(android.content.Context)> --> if $r5 != null goto $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<com.tencent.open.utils.i: java.lang.String c(android.content.Context)> --> $r4 = <com.tencent.open.utils.i: java.lang.String f>
+<com.tencent.open.b.g$2: void run()> --> $r3 = staticinvoke <com.tencent.open.utils.i: java.lang.String c(android.content.Context)>($r2)
+<com.tencent.open.b.g$2: void run()> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r3)
+--------------------------------------------------------
+
+<com.tencent.open.utils.i: java.lang.String c(android.content.Context)> --> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+<com.tencent.open.utils.i: java.lang.String c(android.content.Context)> --> $r7 := @caughtexception
+<com.tencent.open.b.g$2: void run()> --> $r3 = staticinvoke <com.tencent.open.utils.i: java.lang.String c(android.content.Context)>($r2)
+<com.tencent.open.b.g$2: void run()> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r3)
+--------------------------------------------------------
+
+<com.amap.api.location.AMapLocation: org.json.JSONObject a(int)> --> $d0 = virtualinvoke r0.<com.amap.api.location.AMapLocation: double getLongitude()>()
+<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String toStr(int)> --> $r1 = specialinvoke r0.<com.amap.api.location.AMapLocation: org.json.JSONObject a(int)>(1)
+<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String toStr(int)> --> $r3 = r0.<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String n>
+<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String toStr(int)> --> if $r2 != null goto $r3 = virtualinvoke $r2.<org.json.JSONObject: java.lang.String toString()>()
+<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String toStr(int)> --> if $r2 != null goto $r3 = virtualinvoke $r2.<org.json.JSONObject: java.lang.String toString()>()
+<com.loc.e: void b(com.loc.e,android.os.Messenger,android.os.Bundle)> --> $r4 = virtualinvoke $r5.<com.autonavi.aps.amapapi.model.AMapLocationServer: java.lang.String toStr(int)>(1)
+<com.loc.e: void a(android.os.Messenger,java.lang.String,int,boolean)> --> $r0 := @parameter0: android.os.Messenger
+<com.loc.e: void a(android.os.Messenger,java.lang.String,int,boolean)> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("locationJson", $r2)
+--------------------------------------------------------
+

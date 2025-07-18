@@ -1,0 +1,18 @@
+Source=> virtualinvoke r0.<com.paypal.android.sdk.at: void onLocationChanged(android.location.Location)>($r16)
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "PRD", $r1)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.at: void onLocationChanged(android.location.Location)>($r16)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, "default Configuration loading failed,Using hardcoded config")
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.at: void onLocationChanged(android.location.Location)>($r16)
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("RiskManagerCT", $i0)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

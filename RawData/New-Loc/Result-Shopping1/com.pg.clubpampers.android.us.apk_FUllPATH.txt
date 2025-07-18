@@ -1,0 +1,189 @@
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: void <clinit>()> --> nop
+<com.appboy.support.AppboyLogger: void <clinit>()> --> <com.appboy.support.AppboyLogger: int d> = 4
+<com.appboy.support.AppboyFileUtils: void deleteFileOrDirectory(java.io.File)> --> staticinvoke <com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r3, $r6, $r4)
+<com.appboy.ui.inappmessage.listeners.AppboyInAppMessageViewLifecycleListener$1: void run()> --> staticinvoke <com.appboy.support.AppboyFileUtils: void deleteFileOrDirectory(java.io.File)>($r3)
+<java.lang.Thread: void run()> --> interfaceinvoke target.<java.lang.Runnable: void run()>()
+<com.appboy.ui.inappmessage.listeners.AppboyInAppMessageViewLifecycleListener: void startClearHtmlInAppMessageAssetsThread()> --> virtualinvoke $r1.<java.lang.Thread: void start()>()
+<com.appboy.ui.inappmessage.listeners.AppboyInAppMessageViewLifecycleListener: void afterClosed(com.appboy.models.IInAppMessage)> --> specialinvoke r0.<com.appboy.ui.inappmessage.listeners.AppboyInAppMessageViewLifecycleListener: void startClearHtmlInAppMessageAssetsThread()>()
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void closeInAppMessageView()> --> interfaceinvoke $r5.<com.appboy.ui.inappmessage.listeners.IInAppMessageViewLifecycleListener: void afterClosed(com.appboy.models.IInAppMessage)>($r6)
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,boolean)>($r0, $r1, 1)
+<com.appboy.push.AppboyNotificationUtils: void setPriorityIfPresentAndSupported(android.support.v4.app.ad$d,android.os.Bundle)> --> staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)>($r2, "Setting priority for notification")
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> staticinvoke <com.appboy.support.AppboyLogger: void a(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, null)
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> $i0 = <com.appboy.support.AppboyLogger: int d>
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> if $i0 > 6 goto return 0
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: void <clinit>()> --> nop
+<com.appboy.support.AppboyLogger: void <clinit>()> --> <com.appboy.support.AppboyLogger: int d> = 4
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,boolean)>($r0, $r1, 1)
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void closeInAppMessageView()> --> staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)>($r1, "Called destroy on the AppboyInAppMessageHtmlBaseView WebView")
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void access$900(com.appboy.ui.inappmessage.InAppMessageViewWrapper)> --> specialinvoke $r0.<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void closeInAppMessageView()>()
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper$9: void onAnimationEnd(android.view.animation.Animation)> --> staticinvoke <com.appboy.ui.inappmessage.InAppMessageViewWrapper: void access$900(com.appboy.ui.inappmessage.InAppMessageViewWrapper)>($r2)
+<dummyMainClass: com.appboy.ui.AppboyWebViewActivity dummyMainMethod_com_appboy_ui_AppboyWebViewActivity(android.content.Intent)> --> virtualinvoke $r13.<com.appboy.ui.inappmessage.InAppMessageViewWrapper$9: void onAnimationEnd(android.view.animation.Animation)>(null)
+<dummyMainClass: com.appboy.ui.AppboyWebViewActivity dummyMainMethod_com_appboy_ui_AppboyWebViewActivity(android.content.Intent)> --> $r14 = new com.appboy.ui.AppboyWebViewActivity$2
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> staticinvoke <com.appboy.support.AppboyLogger: void a(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, null)
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = <com.appboy.support.AppboyLogger: int d>
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> if $i0 > 4 goto return 0
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r2)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r2)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d1 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: void <clinit>()> --> nop
+<com.appboy.support.AppboyLogger: void <clinit>()> --> <com.appboy.support.AppboyLogger: int d> = 4
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,boolean)>($r0, $r1, 1)
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void closeInAppMessageView()> --> staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)>($r1, "Called destroy on the AppboyInAppMessageHtmlBaseView WebView")
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void access$900(com.appboy.ui.inappmessage.InAppMessageViewWrapper)> --> specialinvoke $r0.<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void closeInAppMessageView()>()
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper$9: void onAnimationEnd(android.view.animation.Animation)> --> staticinvoke <com.appboy.ui.inappmessage.InAppMessageViewWrapper: void access$900(com.appboy.ui.inappmessage.InAppMessageViewWrapper)>($r2)
+<dummyMainClass: com.appboy.ui.AppboyWebViewActivity dummyMainMethod_com_appboy_ui_AppboyWebViewActivity(android.content.Intent)> --> virtualinvoke $r13.<com.appboy.ui.inappmessage.InAppMessageViewWrapper$9: void onAnimationEnd(android.view.animation.Animation)>(null)
+<dummyMainClass: com.appboy.ui.AppboyWebViewActivity dummyMainMethod_com_appboy_ui_AppboyWebViewActivity(android.content.Intent)> --> $r14 = new com.appboy.ui.AppboyWebViewActivity$2
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> staticinvoke <com.appboy.support.AppboyLogger: void a(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, null)
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = <com.appboy.support.AppboyLogger: int d>
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> if $i0 > 4 goto return 0
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r2)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d1 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: void <clinit>()> --> nop
+<com.appboy.support.AppboyLogger: void <clinit>()> --> <com.appboy.support.AppboyLogger: int d> = 4
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,boolean)>($r0, $r1, 1)
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void closeInAppMessageView()> --> staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)>($r1, "Called destroy on the AppboyInAppMessageHtmlBaseView WebView")
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void access$900(com.appboy.ui.inappmessage.InAppMessageViewWrapper)> --> specialinvoke $r0.<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void closeInAppMessageView()>()
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper$9: void onAnimationEnd(android.view.animation.Animation)> --> staticinvoke <com.appboy.ui.inappmessage.InAppMessageViewWrapper: void access$900(com.appboy.ui.inappmessage.InAppMessageViewWrapper)>($r2)
+<dummyMainClass: com.appboy.ui.AppboyWebViewActivity dummyMainMethod_com_appboy_ui_AppboyWebViewActivity(android.content.Intent)> --> virtualinvoke $r13.<com.appboy.ui.inappmessage.InAppMessageViewWrapper$9: void onAnimationEnd(android.view.animation.Animation)>(null)
+<dummyMainClass: com.appboy.ui.AppboyWebViewActivity dummyMainMethod_com_appboy_ui_AppboyWebViewActivity(android.content.Intent)> --> $r14 = new com.appboy.ui.AppboyWebViewActivity$2
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> staticinvoke <com.appboy.support.AppboyLogger: void a(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, null)
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = <com.appboy.support.AppboyLogger: int d>
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> if $i0 > 4 goto return 0
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d1 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: void a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<bo.app.bx: void a(java.lang.String,java.lang.String,java.lang.Throwable)> --> r0 := @this: bo.app.bx
+<bo.app.bx: java.lang.String b(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<bo.app.bx: java.lang.String c()> --> $r2 = new java.util.Date
+<bo.app.du: java.lang.String a(java.util.Date,bo.app.u)> --> $r0 := @parameter0: java.util.Date
+<com.appboy.support.AppboyLogger: int w(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int w(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: void <clinit>()> --> nop
+<com.appboy.support.AppboyLogger: void <clinit>()> --> <com.appboy.support.AppboyLogger: int d> = 4
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,boolean)>($r0, $r1, 1)
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void closeInAppMessageView()> --> staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)>($r1, "Called destroy on the AppboyInAppMessageHtmlBaseView WebView")
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void access$900(com.appboy.ui.inappmessage.InAppMessageViewWrapper)> --> specialinvoke $r0.<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void closeInAppMessageView()>()
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper$9: void onAnimationEnd(android.view.animation.Animation)> --> staticinvoke <com.appboy.ui.inappmessage.InAppMessageViewWrapper: void access$900(com.appboy.ui.inappmessage.InAppMessageViewWrapper)>($r2)
+<dummyMainClass: com.appboy.ui.AppboyWebViewActivity dummyMainMethod_com_appboy_ui_AppboyWebViewActivity(android.content.Intent)> --> virtualinvoke $r13.<com.appboy.ui.inappmessage.InAppMessageViewWrapper$9: void onAnimationEnd(android.view.animation.Animation)>(null)
+<dummyMainClass: com.appboy.ui.AppboyWebViewActivity dummyMainMethod_com_appboy_ui_AppboyWebViewActivity(android.content.Intent)> --> $r14 = new com.appboy.ui.AppboyWebViewActivity$2
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> staticinvoke <com.appboy.support.AppboyLogger: void a(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, null)
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = <com.appboy.support.AppboyLogger: int d>
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> if $i0 > 4 goto return 0
+<com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d1 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, $r2)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d1 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: void <clinit>()> --> nop
+<com.appboy.support.AppboyLogger: void <clinit>()> --> <com.appboy.support.AppboyLogger: int d> = 4
+<com.appboy.ui.inappmessage.AppboyInAppMessageManager: void unregisterInAppMessageManager(android.app.Activity)> --> staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)>($r2, "unregisterInAppMessageManager called")
+<com.appboy.AppboyLifecycleCallbackListener: void onActivityPaused(android.app.Activity)> --> virtualinvoke $r2.<com.appboy.ui.inappmessage.AppboyInAppMessageManager: void unregisterInAppMessageManager(android.app.Activity)>($r1)
+<com.appboy.AppboyLifecycleCallbackListener: void onActivityPaused(android.app.Activity)> --> return
+<dummyMainClass: com.appboy.ui.activities.AppboyFeedActivity dummyMainMethod_com_appboy_ui_activities_AppboyFeedActivity(android.content.Intent)> --> virtualinvoke $r3.<com.appboy.AppboyLifecycleCallbackListener: void onActivityPaused(android.app.Activity)>($r0)
+<com.appboy.support.AppboyLogger: int v(java.lang.String,java.lang.String)> --> $i0 = <com.appboy.support.AppboyLogger: int d>
+<com.appboy.support.AppboyLogger: int v(java.lang.String,java.lang.String)> --> if $i0 > 2 goto return 0
+<com.appboy.support.AppboyLogger: int v(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: void a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<bo.app.bx: void a(java.lang.String,java.lang.String,java.lang.Throwable)> --> r0 := @this: bo.app.bx
+<bo.app.bx: java.lang.String b(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<bo.app.bx: java.lang.String c()> --> $r2 = new java.util.Date
+<bo.app.du: java.lang.String a(java.util.Date,bo.app.u)> --> $r0 := @parameter0: java.util.Date
+<com.appboy.support.AppboyLogger: int w(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int w(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d1 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: void <clinit>()> --> nop
+<com.appboy.support.AppboyLogger: void <clinit>()> --> <com.appboy.support.AppboyLogger: int d> = 4
+<com.appboy.support.AppboyFileUtils: void deleteFileOrDirectory(java.io.File)> --> staticinvoke <com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r3, $r6, $r4)
+<com.appboy.ui.inappmessage.listeners.AppboyInAppMessageViewLifecycleListener$1: void run()> --> staticinvoke <com.appboy.support.AppboyFileUtils: void deleteFileOrDirectory(java.io.File)>($r3)
+<com.appboy.ui.inappmessage.listeners.AppboyInAppMessageViewLifecycleListener: void startClearHtmlInAppMessageAssetsThread()> --> virtualinvoke $r1.<java.lang.Thread: void start()>()
+<com.appboy.ui.inappmessage.listeners.AppboyInAppMessageViewLifecycleListener: void afterClosed(com.appboy.models.IInAppMessage)> --> specialinvoke r0.<com.appboy.ui.inappmessage.listeners.AppboyInAppMessageViewLifecycleListener: void startClearHtmlInAppMessageAssetsThread()>()
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void closeInAppMessageView()> --> interfaceinvoke $r5.<com.appboy.ui.inappmessage.listeners.IInAppMessageViewLifecycleListener: void afterClosed(com.appboy.models.IInAppMessage)>($r6)
+<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void close()> --> specialinvoke r0.<com.appboy.ui.inappmessage.InAppMessageViewWrapper: void closeInAppMessageView()>()
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,boolean)>($r0, $r1, 1)
+<com.appboy.push.AppboyNotificationUtils: void setPriorityIfPresentAndSupported(android.support.v4.app.ad$d,android.os.Bundle)> --> staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)>($r2, "Setting priority for notification")
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> staticinvoke <com.appboy.support.AppboyLogger: void a(java.lang.String,java.lang.String,java.lang.Throwable)>($r0, $r1, null)
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> $i0 = <com.appboy.support.AppboyLogger: int d>
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> if $i0 > 6 goto return 0
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d1 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: void <clinit>()> --> nop
+<com.appboy.support.AppboyLogger: void <clinit>()> --> <com.appboy.support.AppboyLogger: int d> = 4
+<com.appboy.ui.inappmessage.AppboyInAppMessageManager: void unregisterInAppMessageManager(android.app.Activity)> --> staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)>($r2, "unregisterInAppMessageManager called")
+<com.appboy.AppboyLifecycleCallbackListener: void onActivityPaused(android.app.Activity)> --> virtualinvoke $r2.<com.appboy.ui.inappmessage.AppboyInAppMessageManager: void unregisterInAppMessageManager(android.app.Activity)>($r1)
+<dummyMainClass: com.aymcommerce.pgapp.pgapplication.ui.authentication.AuthenticationActivity dummyMainMethod_com_aymcommerce_pgapp_pgapplication_ui_authentication_AuthenticationActivity(android.content.Intent)> --> virtualinvoke $r3.<com.appboy.AppboyLifecycleCallbackListener: void onActivityPaused(android.app.Activity)>($r0)
+<dummyMainClass: com.aymcommerce.pgapp.pgapplication.ui.authentication.AuthenticationActivity dummyMainMethod_com_aymcommerce_pgapp_pgapplication_ui_authentication_AuthenticationActivity(android.content.Intent)> --> virtualinvoke $r0.<com.aymcommerce.pgapp.pgapplication.ui.common.a: void onSaveInstanceState(android.os.Bundle)>(null)
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = <com.appboy.support.AppboyLogger: int d>
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> if $i0 > 3 goto return 0
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: void <clinit>()> --> nop
+<com.appboy.support.AppboyLogger: void <clinit>()> --> <com.appboy.support.AppboyLogger: int d> = 4
+<com.appboy.ui.inappmessage.AppboyInAppMessageManager: void unregisterInAppMessageManager(android.app.Activity)> --> staticinvoke <com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String)>($r2, "unregisterInAppMessageManager called")
+<com.appboy.AppboyLifecycleCallbackListener: void onActivityPaused(android.app.Activity)> --> virtualinvoke $r2.<com.appboy.ui.inappmessage.AppboyInAppMessageManager: void unregisterInAppMessageManager(android.app.Activity)>($r1)
+<com.appboy.AppboyLifecycleCallbackListener: void onActivityPaused(android.app.Activity)> --> return
+<dummyMainClass: com.appboy.ui.activities.AppboyFeedActivity dummyMainMethod_com_appboy_ui_activities_AppboyFeedActivity(android.content.Intent)> --> virtualinvoke $r3.<com.appboy.AppboyLifecycleCallbackListener: void onActivityPaused(android.app.Activity)>($r0)
+<com.appboy.ui.inappmessage.listeners.AppboyInAppMessageViewLifecycleListener: com.appboy.ui.inappmessage.AppboyInAppMessageManager getInAppMessageManager()> --> $r1 = staticinvoke <com.appboy.ui.inappmessage.AppboyInAppMessageManager: com.appboy.ui.inappmessage.AppboyInAppMessageManager getInstance()>()
+<com.appboy.ui.inappmessage.listeners.AppboyInAppMessageViewLifecycleListener: void afterClosed(com.appboy.models.IInAppMessage)> --> $r2 = specialinvoke r0.<com.appboy.ui.inappmessage.listeners.AppboyInAppMessageViewLifecycleListener: com.appboy.ui.inappmessage.AppboyInAppMessageManager getInAppMessageManager()>()
+<com.appboy.support.AppboyLogger: int v(java.lang.String,java.lang.String)> --> $i0 = <com.appboy.support.AppboyLogger: int d>
+<com.appboy.support.AppboyLogger: int v(java.lang.String,java.lang.String)> --> if $i0 > 2 goto return 0
+<com.appboy.support.AppboyLogger: int v(java.lang.String,java.lang.String)> --> $i0 = staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d2 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: void <clinit>()> --> nop
+<com.appboy.support.AppboyLogger: void <clinit>()> --> <com.appboy.support.AppboyLogger: int d> = 4
+<com.appboy.ui.AppboyWebViewActivity$3: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)> --> staticinvoke <com.appboy.support.AppboyLogger: int i(java.lang.String,java.lang.String,java.lang.Throwable)>($r5, $r14, $r12)
+<dummyMainClass: com.appboy.ui.AppboyWebViewActivity dummyMainMethod_com_appboy_ui_AppboyWebViewActivity(android.content.Intent)> --> virtualinvoke $r15.<com.appboy.ui.AppboyWebViewActivity$3: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)>(null, "")
+<dummyMainClass: com.appboy.ui.AppboyWebViewActivity dummyMainMethod_com_appboy_ui_AppboyWebViewActivity(android.content.Intent)> --> if $i0 == 2 goto (branch)
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = <com.appboy.support.AppboyLogger: int d>
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> if $i0 > 3 goto return 0
+<com.appboy.support.AppboyLogger: int d(java.lang.String,java.lang.String,java.lang.Throwable,boolean)> --> $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+

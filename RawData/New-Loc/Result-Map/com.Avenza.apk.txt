@@ -1,0 +1,36 @@
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MapCollections", "collectionFolder got a null folderChild or parentId")
+Component=> com.Avenza.MapView.ViewMapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MapGeometry", $r11)
+Component=> com.Avenza.MapView.ViewMapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ViewMapActivity", "ViewMapActivity asked for null map")
+Component=> com.Avenza.MapView.ViewMapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ViewModeController", $r7)
+Component=> com.Avenza.MapView.ViewMapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r9 = interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceId", $r4)
+Component=> com.Avenza.MapView.ViewMapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MapGeometry", "getGeometryForMap: no map, bailing")
+Component=> com.Avenza.MapView.ViewMapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

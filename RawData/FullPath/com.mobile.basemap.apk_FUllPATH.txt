@@ -1,0 +1,16 @@
+<com.mobile.basemap.MainActivity: void onActivityResult(int,int,android.content.Intent)> --> $d0 = virtualinvoke $r12.<android.location.Location: double getLongitude()>()
+<com.mobile.basemap.datamodel.ImageModel: void setLongitude(double)> --> r0 := @this: com.mobile.basemap.datamodel.ImageModel
+<com.mobile.basemap.datamodel.ImageModel: void setLongitude(double)> --> r0.<com.mobile.basemap.datamodel.ImageModel: double longitude> = $d0
+<com.mobile.basemap.MainActivity: void onActivityResult(int,int,android.content.Intent)> --> virtualinvoke $r21.<com.mobile.basemap.datamodel.ImageModel: void setLongitude(double)>($d0)
+<com.mobile.basemap.MainActivity: void onActivityResult(int,int,android.content.Intent)> --> $r19 = r0.<com.mobile.basemap.MainActivity: com.mobile.basemap.map.MapWrapperLayout flMapHolder>
+<com.mobile.basemap.MainActivity$28: void <init>(com.mobile.basemap.MainActivity,com.mobile.basemap.datamodel.ImageModel)> --> r0 := @this: com.mobile.basemap.MainActivity$28
+<com.mobile.basemap.MainActivity$28: void <init>(com.mobile.basemap.MainActivity,com.mobile.basemap.datamodel.ImageModel)> --> r0.<com.mobile.basemap.MainActivity$28: com.mobile.basemap.datamodel.ImageModel val$image> = $r2
+<com.mobile.basemap.MainActivity: void onActivityResult(int,int,android.content.Intent)> --> specialinvoke $r22.<com.mobile.basemap.MainActivity$28: void <init>(com.mobile.basemap.MainActivity,com.mobile.basemap.datamodel.ImageModel)>(r0, $r21)
+<com.mobile.basemap.MainActivity$28: void run()> --> r0 := @this: com.mobile.basemap.MainActivity$28
+<com.mobile.basemap.MainActivity$28: void run()> --> $r2 = r0.<com.mobile.basemap.MainActivity$28: com.mobile.basemap.datamodel.ImageModel val$image>
+<com.mobile.basemap.MainActivity: void access$2500(com.mobile.basemap.MainActivity,com.mobile.basemap.datamodel.ImageModel)> --> $r0 := @parameter0: com.mobile.basemap.MainActivity
+<com.mobile.basemap.MainActivity: void setAddImageFragment(com.mobile.basemap.datamodel.ImageModel)> --> r0 := @this: com.mobile.basemap.MainActivity
+<com.mobile.basemap.fragments.AddImageFragment: com.mobile.basemap.fragments.AddImageFragment newInstance(com.mobile.basemap.datamodel.ImageModel,boolean)> --> $r2 := @parameter0: com.mobile.basemap.datamodel.ImageModel
+<com.mobile.basemap.fragments.AddImageFragment: com.mobile.basemap.fragments.AddImageFragment newInstance(com.mobile.basemap.datamodel.ImageModel,boolean)> --> virtualinvoke $r1.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("extra_image_model", $r2)
+--------------------------------------------------------
+

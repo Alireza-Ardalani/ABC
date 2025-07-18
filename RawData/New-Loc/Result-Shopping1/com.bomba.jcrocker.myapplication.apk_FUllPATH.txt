@@ -1,0 +1,36 @@
+<com.helpshift.util.LocationUtil: android.location.Location sanitizeLocation(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.helpshift.campaigns.models.PropertyValue: void <init>(java.lang.Object)> --> r4 = staticinvoke <com.helpshift.util.LocationUtil: android.location.Location sanitizeLocation(android.location.Location)>(r4)
+<com.helpshift.campaigns.models.PropertyValue: void <init>(java.lang.Object)> --> r0.<com.helpshift.campaigns.models.PropertyValue: java.lang.Object value> = r4
+<com.helpshift.campaigns.models.PropertyValue: void <init>(java.lang.Object)> --> r0.<com.helpshift.campaigns.models.PropertyValue: java.lang.Object value> = r1
+<com.helpshift.campaigns.models.DeviceModel: void setProperty(java.lang.Integer,java.lang.Object)> --> specialinvoke r4.<com.helpshift.campaigns.models.PropertyValue: void <init>(java.lang.Object)>(r2)
+<com.helpshift.campaigns.models.DeviceModel: void setDevelopmentPlatform(java.lang.String)> --> specialinvoke r0.<com.helpshift.campaigns.models.DeviceModel: void setProperty(java.lang.Integer,java.lang.Object)>($r2, $r1)
+<com.helpshift.campaigns.controllers.DeviceController: void setDevelopmentPlatform(java.lang.String)> --> virtualinvoke $r2.<com.helpshift.campaigns.models.DeviceModel: void setDevelopmentPlatform(java.lang.String)>($r1)
+<com.helpshift.campaigns.Campaigns: void _install(android.app.Application,java.lang.String,java.lang.String,java.lang.String,java.util.Map)> --> virtualinvoke $r13.<com.helpshift.campaigns.controllers.DeviceController: void setDevelopmentPlatform(java.lang.String)>($r2)
+<com.helpshift.campaigns.Campaigns: void _install(android.app.Application,java.lang.String,java.lang.String,java.lang.String,java.util.Map)> --> $r2 = (java.lang.String) $r11
+<com.helpshift.campaigns.Campaigns: void _install(android.app.Application,java.lang.String,java.lang.String,java.lang.String,java.util.Map)> --> r12 = (java.lang.Integer) $r11
+<com.helpshift.model.AppInfoModel: void setLargeNotificationIconId(java.lang.Integer)> --> r0 := @this: com.helpshift.model.AppInfoModel
+<com.helpshift.model.AppInfoModel: void setLargeNotificationIconId(java.lang.Integer)> --> r0.<com.helpshift.model.AppInfoModel: java.lang.Integer largeNotificationIconId> = $r1
+<com.helpshift.model.AppInfoModel: void setLargeNotificationIconId(java.lang.Integer)> --> $r1 = r0.<com.helpshift.model.AppInfoModel: java.lang.Integer largeNotificationIconId>
+<com.helpshift.storage.KeyValueDbStorage: boolean set(java.lang.String,java.io.Serializable)> --> r0 := @this: com.helpshift.storage.KeyValueDbStorage
+<com.helpshift.util.ByteArrayUtil: byte[] toByteArray(java.lang.Object)> --> $r0 := @parameter0: java.lang.Object
+<com.helpshift.util.ByteArrayUtil: byte[] toByteArray(java.lang.Object)> --> virtualinvoke r2.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r0)
+--------------------------------------------------------
+
+<com.helpshift.util.LocationUtil: android.location.Location sanitizeLocation(android.location.Location)> --> $d1 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.helpshift.campaigns.models.PropertyValue: void <init>(java.lang.Object)> --> r4 = staticinvoke <com.helpshift.util.LocationUtil: android.location.Location sanitizeLocation(android.location.Location)>(r4)
+<com.helpshift.campaigns.models.PropertyValue: void <init>(java.lang.Object)> --> r0.<com.helpshift.campaigns.models.PropertyValue: java.lang.Object value> = r4
+<com.helpshift.campaigns.models.PropertyValue: void <init>(java.lang.Object)> --> r0.<com.helpshift.campaigns.models.PropertyValue: java.lang.Object value> = r1
+<com.helpshift.campaigns.models.DeviceModel: void setProperty(java.lang.Integer,java.lang.Object)> --> specialinvoke r4.<com.helpshift.campaigns.models.PropertyValue: void <init>(java.lang.Object)>(r2)
+<com.helpshift.campaigns.models.DeviceModel: void setDevelopmentPlatform(java.lang.String)> --> specialinvoke r0.<com.helpshift.campaigns.models.DeviceModel: void setProperty(java.lang.Integer,java.lang.Object)>($r2, $r1)
+<com.helpshift.campaigns.controllers.DeviceController: void setDevelopmentPlatform(java.lang.String)> --> virtualinvoke $r2.<com.helpshift.campaigns.models.DeviceModel: void setDevelopmentPlatform(java.lang.String)>($r1)
+<com.helpshift.campaigns.Campaigns: void _install(android.app.Application,java.lang.String,java.lang.String,java.lang.String,java.util.Map)> --> virtualinvoke $r13.<com.helpshift.campaigns.controllers.DeviceController: void setDevelopmentPlatform(java.lang.String)>($r2)
+<com.helpshift.campaigns.Campaigns: void _install(android.app.Application,java.lang.String,java.lang.String,java.lang.String,java.util.Map)> --> $r2 = (java.lang.String) $r11
+<com.helpshift.campaigns.Campaigns: void _install(android.app.Application,java.lang.String,java.lang.String,java.lang.String,java.util.Map)> --> r12 = (java.lang.Integer) $r11
+<com.helpshift.model.AppInfoModel: void setLargeNotificationIconId(java.lang.Integer)> --> r0 := @this: com.helpshift.model.AppInfoModel
+<com.helpshift.model.AppInfoModel: void setLargeNotificationIconId(java.lang.Integer)> --> r0.<com.helpshift.model.AppInfoModel: java.lang.Integer largeNotificationIconId> = $r1
+<com.helpshift.model.AppInfoModel: void setLargeNotificationIconId(java.lang.Integer)> --> $r1 = r0.<com.helpshift.model.AppInfoModel: java.lang.Integer largeNotificationIconId>
+<com.helpshift.storage.KeyValueDbStorage: boolean set(java.lang.String,java.io.Serializable)> --> r0 := @this: com.helpshift.storage.KeyValueDbStorage
+<com.helpshift.util.ByteArrayUtil: byte[] toByteArray(java.lang.Object)> --> $r0 := @parameter0: java.lang.Object
+<com.helpshift.util.ByteArrayUtil: byte[] toByteArray(java.lang.Object)> --> virtualinvoke r2.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r0)
+--------------------------------------------------------
+

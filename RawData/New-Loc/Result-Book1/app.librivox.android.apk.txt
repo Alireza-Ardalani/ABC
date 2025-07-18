@@ -1,0 +1,132 @@
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("cache", $r3, "cachekey= ? ", $r4, null, null, null)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("retailbooks", $r3, "sku=?", $r4, null, null, null)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Picasso", $r3)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("ads_disabled", 0)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("RiskManagerCT", $i1)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("nextId", $i0)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, "default Configuration loading failed,Using hardcoded config")
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("LibriVox", $r4, $r2)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, "post(Runnable)")
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("cache", $r3, "cachekey= ? ", $r4, null, null, null)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("select count(*) from chapter where lvid = ?", $r2)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("retailbooks", $r3, "sku=?", $r4, null, null, null)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: int delete(java.lang.String,java.lang.String,java.lang.String[])>("cache", "cachekey like ? ", $r3)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> $r5 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)>("retailbooks", $r2, "lvid=?", $r3, null, null, null)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> virtualinvoke $r7.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("biz.bookdesign.librivox.FAST_FORWARD", 1)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> virtualinvoke $r7.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("play_key", 1)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> virtualinvoke $r20.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(6, "PRD", $r3)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> virtualinvoke $r7.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("biz.bookdesign.librivox.REWIND", 1)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> virtualinvoke $r16.<android.os.Bundle: void putStringArrayList(java.lang.String,java.util.ArrayList)>("ITEM_ID_LIST", $r5)
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> virtualinvoke r0.<com.paypal.android.sdk.u: void onLocationChanged(android.location.Location)>($r18)
+Sink=> virtualinvoke $r20.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.paypal.android.sdk.payments.PayPalService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

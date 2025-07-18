@@ -1,0 +1,19 @@
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("shared_location_latitude", $f0)
+Component=> ie.imobile.extremepush.location.GeoLocationService
+ComponentColor=> GREEN
+android.location.Location
+ie.imobile.extremepush.util.SharedPrefUtils
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("shared_location_longitude", $f0)
+Component=> ie.imobile.extremepush.location.GeoLocationService
+ComponentColor=> GREEN
+ie.imobile.extremepush.util.SharedPrefUtils
+android.location.Location
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+com.boironusa.medicinefinder.apk: 1128217

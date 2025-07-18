@@ -1,0 +1,862 @@
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r0)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.TripDetailsActivity
+android.location.Location
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+java.lang.Boolean
+com.nyctrans.it.Utility.i
+android.location.LocationManager
+al.be
+android.content.SharedPreferences$Editor
+Category: al.be-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("pa_enabled", $z0)
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+com.placed.client.android.persistent.c
+android.content.SharedPreferences$Editor
+al.aq
+android.location.LocationManager
+al.be
+com.placed.client.android.persistent.a
+Category: com.placed.client.android.persistent.c-*-al.aq-*-al.be-*-com.placed.client.android.persistent.a-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("apk", "e10d39a89e2c")
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+com.placed.client.android.persistent.c
+al.aq
+android.location.LocationManager
+al.be
+com.placed.client.android.persistent.a
+android.content.SharedPreferences$Editor
+Category: com.placed.client.android.persistent.c-*-al.aq-*-al.be-*-com.placed.client.android.persistent.a-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r0)
+Component=> com.nyctrans.it.Receiver.MyAlarmReceiver
+ComponentColor=> GREEN
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Receiver.MyAlarmReceiver
+android.location.Location
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r4)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.i
+com.nyctrans.it.StatusActivity$a
+android.location.Location
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+com.nyctrans.it.StatusActivity$d
+com.nyctrans.it.StatusActivity$a
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+java.lang.Boolean
+com.nyctrans.it.TripDetailsActivity
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.d$b
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.internal.am$a
+android.location.Location
+com.google.android.gms.analytics.d$c
+android.content.SharedPreferences$Editor
+Category: com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.d$b-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.d$c-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+java.lang.Boolean
+com.nyctrans.it.Utility.i
+android.location.LocationManager
+al.be
+android.content.SharedPreferences$Editor
+Category: al.be-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+com.google.android.gms.analytics.internal.q
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.q
+com.google.android.gms.analytics.internal.q
+java.lang.Boolean
+com.nyctrans.it.TripDetailsActivity
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.d$b
+com.google.android.gms.analytics.internal.q
+android.location.Location
+com.google.android.gms.analytics.d$c
+android.content.SharedPreferences$Editor
+Category: com.google.android.gms.analytics.internal.q-*-com.google.android.gms.analytics.internal.q-*-com.google.android.gms.analytics.internal.q-*-com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.d$b-*-com.google.android.gms.analytics.internal.q-*-com.google.android.gms.analytics.d$c-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r0)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.TripPlanerActivity
+android.location.Location
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r0)
+Component=> com.nyctrans.it.Receiver.MyAlarmReceiver
+ComponentColor=> GREEN
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Receiver.MyAlarmReceiver
+android.location.Location
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.i
+com.nyctrans.it.TripPlanerActivity
+com.nyctrans.it.TripPlanerActivity
+android.location.Location
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+com.nyctrans.it.TripPlanerActivity
+com.nyctrans.it.Utility.f
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+com.nyctrans.it.StopTimesActivity$3
+android.os.Handler
+android.util.Log
+com.nyctrans.it.Utility.f
+java.lang.Thread
+dummyMainClass
+com.nyctrans.it.Utility.f
+com.nyctrans.it.PlaceSearchActivity$2
+java.lang.Thread
+java.lang.Runnable
+com.nyctrans.it.nycTransitApp$1
+android.location.Location
+ah.h
+com.nyctrans.it.StatusActivity$d
+Category: ah.h-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+android.location.Location
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+com.nyctrans.it.StatusActivity$d
+com.nyctrans.it.Service.NotificationService
+dummyMainClass
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.nyctrans.it.Receiver.MyAlarmReceiver
+ComponentColor=> GREEN
+com.nyctrans.it.Receiver.MyAlarmReceiver
+android.util.Log
+android.location.Location
+com.nyctrans.it.Utility.f
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+java.lang.Boolean
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.d$b
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.internal.am$a
+android.location.Location
+com.nyctrans.it.StatusActivity$d
+com.google.android.gms.analytics.d$c
+android.content.SharedPreferences$Editor
+Category: com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.d$b-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.d$c-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+com.nyctrans.it.TripPlanerActivity
+com.nyctrans.it.SplashTosActivity$3
+android.location.Location
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+dummyMainClass
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("pa_enabled", $z0)
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+com.placed.client.android.persistent.c
+android.content.SharedPreferences$Editor
+al.aq
+android.location.LocationManager
+al.be
+com.placed.client.android.persistent.a
+Category: com.placed.client.android.persistent.c-*-al.aq-*-al.be-*-com.placed.client.android.persistent.a-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.t
+com.nyctrans.it.TripPlanerActivity
+java.lang.Boolean
+com.nyctrans.it.Utility.i
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.c
+android.location.Location
+com.nyctrans.it.nycTransitApp
+android.content.SharedPreferences$Editor
+Category: com.google.android.gms.analytics.internal.t-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.c-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+java.lang.Boolean
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.internal.am$a
+android.location.Location
+com.nyctrans.it.StatusActivity$d
+com.google.android.gms.analytics.d$c
+com.google.android.gms.analytics.d$b
+android.content.SharedPreferences$Editor
+Category: com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.d$c-*-com.google.android.gms.analytics.d$b-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+java.lang.Boolean
+com.nyctrans.it.TripDetailsActivity
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.d$b
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.internal.am$a
+android.location.Location
+android.content.SharedPreferences$Editor
+com.google.android.gms.analytics.d$c
+Category: com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.d$b-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.d$c-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+com.nyctrans.it.TripPlanerActivity
+com.google.android.gms.analytics.internal.q
+com.google.android.gms.analytics.internal.q
+java.lang.Boolean
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.internal.am$a
+android.location.Location
+com.google.android.gms.analytics.d$c
+com.google.android.gms.analytics.d$b
+android.content.SharedPreferences$Editor
+Category: com.google.android.gms.analytics.internal.q-*-com.google.android.gms.analytics.internal.q-*-com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.d$c-*-com.google.android.gms.analytics.d$b-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r4)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.i
+com.nyctrans.it.StatusActivity$a
+android.location.Location
+android.util.Log
+com.nyctrans.it.TripDetailsActivity
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+com.nyctrans.it.StatusActivity$a
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.i
+com.nyctrans.it.Utility.f
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+android.location.Location
+com.nyctrans.it.StatusActivity$d
+com.nyctrans.it.Service.NotificationService
+dummyMainClass
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+java.lang.Long
+com.google.android.gms.analytics.internal.t
+com.nyctrans.it.TripPlanerActivity
+com.google.android.gms.analytics.c
+android.content.SharedPreferences$Editor
+android.location.Location
+com.nyctrans.it.Utility.i
+com.nyctrans.it.Utility.f
+com.nyctrans.it.nycTransitApp
+Category: com.google.android.gms.analytics.internal.t-*-com.google.android.gms.analytics.c-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r4)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+com.nyctrans.it.StatusActivity$a
+com.nyctrans.it.Utility.f
+com.nyctrans.it.TripPlanerActivity
+android.os.Handler
+android.util.Log
+com.nyctrans.it.Utility.f
+java.lang.Thread
+java.lang.Thread
+com.nyctrans.it.Utility.f
+java.lang.Runnable
+com.nyctrans.it.nycTransitApp$1
+com.nyctrans.it.StatusActivity$a$2
+android.location.Location
+com.nyctrans.it.Utility.f
+com.nyctrans.it.StatusActivity$a
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.i
+com.nyctrans.it.Utility.f
+android.util.Log
+com.nyctrans.it.TripDetailsActivity
+com.nyctrans.it.Utility.f
+android.location.Location
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Service.NotificationService
+dummyMainClass
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+java.lang.Boolean
+android.content.SharedPreferences$Editor
+com.nyctrans.it.Utility.i
+android.location.LocationManager
+al.be
+Category: al.be-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r0)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.TripPlanerActivity
+android.location.Location
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r0)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+android.util.Log
+com.nyctrans.it.Utility.f
+android.location.Location
+com.nyctrans.it.StatusActivity$d
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+java.lang.Boolean
+android.content.SharedPreferences$Editor
+com.nyctrans.it.Utility.i
+android.location.LocationManager
+al.be
+Category: al.be-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r0)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+android.util.Log
+com.nyctrans.it.Utility.f
+android.location.Location
+com.nyctrans.it.StatusActivity$d
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+com.google.android.gms.analytics.internal.am$a
+com.nyctrans.it.Utility.f
+java.lang.Long
+com.nyctrans.it.TripDetailsActivity
+android.content.SharedPreferences$Editor
+android.location.Location
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.d$c
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.d$b
+Category: com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.d$c-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.d$b-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.nyctrans.it.Receiver.MyAlarmReceiver
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Receiver.MyAlarmReceiver
+java.lang.Boolean
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.d$b
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.internal.am$a
+android.location.Location
+com.google.android.gms.analytics.d$c
+android.content.SharedPreferences$Editor
+Category: com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.d$b-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.d$c-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+com.nyctrans.it.StatusActivity$a
+com.nyctrans.it.Utility.f
+com.nyctrans.it.TripPlanerActivity
+android.os.Handler
+ag.a
+android.util.Log
+com.nyctrans.it.Utility.f
+java.lang.Thread
+ah.i
+com.nyctrans.it.Utility.f
+java.lang.Thread
+com.nyctrans.it.Utility.f
+java.lang.Runnable
+com.nyctrans.it.nycTransitApp$1
+com.nyctrans.it.StatusActivity$a$2
+com.nyctrans.it.Utility.g
+android.location.Location
+com.nyctrans.it.Utility.f
+com.nyctrans.it.StatusActivity$a
+java.util.Calendar
+com.nyctrans.it.Utility.m
+Category: ag.a-*-ah.i-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r4)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.i
+com.nyctrans.it.StatusActivity$a
+android.os.Handler
+android.util.Log
+com.nyctrans.it.TripDetailsActivity
+com.nyctrans.it.Utility.f
+com.nyctrans.it.RouteListActivity
+java.lang.Thread
+com.nyctrans.it.Utility.f
+java.lang.Runnable
+com.nyctrans.it.Utility.f
+android.location.Location
+com.nyctrans.it.Utility.f
+com.nyctrans.it.TripOptionsActivity
+com.nyctrans.it.RouteListActivity$3
+com.nyctrans.it.Utility.f
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r3)
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+al.o
+android.location.LocationManager
+al.be
+al.o$b
+android.util.Log
+Category: al.o-*-al.be-*-al.o$b-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r4)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.i
+com.nyctrans.it.Utility.f
+android.util.Log
+com.nyctrans.it.Utility.f
+android.location.Location
+com.nyctrans.it.Utility.f
+com.nyctrans.it.StatusActivity$d
+com.nyctrans.it.StatusActivity$a
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.i
+com.nyctrans.it.StatusActivity$a
+com.nyctrans.it.Utility.f
+android.util.Log
+com.nyctrans.it.TripDetailsActivity
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+android.location.Location
+com.nyctrans.it.Utility.g
+com.nyctrans.it.Utility.f
+com.nyctrans.it.StatusActivity$a
+java.util.Calendar
+com.nyctrans.it.Utility.m
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r0)
+Component=> com.nyctrans.it.Receiver.MyAlarmReceiver
+ComponentColor=> GREEN
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Receiver.MyAlarmReceiver
+com.nyctrans.it.Utility.m$b
+com.nyctrans.it.Receiver.MyAlarmReceiver
+android.location.LocationManager
+java.lang.Double
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r4)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+com.nyctrans.it.TripPlanerActivity
+android.location.Location
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+ag.a
+com.nyctrans.it.StatusActivity$a
+Category: ag.a-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r3)
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+al.o
+android.location.LocationManager
+al.be
+al.o$b
+android.util.Log
+Category: al.o-*-al.be-*-al.o$b-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.nyctrans.it.Receiver.MyAlarmReceiver
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+java.lang.Long
+com.google.android.gms.analytics.internal.t
+com.nyctrans.it.Receiver.MyAlarmReceiver
+com.google.android.gms.analytics.c
+android.content.SharedPreferences$Editor
+android.location.Location
+com.nyctrans.it.Utility.i
+com.nyctrans.it.Utility.f
+com.nyctrans.it.nycTransitApp
+Category: com.google.android.gms.analytics.internal.t-*-com.google.android.gms.analytics.c-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+com.nyctrans.it.PlaceSearchActivity$5
+com.nyctrans.it.StopTimesActivity$3
+android.os.Handler
+android.util.Log
+com.nyctrans.it.Utility.f
+java.lang.Thread
+dummyMainClass
+com.nyctrans.it.Utility.f
+java.lang.Thread
+java.lang.Runnable
+com.nyctrans.it.nycTransitApp$1
+android.location.Location
+com.nyctrans.it.StatusActivity$d
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+com.nyctrans.it.TripPlanerActivity
+com.nyctrans.it.SplashTosActivity$3
+android.util.Log
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+android.location.Location
+dummyMainClass
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r0, $l1)
+Component=> com.nyctrans.it.Receiver.MyAlarmReceiver
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Receiver.MyAlarmReceiver
+java.lang.Boolean
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.d$b
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.internal.am$a
+android.location.Location
+com.google.android.gms.analytics.d$c
+android.content.SharedPreferences$Editor
+Category: com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.d$b-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.d$c-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("pref_start_time", $l0)
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+al.ay
+al.ay
+android.location.LocationManager
+al.ay
+al.ay
+al.be
+android.content.SharedPreferences$Editor
+Category: al.ay-*-al.ay-*-al.ay-*-al.ay-*-al.be-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.nyctrans.it.Receiver.MyAlarmReceiver
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Receiver.MyAlarmReceiver
+java.lang.Boolean
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.d$b
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.internal.am$a
+android.location.Location
+android.content.SharedPreferences$Editor
+com.google.android.gms.analytics.d$c
+Category: com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.d$b-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.d$c-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.nyctrans.it.TripPlanerActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+com.nyctrans.it.TripPlanerActivity
+com.google.android.gms.analytics.internal.q
+com.google.android.gms.analytics.internal.q
+java.lang.Boolean
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.internal.am$a
+android.location.Location
+android.content.SharedPreferences$Editor
+com.google.android.gms.analytics.d$c
+com.google.android.gms.analytics.d$b
+Category: com.google.android.gms.analytics.internal.q-*-com.google.android.gms.analytics.internal.q-*-com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.d$c-*-com.google.android.gms.analytics.d$b-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+java.lang.Long
+com.google.android.gms.analytics.internal.t
+com.google.android.gms.analytics.c
+android.content.SharedPreferences$Editor
+android.location.Location
+com.nyctrans.it.StatusActivity$d
+com.nyctrans.it.Utility.i
+com.nyctrans.it.Utility.f
+com.nyctrans.it.nycTransitApp
+Category: com.google.android.gms.analytics.internal.t-*-com.google.android.gms.analytics.c-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+android.location.Location
+android.util.Log
+com.nyctrans.it.TripDetailsActivity
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Service.NotificationService
+dummyMainClass
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r0, $f0)
+Component=> com.nyctrans.it.TabHostActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.f
+java.lang.Boolean
+com.nyctrans.it.Utility.i
+com.google.android.gms.analytics.internal.f
+com.nyctrans.it.Utility.f
+com.google.android.gms.analytics.internal.am
+com.google.android.gms.analytics.internal.am$a
+com.google.android.gms.analytics.internal.am$a
+android.location.Location
+android.content.SharedPreferences$Editor
+com.nyctrans.it.StatusActivity$d
+com.google.android.gms.analytics.d$c
+com.google.android.gms.analytics.d$b
+Category: com.google.android.gms.analytics.internal.f-*-com.google.android.gms.analytics.internal.am-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.internal.am$a-*-com.google.android.gms.analytics.d$c-*-com.google.android.gms.analytics.d$b-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("pref_start_time", $l0)
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+al.ay
+al.ay
+android.location.LocationManager
+al.ay
+al.ay
+al.be
+al.be
+android.content.SharedPreferences$Editor
+Category: al.ay-*-al.ay-*-al.ay-*-al.ay-*-al.be-*-al.be-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r0)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+android.util.Log
+com.nyctrans.it.Utility.f
+android.location.Location
+com.nyctrans.it.TripDetailsActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.nyctrans.it.Receiver.MyAlarmReceiver
+ComponentColor=> GREEN
+com.nyctrans.it.Receiver.MyAlarmReceiver
+android.location.Location
+android.util.Log
+com.nyctrans.it.Utility.f
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.nyctrans.it.TripDetailsActivity
+ComponentColor=> GREEN
+com.nyctrans.it.Utility.i
+com.nyctrans.it.Utility.f
+android.util.Log
+com.nyctrans.it.TripDetailsActivity
+com.nyctrans.it.Utility.f
+com.nyctrans.it.Utility.f
+android.location.Location
+com.nyctrans.it.Service.NotificationService
+dummyMainClass
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("apk", "e10d39a89e2c")
+Component=> com.nyctrans.it.PreferencesActivity
+ComponentColor=> GREEN
+com.placed.client.android.persistent.c
+al.aq
+android.location.LocationManager
+al.be
+com.placed.client.android.persistent.a
+android.content.SharedPreferences$Editor
+Category: com.placed.client.android.persistent.c-*-al.aq-*-al.be-*-com.placed.client.android.persistent.a-*-
+-----------------------------------------------------------------
+com.nyctrans.it.apk: 1098376

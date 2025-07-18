@@ -1,0 +1,72 @@
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r11.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.mobimento.caponate.CapoDataViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r2, "UTF-8")
+Component=> com.mobimento.caponate.CapoMapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+Component=> com.clevertap.android.sdk.InAppNotificationActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r9, "UTF-8")
+Component=> com.mobimento.caponate.CapoDataViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+Sink=> $r6 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r8, "UTF-8")
+Component=> com.mobimento.caponate.CapoDataViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r1)
+Component=> com.mobimento.caponate.CapoMapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r9, "UTF-8")
+Component=> com.mobimento.caponate.CapoDataViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+Component=> com.clevertap.android.sdk.InAppNotificationActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>()
+Sink=> $r6 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r8, "UTF-8")
+Component=> com.mobimento.caponate.CapoDataViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r1)
+Component=> com.mobimento.caponate.CapoMapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r2, "UTF-8")
+Component=> com.mobimento.caponate.CapoMapActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r11.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.mobimento.caponate.CapoDataViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

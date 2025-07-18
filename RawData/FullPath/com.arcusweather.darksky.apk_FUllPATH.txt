@@ -1,0 +1,85 @@
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> r21 := @caughtexception
+<com.arcusweather.forecastio.ForecastIO: void makeRequest()> --> r0 := @this: com.arcusweather.forecastio.ForecastIO
+<com.arcusweather.forecastio.ForecastIO: java.lang.String makeForecastRequest(java.net.URL)> --> r0 := @this: com.arcusweather.forecastio.ForecastIO
+<com.arcusweather.forecastio.ForecastIO: java.lang.String makeForecastRequest(java.net.URL)> --> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+--------------------------------------------------------
+
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean,android.location.Location)> --> r20 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean,android.location.Location)> --> r3 = r20
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean,android.location.Location)> --> if r3 != null goto (branch)
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean,android.location.Location)> --> if r3 != null goto $l2 = virtualinvoke $r30.<java.util.Date: long getTime()>()
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean)> --> $r6 = virtualinvoke r0.<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean,android.location.Location)>($r1, $z0, $z1, null)
+<com.arcusweather.darksky.activity.MainActivity: void onCreate(android.os.Bundle)> --> $r43 = virtualinvoke r42.<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean)>($r14, 1, 0)
+<com.arcusweather.darksky.activity.MainActivity: void onCreate(android.os.Bundle)> --> if $r43 != null goto (branch)
+<com.arcusweather.darksky.location.GPSTracker: void <init>(android.content.Context)> --> r0 := @this: com.arcusweather.darksky.location.GPSTracker
+<com.arcusweather.darksky.location.GPSTracker: android.location.Location getLocation()> --> r0 := @this: com.arcusweather.darksky.location.GPSTracker
+<com.arcusweather.darksky.location.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Network", "Network")
+--------------------------------------------------------
+
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> r21 := @caughtexception
+<com.arcusweather.forecastio.ForecastIO: void makeRequest()> --> r0 := @this: com.arcusweather.forecastio.ForecastIO
+<com.arcusweather.forecastio.ForecastIO: java.lang.String makeForecastRequest(java.net.URL)> --> r0 := @this: com.arcusweather.forecastio.ForecastIO
+<com.arcusweather.forecastio.ForecastIO: java.lang.String makeForecastRequest(java.net.URL)> --> r3 = ""
+<com.arcusweather.forecastio.ForecastIO: void makeRequest()> --> $r2 = virtualinvoke r0.<com.arcusweather.forecastio.ForecastIO: java.lang.String makeForecastRequest(java.net.URL)>($r1)
+<com.arcusweather.forecastio.ForecastIO: void makeRequest()> --> r0.<com.arcusweather.forecastio.ForecastIO: java.lang.String mResponseString> = $r2
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> virtualinvoke $r41.<com.arcusweather.forecastio.ForecastIO: void makeRequest()>()
+<com.arcusweather.forecastio.ForecastIO: java.lang.String getResponseString()> --> r0 := @this: com.arcusweather.forecastio.ForecastIO
+<com.arcusweather.forecastio.ForecastIO: java.lang.String getResponseString()> --> r1 = r0.<com.arcusweather.forecastio.ForecastIO: java.lang.String mResponseString>
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> $r3 = virtualinvoke $r41.<com.arcusweather.forecastio.ForecastIO: java.lang.String getResponseString()>()
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> if $r3 == "" goto (branch)
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> $z0 = 1
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> if $z0 != 1 goto $r3 = "Response"
+<com.arcusweather.darksky.database.ArcusDataSource: com.arcusweather.darksky.database.SavedForecast createForecast(long,java.lang.String,java.lang.String)> --> r0 := @this: com.arcusweather.darksky.database.ArcusDataSource
+<com.arcusweather.darksky.database.ArcusDataSource: com.arcusweather.darksky.database.SavedForecast createForecast(long,java.lang.String,java.lang.String)> --> $r10 = virtualinvoke $r9.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT _id, location_id, api_data, download_datetime, location_string, timeout_datetime FROM forecasts WHERE _id = ?", r3)
+--------------------------------------------------------
+
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> r21 := @caughtexception
+<com.arcusweather.forecastio.ForecastIO: void makeRequest()> --> r0 := @this: com.arcusweather.forecastio.ForecastIO
+<com.arcusweather.forecastio.ForecastIO: java.lang.String makeForecastRequest(java.net.URL)> --> r0 := @this: com.arcusweather.forecastio.ForecastIO
+<com.arcusweather.forecastio.ForecastIO: java.lang.String makeForecastRequest(java.net.URL)> --> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+--------------------------------------------------------
+
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> r21 := @caughtexception
+<com.arcusweather.darksky.database.ArcusDataSource: com.arcusweather.darksky.database.SavedForecast createForecast(long,java.lang.String,java.lang.String)> --> r0 := @this: com.arcusweather.darksky.database.ArcusDataSource
+<com.arcusweather.darksky.database.ArcusDataSource: com.arcusweather.darksky.database.SavedForecast createForecast(long,java.lang.String,java.lang.String)> --> $l1 = virtualinvoke $r9.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("forecasts", null, $r13)
+--------------------------------------------------------
+
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean,android.location.Location)> --> r20 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean,android.location.Location)> --> r3 = r20
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean,android.location.Location)> --> if r3 != null goto (branch)
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean,android.location.Location)> --> if r3 != null goto $l2 = virtualinvoke $r30.<java.util.Date: long getTime()>()
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean)> --> $r6 = virtualinvoke r0.<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean,android.location.Location)>($r1, $z0, $z1, null)
+<com.arcusweather.darksky.activity.MainActivity: void onCreate(android.os.Bundle)> --> $r43 = virtualinvoke r42.<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean)>($r14, 1, 0)
+<com.arcusweather.darksky.activity.MainActivity: void onCreate(android.os.Bundle)> --> if $r43 != null goto (branch)
+<com.arcusweather.darksky.database.ArcusDataSource: android.database.Cursor getForecastByLocationId(int)> --> r0 := @this: com.arcusweather.darksky.database.ArcusDataSource
+<com.arcusweather.darksky.database.ArcusDataSource: android.database.Cursor getForecastByLocationId(int)> --> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+--------------------------------------------------------
+
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.arcusweather.darksky.helper.ForecastHelper: java.lang.String getApiData(android.content.Context,android.location.Location,boolean,java.lang.String,boolean)> --> r21 := @caughtexception
+<com.arcusweather.forecastio.ForecastIO: void makeRequest()> --> r0 := @this: com.arcusweather.forecastio.ForecastIO
+<com.arcusweather.forecastio.ForecastIO: java.lang.String makeForecastRequest(java.net.URL)> --> r0 := @this: com.arcusweather.forecastio.ForecastIO
+<com.arcusweather.forecastio.ForecastIO: java.lang.String makeForecastRequest(java.net.URL)> --> $r9 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<com.arcusweather.darksky.Functions: java.lang.String buildEmailText(android.content.Context)> --> $r20 = virtualinvoke r18.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+<com.arcusweather.darksky.Functions: java.lang.String buildEmailText(android.content.Context)> --> r3 := @caughtexception
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean)> --> r0 := @this: com.arcusweather.darksky.helper.LocationHelper
+<com.arcusweather.darksky.helper.LocationHelper: android.location.Location getLocation(android.content.Context,boolean,boolean,android.location.Location)> --> r0 := @this: com.arcusweather.darksky.helper.LocationHelper
+<com.arcusweather.darksky.helper.FusedLocationService: void <init>(android.content.Context)> --> r0 := @this: com.arcusweather.darksky.helper.FusedLocationService
+<com.google.android.gms.common.api.GoogleApiClient$Builder: com.google.android.gms.common.api.GoogleApiClient build()> --> r0 := @this: com.google.android.gms.common.api.GoogleApiClient$Builder
+<com.google.android.gms.common.api.GoogleApiClient$Builder: void zzf(com.google.android.gms.common.api.GoogleApiClient)> --> r0 := @this: com.google.android.gms.common.api.GoogleApiClient$Builder
+<com.google.android.gms.internal.zzpk: com.google.android.gms.internal.zzpk zza(com.google.android.gms.internal.zzqi)> --> $r0 := @parameter0: com.google.android.gms.internal.zzqi
+<com.google.android.gms.internal.zzpk: void <init>(com.google.android.gms.internal.zzqk)> --> r0 := @this: com.google.android.gms.internal.zzpk
+<com.google.android.gms.internal.zzqv: void zza(java.lang.String,com.google.android.gms.internal.zzqj)> --> r0 := @this: com.google.android.gms.internal.zzqv
+<com.google.android.gms.internal.zzqv: void zzb(java.lang.String,com.google.android.gms.internal.zzqj)> --> r0 := @this: com.google.android.gms.internal.zzqv
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.arcusweather.darksky.billing.IabHelper$2$1: void run()> --> r0 := @this: com.arcusweather.darksky.billing.IabHelper$2$1
+<com.arcusweather.darksky.ArcusApplication$1: void onQueryInventoryFinished(com.arcusweather.darksky.billing.IabResult,com.arcusweather.darksky.billing.Inventory)> --> r0 := @this: com.arcusweather.darksky.ArcusApplication$1
+<com.arcusweather.darksky.ArcusApplication$1: void onQueryInventoryFinished(com.arcusweather.darksky.billing.IabResult,com.arcusweather.darksky.billing.Inventory)> --> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("arcus_bought_full", $z2)
+--------------------------------------------------------
+

@@ -1,0 +1,30 @@
+Source=> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("address_result", $r2)
+Component=> com.nearmeoffers.GetAddressIntentService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("address_result", $r2)
+Component=> com.nearmeoffers.GetAddressIntentService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("", "Error in getting address for the location")
+Component=> com.nearmeoffers.GetAddressIntentService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r5.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("", "Error in getting address for the location")
+Component=> com.nearmeoffers.GetAddressIntentService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>($r2)
+Component=> com.nearmeoffers.Home_Listing
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

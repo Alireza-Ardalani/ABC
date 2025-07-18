@@ -1,0 +1,502 @@
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "ENVOI MAIL 1")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("dateMajGPS", $l0)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "-------------------------")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "pas de coordonn\u00e9e")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Latitude", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+android.content.SharedPreferences$Editor
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r18 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Longitude", $r13)
+Component=> com.pictotask.mobile.system.GPSServiceM
+ComponentColor=> GREEN
+android.location.LocationManager
+com.pictotask.mobile.system.GPSServiceM
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "MAJ GPS POSITION SERVEUR")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "MAJ GPS POSITION SERVEUR")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("dateMajGPS", $l0)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetPictoTime", "onReceive: ")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+com.pictotask.common.systeme.GPSService
+android.util.Log
+com.pictotask.common.InterfaceContext
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-com.pictotask.common.InterfaceContext-*-
+-----------------------------------------------------------------
+Source=> $r18 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Latitude", $r13)
+Component=> com.pictotask.mobile.system.GPSServiceM
+ComponentColor=> GREEN
+android.location.LocationManager
+com.pictotask.mobile.system.GPSServiceM
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "ENVOI MAIL 1")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "ENVOI MAIL 1")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Longitude", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+android.content.SharedPreferences$Editor
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Longitude", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+android.content.SharedPreferences$Editor
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("dateMajGPS", $l0)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Latitude", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+android.content.SharedPreferences$Editor
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "pas de coordonn\u00e9e")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "pas de coordonn\u00e9e")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PICTOGPS", "Exception EnvoyerMailDemandeAide: ")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.application.taf.wear.commun.bdd.BddSqlite
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+android.util.Log
+Category: com.application.taf.wear.commun.bdd.BddSqlite-*-com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "ENVOI MAIL 3")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "-------------------------")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Latitude", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+android.content.SharedPreferences$Editor
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PICTOGPS", "Exception EnvoyerMailDemandeAide: ")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+android.util.Log
+com.pictotask.common.InterfaceContext
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-com.pictotask.common.InterfaceContext-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "ENVOI MAIL 2")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "-------------------------")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetPictoTime", "onReceive: ")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.application.taf.wear.commun.bdd.BddSqlite
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+com.pictotask.common.systeme.GPSService
+android.util.Log
+Category: com.application.taf.wear.commun.bdd.BddSqlite-*-com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetPictoTime", "onReceive: ")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.application.taf.wear.commun.bdd.BddSqlite
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+com.pictotask.common.systeme.GPSService
+android.util.Log
+Category: com.application.taf.wear.commun.bdd.BddSqlite-*-com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "ENVOI MAIL 2")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "ENVOI MAIL 3")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Longitude", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+android.content.SharedPreferences$Editor
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "pas de coordonn\u00e9e")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r18 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("dateMajGPS", $l0)
+Component=> com.pictotask.mobile.system.GPSServiceM
+ComponentColor=> GREEN
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.pictotask.mobile.system.GPSServiceM
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "ENVOI MAIL 3")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Longitude", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+android.content.SharedPreferences$Editor
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Latitude", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+android.content.SharedPreferences$Editor
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "ENVOI MAIL 2")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "MAJ GPS POSITION SERVEUR")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("dateMajGPS", $l0)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", "-------------------------")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PICTOGPS", $r13)
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+android.location.LocationManager
+android.util.Log
+com.pictotask.common.systeme.GPSService
+Category: com.pictotask.common.systeme.GPSService-*-
+-----------------------------------------------------------------
+Source=> $r22 = virtualinvoke $r14.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PICTOGPS", "Exception EnvoyerMailDemandeAide: ")
+Component=> com.pictotask.common.systeme.GPSService
+ComponentColor=> RED
+com.pictotask.common.systeme.GPSService
+android.location.LocationManager
+com.pictotask.common.systeme.GPSService
+android.util.Log
+com.pictotask.common.InterfaceContext
+Category: com.pictotask.common.systeme.GPSService-*-com.pictotask.common.systeme.GPSService-*-com.pictotask.common.InterfaceContext-*-
+-----------------------------------------------------------------
+com.pictotask.demo.apk: 1092780

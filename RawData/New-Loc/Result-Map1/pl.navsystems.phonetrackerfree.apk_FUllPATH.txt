@@ -1,0 +1,23 @@
+<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location getLocation()> --> $r5 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location getLocation()> --> r0.<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location location> = $r5
+<pl.navsystems.phonetrackerfree.location.GPSTracker: void stopUsingGPS()> --> return
+<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location getLocation()> --> virtualinvoke r0.<pl.navsystems.phonetrackerfree.location.GPSTracker: void stopUsingGPS()>()
+<pl.navsystems.phonetrackerfree.MainActivity: void onResume()> --> virtualinvoke $r2.<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location getLocation()>()
+<pl.navsystems.phonetrackerfree.MainActivity: void onResume()> --> $r2 = <pl.navsystems.phonetrackerfree.tmp.MyConstants: pl.navsystems.phonetrackerfree.location.GPSTracker gpsTracker>
+<dummyMainClass: pl.navsystems.phonetrackerfree.MainActivity dummyMainMethod_pl_navsystems_phonetrackerfree_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<pl.navsystems.phonetrackerfree.MainActivity: void onResume()>()
+<pl.navsystems.phonetrackerfree.MainActivity: void onResume()> --> $r2 = <pl.navsystems.phonetrackerfree.tmp.MyConstants: pl.navsystems.phonetrackerfree.location.GPSTracker gpsTracker>
+<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location getLocation()> --> r0 := @this: pl.navsystems.phonetrackerfree.location.GPSTracker
+<pl.navsystems.phonetrackerfree.location.GPSTracker: void stopUsingGPS()> --> r0 := @this: pl.navsystems.phonetrackerfree.location.GPSTracker
+<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location getLocation()> --> virtualinvoke r0.<pl.navsystems.phonetrackerfree.location.GPSTracker: void stopUsingGPS()>()
+<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location getLocation()> --> if $z0 != 0 goto r0.<pl.navsystems.phonetrackerfree.location.GPSTracker: boolean canGetLocation> = 1
+<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location location>
+<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location getLocation()> --> if $r5 != null goto $r5 = r0.<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location location>
+<pl.navsystems.phonetrackerfree.location.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Passive", "Trying to use passive provider.")
+--------------------------------------------------------
+
+<dummyMainClass: pl.navsystems.phonetrackerfree.MainActivity dummyMainMethod_pl_navsystems_phonetrackerfree_MainActivity(android.content.Intent)> --> virtualinvoke $r3.<pl.navsystems.phonetrackerfree.location.NetworkListener: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: pl.navsystems.phonetrackerfree.MainActivity dummyMainMethod_pl_navsystems_phonetrackerfree_MainActivity(android.content.Intent)> --> if $i0 == 7 goto (branch)
+<pl.navsystems.phonetrackerfree.location.NetworkListener: void onProviderDisabled(java.lang.String)> --> r0 := @this: pl.navsystems.phonetrackerfree.location.NetworkListener
+<pl.navsystems.phonetrackerfree.location.NetworkListener: void onProviderDisabled(java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS", $r1)
+--------------------------------------------------------
+

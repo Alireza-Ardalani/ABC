@@ -1,0 +1,12 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>("gps-latitude", $d0)
+Component=> com.flavionet.android.camera.review.ReviewDialog
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>("gps-longitude", $d0)
+Component=> com.flavionet.android.camera.review.ReviewDialog
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

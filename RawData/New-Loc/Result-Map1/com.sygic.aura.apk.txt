@@ -1,0 +1,156 @@
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r7 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> $r17 = virtualinvoke $r16.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.sygic.widget.tomtom.TomTomTrafficService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("TrafficDataCollector", $r2)
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r23.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r23.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r23.<java.net.HttpURLConnection: void setDoInput(boolean)>(0)
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r24.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r25, $r34, "lat=? AND lon=?", $r26)
+Component=> com.sygic.widget.tomtom.TomTomTrafficService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(int)>($i3)
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r23.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("TrafficDataCollector", $r7)
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("TrafficDataCollector", "requesting location on calling thread")
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(int)>($i0)
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r18.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.sygic.widget.tomtom.TomTomTrafficService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SqlBrite", $r1)
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(int)>($i1)
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r23.<java.net.HttpURLConnection: void setDoInput(boolean)>(0)
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r23.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r23.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<java.io.OutputStream: void write(int)>($i2)
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> com.sygic.widget.tomtom.TomTomTrafficService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r23.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> $r19 = virtualinvoke $r18.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.sygic.widget.tomtom.TomTomTrafficService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r18.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.sygic.widget.tomtom.TomTomTrafficService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> $r19 = virtualinvoke $r18.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.sygic.widget.tomtom.TomTomTrafficService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r5 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r23.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.sygic.traffic.TrafficDataCollectionService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> com.sygic.widget.tomtom.TomTomTrafficService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

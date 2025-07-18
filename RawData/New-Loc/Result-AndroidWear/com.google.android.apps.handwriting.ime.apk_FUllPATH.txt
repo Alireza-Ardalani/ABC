@@ -1,0 +1,57 @@
+<ko: android.location.Location a(java.lang.String)> --> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+<ko: boolean a()> --> $r3 = specialinvoke r0.<ko: android.location.Location a(java.lang.String)>("network")
+<ko: boolean a()> --> $r5 = r0.<ko: android.content.Context b>
+<ko: boolean a()> --> $r3 = $r4
+<ko: boolean a()> --> if $r3 == null goto $r7 = staticinvoke <java.util.Calendar: java.util.Calendar getInstance()>()
+<js: boolean j()> --> $z0 = virtualinvoke $r11.<ko: boolean a()>()
+<js: boolean j()> --> $r5.<kc: boolean b> = $z0
+<js: boolean j()> --> $z0 = $r5.<kc: boolean b>
+<js: boolean j()> --> if $z0 == 0 goto $i1 = 1
+<js: boolean j()> --> $r13 = new kd
+<js: boolean j()> --> $r5.<kc: android.content.BroadcastReceiver c> = $r13
+<kd: void <init>(kc)> --> return
+<js: boolean j()> --> specialinvoke $r13.<kd: void <init>(kc)>($r5)
+<js: boolean j()> --> $r6 = $r5.<kc: android.content.BroadcastReceiver c>
+<js: boolean j()> --> if $r6 != null goto $r7 = $r5.<kc: android.content.IntentFilter d>
+<kd: void <init>(kc)> --> r0 := @this: kd
+<kd: void <init>(kc)> --> r0.<kd: kc a> = $r1
+<js: boolean j()> --> specialinvoke $r13.<kd: void <init>(kc)>($r5)
+<js: boolean j()> --> $r5.<kc: android.content.BroadcastReceiver c> = $r13
+<kd: void <init>(kc)> --> return
+<js: boolean j()> --> specialinvoke $r13.<kd: void <init>(kc)>($r5)
+<js: boolean j()> --> $r5 = r0.<js: kc P>
+<js: void q()> --> return
+<js: boolean j()> --> specialinvoke r0.<js: void q()>()
+<js: void d()> --> virtualinvoke r0.<jr: boolean j()>()
+<jp: void onStart()> --> virtualinvoke $r1.<jr: void d()>()
+<jp: jr i()> --> return $r2
+<jp: jr i()> --> $r2 = r0.<jp: jr g>
+<jp: void onStart()> --> $r1 = virtualinvoke r0.<jp: jr i()>()
+<cc: void onStart()> --> return
+<cc: void onStart()> --> $r2 = r0.<cc: ch b>
+<ch: boolean b()> --> r0 := @this: ch
+<ch: boolean b()> --> $r1 = r0.<ch: ci a>
+<ch: boolean b()> --> $r2 = $r1.<ci: ck d>
+<ck: boolean i()> --> r0 := @this: ck
+<ch: boolean b()> --> $z0 = virtualinvoke $r2.<ck: boolean i()>()
+<ch: boolean b()> --> $r2 = $r1.<ci: ck d>
+<ch: boolean b()> --> $r1 = r0.<ch: ci a>
+<cc: void onStart()> --> virtualinvoke $r2.<ch: boolean b()>()
+<cc: void onStart()> --> $r2 = r0.<cc: ch b>
+<jp: void onStart()> --> specialinvoke r0.<cc: void onStart()>()
+<dummyMainClass: com.google.android.apps.handwriting.ime.WelcomeActivity dummyMainMethod_com_google_android_apps_handwriting_ime_WelcomeActivity(android.content.Intent)> --> virtualinvoke $r0.<jp: void onStart()>()
+<jp: void onSaveInstanceState(android.os.Bundle)> --> return
+<jp: jr i()> --> return $r2
+<jp: void onSaveInstanceState(android.os.Bundle)> --> $r2 = virtualinvoke r0.<jp: jr i()>()
+<cc: void onSaveInstanceState(android.os.Bundle)> --> return
+<cc: void onSaveInstanceState(android.os.Bundle)> --> $r4 = r0.<cc: ch b>
+<cc: void onSaveInstanceState(android.os.Bundle)> --> $r5 = $r4.<ch: ci a>
+<cc: void onSaveInstanceState(android.os.Bundle)> --> $r6 = $r5.<ci: ck d>
+<ck: android.os.Parcelable k()> --> r0 := @this: ck
+<ck: android.os.Parcelable k()> --> if $r2 != null goto $r2 = r0.<ck: android.util.SparseArray d>
+<ck: android.os.Parcelable k()> --> $i2 = 0
+<ck: android.os.Parcelable k()> --> if $z0 != 0 goto $r13 = null
+<ck: android.os.Parcelable k()> --> $r5 = $r4.<bv: android.view.View K>
+<ck: android.os.Parcelable k()> --> virtualinvoke $r13.<android.os.Bundle: void putInt(java.lang.String,int)>("android:target_req_state", $i3)
+--------------------------------------------------------
+

@@ -1,0 +1,31 @@
+<com.row52.app.helpers.MyLocation$GetLastLocation: void run()> --> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.row52.app.helpers.MyLocation$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.row52.app.helpers.MyLocation$GetLastLocation: void run()> --> if r4 == null goto (branch)
+<com.row52.app.activities.Row52Activity$HeaderBar$1$1: void gotLocation(android.location.Location)> --> r0 := @this: com.row52.app.activities.Row52Activity$HeaderBar$1$1
+<com.row52.app.activities.Row52Activity$GetNearByLocation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: com.row52.app.activities.Row52Activity$GetNearByLocation
+<com.row52.app.activities.Row52Activity$GetNearByLocation: java.lang.String doInBackground(java.lang.Double[])> --> r0 := @this: com.row52.app.activities.Row52Activity$GetNearByLocation
+<com.row52.app.activities.checkin.HttpUtility: java.lang.String GET(java.lang.String,android.content.Context)> --> $r0 := @parameter0: java.lang.String
+<com.row52.app.activities.checkin.HttpUtility: java.lang.String GET(java.lang.String,android.content.Context)> --> specialinvoke r7.<java.net.URL: void <init>(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.row52.app.helpers.MyLocation$GetLastLocation: void run()> --> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.row52.app.helpers.MyLocation$GetLastLocation: void run()> --> $r1 = r0.<com.row52.app.helpers.MyLocation$GetLastLocation: com.row52.app.helpers.MyLocation this$0>
+<com.row52.app.helpers.MyLocation$GetLastLocation: void run()> --> if r5 == null goto (branch)
+<com.row52.app.activities.Row52Activity$HeaderBar$1$1: void gotLocation(android.location.Location)> --> r0 := @this: com.row52.app.activities.Row52Activity$HeaderBar$1$1
+<com.row52.app.activities.Row52Activity$GetNearByLocation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: com.row52.app.activities.Row52Activity$GetNearByLocation
+<com.row52.app.activities.Row52Activity$GetNearByLocation: java.lang.String doInBackground(java.lang.Double[])> --> r0 := @this: com.row52.app.activities.Row52Activity$GetNearByLocation
+<com.row52.app.activities.checkin.HttpUtility: java.lang.String GET(java.lang.String,android.content.Context)> --> $r0 := @parameter0: java.lang.String
+<com.row52.app.activities.checkin.HttpUtility: java.lang.String GET(java.lang.String,android.content.Context)> --> $i0 = virtualinvoke $r13.<java.net.HttpURLConnection: int getResponseCode()>()
+--------------------------------------------------------
+
+<dummyMainClass: com.row52.app.activities.RecentSearchesActivity dummyMainMethod_com_row52_app_activities_RecentSearchesActivity(android.content.Intent)> --> virtualinvoke $r10.<com.row52.app.helpers.BestLocationProvider$1: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.row52.app.activities.RecentSearchesActivity dummyMainMethod_com_row52_app_activities_RecentSearchesActivity(android.content.Intent)> --> if $i0 == 9 goto (branch)
+<com.row52.app.helpers.BestLocationProvider$1: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> r0 := @this: com.row52.app.helpers.BestLocationProvider$1
+<com.row52.app.helpers.BestLocationProvider$1: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> $r4 = r0.<com.row52.app.helpers.BestLocationProvider$1: com.row52.app.helpers.BestLocationProvider this$0>
+<com.row52.app.helpers.BestLocationProvider: com.row52.app.helpers.BestLocationListener access$0(com.row52.app.helpers.BestLocationProvider)> --> $r0 := @parameter0: com.row52.app.helpers.BestLocationProvider
+<com.row52.app.helpers.BestLocationProvider: com.row52.app.helpers.BestLocationListener access$0(com.row52.app.helpers.BestLocationProvider)> --> r1 = $r0.<com.row52.app.helpers.BestLocationProvider: com.row52.app.helpers.BestLocationListener mListener>
+<com.row52.app.helpers.BestLocationProvider$1: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> $r3 = staticinvoke <com.row52.app.helpers.BestLocationProvider: com.row52.app.helpers.BestLocationListener access$0(com.row52.app.helpers.BestLocationProvider)>($r4)
+<com.row52.app.activities.checkin.ReCheckinActivity$1: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> r0 := @this: com.row52.app.activities.checkin.ReCheckinActivity$1
+<com.row52.app.activities.checkin.ReCheckinActivity$1: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r1)
+--------------------------------------------------------
+

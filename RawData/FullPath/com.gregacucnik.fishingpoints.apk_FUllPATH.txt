@@ -1,0 +1,32 @@
+<com.gregacucnik.fishingpoints.WeatherLocationActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<com.gregacucnik.fishingpoints.WeatherLocationActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $f0 = (float) $d0
+<com.gregacucnik.fishingpoints.utils.ap: void a(float,float)> --> r0 := @this: com.gregacucnik.fishingpoints.utils.ap
+<com.gregacucnik.fishingpoints.utils.ap: void a(float,float)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("settings_last_known_location_latitude", $f1)
+--------------------------------------------------------
+
+<com.gregacucnik.fishingpoints.WeatherLocationActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.gregacucnik.fishingpoints.WeatherLocationActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $f1 = (float) $d0
+<com.gregacucnik.fishingpoints.utils.ap: void a(float,float)> --> r0 := @this: com.gregacucnik.fishingpoints.utils.ap
+<com.gregacucnik.fishingpoints.utils.ap: void a(float,float)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("settings_last_known_location_longitude", $f0)
+--------------------------------------------------------
+
+<com.gregacucnik.fishingpoints.WeatherLocationActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.gregacucnik.fishingpoints.WeatherLocationActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r1 := @caughtexception
+<com.gregacucnik.fishingpoints.WeatherLocationActivity: void finish()> --> r0 := @this: com.gregacucnik.fishingpoints.WeatherLocationActivity
+<co.mobiwise.materialintro.view.MaterialIntroView: void a()> --> r0 := @this: co.mobiwise.materialintro.view.MaterialIntroView
+<co.mobiwise.materialintro.b.a: void b(java.lang.String)> --> r0 := @this: co.mobiwise.materialintro.b.a
+<co.mobiwise.materialintro.b.a: void b(java.lang.String)> --> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r1, 1)
+--------------------------------------------------------
+
+<dummyMainClass: com.gregacucnik.fishingpoints.ViewLocations dummyMainMethod_com_gregacucnik_fishingpoints_ViewLocations(android.content.Intent)> --> virtualinvoke $r0.<com.gregacucnik.fishingpoints.ViewLocations: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.gregacucnik.fishingpoints.ViewLocations dummyMainMethod_com_gregacucnik_fishingpoints_ViewLocations(android.content.Intent)> --> if $i0 == 18 goto (branch)
+<com.gregacucnik.fishingpoints.ViewLocations: void onClick(android.view.View)> --> r0 := @this: com.gregacucnik.fishingpoints.ViewLocations
+<com.gregacucnik.fishingpoints.ViewLocations: void onClick(android.view.View)> --> $z0 = r0.<com.gregacucnik.fishingpoints.ViewLocations: boolean I>
+<com.gregacucnik.fishingpoints.ViewLocations: void onClick(android.view.View)> --> if $z0 == 0 goto $z0 = virtualinvoke r0.<com.gregacucnik.fishingpoints.ViewLocations: boolean u()>()
+<com.gregacucnik.fishingpoints.ViewLocations: boolean B()> --> r0 := @this: com.gregacucnik.fishingpoints.ViewLocations
+<com.gregacucnik.fishingpoints.ViewLocations: boolean g(int)> --> r0 := @this: com.gregacucnik.fishingpoints.ViewLocations
+<com.gregacucnik.fishingpoints.database.b: boolean o()> --> r0 := @this: com.gregacucnik.fishingpoints.database.b
+<com.gregacucnik.fishingpoints.database.b: int l()> --> r0 := @this: com.gregacucnik.fishingpoints.database.b
+<com.gregacucnik.fishingpoints.database.b: int l()> --> $r2 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM Pv35gv2a", null)
+--------------------------------------------------------
+

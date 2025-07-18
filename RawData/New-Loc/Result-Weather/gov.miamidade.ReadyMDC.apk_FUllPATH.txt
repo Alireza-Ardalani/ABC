@@ -1,0 +1,13 @@
+<gov.miamidade.ReadyMDC.Locator: void getLocation(gov.miamidade.ReadyMDC.Locator$Method,gov.miamidade.ReadyMDC.Locator$Listener)> --> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<gov.miamidade.ReadyMDC.Locator: void getLocation(gov.miamidade.ReadyMDC.Locator$Method,gov.miamidade.ReadyMDC.Locator$Listener)> --> if $r6 == null goto staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("locator", "Request updates from network provider.")
+<gov.miamidade.ReadyMDC.Locator: void requestUpdates(java.lang.String)> --> r0 := @this: gov.miamidade.ReadyMDC.Locator
+<gov.miamidade.ReadyMDC.Locator: void requestUpdates(java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("locator", $r5)
+--------------------------------------------------------
+
+<dummyMainClass: gov.miamidade.ReadyMDC.GenericWebViewActivity dummyMainMethod_gov_miamidade_ReadyMDC_GenericWebViewActivity(android.content.Intent)> --> virtualinvoke $r6.<gov.miamidade.ReadyMDC.Locator: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: gov.miamidade.ReadyMDC.GenericWebViewActivity dummyMainMethod_gov_miamidade_ReadyMDC_GenericWebViewActivity(android.content.Intent)> --> if $i0 == 9 goto (branch)
+<gov.miamidade.ReadyMDC.Locator: void onLocationChanged(android.location.Location)> --> r0 := @this: gov.miamidade.ReadyMDC.Locator
+<gov.miamidade.ReadyMDC.Locator: void onLocationChanged(android.location.Location)> --> if $z0 == 0 goto $r4 = ""
+<gov.miamidade.ReadyMDC.Locator: void onLocationChanged(android.location.Location)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("locator", $r4)
+--------------------------------------------------------
+

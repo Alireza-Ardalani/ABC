@@ -1,0 +1,1064 @@
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude> = $d0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r5 == null goto $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mNetworkProvider>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r6 == null goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r3 = virtualinvoke $r1.<android.appwidget.AppWidgetManager: int[] getAppWidgetIds(android.content.ComponentName)>($r2)
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r5 := @caughtexception
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetUpdateService", $r7)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0.<com.vvse.daynight.Place: double mLongitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLongitude(double)>($d1)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLongitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLongitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLongitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLongitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("WidgetUpdateService", "doUpdateWidget")
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0.<com.vvse.daynight.Place: double mLongitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLongitude(double)>($d1)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLongitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLongitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLongitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLongitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> $f0 = interfaceinvoke $r2.<android.content.SharedPreferences: float getFloat(java.lang.String,float)>("X_SCREEN_OFFSET_PERCENT", 0.0F)
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: float mXScreenOffsetPercent> = $f0
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> $r8 := @caughtexception
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DayNightApp", $r4)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude> = $d0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r5 == null goto $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mNetworkProvider>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r6 == null goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel$3: void run()> --> r0 := @this: com.vvse.daynight.DataModel$3
+<com.vvse.daynight.DataModel$3: void run()> --> $r1 = r0.<com.vvse.daynight.DataModel$3: com.vvse.daynight.DataModel this$0>
+<com.vvse.daynight.DataModel$3: void run()> --> $r6 := @caughtexception
+<com.vvse.daynight.DataModel$3: void run()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DataModel", $r9)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude> = $d0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r5 == null goto $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mNetworkProvider>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r6 == null goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r3 = virtualinvoke $r1.<android.appwidget.AppWidgetManager: int[] getAppWidgetIds(android.content.ComponentName)>($r2)
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r5 := @caughtexception
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetUpdateService", "onReceive()")
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0.<com.vvse.daynight.Place: double mLongitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLongitude(double)>($d1)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLongitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLongitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLongitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLongitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.DayNightMapAppWidget$UpdateService: void updateAppWidget(android.content.Context,android.appwidget.AppWidgetManager,int,com.vvse.daynight.DataModel)> --> $r1 := @parameter0: android.content.Context
+<com.vvse.daynight.DataModel: android.graphics.Bitmap updateDayNightImage(boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> $i4 = r0.<com.vvse.daynight.DayNightImage: int mBmpWidth>
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> $i4 = $i3 / $i4
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> $r10 := @caughtexception
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DayNightApp", $r4)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0.<com.vvse.daynight.Place: double mLongitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLongitude(double)>($d1)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> virtualinvoke $r9.<com.vvse.daynight.DataModel: void startGPS(android.content.Context)>(r0)
+<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)> --> return 1
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $z0 = virtualinvoke $r9.<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)>(r0)
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> return r1
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r9 = virtualinvoke $r8.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r8 = (com.vvse.daynight.DayNightApp) $r7
+<android.app.Activity: android.app.Application getApplication()> --> return retApplication
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r7 = virtualinvoke r0.<com.vvse.daynight.MainActivity: android.app.Application getApplication()>()
+<dummyMainClass: com.vvse.daynight.MainActivity dummyMainMethod_com_vvse_daynight_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> staticinvoke <dummyMainClass: com.vvse.daynight.MainActivity dummyMainMethod_com_vvse_daynight_MainActivity(android.content.Intent)>(null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r3
+<com.vvse.daynight.DayNightApp: void onCreate()> --> return
+<com.vvse.daynight.DayNightApp$2: void <init>(com.vvse.daynight.DayNightApp)> --> return
+<com.vvse.daynight.DayNightApp: void onCreate()> --> specialinvoke $r3.<com.vvse.daynight.DayNightApp$2: void <init>(com.vvse.daynight.DayNightApp)>(r0)
+<com.vvse.daynight.DayNightApp$1: void <init>(com.vvse.daynight.DayNightApp)> --> return
+<com.vvse.daynight.DayNightApp: void onCreate()> --> specialinvoke $r2.<com.vvse.daynight.DayNightApp$1: void <init>(com.vvse.daynight.DayNightApp)>(r0)
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> return
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> return
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> return $r4
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165360)
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> return $r4
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165370)
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> return $r4
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165392)
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> virtualinvoke $r1.<com.vvse.daynight.DayNightImage: void init(android.content.Context)>($r2)
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> return
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke r0.<com.vvse.daynight.DataModel: void load(android.content.Context)>($r2)
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> r0.<com.vvse.daynight.DataModel: android.content.Context mContext> = $r2
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke r0.<com.vvse.daynight.DataModel: void load(android.content.Context)>($r2)
+<com.vvse.daynight.DayNightImage: void <init>(com.vvse.daynight.DataModel,boolean)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: void <init>(com.vvse.daynight.DataModel,boolean)> --> r0.<com.vvse.daynight.DayNightImage: com.vvse.daynight.DataModel mData> = $r1
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke $r1.<com.vvse.daynight.DayNightImage: void <init>(com.vvse.daynight.DataModel,boolean)>(r0, $z0)
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> r0.<com.vvse.daynight.DataModel: com.vvse.daynight.DayNightImage mDayNightImage> = $r1
+<com.vvse.daynight.DayNightImage: void <init>(com.vvse.daynight.DataModel,boolean)> --> return
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke $r1.<com.vvse.daynight.DayNightImage: void <init>(com.vvse.daynight.DataModel,boolean)>(r0, $z0)
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> return
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke r0.<com.vvse.daynight.DataModel: void load(android.content.Context)>($r2)
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> r0.<com.vvse.daynight.DataModel: android.content.Context mContext> = $r2
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> if $z0 == 0 goto $z0 = r0.<com.vvse.daynight.DataModel: boolean mLoaded>
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> return
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke r0.<com.vvse.daynight.DataModel: void load(android.content.Context)>($r2)
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> if $z0 == 0 goto $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165392)
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165392)
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165370)
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165360)
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> if $z0 == 0 goto $i0 = 2131165399
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> if $z0 == 0 goto $i0 = 2131165401
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> virtualinvoke $r1.<com.vvse.daynight.DayNightImage: void init(android.content.Context)>($r2)
+<com.vvse.daynight.DayNightApp: void onCreate()> --> virtualinvoke $r5.<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)>(r0, 0)
+<com.vvse.daynight.DayNightApp$1: void <init>(com.vvse.daynight.DayNightApp)> --> r0 := @this: com.vvse.daynight.DayNightApp$1
+<com.vvse.daynight.DayNightApp: void onCreate()> --> specialinvoke $r2.<com.vvse.daynight.DayNightApp$1: void <init>(com.vvse.daynight.DayNightApp)>(r0)
+<com.vvse.daynight.DayNightApp$2: void <init>(com.vvse.daynight.DayNightApp)> --> r0 := @this: com.vvse.daynight.DayNightApp$2
+<com.vvse.daynight.DayNightApp: void onCreate()> --> specialinvoke $r3.<com.vvse.daynight.DayNightApp$2: void <init>(com.vvse.daynight.DayNightApp)>(r0)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> virtualinvoke $r3.<com.vvse.daynight.DayNightApp: void onCreate()>()
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r3
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.UpgradeActivity$5: void onClick(android.content.DialogInterface,int)> --> $r3 = virtualinvoke $r2.<com.vvse.daynight.UpgradeActivity: android.app.Application getApplication()>()
+<com.vvse.daynight.UpgradeActivity$5: void onClick(android.content.DialogInterface,int)> --> $r4 = (com.vvse.daynight.DayNightApp) $r3
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DayNightApp
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> $r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.DataModel: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> $r5 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.lunasolcallibrary.Base64: java.lang.String encodeObject(java.io.Serializable)> --> $r1 := @parameter0: java.io.Serializable
+<com.vvse.lunasolcallibrary.Base64: java.lang.String encodeObject(java.io.Serializable,int)> --> $r9 := @parameter0: java.io.Serializable
+<com.vvse.lunasolcallibrary.Base64: java.lang.String encodeObject(java.io.Serializable,int)> --> virtualinvoke $r14.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r9)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0.<com.vvse.daynight.Place: double mLongitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLongitude(double)>($d1)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLongitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLongitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLongitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLongitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r3 = virtualinvoke $r1.<android.appwidget.AppWidgetManager: int[] getAppWidgetIds(android.content.ComponentName)>($r2)
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r5 := @caughtexception
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetUpdateService", $r7)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r3 = virtualinvoke $r1.<android.appwidget.AppWidgetManager: int[] getAppWidgetIds(android.content.ComponentName)>($r2)
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r5 := @caughtexception
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetUpdateService", $r7)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: boolean mIsSet> = 1
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> virtualinvoke $r9.<com.vvse.daynight.DataModel: void startGPS(android.content.Context)>(r0)
+<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)> --> return 1
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $z0 = virtualinvoke $r9.<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)>(r0)
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> return r1
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r9 = virtualinvoke $r8.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r8 = (com.vvse.daynight.DayNightApp) $r7
+<android.app.Activity: android.app.Application getApplication()> --> return retApplication
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r7 = virtualinvoke r0.<com.vvse.daynight.MainActivity: android.app.Application getApplication()>()
+<dummyMainClass: com.vvse.daynight.MainActivity dummyMainMethod_com_vvse_daynight_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null)
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.UpgradeActivity$6: void onClick(android.content.DialogInterface,int)> --> $r1 = virtualinvoke $r3.<com.vvse.daynight.UpgradeActivity: android.app.Application getApplication()>()
+<com.vvse.daynight.UpgradeActivity$6: void onClick(android.content.DialogInterface,int)> --> $r4 = (com.vvse.daynight.DayNightApp) $r1
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DayNightApp
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> $r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.DataModel: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> $r5 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.lunasolcallibrary.Base64: java.lang.String encodeObject(java.io.Serializable)> --> $r1 := @parameter0: java.io.Serializable
+<com.vvse.lunasolcallibrary.Base64: java.lang.String encodeObject(java.io.Serializable,int)> --> $r9 := @parameter0: java.io.Serializable
+<com.vvse.lunasolcallibrary.Base64: java.lang.String encodeObject(java.io.Serializable,int)> --> virtualinvoke $r14.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r9)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLongitude> = $d1
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> virtualinvoke $r6.<com.vvse.daynight.DataModel: void startGPS(android.content.Context)>(r0)
+<com.vvse.daynight.DataModel: boolean initLocationProviders()> --> return 1
+<com.vvse.daynight.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> virtualinvoke $r6.<com.vvse.daynight.DataModel: boolean initLocationProviders()>()
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> return r1
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> $r6 = virtualinvoke $r5.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()>()
+<com.vvse.daynight.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> $r5 = (com.vvse.daynight.DayNightApp) $r4
+<android.app.Activity: android.app.Application getApplication()> --> return retApplication
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> $r4 = virtualinvoke r0.<com.vvse.daynight.MainActivity: android.app.Application getApplication()>()
+<com.vvse.daynight.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> virtualinvoke $r6.<com.vvse.daynight.DataModel: void startGPS(android.content.Context)>(r0)
+<dummyMainClass: com.vvse.daynight.MainActivity dummyMainMethod_com_vvse_daynight_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.vvse.daynight.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>(0, $r7, $r8)
+<dummyMainClass: com.vvse.daynight.MainActivity dummyMainMethod_com_vvse_daynight_MainActivity(android.content.Intent)> --> if $i0 == 10 goto (branch)
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.UpgradeActivity$6: void onClick(android.content.DialogInterface,int)> --> $r1 = virtualinvoke $r3.<com.vvse.daynight.UpgradeActivity: android.app.Application getApplication()>()
+<com.vvse.daynight.UpgradeActivity$6: void onClick(android.content.DialogInterface,int)> --> $r4 = (com.vvse.daynight.DayNightApp) $r1
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DayNightApp
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> $r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.DataModel: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLongitude>
+<com.vvse.daynight.DataModel: void save()> --> $f0 = (float) $d0
+<com.vvse.daynight.DataModel: void save()> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LASTGPSLON", $f0)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0.<com.vvse.daynight.Place: double mLongitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLongitude(double)>($d1)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLongitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLongitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLongitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLongitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel$3: void run()> --> r0 := @this: com.vvse.daynight.DataModel$3
+<com.vvse.daynight.DataModel$3: void run()> --> $r1 = r0.<com.vvse.daynight.DataModel$3: com.vvse.daynight.DataModel this$0>
+<com.vvse.daynight.DataModel$3: void run()> --> $r6 := @caughtexception
+<com.vvse.daynight.DataModel$3: void run()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DataModel", $r9)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> virtualinvoke $r9.<com.vvse.daynight.DataModel: void startGPS(android.content.Context)>(r0)
+<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)> --> return 1
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $z0 = virtualinvoke $r9.<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)>(r0)
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> return r1
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r9 = virtualinvoke $r8.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r8 = (com.vvse.daynight.DayNightApp) $r7
+<android.app.Activity: android.app.Application getApplication()> --> return retApplication
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r7 = virtualinvoke r0.<com.vvse.daynight.MainActivity: android.app.Application getApplication()>()
+<dummyMainClass: com.vvse.daynight.MainActivity dummyMainMethod_com_vvse_daynight_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null)
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.UpgradeActivity$6: void onClick(android.content.DialogInterface,int)> --> $r1 = virtualinvoke $r3.<com.vvse.daynight.UpgradeActivity: android.app.Application getApplication()>()
+<com.vvse.daynight.UpgradeActivity$6: void onClick(android.content.DialogInterface,int)> --> $r4 = (com.vvse.daynight.DayNightApp) $r1
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DayNightApp
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> $r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.DataModel: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> $r5 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.lunasolcallibrary.Base64: java.lang.String encodeObject(java.io.Serializable)> --> $r1 := @parameter0: java.io.Serializable
+<com.vvse.lunasolcallibrary.Base64: java.lang.String encodeObject(java.io.Serializable,int)> --> $r9 := @parameter0: java.io.Serializable
+<com.vvse.lunasolcallibrary.Base64: java.lang.String encodeObject(java.io.Serializable,int)> --> virtualinvoke $r14.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r9)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.DayNightMapAppWidget$UpdateService: void updateAppWidget(android.content.Context,android.appwidget.AppWidgetManager,int,com.vvse.daynight.DataModel)> --> $r1 := @parameter0: android.content.Context
+<com.vvse.daynight.DataModel: android.graphics.Bitmap updateDayNightImage(boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> $i4 = r0.<com.vvse.daynight.DayNightImage: int mBmpWidth>
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> $i4 = $i3 / $i4
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> $r10 := @caughtexception
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DayNightApp", $r4)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLongitude> = $d1
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> virtualinvoke $r9.<com.vvse.daynight.DataModel: void startGPS(android.content.Context)>(r0)
+<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)> --> return 1
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $z0 = virtualinvoke $r9.<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)>(r0)
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> return r1
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r9 = virtualinvoke $r8.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r8 = (com.vvse.daynight.DayNightApp) $r7
+<android.app.Activity: android.app.Application getApplication()> --> return retApplication
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r7 = virtualinvoke r0.<com.vvse.daynight.MainActivity: android.app.Application getApplication()>()
+<dummyMainClass: com.vvse.daynight.MainActivity dummyMainMethod_com_vvse_daynight_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null)
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.UpgradeActivity$5: void onClick(android.content.DialogInterface,int)> --> $r3 = virtualinvoke $r2.<com.vvse.daynight.UpgradeActivity: android.app.Application getApplication()>()
+<com.vvse.daynight.UpgradeActivity$5: void onClick(android.content.DialogInterface,int)> --> $r4 = (com.vvse.daynight.DayNightApp) $r3
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DayNightApp
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> $r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.DataModel: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLongitude>
+<com.vvse.daynight.DataModel: void save()> --> $f0 = (float) $d0
+<com.vvse.daynight.DataModel: void save()> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LASTGPSLON", $f0)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r3 = virtualinvoke $r1.<android.appwidget.AppWidgetManager: int[] getAppWidgetIds(android.content.ComponentName)>($r2)
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r5 := @caughtexception
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetUpdateService", "onReceive()")
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel$3: void run()> --> r0 := @this: com.vvse.daynight.DataModel$3
+<com.vvse.daynight.DataModel$3: void run()> --> $r1 = r0.<com.vvse.daynight.DataModel$3: com.vvse.daynight.DataModel this$0>
+<com.vvse.daynight.DataModel$3: void run()> --> $r6 := @caughtexception
+<com.vvse.daynight.DataModel$3: void run()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DataModel", $r9)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r3 = virtualinvoke $r1.<android.appwidget.AppWidgetManager: int[] getAppWidgetIds(android.content.ComponentName)>($r2)
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r5 := @caughtexception
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetUpdateService", $r7)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude> = $d0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r5 == null goto $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mNetworkProvider>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r6 == null goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r3 = virtualinvoke $r1.<android.appwidget.AppWidgetManager: int[] getAppWidgetIds(android.content.ComponentName)>($r2)
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r5 := @caughtexception
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetUpdateService", $r7)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0.<com.vvse.daynight.Place: double mLongitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLongitude(double)>($d1)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLongitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLongitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLongitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLongitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("WidgetUpdateService", "no widgets found - do nothing")
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude> = $d0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> virtualinvoke $r9.<com.vvse.daynight.DataModel: void startGPS(android.content.Context)>(r0)
+<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)> --> return 1
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $z0 = virtualinvoke $r9.<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)>(r0)
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> return r1
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r9 = virtualinvoke $r8.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r8 = (com.vvse.daynight.DayNightApp) $r7
+<android.app.Activity: android.app.Application getApplication()> --> return retApplication
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r7 = virtualinvoke r0.<com.vvse.daynight.MainActivity: android.app.Application getApplication()>()
+<dummyMainClass: com.vvse.daynight.MainActivity dummyMainMethod_com_vvse_daynight_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> staticinvoke <dummyMainClass: com.vvse.daynight.MainActivity dummyMainMethod_com_vvse_daynight_MainActivity(android.content.Intent)>(null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r3
+<com.vvse.daynight.DayNightApp: void onCreate()> --> return
+<com.vvse.daynight.DayNightApp$2: void <init>(com.vvse.daynight.DayNightApp)> --> return
+<com.vvse.daynight.DayNightApp: void onCreate()> --> specialinvoke $r3.<com.vvse.daynight.DayNightApp$2: void <init>(com.vvse.daynight.DayNightApp)>(r0)
+<com.vvse.daynight.DayNightApp$1: void <init>(com.vvse.daynight.DayNightApp)> --> return
+<com.vvse.daynight.DayNightApp: void onCreate()> --> specialinvoke $r2.<com.vvse.daynight.DayNightApp$1: void <init>(com.vvse.daynight.DayNightApp)>(r0)
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> return
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> return
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> return $r4
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165360)
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> return $r4
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165370)
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> return $r4
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165392)
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> virtualinvoke $r1.<com.vvse.daynight.DayNightImage: void init(android.content.Context)>($r2)
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> return
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke r0.<com.vvse.daynight.DataModel: void load(android.content.Context)>($r2)
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> r0.<com.vvse.daynight.DataModel: android.content.Context mContext> = $r2
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke r0.<com.vvse.daynight.DataModel: void load(android.content.Context)>($r2)
+<com.vvse.daynight.DayNightImage: void <init>(com.vvse.daynight.DataModel,boolean)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: void <init>(com.vvse.daynight.DataModel,boolean)> --> r0.<com.vvse.daynight.DayNightImage: com.vvse.daynight.DataModel mData> = $r1
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke $r1.<com.vvse.daynight.DayNightImage: void <init>(com.vvse.daynight.DataModel,boolean)>(r0, $z0)
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> r0.<com.vvse.daynight.DataModel: com.vvse.daynight.DayNightImage mDayNightImage> = $r1
+<com.vvse.daynight.DayNightImage: void <init>(com.vvse.daynight.DataModel,boolean)> --> return
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke $r1.<com.vvse.daynight.DayNightImage: void <init>(com.vvse.daynight.DataModel,boolean)>(r0, $z0)
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> return
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke r0.<com.vvse.daynight.DataModel: void load(android.content.Context)>($r2)
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> r0.<com.vvse.daynight.DataModel: android.content.Context mContext> = $r2
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> if $z0 == 0 goto $z0 = r0.<com.vvse.daynight.DataModel: boolean mLoaded>
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> return
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> specialinvoke r0.<com.vvse.daynight.DataModel: void load(android.content.Context)>($r2)
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> if $z0 == 0 goto $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165392)
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165392)
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165370)
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> $r3 = specialinvoke r0.<com.vvse.daynight.DayNightImage: android.graphics.Bitmap getBitmapFromDrawable(android.content.Context,int)>($r1, 2131165360)
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> if $z0 == 0 goto $i0 = 2131165399
+<com.vvse.daynight.DayNightImage: void init(android.content.Context)> --> if $z0 == 0 goto $i0 = 2131165401
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> virtualinvoke $r1.<com.vvse.daynight.DayNightImage: void init(android.content.Context)>($r2)
+<com.vvse.daynight.DayNightApp: void onCreate()> --> virtualinvoke $r5.<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)>(r0, 0)
+<com.vvse.daynight.DayNightApp$1: void <init>(com.vvse.daynight.DayNightApp)> --> r0 := @this: com.vvse.daynight.DayNightApp$1
+<com.vvse.daynight.DayNightApp: void onCreate()> --> specialinvoke $r2.<com.vvse.daynight.DayNightApp$1: void <init>(com.vvse.daynight.DayNightApp)>(r0)
+<com.vvse.daynight.DayNightApp$2: void <init>(com.vvse.daynight.DayNightApp)> --> r0 := @this: com.vvse.daynight.DayNightApp$2
+<com.vvse.daynight.DayNightApp: void onCreate()> --> specialinvoke $r3.<com.vvse.daynight.DayNightApp$2: void <init>(com.vvse.daynight.DayNightApp)>(r0)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> virtualinvoke $r3.<com.vvse.daynight.DayNightApp: void onCreate()>()
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r3
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.UpgradeActivity$5: void onClick(android.content.DialogInterface,int)> --> $r3 = virtualinvoke $r2.<com.vvse.daynight.UpgradeActivity: android.app.Application getApplication()>()
+<com.vvse.daynight.UpgradeActivity$5: void onClick(android.content.DialogInterface,int)> --> $r4 = (com.vvse.daynight.DayNightApp) $r3
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DayNightApp
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> $r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.DataModel: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.DataModel: void save()> --> $f0 = (float) $d0
+<com.vvse.daynight.DataModel: void save()> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LASTGPSLAT", $f0)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0.<com.vvse.daynight.Place: double mLongitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLongitude(double)>($d1)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLongitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLongitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLongitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLongitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DataModel", "startPositionCheckTimer()")
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude> = $d0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r5 == null goto $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mNetworkProvider>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r6 == null goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> $z0 = interfaceinvoke $r2.<android.content.SharedPreferences: boolean getBoolean(java.lang.String,boolean)>("KEEP_SCREEN_ON", 0)
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: boolean mKeepScreenOn> = $z0
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> $r8 := @caughtexception
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DayNightApp", $r4)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude> = $d0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r5 == null goto $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mNetworkProvider>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r6 == null goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("WidgetUpdateService", "doUpdateWidget")
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.DataModel: void init(android.content.Context,boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> $z0 = interfaceinvoke $r2.<android.content.SharedPreferences: boolean getBoolean(java.lang.String,boolean)>("SHOW_SUN", 1)
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: boolean mShowSunPosition> = $z0
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> $r8 := @caughtexception
+<com.vvse.daynight.DataModel: void load(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DayNightApp", $r4)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DataModel", "startPositionCheckTimer()")
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("WidgetUpdateService", "no widgets found - do nothing")
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("WidgetUpdateService", "doUpdateWidget")
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0.<com.vvse.daynight.Place: double mLongitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLongitude(double)>($d1)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLongitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLongitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLongitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLongitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r3 = virtualinvoke $r1.<android.appwidget.AppWidgetManager: int[] getAppWidgetIds(android.content.ComponentName)>($r2)
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r5 := @caughtexception
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetUpdateService", $r7)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLongitude(double)> --> r0.<com.vvse.daynight.Place: double mLongitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLongitude(double)>($d1)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLongitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLongitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLongitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLongitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r3 = virtualinvoke $r1.<android.appwidget.AppWidgetManager: int[] getAppWidgetIds(android.content.ComponentName)>($r2)
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r5 := @caughtexception
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("WidgetUpdateService", "onReceive()")
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude> = $d0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r5 == null goto $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mNetworkProvider>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r6 == null goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("WidgetUpdateService", "no widgets found - do nothing")
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r8 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude> = $d0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> virtualinvoke $r9.<com.vvse.daynight.DataModel: void startGPS(android.content.Context)>(r0)
+<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)> --> return 1
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $z0 = virtualinvoke $r9.<com.vvse.daynight.DataModel: boolean checkAndInitLocationServices(android.app.Activity)>(r0)
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> return r1
+<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()> --> r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r9 = virtualinvoke $r8.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel getData()>()
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r8 = (com.vvse.daynight.DayNightApp) $r7
+<android.app.Activity: android.app.Application getApplication()> --> return retApplication
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> --> $r7 = virtualinvoke r0.<com.vvse.daynight.MainActivity: android.app.Application getApplication()>()
+<dummyMainClass: com.vvse.daynight.MainActivity dummyMainMethod_com_vvse_daynight_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<com.vvse.daynight.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null)
+<android.app.Activity: android.app.Application getApplication()> --> retApplication = <il.ac.tau.MyApplicationHolder: android.app.Application application>
+<com.vvse.daynight.UpgradeActivity$5: void onClick(android.content.DialogInterface,int)> --> $r3 = virtualinvoke $r2.<com.vvse.daynight.UpgradeActivity: android.app.Application getApplication()>()
+<com.vvse.daynight.UpgradeActivity$5: void onClick(android.content.DialogInterface,int)> --> $r4 = (com.vvse.daynight.DayNightApp) $r3
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DayNightApp
+<com.vvse.daynight.DayNightApp: void setProVersion(boolean)> --> $r1 = r0.<com.vvse.daynight.DayNightApp: com.vvse.daynight.DataModel mData>
+<com.vvse.daynight.DataModel: void setProVersion(boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void save()> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.DataModel: void save()> --> $f0 = (float) $d0
+<com.vvse.daynight.DataModel: void save()> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LASTGPSLAT", $f0)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude> = $d0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r5 == null goto $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mNetworkProvider>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r6 == null goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<android.os.Handler: boolean postDelayed(java.lang.Runnable,long)> --> this := @this: android.os.Handler
+<com.vvse.daynight.WidgetUpdateService$1: void run()> --> r0 := @this: com.vvse.daynight.WidgetUpdateService$1
+<com.vvse.daynight.WidgetUpdateService: void doUpdateWidget(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.vvse.daynight.DayNightMapAppWidget$UpdateService: void updateAppWidget(android.content.Context,android.appwidget.AppWidgetManager,int,com.vvse.daynight.DataModel)> --> $r1 := @parameter0: android.content.Context
+<com.vvse.daynight.DataModel: android.graphics.Bitmap updateDayNightImage(boolean)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> r0 := @this: com.vvse.daynight.DayNightImage
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> $i4 = r0.<com.vvse.daynight.DayNightImage: int mBmpWidth>
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> $i4 = $i3 / $i4
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> $r10 := @caughtexception
+<com.vvse.daynight.DayNightImage: android.graphics.Bitmap calc(java.util.Calendar,boolean)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DayNightApp", $r4)
+--------------------------------------------------------
+
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude> = $d0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> return 1
+<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()> --> return 0
+<com.vvse.daynight.DataModel: boolean isPositioningEnabled()> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isGPSProviderEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = specialinvoke r0.<com.vvse.daynight.DataModel: boolean isPositioningEnabled()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r5 == null goto $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mNetworkProvider>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r6 == null goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $r8 == null goto $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $d0 = r0.<com.vvse.daynight.DataModel: double mLastGPSLatitude>
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: void setLatitude(double)> --> r0.<com.vvse.daynight.Place: double mLatitude> = $d0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> virtualinvoke $r7.<com.vvse.daynight.Place: void setLatitude(double)>($d0)
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r7 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $r5 = r0.<com.vvse.daynight.DataModel: android.location.LocationProvider mGPSProvider>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $r1 = r0.<com.vvse.daynight.DataModel: com.vvse.daynight.Place mCurrentPlace>
+<com.vvse.daynight.Place: double getLatitude()> --> r0 := @this: com.vvse.daynight.Place
+<com.vvse.daynight.Place: double getLatitude()> --> d0 = r0.<com.vvse.daynight.Place: double mLatitude>
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $d0 = virtualinvoke $r1.<com.vvse.daynight.Place: double getLatitude()>()
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> $b0 = $d0 cmpl 0.0
+<com.vvse.daynight.DataModel: boolean hasValidPosition()> --> if $b0 == 0 goto return 0
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> $z0 = virtualinvoke r0.<com.vvse.daynight.DataModel: boolean hasValidPosition()>()
+<com.vvse.daynight.DataModel: void startGPS(android.content.Context)> --> if $z0 != 0 goto $z0 = <com.vvse.daynight.DayNightApp: boolean DO_LOG>
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> r0 := @this: com.vvse.daynight.DataModel
+<com.vvse.daynight.DataModel: void startPositionCheckTimer(int,android.content.Context)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DataModel", "startPositionCheckTimer()")
+--------------------------------------------------------
+

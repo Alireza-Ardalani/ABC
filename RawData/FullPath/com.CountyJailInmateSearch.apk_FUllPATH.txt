@@ -1,0 +1,14 @@
+<com.bgjd.ici.d.k: com.bgjd.ici.json.JSONObject f()> --> $r5 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+<com.bgjd.ici.d.k: com.bgjd.ici.json.JSONObject f()> --> r0.<com.bgjd.ici.d.k: android.location.Location h> = $r5
+<com.bgjd.ici.d.k: com.bgjd.ici.json.JSONObject f()> --> $r1 = new com.bgjd.ici.json.JSONObject
+<com.bgjd.ici.d.k: com.bgjd.ici.json.JSONObject f()> --> $r5 = r0.<com.bgjd.ici.d.k: android.location.Location h>
+<com.bgjd.ici.d.k: com.bgjd.ici.json.JSONObject f()> --> if $r5 == null goto $r12 = new com.bgjd.ici.json.JSONObject
+<com.bgjd.ici.b.i: void b(java.lang.String,java.lang.String[])> --> $r0 := @parameter0: java.lang.String
+<com.bgjd.ici.b.i: void b(java.lang.String,java.lang.String[])> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r0)
+--------------------------------------------------------
+
+<com.mobfox.sdk.services.UASLocationService: android.location.Location getLast()> --> r3 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.mobfox.sdk.services.UASLocationService: android.location.Location getLast()> --> r2 := @caughtexception
+<com.mobfox.sdk.services.UASLocationService: android.location.Location getLast()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("UAM Loc Error", $r6)
+--------------------------------------------------------
+

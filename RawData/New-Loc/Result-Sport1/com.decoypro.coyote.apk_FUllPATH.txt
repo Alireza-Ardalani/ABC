@@ -1,0 +1,29 @@
+<com.seattleclouds.location.n: void onLocationChanged(android.location.Location)> --> interfaceinvoke $r2.<android.location.LocationListener: void onLocationChanged(android.location.Location)>($r1)
+<com.seattleclouds.location.j: boolean a(android.location.Location,android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.seattleclouds.location.j: boolean a(android.location.Location,android.location.Location)> --> if $r0 != null goto $l0 = virtualinvoke $r0.<android.location.Location: long getTime()>()
+<com.seattleclouds.location.n: void onLocationChanged(android.location.Location)> --> $z0 = staticinvoke <com.seattleclouds.location.j: boolean a(android.location.Location,android.location.Location)>($r1, $r5)
+<com.seattleclouds.location.n: void onLocationChanged(android.location.Location)> --> if $z0 == 0 goto return
+<com.seattleclouds.modules.savephoto.k: void a(android.location.Location)> --> r0 := @this: com.seattleclouds.modules.savephoto.k
+<com.seattleclouds.modules.savephoto.SavePhotoActivity: void c(com.seattleclouds.modules.savephoto.SavePhotoActivity,android.location.Location)> --> $r0 := @parameter0: com.seattleclouds.modules.savephoto.SavePhotoActivity
+<com.seattleclouds.modules.savephoto.SavePhotoActivity: void b(android.location.Location)> --> r0 := @this: com.seattleclouds.modules.savephoto.SavePhotoActivity
+<com.seattleclouds.location.a: void a(android.location.Location)> --> r0 := @this: com.seattleclouds.location.a
+<com.seattleclouds.location.a: void a(double,double)> --> r0 := @this: com.seattleclouds.location.a
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.android.vending.billing.util.d: void run()> --> r0 := @this: com.android.vending.billing.util.d
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.facebook.f: void run()> --> r0 := @this: com.facebook.f
+<com.facebook.e: void a(com.facebook.e,com.facebook.b)> --> $r0 := @parameter0: com.facebook.e
+<com.facebook.e: void b(com.facebook.b)> --> r0 := @this: com.facebook.e
+<com.facebook.e: com.facebook.GraphRequest a(com.facebook.AccessToken,com.facebook.ad)> --> $r0 := @parameter0: com.facebook.AccessToken
+<com.facebook.HttpMethod: void <clinit>()> --> nop
+<com.facebook.HttpMethod: void <clinit>()> --> $r0 = <com.facebook.HttpMethod: com.facebook.HttpMethod DELETE>
+<com.facebook.HttpMethod: void <clinit>()> --> $r1[2] = $r0
+<com.facebook.HttpMethod: void <clinit>()> --> $r1[1] = $r0
+<com.facebook.HttpMethod: void <clinit>()> --> $r0 = <com.facebook.HttpMethod: com.facebook.HttpMethod POST>
+<com.facebook.GraphRequest: void a(com.facebook.ak,java.net.HttpURLConnection)> --> $r7 = <com.facebook.HttpMethod: com.facebook.HttpMethod POST>
+<com.facebook.GraphRequest: void a(com.facebook.ak,java.net.HttpURLConnection)> --> if $r4 != $r7 goto $z1 = 0
+<com.facebook.GraphRequest: void a(com.facebook.ak,java.net.HttpURLConnection)> --> $z1 = 1
+<com.facebook.GraphRequest: void a(com.facebook.ak,java.net.HttpURLConnection)> --> if $z1 != 0 goto virtualinvoke $r1.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+<com.facebook.GraphRequest: void a(com.facebook.ak,java.net.HttpURLConnection)> --> virtualinvoke $r1.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+--------------------------------------------------------
+

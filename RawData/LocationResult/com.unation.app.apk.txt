@@ -1,0 +1,21 @@
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+Component=> com.unation.app.activity.filter.LocationActivity
+ComponentColor=> GREEN
+com.unation.app.fragment.discover.DiscoverFragment
+android.util.Log
+android.location.LocationManager
+com.unation.app.util.GPSTracker
+com.unation.app.util.GPSTracker
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+Component=> com.unation.app.activity.filter.LocationActivity
+ComponentColor=> GREEN
+android.util.Log
+android.location.LocationManager
+com.unation.app.util.GPSTracker
+Category: LEGIT
+-----------------------------------------------------------------
+com.unation.app.apk: 1146960

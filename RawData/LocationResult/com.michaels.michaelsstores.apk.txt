@@ -1,0 +1,133 @@
+Source=> $r10 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LOCATION", r6)
+Component=> com.gpshopper.core.storelocator.slutils.QuickLocationService
+ComponentColor=> GREEN
+android.util.Log
+com.gpshopper.core.storelocator.slutils.MyLocation
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r0, $r1)
+Component=> com.gpshopper.services.QuickLocationService
+ComponentColor=> RED
+com.gpshopper.core.utils.AppLog
+android.util.Log
+com.gpshopper.utils.MyLocation
+com.gpshopper.core.utils.AppLog
+android.location.LocationManager
+Category: com.gpshopper.utils.MyLocation-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> virtualinvoke r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("address", $r5)
+Component=> com.gpshopper.services.QuickLocationService
+ComponentColor=> RED
+com.gpshopper.utils.MyLocation
+com.gpshopper.utils.MyLocation
+android.os.Handler
+com.gpshopper.services.QuickLocationService
+android.os.Bundle
+com.gpshopper.utils.MyLocation
+com.gpshopper.utils.MyLocation$1
+android.location.LocationManager
+Category: com.gpshopper.utils.MyLocation-*-com.gpshopper.utils.MyLocation-*-com.gpshopper.services.QuickLocationService-*-com.gpshopper.utils.MyLocation-*-com.gpshopper.utils.MyLocation$1-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("latitude", $r3)
+Component=> com.gpshopper.core.storelocator.slutils.QuickLocationService
+ComponentColor=> GREEN
+android.os.Bundle
+com.gpshopper.core.storelocator.slutils.MyLocation
+com.gpshopper.core.storelocator.slutils.MyLocation$1
+com.gpshopper.core.storelocator.slutils.MyLocation
+com.gpshopper.core.storelocator.slutils.MyLocation
+com.gpshopper.core.storelocator.slutils.QuickLocationService
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("longitude", $r3)
+Component=> com.gpshopper.services.QuickLocationService
+ComponentColor=> RED
+com.gpshopper.utils.MyLocation
+android.os.Bundle
+com.gpshopper.utils.MyLocation
+android.os.Handler
+com.gpshopper.services.QuickLocationService
+com.gpshopper.utils.MyLocation
+com.gpshopper.utils.MyLocation$1
+android.location.LocationManager
+Category: com.gpshopper.utils.MyLocation-*-com.gpshopper.utils.MyLocation-*-com.gpshopper.services.QuickLocationService-*-com.gpshopper.utils.MyLocation-*-com.gpshopper.utils.MyLocation$1-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("PREF_CURRENT_LOC", $r4)
+Component=> com.gpshopper.core.geofence.LocationChangedService
+ComponentColor=> GREEN
+android.location.Location
+android.content.SharedPreferences$Editor
+com.gpshopper.core.geofence.GeofenceManager
+com.gpshopper.core.geofence.GeofenceManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("latitude", $r3)
+Component=> com.gpshopper.services.QuickLocationService
+ComponentColor=> RED
+com.gpshopper.utils.MyLocation
+android.os.Bundle
+com.gpshopper.utils.MyLocation
+android.os.Handler
+com.gpshopper.services.QuickLocationService
+com.gpshopper.utils.MyLocation
+com.gpshopper.utils.MyLocation$1
+android.location.LocationManager
+Category: com.gpshopper.utils.MyLocation-*-com.gpshopper.utils.MyLocation-*-com.gpshopper.services.QuickLocationService-*-com.gpshopper.utils.MyLocation-*-com.gpshopper.utils.MyLocation$1-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("PREF_CURRENT_LOC", $r4)
+Component=> com.gpshopper.core.geofence.LocationChangedService
+ComponentColor=> GREEN
+android.content.SharedPreferences$Editor
+com.gpshopper.core.geofence.GeofenceManager
+com.gpshopper.core.geofence.GeofenceManager
+android.location.Location
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> virtualinvoke r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("address", $r5)
+Component=> com.gpshopper.core.storelocator.slutils.QuickLocationService
+ComponentColor=> GREEN
+com.gpshopper.core.storelocator.slutils.MyLocation
+com.gpshopper.core.storelocator.slutils.MyLocation$1
+android.os.Bundle
+com.gpshopper.core.storelocator.slutils.MyLocation
+com.gpshopper.core.storelocator.slutils.MyLocation
+com.gpshopper.core.storelocator.slutils.QuickLocationService
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r0, $r7)
+Component=> com.gpshopper.services.QuickLocationService
+ComponentColor=> RED
+com.gpshopper.core.utils.AppLog
+android.util.Log
+com.gpshopper.utils.MyLocation
+com.gpshopper.core.utils.AppLog
+android.location.LocationManager
+Category: com.gpshopper.utils.MyLocation-*-
+-----------------------------------------------------------------
+Source=> $r10 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("longitude", $r3)
+Component=> com.gpshopper.core.storelocator.slutils.QuickLocationService
+ComponentColor=> GREEN
+android.os.Bundle
+com.gpshopper.core.storelocator.slutils.MyLocation
+com.gpshopper.core.storelocator.slutils.MyLocation$1
+com.gpshopper.core.storelocator.slutils.MyLocation
+com.gpshopper.core.storelocator.slutils.MyLocation
+com.gpshopper.core.storelocator.slutils.QuickLocationService
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+com.michaels.michaelsstores.apk: 1075907

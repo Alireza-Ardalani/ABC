@@ -1,0 +1,31 @@
+Source=> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r3)
+Component=> com.tencent.connect.common.AssistActivity
+ComponentColor=> RED
+com.tencent.open.utils.i
+android.location.Location
+com.tencent.open.b.g$2
+android.os.BaseBundle
+Category: com.tencent.open.utils.i-*-com.tencent.open.b.g$2-*-
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r3)
+Component=> com.tencent.connect.common.AssistActivity
+ComponentColor=> RED
+com.tencent.open.utils.i
+com.tencent.open.b.g$2
+android.location.LocationManager
+android.os.BaseBundle
+Category: com.tencent.open.utils.i-*-com.tencent.open.b.g$2-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r3)
+Component=> com.tencent.connect.common.AssistActivity
+ComponentColor=> RED
+android.location.Location
+com.tencent.open.utils.i
+com.tencent.open.b.g$2
+android.os.BaseBundle
+Category: com.tencent.open.utils.i-*-com.tencent.open.b.g$2-*-
+-----------------------------------------------------------------
+cc.pacer.androidapp.apk: 1606053

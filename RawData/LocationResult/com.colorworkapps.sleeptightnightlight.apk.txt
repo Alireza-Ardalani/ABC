@@ -1,0 +1,1025 @@
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.threehourweather.WeatherHttpClient
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.AdLocation
+android.location.LocationManager
+android.util.Log
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.LogcatLogger
+Category: com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.AdLocation-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.LogcatLogger-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+android.util.Log
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.AdLocation
+android.location.LocationManager
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.LogcatLogger
+com.amazon.device.ads.MobileAdsLogger
+Category: com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.AdLocation-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.LogcatLogger-*-com.amazon.device.ads.MobileAdsLogger-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void connect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.AdLocation
+android.location.LocationManager
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+android.util.Log
+com.amazon.device.ads.LogcatLogger
+Category: com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.AdLocation-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.LogcatLogger-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.LogcatLogger
+com.amazon.device.ads.AdLocation
+android.util.Log
+android.location.LocationManager
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+Category: com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.LogcatLogger-*-com.amazon.device.ads.AdLocation-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+java.net.URL
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r13 = virtualinvoke $r12.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r13 = virtualinvoke $r12.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void connect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+java.net.URLConnection
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+java.net.URL
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r13 = virtualinvoke $r12.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void connect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r13 = virtualinvoke $r12.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r13 = virtualinvoke $r12.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void connect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+java.net.URL
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void connect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r8.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URL
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r8.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URL
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+java.net.URLConnection
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void connect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+java.net.HttpURLConnection
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+java.net.URLConnection
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void connect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r13 = virtualinvoke $r12.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+java.net.URLConnection
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void connect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+java.net.URL
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.amazon.device.ads.AdActivity
+ComponentColor=> RED
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.LogcatLogger
+com.amazon.device.ads.AdLocation
+android.location.LocationManager
+android.util.Log
+com.amazon.device.ads.MobileAdsLogger
+com.amazon.device.ads.MobileAdsLogger
+Category: com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.LogcatLogger-*-com.amazon.device.ads.AdLocation-*-com.amazon.device.ads.MobileAdsLogger-*-com.amazon.device.ads.MobileAdsLogger-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r13 = virtualinvoke $r12.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r8.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URL
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.threehourweather.WeatherHttpClient
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.HttpURLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke r6.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.HttpURLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r8.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URL
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+java.net.HttpURLConnection
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r12.<java.net.HttpURLConnection: void setDoInput(boolean)>(1)
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONForecastTask
+com.colorworkapps.threehourweather.ForecastHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+java.net.URLConnection
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.ForecastHttpClient-*-
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r13 = virtualinvoke $r12.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.colorworkapps.sleeptightnightlight.WeatherMain
+ComponentColor=> GREEN
+com.colorworkapps.threehourweather.MyLocation$GetLastLocation
+com.colorworkapps.sleeptightnightlight.MainActivity
+com.colorworkapps.threehourweather.WeatherHttpClient
+android.location.LocationManager
+com.colorworkapps.sleeptightnightlight.MainActivity$6
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+java.net.URLConnection
+com.colorworkapps.sleeptightnightlight.MainActivity$JSONWeatherTask
+Category: com.colorworkapps.threehourweather.MyLocation$GetLastLocation-*-com.colorworkapps.threehourweather.WeatherHttpClient-*-
+-----------------------------------------------------------------
+com.colorworkapps.sleeptightnightlight.apk: 1054212

@@ -1,0 +1,42 @@
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r7 = virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, $r6)
+Component=> com.scripps.android.stormshield.ui.onboarding.onboarding.OnboardingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("pref_is_lightning_alerts_enabled", $z0)
+Component=> com.scripps.android.stormshield.ui.onboarding.onboarding.OnboardingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r11 = virtualinvoke $r9.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, $r10)
+Component=> com.scripps.android.stormshield.ui.onboarding.onboarding.OnboardingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r17 = virtualinvoke $r15.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r2, $r16)
+Component=> com.scripps.android.stormshield.ui.onboarding.onboarding.OnboardingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r0.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("arg_sku", "lightning_alerts_subscription")
+Component=> com.scripps.android.stormshield.ui.onboarding.onboarding.OnboardingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r6.<android.database.sqlite.SQLiteStatement: void execute()>()
+Component=> com.scripps.android.stormshield.ui.onboarding.onboarding.OnboardingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r7 = virtualinvoke $r4.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r5, $r6)
+Component=> com.scripps.android.stormshield.ui.onboarding.onboarding.OnboardingActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

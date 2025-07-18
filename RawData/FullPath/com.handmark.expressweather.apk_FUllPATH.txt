@@ -1,0 +1,35 @@
+<com.onelouder.adlib.AdsManager: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.onelouder.adlib.AdsManager: android.location.Location getLocation()> --> if $r4 == null goto $z0 = specialinvoke r0.<com.onelouder.adlib.AdsManager: boolean isNetworkAvailable(android.location.LocationManager)>($r3)
+<com.onelouder.adlib.AdsManager$5: void onLocationChanged(android.location.Location)> --> r0 := @this: com.onelouder.adlib.AdsManager$5
+<com.onelouder.adlib.AdsManager$5: void onLocationChanged(android.location.Location)> --> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_longitude", $f0)
+--------------------------------------------------------
+
+<com.handmark.expressweather.data.MyLocation: android.location.Location getLastKnownLocation(android.content.Context)> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.handmark.expressweather.data.MyLocation: android.location.Location getLastKnownLocation(android.content.Context)> --> if $r2 != null goto (branch)
+<com.handmark.expressweather.data.MyLocation: android.location.Location getLastKnownLocation(android.content.Context)> --> if $r4 != null goto $l0 = virtualinvoke $r2.<android.location.Location: long getTime()>()
+<com.handmark.debug.Diagnostics: void v(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.handmark.debug.Diagnostics: void v(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.onelouder.adlib.AdsManager$5: void onLocationChanged(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.onelouder.adlib.AdsManager$5: void onLocationChanged(android.location.Location)> --> $f0 = (float) $d0
+<com.onelouder.adlib.AdsManager$5: void onLocationChanged(android.location.Location)> --> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_longitude", $f0)
+--------------------------------------------------------
+
+<com.handmark.expressweather.data.MyLocation: android.location.Location getLastKnownLocation(android.content.Context)> --> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.handmark.expressweather.data.MyLocation: android.location.Location getLastKnownLocation(android.content.Context)> --> if $r2 != null goto (branch)
+<com.handmark.debug.Diagnostics: void v(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.handmark.debug.Diagnostics: void v(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.onelouder.adlib.AdsManager$5: void onLocationChanged(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.onelouder.adlib.AdsManager$5: void onLocationChanged(android.location.Location)> --> $f0 = (float) $d0
+<com.onelouder.adlib.AdsManager$5: void onLocationChanged(android.location.Location)> --> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_latitude", $f0)
+--------------------------------------------------------
+
+<com.onelouder.adlib.AdsManager: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.onelouder.adlib.AdsManager: android.location.Location getLocation()> --> if $r4 == null goto $z0 = specialinvoke r0.<com.onelouder.adlib.AdsManager: boolean isNetworkAvailable(android.location.LocationManager)>($r3)
+<com.onelouder.adlib.AdsManager$5: void onLocationChanged(android.location.Location)> --> r0 := @this: com.onelouder.adlib.AdsManager$5
+<com.onelouder.adlib.AdsManager$5: void onLocationChanged(android.location.Location)> --> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("location_latitude", $f0)
+--------------------------------------------------------
+

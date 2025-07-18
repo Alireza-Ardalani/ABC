@@ -1,0 +1,320 @@
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d7 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = $d5 - $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d11 * d12
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d14 - d15
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d14 cmpg d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 >= 0 goto d8 = d8 * d13
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Segment Control", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d5 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = $d5 cmpl $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $b0 != 0 goto d8 = $d2 - $d0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Segment Control", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d6 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto virtualinvoke r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void ghostNear(android.location.Location,com.bravetheskies.ghostracer.shared.ghost.Ghost)>($r2, r6)
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: int[] GetTimes(android.content.Context,int)> --> r0 := @this: com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: int[] GetTimes(android.content.Context,int)> --> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d4 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("GhostManager", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d7 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = $d5 - $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d11 * d12
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d14 - d15
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d14 cmpg d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 >= 0 goto d8 = d8 * d13
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("GhostManager", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d5 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = $d5 cmpl $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $b0 != 0 goto d8 = $d2 - $d0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("GhostManager", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d6 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("GhostManager", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d7 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = $d5 - $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d11 * d12
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d14 - d15
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d14 cmpg d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 >= 0 goto d8 = d8 * d13
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto virtualinvoke r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void ghostNear(android.location.Location,com.bravetheskies.ghostracer.shared.ghost.Ghost)>($r2, r6)
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: com.google.android.gms.maps.model.LatLng[] GetRoute(android.content.Context,int)> --> r0 := @this: com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: com.google.android.gms.maps.model.LatLng[] GetRoute(android.content.Context,int)> --> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d5 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = $d5 cmpl $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $b0 != 0 goto d8 = $d2 - $d0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Segment Control", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d7 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = $d5 - $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d11 * d12
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d14 - d15
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d14 cmpg d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 >= 0 goto d8 = d8 * d13
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Ghost control ", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d4 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Ghost control ", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d7 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = $d5 - $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d11 * d12
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d14 - d15
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d14 cmpg d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 >= 0 goto d8 = d8 * d13
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto virtualinvoke r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void ghostNear(android.location.Location,com.bravetheskies.ghostracer.shared.ghost.Ghost)>($r2, r6)
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: int[] GetTimes(android.content.Context,int)> --> r0 := @this: com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: int[] GetTimes(android.content.Context,int)> --> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d4 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto virtualinvoke r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void ghostNear(android.location.Location,com.bravetheskies.ghostracer.shared.ghost.Ghost)>($r2, r6)
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: int[] GetTimes(android.content.Context,int)> --> r0 := @this: com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: int[] GetTimes(android.content.Context,int)> --> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d6 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Segment Control", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d6 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Segment Control", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d4 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto virtualinvoke r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void ghostNear(android.location.Location,com.bravetheskies.ghostracer.shared.ghost.Ghost)>($r2, r6)
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: com.google.android.gms.maps.model.LatLng[] GetRoute(android.content.Context,int)> --> r0 := @this: com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: com.google.android.gms.maps.model.LatLng[] GetRoute(android.content.Context,int)> --> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d5 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = $d5 cmpl $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $b0 != 0 goto d8 = $d2 - $d0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Ghost control ", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d5 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = $d5 cmpl $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $b0 != 0 goto d8 = $d2 - $d0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto virtualinvoke r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void ghostNear(android.location.Location,com.bravetheskies.ghostracer.shared.ghost.Ghost)>($r2, r6)
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: com.google.android.gms.maps.model.LatLng[] GetRoute(android.content.Context,int)> --> r0 := @this: com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: com.google.android.gms.maps.model.LatLng[] GetRoute(android.content.Context,int)> --> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d4 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Segment Control", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d6 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Ghost control ", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d5 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = $d5 cmpl $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $b0 != 0 goto d8 = $d2 - $d0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto virtualinvoke r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void ghostNear(android.location.Location,com.bravetheskies.ghostracer.shared.ghost.Ghost)>($r2, r6)
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: int[] GetTimes(android.content.Context,int)> --> r0 := @this: com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: int[] GetTimes(android.content.Context,int)> --> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d7 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = $d5 - $d7
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d11 * d12
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d14 = d14 - d15
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d14 cmpg d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 >= 0 goto d8 = d8 * d13
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Segment Control", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d4 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto r1 = r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: com.bravetheskies.ghostracer.shared.RecordingService mService>
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Segment Control", r14)
+--------------------------------------------------------
+
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $d6 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $d0 := @parameter0: double
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = $d4 - $d6
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d10 = d9 * d10
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> d11 = d10 - d11
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $b0 = d11 cmpl 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> $i1 = (int) $b0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)> --> if $i1 <= 0 goto $b0 = d11 cmpg 0.0
+<com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])> --> $z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean linesIntersect(double,double,double,double,double,double,double,double)>($d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> z0 = staticinvoke <com.bravetheskies.ghostracer.shared.geographic.LineTest: boolean crossLine(android.location.Location,android.location.Location,com.google.android.gms.maps.model.LatLng[])>($r3, $r2, r8)
+<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void NewLocation()> --> if z0 == 0 goto virtualinvoke r0.<com.bravetheskies.ghostracer.shared.ghost.GhostManager: void ghostNear(android.location.Location,com.bravetheskies.ghostracer.shared.ghost.Ghost)>($r2, r6)
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: com.google.android.gms.maps.model.LatLng[] GetRoute(android.content.Context,int)> --> r0 := @this: com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper
+<com.bravetheskies.ghostracer.shared.database.GhostsDatabaseHelper: com.google.android.gms.maps.model.LatLng[] GetRoute(android.content.Context,int)> --> $r4 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+--------------------------------------------------------
+

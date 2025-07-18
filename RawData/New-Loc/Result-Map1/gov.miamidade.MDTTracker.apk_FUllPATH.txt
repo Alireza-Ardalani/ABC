@@ -1,0 +1,854 @@
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataTrainRouteMap()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataTrainRouteMap()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforTrainRouteMap(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforTrainRouteMap(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("TrainRouteMap.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataSalesOutlets()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataSalesOutlets()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforSalesOutlets(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforSalesOutlets(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("SalesOutlets.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataMoverRouteMap()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataMoverRouteMap()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforMoverRouteMap(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforMoverRouteMap(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("MoverRouteMap.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRoutes()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRoutes()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRoutes(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRoutes(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("BusRoutes.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataPointsOfInterest()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataPointsOfInterest()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforPointsOfInterest(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforPointsOfInterest(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("PointsOfInterest.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusParkRide()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusParkRide()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusParkRide(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusParkRide(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("BusParkRide.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataFeedback()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataFeedback()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforFeedback(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforFeedback(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("Feedback.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataHurricaneEvacuationPoints()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataHurricaneEvacuationPoints()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforHurricaneEvacuationPoints(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforHurricaneEvacuationPoints(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("HurricaneEvacuationPoints.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataTrainStation()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataTrainStation()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforTrainStations(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforTrainStations(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("TrainStations.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRouteService()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRouteService()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRouteService(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRouteService(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("BusRouteService.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> r0.<gov.miamidade.MDTTracker.MainActivity$1: gov.miamidade.MDTTracker.MainActivity this$0> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.LocationListener locListener> = $r12
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataPointsOfInterest()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataPointsOfInterest()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforPointsOfInterest(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforPointsOfInterest(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("PointsOfInterest.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> if $r4 == null goto $r2 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.LocationManager locManager>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Long", $r5)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onPause()> --> return
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onPause()>()
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> if $r4 == null goto $r2 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.LocationManager locManager>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Long", $r5)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataHurricaneCenters()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataHurricaneCenters()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforHurricaneCenters(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforHurricaneCenters(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("HurricaneCenters.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataServiceUpdate()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataServiceUpdate()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforServiceUpdates(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforServiceUpdates(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("ServiceUpdates.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataFacilities()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataFacilities()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforFacilities(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforFacilities(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("Facilities.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataNavigation()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataNavigation()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String writeUsingXMLSerializer(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String writeUsingXMLSerializer(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("Navigation.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataAdditionalInfo()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataAdditionalInfo()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforAdditionalInfo(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforAdditionalInfo(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("AdditionalInfo.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataAdditionalInfo()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataAdditionalInfo()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforAdditionalInfo(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforAdditionalInfo(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("AdditionalInfo.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRoutes()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRoutes()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRoutes(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRoutes(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("BusRoutes.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataServiceUpdate()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataServiceUpdate()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforServiceUpdates(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforServiceUpdates(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("ServiceUpdates.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataTrainRouteMap()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataTrainRouteMap()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforTrainRouteMap(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforTrainRouteMap(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("TrainRouteMap.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> if $r4 == null goto $r2 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.LocationManager locManager>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Long", $r5)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataMoverStation()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataMoverStation()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforMoverStations(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforMoverStations(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("MoverStations.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRouteDirections()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRouteDirections()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRouteDirections(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRouteDirections(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("BusRouteDirections.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.LocationListener locListener> = $r12
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> r0.<gov.miamidade.MDTTracker.MainActivity$1: gov.miamidade.MDTTracker.MainActivity this$0> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusParkRide()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusParkRide()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusParkRide(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusParkRide(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("BusParkRide.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataFacilities()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataFacilities()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforFacilities(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforFacilities(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("Facilities.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataNavigation()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataNavigation()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String writeUsingXMLSerializer(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String writeUsingXMLSerializer(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("Navigation.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> if $r4 == null goto $r2 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.LocationManager locManager>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Lat", $r5)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataRiderAlerts()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataRiderAlerts()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforRiderAlerts(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforRiderAlerts(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("RiderAlerts.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> if $r4 == null goto $r2 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.LocationManager locManager>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Lat", $r5)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRouteService()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRouteService()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRouteService(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRouteService(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("BusRouteService.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataTrainStation()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataTrainStation()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforTrainStations(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforTrainStations(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("TrainStations.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> if $r4 == null goto $r2 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.LocationManager locManager>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Lat", $r5)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> if $r4 == null goto $r2 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.LocationManager locManager>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Long", $r5)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataFeedback()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataFeedback()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforFeedback(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforFeedback(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("Feedback.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataMoverStation()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataMoverStation()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforMoverStations(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforMoverStations(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("MoverStations.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRouteDirections()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataBusRouteDirections()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRouteDirections(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforBusRouteDirections(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("BusRouteDirections.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataHurricaneCenters()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataHurricaneCenters()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforHurricaneCenters(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforHurricaneCenters(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("HurricaneCenters.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onPause()> --> return
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onPause()>()
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> return
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> if $r4 == null goto $r2 = r0.<gov.miamidade.MDTTracker.MainActivity: android.location.LocationManager locManager>
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Lat", $r5)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataHurricaneEvacuationPoints()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataHurricaneEvacuationPoints()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforHurricaneEvacuationPoints(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforHurricaneEvacuationPoints(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("HurricaneEvacuationPoints.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataSalesOutlets()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataSalesOutlets()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforSalesOutlets(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforSalesOutlets(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("SalesOutlets.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onResume()> --> specialinvoke $r1.<gov.miamidade.MDTTracker.CheckFrequency: void <init>(android.content.Context)>(r0)
+<dummyMainClass: gov.miamidade.MDTTracker.MainActivity dummyMainMethod_gov_miamidade_MDTTracker_MainActivity(android.content.Intent)> --> virtualinvoke $r0.<gov.miamidade.MDTTracker.MainActivity: void onResume()>()
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataRiderAlerts()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataRiderAlerts()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforRiderAlerts(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforRiderAlerts(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("RiderAlerts.xml", 0)
+--------------------------------------------------------
+
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()> --> r0.<gov.miamidade.MDTTracker.MainActivity: android.location.Location location> = $r4
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke r0.<gov.miamidade.MDTTracker.MainActivity: void requestLocationUpdates()>()
+<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)> --> return
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r12.<gov.miamidade.MDTTracker.MainActivity$1: void <init>(gov.miamidade.MDTTracker.MainActivity)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> return
+<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)> --> r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context> = $r1
+<gov.miamidade.MDTTracker.MainActivity: void onCreate(android.os.Bundle)> --> specialinvoke $r8.<gov.miamidade.MDTTracker.WebServiceNavigation: void <init>(android.content.Context)>(r0)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataUpdatesList()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataMoverRouteMap()> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = specialinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.util.ArrayList parseXMLDataMoverRouteMap()>()
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforMoverRouteMap(java.util.ArrayList)> --> r0 := @this: gov.miamidade.MDTTracker.WebServiceNavigation
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r11 = virtualinvoke r0.<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.String createXMLforMoverRouteMap(java.util.ArrayList)>($r7)
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r4 = r0.<gov.miamidade.MDTTracker.WebServiceNavigation: android.content.Context context>
+<gov.miamidade.MDTTracker.WebServiceNavigation: java.lang.Void doInBackground(java.lang.Void[])> --> $r12 = virtualinvoke $r4.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("MoverRouteMap.xml", 0)
+--------------------------------------------------------
+

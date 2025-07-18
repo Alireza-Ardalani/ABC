@@ -1,0 +1,74 @@
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("DMC_LOG", $r4, $r1)
+Component=> com.mtracker.mea.gcm.GcmIntentService
+ComponentColor=> RED
+android.location.Location
+com.mtracker.mea.helper.MTrackerCommonHelper
+android.util.Log
+com.mtracker.mea.helper.MTrackerManagerHelper
+Category: com.mtracker.mea.helper.MTrackerCommonHelper-*-com.mtracker.mea.helper.MTrackerManagerHelper-*-
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("DMC_LOG", $r0, $r1)
+Component=> com.mtracker.mea.gcm.GcmIntentService
+ComponentColor=> RED
+com.mtracker.mea.helper.MTrackerCommonHelper
+android.location.LocationManager
+android.util.Log
+com.mtracker.mea.helper.MTrackerManagerHelper
+Category: com.mtracker.mea.helper.MTrackerCommonHelper-*-com.mtracker.mea.helper.MTrackerManagerHelper-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("DMC_LOG", $r0, $r1)
+Component=> com.mtracker.mea.gcm.GcmIntentService
+ComponentColor=> RED
+android.location.Location
+com.mtracker.mea.helper.MTrackerCommonHelper
+com.mtracker.mea.helper.MTrackerManagerHelper
+android.util.Log
+com.mtracker.mea.helper.MTrackerManagerHelper
+Category: com.mtracker.mea.helper.MTrackerCommonHelper-*-com.mtracker.mea.helper.MTrackerManagerHelper-*-com.mtracker.mea.helper.MTrackerManagerHelper-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("DMC_LOG", $r0, $r1)
+Component=> com.mtracker.mea.gcm.GcmIntentService
+ComponentColor=> RED
+android.location.Location
+com.mtracker.mea.helper.MTrackerCommonHelper
+java.lang.Throwable
+android.util.Log
+com.mtracker.mea.helper.MTrackerManagerHelper
+Category: com.mtracker.mea.helper.MTrackerCommonHelper-*-com.mtracker.mea.helper.MTrackerManagerHelper-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("DMC_LOG", $r4, $r1)
+Component=> com.mtracker.mea.gcm.GcmIntentService
+ComponentColor=> RED
+android.location.Location
+com.mtracker.mea.helper.MTrackerCommonHelper
+android.util.Log
+com.mtracker.mea.helper.MTrackerManagerHelper
+Category: com.mtracker.mea.helper.MTrackerCommonHelper-*-com.mtracker.mea.helper.MTrackerManagerHelper-*-
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("DMC_LOG", $r4, $r1)
+Component=> com.mtracker.mea.gcm.GcmIntentService
+ComponentColor=> RED
+com.mtracker.mea.helper.MTrackerCommonHelper
+android.location.LocationManager
+android.util.Log
+com.mtracker.mea.helper.MTrackerManagerHelper
+Category: com.mtracker.mea.helper.MTrackerCommonHelper-*-com.mtracker.mea.helper.MTrackerManagerHelper-*-
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("DMC_LOG", $r0, $r8)
+Component=> com.mtracker.mea.gcm.GcmIntentService
+ComponentColor=> RED
+org.apache.http.impl.client.AbstractHttpClient
+android.location.LocationManager
+android.util.Log
+com.mtracker.mea.helper.MTrackerHttpSendHelper
+com.mtracker.mea.helper.MTrackerManagerHelper
+Category: org.apache.http.impl.client.AbstractHttpClient-*-com.mtracker.mea.helper.MTrackerHttpSendHelper-*-com.mtracker.mea.helper.MTrackerManagerHelper-*-
+-----------------------------------------------------------------
+kr.co.station3.dabang.apk: 1128222

@@ -1,0 +1,7 @@
+<com.mi6tracker.library.internal.Utils: android.location.Location getLastKnownLocation(android.location.LocationManager)> --> $r1 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+<com.mi6tracker.library.MI6Tracker: void checkLastKnownLocation()> --> $r2 = staticinvoke <com.mi6tracker.library.internal.Utils: android.location.Location getLastKnownLocation(android.location.LocationManager)>($r1)
+<com.mi6tracker.library.MI6Tracker: void checkLastKnownLocation()> --> if $r2 != null goto $r4 = r0.<com.mi6tracker.library.MI6Tracker: com.mi6tracker.library.internal.Utils$Prefs prefs>
+<com.mi6tracker.library.internal.Utils$Prefs: void saveLocation(android.location.Location)> --> r0 := @this: com.mi6tracker.library.internal.Utils$Prefs
+<com.mi6tracker.library.internal.Utils$Prefs: void saveLocation(android.location.Location)> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("LAT_KEY", $l0)
+--------------------------------------------------------
+

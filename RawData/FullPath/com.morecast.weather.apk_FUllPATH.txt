@@ -1,0 +1,52 @@
+<com.ubimet.morecast.common.a.c: android.location.Location b()> --> $r5 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.ubimet.morecast.common.a.c: android.location.Location b()> --> if $r5 == null goto $z0 = virtualinvoke r0.<com.ubimet.morecast.common.a.c: boolean a(android.location.Location,android.location.Location)>($r5, $r2)
+<com.ubimet.morecast.common.w: void b(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.ubimet.morecast.common.w: void b(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.digitalsunray.advantage.x: android.location.Location u()> --> $r10 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+<com.digitalsunray.advantage.x: android.location.Location u()> --> $r12 := @caughtexception
+<com.digitalsunray.advantage.f.b: void b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digitalsunray.advantage.f.b: void a(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digitalsunray.advantage.f.b: void a(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ADvantage", $r1)
+--------------------------------------------------------
+
+<com.ubimet.morecast.common.a.c: android.location.Location b()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.ubimet.morecast.common.a.c: android.location.Location b()> --> if $r2 == null goto $r1 = r0.<com.ubimet.morecast.common.a.c: android.location.LocationManager b>
+<com.ubimet.morecast.common.w: void b(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.ubimet.morecast.common.w: void b(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.ubimet.morecast.common.a.c: android.location.Location b()> --> $d0 = virtualinvoke $r5.<android.location.Location: double getLongitude()>()
+<com.ubimet.morecast.common.a.c: boolean a(android.location.Location,android.location.Location)> --> r0 := @this: com.ubimet.morecast.common.a.c
+<com.ubimet.morecast.common.a.c: boolean a(android.location.Location,android.location.Location)> --> if $r1 != null goto $l0 = virtualinvoke $r1.<android.location.Location: long getTime()>()
+<com.ubimet.morecast.common.a.c: android.location.Location b()> --> $z0 = virtualinvoke r0.<com.ubimet.morecast.common.a.c: boolean a(android.location.Location,android.location.Location)>($r5, $r2)
+<com.ubimet.morecast.common.a.c: android.location.Location b()> --> if $z0 == 0 goto staticinvoke <com.ubimet.morecast.common.w: void b(java.lang.String,java.lang.String)>("LocationService", "USING LOCATIONPROVIDER GPS BECAUSE IT WAS BETTER")
+<com.ubimet.morecast.common.w: void b(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.ubimet.morecast.common.w: void b(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.digitalsunray.advantage.g: void b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+<com.digitalsunray.advantage.g: void b()> --> $r11 := @caughtexception
+<com.digitalsunray.advantage.f.b: void e(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digitalsunray.advantage.f.b: void d(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digitalsunray.advantage.f.b: void d(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ADvantage", $r1)
+--------------------------------------------------------
+
+<com.digitalsunray.advantage.g: void b()> --> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+<com.digitalsunray.advantage.g: void b()> --> $r11 := @caughtexception
+<com.digitalsunray.advantage.f.b: void e(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digitalsunray.advantage.f.b: void d(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.digitalsunray.advantage.f.b: void d(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ADvantage", $r1)
+--------------------------------------------------------
+
+<com.ubimet.morecast.common.a.c: android.location.Location b()> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.ubimet.morecast.common.a.c: android.location.Location b()> --> $r1 = r0.<com.ubimet.morecast.common.a.c: android.location.LocationManager b>
+<com.ubimet.morecast.common.a.c: boolean a(android.location.Location,android.location.Location)> --> r0 := @this: com.ubimet.morecast.common.a.c
+<com.ubimet.morecast.common.a.c: boolean a(android.location.Location,android.location.Location)> --> if $r2 != null goto (branch)
+<com.ubimet.morecast.common.a.c: android.location.Location b()> --> $z0 = virtualinvoke r0.<com.ubimet.morecast.common.a.c: boolean a(android.location.Location,android.location.Location)>($r5, $r2)
+<com.ubimet.morecast.common.a.c: android.location.Location b()> --> if $z0 == 0 goto staticinvoke <com.ubimet.morecast.common.w: void b(java.lang.String,java.lang.String)>("LocationService", "USING LOCATIONPROVIDER GPS BECAUSE IT WAS BETTER")
+<com.ubimet.morecast.common.w: void b(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.ubimet.morecast.common.w: void b(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+

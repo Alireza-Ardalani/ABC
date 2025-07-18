@@ -1,0 +1,174 @@
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromBestProvider: getting location from best provider")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromNetwork: Permission ACCESS_FINE_LOCATION *and/or* ACCESS_FINE_LOCATION are not granted. Please request the permissions")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromLocationManager: Location is unavailable")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromLocationManager: Getting location from location manager")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GPSTracker", $r8)
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GPS Lattitude ", $r8)
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GPS Network addresses", $r8)
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromLocationManager: Location is unavailable")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromGPS: getting location from gps")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromBestProvider: getting location from best provider")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GPS Longitude ", $r8)
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromPlayServices: Getting Location from play services")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromNetwork: Permission ACCESS_FINE_LOCATION *and/or* ACCESS_FINE_LOCATION are not granted. Please request the permissions")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromNetwork: Permission ACCESS_FINE_LOCATION *and/or* ACCESS_FINE_LOCATION are not granted. Please request the permissions")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromNetwork: Permission ACCESS_FINE_LOCATION *and/or* ACCESS_FINE_LOCATION are not granted. Please request the permissions")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromNetwork: Permission ACCESS_FINE_LOCATION *and/or* ACCESS_FINE_LOCATION are not granted. Please request the permissions")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromLocationManager: Getting location from location manager")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GPSTracker", $r8)
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromNetwork: Permission ACCESS_FINE_LOCATION *and/or* ACCESS_FINE_LOCATION are not granted. Please request the permissions")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromNetwork: getting location from network")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GPS Network addresses", $r8)
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromLocationManager: Location is unavailable")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromNetwork: getting location from network")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromPlayServices: Getting Location from play services")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromNetwork: Permission ACCESS_FINE_LOCATION *and/or* ACCESS_FINE_LOCATION are not granted. Please request the permissions")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromGPS: getting location from gps")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GPS Lattitude ", $r8)
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GPS Longitude ", $r8)
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LocationFetcher", "getLocationFromNetwork: Permission ACCESS_FINE_LOCATION *and/or* ACCESS_FINE_LOCATION are not granted. Please request the permissions")
+Component=> com.navigation.map.GpsRouteFinder.StreetViewNew
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

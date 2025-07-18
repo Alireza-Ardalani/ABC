@@ -1,0 +1,152 @@
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.FanLog: void e(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.fanatics.android_fanatics_sdk3.FanLog: void e(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.FanLog: void w(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.fanatics.android_fanatics_sdk3.FanLog: void w(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3)
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r4 = staticinvoke <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.google.android.gms.maps.model.LatLng getLatLongBasedOnTimezone()>()
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)> --> r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.google.android.gms.maps.model.LatLng currentUserLatLng> = $r1
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> virtualinvoke $r10.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)>($r4)
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> return $r0
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> $r0 = <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager instance>
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r10 = staticinvoke <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()>()
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> $r0 = <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager instance>
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r10 = staticinvoke <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()>()
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> $r1 = r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.google.android.gms.maps.model.LatLng currentUserLatLng>
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> if $r1 != null goto $r3 = r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List teamList>
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> $r2 = new java.util.ArrayList
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r11 = virtualinvoke $r10.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()>()
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> if $i0 <= 0 goto $z0 = 0
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r12 = newarray (android.view.View)[1]
+<com.fanatics.android_fanatics_sdk3.adapters.BaseFanaticsAdapter: void clearAndAddAll(java.util.List)> --> r0 := @this: com.fanatics.android_fanatics_sdk3.adapters.BaseFanaticsAdapter
+<com.fanatics.android_fanatics_sdk3.utils.CollectionUtils: boolean isNullCollection(java.util.List)> --> $r0 := @parameter0: java.util.List
+<com.fanatics.android_fanatics_sdk3.utils.CollectionUtils: boolean isNullCollection(java.util.List)> --> if $r0 != null goto return 0
+<com.fanatics.android_fanatics_sdk3.FanLog: void v(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.fanatics.android_fanatics_sdk3.FanLog: void v(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3)
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.FanLog: void e(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.fanatics.android_fanatics_sdk3.FanLog: void e(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.FanLog: void w(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.fanatics.android_fanatics_sdk3.FanLog: void w(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r4 = $r16
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)> --> r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.google.android.gms.maps.model.LatLng currentUserLatLng> = $r1
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> virtualinvoke $r10.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)>($r4)
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> return $r0
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> $r0 = <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager instance>
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r10 = staticinvoke <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()>()
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> $r0 = <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager instance>
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r10 = staticinvoke <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()>()
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> $r1 = r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.google.android.gms.maps.model.LatLng currentUserLatLng>
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> if $r1 != null goto $r3 = r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List teamList>
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> $r2 = new java.util.ArrayList
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r11 = virtualinvoke $r10.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()>()
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> if $i0 <= 0 goto $z0 = 0
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r12 = newarray (android.view.View)[1]
+<com.fanatics.android_fanatics_sdk3.adapters.BaseFanaticsAdapter: void clearAndAddAll(java.util.List)> --> r0 := @this: com.fanatics.android_fanatics_sdk3.adapters.BaseFanaticsAdapter
+<com.fanatics.android_fanatics_sdk3.utils.CollectionUtils: boolean isNullCollection(java.util.List)> --> $r0 := @parameter0: java.util.List
+<com.fanatics.android_fanatics_sdk3.utils.CollectionUtils: boolean isNullCollection(java.util.List)> --> if $r0 != null goto return 0
+<com.fanatics.android_fanatics_sdk3.FanLog: void v(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.fanatics.android_fanatics_sdk3.FanLog: void v(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3)
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.FanLog: void w(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.fanatics.android_fanatics_sdk3.FanLog: void w(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r8 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3)
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByLocation(com.google.android.gms.maps.model.LatLng)> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.Map getTeamsByLongitudeFromJson()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.utils.JsonUtils: java.lang.String readJsonFromResource(int)> --> $i0 := @parameter0: int
+<com.fanatics.android_fanatics_sdk3.utils.JsonUtils: java.lang.String readJsonFromResource(int)> --> virtualinvoke $r11.<java.io.Writer: void write(char[],int,int)>($r5, 0, $i0)
+--------------------------------------------------------
+
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r4 = staticinvoke <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.google.android.gms.maps.model.LatLng getLatLongBasedOnTimezone()>()
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)> --> r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.google.android.gms.maps.model.LatLng currentUserLatLng> = $r1
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> virtualinvoke $r10.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)>($r4)
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> return $r0
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> $r0 = <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager instance>
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r10 = staticinvoke <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()>()
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> $r0 = <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager instance>
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r10 = staticinvoke <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()>()
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> $r1 = r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.google.android.gms.maps.model.LatLng currentUserLatLng>
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> if $r1 != null goto $r3 = r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List teamList>
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> $r2 = new java.util.ArrayList
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r11 = virtualinvoke $r10.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()>()
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> if $i0 <= 0 goto $z0 = 0
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r12 = newarray (android.view.View)[1]
+<com.fanatics.android_fanatics_sdk3.adapters.BaseFanaticsAdapter: void clearAndAddAll(java.util.List)> --> r0 := @this: com.fanatics.android_fanatics_sdk3.adapters.BaseFanaticsAdapter
+<com.fanatics.android_fanatics_sdk3.utils.CollectionUtils: boolean isNullCollection(java.util.List)> --> $r0 := @parameter0: java.util.List
+<com.fanatics.android_fanatics_sdk3.utils.CollectionUtils: boolean isNullCollection(java.util.List)> --> if $r0 != null goto return 0
+<com.fanatics.android_fanatics_sdk3.FanLog: void v(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.fanatics.android_fanatics_sdk3.FanLog: void v(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByLocation(com.google.android.gms.maps.model.LatLng)> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.Map getTeamsByLongitudeFromJson()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.utils.JsonUtils: java.lang.String readJsonFromResource(int)> --> $i0 := @parameter0: int
+<com.fanatics.android_fanatics_sdk3.utils.JsonUtils: java.lang.String readJsonFromResource(int)> --> virtualinvoke $r11.<java.io.Writer: void write(char[],int,int)>($r5, 0, $i0)
+--------------------------------------------------------
+
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.FanLog: void e(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.fanatics.android_fanatics_sdk3.FanLog: void e(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $d1 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r9 := @caughtexception
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r4 = staticinvoke <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.google.android.gms.maps.model.LatLng getLatLongBasedOnTimezone()>()
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)> --> r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.google.android.gms.maps.model.LatLng currentUserLatLng> = $r1
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> virtualinvoke $r10.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: void setUserLatLng(com.google.android.gms.maps.model.LatLng)>($r4)
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> return $r0
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> $r0 = <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager instance>
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r10 = staticinvoke <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()>()
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()> --> $r0 = <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager instance>
+<com.fanatics.android_fanatics_sdk3.controllers.hydrogen.activities.FindFavoritesActivity: void showLocalTeams()> --> $r10 = staticinvoke <com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager getInstance()>()
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> $r1 = r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: com.google.android.gms.maps.model.LatLng currentUserLatLng>
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByCurrentUserLocation()> --> if $r1 != null goto $r3 = r0.<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List teamList>
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.List getTeamsByLocation(com.google.android.gms.maps.model.LatLng)> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager: java.util.Map getTeamsByLongitudeFromJson()> --> r0 := @this: com.fanatics.android_fanatics_sdk3.managers.FindFavoritesDataManager
+<com.fanatics.android_fanatics_sdk3.utils.JsonUtils: java.lang.String readJsonFromResource(int)> --> $i0 := @parameter0: int
+<com.fanatics.android_fanatics_sdk3.utils.JsonUtils: java.lang.String readJsonFromResource(int)> --> virtualinvoke $r11.<java.io.Writer: void write(char[],int,int)>($r5, 0, $i0)
+--------------------------------------------------------
+

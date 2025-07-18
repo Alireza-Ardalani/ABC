@@ -1,0 +1,35 @@
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r2.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r0)
+Component=> com.helpshift.campaigns.services.NotificationService
+ComponentColor=> RED
+com.helpshift.model.AppInfoModel
+com.helpshift.util.ByteArrayUtil
+android.location.Location
+com.helpshift.campaigns.models.DeviceModel
+com.helpshift.campaigns.Campaigns
+com.helpshift.storage.KeyValueDbStorage
+java.io.ObjectOutputStream
+com.helpshift.util.LocationUtil
+com.helpshift.campaigns.models.DeviceModel
+com.helpshift.campaigns.models.PropertyValue
+com.helpshift.campaigns.controllers.DeviceController
+Category: com.helpshift.model.AppInfoModel-*-com.helpshift.util.ByteArrayUtil-*-com.helpshift.campaigns.models.DeviceModel-*-com.helpshift.campaigns.Campaigns-*-com.helpshift.storage.KeyValueDbStorage-*-com.helpshift.util.LocationUtil-*-com.helpshift.campaigns.models.DeviceModel-*-com.helpshift.campaigns.models.PropertyValue-*-com.helpshift.campaigns.controllers.DeviceController-*-
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r2.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r0)
+Component=> com.helpshift.campaigns.services.NotificationService
+ComponentColor=> RED
+com.helpshift.util.ByteArrayUtil
+com.helpshift.campaigns.models.DeviceModel
+com.helpshift.campaigns.Campaigns
+com.helpshift.storage.KeyValueDbStorage
+java.io.ObjectOutputStream
+com.helpshift.util.LocationUtil
+android.location.Location
+com.helpshift.campaigns.models.DeviceModel
+com.helpshift.model.AppInfoModel
+com.helpshift.campaigns.models.PropertyValue
+com.helpshift.campaigns.controllers.DeviceController
+Category: com.helpshift.util.ByteArrayUtil-*-com.helpshift.campaigns.models.DeviceModel-*-com.helpshift.campaigns.Campaigns-*-com.helpshift.storage.KeyValueDbStorage-*-com.helpshift.util.LocationUtil-*-com.helpshift.campaigns.models.DeviceModel-*-com.helpshift.model.AppInfoModel-*-com.helpshift.campaigns.models.PropertyValue-*-com.helpshift.campaigns.controllers.DeviceController-*-
+-----------------------------------------------------------------
+com.wombatapps.carbmanager.apk: 1281292

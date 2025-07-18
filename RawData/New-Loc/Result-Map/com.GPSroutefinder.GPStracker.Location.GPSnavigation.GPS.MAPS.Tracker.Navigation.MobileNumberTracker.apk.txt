@@ -1,0 +1,12 @@
+Source=> $d1 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r13.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("address", "Unable to get address for this lat-long.")
+Component=> com.GPSroutefinder.GPStracker.Location.GPSnavigation.GPS.MAPS.Tracker.Navigation.MobileNumberTracker.ShowActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> virtualinvoke r13.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("address", r6)
+Component=> com.GPSroutefinder.GPStracker.Location.GPSnavigation.GPS.MAPS.Tracker.Navigation.MobileNumberTracker.ShowActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

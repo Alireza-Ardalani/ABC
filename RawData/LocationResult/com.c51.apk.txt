@@ -1,0 +1,1189 @@
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.dl
+com.appsee.ed
+com.appsee.dl
+java.io.OutputStream
+android.location.LocationManager
+com.appsee.se
+com.appsee.ed
+com.appsee.cc
+Category: com.appsee.dl-*-com.appsee.ed-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.ed-*-com.appsee.cc-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.appsee.ej
+com.appsee.kn
+com.appsee.dl
+android.location.LocationManager
+com.appsee.se
+com.appsee.kn
+com.c51.location.TaskGps
+com.appsee.dl
+com.appsee.pe
+java.io.OutputStream
+com.c51.location.TaskGps
+com.appsee.ej
+com.c51.location.TaskWithTimeout
+Category: com.appsee.ej-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.pe-*-com.appsee.ej-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r7 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r7, "UTF-8")
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+com.appsee.se
+com.appsee.fj
+com.appsee.xh
+com.c51.location.TaskGps
+com.c51.location.TaskGeocode$GeocodeRunnable
+com.appsee.xh
+java.lang.Thread
+com.c51.location.TaskGeocode$GeocodeRunnable
+java.net.URLEncoder
+com.c51.service.ParcelableMap
+Category: com.appsee.se-*-com.appsee.fj-*-com.appsee.xh-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r9 = virtualinvoke $r7.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM offer WHERE batch_id = ? ORDER BY offer_order ASC", $r8)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+com.c51.database.DB_DataSource
+android.location.LocationManager
+com.c51.database.SQLiteHelperSingleton
+com.c51.database.SQLiteHelperSingleton
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.activity.BarcodeScanAndVerifyActivity$5$1
+com.c51.cache.Offers
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.database.SQLiteHelperSingleton
+com.c51.location.TaskGps
+com.c51.database.SQLiteHelperSingleton
+android.database.sqlite.SQLiteDatabase
+com.c51.location.TaskGps
+android.os.Handler
+com.c51.database.SQLiteHelperSingleton
+Category: com.appsee.kb-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM batch ORDER BY batch_id DESC", $r4)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+android.location.LocationManager
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.activity.BarcodeScanAndVerifyActivity$5$1
+com.c51.database.DB_DataSource
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.database.SQLiteHelperSingleton
+com.c51.location.TaskGps
+com.c51.cache.Batch
+android.database.sqlite.SQLiteDatabase
+com.c51.location.TaskGps
+com.c51.database.SQLiteHelperSingleton
+android.os.Handler
+com.c51.database.SQLiteHelperSingleton
+Category: com.appsee.kb-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r9 = virtualinvoke $r7.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM offer WHERE batch_id = ? ORDER BY offer_order ASC", $r8)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+com.c51.database.DB_DataSource
+android.location.LocationManager
+com.c51.database.SQLiteHelperSingleton
+com.c51.database.SQLiteHelperSingleton
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.activity.BarcodeScanAndVerifyActivity$5$1
+com.c51.cache.Offers
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.database.SQLiteHelperSingleton
+com.c51.location.TaskGps
+com.c51.database.SQLiteHelperSingleton
+android.database.sqlite.SQLiteDatabase
+android.os.Handler
+com.c51.database.SQLiteHelperSingleton
+Category: com.appsee.kb-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.location.TaskGps
+com.c51.activity.Walk3Activity
+android.location.LocationManager
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+android.util.Log
+com.c51.location.TaskWithTimeout
+com.c51.app.Analytics
+com.c51.app.Analytics
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r1, $i0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+com.appsee.se
+com.appsee.fj
+com.appsee.xh
+com.c51.activity.MainActivity$1
+android.content.SharedPreferences$Editor
+com.c51.location.TaskGps
+com.c51.app.Session
+com.c51.app.Preferences
+com.appsee.xh
+java.lang.Thread
+Category: com.appsee.se-*-com.appsee.fj-*-com.appsee.xh-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.appsee.ej
+com.appsee.kn
+com.appsee.dl
+android.location.LocationManager
+com.appsee.se
+com.appsee.kn
+com.c51.location.TaskGps
+com.appsee.dl
+com.appsee.pe
+java.io.OutputStream
+com.c51.location.TaskGps
+com.appsee.ej
+com.c51.location.TaskWithTimeout
+Category: com.appsee.ej-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.pe-*-com.appsee.ej-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String,java.lang.Throwable)>("GeoCodeRunnable", "Interrupted while running", r11)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+android.util.Log
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.c51.location.TaskGeocode$GeocodeRunnable
+android.location.LocationManager
+com.appsee.se
+com.appsee.xh
+com.appsee.fj
+com.appsee.xh
+java.lang.Thread
+com.c51.location.TaskGeocode$GeocodeRunnable
+Category: com.appsee.se-*-com.appsee.xh-*-com.appsee.fj-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r8.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>(r2, 0, $i0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.location.SupportedLocations
+com.c51.app.InternalStorage
+com.c51.location.SupportedLocations
+android.location.LocationManager
+com.c51.location.SupportedLocations
+com.c51.activity.Walk3Activity
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+com.c51.location.TaskGps
+java.io.ByteArrayOutputStream
+com.c51.app.InternalStorage
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+android.location.LocationManager
+com.c51.database.SQLiteHelperSingleton
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.activity.BarcodeScanAndVerifyActivity$5$1
+com.c51.cache.Offers
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.google.gson.Gson
+com.c51.location.TaskGps
+android.util.Log
+com.c51.location.TaskGps
+android.os.Handler
+Category: com.appsee.kb-*-com.google.gson.Gson-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r5, $r7)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+android.location.LocationManager
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.activity.BarcodeScanAndVerifyActivity$5$1
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.google.gson.Gson
+com.c51.location.TaskGps
+com.c51.cache.Batch
+android.util.Log
+com.c51.location.TaskGps
+com.c51.database.SQLiteHelperSingleton
+android.os.Handler
+Category: com.appsee.kb-*-com.google.gson.Gson-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.activity.Walk3Activity
+android.location.LocationManager
+android.util.Log
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+com.crashlytics.android.answers.CustomEvent
+io.fabric.sdk.android.DefaultLogger
+com.crashlytics.android.answers.AnswersEventValidator
+com.crashlytics.android.answers.AnswersEventValidator
+com.c51.app.Analytics
+com.c51.location.TaskGps
+com.google.android.gms.analytics.HitBuilders$EventBuilder
+com.c51.location.TaskWithTimeout
+com.c51.app.Analytics
+com.c51.app.Analytics
+Category: com.crashlytics.android.answers.CustomEvent-*-io.fabric.sdk.android.DefaultLogger-*-com.crashlytics.android.answers.AnswersEventValidator-*-com.crashlytics.android.answers.AnswersEventValidator-*-com.google.android.gms.analytics.HitBuilders$EventBuilder-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("com.appsee.Action.UploadMode", 1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.appsee.xh
+com.c51.location.TaskWithTimeout
+com.appsee.uc
+android.location.LocationManager
+com.appsee.se
+com.appsee.fj
+com.appsee.xh
+com.appsee.ye
+com.appsee.db
+com.c51.location.TaskGps
+com.appsee.db
+com.appsee.xh
+com.c51.location.TaskGps
+com.appsee.sd
+android.os.Bundle
+Category: com.appsee.xh-*-com.appsee.uc-*-com.appsee.se-*-com.appsee.fj-*-com.appsee.xh-*-com.appsee.ye-*-com.appsee.db-*-com.appsee.db-*-com.appsee.xh-*-com.appsee.sd-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for Network updates")
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.activity.Walk3Activity
+com.c51.location.TaskWithTimeout
+com.c51.location.TaskGps
+android.location.LocationManager
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$1
+com.c51.activity.Walk3Activity
+android.util.Log
+com.c51.location.TaskWithTimeout
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.dl
+com.appsee.ed
+com.appsee.dl
+java.io.OutputStream
+android.location.LocationManager
+com.appsee.se
+com.appsee.ed
+com.appsee.cc
+Category: com.appsee.dl-*-com.appsee.ed-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.ed-*-com.appsee.cc-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.activity.SubmitConfirmationActivity$1
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+com.appsee.se
+com.appsee.fj
+com.appsee.xh
+com.c51.app.Session
+com.c51.app.Preferences
+com.c51.location.TaskGps
+com.appsee.xh
+com.c51.location.TaskGps
+java.lang.Thread
+android.content.SharedPreferences$Editor
+Category: com.appsee.se-*-com.appsee.fj-*-com.appsee.xh-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Optimizely Logging", $r0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+com.optimizely.Optimizely$2
+android.location.LocationManager
+com.optimizely.Optimizely
+android.util.Log
+com.optimizely.Optimizely
+android.os.Handler
+Category: com.appsee.kb-*-com.optimizely.Optimizely$2-*-com.optimizely.Optimizely-*-com.optimizely.Optimizely-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r1, $i0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+com.appsee.se
+com.appsee.fj
+com.appsee.xh
+com.c51.activity.MainActivity$1
+android.content.SharedPreferences$Editor
+com.c51.location.TaskGps
+com.c51.app.Session
+com.c51.app.Preferences
+com.appsee.xh
+com.c51.location.TaskGps
+java.lang.Thread
+Category: com.appsee.se-*-com.appsee.fj-*-com.appsee.xh-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.dl
+com.appsee.ed
+com.appsee.dl
+java.io.OutputStream
+android.location.LocationManager
+com.appsee.se
+com.appsee.ed
+com.appsee.cc
+Category: com.appsee.dl-*-com.appsee.ed-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.ed-*-com.appsee.cc-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.dl
+com.appsee.ed
+com.appsee.dl
+java.io.OutputStream
+android.location.LocationManager
+com.appsee.se
+com.appsee.ed
+com.appsee.cc
+Category: com.appsee.dl-*-com.appsee.ed-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.ed-*-com.appsee.cc-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.location.TaskGps
+com.google.android.gms.analytics.HitBuilders$EventBuilder
+com.c51.activity.Walk3Activity
+android.location.LocationManager
+android.util.Log
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+com.c51.location.TaskWithTimeout
+com.c51.app.Analytics
+com.c51.app.Analytics
+Category: com.google.android.gms.analytics.HitBuilders$EventBuilder-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ADJUST_EVENT", $r7)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.activity.SubmitConfirmationActivity$1
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+com.appsee.se
+com.appsee.xh
+com.appsee.fj
+com.appsee.xh
+java.lang.Thread
+android.util.Log
+Category: com.appsee.se-*-com.appsee.xh-*-com.appsee.fj-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r6, $r8)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+android.location.LocationManager
+com.c51.database.SQLiteHelperSingleton
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.activity.BarcodeScanAndVerifyActivity$5$1
+com.c51.cache.Offers
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.google.gson.Gson
+com.c51.location.TaskGps
+android.util.Log
+android.os.Handler
+Category: com.appsee.kb-*-com.google.gson.Gson-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.dl
+com.appsee.ed
+com.appsee.dl
+java.io.OutputStream
+android.location.LocationManager
+com.appsee.se
+com.appsee.ed
+com.appsee.cc
+Category: com.appsee.dl-*-com.appsee.ed-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.ed-*-com.appsee.cc-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for Network updates")
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.activity.Walk3Activity
+com.c51.location.TaskWithTimeout
+com.c51.location.TaskGps
+android.location.LocationManager
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$1
+com.c51.activity.Walk3Activity
+android.util.Log
+com.c51.location.TaskWithTimeout
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT * FROM batch ORDER BY batch_id DESC", $r4)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+android.location.LocationManager
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.activity.BarcodeScanAndVerifyActivity$5$1
+com.c51.database.DB_DataSource
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.database.SQLiteHelperSingleton
+com.c51.location.TaskGps
+com.c51.cache.Batch
+android.database.sqlite.SQLiteDatabase
+com.c51.database.SQLiteHelperSingleton
+android.os.Handler
+com.c51.database.SQLiteHelperSingleton
+Category: com.appsee.kb-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.location.TaskGps
+com.c51.activity.Walk3Activity
+android.location.LocationManager
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+android.util.Log
+com.c51.location.TaskWithTimeout
+com.c51.app.Analytics
+com.c51.app.Analytics
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke r3.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+java.net.URL
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+com.appsee.se
+com.appsee.fj
+com.appsee.xh
+com.c51.location.TaskGps
+com.c51.location.TaskGeocode$GeocodeRunnable
+com.c51.service.HttpUrlConnectionClient
+com.appsee.xh
+com.c51.location.TaskGps
+java.lang.Thread
+com.c51.location.TaskGeocode$GeocodeRunnable
+Category: com.appsee.se-*-com.appsee.fj-*-com.appsee.xh-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r8.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>(r2, 0, $i0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.location.SupportedLocations
+com.c51.app.InternalStorage
+com.c51.location.TaskGps
+java.io.ByteArrayOutputStream
+com.c51.location.SupportedLocations
+android.location.LocationManager
+com.c51.location.SupportedLocations
+com.c51.app.InternalStorage
+com.c51.activity.Walk3Activity
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+com.c51.location.TaskWithTimeout
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("appsee", $r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.ed
+android.location.LocationManager
+com.appsee.se
+android.util.Log
+com.appsee.ed
+com.c51.location.TaskGps
+com.appsee.cc
+Category: com.appsee.ed-*-com.appsee.se-*-com.appsee.ed-*-com.appsee.cc-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.dl
+com.appsee.ed
+com.appsee.dl
+java.io.OutputStream
+android.location.LocationManager
+com.appsee.se
+com.appsee.ed
+com.appsee.cc
+Category: com.appsee.dl-*-com.appsee.ed-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.ed-*-com.appsee.cc-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r4)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.location.TaskGps
+com.google.android.gms.analytics.HitBuilders$EventBuilder
+com.c51.activity.Walk3Activity
+android.location.LocationManager
+android.util.Log
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+com.c51.location.TaskWithTimeout
+com.c51.app.Analytics
+com.c51.app.Analytics
+Category: com.google.android.gms.analytics.HitBuilders$EventBuilder-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.appsee.ej
+com.appsee.kn
+com.appsee.dl
+android.location.LocationManager
+com.appsee.se
+com.appsee.kn
+com.c51.location.TaskGps
+com.appsee.dl
+com.appsee.pe
+java.io.OutputStream
+com.c51.location.TaskGps
+com.appsee.ej
+com.c51.location.TaskWithTimeout
+Category: com.appsee.ej-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.pe-*-com.appsee.ej-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("appsee", $r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.appsee.ej
+com.appsee.kn
+android.location.LocationManager
+com.appsee.se
+com.appsee.ed
+com.appsee.kn
+com.c51.location.TaskGps
+com.appsee.pe
+android.util.Log
+com.appsee.ed
+com.c51.location.TaskGps
+com.appsee.ej
+com.c51.location.TaskWithTimeout
+Category: com.appsee.ej-*-com.appsee.kn-*-com.appsee.se-*-com.appsee.ed-*-com.appsee.kn-*-com.appsee.pe-*-com.appsee.ed-*-com.appsee.ej-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("appsee", $r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.ed
+android.location.LocationManager
+com.appsee.se
+android.util.Log
+com.appsee.ed
+com.appsee.cc
+Category: com.appsee.ed-*-com.appsee.se-*-com.appsee.ed-*-com.appsee.cc-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Timeout")
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.activity.Walk3Activity
+com.c51.location.TaskWithTimeout
+com.c51.location.TaskGps
+android.location.LocationManager
+java.util.Timer
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$1
+com.c51.activity.Walk3Activity
+com.c51.location.TaskGps
+android.util.Log
+com.c51.location.TaskWithTimeout
+com.c51.location.TaskWithTimeout$1
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.custom.Logger
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+android.location.LocationManager
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.activity.BarcodeScanAndVerifyActivity$5$1
+com.c51.database.DB_DataSource
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.database.SQLiteHelperSingleton
+com.c51.location.TaskGps
+com.c51.cache.Batch
+com.c51.database.SQLiteHelperSingleton
+android.util.Log
+android.os.Handler
+com.c51.database.SQLiteHelperSingleton
+Category: com.appsee.kb-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ANALYTICS_EVENT", $r0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.location.TaskGps
+com.google.android.gms.analytics.HitBuilders$EventBuilder
+com.c51.activity.Walk3Activity
+android.location.LocationManager
+android.util.Log
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+com.c51.location.TaskWithTimeout
+com.c51.app.Analytics
+com.c51.app.Analytics
+Category: com.google.android.gms.analytics.HitBuilders$EventBuilder-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.appsee.ej
+com.appsee.kn
+com.appsee.dl
+android.location.LocationManager
+com.appsee.se
+com.appsee.kn
+com.c51.location.TaskGps
+com.appsee.dl
+com.appsee.pe
+java.io.OutputStream
+com.c51.location.TaskGps
+com.appsee.ej
+com.c51.location.TaskWithTimeout
+Category: com.appsee.ej-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.pe-*-com.appsee.ej-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for GPS updates")
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.activity.Walk3Activity
+com.c51.location.TaskWithTimeout
+com.c51.location.TaskGps
+android.location.LocationManager
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$1
+com.c51.activity.Walk3Activity
+android.util.Log
+com.c51.location.TaskWithTimeout
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.custom.Logger
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+android.location.LocationManager
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.activity.BarcodeScanAndVerifyActivity$5$1
+com.c51.database.DB_DataSource
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.database.SQLiteHelperSingleton
+com.c51.location.TaskGps
+com.c51.cache.Batch
+com.c51.location.TaskGps
+com.c51.database.SQLiteHelperSingleton
+android.util.Log
+android.os.Handler
+com.c51.database.SQLiteHelperSingleton
+Category: com.appsee.kb-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("appsee", $r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.ed
+android.location.LocationManager
+com.appsee.se
+android.util.Log
+com.appsee.ed
+com.appsee.cc
+Category: com.appsee.ed-*-com.appsee.se-*-com.appsee.ed-*-com.appsee.cc-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ADJUST_EVENT", $r7)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.activity.SubmitConfirmationActivity$1
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+com.appsee.se
+com.appsee.xh
+com.c51.location.TaskGps
+com.appsee.fj
+com.appsee.xh
+java.lang.Thread
+android.util.Log
+Category: com.appsee.se-*-com.appsee.xh-*-com.appsee.fj-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r0.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.location.SupportedLocations
+com.c51.app.InternalStorage
+com.c51.location.SupportedLocations
+android.location.LocationManager
+com.c51.location.SupportedLocations
+com.c51.activity.Walk3Activity
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+com.c51.location.TaskGps
+android.content.Context
+com.c51.app.InternalStorage
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.appsee.ej
+com.appsee.kn
+com.appsee.dl
+android.location.LocationManager
+com.appsee.se
+com.appsee.kn
+com.c51.location.TaskGps
+com.appsee.dl
+com.appsee.pe
+java.io.OutputStream
+com.c51.location.TaskGps
+com.appsee.ej
+com.c51.location.TaskWithTimeout
+Category: com.appsee.ej-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.pe-*-com.appsee.ej-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r4)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.location.TaskGps
+com.google.android.gms.analytics.HitBuilders$EventBuilder
+com.c51.activity.Walk3Activity
+android.location.LocationManager
+android.util.Log
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+com.c51.location.TaskWithTimeout
+com.c51.app.Analytics
+com.c51.app.Analytics
+Category: com.google.android.gms.analytics.HitBuilders$EventBuilder-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Optimizely Logging", $r0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+com.optimizely.Optimizely
+com.optimizely.Optimizely$2
+android.location.LocationManager
+com.optimizely.Optimizely
+android.util.Log
+android.os.Handler
+Category: com.appsee.kb-*-com.optimizely.Optimizely-*-com.optimizely.Optimizely$2-*-com.optimizely.Optimizely-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke r3.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+java.net.URL
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+com.appsee.se
+com.appsee.fj
+com.appsee.xh
+com.c51.location.TaskGps
+com.c51.location.TaskGeocode$GeocodeRunnable
+com.c51.service.HttpUrlConnectionClient
+com.appsee.xh
+java.lang.Thread
+com.c51.location.TaskGeocode$GeocodeRunnable
+Category: com.appsee.se-*-com.appsee.fj-*-com.appsee.xh-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Optimizely Logging", $r0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+com.optimizely.Optimizely
+com.optimizely.Optimizely$2
+android.location.LocationManager
+com.optimizely.Optimizely
+android.util.Log
+com.c51.location.TaskGps
+android.os.Handler
+Category: com.appsee.kb-*-com.optimizely.Optimizely-*-com.optimizely.Optimizely$2-*-com.optimizely.Optimizely-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+com.appsee.se
+com.appsee.fj
+com.appsee.xh
+com.c51.activity.MainActivity$1
+com.c51.app.Preferences
+com.c51.location.TaskGps
+com.c51.app.Session
+com.appsee.xh
+java.lang.Thread
+android.content.SharedPreferences$Editor
+Category: com.appsee.se-*-com.appsee.fj-*-com.appsee.xh-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r0.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.location.SupportedLocations
+com.c51.app.InternalStorage
+com.c51.location.TaskGps
+com.c51.location.SupportedLocations
+android.location.LocationManager
+com.c51.location.SupportedLocations
+android.content.Context
+com.c51.app.InternalStorage
+com.c51.activity.Walk3Activity
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+com.c51.location.TaskWithTimeout
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("com.appsee.Action.UploadMode", 1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.appsee.xh
+com.c51.location.TaskWithTimeout
+com.appsee.uc
+android.location.LocationManager
+com.appsee.se
+com.appsee.fj
+com.appsee.xh
+com.appsee.ye
+com.appsee.db
+com.c51.location.TaskGps
+com.appsee.db
+com.appsee.xh
+com.appsee.sd
+android.os.Bundle
+Category: com.appsee.xh-*-com.appsee.uc-*-com.appsee.se-*-com.appsee.fj-*-com.appsee.xh-*-com.appsee.ye-*-com.appsee.db-*-com.appsee.db-*-com.appsee.xh-*-com.appsee.sd-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Listening for GPS updates")
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.activity.Walk3Activity
+com.c51.location.TaskWithTimeout
+com.c51.location.TaskGps
+android.location.LocationManager
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$1
+com.c51.activity.Walk3Activity
+android.util.Log
+com.c51.location.TaskWithTimeout
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r5, $r7)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+android.location.LocationManager
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.c51.activity.BarcodeScanAndVerifyActivity$5$1
+com.c51.activity.BarcodeScanAndVerifyActivity
+com.google.gson.Gson
+com.c51.location.TaskGps
+com.c51.cache.Batch
+android.util.Log
+com.c51.database.SQLiteHelperSingleton
+android.os.Handler
+Category: com.appsee.kb-*-com.google.gson.Gson-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.appsee.ej
+com.appsee.kn
+com.appsee.dl
+android.location.LocationManager
+com.appsee.se
+com.appsee.kn
+com.c51.location.TaskGps
+com.appsee.dl
+com.appsee.pe
+java.io.OutputStream
+com.c51.location.TaskGps
+com.appsee.ej
+com.c51.location.TaskWithTimeout
+Category: com.appsee.ej-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.pe-*-com.appsee.ej-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.appsee.ej
+com.appsee.kn
+com.appsee.dl
+android.location.LocationManager
+com.appsee.se
+com.appsee.kn
+com.c51.location.TaskGps
+com.appsee.dl
+com.appsee.pe
+java.io.OutputStream
+com.c51.location.TaskGps
+com.appsee.ej
+com.c51.location.TaskWithTimeout
+Category: com.appsee.ej-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.kn-*-com.appsee.dl-*-com.appsee.pe-*-com.appsee.ej-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r1)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.dl
+com.appsee.ed
+com.appsee.dl
+java.io.OutputStream
+android.location.LocationManager
+com.appsee.se
+com.appsee.ed
+com.appsee.cc
+Category: com.appsee.dl-*-com.appsee.ed-*-com.appsee.dl-*-com.appsee.se-*-com.appsee.ed-*-com.appsee.cc-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r7, "UTF-8")
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+com.appsee.se
+com.appsee.fj
+com.appsee.xh
+com.c51.location.TaskGps
+com.c51.location.TaskGeocode$GeocodeRunnable
+com.appsee.xh
+com.c51.location.TaskGps
+java.lang.Thread
+com.c51.location.TaskGeocode$GeocodeRunnable
+java.net.URLEncoder
+com.c51.service.ParcelableMap
+Category: com.appsee.se-*-com.appsee.fj-*-com.appsee.xh-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Optimizely Logging", $r0)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.appsee.kb
+com.optimizely.Optimizely$2
+android.location.LocationManager
+com.optimizely.Optimizely
+android.util.Log
+com.c51.location.TaskGps
+com.optimizely.Optimizely
+android.os.Handler
+Category: com.appsee.kb-*-com.optimizely.Optimizely$2-*-com.optimizely.Optimizely-*-com.optimizely.Optimizely-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TaskGps", "Timeout")
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.activity.Walk3Activity
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+java.util.Timer
+com.c51.location.TaskWithTimeout$3
+com.c51.location.TaskGps
+com.c51.location.TaskGps
+com.c51.location.TaskGps
+com.c51.activity.Walk3Activity$1
+com.c51.activity.Walk3Activity
+android.util.Log
+com.c51.location.TaskWithTimeout
+com.c51.location.TaskWithTimeout$1
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+com.c51.activity.Walk3Activity
+android.location.LocationManager
+android.util.Log
+com.c51.location.TaskWithTimeout$3
+com.c51.activity.Walk3Activity$5
+com.crashlytics.android.answers.CustomEvent
+io.fabric.sdk.android.DefaultLogger
+com.crashlytics.android.answers.AnswersEventValidator
+com.crashlytics.android.answers.AnswersEventValidator
+com.c51.app.Analytics
+com.c51.location.TaskGps
+com.google.android.gms.analytics.HitBuilders$EventBuilder
+com.c51.location.TaskGps
+com.c51.location.TaskWithTimeout
+com.c51.app.Analytics
+com.c51.app.Analytics
+Category: com.crashlytics.android.answers.CustomEvent-*-io.fabric.sdk.android.DefaultLogger-*-com.crashlytics.android.answers.AnswersEventValidator-*-com.crashlytics.android.answers.AnswersEventValidator-*-com.google.android.gms.analytics.HitBuilders$EventBuilder-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String,java.lang.Throwable)>("GeoCodeRunnable", "Interrupted while running", r11)
+Component=> com.c51.activity.Walk3Activity
+ComponentColor=> GREEN
+android.os.Handler
+android.util.Log
+com.c51.location.TaskWithTimeout
+android.location.LocationManager
+com.appsee.se
+com.appsee.fj
+com.appsee.xh
+com.c51.location.TaskGps
+com.c51.location.TaskGeocode$GeocodeRunnable
+com.appsee.xh
+com.c51.location.TaskGps
+java.lang.Thread
+com.c51.location.TaskGeocode$GeocodeRunnable
+Category: com.appsee.se-*-com.appsee.fj-*-com.appsee.xh-*-com.appsee.xh-*-
+-----------------------------------------------------------------
+com.c51.apk: 1098071

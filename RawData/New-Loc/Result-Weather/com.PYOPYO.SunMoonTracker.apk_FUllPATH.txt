@@ -1,0 +1,495 @@
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $z0 == 0 goto $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $r7 == null goto $i2 = staticinvoke <com.tutelatechnologies.utilities.TUException: int getDefaultErrorCode()>()
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $i1 = $i0
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> $i7 = staticinvoke <com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> if $i7 != 2147483647 goto (branch)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> virtualinvoke $r6.<android.os.Bundle: void putInt(java.lang.String,int)>("TU: RSSI", $i6)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r4 = virtualinvoke $r3.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $z0 == 0 goto $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $r7 == null goto $i2 = staticinvoke <com.tutelatechnologies.utilities.TUException: int getDefaultErrorCode()>()
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $i1 = $i0
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> $i7 = staticinvoke <com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> if $i7 != 2147483647 goto (branch)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> virtualinvoke $r6.<android.os.Bundle: void putInt(java.lang.String,int)>("TU: RSRP", $i1)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $z0 == 0 goto $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $r7 == null goto $i2 = staticinvoke <com.tutelatechnologies.utilities.TUException: int getDefaultErrorCode()>()
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $i1 = $i0
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> $i7 = staticinvoke <com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> if $i7 != 2147483647 goto (branch)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> virtualinvoke $r6.<android.os.Bundle: void putInt(java.lang.String,int)>("TU: CQI", $i5)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.tutelatechnologies.nat.sdk.g$a: void run()> --> r0 := @this: com.tutelatechnologies.nat.sdk.g$a
+<com.tutelatechnologies.nat.sdk.g: boolean b(android.content.Context,com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.nat.sdk.g: boolean a(android.content.Context,com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.utilities.a: int d(android.database.sqlite.SQLiteDatabase)> --> $r0 := @parameter0: android.database.sqlite.SQLiteDatabase
+<com.tutelatechnologies.utilities.a: int d(android.database.sqlite.SQLiteDatabase)> --> $r2 = virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT name FROM sqlite_master WHERE type=\'table\'", null)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r9 = virtualinvoke $r3.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $z0 == 0 goto $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $r7 == null goto $i2 = staticinvoke <com.tutelatechnologies.utilities.TUException: int getDefaultErrorCode()>()
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $i1 = $i0
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> $i7 = staticinvoke <com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> if $i7 != 2147483647 goto (branch)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> virtualinvoke $r6.<android.os.Bundle: void putInt(java.lang.String,int)>("TU: LINK_SPEED", $i0)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> virtualinvoke $r5.<java.io.BufferedWriter: void write(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> virtualinvoke $r3.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.deviceinformation.c: android.os.Bundle ar(android.content.Context)> --> $z1 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.WRITE_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.deviceinformation.c: android.os.Bundle ar(android.content.Context)> --> if $z1 != 0 goto $z0 = 1
+<com.tutelatechnologies.utilities.deviceinformation.c: android.os.Bundle ar(android.content.Context)> --> virtualinvoke $r15.<android.os.Bundle: void putLong(java.lang.String,long)>("DISK_FREE", $l3)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $z0 == 0 goto $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $r7 == null goto $i2 = staticinvoke <com.tutelatechnologies.utilities.TUException: int getDefaultErrorCode()>()
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $i1 = $i0
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> $i7 = staticinvoke <com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> if $i7 != 2147483647 goto (branch)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> virtualinvoke $r6.<android.os.Bundle: void putInt(java.lang.String,int)>("TU: TA", $i3)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>("https://debug.aerserv.com/sybok/")
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> virtualinvoke $r3.<java.net.HttpURLConnection: void connect()>()
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r4 = virtualinvoke $r3.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $z0 == 0 goto $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $r7 == null goto $i2 = staticinvoke <com.tutelatechnologies.utilities.TUException: int getDefaultErrorCode()>()
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $i1 = $i0
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> $i7 = staticinvoke <com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> if $i7 != 2147483647 goto (branch)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> virtualinvoke $r6.<android.os.Bundle: void putInt(java.lang.String,int)>("TU: RSSNR", $i4)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> virtualinvoke $r5.<java.io.BufferedWriter: void write(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r2 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>()
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> virtualinvoke $r3.<java.net.HttpURLConnection: void connect()>()
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> virtualinvoke $r5.<java.io.BufferedWriter: void write(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.aerserv.sdk.proxy.SybokProxy$1: void run()> --> r0 := @this: com.aerserv.sdk.proxy.SybokProxy$1
+<com.aerserv.sdk.proxy.SybokProxy: void access$000(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.aerserv.sdk.proxy.SybokProxy: void sendParams(java.lang.String)> --> $r9 = virtualinvoke $r3.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.utilities.a: int e(android.database.sqlite.SQLiteDatabase,java.lang.String)> --> $r0 := @parameter0: android.database.sqlite.SQLiteDatabase
+<com.tutelatechnologies.utilities.a: int e(android.database.sqlite.SQLiteDatabase,java.lang.String)> --> $r5 = virtualinvoke $r0.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, null)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $z0 == 0 goto $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $r7 = null
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> if $r7 == null goto $i2 = staticinvoke <com.tutelatechnologies.utilities.TUException: int getDefaultErrorCode()>()
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)> --> $i1 = $i0
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> $i7 = staticinvoke <com.tutelatechnologies.utilities.connection.TUConnectionInformation: int getDeviceRssi(android.content.Context)>($r0)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> if $i7 != 2147483647 goto (branch)
+<com.tutelatechnologies.utilities.connection.TUConnectionInformation: android.os.Bundle getSignalInfoAsBundle(android.content.Context,android.net.wifi.WifiManager)> --> virtualinvoke $r6.<android.os.Bundle: void putInt(java.lang.String,int)>("TU: RSRQ", $i2)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.deviceinformation.c: android.os.Bundle ar(android.content.Context)> --> $z1 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.WRITE_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.deviceinformation.c: android.os.Bundle ar(android.content.Context)> --> if $z1 != 0 goto $z0 = 1
+<com.tutelatechnologies.utilities.deviceinformation.c: android.os.Bundle ar(android.content.Context)> --> virtualinvoke $r15.<android.os.Bundle: void putLong(java.lang.String,long)>("DISK_TOTAL", $l1)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)>($r0)
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 == 0 goto $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> $z0 = 0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()> --> if $z0 != 0 goto return $z0
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> $z3 = staticinvoke <com.tutelatechnologies.nat.sdk.v: boolean isLocationAvailable()>()
+<com.tutelatechnologies.nat.sdk.v: void a(long,boolean,boolean,com.tutelatechnologies.nat.sdk.TNAT_SDK_TEST_TRIGGER_ENUM,boolean,int)> --> if $z3 != 0 goto (branch)
+<com.tutelatechnologies.nat.sdk.l: boolean b(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.m: android.database.sqlite.SQLiteDatabase T()> --> $r0 = <com.tutelatechnologies.nat.sdk.m: java.lang.Object cy>
+<com.tutelatechnologies.nat.sdk.l: void y()> --> $r3 := @caughtexception
+<com.tutelatechnologies.nat.sdk.x: boolean a(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.tutelatechnologies.nat.sdk.v: void a(com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: com.tutelatechnologies.utilities.TUUtilityFunctions$DBError
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.tutelatechnologies.nat.sdk.g$a: void run()> --> r0 := @this: com.tutelatechnologies.nat.sdk.g$a
+<com.tutelatechnologies.nat.sdk.g: boolean b(android.content.Context,com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.nat.sdk.g: boolean a(android.content.Context,com.tutelatechnologies.utilities.TUUtilityFunctions$DBError)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.nat.sdk.n: void g(android.content.Context,boolean)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.nat.sdk.n: boolean a(android.content.Context,java.lang.String,boolean)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.nat.sdk.n: boolean a(android.content.Context,java.lang.String,boolean)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r1, $z0)
+--------------------------------------------------------
+
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r11 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("android.permission.READ_EXTERNAL_STORAGE")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r14 := @caughtexception
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> $z0 = staticinvoke <com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)>($r0, "android.permission.ACCESS_COARSE_LOCATION")
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean checkLocationPermissionAvailability(android.content.Context)> --> if $z0 != 0 goto return 1
+<com.tutelatechnologies.utilities.TUUtilityFunctions: boolean advancedCheckforPermission(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.utilities.TUConfiguration: void setValueFromPreferenceKey(android.content.Context,java.lang.String,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.utilities.TUConfiguration: void setValueFromPreferenceKey(android.content.Context,java.lang.String,java.lang.String,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.tutelatechnologies.utilities.TUConfiguration: void setValueFromPreferenceKey(android.content.Context,java.lang.String,java.lang.String,java.lang.String)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+--------------------------------------------------------
+

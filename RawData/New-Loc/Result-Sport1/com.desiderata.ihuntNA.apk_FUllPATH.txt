@@ -1,0 +1,178 @@
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.WeatherActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.WeatherActivity
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $z0 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: boolean isBetterLocation(android.location.Location,android.location.Location)>($r6, $r7)
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $r6 = r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> if $r6 != null goto $r9 = new java.lang.StringBuilder
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getiHuntLocation()> --> r0 := @this: com.desiderata.ihuntNA.controllers.WeatherActivity
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getiHuntLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("sol", "Loading ihuntlocation...")
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.WeatherActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.WeatherActivity
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $z0 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: boolean isBetterLocation(android.location.Location,android.location.Location)>($r6, $r7)
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $r6 = r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> if $r6 != null goto $r9 = new java.lang.StringBuilder
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getiHuntLocation()> --> r0 := @this: com.desiderata.ihuntNA.controllers.WeatherActivity
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getiHuntLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("sol", $r3)
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.WeatherActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.WeatherActivity
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $z0 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: boolean isBetterLocation(android.location.Location,android.location.Location)>($r6, $r7)
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $r6 = r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> if $r6 != null goto $r9 = new java.lang.StringBuilder
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void saveiHuntLocation(android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.WeatherActivity
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void saveiHuntLocation(android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("current_ihunt_location", $r5)
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.ActivityItemActivity: android.location.Location getLocation(boolean,boolean)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.ActivityItemActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.ActivityItemActivity
+<com.desiderata.ihuntNA.controllers.ActivityItemActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r2 != null goto l1 = virtualinvoke $r1.<android.location.Location: long getTime()>()
+<com.desiderata.ihuntNA.controllers.ActivityItemActivity: android.location.Location getLocation(boolean,boolean)> --> $z0 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.ActivityItemActivity: boolean isBetterLocation(android.location.Location,android.location.Location)>($r9, $r8)
+<com.desiderata.ihuntNA.controllers.ActivityItemActivity: android.location.Location getLocation(boolean,boolean)> --> if $z0 == 0 goto $r12 = new com.desiderata.ihuntNA.controllers.ActivityItemActivity$7
+<com.desiderata.ihuntNA.controllers.ActivityItemActivity: android.location.Location getLocation(boolean,boolean)> --> r4 = $r9
+<com.desiderata.ihuntNA.controllers.ActivityItemActivity: android.location.Location getLocation(boolean,boolean)> --> $r12 = new com.desiderata.ihuntNA.controllers.ActivityItemActivity$7
+<com.desiderata.ihuntNA.controllers.ActivityItemActivity: android.location.Location getLocation(boolean,boolean)> --> if r4 != null goto $d0 = virtualinvoke r4.<android.location.Location: double getLatitude()>()
+<com.desiderata.ihuntNA.controllers.ActivityItemActivity: android.location.Location getLocation(boolean,boolean)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("sol", "Canot get location from GPS. Loading ihuntlocation from prefs")
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> $d0 = virtualinvoke r4.<android.location.Location: double getLongitude()>()
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> $r4 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)>(1, 0)
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> r0 := @this: com.desiderata.ihuntNA.controllers.ActivityLogActivity
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> if $r1 == null goto return
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("act", $r5)
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> $d0 = virtualinvoke r4.<android.location.Location: double getLatitude()>()
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> $r4 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)>(1, 0)
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> r0 := @this: com.desiderata.ihuntNA.controllers.ActivityLogActivity
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> if $r1 == null goto return
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("act", $r5)
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.WeatherActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.WeatherActivity
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $z0 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: boolean isBetterLocation(android.location.Location,android.location.Location)>($r6, $r7)
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $r6 = r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> if $r6 != null goto $r9 = new java.lang.StringBuilder
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("sol", $r10)
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> r4 = $r8
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> $r4 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)>(1, 0)
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> r0 := @this: com.desiderata.ihuntNA.controllers.ActivityLogActivity
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> if $r1 == null goto return
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("act", $r5)
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r7 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.SolunarTimesActivity
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r2 != null goto l1 = virtualinvoke $r1.<android.location.Location: long getTime()>()
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $z0 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)>($r6, $r7)
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> if $z0 == 0 goto $r6 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r6 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> if $r6 != null goto $r9 = new java.lang.StringBuilder
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("sol", "Canot get location from GPS. Loading ihuntlocation from prefs")
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r7 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.SolunarTimesActivity
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r2 != null goto l1 = virtualinvoke $r1.<android.location.Location: long getTime()>()
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $z0 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)>($r6, $r7)
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> if $z0 == 0 goto $r6 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r6 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> if $r6 != null goto $r9 = new java.lang.StringBuilder
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getiHuntLocation()> --> r0 := @this: com.desiderata.ihuntNA.controllers.SolunarTimesActivity
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getiHuntLocation()> --> $r3 = interfaceinvoke $r2.<android.content.SharedPreferences: java.lang.String getString(java.lang.String,java.lang.String)>("current_ihunt_location", null)
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getiHuntLocation()> --> r9 := @caughtexception
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getiHuntLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("sol", $r3)
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> $d0 = virtualinvoke r4.<android.location.Location: double getLongitude()>()
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> $r4 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)>(1, 0)
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> r0 := @this: com.desiderata.ihuntNA.controllers.ActivityLogActivity
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> if $r1 == null goto return
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("act", $r5)
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r7 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.SolunarTimesActivity
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r2 != null goto l1 = virtualinvoke $r1.<android.location.Location: long getTime()>()
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $z0 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)>($r6, $r7)
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> if $z0 == 0 goto $r6 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r6 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> if $r6 != null goto $r9 = new java.lang.StringBuilder
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("sol", $r10)
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> r4 = $r8
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> if r4 != null goto $d0 = virtualinvoke r4.<android.location.Location: double getLatitude()>()
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getiHuntLocation()> --> r0 := @this: com.desiderata.ihuntNA.controllers.ActivityLogActivity
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getiHuntLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("sol", "Loading ihuntlocation...")
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r7 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.SolunarTimesActivity
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r2 != null goto l1 = virtualinvoke $r1.<android.location.Location: long getTime()>()
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $z0 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)>($r6, $r7)
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> if $z0 == 0 goto $r6 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r6 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> if $r6 != null goto $r9 = new java.lang.StringBuilder
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void saveiHuntLocation(android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.SolunarTimesActivity
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void saveiHuntLocation(android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("current_ihunt_location", $r5)
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> $d0 = virtualinvoke r4.<android.location.Location: double getLatitude()>()
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])> --> $r4 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)>(1, 0)
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> r0 := @this: com.desiderata.ihuntNA.controllers.ActivityLogActivity
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> if $r1 == null goto return
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: void createNewLogActivity(android.location.Location,boolean)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("act", $r5)
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> r4 = $r8
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> if r4 != null goto $d0 = virtualinvoke r4.<android.location.Location: double getLatitude()>()
+<com.desiderata.ihuntNA.controllers.ActivityLogActivity: android.location.Location getLocation(boolean,boolean)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("sol", "Canot get location from GPS. Loading ihuntlocation from prefs")
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r7 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.SolunarTimesActivity
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r2 != null goto l1 = virtualinvoke $r1.<android.location.Location: long getTime()>()
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $z0 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: boolean isBetterLocation(android.location.Location,android.location.Location)>($r6, $r7)
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> if $z0 == 0 goto $r6 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> $r6 = r0.<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getLocation()> --> if $r6 != null goto $r9 = new java.lang.StringBuilder
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getiHuntLocation()> --> r0 := @this: com.desiderata.ihuntNA.controllers.SolunarTimesActivity
+<com.desiderata.ihuntNA.controllers.SolunarTimesActivity: void getiHuntLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("sol", "Loading ihuntlocation...")
+--------------------------------------------------------
+
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $r6 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: android.location.Location location> = $r6
+<com.desiderata.ihuntNA.controllers.WeatherActivity: boolean isBetterLocation(android.location.Location,android.location.Location)> --> r0 := @this: com.desiderata.ihuntNA.controllers.WeatherActivity
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $z0 = virtualinvoke r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: boolean isBetterLocation(android.location.Location,android.location.Location)>($r6, $r7)
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> $r6 = r0.<com.desiderata.ihuntNA.controllers.WeatherActivity: android.location.Location location>
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> if $r6 != null goto $r9 = new java.lang.StringBuilder
+<com.desiderata.ihuntNA.controllers.WeatherActivity: void getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("sol", "Canot get location from GPS. Loading ihuntlocation from prefs")
+--------------------------------------------------------
+

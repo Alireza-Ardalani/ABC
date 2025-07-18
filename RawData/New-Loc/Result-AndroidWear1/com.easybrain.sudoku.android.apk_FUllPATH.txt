@@ -1,0 +1,7 @@
+<com.amazon.device.ads.DtbGeoLocation: android.location.Location getLastLocation(android.content.Context,java.lang.String)> --> $r7 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r4)
+<com.amazon.device.ads.DtbGeoLocation: android.location.Location getLocation()> --> $r2 = specialinvoke r0.<com.amazon.device.ads.DtbGeoLocation: android.location.Location getLastLocation(android.content.Context,java.lang.String)>($r1, "gps")
+<com.amazon.device.ads.DtbGeoLocation: android.location.Location getLocation()> --> if $r2 == null goto (branch)
+<com.amazon.device.ads.DtbLog: void debug(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.amazon.device.ads.DtbLog: void debug(java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r0)
+--------------------------------------------------------
+

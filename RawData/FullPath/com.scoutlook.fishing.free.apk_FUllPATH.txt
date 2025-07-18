@@ -1,0 +1,27 @@
+<com.rounded.scoutlook.view.map.MapContainerFragment: void userLocationUpdated(android.location.Location)> --> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.rounded.scoutlook.view.map.MapContainerFragment: void userLocationUpdated(android.location.Location)> --> $r3 = r0.<com.rounded.scoutlook.view.map.MapContainerFragment: com.rounded.scoutlook.view.reusableviews.MapCard mapCard>
+<com.rounded.scoutlook.view.map.MapContainerFragment: void showUserLocation(android.location.Location)> --> r0 := @this: com.rounded.scoutlook.view.map.MapContainerFragment
+<com.rounded.scoutlook.view.map.MapContainerFragment: void showUserLocation(android.location.Location)> --> if $r1 == null goto return
+<com.rounded.scoutlook.view.map.MapContainerFragment: com.google.android.gms.maps.model.Marker getScentconeMarker()> --> r0 := @this: com.rounded.scoutlook.view.map.MapContainerFragment
+<com.rounded.scoutlook.util.MarkerManager: com.google.android.gms.maps.model.BitmapDescriptor scentcone()> --> r0 := @this: com.rounded.scoutlook.util.MarkerManager
+<com.rounded.scoutlook.util.GlobalAnimalSingleton: com.rounded.scoutlook.util.GlobalAnimalSingleton getInstance()> --> $r0 = <com.rounded.scoutlook.util.GlobalAnimalSingleton: com.rounded.scoutlook.util.GlobalAnimalSingleton mInstance>
+<com.rounded.scoutlook.models.species.Animal: java.util.List topLevelAnimals()> --> $r0 = <com.rounded.scoutlook.models.species.Animal: java.util.List topLevelAnimals>
+<ollie.Model: ollie.Model find(java.lang.Class,java.lang.Long)> --> r0 := @parameter0: java.lang.Class
+<ollie.query.ResultQueryBase: ollie.Model fetchSingle()> --> r0 := @this: ollie.query.ResultQueryBase
+<ollie.util.QueryUtils: java.util.List rawQuery(java.lang.Class,java.lang.String,java.lang.String[])> --> r0 := @parameter0: java.lang.Class
+<ollie.util.QueryUtils: java.util.List rawQuery(java.lang.Class,java.lang.String,java.lang.String[])> --> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, $r2)
+--------------------------------------------------------
+
+<com.rounded.scoutlook.view.map.MapContainerFragment: void userLocationUpdated(android.location.Location)> --> $d1 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.rounded.scoutlook.view.map.MapContainerFragment: void showUserLocation(android.location.Location)> --> r0 := @this: com.rounded.scoutlook.view.map.MapContainerFragment
+<com.rounded.scoutlook.view.map.MapContainerFragment: void showUserLocation(android.location.Location)> --> if $r1 == null goto return
+<com.rounded.scoutlook.view.map.MapContainerFragment: com.google.android.gms.maps.model.Marker getScentconeMarker()> --> r0 := @this: com.rounded.scoutlook.view.map.MapContainerFragment
+<com.rounded.scoutlook.util.MarkerManager: com.google.android.gms.maps.model.BitmapDescriptor scentcone()> --> r0 := @this: com.rounded.scoutlook.util.MarkerManager
+<com.rounded.scoutlook.util.GlobalAnimalSingleton: com.rounded.scoutlook.util.GlobalAnimalSingleton getInstance()> --> $r0 = <com.rounded.scoutlook.util.GlobalAnimalSingleton: com.rounded.scoutlook.util.GlobalAnimalSingleton mInstance>
+<com.rounded.scoutlook.models.species.Animal: java.util.List topLevelAnimals()> --> $r0 = <com.rounded.scoutlook.models.species.Animal: java.util.List topLevelAnimals>
+<ollie.Model: ollie.Model find(java.lang.Class,java.lang.Long)> --> r0 := @parameter0: java.lang.Class
+<ollie.query.ResultQueryBase: ollie.Model fetchSingle()> --> r0 := @this: ollie.query.ResultQueryBase
+<ollie.util.QueryUtils: java.util.List rawQuery(java.lang.Class,java.lang.String,java.lang.String[])> --> r0 := @parameter0: java.lang.Class
+<ollie.util.QueryUtils: java.util.List rawQuery(java.lang.Class,java.lang.String,java.lang.String[])> --> $r4 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, $r2)
+--------------------------------------------------------
+

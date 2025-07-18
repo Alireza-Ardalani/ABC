@@ -1,0 +1,30 @@
+<com.passportparking.mobile.pplibrary.services.GPSService: void getLocation()> --> $r7 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.passportparking.mobile.pplibrary.services.GPSService: void getLocation()> --> if $r7 == null goto return
+<com.passportparking.mobile.pplibrary.services.GPSService: void updateUserCoordinates(android.location.Location)> --> r0 := @this: com.passportparking.mobile.pplibrary.services.GPSService
+<com.passportparking.mobile.pplibrary.utils.PLog: void i(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.passportparking.mobile.pplibrary.utils.PLog: void i(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+--------------------------------------------------------
+
+<com.passportparking.mobile.pplibrary.services.GPSService: void getLocation()> --> $r7 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.passportparking.mobile.pplibrary.services.GPSService: void getLocation()> --> if $r7 == null goto return
+<com.passportparking.mobile.pplibrary.services.GPSService: void updateUserCoordinates(android.location.Location)> --> r0 := @this: com.passportparking.mobile.pplibrary.services.GPSService
+<com.passportparking.mobile.pplibrary.utils.AppData: void setString(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.passportparking.mobile.pplibrary.utils.AppData: void set(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.passportparking.mobile.pplibrary.utils.SecurePreferences: void put(java.lang.String,java.lang.String)> --> r0 := @this: com.passportparking.mobile.pplibrary.utils.SecurePreferences
+<com.passportparking.mobile.pplibrary.utils.SecurePreferences: void putValue(java.lang.String,java.lang.String)> --> r0 := @this: com.passportparking.mobile.pplibrary.utils.SecurePreferences
+<com.passportparking.mobile.pplibrary.utils.SecurePreferences: void putValue(java.lang.String,java.lang.String)> --> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+--------------------------------------------------------
+
+<com.passportparking.mobile.pplibrary.services.GPSService: void getLocation()> --> $r7 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.passportparking.mobile.pplibrary.services.GPSService: void getLocation()> --> if $r7 == null goto return
+<com.passportparking.mobile.pplibrary.services.GPSService: void updateUserCoordinates(android.location.Location)> --> r0 := @this: com.passportparking.mobile.pplibrary.services.GPSService
+<com.passportparking.mobile.pplibrary.utils.AppData: java.lang.String getString(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.passportparking.mobile.pplibrary.utils.AppData: java.lang.String getString(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.passportparking.mobile.pplibrary.utils.AppData: java.lang.String get(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.passportparking.mobile.pplibrary.utils.AppData: java.lang.String get(java.lang.String,boolean)> --> $r0 := @parameter0: java.lang.String
+<com.passportparking.mobile.pplibrary.utils.AppData: java.lang.String get(java.lang.String,boolean)> --> $r1 = staticinvoke <com.passportparking.mobile.pplibrary.utils.AppData: com.passportparking.mobile.pplibrary.utils.SecurePreferences getSecurePreferences()>()
+<com.passportparking.mobile.pplibrary.utils.AppData: java.lang.String get(java.lang.String,boolean)> --> $r3 := @caughtexception
+<com.passportparking.mobile.pplibrary.utils.PLog: void i(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.passportparking.mobile.pplibrary.utils.PLog: void i(java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("PassportMobile", $r0)
+--------------------------------------------------------
+

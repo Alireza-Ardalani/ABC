@@ -1,0 +1,12 @@
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("widget_last_longitude", $f0)
+Component=> com.thetransitapp.droid.shared.service.WidgetService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("widget_last_latitude", $f0)
+Component=> com.thetransitapp.droid.shared.service.WidgetService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

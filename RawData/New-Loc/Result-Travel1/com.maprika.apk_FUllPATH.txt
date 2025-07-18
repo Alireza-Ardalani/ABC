@@ -1,0 +1,480 @@
+<com.maprika.MyInfo: void setTrackAutostopLocation1(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.maprika.MyInfo: void setTrackAutostopLocation1(android.location.Location)> --> $f0 = (float) $d0
+<com.maprika.MyInfo: void setTrackAutostopLocation1(android.location.Location)> --> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("tracking_autostop_lat_1", $f0)
+--------------------------------------------------------
+
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> if $r2 != null goto $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.Logging: java.lang.String log(android.location.Location)> --> return "null"
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r7 = staticinvoke <com.maprika.Logging: java.lang.String log(android.location.Location)>($r2)
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> if $r2 != null goto $r6 = new java.lang.StringBuilder
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r5 = virtualinvoke $r3.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r3 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapViewActivity: void onSendLocation()> --> virtualinvoke $r3.<com.maprika.MapApp: void tagLocalyticsEvent(java.lang.String)>("Send location")
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> if $r5 != null goto $r10 = virtualinvoke r0.<com.maprika.MapGoogleView2: com.google.android.gms.maps.GoogleMap peekMap()>()
+<com.maprika.MapViewActivity: void onSendLocation()> --> $r2 = interfaceinvoke $r1.<com.maprika.IMapView: android.content.Intent share()>()
+<com.maprika.MapViewActivity: void onSendLocation()> --> if $r2 != null goto $r3 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: void tagLocalyticsEvent(java.lang.String)> --> r0 := @this: com.maprika.MapApp
+<com.localytics.android.LocalyticsSession: void tagEvent(java.lang.String)> --> r0 := @this: com.localytics.android.LocalyticsSession
+<com.maprika.Localytics$1: void tagEvent(java.lang.String,java.util.Map)> --> r0 := @this: com.maprika.Localytics$1
+<com.localytics.android.LocalyticsSession: void close()> --> r0 := @this: com.localytics.android.LocalyticsSession
+<com.localytics.android.LocalyticsSession$SessionHandler: void handleMessage(android.os.Message)> --> r0 := @this: com.localytics.android.LocalyticsSession$SessionHandler
+<com.localytics.android.LocalyticsSession$SessionHandler: void handleMessage(android.os.Message)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Localytics", "Handler received MESSAGE_TAG")
+--------------------------------------------------------
+
+<com.maprika.MapPictureView: void onDrawFrame(javax.microedition.khronos.opengles.GL11,int)> --> $d1 = virtualinvoke $r20.<android.location.Location: double getLongitude()>()
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> r0 := @this: com.maprika.OnlineMap
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = 180.0 + $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d1 / 360.0
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d2 * $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d1 + 0.5
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $r1.<com.maprika.MapData$MapPictureCoord: double x> = $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d0 = $r1.<com.maprika.MapData$MapPictureCoord: double x>
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $b1 = $d0 cmpl 0.0
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $i0 = (int) $b1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> if $i0 < 0 goto return 0
+<com.maprika.MapPictureView: void onDrawFrame(javax.microedition.khronos.opengles.GL11,int)> --> $z1 = virtualinvoke $r5.<com.maprika.MapData: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)>($d0, $d1, $r32)
+<com.maprika.MapPictureView: void onDrawFrame(javax.microedition.khronos.opengles.GL11,int)> --> if $z1 == 0 goto r40 = null
+<com.maprika.MapPictureView: com.maprika.MapPictureView$BalloonOverlay getMyBalloonOverlay()> --> r0 := @this: com.maprika.MapPictureView
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.Logging: java.lang.String log(android.location.Location)> --> return "null"
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r7 = staticinvoke <com.maprika.Logging: java.lang.String log(android.location.Location)>($r2)
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> if $r2 != null goto $r6 = new java.lang.StringBuilder
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r5 = virtualinvoke $r3.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r3 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> if $r5 != null goto $r10 = virtualinvoke r0.<com.maprika.MapGoogleView2: com.google.android.gms.maps.GoogleMap peekMap()>()
+<com.maprika.MapViewActivity: void onSendLocation()> --> $r2 = interfaceinvoke $r1.<com.maprika.IMapView: android.content.Intent share()>()
+<com.maprika.MapViewActivity: void onSendLocation()> --> if $r2 != null goto $r3 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: void tagLocalyticsEvent(java.lang.String)> --> r0 := @this: com.maprika.MapApp
+<com.localytics.android.LocalyticsSession: void tagEvent(java.lang.String)> --> r0 := @this: com.localytics.android.LocalyticsSession
+<com.maprika.Localytics$1: void tagEvent(java.lang.String,java.util.Map)> --> r0 := @this: com.maprika.Localytics$1
+<com.localytics.android.LocalyticsSession: void close()> --> r0 := @this: com.localytics.android.LocalyticsSession
+<com.localytics.android.LocalyticsSession$SessionHandler: void handleMessage(android.os.Message)> --> r0 := @this: com.localytics.android.LocalyticsSession$SessionHandler
+<com.localytics.android.LocalyticsSession$SessionHandler: void handleMessage(android.os.Message)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Localytics", "Handler received MESSAGE_TAG")
+--------------------------------------------------------
+
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> if $r2 != null goto $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.Logging: java.lang.String log(android.location.Location)> --> return "null"
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r7 = staticinvoke <com.maprika.Logging: java.lang.String log(android.location.Location)>($r2)
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> if $r2 != null goto $r6 = new java.lang.StringBuilder
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r5 = virtualinvoke $r3.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r3 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapViewActivity: void onSendLocation()> --> virtualinvoke $r3.<com.maprika.MapApp: void tagLocalyticsEvent(java.lang.String)>("Send location")
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> if $r5 != null goto $r10 = virtualinvoke r0.<com.maprika.MapGoogleView2: com.google.android.gms.maps.GoogleMap peekMap()>()
+<com.maprika.MapViewActivity: void onSendLocation()> --> $r2 = interfaceinvoke $r1.<com.maprika.IMapView: android.content.Intent share()>()
+<com.maprika.MapViewActivity: void onSendLocation()> --> if $r2 != null goto $r3 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: void tagLocalyticsEvent(java.lang.String)> --> r0 := @this: com.maprika.MapApp
+<com.localytics.android.LocalyticsSession: void tagEvent(java.lang.String)> --> r0 := @this: com.localytics.android.LocalyticsSession
+<com.maprika.Localytics$1: void tagEvent(java.lang.String,java.util.Map)> --> r0 := @this: com.maprika.Localytics$1
+<com.localytics.android.LocalyticsSession: void close()> --> r0 := @this: com.localytics.android.LocalyticsSession
+<com.localytics.android.LocalyticsSession$SessionHandler: void handleMessage(android.os.Message)> --> r0 := @this: com.localytics.android.LocalyticsSession$SessionHandler
+<com.localytics.android.LocalyticsSession$SessionHandler: void handleMessage(android.os.Message)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Localytics", "Handler received MESSAGE_SCREEN")
+--------------------------------------------------------
+
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r1 = virtualinvoke $r2.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapViewActivity: void onResume()> --> specialinvoke r0.<com.maprika.MapViewActivity: void checkMyMapsUpdateAvailable()>()
+<com.maprika.UpdateLocationBurstService: void onLocationChanged(android.location.Location)> --> $z0 = virtualinvoke $r4.<com.maprika.MapApp: boolean setCurLocation(android.location.Location)>($r1)
+<com.maprika.UpdateLocationBurstService: void onLocationChanged(android.location.Location)> --> $r4 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r4 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r1 != null goto (branch)
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $z2 = staticinvoke <com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)>($r1, $r5)
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $z2 == 0 goto staticinvoke <com.maprika.Logging: void logLocation(java.lang.String)>("MapApp.setCurLocation: new location is not better")
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> z1 = 1
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $l0 = r0.<com.maprika.MapApp: long lastUpdatePosTime>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if z0 == 0 goto return z1
+<com.maprika.UpdateLocationBurstService: void onLocationChanged(android.location.Location)> --> $z0 = virtualinvoke $r4.<com.maprika.MapApp: boolean setCurLocation(android.location.Location)>($r1)
+<com.maprika.UpdateLocationBurstService: void onLocationChanged(android.location.Location)> --> if $z0 == 0 goto $r4 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: void schedulePosUpdateIfNeeded(boolean,boolean)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> if $r2 != null goto $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.Logging: java.lang.String log(android.location.Location)> --> return "null"
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r7 = staticinvoke <com.maprika.Logging: java.lang.String log(android.location.Location)>($r2)
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> if $r2 != null goto $r6 = new java.lang.StringBuilder
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r5 = virtualinvoke $r3.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r3 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> if $r5 != null goto $r10 = virtualinvoke r0.<com.maprika.MapGoogleView2: com.google.android.gms.maps.GoogleMap peekMap()>()
+<com.maprika.MapViewActivity: void onSendLocation()> --> $r2 = interfaceinvoke $r1.<com.maprika.IMapView: android.content.Intent share()>()
+<com.maprika.MapViewActivity: void onSendLocation()> --> if $r2 != null goto $r3 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: void tagLocalyticsEvent(java.lang.String)> --> r0 := @this: com.maprika.MapApp
+<com.localytics.android.LocalyticsSession: void tagEvent(java.lang.String)> --> r0 := @this: com.localytics.android.LocalyticsSession
+<com.maprika.Localytics$1: void tagEvent(java.lang.String,java.util.Map)> --> r0 := @this: com.maprika.Localytics$1
+<com.localytics.android.LocalyticsSession: void open()> --> r0 := @this: com.localytics.android.LocalyticsSession
+<com.localytics.android.LocalyticsSession$SessionHandler: void handleMessage(android.os.Message)> --> r0 := @this: com.localytics.android.LocalyticsSession$SessionHandler
+<com.localytics.android.LocalyticsSession$SessionHandler: void handleMessage(android.os.Message)> --> $r4 = virtualinvoke $r1.<android.os.Message: java.lang.String toString()>()
+<com.localytics.android.LocalyticsSession$SessionHandler: void handleMessage(android.os.Message)> --> r2 := @caughtexception
+<com.localytics.android.LocalyticsSession$SessionHandler: void handleMessage(android.os.Message)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("Localytics", "Localytics library threw an uncaught exception", r2)
+--------------------------------------------------------
+
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r1 = virtualinvoke $r2.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> virtualinvoke $r2.<com.maprika.MapApp: boolean setCurLocation(android.location.Location)>($r1)
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r4 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $r5 != null goto z1 = 0
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> z0 = 1
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> z1 = 0
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $z2 == 0 goto staticinvoke <com.maprika.Logging: void logLocation(java.lang.String)>("MapApp.setCurLocation: new location is not better")
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $l0 = r0.<com.maprika.MapApp: long lastUpdatePosTime>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if z0 == 0 goto return z1
+<com.maprika.MapApp: void schedulePosUpdate(boolean,boolean)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp$UpdatePosOnceThread: void run()> --> r0 := @this: com.maprika.MapApp$UpdatePosOnceThread
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.FriendsManager: void <clinit>()> --> nop
+<com.maprika.FriendsManager: void <clinit>()> --> <com.maprika.FriendsManager: com.maprika.FriendsManager instance> = $r0
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> $r3 = <com.maprika.FriendsManager: com.maprika.FriendsManager instance>
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> $r24 := @caughtexception
+<com.maprika.Logging: void logError(java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void logError(java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Maprika", $r0)
+--------------------------------------------------------
+
+<com.maprika.MapViewActivity: void onActivityResult(int,int,android.content.Intent)> --> $d1 = virtualinvoke $r23.<android.location.Location: double getLongitude()>()
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> r0 := @this: com.maprika.OnlineMap
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = 180.0 + $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d1 / 360.0
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d2 * $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d1 + 0.5
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $r1.<com.maprika.MapData$MapPictureCoord: double x> = $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d0 = $r1.<com.maprika.MapData$MapPictureCoord: double x>
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $b1 = $d0 cmpl 0.0
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $i0 = (int) $b1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> if $i0 < 0 goto return 0
+<com.maprika.MapViewActivity: void onActivityResult(int,int,android.content.Intent)> --> $z0 = virtualinvoke $r12.<com.maprika.MapData: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)>($d0, $d1, $r40)
+<com.maprika.MapViewActivity: void onActivityResult(int,int,android.content.Intent)> --> if $z0 != 0 goto $r41 = new com.maprika.MapViewActivity$38
+<com.maprika.MapsManager: com.maprika.MapList getMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapsManager: void loadMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapsManager$RefreshMyMapsThread: void run()> --> r0 := @this: com.maprika.MapsManager$RefreshMyMapsThread
+<com.maprika.MapsManager: void access$300(com.maprika.MapsManager)> --> $r0 := @parameter0: com.maprika.MapsManager
+<com.maprika.MapsManager: void refreshMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapList: void fromXml(org.xmlpull.v1.XmlPullParser)> --> r0 := @this: com.maprika.MapList
+<com.maprika.MapApp: com.maprika.MapUserException parseServerError(org.xmlpull.v1.XmlPullParser)> --> $r0 := @parameter0: org.xmlpull.v1.XmlPullParser
+<com.maprika.MapUserException: void <init>(java.lang.String,int)> --> r0 := @this: com.maprika.MapUserException
+<com.maprika.Logging: void logError(java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r1 = virtualinvoke $r2.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> virtualinvoke $r2.<com.maprika.MapApp: boolean setCurLocation(android.location.Location)>($r1)
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r4 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r1 != null goto (branch)
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $z2 = staticinvoke <com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)>($r1, $r5)
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $z2 == 0 goto staticinvoke <com.maprika.Logging: void logLocation(java.lang.String)>("MapApp.setCurLocation: new location is not better")
+<com.maprika.Logging: void logLocation(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> $r26 := @caughtexception
+<com.maprika.Logging: void <clinit>()> --> nop
+<com.maprika.Logging: void <clinit>()> --> <com.maprika.Logging: boolean ENABLED> = 0
+<com.maprika.MyMapsActivity: void onDestroy()> --> staticinvoke <com.maprika.Logging: void log(java.lang.String)>("MyMapsActivity:onDestroy")
+<dummyMainClass: com.maprika.MyMapsActivity dummyMainMethod_com_maprika_MyMapsActivity(android.content.Intent)> --> virtualinvoke $r0.<com.maprika.MyMapsActivity: void onDestroy()>()
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> staticinvoke <dummyMainClass: com.maprika.MyMapsActivity dummyMainMethod_com_maprika_MyMapsActivity(android.content.Intent)>(null)
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> --> if $i0 == 5 goto (branch)
+<com.maprika.Logging: void logError(java.lang.String,java.lang.Throwable)> --> $z0 = <com.maprika.Logging: boolean ENABLED>
+<com.maprika.Logging: void logError(java.lang.String,java.lang.Throwable)> --> if $z0 == 0 goto return
+<com.maprika.Logging: void logError(java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("Maprika", $r0, $r1)
+--------------------------------------------------------
+
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> $r26 := @caughtexception
+<com.maprika.Logging: void logLocation(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r1 = virtualinvoke $r2.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> virtualinvoke $r2.<com.maprika.MapApp: boolean setCurLocation(android.location.Location)>($r1)
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r4 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $r5 != null goto z1 = 0
+<com.maprika.Logging: void logLocation(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r1 = virtualinvoke $r2.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> virtualinvoke $r2.<com.maprika.MapApp: boolean setCurLocation(android.location.Location)>($r1)
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r4 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $r5 != null goto z1 = 0
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> z0 = 1
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> z1 = 0
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $z2 == 0 goto staticinvoke <com.maprika.Logging: void logLocation(java.lang.String)>("MapApp.setCurLocation: new location is not better")
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $l0 = r0.<com.maprika.MapApp: long lastUpdatePosTime>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if z0 == 0 goto return z1
+<com.maprika.MapApp: void schedulePosUpdate(boolean,boolean)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp$UpdatePosOnceThread: void run()> --> r0 := @this: com.maprika.MapApp$UpdatePosOnceThread
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> $r17 = virtualinvoke $r34.<java.net.URL: java.net.URLConnection openConnection()>()
+--------------------------------------------------------
+
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r1 = virtualinvoke $r2.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> virtualinvoke $r2.<com.maprika.MapApp: boolean setCurLocation(android.location.Location)>($r1)
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r4 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r1 != null goto (branch)
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $z2 = staticinvoke <com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)>($r1, $r5)
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $z2 == 0 goto staticinvoke <com.maprika.Logging: void logLocation(java.lang.String)>("MapApp.setCurLocation: new location is not better")
+<com.maprika.Logging: void logLocation(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> $r26 := @caughtexception
+<com.maprika.Logging: void logLocation(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void writeLogFile(java.lang.String)> --> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+--------------------------------------------------------
+
+<com.maprika.MapViewActivity: void onActivityResult(int,int,android.content.Intent)> --> $d1 = virtualinvoke $r23.<android.location.Location: double getLongitude()>()
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> r0 := @this: com.maprika.OnlineMap
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = 180.0 + $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d1 / 360.0
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d2 * $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d1 + 0.5
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $r1.<com.maprika.MapData$MapPictureCoord: double x> = $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d0 = $r1.<com.maprika.MapData$MapPictureCoord: double x>
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $b1 = $d0 cmpl 0.0
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $i0 = (int) $b1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> if $i0 < 0 goto return 0
+<com.maprika.MapViewActivity: void onActivityResult(int,int,android.content.Intent)> --> $z0 = virtualinvoke $r12.<com.maprika.MapData: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)>($d0, $d1, $r40)
+<com.maprika.MapViewActivity: void onActivityResult(int,int,android.content.Intent)> --> if $z0 != 0 goto $r41 = new com.maprika.MapViewActivity$38
+<com.maprika.MapsManager: com.maprika.MapList getMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapsManager: void loadMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapsManager$RefreshMyMapsThread: void run()> --> r0 := @this: com.maprika.MapsManager$RefreshMyMapsThread
+<com.maprika.MapsManager: void access$300(com.maprika.MapsManager)> --> $r0 := @parameter0: com.maprika.MapsManager
+<com.maprika.MapsManager: void refreshMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapList: void fromXml(org.xmlpull.v1.XmlPullParser)> --> r0 := @this: com.maprika.MapList
+<com.maprika.MapApp: com.maprika.MapUserException parseServerError(org.xmlpull.v1.XmlPullParser)> --> $r0 := @parameter0: org.xmlpull.v1.XmlPullParser
+<com.maprika.MapUserException: void <init>(java.lang.String,int)> --> r0 := @this: com.maprika.MapUserException
+<com.maprika.Logging: void logError(java.lang.String,java.lang.Throwable)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void logError(java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Maprika", $r0)
+--------------------------------------------------------
+
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r1 = virtualinvoke $r2.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapViewActivity: void onResume()> --> specialinvoke r0.<com.maprika.MapViewActivity: void checkMyMapsUpdateAvailable()>()
+<com.maprika.UpdateLocationBurstService: void onLocationChanged(android.location.Location)> --> $z0 = virtualinvoke $r4.<com.maprika.MapApp: boolean setCurLocation(android.location.Location)>($r1)
+<com.maprika.UpdateLocationBurstService: void onLocationChanged(android.location.Location)> --> $r4 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r4 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r1 != null goto (branch)
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $z2 = staticinvoke <com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)>($r1, $r5)
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $z2 == 0 goto staticinvoke <com.maprika.Logging: void logLocation(java.lang.String)>("MapApp.setCurLocation: new location is not better")
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> z1 = 1
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $l0 = r0.<com.maprika.MapApp: long lastUpdatePosTime>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if z0 == 0 goto return z1
+<com.maprika.UpdateLocationBurstService: void onLocationChanged(android.location.Location)> --> $z0 = virtualinvoke $r4.<com.maprika.MapApp: boolean setCurLocation(android.location.Location)>($r1)
+<com.maprika.UpdateLocationBurstService: void onLocationChanged(android.location.Location)> --> if $z0 == 0 goto $r4 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: void schedulePosUpdateIfNeeded(boolean,boolean)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> if $r2 != null goto $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.Logging: java.lang.String log(android.location.Location)> --> return "null"
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r7 = staticinvoke <com.maprika.Logging: java.lang.String log(android.location.Location)>($r2)
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> if $r2 != null goto $r6 = new java.lang.StringBuilder
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r5 = virtualinvoke $r3.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r3 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapGoogleView2: android.content.Intent share()> --> if $r5 != null goto $r10 = virtualinvoke r0.<com.maprika.MapGoogleView2: com.google.android.gms.maps.GoogleMap peekMap()>()
+<com.maprika.MapViewActivity: void onSendLocation()> --> $r2 = interfaceinvoke $r1.<com.maprika.IMapView: android.content.Intent share()>()
+<com.maprika.MapViewActivity: void onSendLocation()> --> if $r2 != null goto $r3 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: void tagLocalyticsEvent(java.lang.String)> --> r0 := @this: com.maprika.MapApp
+<com.localytics.android.LocalyticsSession: void tagEvent(java.lang.String)> --> r0 := @this: com.localytics.android.LocalyticsSession
+<com.maprika.Localytics$1: void tagEvent(java.lang.String,java.util.Map)> --> r0 := @this: com.maprika.Localytics$1
+<com.localytics.android.LocalyticsSession: void tagEvent(java.lang.String,java.util.Map)> --> r0 := @this: com.localytics.android.LocalyticsSession
+<com.localytics.android.LocalyticsSession: void tagEvent(java.lang.String,java.util.Map)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Localytics", "attributes is empty.  Did the caller make an error?")
+--------------------------------------------------------
+
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r1 = virtualinvoke $r2.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapViewActivity$29: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> virtualinvoke $r2.<com.maprika.MapApp: boolean setCurLocation(android.location.Location)>($r1)
+<com.maprika.MaprikaLocationListener: void onLocationChanged(android.location.Location)> --> $r2 = <com.maprika.MapApp: com.maprika.MapApp instance>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r4 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)> --> if $r1 != null goto (branch)
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $z2 = staticinvoke <com.maprika.MapApp: boolean isBetterLocation(android.location.Location,android.location.Location)>($r1, $r5)
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $z2 == 0 goto staticinvoke <com.maprika.Logging: void logLocation(java.lang.String)>("MapApp.setCurLocation: new location is not better")
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r7 = new android.location.Location
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r4.<com.maprika.MyInfo: android.location.Location location> = $r7
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r4 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r4 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $r5 = $r4.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $r5 != null goto z1 = 0
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> z0 = 1
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> z1 = 0
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if $z2 == 0 goto staticinvoke <com.maprika.Logging: void logLocation(java.lang.String)>("MapApp.setCurLocation: new location is not better")
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> $l0 = r0.<com.maprika.MapApp: long lastUpdatePosTime>
+<com.maprika.MapApp: boolean setCurLocation(android.location.Location)> --> if z0 == 0 goto return z1
+<com.maprika.MapApp: void schedulePosUpdate(boolean,boolean)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp$UpdatePosOnceThread: void run()> --> r0 := @this: com.maprika.MapApp$UpdatePosOnceThread
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> r0 := @this: com.maprika.MapApp
+<com.maprika.MapApp: void updatePos(boolean,boolean)> --> specialinvoke $r34.<java.net.URL: void <init>(java.lang.String)>($r12)
+--------------------------------------------------------
+
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3.<com.maprika.MyInfo: android.location.Location location> = $r2
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r3 = r0.<com.maprika.MapApp: com.maprika.MyInfo myInfo>
+<com.maprika.MapApp: android.location.Location getCurLocation()> --> $r2 = $r3.<com.maprika.MyInfo: android.location.Location location>
+<com.maprika.MapViewActivity: void locateMe()> --> $r3 = virtualinvoke $r2.<com.maprika.MapApp: android.location.Location getCurLocation()>()
+<com.maprika.MapViewActivity: void locateMe()> --> if $r3 != null goto $r6 = <com.maprika.MapsManager: com.maprika.MapsManager instance>
+<com.maprika.MapsManager: com.maprika.MapList getMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapsManager: void loadMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapsManager$RefreshMyMapsThread: void run()> --> r0 := @this: com.maprika.MapsManager$RefreshMyMapsThread
+<com.maprika.MapsManager: void access$300(com.maprika.MapsManager)> --> $r0 := @parameter0: com.maprika.MapsManager
+<com.maprika.MapsManager: void refreshMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapList: void fromXml(org.xmlpull.v1.XmlPullParser)> --> r0 := @this: com.maprika.MapList
+<com.maprika.MapApp: com.maprika.MapUserException parseServerError(org.xmlpull.v1.XmlPullParser)> --> $r0 := @parameter0: org.xmlpull.v1.XmlPullParser
+<com.maprika.Logging: void logFriendship(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void logFriendship(java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Friendship", $r0)
+--------------------------------------------------------
+
+<com.maprika.MapViewActivity$OnFriendGalleryClickListener: void onClick(android.view.View)> --> $d1 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> r0 := @this: com.maprika.OnlineMap
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = 180.0 + $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d1 / 360.0
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d2 * $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d1 = $d1 + 0.5
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $r1.<com.maprika.MapData$MapPictureCoord: double x> = $d1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $d0 = $r1.<com.maprika.MapData$MapPictureCoord: double x>
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $b1 = $d0 cmpl 0.0
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> $i0 = (int) $b1
+<com.maprika.OnlineMap: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)> --> if $i0 < 0 goto return 0
+<com.maprika.MapViewActivity$OnFriendGalleryClickListener: void onClick(android.view.View)> --> $z0 = virtualinvoke $r3.<com.maprika.MapData: boolean calcImageCoord(double,double,com.maprika.MapData$MapPictureCoord)>($d0, $d1, $r15)
+<com.maprika.MapViewActivity$OnFriendGalleryClickListener: void onClick(android.view.View)> --> if $z0 != 0 goto $r2 = r0.<com.maprika.MapViewActivity$OnFriendGalleryClickListener: com.maprika.MapViewActivity this$0>
+<com.maprika.MapsManager: com.maprika.MapList getMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapsManager: void loadMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapsManager$RefreshMyMapsThread: void run()> --> r0 := @this: com.maprika.MapsManager$RefreshMyMapsThread
+<com.maprika.MapsManager: void access$300(com.maprika.MapsManager)> --> $r0 := @parameter0: com.maprika.MapsManager
+<com.maprika.MapsManager: void refreshMyMaps()> --> r0 := @this: com.maprika.MapsManager
+<com.maprika.MapList: void fromXml(org.xmlpull.v1.XmlPullParser)> --> r0 := @this: com.maprika.MapList
+<com.maprika.MapApp: com.maprika.MapUserException parseServerError(org.xmlpull.v1.XmlPullParser)> --> $r0 := @parameter0: org.xmlpull.v1.XmlPullParser
+<com.maprika.Logging: void logFriendship(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.maprika.Logging: void logFriendship(java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Friendship", $r0)
+--------------------------------------------------------
+

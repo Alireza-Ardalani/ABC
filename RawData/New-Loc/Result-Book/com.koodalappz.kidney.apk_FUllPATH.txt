@@ -1,0 +1,19 @@
+<com.seattleclouds.location.p: void onLocationChanged(android.location.Location)> --> interfaceinvoke $r2.<android.location.LocationListener: void onLocationChanged(android.location.Location)>($r1)
+<com.seattleclouds.location.l: boolean a(android.location.Location,android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.seattleclouds.location.l: boolean a(android.location.Location,android.location.Location)> --> if $r0 != null goto $l0 = virtualinvoke $r0.<android.location.Location: long getTime()>()
+<com.seattleclouds.location.p: void onLocationChanged(android.location.Location)> --> $z0 = staticinvoke <com.seattleclouds.location.l: boolean a(android.location.Location,android.location.Location)>($r1, $r5)
+<com.seattleclouds.location.p: void onLocationChanged(android.location.Location)> --> if $z0 == 0 goto return
+<com.seattleclouds.modules.savephoto.k: void a(android.location.Location)> --> r0 := @this: com.seattleclouds.modules.savephoto.k
+<com.seattleclouds.modules.savephoto.SavePhotoActivity: void c(com.seattleclouds.modules.savephoto.SavePhotoActivity,android.location.Location)> --> $r0 := @parameter0: com.seattleclouds.modules.savephoto.SavePhotoActivity
+<com.seattleclouds.modules.savephoto.SavePhotoActivity: void b(android.location.Location)> --> r0 := @this: com.seattleclouds.modules.savephoto.SavePhotoActivity
+<com.seattleclouds.location.a: void a(android.location.Location)> --> r0 := @this: com.seattleclouds.location.a
+<com.seattleclouds.location.a: void a(double,double)> --> r0 := @this: com.seattleclouds.location.a
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.seattleclouds.previewer.a: void run()> --> r0 := @this: com.seattleclouds.previewer.a
+<com.seattleclouds.util.a: boolean d(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.seattleclouds.util.a: int c(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.seattleclouds.util.a: int c(java.lang.String)> --> $r2 = new java.net.URL
+<com.seattleclouds.util.a: int c(java.lang.String)> --> $r5 := @caughtexception
+<com.seattleclouds.util.a: int c(java.lang.String)> --> virtualinvoke $r1.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+

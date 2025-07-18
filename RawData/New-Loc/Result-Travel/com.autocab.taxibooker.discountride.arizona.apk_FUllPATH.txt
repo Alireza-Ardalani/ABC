@@ -1,0 +1,152 @@
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $b0 = $d0 cmpl 0.0
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> if $b0 != 0 goto return $r2
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = new com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.utils.LocationClient$1: boolean handleMessage(android.os.Message)> --> virtualinvoke $r2.<com.autocab.premiumapp3.utils.LocationClient: void poke()>()
+<dummyMainClass: com.autocab.premiumapp3.services.ProcessingService dummyMainMethod_com_autocab_premiumapp3_services_ProcessingService(android.content.Intent)> --> virtualinvoke $r4.<com.autocab.premiumapp3.utils.LocationClient$1: boolean handleMessage(android.os.Message)>(null)
+<com.autocab.premiumapp3.services.ProcessingService$1: void handleMessage(android.os.Message)> --> $r19 = staticinvoke <com.autocab.premiumapp3.utils.Settings: com.autocab.premiumapp3.utils.Settings getInstance()>()
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> if $r1 != null goto $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.feed.UserProfile: void finaliseLogout()> --> $r1 = staticinvoke <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)>($r0)
+<com.autocab.premiumapp3.Prefs: void setAutoLoginUserName(java.lang.String)> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void setAutoLoginUserName(java.lang.String)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("AUTOLOGIN_USERNAME_KEY", "")
+--------------------------------------------------------
+
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $b0 = $d0 cmpl 0.0
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> if $b0 != 0 goto return $r2
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = new com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.utils.LocationClient$1: boolean handleMessage(android.os.Message)> --> virtualinvoke $r2.<com.autocab.premiumapp3.utils.LocationClient: void poke()>()
+<dummyMainClass: com.autocab.premiumapp3.services.ProcessingService dummyMainMethod_com_autocab_premiumapp3_services_ProcessingService(android.content.Intent)> --> virtualinvoke $r4.<com.autocab.premiumapp3.utils.LocationClient$1: boolean handleMessage(android.os.Message)>(null)
+<com.autocab.premiumapp3.services.ProcessingService$1: void handleMessage(android.os.Message)> --> $r19 = staticinvoke <com.autocab.premiumapp3.utils.Settings: com.autocab.premiumapp3.utils.Settings getInstance()>()
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> if $r1 != null goto $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.feed.UserProfile: void finaliseLogout()> --> $r1 = staticinvoke <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)>($r0)
+<com.autocab.premiumapp3.Prefs: void setAutoLoginPassword(java.lang.String)> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void setAutoLoginPassword(java.lang.String)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("AUTOLOGIN_PASSWORD_KEY", "")
+--------------------------------------------------------
+
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $b0 = $d0 cmpl 0.0
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> if $b0 != 0 goto return $r2
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = new com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object,java.lang.Runnable)> --> virtualinvoke $r3.<android.os.Handler: boolean post(java.lang.Runnable)>($r4)
+<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object)> --> virtualinvoke r0.<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object,java.lang.Runnable)>($r1, null)
+<com.autocab.premiumapp3.Prefs: void <init>(android.content.Context)> --> virtualinvoke $r2.<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object)>(r0)
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> specialinvoke $r1.<com.autocab.premiumapp3.Prefs: void <init>(android.content.Context)>($r0)
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> if $r1 != null goto $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.services.ProcessingService$1: void handleMessage(android.os.Message)> --> $r18 = staticinvoke <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)>($r17)
+<com.autocab.premiumapp3.Prefs: void handleAppPreferencesDownloaded()> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void setPreferenceState(com.autocab.premiumapp3.utils.Settings$PreferencesState)> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void setPreferenceState(com.autocab.premiumapp3.utils.Settings$PreferencesState)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("PREFERENCE_STATE", $r3)
+--------------------------------------------------------
+
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $b0 = $d0 cmpl 0.0
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> if $b0 != 0 goto return $r2
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = new com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object,java.lang.Runnable)> --> virtualinvoke $r3.<android.os.Handler: boolean post(java.lang.Runnable)>($r4)
+<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object)> --> virtualinvoke r0.<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object,java.lang.Runnable)>($r1, null)
+<com.autocab.premiumapp3.Prefs: void <init>(android.content.Context)> --> virtualinvoke $r2.<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object)>(r0)
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> specialinvoke $r1.<com.autocab.premiumapp3.Prefs: void <init>(android.content.Context)>($r0)
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> if $r1 != null goto $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.feed.UserProfile: void saveUserProfile(com.autocab.premiumapp3.feed.UserProfile,long)> --> $r2 = staticinvoke <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)>($r1)
+<com.autocab.premiumapp3.Prefs: void saveUserProfile(com.autocab.premiumapp3.feed.UserProfile)> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void serialiseObject(java.lang.String,java.lang.Object)> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void serialiseObject(java.lang.String,java.lang.Object)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $b0 = $d0 cmpl 0.0
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> if $b0 != 0 goto return $r2
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = new com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object,java.lang.Runnable)> --> virtualinvoke $r3.<android.os.Handler: boolean post(java.lang.Runnable)>($r4)
+<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object)> --> virtualinvoke r0.<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object,java.lang.Runnable)>($r1, null)
+<com.autocab.premiumapp3.Prefs: void <init>(android.content.Context)> --> virtualinvoke $r2.<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object)>(r0)
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> specialinvoke $r1.<com.autocab.premiumapp3.Prefs: void <init>(android.content.Context)>($r0)
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> if $r1 != null goto $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.feed.UserProfile: void finaliseLogout()> --> $r1 = staticinvoke <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)>($r0)
+<com.autocab.premiumapp3.Prefs: void setAutoLoginPassword(java.lang.String)> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void setAutoLoginPassword(java.lang.String)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("AUTOLOGIN_PASSWORD_KEY", "")
+--------------------------------------------------------
+
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $b0 = $d0 cmpl 0.0
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> if $b0 != 0 goto return $r2
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = new com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object,java.lang.Runnable)> --> virtualinvoke $r3.<android.os.Handler: boolean post(java.lang.Runnable)>($r4)
+<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object)> --> virtualinvoke r0.<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object,java.lang.Runnable)>($r1, null)
+<com.autocab.premiumapp3.Prefs: void <init>(android.content.Context)> --> virtualinvoke $r2.<com.autocab.premiumapp3.utils.MainThreadBus: void register(java.lang.Object)>(r0)
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> specialinvoke $r1.<com.autocab.premiumapp3.Prefs: void <init>(android.content.Context)>($r0)
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> if $r1 != null goto $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.feed.UserProfile: void finaliseLogout()> --> $r1 = staticinvoke <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)>($r0)
+<com.autocab.premiumapp3.Prefs: void setAutoLoginUserName(java.lang.String)> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void setAutoLoginUserName(java.lang.String)> --> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("AUTOLOGIN_USERNAME_KEY", "")
+--------------------------------------------------------
+
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $b0 = $d0 cmpl 0.0
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> if $b0 != 0 goto return $r2
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = new com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.utils.LocationClient$1: boolean handleMessage(android.os.Message)> --> virtualinvoke $r2.<com.autocab.premiumapp3.utils.LocationClient: void poke()>()
+<dummyMainClass: com.autocab.premiumapp3.services.ProcessingService dummyMainMethod_com_autocab_premiumapp3_services_ProcessingService(android.content.Intent)> --> virtualinvoke $r4.<com.autocab.premiumapp3.utils.LocationClient$1: boolean handleMessage(android.os.Message)>(null)
+<com.autocab.premiumapp3.services.ProcessingService$1: void handleMessage(android.os.Message)> --> $r19 = staticinvoke <com.autocab.premiumapp3.utils.Settings: com.autocab.premiumapp3.utils.Settings getInstance()>()
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> if $r1 != null goto $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.utils.DownloadQueue: void saveDownloadQueue()> --> $r2 = staticinvoke <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)>($r1)
+<com.autocab.premiumapp3.Prefs: void saveDownloadQueue(com.autocab.premiumapp3.utils.DownloadQueue)> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void serialiseObject(java.lang.String,java.lang.Object)> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void serialiseObject(java.lang.String,java.lang.Object)> --> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> $b0 = $d0 cmpl 0.0
+<com.autocab.premiumapp3.utils.LocationClient: android.location.Location getAutoLocation()> --> if $b0 != 0 goto return $r2
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = new com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.utils.LocationClient$1: boolean handleMessage(android.os.Message)> --> virtualinvoke $r2.<com.autocab.premiumapp3.utils.LocationClient: void poke()>()
+<dummyMainClass: com.autocab.premiumapp3.services.ProcessingService dummyMainMethod_com_autocab_premiumapp3_services_ProcessingService(android.content.Intent)> --> virtualinvoke $r4.<com.autocab.premiumapp3.utils.LocationClient$1: boolean handleMessage(android.os.Message)>(null)
+<com.autocab.premiumapp3.services.ProcessingService$1: void handleMessage(android.os.Message)> --> $r19 = staticinvoke <com.autocab.premiumapp3.utils.Settings: com.autocab.premiumapp3.utils.Settings getInstance()>()
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> if $r1 != null goto $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance> = $r1
+<com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)> --> $r1 = <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs mInstance>
+<com.autocab.premiumapp3.services.ProcessingService$1: void handleMessage(android.os.Message)> --> $r18 = staticinvoke <com.autocab.premiumapp3.Prefs: com.autocab.premiumapp3.Prefs getInstance(android.content.Context)>($r17)
+<com.autocab.premiumapp3.Prefs: void handleAppPreferencesDownloaded()> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void setPreferenceState(com.autocab.premiumapp3.utils.Settings$PreferencesState)> --> r0 := @this: com.autocab.premiumapp3.Prefs
+<com.autocab.premiumapp3.Prefs: void setPreferenceState(com.autocab.premiumapp3.utils.Settings$PreferencesState)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("PREFERENCE_STATE", $r3)
+--------------------------------------------------------
+

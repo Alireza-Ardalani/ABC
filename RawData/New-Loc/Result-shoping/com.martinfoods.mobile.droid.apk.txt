@@ -1,0 +1,12 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("location", $r1)
+Component=> com.localytics.android.LocationUpdateReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r2.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("location", $r1)
+Component=> com.localytics.android.LocationUpdateReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

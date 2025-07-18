@@ -1,0 +1,52 @@
+<dummyMainClass: com.noaaweather_lite.android.MainActivity dummyMainMethod_com_noaaweather__lite_android_MainActivity(android.content.Intent)> --> virtualinvoke $r4.<com.noaaweather_lite.android.MainActivity$4: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.noaaweather_lite.android.MainActivity dummyMainMethod_com_noaaweather__lite_android_MainActivity(android.content.Intent)> --> if $i0 == 6 goto (branch)
+<com.noaaweather_lite.android.MainActivity$4: void onProviderDisabled(java.lang.String)> --> r0 := @this: com.noaaweather_lite.android.MainActivity$4
+<com.noaaweather_lite.android.MainActivity$4: void onProviderDisabled(java.lang.String)> --> $r2 = r0.<com.noaaweather_lite.android.MainActivity$4: com.noaaweather_lite.android.MainActivity this$0>
+<com.noaaweather_lite.android.MainActivity: void access$16(com.noaaweather_lite.android.MainActivity,android.location.Location)> --> $r0 := @parameter0: com.noaaweather_lite.android.MainActivity
+<com.noaaweather_lite.android.MainActivity: void updateWithNewLocation(android.location.Location)> --> r0 := @this: com.noaaweather_lite.android.MainActivity
+<com.noaaweather_lite.android.MainActivity: void putSetting(java.lang.String,java.lang.String)> --> r0 := @this: com.noaaweather_lite.android.MainActivity
+<com.noaaweather_lite.android.MainActivity: void updateWithNewLocation(android.location.Location)> --> virtualinvoke r0.<com.noaaweather_lite.android.MainActivity: void putSetting(java.lang.String,java.lang.String)>("latitude", $r2)
+<com.noaaweather_lite.android.MainActivity: void access$16(com.noaaweather_lite.android.MainActivity,android.location.Location)> --> specialinvoke $r0.<com.noaaweather_lite.android.MainActivity: void updateWithNewLocation(android.location.Location)>($r1)
+<com.noaaweather_lite.android.MainActivity$4: void onProviderDisabled(java.lang.String)> --> staticinvoke <com.noaaweather_lite.android.MainActivity: void access$16(com.noaaweather_lite.android.MainActivity,android.location.Location)>($r2, null)
+<com.noaaweather_lite.android.MainActivity$4: void onProviderDisabled(java.lang.String)> --> $r2 = r0.<com.noaaweather_lite.android.MainActivity$4: com.noaaweather_lite.android.MainActivity this$0>
+<dummyMainClass: com.noaaweather_lite.android.MainActivity dummyMainMethod_com_noaaweather__lite_android_MainActivity(android.content.Intent)> --> virtualinvoke $r4.<com.noaaweather_lite.android.MainActivity$4: void onProviderDisabled(java.lang.String)>("")
+<com.noaaweather_lite.android.MainActivity$4: void <init>(com.noaaweather_lite.android.MainActivity)> --> return
+<com.noaaweather_lite.android.MainActivity$4: void <init>(com.noaaweather_lite.android.MainActivity)> --> r0.<com.noaaweather_lite.android.MainActivity$4: com.noaaweather_lite.android.MainActivity this$0> = $r1
+<dummyMainClass: com.noaaweather_lite.android.MainActivity dummyMainMethod_com_noaaweather__lite_android_MainActivity(android.content.Intent)> --> specialinvoke $r4.<com.noaaweather_lite.android.MainActivity$4: void <init>(com.noaaweather_lite.android.MainActivity)>($r0)
+<com.noaaweather_lite.android.MainActivity$10: void <init>(com.noaaweather_lite.android.MainActivity)> --> return
+<dummyMainClass: com.noaaweather_lite.android.MainActivity dummyMainMethod_com_noaaweather__lite_android_MainActivity(android.content.Intent)> --> specialinvoke $r3.<com.noaaweather_lite.android.MainActivity$10: void <init>(com.noaaweather_lite.android.MainActivity)>($r0)
+<com.noaaweather_lite.android.MainActivity$3: void <init>(com.noaaweather_lite.android.MainActivity)> --> return
+<dummyMainClass: com.noaaweather_lite.android.MainActivity dummyMainMethod_com_noaaweather__lite_android_MainActivity(android.content.Intent)> --> specialinvoke $r2.<com.noaaweather_lite.android.MainActivity$3: void <init>(com.noaaweather_lite.android.MainActivity)>($r0)
+<com.noaaweather_lite.android.MainActivity: void onCreate(android.os.Bundle)> --> return
+<com.noaaweather_lite.android.MainActivity: void doInit()> --> return
+<com.noaaweather_lite.android.MainActivity: void downloadURL(java.lang.String,java.lang.String,java.lang.String)> --> return
+<com.noaaweather_lite.android.MainActivity: void doInit()> --> virtualinvoke r0.<com.noaaweather_lite.android.MainActivity: void downloadURL(java.lang.String,java.lang.String,java.lang.String)>("http://weatherinfoapp.com/w2/sync.txt", "sync", "")
+<com.noaaweather_lite.android.StandardFunctions: void saveFile(java.lang.String,java.lang.String,android.content.Context)> --> return
+<com.noaaweather_lite.android.MainActivity: void doInit()> --> virtualinvoke $r1.<com.noaaweather_lite.android.StandardFunctions: void saveFile(java.lang.String,java.lang.String,android.content.Context)>("fetch", "sync.txt", r0)
+<com.noaaweather_lite.android.MainActivity: void onCreate(android.os.Bundle)> --> virtualinvoke r0.<com.noaaweather_lite.android.MainActivity: void doInit()>()
+<com.noaaweather_lite.android.StandardFunctions: java.lang.String readFile(java.lang.String,android.content.Context)> --> return $r1
+<com.noaaweather_lite.android.MainActivity: void onCreate(android.os.Bundle)> --> $r6 = virtualinvoke $r3.<com.noaaweather_lite.android.StandardFunctions: java.lang.String readFile(java.lang.String,android.content.Context)>("a2.php", r0)
+<com.noaaweather_lite.android.StandardFunctions: java.lang.String readFile(java.lang.String,android.content.Context)> --> return $r1
+<com.noaaweather_lite.android.MainActivity: void onCreate(android.os.Bundle)> --> $r6 = virtualinvoke $r3.<com.noaaweather_lite.android.StandardFunctions: java.lang.String readFile(java.lang.String,android.content.Context)>("locations.txt", r0)
+<com.noaaweather_lite.android.MainActivity: java.lang.String getSetting(java.lang.String,java.lang.String)> --> return $r2
+<com.noaaweather_lite.android.MainActivity: void onCreate(android.os.Bundle)> --> $r6 = virtualinvoke r0.<com.noaaweather_lite.android.MainActivity: java.lang.String getSetting(java.lang.String,java.lang.String)>("setting_portrait", $r6)
+<com.noaaweather_lite.android.MainActivity: java.lang.String getSetting(java.lang.String,java.lang.String)> --> return $r2
+<com.noaaweather_lite.android.MainActivity: void onCreate(android.os.Bundle)> --> $r6 = virtualinvoke r0.<com.noaaweather_lite.android.MainActivity: java.lang.String getSetting(java.lang.String,java.lang.String)>("setting_degrees", $r6)
+<com.noaaweather_lite.android.MainActivity: void doTheme(int)> --> return
+<com.noaaweather_lite.android.MainActivity$21: void <init>(com.noaaweather_lite.android.MainActivity,int)> --> return
+<com.noaaweather_lite.android.MainActivity: void doTheme(int)> --> specialinvoke $r1.<com.noaaweather_lite.android.MainActivity$21: void <init>(com.noaaweather_lite.android.MainActivity,int)>(r0, $i0)
+<com.noaaweather_lite.android.MainActivity: void onCreate(android.os.Bundle)> --> virtualinvoke r0.<com.noaaweather_lite.android.MainActivity: void doTheme(int)>($i0)
+<com.noaaweather_lite.android.MainActivity: java.lang.String getSetting(java.lang.String,java.lang.String)> --> return $r2
+<com.noaaweather_lite.android.MainActivity: void onCreate(android.os.Bundle)> --> $r6 = virtualinvoke r0.<com.noaaweather_lite.android.MainActivity: java.lang.String getSetting(java.lang.String,java.lang.String)>("setting_theme", $r6)
+<com.noaaweather_lite.android.MainActivity: void doLocation()> --> return
+<com.noaaweather_lite.android.MainActivity: void onCreate(android.os.Bundle)> --> virtualinvoke r0.<com.noaaweather_lite.android.MainActivity: void doLocation()>()
+<com.noaaweather_lite.android.MainActivity: void getScreenSize()> --> return
+<com.noaaweather_lite.android.MainActivity: void onCreate(android.os.Bundle)> --> virtualinvoke r0.<com.noaaweather_lite.android.MainActivity: void getScreenSize()>()
+<com.noaaweather_lite.android.MainActivity: java.lang.String getSetting(java.lang.String,java.lang.String)> --> r0 := @this: com.noaaweather_lite.android.MainActivity
+<com.noaaweather_lite.android.MainActivity: void onCreate(android.os.Bundle)> --> $r6 = virtualinvoke r0.<com.noaaweather_lite.android.MainActivity: java.lang.String getSetting(java.lang.String,java.lang.String)>("longitude", $r6)
+<com.noaaweather_lite.android.MainActivity: void doLocation()> --> r0 := @this: com.noaaweather_lite.android.MainActivity
+<com.noaaweather_lite.android.MainActivity: void doLocation()> --> if $z0 != 0 goto (branch)
+<com.noaaweather_lite.android.MainActivity: void doLocation()> --> if $z1 == 0 goto (branch)
+<com.noaaweather_lite.android.MainActivity: void doLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Network", "Network Enabled")
+--------------------------------------------------------
+

@@ -1,0 +1,20 @@
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("TwilightManager", "Failed to get last known location", $r4)
+Component=> net.atos.si.sol.ens.cv.handinjuryNative.LauncherActivity
+ComponentColor=> GREEN
+android.util.Log
+b.b.k.t
+android.location.LocationManager
+Category: b.b.k.t-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TwilightManager", "Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.")
+Component=> net.atos.si.sol.ens.cv.handinjuryNative.LauncherActivity
+ComponentColor=> GREEN
+b.b.k.l$h
+b.b.k.t
+android.location.LocationManager
+android.util.Log
+Category: b.b.k.l$h-*-b.b.k.t-*-
+-----------------------------------------------------------------
+net.atos.si.sol.ens.cv.handinjuryNative.Auva_Public_Key_signed.apk: 1017179

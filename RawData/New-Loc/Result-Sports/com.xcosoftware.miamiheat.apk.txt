@@ -1,0 +1,36 @@
+Source=> $r29 = virtualinvoke $r28.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+Component=> com.ticketmaster.presencesdk.event_tickets.TmxEventTicketsView
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r27 = virtualinvoke $r28.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 6)
+Component=> com.ticketmaster.presencesdk.event_tickets.TmxEventTicketsView
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r27 = virtualinvoke $r28.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Session", $r7)
+Component=> com.ticketmaster.presencesdk.event_tickets.TmxEventTicketsView
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r27 = virtualinvoke $r28.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SessionM.Session", "Missing context! Unable to get push notification from shared preferences! Returning false.")
+Component=> com.ticketmaster.presencesdk.event_tickets.TmxEventTicketsView
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r27 = virtualinvoke $r28.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("SessionM.Session", 3)
+Component=> com.ticketmaster.presencesdk.event_tickets.TmxEventTicketsView
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r29 = virtualinvoke $r28.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SessionM.Session", $r7)
+Component=> com.ticketmaster.presencesdk.event_tickets.TmxEventTicketsView
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

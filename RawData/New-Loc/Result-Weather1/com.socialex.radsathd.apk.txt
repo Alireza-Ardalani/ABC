@@ -1,0 +1,36 @@
+Source=> $r7 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Servicio", "actualizarGeoUbicacion: Ubicaci\u00f3n encontrada. Actualizando...")
+Component=> com.socialex.radsathd.Servicio
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lon_0", $r3)
+Component=> com.socialex.radsathd.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lat_0", $r3)
+Component=> com.socialex.radsathd.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> $r9 = interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lon_0", r6)
+Component=> com.socialex.radsathd.Servicio
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> $r9 = interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lat_0", r6)
+Component=> com.socialex.radsathd.Servicio
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r6)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Servicio", "obtenerGeoUbicacion: No se encontraron ubicaciones")
+Component=> com.socialex.radsathd.Servicio
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,6 @@
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>("LocationDataProvider", $r1, $r2)
+Component=> com.yahoo.mobile.client.android.search.DebugInfoActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

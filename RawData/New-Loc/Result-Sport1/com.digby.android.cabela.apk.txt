@@ -1,0 +1,264 @@
+Source=> $d1 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("State", $r2)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.android.cabela.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("Date", $l0)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Latitude", $f0)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DigbyLibrary", $r2)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Latitude", $f0)
+Component=> com.digby.android.cabela.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Latitude", $f0)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+Component=> com.digby.android.cabela.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("Date", $l0)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.android.cabela.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.android.cabela.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DigbyLibrary", $r2)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("State", $r2)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+Component=> com.digby.android.cabela.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DigbyLibrary", $r0)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.android.cabela.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Longitude", $f0)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Longitude", $f0)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r6.<java.io.BufferedWriter: java.io.Writer append(java.lang.CharSequence)>($r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DigbyLibrary", $r0)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DigbyLibrary", "Production environment - logging disabled")
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DigbyLibrary", $r0, $r1)
+Component=> com.digby.mm.android.library.services.impl.GeofenceTransitionsService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r10.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r12.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("Longitude", $f0)
+Component=> com.digby.android.cabela.MainActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

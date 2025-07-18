@@ -1,0 +1,32 @@
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> $r27 = virtualinvoke $r23.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3)
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> if $r27 == null goto $z0 = interfaceinvoke $r25.<java.util.Iterator: boolean hasNext()>()
+<com.pushio.manager.s: java.lang.String e()> --> r0 := @this: com.pushio.manager.s
+<com.pushio.manager.s: java.lang.String e()> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("installed_at", $l0)
+--------------------------------------------------------
+
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> $r27 = virtualinvoke $r23.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3)
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> $r40 := @caughtexception
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r3, "Failed To Register", $r40)
+--------------------------------------------------------
+
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> $d0 = virtualinvoke $r26.<android.location.Location: double getLatitude()>()
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> $r40 := @caughtexception
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r3, "Failed To Register", $r40)
+--------------------------------------------------------
+
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> $d0 = virtualinvoke $r26.<android.location.Location: double getLongitude()>()
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> $r40 := @caughtexception
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r3, "Failed To Register", $r40)
+--------------------------------------------------------
+
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> $r27 = virtualinvoke $r23.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3)
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> if $r27 == null goto $z0 = interfaceinvoke $r25.<java.util.Iterator: boolean hasNext()>()
+<com.pushio.manager.s: java.lang.String e()> --> r0 := @this: com.pushio.manager.s
+<com.pushio.manager.s: java.lang.String e()> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("uuid", $r2)
+--------------------------------------------------------
+
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> $r27 = virtualinvoke $r23.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3)
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> if $r27 == null goto $z0 = interfaceinvoke $r25.<java.util.Iterator: boolean hasNext()>()
+<com.pushio.manager.c.g: java.lang.Integer a(java.lang.Void[])> --> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF-8")
+--------------------------------------------------------
+

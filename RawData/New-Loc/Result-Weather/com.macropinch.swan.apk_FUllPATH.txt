@@ -1,0 +1,29 @@
+<com.macropinch.c.d: void e()> --> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.macropinch.c.d: boolean a(android.location.Location,android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.macropinch.c.d: void e()> --> $z0 = staticinvoke <com.macropinch.c.d: boolean a(android.location.Location,android.location.Location)>($r7, $r8)
+<com.macropinch.c.d: void e()> --> r0.<com.macropinch.c.d: android.location.Location e> = $r7
+<com.macropinch.weatherservice.WeatherService: void q()> --> virtualinvoke $r1.<com.macropinch.c.d: void e()>()
+<com.macropinch.weatherservice.WeatherService: void q()> --> $r1 = r0.<com.macropinch.weatherservice.WeatherService: com.macropinch.c.d l>
+<com.macropinch.weatherservice.WeatherService: void p()> --> specialinvoke r0.<com.macropinch.weatherservice.WeatherService: void q()>()
+<com.macropinch.weatherservice.WeatherService: void onCreate()> --> specialinvoke r0.<com.macropinch.weatherservice.WeatherService: void p()>()
+<dummyMainClass: com.macropinch.weatherservice.WeatherService dummyMainMethod_com_macropinch_weatherservice_WeatherService(android.content.Intent)> --> virtualinvoke $r0.<com.macropinch.weatherservice.WeatherService: void onCreate()>()
+<com.macropinch.e.c: void onStart(android.content.Intent,int)> --> r0 := @this: com.macropinch.e.c
+<com.macropinch.weatherservice.WeatherService: android.content.Intent getIntent()> --> this := @this: com.macropinch.weatherservice.WeatherService
+<com.macropinch.e.c: void onStart(android.content.Intent,int)> --> $r1 = virtualinvoke r0.<com.macropinch.weatherservice.WeatherService: android.content.Intent getIntent()>()
+<com.macropinch.weatherservice.b.a: int a(android.content.Intent,int)> --> r0 := @this: com.macropinch.weatherservice.b.a
+<com.macropinch.weatherservice.b.a: boolean a(android.os.Messenger,java.lang.String)> --> r0 := @this: com.macropinch.weatherservice.b.a
+<com.macropinch.weatherservice.b.a: int a(android.content.Intent,int)> --> $z0 = specialinvoke r0.<com.macropinch.weatherservice.b.a: boolean a(android.os.Messenger,java.lang.String)>(null, null)
+<com.macropinch.weatherservice.WeatherService: void a(android.content.Intent)> --> r0 := @this: com.macropinch.weatherservice.WeatherService
+<com.macropinch.weatherservice.b.a: void a(android.content.Intent)> --> r0 := @this: com.macropinch.weatherservice.b.a
+<com.macropinch.weatherservice.WeatherService: void a(android.content.Intent)> --> specialinvoke r0.<com.macropinch.weatherservice.b.a: void a(android.content.Intent)>($r1)
+<com.macropinch.weatherservice.b.a: void a(com.macropinch.weatherservice.db.DB,java.lang.String,int[])> --> r0 := @this: com.macropinch.weatherservice.b.a
+<com.macropinch.weatherservice.b.a: java.lang.Class a(java.lang.String)> --> r0 := @this: com.macropinch.weatherservice.b.a
+<com.macropinch.weatherservice.b.a: void a(com.macropinch.weatherservice.db.DB,java.lang.String,int[])> --> $r4 = virtualinvoke r0.<com.macropinch.weatherservice.b.a: java.lang.Class a(java.lang.String)>($r2)
+<com.macropinch.weatherservice.b.a: android.content.SharedPreferences a(java.lang.Class)> --> r0 := @this: com.macropinch.weatherservice.b.a
+<com.macropinch.weatherservice.b.a: android.content.SharedPreferences b(java.lang.String)> --> r0 := @this: com.macropinch.weatherservice.b.a
+<com.macropinch.weatherservice.b.a: android.content.SharedPreferences a(java.lang.Class)> --> $r3 = virtualinvoke r0.<com.macropinch.weatherservice.b.a: android.content.SharedPreferences b(java.lang.String)>($r2)
+<com.macropinch.weatherservice.b.a: void a(com.macropinch.weatherservice.db.DB,java.lang.String,int[])> --> $r5 = specialinvoke r0.<com.macropinch.weatherservice.b.a: android.content.SharedPreferences a(java.lang.Class)>($r4)
+<com.macropinch.weatherservice.db.DB: void a(android.content.Context,com.macropinch.weatherservice.db.DB)> --> $r0 := @parameter0: android.content.Context
+<com.macropinch.weatherservice.db.DB: void a(android.content.Context,com.macropinch.weatherservice.db.DB)> --> $r2 = virtualinvoke $r0.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("ws_db", 0)
+--------------------------------------------------------
+

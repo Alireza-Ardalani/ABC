@@ -1,0 +1,20 @@
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+Component=> com.clevertap.android.sdk.InAppNotificationActivity
+ComponentColor=> RED
+com.clevertap.android.sdk.CleverTapAPI
+android.util.Log
+android.location.Location
+com.clevertap.android.sdk.Logger
+Category: com.clevertap.android.sdk.CleverTapAPI-*-com.clevertap.android.sdk.Logger-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+Component=> com.clevertap.android.sdk.InAppNotificationActivity
+ComponentColor=> RED
+android.location.Location
+com.clevertap.android.sdk.CleverTapAPI
+android.util.Log
+com.clevertap.android.sdk.Logger
+Category: com.clevertap.android.sdk.CleverTapAPI-*-com.clevertap.android.sdk.Logger-*-
+-----------------------------------------------------------------

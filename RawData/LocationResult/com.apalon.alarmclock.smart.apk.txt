@@ -1,0 +1,21 @@
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("lat", $f0)
+Component=> com.apalon.gm.weather.impl.WeatherService
+ComponentColor=> GREEN
+com.apalon.gm.weather.impl.d
+com.apalon.gm.weather.impl.WeatherService
+android.location.Location
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> $r1 = interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("lon", $f0)
+Component=> com.apalon.gm.weather.impl.WeatherService
+ComponentColor=> GREEN
+com.apalon.gm.weather.impl.d
+android.location.Location
+com.apalon.gm.weather.impl.WeatherService
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+com.apalon.alarmclock.smart.apk: 1405507

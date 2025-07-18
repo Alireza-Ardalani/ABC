@@ -1,0 +1,48 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r2.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("debuglogs", 32768)
+Component=> com.gps.route.finder.maps.navigations.directions.mobile.location.tracker.phone.locator.gps.Act1
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Network", "Network Enabled")
+Component=> com.gps.route.finder.maps.navigations.directions.mobile.location.tracker.phone.locator.gps.Act1
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r6)
+Component=> com.gps.route.finder.maps.navigations.directions.mobile.location.tracker.phone.locator.gps.Act1
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS", "GPS Enabled")
+Component=> com.gps.route.finder.maps.navigations.directions.mobile.location.tracker.phone.locator.gps.Act1
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r5, "Failed to store crash", $r8)
+Component=> com.gps.route.finder.maps.navigations.directions.mobile.location.tracker.phone.locator.gps.Act1
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS", "GPS Enabled")
+Component=> com.gps.route.finder.maps.navigations.directions.mobile.location.tracker.phone.locator.gps.Act1
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS", "GPS Enabled")
+Component=> com.gps.route.finder.maps.navigations.directions.mobile.location.tracker.phone.locator.gps.Act1
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r7, "start unexpected adapter type")
+Component=> com.gps.route.finder.maps.navigations.directions.mobile.location.tracker.phone.locator.gps.Act1
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,29 @@
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r0)
+Component=> com.skout.android.services.LocationService
+ComponentColor=> GREEN
+android.location.Location
+com.skout.android.services.LocationService
+android.util.Log
+pc
+Category: pc-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LOCATION_LAST_LATITUDE", $f0)
+Component=> com.skout.android.services.LocationService
+ComponentColor=> GREEN
+com.skout.android.services.LocationService
+android.content.SharedPreferences$Editor
+android.location.Location
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("LOCATION_LAST_LONGITUDE", $f0)
+Component=> com.skout.android.services.LocationService
+ComponentColor=> GREEN
+com.skout.android.services.LocationService
+android.location.Location
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+com.skout.android.apk: 1697063

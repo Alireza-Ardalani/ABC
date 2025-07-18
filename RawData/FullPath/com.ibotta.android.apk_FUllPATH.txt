@@ -1,0 +1,146 @@
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> $f0 = (float) $d0
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLatitude", $f0)
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> virtualinvoke $r4.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.onradar.sdk._Radar: void backgroundSendLocation(android.location.Location,boolean,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.onradar.sdk._Radar: void backgroundSendLocation(android.location.Location,boolean,boolean)> --> virtualinvoke $r4.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("latitude", $d0)
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension: void disconnect()> --> r0 := @this: com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension
+<com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension: void disconnect()> --> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension: void disconnect()> --> r0 := @this: com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension
+<com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension: void disconnect()> --> virtualinvoke $r2.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d2 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r2 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension: void disconnect()> --> r0 := @this: com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension
+<com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension: void disconnect()> --> virtualinvoke $r2.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> virtualinvoke $r4.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension: void disconnect()> --> r0 := @this: com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension
+<com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension: void disconnect()> --> virtualinvoke $r2.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension: void disconnect()> --> r0 := @this: com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension
+<com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension: void disconnect()> --> virtualinvoke $r2.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension: void disconnect()> --> r0 := @this: com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension
+<com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension: void disconnect()> --> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $d1 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+<com.appboy.receivers.AppboyActionReceiver$a: boolean a(android.content.Context,com.google.android.gms.location.LocationResult)> --> $r6 := @caughtexception
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $r2 := @parameter0: java.lang.String
+<com.appboy.support.AppboyLogger: int e(java.lang.String,java.lang.String,java.lang.Throwable)> --> $i0 = staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension: void disconnect()> --> r0 := @this: com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension
+<com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension: void disconnect()> --> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> virtualinvoke $r4.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> virtualinvoke $r4.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+
+<com.onradar.sdk._Radar: void backgroundSendLocation(android.location.Location,boolean,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.onradar.sdk._Radar: void backgroundSendLocation(android.location.Location,boolean,boolean)> --> virtualinvoke $r4.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("longitude", $d0)
+--------------------------------------------------------
+
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> $f0 = (float) $d0
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLongitude", $f0)
+--------------------------------------------------------
+
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+<com.ibotta.android.receiver.LocationChangeReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r11 := @caughtexception
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> nop
+<com.ibotta.android.crash.IbottaCrashProxy: void <clinit>()> --> <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager> = $r0
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r12 = <com.ibotta.android.crash.IbottaCrashProxy: com.ibotta.android.crash.CrashManager IbottaCrashManager>
+<com.ibotta.android.service.pixel.PixelTrackingService: void makeTrackingUrlCall(com.ibotta.android.tracking.proprietary.pixel.database.Pixel)> --> $r9 := @caughtexception
+<com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension: void disconnect()> --> r0 := @this: com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension
+<com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension: void disconnect()> --> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+--------------------------------------------------------
+

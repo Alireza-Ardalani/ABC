@@ -1,0 +1,72 @@
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("LAST_LAT", $r7)
+Component=> com.fishbrain.app.data.location.source.LocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r0.<android.os.Bundle: void putDouble(java.lang.String,double)>("LNG_KEY", $d0)
+Component=> com.fishbrain.app.presentation.species.activity.FollowFishSpeciesActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r0.<android.os.Bundle: void putDouble(java.lang.String,double)>("LAT_KEY", $d1)
+Component=> com.fishbrain.app.presentation.species.activity.FollowFishSpeciesActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("LAST_LAT", $r7)
+Component=> com.fishbrain.app.data.location.source.LocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("LAST_LNG", $r7)
+Component=> com.fishbrain.app.data.location.source.LocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("LAST_LNG", $r7)
+Component=> com.fishbrain.app.data.location.source.LocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r3.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r0.<android.os.Bundle: void putDouble(java.lang.String,double)>("LNG_KEY", $d0)
+Component=> com.fishbrain.app.presentation.species.activity.FollowFishSpeciesActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r0.<android.os.Bundle: void putDouble(java.lang.String,double)>("LNG_KEY", $d0)
+Component=> com.fishbrain.app.presentation.species.activity.FollowFishSpeciesActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("LAST_LAT", $r7)
+Component=> com.fishbrain.app.data.location.source.LocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("LAST_LNG", $r7)
+Component=> com.fishbrain.app.data.location.source.LocationService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r1 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r0.<android.os.Bundle: void putDouble(java.lang.String,double)>("LAT_KEY", $d1)
+Component=> com.fishbrain.app.presentation.species.activity.FollowFishSpeciesActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r3.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r0.<android.os.Bundle: void putDouble(java.lang.String,double)>("LAT_KEY", $d1)
+Component=> com.fishbrain.app.presentation.species.activity.FollowFishSpeciesActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,114 @@
+<com.Avenza.MapView.ViewModeController: void g()> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.Avenza.MapView.ViewModeController: void g()> --> $r4 = r0.<com.Avenza.MapView.ViewModeController: com.Avenza.MapView.ViewMapActivity a>
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> r0 := @this: com.Avenza.MapView.ViewMapActivity
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map zoomInForLocation(com.Avenza.Model.Map,android.location.Location)> --> $r2 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> $r0 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> if $r1 != null goto $r4 = staticinvoke <com.Avenza.Model.MapCollections: java.util.List mapsInCollection(com.Avenza.Model.Map)>($r0)
+<com.Avenza.Model.MapCollections: java.util.List mapsInCollection(com.Avenza.Model.Map)> --> $r2 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.MapFolder collectionFolder(com.Avenza.Model.Map)> --> $r0 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.MapFolder collectionFolder(com.Avenza.Model.Map)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MapCollections", "collectionFolder got a null folderChild or parentId")
+--------------------------------------------------------
+
+<com.Avenza.MapView.ViewModeController: void g()> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.Avenza.MapView.ViewModeController: void g()> --> $r4 = r0.<com.Avenza.MapView.ViewModeController: com.Avenza.MapView.ViewMapActivity a>
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> r0 := @this: com.Avenza.MapView.ViewMapActivity
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map neighbourForLocation(com.Avenza.Model.Map,android.location.Location)> --> $r2 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> $r0 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> if $r1 != null goto $r4 = staticinvoke <com.Avenza.Model.MapCollections: java.util.List mapsInCollection(com.Avenza.Model.Map)>($r0)
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map neighbourForLocation(com.Avenza.Model.Map,android.location.Location)> --> $r2 = staticinvoke <com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)>($r2, $r0, $r1)
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> $r3 = staticinvoke <com.Avenza.Model.MapCollections: com.Avenza.Model.Map neighbourForLocation(com.Avenza.Model.Map,android.location.Location)>($r3, $r1)
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> if $r3 == null goto return 0
+<com.Avenza.Location.MapGeometry: com.Avenza.Location.Georeferencing getGeoreferencingForMap(com.Avenza.Model.Map)> --> r0 := @this: com.Avenza.Location.MapGeometry
+<com.Avenza.Location.MapGeometry: com.Avenza.Location.MapGeometry$MapGeometryItem getGeometryForMap(com.Avenza.Model.Map)> --> r0 := @this: com.Avenza.Location.MapGeometry
+<com.Avenza.Location.MapGeometry: com.Avenza.Location.MapGeometry$MapGeometryItem getGeometryForMap(com.Avenza.Model.Map)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MapGeometry", $r11)
+--------------------------------------------------------
+
+<com.Avenza.MapView.ViewModeController: void g()> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.Avenza.MapView.ViewModeController: void g()> --> $r4 = r0.<com.Avenza.MapView.ViewModeController: com.Avenza.MapView.ViewMapActivity a>
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> r0 := @this: com.Avenza.MapView.ViewMapActivity
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map neighbourForLocation(com.Avenza.Model.Map,android.location.Location)> --> $r2 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> $r0 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> if $r1 != null goto $r4 = staticinvoke <com.Avenza.Model.MapCollections: java.util.List mapsInCollection(com.Avenza.Model.Map)>($r0)
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map neighbourForLocation(com.Avenza.Model.Map,android.location.Location)> --> $r2 = staticinvoke <com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)>($r2, $r0, $r1)
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> $r3 = staticinvoke <com.Avenza.Model.MapCollections: com.Avenza.Model.Map neighbourForLocation(com.Avenza.Model.Map,android.location.Location)>($r3, $r1)
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> if $r3 == null goto return 0
+<com.Avenza.MapView.ViewMapActivity: void d()> --> r0 := @this: com.Avenza.MapView.ViewMapActivity
+<com.Avenza.MapView.MapView: void destroy()> --> r0 := @this: com.Avenza.MapView.MapView
+<com.Avenza.MapView.MapView: void destroy()> --> r0.<com.Avenza.MapView.MapView: com.android.gallery3d.ui.u$b q> = null
+<com.Avenza.MapView.MapView: void destroy()> --> $r2 = r0.<com.Avenza.MapView.MapView: com.android.gallery3d.ui.u$b q>
+<com.Avenza.MapView.MapView: void destroy()> --> $r2 = r0.<com.Avenza.MapView.MapView: com.android.gallery3d.ui.u$b q>
+<com.Avenza.MapView.MapView: void destroy()> --> if $r2 == null goto r0.<com.Avenza.MapView.MapView: com.android.gallery3d.ui.u$b q> = null
+<com.Avenza.MapView.MapView: void destroy()> --> r0.<com.Avenza.MapView.MapView: com.android.gallery3d.ui.u$b q> = null
+<com.android.gallery3d.ui.l: void removeAllComponents()> --> return
+<com.android.gallery3d.ui.l: void a(com.android.gallery3d.ui.l)> --> return
+<com.android.gallery3d.ui.l: boolean a(android.view.MotionEvent)> --> return $z0
+<com.Avenza.MapView.MapView: boolean onTouch(android.view.MotionEvent)> --> return 1
+<com.Avenza.MapView.MapView: boolean onTouch(android.view.MotionEvent)> --> $r3 = r0.<com.Avenza.MapView.MapView: com.Avenza.MapView.MapView$Callback c>
+<com.Avenza.MapView.MapView: boolean onTouch(android.view.MotionEvent)> --> if $r3 == null goto return 1
+<com.Avenza.MapView.ViewMapActivity$1: boolean handleTouchEvent(android.view.MotionEvent)> --> r1 := @this: com.Avenza.MapView.ViewMapActivity$1
+<com.Avenza.MapView.Features.FeatureViewController: boolean handleTouchEvent(android.view.MotionEvent)> --> r1 := @this: com.Avenza.MapView.Features.FeatureViewController
+<com.Avenza.MapView.Features.FeatureViewController$PlacemarkMover: void a()> --> r0 := @this: com.Avenza.MapView.Features.FeatureViewController$PlacemarkMover
+<com.Avenza.MapView.ViewMapActivity: com.Avenza.Model.Map getMap()> --> r0 := @this: com.Avenza.MapView.ViewMapActivity
+<com.Avenza.MapView.ViewMapActivity: com.Avenza.Model.Map getMap()> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ViewMapActivity", "ViewMapActivity asked for null map")
+--------------------------------------------------------
+
+<com.Avenza.MapView.ViewModeController: void g()> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.Avenza.MapView.ViewModeController: void g()> --> $r4 = r0.<com.Avenza.MapView.ViewModeController: com.Avenza.MapView.ViewMapActivity a>
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> r0 := @this: com.Avenza.MapView.ViewMapActivity
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map neighbourForLocation(com.Avenza.Model.Map,android.location.Location)> --> $r2 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> $r0 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> if $r1 != null goto $r4 = staticinvoke <com.Avenza.Model.MapCollections: java.util.List mapsInCollection(com.Avenza.Model.Map)>($r0)
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map neighbourForLocation(com.Avenza.Model.Map,android.location.Location)> --> $r2 = staticinvoke <com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)>($r2, $r0, $r1)
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> $r3 = staticinvoke <com.Avenza.Model.MapCollections: com.Avenza.Model.Map neighbourForLocation(com.Avenza.Model.Map,android.location.Location)>($r3, $r1)
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> if $r3 == null goto return 0
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> $z1 = 0
+<com.Avenza.MapView.ViewModeController: void a(boolean,boolean)> --> r0 := @this: com.Avenza.MapView.ViewModeController
+<com.Avenza.MapView.ViewModeController: void a(boolean,boolean)> --> r0.<com.Avenza.MapView.ViewModeController: boolean e> = $z0
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> virtualinvoke $r7.<com.Avenza.MapView.ViewModeController: void a(boolean,boolean)>($z1, 0)
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> $r7 = r0.<com.Avenza.MapView.ViewMapActivity: com.Avenza.MapView.ViewModeController z>
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> $r7 = r0.<com.Avenza.MapView.ViewMapActivity: com.Avenza.MapView.ViewModeController z>
+<com.Avenza.MapView.ViewModeController: void a(boolean)> --> r1 := @this: com.Avenza.MapView.ViewModeController
+<com.Avenza.MapView.ViewModeController: void e()> --> r1 := @this: com.Avenza.MapView.ViewModeController
+<com.Avenza.MapView.ViewModeController: void e()> --> $z0 = r1.<com.Avenza.MapView.ViewModeController: boolean e>
+<com.Avenza.MapView.ViewModeController: void e()> --> if $z0 == 0 goto $r0 = r1.<com.Avenza.MapView.ViewModeController: com.Avenza.MapView.ViewMapActivity a>
+<com.Avenza.MapView.ViewModeController: void g()> --> r0 := @this: com.Avenza.MapView.ViewModeController
+<com.Avenza.MapView.ViewModeController: void g()> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("ViewModeController", $r7)
+--------------------------------------------------------
+
+<com.Avenza.MapView.ViewModeController: void g()> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+<com.Avenza.MapView.ViewModeController: void g()> --> $r4 = r0.<com.Avenza.MapView.ViewModeController: com.Avenza.MapView.ViewMapActivity a>
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> r0 := @this: com.Avenza.MapView.ViewMapActivity
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map zoomOutForLocation(com.Avenza.Model.Map,android.location.Location)> --> $r2 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> $r0 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> if $r1 != null goto $r4 = staticinvoke <com.Avenza.Model.MapCollections: java.util.List mapsInCollection(com.Avenza.Model.Map)>($r0)
+<com.Avenza.Model.MapCollections: java.util.List mapsInCollection(com.Avenza.Model.Map)> --> $r2 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: void addAllMapsFromFolder(java.util.ArrayList,com.Avenza.Model.MapFolder)> --> $r0 := @parameter0: java.util.ArrayList
+<com.Avenza.Licensing.ActiveMap: boolean isActive(com.Avenza.Model.Map)> --> $r0 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Licensing.LicensingManager: void <clinit>()> --> nop
+<com.Avenza.Licensing.LicensingManager: void <init>()> --> r0 := @this: com.Avenza.Licensing.LicensingManager
+<com.Avenza.Licensing.LicensingManager: void d()> --> r0 := @this: com.Avenza.Licensing.LicensingManager
+<com.Avenza.Utilities.DeviceId: java.lang.String getDeviceId(android.content.Context)> --> $r1 := @parameter0: android.content.Context
+<com.Avenza.Utilities.DeviceId: java.lang.String getDeviceId(android.content.Context)> --> $r9 = interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceId", $r4)
+--------------------------------------------------------
+
+<com.Avenza.MapView.ViewModeController: void g()> --> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+<com.Avenza.MapView.ViewModeController: void g()> --> $r4 = r0.<com.Avenza.MapView.ViewModeController: com.Avenza.MapView.ViewMapActivity a>
+<com.Avenza.MapView.ViewMapActivity: boolean checkForMapCollectionChange(android.location.Location,com.Avenza.MapView.ViewMapActivity$ECollectionChangeType,boolean)> --> r0 := @this: com.Avenza.MapView.ViewMapActivity
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map zoomInForLocation(com.Avenza.Model.Map,android.location.Location)> --> $r2 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> $r0 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.Map collectionSearchForLocation(com.Avenza.Model.Map,android.location.Location,com.Avenza.Model.MapCollections$CollectionSearchCriteria)> --> if $r1 != null goto $r4 = staticinvoke <com.Avenza.Model.MapCollections: java.util.List mapsInCollection(com.Avenza.Model.Map)>($r0)
+<com.Avenza.Model.MapCollections: java.util.List mapsInCollection(com.Avenza.Model.Map)> --> $r2 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Model.MapCollections: com.Avenza.Model.MapFolder collectionFolder(com.Avenza.Model.Map)> --> $r0 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Licensing.ActiveMap: boolean isActive(com.Avenza.Model.Map)> --> $r0 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Licensing.ActiveMap: boolean b(com.Avenza.Model.Map)> --> $r0 := @parameter0: com.Avenza.Model.Map
+<com.Avenza.Location.MapGeometry: com.Avenza.Location.Georeferencing getGeoreferencingForMap(com.Avenza.Model.Map)> --> r0 := @this: com.Avenza.Location.MapGeometry
+<com.Avenza.Location.MapGeometry: com.Avenza.Location.MapGeometry$MapGeometryItem getGeometryForMap(com.Avenza.Model.Map)> --> r0 := @this: com.Avenza.Location.MapGeometry
+<com.Avenza.Location.MapGeometry: com.Avenza.Location.MapGeometry$MapGeometryItem getGeometryForMap(com.Avenza.Model.Map)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MapGeometry", "getGeometryForMap: no map, bailing")
+--------------------------------------------------------
+
+<dummyMainClass: com.Avenza.MapView.ViewMapActivity dummyMainMethod_com_Avenza_MapView_ViewMapActivity(android.content.Intent)> --> virtualinvoke $r18.<com.Avenza.GPS.AndroidLocationUpdater$2: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.Avenza.MapView.ViewMapActivity dummyMainMethod_com_Avenza_MapView_ViewMapActivity(android.content.Intent)> --> if $i0 == 16 goto (branch)
+<com.Avenza.GPS.AndroidLocationUpdater$2: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> r0 := @this: com.Avenza.GPS.AndroidLocationUpdater$2
+<com.Avenza.GPS.AndroidLocationUpdater$2: void onStatusChanged(java.lang.String,int,android.os.Bundle)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AndroidLocationUpdater", $r1)
+--------------------------------------------------------
+

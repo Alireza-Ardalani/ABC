@@ -1,0 +1,67 @@
+Source=> r5 = virtualinvoke r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("last_location_lat", $r2)
+Component=> com.imib.cctv.activity.MainActivity
+ComponentColor=> GREEN
+com.imib.cctv.locate.LocateManager
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.imib.cctv.locate.LocateManager
+com.imib.cctv.locate.LocationConfig
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("last_location_log", $r2)
+Component=> com.imib.cctv.activity.MainActivity
+ComponentColor=> GREEN
+com.imib.cctv.locate.LocationConfig
+com.imib.cctv.locate.LocateManager
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.imib.cctv.locate.LocateManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("last_location_log", $r2)
+Component=> com.imib.cctv.activity.MainActivity
+ComponentColor=> GREEN
+com.imib.cctv.locate.LocationConfig
+com.imib.cctv.locate.LocateManager
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.imib.cctv.locate.LocateManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("last_location_log", $r2)
+Component=> com.imib.cctv.activity.MainActivity
+ComponentColor=> GREEN
+com.imib.cctv.locate.LocationConfig
+com.imib.cctv.locate.LocateManager
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.imib.cctv.locate.LocateManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("last_location_lat", $r2)
+Component=> com.imib.cctv.activity.MainActivity
+ComponentColor=> GREEN
+com.imib.cctv.locate.LocateManager
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.imib.cctv.locate.LocateManager
+com.imib.cctv.locate.LocationConfig
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r5 = virtualinvoke r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("last_location_lat", $r2)
+Component=> com.imib.cctv.activity.MainActivity
+ComponentColor=> GREEN
+com.imib.cctv.locate.LocateManager
+android.content.SharedPreferences$Editor
+android.location.LocationManager
+com.imib.cctv.locate.LocateManager
+com.imib.cctv.locate.LocationConfig
+Category: LEGIT
+-----------------------------------------------------------------
+com.imib.cctv.apk: 1191004

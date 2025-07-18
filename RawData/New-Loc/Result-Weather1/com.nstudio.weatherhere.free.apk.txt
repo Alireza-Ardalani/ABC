@@ -1,0 +1,54 @@
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GeoLocator", "null cached location, trying legacy")
+Component=> com.inmobi.rendering.InMobiAdActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.inmobi.rendering.InMobiAdActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("FileContainer", "FC - Null handler")
+Component=> com.inmobi.rendering.InMobiAdActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WidgetLoader", "Widget - locationNotFound")
+Component=> com.inmobi.rendering.InMobiAdActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = virtualinvoke $r17.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.inmobi.rendering.InMobiAdActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.inmobi.rendering.InMobiAdActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.inmobi.rendering.InMobiAdActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WeatherStations", $r4)
+Component=> com.inmobi.rendering.InMobiAdActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = virtualinvoke $r9.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.inmobi.rendering.InMobiAdActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

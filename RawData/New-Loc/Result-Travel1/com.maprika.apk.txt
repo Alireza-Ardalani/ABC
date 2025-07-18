@@ -1,0 +1,108 @@
+Source=> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("tracking_autostop_lat_1", $f0)
+Component=> com.maprika.PreferencesActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Localytics", "Handler received MESSAGE_TAG")
+Component=> com.maprika.MeetingParticipantsActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r20.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Localytics", "Handler received MESSAGE_TAG")
+Component=> com.maprika.MapViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Localytics", "Handler received MESSAGE_SCREEN")
+Component=> com.maprika.MeetingParticipantsActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("Localytics", "Localytics library threw an uncaught exception", r2)
+Component=> com.maprika.MeetingParticipantsActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Maprika", $r0)
+Component=> com.maprika.MeetingParticipantsActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r23.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+Component=> com.maprika.MapViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+Component=> com.maprika.MeetingParticipantsActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("Maprika", $r0, $r1)
+Component=> com.maprika.MapViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+Component=> com.maprika.MapViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+Component=> com.maprika.MeetingParticipantsActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r17 = virtualinvoke $r34.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.maprika.MeetingParticipantsActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+Component=> com.maprika.MeetingParticipantsActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke r4.<java.io.OutputStreamWriter: void write(java.lang.String)>($r0)
+Component=> com.maprika.MapViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r23.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Maprika", $r0)
+Component=> com.maprika.MapViewActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Localytics", "attributes is empty.  Did the caller make an error?")
+Component=> com.maprika.MeetingParticipantsActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r34.<java.net.URL: void <init>(java.lang.String)>($r12)
+Component=> com.maprika.MeetingParticipantsActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Friendship", $r0)
+Component=> com.maprika.MeetingParticipantsActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,19 @@
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("_medio_locMgr_lon", $f0)
+Component=> com.tmobile.hydra.activity.MainHydraActivity
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+com.medio.client.android.eventsdk.EventAPI
+android.location.Location
+Category: com.medio.client.android.eventsdk.EventAPI-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("_medio_locMgr_lat", $f0)
+Component=> com.tmobile.hydra.activity.MainHydraActivity
+ComponentColor=> RED
+android.content.SharedPreferences$Editor
+com.medio.client.android.eventsdk.EventAPI
+android.location.Location
+Category: com.medio.client.android.eventsdk.EventAPI-*-
+-----------------------------------------------------------------
+com.tmobile.pr.mytmobile.apk: 1256087

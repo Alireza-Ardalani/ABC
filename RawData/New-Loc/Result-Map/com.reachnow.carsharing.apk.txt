@@ -1,0 +1,12 @@
+Source=> virtualinvoke r0.<com.forter.mobile.fortersdk.integrationkit.LocationChangesListener: void onLocationChanged(android.location.Location)>($r4)
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationChangesListener", $r7)
+Component=> com.forter.mobile.fortersdk.utils.AlarmReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("LocationChangesListener", $r7)
+Component=> com.forter.mobile.fortersdk.utils.AlarmReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,20 @@
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("TwilightManager", "Failed to get last known location", $r4)
+Component=> org.ascension.myethicsrx.view.RabbitHoleActivity
+ComponentColor=> GREEN
+b.a.a.I
+android.location.LocationManager
+android.util.Log
+Category: b.a.a.I-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r1)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TwilightManager", "Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.")
+Component=> org.ascension.myethicsrx.view.RabbitHoleActivity
+ComponentColor=> GREEN
+b.a.a.I
+android.location.LocationManager
+android.util.Log
+b.a.a.I
+Category: b.a.a.I-*-b.a.a.I-*-
+-----------------------------------------------------------------
+org.ascension.myethicsrx.apk: 1069753

@@ -1,0 +1,15 @@
+<com.appypie.snappy.geofences.GPSTracker: android.location.Location getLocation()> --> $r4 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.appypie.snappy.geofences.GPSTracker: android.location.Location getLocation()> --> r0.<com.appypie.snappy.geofences.GPSTracker: android.location.Location location> = $r4
+<com.appypie.snappy.geofences.GPSTracker: android.location.Location getLocation()> --> $z0 = r0.<com.appypie.snappy.geofences.GPSTracker: boolean isGPSEnabled>
+<com.appypie.snappy.geofences.GPSTracker: android.location.Location getLocation()> --> $r4 = r0.<com.appypie.snappy.geofences.GPSTracker: android.location.Location location>
+<com.appypie.snappy.geofences.GPSTracker: android.location.Location getLocation()> --> if $r4 != null goto $r4 = r0.<com.appypie.snappy.geofences.GPSTracker: android.location.Location location>
+<com.appypie.snappy.geofences.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("GPS Enabled", "GPS Enabled")
+--------------------------------------------------------
+
+<com.appypie.snappy.DirectoryMapMarkerActivity$1: void onLocationChanged(android.location.Location)> --> $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>()
+<com.appypie.snappy.DirectoryMapMarkerActivity$1: void onLocationChanged(android.location.Location)> --> $r3 := @caughtexception
+<com.appypie.snappy.DirectoryMapMarkerActivity: void access$700(com.appypie.snappy.DirectoryMapMarkerActivity,java.util.ArrayList)> --> $r0 := @parameter0: com.appypie.snappy.DirectoryMapMarkerActivity
+<com.appypie.snappy.DirectoryMapMarkerActivity: void plotMarkers(java.util.ArrayList)> --> r0 := @this: com.appypie.snappy.DirectoryMapMarkerActivity
+<com.appypie.snappy.DirectoryMapMarkerActivity: void plotMarkers(java.util.ArrayList)> --> $r8 = staticinvoke <java.net.URLDecoder: java.lang.String decode(java.lang.String,java.lang.String)>($r8, "UTF-8")
+--------------------------------------------------------
+

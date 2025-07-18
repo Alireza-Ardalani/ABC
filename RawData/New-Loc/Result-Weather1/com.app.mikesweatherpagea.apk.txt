@@ -1,0 +1,24 @@
+Source=> r1 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r5, 3)
+Component=> com.snappy.appypie.radioStream.AudioSignal
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r1 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r5, 3)
+Component=> com.snappy.appypie.radioStream.AudioSignal
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r1 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r10)
+Component=> com.snappy.appypie.radioStream.AudioSignal
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r1 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r10)
+Component=> com.snappy.appypie.radioStream.AudioSignal
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

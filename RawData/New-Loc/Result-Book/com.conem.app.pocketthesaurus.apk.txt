@@ -1,0 +1,612 @@
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("settings", $r2)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r2.<javax.net.ssl.HttpsURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $i0 = virtualinvoke $r2.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("BranchSDK", "Cannot use cookie-based matching since device id is not available")
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r11)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r4)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r14 = virtualinvoke $r13.<java.net.Socket: java.io.OutputStream getOutputStream()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r1, $i0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("browsing", $r3)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r4 = virtualinvoke $r2.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r5 = virtualinvoke $r2.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r10.<java.io.DataOutputStream: void writeBytes(java.lang.String)>($r1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r2, $r1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("build", $i0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> virtualinvoke $r3.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r6 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("key", "value")
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("q_scheduler_sleep_high_counter", $i0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("BranchSDK", "Branch instance is not created yet. Make sure you have initialised Branch. [Consider Calling getInstance(Context ctx) if you still have issue.]")
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("q_next_flush_counter", $i0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r4 = virtualinvoke $r2.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("settings", $r5)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r5 = virtualinvoke $r2.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_configuration", $r5)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r20.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("latitude", $f1)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r5 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r2)
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1)
+Component=> com.conem.app.pocketthesaurus.service.BackgroundService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("eula", $r12)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("has_shown", $z0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r5 = virtualinvoke $r2.<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)>($r4)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r20.<android.location.Location: double getLongitude()>()
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("longitude", $f0)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("bea_location_on", $z0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $i0 = virtualinvoke $r2.<javax.net.ssl.HttpsURLConnection: int getResponseCode()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("settings", $r5)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("BranchSDK", "Branch API Error: Conflicting resource error code from API")
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_requests", $r4)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("notification_message", $r1)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r20.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("TEST", $r9)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("settings", $r12)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r16.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r4 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("notification_message", $r1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r10.<java.io.DataOutputStream: void writeBytes(java.lang.String)>($r1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("eula", $r3)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r20.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("latitude", $f1)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("key", "value")
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("bea_coverage_status", $r5)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r4 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("BranchSDK", "Branch Error: Don\'t call our synchronous methods on the main thread!!!")
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r7.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("settings", $r12)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("notification_title", $r1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("q_scheduler_sleep_dwell_counter", $i0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r1.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r16.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r4.<java.io.OutputStream: void write(byte[])>($r5)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("bea_analytics_coverage_checker_counter", $i0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r5 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("eula", $r12)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("latitude", $f1)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("BranchSDK", "Branch Error: User session has not been initialized!")
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("BNCServerRequestQueue", $r11)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("q_temp_information", $r4)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r4 = virtualinvoke $r3.<java.net.Socket: java.io.OutputStream getOutputStream()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> specialinvoke $r29.<java.net.URL: void <init>(java.lang.String)>($r5)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("settings", $r5)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("latitude", $f1)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r3)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("notification_url", $r1)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r7.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r20.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r16.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("BranchSDK", "Branch instance is not properly initialised. Make sure your Application class is extending BranchApp class. If you are not extending BranchApp class make sure you are initialising Branch in your Applications onCreate()")
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_appkey", $r1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("latitude", $f1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r20.<android.location.Location: double getLatitude()>()
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("latitude", $f1)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("bea_analytics_coverage_checker_counter", 0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r1.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("[CuebiqSDK]", $r0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r8 = interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("beaudience_configuration", $r4)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r4.<java.io.OutputStream: void write(byte[])>($r5)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("latitude", $f1)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r2.<java.net.Socket: void close()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r20 = virtualinvoke $r22.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r24)
+Sink=> specialinvoke $r21.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.bicd.iig.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r4.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r16.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("q_scheduler_status", $r5)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("is_agree", $z0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0)
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r11 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> virtualinvoke $r1.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.cuebiq.cuebiqsdk.receiver.CoverageReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

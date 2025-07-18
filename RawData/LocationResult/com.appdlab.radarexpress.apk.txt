@@ -1,0 +1,3902 @@
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "The current location could not be resolved.")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$6
+android.util.Log
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.MainActivity$6$1
+com.appdlab.radarexpress.LocationResolver$LastKnownLocationTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity$6$1
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+org.geonames.j
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RadarExpress", $r3)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+android.util.Log
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "Couldn\'t get location from Geocoder. Trying GeoName...")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.SimpleLocation
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = virtualinvoke $r0.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("SavedLocationsFile.dat", 0)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$2$1
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.SavedLocationsFile$Utils
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.LocalPersistence
+com.appdlab.radarexpress.MainActivity$2$1
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+android.content.Context
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "Using iastate.edu radar server.")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 2)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+com.mopub.volley.VolleyLog
+com.appdlab.radarexpress.MainActivity$4
+com.mopub.volley.ExecutorDelivery$a
+com.mopub.volley.CacheDispatcher
+com.appdlab.radarexpress.MainActivity$4
+android.location.LocationManager
+com.appdlab.radarexpress.AppRater
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+android.os.Handler
+android.util.Log
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.AppRater
+com.mopub.volley.CacheDispatcher$1
+Category: com.mopub.volley.VolleyLog-*-com.mopub.volley.ExecutorDelivery$a-*-com.mopub.volley.CacheDispatcher-*-com.mopub.volley.CacheDispatcher$1-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RadarExpress", $r19)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+android.util.Log
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+java.lang.StringBuilder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+b.l$a
+Category: b.l$a-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+org.geonames.j
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>($r1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.p$a
+com.appdlab.radarexpress.MainActivity$7
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.p$a
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+android.location.LocationManager
+com.squareup.okhttp.internal.http.h
+com.squareup.okhttp.p$a
+com.squareup.okhttp.p
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.b.a
+com.squareup.okhttp.internal.b.c
+com.squareup.okhttp.internal.b.b
+android.app.Activity
+com.appdlab.radarexpress.MainActivity$7
+java.net.InetAddress
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+Category: com.squareup.okhttp.p$a-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.p$a-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.p$a-*-com.squareup.okhttp.p-*-com.squareup.okhttp.internal.b.a-*-com.squareup.okhttp.internal.b.c-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.Handler
+com.mopub.mobileads.VastVideoViewProgressRunnable
+com.mopub.mobileads.VastMacroHelper
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.mopub.mobileads.RepeatingHandlerRunnable
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.AppRater
+com.appdlab.radarexpress.AppRater
+Category: com.mopub.mobileads.VastVideoViewProgressRunnable-*-com.mopub.mobileads.VastMacroHelper-*-com.mopub.mobileads.RepeatingHandlerRunnable-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RadarExpress", "mWebView is null. Restarting...")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$12
+android.util.Log
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+java.net.URL
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke r0.<com.squareup.okhttp.internal.b.a: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.squareup.okhttp.internal.b.a
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.c
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: com.squareup.okhttp.internal.b.a-*-com.squareup.okhttp.internal.b.c-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>("http://radar.appdlab.com:8080/tiles/timestamps.jsonp")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.MainActivity$PingServerTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.URL
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection(java.net.Proxy)>($r8)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity$4
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.SimpleLocation
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URL
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r11.<java.net.URL: void <init>(java.lang.String)>($r4)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+java.net.URL
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("launch_count", $l0)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.AppRater
+com.appdlab.radarexpress.AppRater
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("date_firstlaunch", $l1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+android.content.SharedPreferences$Editor
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.AppRater
+com.appdlab.radarexpress.AppRater
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r11.<java.net.URL: void <init>(java.lang.String)>($r4)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+java.net.URL
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r75.<java.net.URL: void <init>(java.lang.String)>($r3)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URL
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = specialinvoke r0.<com.squareup.okhttp.internal.b.a: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.squareup.okhttp.internal.b.a
+android.location.LocationManager
+com.squareup.okhttp.internal.b.c
+com.appdlab.radarexpress.MainActivity
+Category: com.squareup.okhttp.internal.b.a-*-com.squareup.okhttp.internal.b.c-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = virtualinvoke $r2.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.MainActivity$PingServerTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+java.net.URL
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.v
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity$PingServerTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.p
+java.net.URL
+Category: com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.v-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.p-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.LocationResolver
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$PingServerTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = virtualinvoke $r2.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.HttpURLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r16.<java.net.Socket: void close()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.squareup.okhttp.internal.http.e$e
+a.e
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.a.d$c
+com.appdlab.radarexpress.MainActivity$7
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.h
+a.n
+com.squareup.okhttp.internal.a.b
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.a.o$a
+com.squareup.okhttp.internal.h
+android.location.LocationManager
+a.n
+com.squareup.okhttp.internal.http.h
+com.squareup.okhttp.y
+com.appdlab.radarexpress.MainActivity
+a.n
+com.squareup.okhttp.internal.http.e$c
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.b.a
+com.squareup.okhttp.internal.b.c
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.h
+com.squareup.okhttp.internal.a.d
+com.squareup.okhttp.internal.a.d
+java.net.Socket
+android.app.Activity
+com.appdlab.radarexpress.MainActivity$7
+com.squareup.okhttp.internal.a.i$a
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+Category: com.squareup.okhttp.internal.http.e$e-*-a.e-*-com.squareup.okhttp.internal.a.d$c-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.h-*-a.n-*-com.squareup.okhttp.internal.a.b-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.a.o$a-*-com.squareup.okhttp.internal.h-*-a.n-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.y-*-a.n-*-com.squareup.okhttp.internal.http.e$c-*-com.squareup.okhttp.internal.b.a-*-com.squareup.okhttp.internal.b.c-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.h-*-com.squareup.okhttp.internal.a.d-*-com.squareup.okhttp.internal.a.d-*-com.squareup.okhttp.internal.a.i$a-*-com.squareup.okhttp.internal.http.h-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "No location providers are available on this device.")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.LocationResolver
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r2, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = virtualinvoke $r0.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>("SavedLocationsFile.dat")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.LocationsActivity$1
+android.content.Context
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.SavedLocationsFile$Utils
+com.appdlab.radarexpress.LocalPersistence
+com.appdlab.radarexpress.LocationsActivity$1
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke r0.<com.squareup.okhttp.internal.b.a: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.squareup.okhttp.internal.b.a
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.c
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: com.squareup.okhttp.internal.b.a-*-com.squareup.okhttp.internal.b.c-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>($r1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.b.c
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.a
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: com.squareup.okhttp.internal.b.c-*-com.squareup.okhttp.internal.b.a-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r7)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URL
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke r0.<com.squareup.okhttp.internal.b.a: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.internal.b.a
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.c
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: com.squareup.okhttp.internal.b.a-*-com.squareup.okhttp.internal.b.c-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = virtualinvoke $r2.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.HttpURLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r7)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URL
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+org.geonames.j
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.SimpleLocation
+org.geonames.j
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>($r1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+b.l$a
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+okhttp3.s$a
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+java.lang.StringBuilder
+okhttp3.s$a
+b.l$a
+java.net.InetAddress
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+b.l$a
+okhttp3.s
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+okhttp3.s$a
+Category: b.l$a-*-okhttp3.s$a-*-okhttp3.s$a-*-b.l$a-*-b.l$a-*-okhttp3.s-*-okhttp3.s$a-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = virtualinvoke $r2.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>($r1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.internal.b.c
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.a
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: com.squareup.okhttp.internal.b.c-*-com.squareup.okhttp.internal.b.a-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>($r1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+okhttp3.s$a
+com.appdlab.radarexpress.CurrentObservationsTask
+java.lang.StringBuilder
+com.appdlab.radarexpress.MainActivity$4
+okhttp3.s$a
+b.l$a
+com.appdlab.radarexpress.MainActivity$4
+android.location.LocationManager
+b.l$a
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+java.net.InetAddress
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+okhttp3.s
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+okhttp3.s$a
+Category: okhttp3.s$a-*-okhttp3.s$a-*-b.l$a-*-b.l$a-*-okhttp3.s-*-okhttp3.s$a-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r0.<java.net.Socket: void close()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.u
+java.net.Socket
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.OkHttpClientSingleton
+com.squareup.okhttp.internal.h
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.c.a
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.s
+Category: com.squareup.okhttp.u-*-com.squareup.okhttp.internal.h-*-com.squareup.okhttp.internal.c.a-*-com.squareup.okhttp.s-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "No home location is set.")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = virtualinvoke $r6.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke r0.<com.squareup.okhttp.internal.b.a: void setRequestMethod(java.lang.String)>($r1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.b.c
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.a
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: com.squareup.okhttp.internal.b.c-*-com.squareup.okhttp.internal.b.a-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+java.net.URL
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = virtualinvoke $r2.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.HttpURLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r0.<java.net.Socket: void close()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.u
+java.net.Socket
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.OkHttpClientSingleton
+com.squareup.okhttp.internal.h
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.c.a
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.s
+Category: com.squareup.okhttp.u-*-com.squareup.okhttp.internal.h-*-com.squareup.okhttp.internal.c.a-*-com.squareup.okhttp.s-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke r0.<com.squareup.okhttp.internal.b.a: void setRequestMethod(java.lang.String)>($r1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.internal.b.a
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.internal.b.c
+Category: com.squareup.okhttp.internal.b.a-*-com.squareup.okhttp.internal.b.c-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = virtualinvoke $r10.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity$4
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.SimpleLocation
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "No home location is set.")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.LocationResolver
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<java.io.OutputStream: void write(byte[],int,int)>($r2, $i4, $i3)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.http.e$b
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.internal.b.b
+a.m
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.h
+a.l$1
+com.appdlab.radarexpress.OkHttpClientSingleton
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+java.io.OutputStream
+com.squareup.okhttp.internal.http.h
+a.m
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: com.squareup.okhttp.internal.http.e$b-*-com.squareup.okhttp.internal.b.b-*-a.m-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.h-*-a.l$1-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-a.m-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r7 = virtualinvoke $r6.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r10.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+java.net.URL
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+org.geonames.j
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<java.io.OutputStream: void write(byte[],int,int)>($r2, $i4, $i3)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.http.e$b
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.internal.b.b
+a.m
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.h
+a.l$1
+com.appdlab.radarexpress.OkHttpClientSingleton
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+java.io.OutputStream
+com.squareup.okhttp.internal.http.h
+a.m
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: com.squareup.okhttp.internal.http.e$b-*-com.squareup.okhttp.internal.b.b-*-a.m-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.h-*-a.l$1-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-a.m-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = virtualinvoke $r0.<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)>("SavedLocationsFile.dat", 0)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.SavedLocationsFile$Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.LocalPersistence
+com.appdlab.radarexpress.MainActivity$2$1
+com.appdlab.radarexpress.MainActivity
+android.content.Context
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.MainActivity$2$1
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "Couldn\'t get location from Geocoder. Trying GeoName...")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "Using iastate.edu radar server.")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.LocationResolver
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "The current location could not be resolved.")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$6
+android.util.Log
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.MainActivity$6$1
+com.appdlab.radarexpress.LocationResolver$LastKnownLocationTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity$6$1
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r10 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection(java.net.Proxy)>($r8)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.URL
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>("http://radar.appdlab.com:8080/tiles/timestamps.jsonp")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.URL
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+org.geonames.j
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r11.<java.net.URL: void <init>(java.lang.String)>($r4)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+java.net.URL
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("launch_count", $l0)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+android.content.SharedPreferences$Editor
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.AppRater
+com.appdlab.radarexpress.AppRater
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByAddress(byte[])>($r1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.p$a
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.p$a
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.MainActivity$4
+android.location.LocationManager
+com.squareup.okhttp.internal.http.h
+com.squareup.okhttp.p$a
+com.squareup.okhttp.p
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.b.a
+com.squareup.okhttp.internal.b.c
+com.squareup.okhttp.internal.b.b
+java.net.InetAddress
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+dummyMainClass
+com.appdlab.radarexpress.MainActivity
+Category: com.squareup.okhttp.p$a-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.p$a-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.p$a-*-com.squareup.okhttp.p-*-com.squareup.okhttp.internal.b.a-*-com.squareup.okhttp.internal.b.c-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("date_firstlaunch", $l1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.AppRater
+com.appdlab.radarexpress.AppRater
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RadarExpress", "mWebView is null. Restarting...")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$12
+android.util.Log
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RadarExpress", $r3)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+android.util.Log
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.lang.StringBuilder
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke r0.<com.squareup.okhttp.internal.b.a: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.internal.b.a
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.c
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: com.squareup.okhttp.internal.b.a-*-com.squareup.okhttp.internal.b.c-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity$4
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.SimpleLocation
+java.net.URL
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF-8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+android.os.Handler
+com.appdlab.radarexpress.MainActivity$4
+com.mopub.mobileads.VastVideoViewProgressRunnable
+com.appdlab.radarexpress.MainActivity$18
+com.mopub.mobileads.VastMacroHelper
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.mopub.mobileads.RepeatingHandlerRunnable
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.AppRater
+com.appdlab.radarexpress.AppRater
+Category: com.mopub.mobileads.VastVideoViewProgressRunnable-*-com.mopub.mobileads.VastMacroHelper-*-com.mopub.mobileads.RepeatingHandlerRunnable-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("GET")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r11.<java.net.URL: void <init>(java.lang.String)>($r4)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+java.net.URL
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r1 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r1, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.SimpleLocation
+org.geonames.j
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = specialinvoke r0.<com.squareup.okhttp.internal.b.a: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.squareup.okhttp.internal.b.a
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.b.c
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: com.squareup.okhttp.internal.b.a-*-com.squareup.okhttp.internal.b.c-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r75.<java.net.URL: void <init>(java.lang.String)>($r3)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URL
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "No location providers are available on this device.")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+org.geonames.j
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r2, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = virtualinvoke $r0.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>("SavedLocationsFile.dat")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.LocationsActivity$1
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationsActivity$1
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+android.content.Context
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SavedLocationsFile$Utils
+com.appdlab.radarexpress.LocalPersistence
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = virtualinvoke $r2.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.HttpURLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RadarExpress", $r19)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+android.util.Log
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+java.lang.StringBuilder
+com.appdlab.radarexpress.MainActivity$4
+b.l$a
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: b.l$a-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void connect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.URLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.LocationResolver
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$PingServerTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r16.<java.net.Socket: void close()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+a.e
+a.j
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.a.d$c
+com.appdlab.radarexpress.MainActivity$7
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.h
+a.n
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.http.h$2
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.h
+android.location.LocationManager
+a.n
+com.squareup.okhttp.internal.http.h
+com.squareup.okhttp.y
+com.appdlab.radarexpress.MainActivity
+a.n
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.h
+com.squareup.okhttp.internal.a.d
+com.squareup.okhttp.internal.a.d
+java.net.Socket
+android.app.Activity
+com.squareup.okhttp.internal.http.e$c
+com.appdlab.radarexpress.MainActivity$7
+com.squareup.okhttp.internal.a.i$a
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+Category: a.e-*-a.j-*-com.squareup.okhttp.internal.a.d$c-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.h-*-a.n-*-com.squareup.okhttp.internal.http.h$2-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.h-*-a.n-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.y-*-a.n-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.h-*-com.squareup.okhttp.internal.a.d-*-com.squareup.okhttp.internal.a.d-*-com.squareup.okhttp.internal.http.e$c-*-com.squareup.okhttp.internal.a.i$a-*-com.squareup.okhttp.internal.http.h-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>($r0, 2)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.mopub.volley.VolleyLog
+com.appdlab.radarexpress.LocationResolver
+android.os.Handler
+android.util.Log
+com.mopub.volley.ExecutorDelivery$a
+com.appdlab.radarexpress.Utils
+com.mopub.volley.CacheDispatcher
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.AppRater
+com.appdlab.radarexpress.AppRater
+com.mopub.volley.CacheDispatcher$1
+Category: com.mopub.volley.VolleyLog-*-com.mopub.volley.ExecutorDelivery$a-*-com.mopub.volley.CacheDispatcher-*-com.mopub.volley.CacheDispatcher$1-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.v
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity$PingServerTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.p
+java.net.URL
+Category: com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.v-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.p-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+org.geonames.j
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>($r8)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+java.net.InetAddress
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.http.h
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.OkHttpClientSingleton
+com.squareup.okhttp.internal.http.a
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.s
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.squareup.okhttp.internal.http.h
+com.squareup.okhttp.internal.http.a
+com.squareup.okhttp.internal.http.k
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.http.h
+Category: com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.http.a-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.s-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.http.a-*-com.squareup.okhttp.internal.http.k-*-com.squareup.okhttp.internal.http.h-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+org.geonames.j
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection(java.net.Proxy)>($r2)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.URL
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity$4
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.SimpleLocation
+java.net.URL
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.URLEncoder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+java.net.HttpURLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("HEAD")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.MainActivity$PingServerTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "No last known location was found. Attempting to resolve current location...")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.LocationResolver
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("RadarExpress", $r17)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+b.l$a
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+android.util.Log
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+java.lang.StringBuilder
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+b.l$a
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: b.l$a-*-b.l$a-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void disconnect()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r3, "UTF8")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+org.geonames.j
+java.net.URLEncoder
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r7 = staticinvoke <java.net.InetAddress: java.net.InetAddress getByName(java.lang.String)>($r8)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.OkHttpClientSingleton
+com.squareup.okhttp.internal.http.a
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.http.h
+android.location.LocationManager
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.CurrentObservationsTask
+java.net.InetAddress
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.LocationResolver
+com.squareup.okhttp.internal.b.a
+com.squareup.okhttp.internal.b.c
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.http.h
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.s
+com.squareup.okhttp.internal.http.a
+com.squareup.okhttp.internal.http.k
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.a-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.b.a-*-com.squareup.okhttp.internal.b.c-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.s-*-com.squareup.okhttp.internal.http.a-*-com.squareup.okhttp.internal.http.k-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r10 = virtualinvoke $r9.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+java.net.URL
+com.appdlab.radarexpress.MainActivity$4
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.SimpleLocation
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "No last known location was found. Attempting to resolve current location...")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.LocationResolver
+android.location.LocationManager
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>("HEAD")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.HttpURLConnection
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, "No match found.")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.LocationsActivity$2
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.LocationResolver
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationsActivity$2
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i1 = virtualinvoke $r6.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+java.net.HttpURLConnection
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r11.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.SavedLocationsFile$Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.LocalPersistence
+com.appdlab.radarexpress.MainActivity$2$1
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+java.io.ObjectOutputStream
+com.appdlab.radarexpress.MainActivity$2$1
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r2.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.CurrentObservationsTask
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r11 = virtualinvoke $r10.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity$4
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.SimpleLocation
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("RadarExpress", $r17)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+b.l$a
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.CurrentObservationsTask
+com.appdlab.radarexpress.MainActivity
+java.lang.StringBuilder
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+b.l$a
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.CurrentObservationsTask
+Category: b.l$a-*-b.l$a-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r11 = virtualinvoke $r10.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection(java.net.Proxy)>($r2)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+java.net.URL
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = virtualinvoke r0.<com.squareup.okhttp.internal.b.b: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$7
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+android.location.LocationManager
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.b.b
+android.app.Activity
+com.appdlab.radarexpress.MainActivity$7
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.squareup.okhttp.s
+com.appdlab.radarexpress.MainActivity
+Category: com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.s-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "Couldn\'t get location from Geocoder. Trying GeoName...")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r11.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r1)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+java.io.ObjectOutputStream
+com.appdlab.radarexpress.MainActivity$2$1
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.SavedLocationsFile$Utils
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.LocalPersistence
+com.appdlab.radarexpress.MainActivity$2$1
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>($r0)
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+java.net.URL
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r7 = virtualinvoke $r6.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i1 = virtualinvoke $r6.<java.net.HttpURLConnection: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$18
+org.geonames.j
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+java.net.HttpURLConnection
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("RadarExpress", "Couldn\'t get location from Geocoder. Trying GeoName...")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+android.location.Geocoder
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.GeocodeTask
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, "No match found.")
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationsActivity$2
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.LocationsActivity$2
+com.appdlab.radarexpress.MainActivity$18
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+android.util.Log
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = virtualinvoke r0.<com.squareup.okhttp.internal.b.b: int getResponseCode()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity$4
+com.appdlab.radarexpress.MainActivity$7
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.MainActivity$4
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$4
+android.location.LocationManager
+com.squareup.okhttp.internal.http.h
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity
+com.squareup.okhttp.internal.b.b
+com.appdlab.radarexpress.LocationResolver
+android.os.AsyncTask
+com.appdlab.radarexpress.Utils
+com.squareup.okhttp.internal.b.b
+com.squareup.okhttp.internal.http.h
+com.squareup.okhttp.internal.http.h
+android.app.Activity
+com.appdlab.radarexpress.MainActivity$7
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.appdlab.radarexpress.Utils
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.MainActivity$PingServerTask
+com.squareup.okhttp.s
+com.appdlab.radarexpress.MainActivity
+Category: com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.b.b-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.internal.http.h-*-com.squareup.okhttp.s-*-
+-----------------------------------------------------------------
+Source=> $r4 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = virtualinvoke $r6.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.appdlab.radarexpress.MainActivity
+ComponentColor=> GREEN
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.LocationResolver
+com.appdlab.radarexpress.ReverseGeocodeTask
+com.appdlab.radarexpress.ReverseGeocodeTask
+org.geonames.j
+org.geonames.j
+com.appdlab.radarexpress.Utils
+java.net.URLConnection
+com.appdlab.radarexpress.MainActivity
+org.geonames.j
+android.location.LocationManager
+com.appdlab.radarexpress.MainActivity
+com.appdlab.radarexpress.SimpleLocation
+Category: org.geonames.j-*-org.geonames.j-*-org.geonames.j-*-
+-----------------------------------------------------------------
+com.appdlab.radarexpress.apk: 1192028

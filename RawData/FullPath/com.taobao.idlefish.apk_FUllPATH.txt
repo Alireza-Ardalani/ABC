@@ -1,0 +1,18 @@
+<com.tencent.open.utils.Util: java.lang.String getLocation(android.content.Context)> --> $r6 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<com.tencent.open.utils.Util: java.lang.String getLocation(android.content.Context)> --> if $r6 != null goto $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+<com.tencent.open.b.g$2: void run()> --> $r3 = staticinvoke <com.tencent.open.utils.Util: java.lang.String getLocation(android.content.Context)>($r2)
+<com.tencent.open.b.g$2: void run()> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r3)
+--------------------------------------------------------
+
+<com.tencent.open.utils.Util: java.lang.String getLocation(android.content.Context)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+<com.tencent.open.utils.Util: java.lang.String getLocation(android.content.Context)> --> $r7 := @caughtexception
+<com.tencent.open.b.g$2: void run()> --> $r3 = staticinvoke <com.tencent.open.utils.Util: java.lang.String getLocation(android.content.Context)>($r2)
+<com.tencent.open.b.g$2: void run()> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r3)
+--------------------------------------------------------
+
+<com.tencent.open.utils.Util: java.lang.String getLocation(android.content.Context)> --> $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+<com.tencent.open.utils.Util: java.lang.String getLocation(android.content.Context)> --> $r7 := @caughtexception
+<com.tencent.open.b.g$2: void run()> --> $r3 = staticinvoke <com.tencent.open.utils.Util: java.lang.String getLocation(android.content.Context)>($r2)
+<com.tencent.open.b.g$2: void run()> --> virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("position", $r3)
+--------------------------------------------------------
+

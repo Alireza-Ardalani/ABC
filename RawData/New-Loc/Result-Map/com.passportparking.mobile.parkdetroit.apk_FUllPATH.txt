@@ -1,0 +1,52 @@
+<com.passportparking.mobile.utils.CountryHelper: java.lang.String getCountryFromLocation(android.content.Context)> --> $r7 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.passportparking.mobile.utils.CountryHelper: java.lang.String getCountryFromLocation(android.content.Context)> --> r3 := @caughtexception
+<com.passportparking.mobile.utils.PLog: void i(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<org.slf4j.LoggerFactory: org.slf4j.Logger getLogger(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<org.slf4j.LoggerFactory: org.slf4j.ILoggerFactory getILoggerFactory()> --> $i0 = <org.slf4j.LoggerFactory: int INITIALIZATION_STATE>
+<org.slf4j.impl.StaticLoggerBinder: void <clinit>()> --> nop
+<org.slf4j.impl.StaticLoggerBinder: void init()> --> r0 := @this: org.slf4j.impl.StaticLoggerBinder
+<ch.qos.logback.classic.util.ContextInitializer: void autoConfig()> --> r0 := @this: ch.qos.logback.classic.util.ContextInitializer
+<ch.qos.logback.classic.util.ContextInitializer: java.net.URL findConfigFileFromSystemProperties(boolean)> --> r0 := @this: ch.qos.logback.classic.util.ContextInitializer
+<ch.qos.logback.classic.util.ContextInitializer: java.net.URL findConfigFileFromSystemProperties(boolean)> --> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>($r2)
+--------------------------------------------------------
+
+<com.passportparking.mobile.utils.CountryHelper: java.lang.String getCountryFromLocation(android.content.Context)> --> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+<com.passportparking.mobile.utils.CountryHelper: java.lang.String getCountryFromLocation(android.content.Context)> --> r3 := @caughtexception
+<com.passportparking.mobile.utils.PLog: void i(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<org.slf4j.LoggerFactory: org.slf4j.Logger getLogger(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<org.slf4j.LoggerFactory: org.slf4j.ILoggerFactory getILoggerFactory()> --> $i0 = <org.slf4j.LoggerFactory: int INITIALIZATION_STATE>
+<org.slf4j.impl.StaticLoggerBinder: void <clinit>()> --> nop
+<org.slf4j.impl.StaticLoggerBinder: void init()> --> r0 := @this: org.slf4j.impl.StaticLoggerBinder
+<ch.qos.logback.classic.util.ContextInitializer: void autoConfig()> --> r0 := @this: ch.qos.logback.classic.util.ContextInitializer
+<ch.qos.logback.classic.util.ContextInitializer: java.net.URL findConfigFileFromSystemProperties(boolean)> --> r0 := @this: ch.qos.logback.classic.util.ContextInitializer
+<ch.qos.logback.classic.util.ContextInitializer: java.net.URL findConfigFileFromSystemProperties(boolean)> --> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>($r2)
+--------------------------------------------------------
+
+<com.passportparking.mobile.ZoneActivity: void findEnclosingZone()> --> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+<com.passportparking.mobile.ZoneActivity: void findEnclosingZone()> --> if $r6 == null goto return
+<com.passportparking.mobile.ZoneActivity: void onLocationChanged(android.location.Location)> --> r0 := @this: com.passportparking.mobile.ZoneActivity
+<java.lang.Thread: void run()> --> this := @this: java.lang.Thread
+<com.passportparking.mobile.ProfilePreviewActivity$1: void run()> --> r0 := @this: com.passportparking.mobile.ProfilePreviewActivity$1
+<com.passportparking.mobile.server.PRestService: com.passportparking.mobile.server.PResponse getAccountInfo(java.lang.String,java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.passportparking.mobile.server.utils.RestService: void execute()> --> r0 := @this: com.passportparking.mobile.server.utils.RestService
+<com.passportparking.mobile.server.utils.RestService: void execute(com.passportparking.mobile.server.utils.RestService$RequestMethod)> --> r0 := @this: com.passportparking.mobile.server.utils.RestService
+<com.passportparking.mobile.server.utils.RestService: void execute(com.passportparking.mobile.server.utils.RestService$RequestMethod)> --> $r8 = staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r8, "UTF-8")
+--------------------------------------------------------
+
+<com.passportparking.mobile.services.GPSService$MyNetworkLocationListener: void onLocationChanged(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.passportparking.mobile.services.GPSService: void access$12(com.passportparking.mobile.services.GPSService,double)> --> $r0 := @parameter0: com.passportparking.mobile.services.GPSService
+<com.passportparking.mobile.services.GPSService: void access$12(com.passportparking.mobile.services.GPSService,double)> --> $r0.<com.passportparking.mobile.services.GPSService: double netLongitude> = $d0
+<com.passportparking.mobile.services.GPSService$MyNetworkLocationListener: void onLocationChanged(android.location.Location)> --> staticinvoke <com.passportparking.mobile.services.GPSService: void access$12(com.passportparking.mobile.services.GPSService,double)>($r2, $d0)
+<com.passportparking.mobile.services.GPSService$MyNetworkLocationListener: void onLocationChanged(android.location.Location)> --> $r2 = r0.<com.passportparking.mobile.services.GPSService$MyNetworkLocationListener: com.passportparking.mobile.services.GPSService this$0>
+<com.passportparking.mobile.services.GPSService$MyNetworkLocationListener: void onLocationChanged(android.location.Location)> --> $r2 = r0.<com.passportparking.mobile.services.GPSService$MyNetworkLocationListener: com.passportparking.mobile.services.GPSService this$0>
+<com.passportparking.mobile.services.GPSService: void access$6(com.passportparking.mobile.services.GPSService)> --> $r0 := @parameter0: com.passportparking.mobile.services.GPSService
+<com.passportparking.mobile.services.GPSService: void saveCoordinate()> --> r0 := @this: com.passportparking.mobile.services.GPSService
+<com.passportparking.mobile.services.GPSService: void saveCoordinate()> --> $d0 = r0.<com.passportparking.mobile.services.GPSService: double netLongitude>
+<com.passportparking.mobile.services.GPSService: void saveCoordinate()> --> $b0 = $d0 cmpl 0.0
+<com.passportparking.mobile.services.GPSService: void saveCoordinate()> --> if $b0 == 0 goto $r4 = new java.lang.StringBuilder
+<com.passportparking.mobile.utils.ApplicationSettings: void setUserLatitude(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.passportparking.mobile.utils.SecurePreferences: void put(java.lang.String,java.lang.String)> --> r0 := @this: com.passportparking.mobile.utils.SecurePreferences
+<com.passportparking.mobile.utils.SecurePreferences: void putValue(java.lang.String,java.lang.String)> --> r0 := @this: com.passportparking.mobile.utils.SecurePreferences
+<com.passportparking.mobile.utils.SecurePreferences: void putValue(java.lang.String,java.lang.String)> --> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+--------------------------------------------------------
+

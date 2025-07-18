@@ -1,0 +1,739 @@
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.util.GuideUtil
+com.guidebook.android.messaging.GuideActivityUpdater
+com.guidebook.android.util.LocationTracker$1
+com.guidebook.android.util.GuideUtil
+android.os.Handler
+com.guidebook.android.util.GuideUtil
+com.guidebook.android.network.UpdateHandler
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.persistence.GuideDatabaseErrorHandler$GuideUpdater$1
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r4, 1)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.guidebook.android.network.Task$1
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.controller.UpdateMessages
+com.guidebook.android.util.LocationTracker
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("object", $r2)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController$8
+com.facebook.internal.LikeActionController$GetOGObjectLikesRequestWrapper
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$8-*-com.facebook.internal.LikeActionController$GetOGObjectLikesRequestWrapper-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("BUNDLED_GUIDE_DOWNLOAD", 1)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.util.Util1
+com.guidebook.android.app.activity.LaunchActivity$LaunchTask
+android.content.SharedPreferences$Editor
+com.guidebook.android.controller.EnterpriseBuild
+com.guidebook.android.network.Task$1
+com.guidebook.android.app.activity.LaunchActivity
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.app.activity.LaunchActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r6 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r4, null, null, null)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.PlatformServiceClient
+com.facebook.internal.NativeProtocol
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController
+com.facebook.internal.NativeProtocol
+com.facebook.internal.NativeProtocol
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.content.ContentResolver
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.PlatformServiceClient-*-com.facebook.internal.NativeProtocol-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.NativeProtocol-*-com.facebook.internal.NativeProtocol-*-com.facebook.internal.LikeActionController$2-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("fields", "id,application")
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController$8
+com.facebook.internal.LikeActionController$GetOGObjectLikesRequestWrapper
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$8-*-com.facebook.internal.LikeActionController$GetOGObjectLikesRequestWrapper-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Get Attendance", $r1)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.network.CheckInRequest$GetAttendance
+com.guidebook.android.network.requestqueue.RequestQueue$OnError
+android.util.Log
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LogUtil
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LogUtil
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.util.LogUtil
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("HASSDCARD", $z0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.controller.StandaloneBuild
+com.guidebook.android.persistence.BundleLocationPersistence
+com.guidebook.android.app.activity.LaunchActivity$LaunchTask
+com.guidebook.android.network.Task$1
+com.guidebook.android.app.activity.LaunchActivity
+com.guidebook.android.persistence.GuideBundle
+com.guidebook.android.persistence.GuideBundle
+com.guidebook.android.persistence.GuideBundle
+android.content.SharedPreferences$Editor
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.persistence.GuideBundle
+com.guidebook.android.persistence.BundleLocationPersistence
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.app.activity.LaunchActivity
+com.guidebook.android.persistence.GuideStorageOptions
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("fields", "id")
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.facebook.internal.LikeActionController$GetPageIdRequestWrapper
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController$GetPageIdRequestWrapper-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $l0 = virtualinvoke $r2.<android.database.sqlite.SQLiteStatement: long executeInsert()>()
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.persistence.MenuItemsPersistence
+android.database.sqlite.SQLiteStatement
+de.greenrobot.dao.a
+de.greenrobot.dao.a
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.ui.view.TitleView$1
+com.guidebook.android.ui.view.TitleView
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.ui.view.TitleView
+Category: de.greenrobot.dao.a-*-de.greenrobot.dao.a-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, $r1)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+android.database.sqlite.SQLiteDatabase
+com.guidebook.android.persistence.MenuItemsPersistence
+de.greenrobot.dao.c.i
+com.guidebook.android.persistence.MenuItemsPersistence
+de.greenrobot.dao.c.h
+com.guidebook.android.ui.view.TitleView$1
+com.guidebook.android.ui.view.TitleView
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.ui.view.TitleView
+Category: de.greenrobot.dao.c.i-*-de.greenrobot.dao.c.h-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("fields", "engagement.fields(count_string_with_like,count_string_without_like,social_sentence_with_like,social_sentence_without_like)")
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController$8
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.facebook.internal.LikeActionController$GetEngagementRequestWrapper
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$8-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController$GetEngagementRequestWrapper-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("ids", $r2)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.facebook.internal.LikeActionController$GetOGObjectIdRequestWrapper
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$GetOGObjectIdRequestWrapper-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("greenDAO", $r0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.persistence.MenuItemsPersistence
+de.greenrobot.dao.c.i
+de.greenrobot.dao.c.i
+de.greenrobot.dao.c.i
+com.guidebook.android.persistence.MenuItemsPersistence
+de.greenrobot.dao.d
+android.util.Log
+com.guidebook.android.ui.view.TitleView$1
+com.guidebook.android.ui.view.TitleView
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.ui.view.TitleView
+Category: de.greenrobot.dao.c.i-*-de.greenrobot.dao.c.i-*-de.greenrobot.dao.c.i-*-de.greenrobot.dao.d-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("fields", "og_object.fields(id)")
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.facebook.internal.LikeActionController$GetOGObjectIdRequestWrapper
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$GetOGObjectIdRequestWrapper-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("fields", "id,application")
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController$8
+com.facebook.internal.LikeActionController$GetOGObjectLikesRequestWrapper
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$8-*-com.facebook.internal.LikeActionController$GetOGObjectLikesRequestWrapper-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $l0 = virtualinvoke $r2.<android.database.sqlite.SQLiteStatement: long executeInsert()>()
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.persistence.MenuItemsPersistence
+android.database.sqlite.SQLiteStatement
+de.greenrobot.dao.a
+de.greenrobot.dao.a
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.ui.view.TitleView$1
+com.guidebook.android.ui.view.TitleView
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.ui.view.TitleView
+Category: de.greenrobot.dao.a-*-de.greenrobot.dao.a-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Get Attendance", $r1)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.network.CheckInRequest$GetAttendance
+com.guidebook.android.network.requestqueue.RequestQueue$OnError
+android.util.Log
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LogUtil
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LogUtil
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.util.LogUtil
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("BUNDLED_GUIDE_DOWNLOAD", 1)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.util.Util1
+com.guidebook.android.app.activity.LaunchActivity$LaunchTask
+android.content.SharedPreferences$Editor
+com.guidebook.android.controller.EnterpriseBuild
+com.guidebook.android.network.Task$1
+com.guidebook.android.app.activity.LaunchActivity
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.app.activity.LaunchActivity
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r3.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, $r1)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+android.database.sqlite.SQLiteDatabase
+com.guidebook.android.persistence.MenuItemsPersistence
+de.greenrobot.dao.c.i
+com.guidebook.android.persistence.MenuItemsPersistence
+de.greenrobot.dao.c.h
+com.guidebook.android.ui.view.TitleView$1
+com.guidebook.android.ui.view.TitleView
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.ui.view.TitleView
+Category: de.greenrobot.dao.c.i-*-de.greenrobot.dao.c.h-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.util.GuideUtil
+com.guidebook.android.messaging.GuideActivityUpdater
+com.guidebook.android.util.LocationTracker$1
+com.guidebook.android.util.GuideUtil
+android.os.Handler
+com.guidebook.android.util.GuideUtil
+com.guidebook.android.network.UpdateHandler
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.persistence.GuideDatabaseErrorHandler$GuideUpdater$1
+android.content.SharedPreferences$Editor
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("greenDAO", $r0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.persistence.MenuItemsPersistence
+de.greenrobot.dao.c.i
+de.greenrobot.dao.c.i
+de.greenrobot.dao.c.i
+com.guidebook.android.persistence.MenuItemsPersistence
+de.greenrobot.dao.d
+android.util.Log
+com.guidebook.android.ui.view.TitleView$1
+com.guidebook.android.ui.view.TitleView
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.ui.view.TitleView
+Category: de.greenrobot.dao.c.i-*-de.greenrobot.dao.c.i-*-de.greenrobot.dao.c.i-*-de.greenrobot.dao.d-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("HASSDCARD", $z0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.controller.StandaloneBuild
+com.guidebook.android.persistence.BundleLocationPersistence
+com.guidebook.android.app.activity.LaunchActivity$LaunchTask
+com.guidebook.android.network.Task$1
+com.guidebook.android.app.activity.LaunchActivity
+com.guidebook.android.persistence.GuideBundle
+com.guidebook.android.persistence.GuideBundle
+com.guidebook.android.persistence.GuideBundle
+android.content.SharedPreferences$Editor
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.persistence.GuideBundle
+com.guidebook.android.persistence.BundleLocationPersistence
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.app.activity.LaunchActivity
+com.guidebook.android.persistence.GuideStorageOptions
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("fields", "id")
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.facebook.internal.LikeActionController$GetPageIdRequestWrapper
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController$GetPageIdRequestWrapper-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("fields", "engagement.fields(count_string_with_like,count_string_without_like,social_sentence_with_like,social_sentence_without_like)")
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController$8
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.facebook.internal.LikeActionController$GetEngagementRequestWrapper
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$8-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController$GetEngagementRequestWrapper-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("guideId", $i0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.controller.StandaloneBuild
+com.guidebook.android.model.GuideParams
+com.guidebook.android.app.activity.LaunchActivity$LaunchTask
+com.guidebook.android.network.Task$1
+com.guidebook.android.app.activity.LaunchActivity
+android.os.BaseBundle
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.app.activity.LaunchActivity
+com.guidebook.android.controller.StandaloneBuild
+com.guidebook.android.util.Params
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("ids", $r2)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.facebook.internal.LikeActionController$GetOGObjectIdRequestWrapper
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$GetOGObjectIdRequestWrapper-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LogUtil", $r0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.network.CheckInRequest$GetAttendance
+com.guidebook.android.network.requestqueue.RequestQueue$OnError
+android.util.Log
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LogUtil
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.util.LogUtil
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("greenDAO", "Could not insert row (executeInsert returned -1)")
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.persistence.MenuItemsPersistence
+de.greenrobot.dao.a
+de.greenrobot.dao.d
+de.greenrobot.dao.a
+de.greenrobot.dao.a
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.ui.view.TitleView$1
+com.guidebook.android.ui.view.TitleView
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.persistence.MenuItemsPersistence
+android.util.Log
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.ui.view.TitleView
+Category: de.greenrobot.dao.a-*-de.greenrobot.dao.d-*-de.greenrobot.dao.a-*-de.greenrobot.dao.a-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $l0 = virtualinvoke $r2.<android.database.sqlite.SQLiteStatement: long executeInsert()>()
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.persistence.MenuItemsPersistence
+android.database.sqlite.SQLiteStatement
+de.greenrobot.dao.a
+de.greenrobot.dao.a
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.ui.view.TitleView$1
+com.guidebook.android.ui.view.TitleView
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.ui.view.TitleView
+Category: de.greenrobot.dao.a-*-de.greenrobot.dao.a-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("fields", "og_object.fields(id)")
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.facebook.internal.LikeActionController$GetOGObjectIdRequestWrapper
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$GetOGObjectIdRequestWrapper-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("greenDAO", "Could not insert row (executeInsert returned -1)")
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.persistence.MenuItemsPersistence
+de.greenrobot.dao.a
+de.greenrobot.dao.d
+de.greenrobot.dao.a
+de.greenrobot.dao.a
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.ui.view.TitleView$1
+com.guidebook.android.ui.view.TitleView
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.persistence.MenuItemsPersistence
+android.util.Log
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.ui.view.TitleView
+Category: de.greenrobot.dao.a-*-de.greenrobot.dao.d-*-de.greenrobot.dao.a-*-de.greenrobot.dao.a-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LogUtil", $r0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.network.CheckInRequest$GetAttendance
+com.guidebook.android.network.requestqueue.RequestQueue$OnError
+android.util.Log
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LogUtil
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.util.LogUtil
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r6 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r4, null, null, null)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.PlatformServiceClient
+com.facebook.internal.NativeProtocol
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController
+com.facebook.internal.NativeProtocol
+com.facebook.internal.NativeProtocol
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.content.ContentResolver
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.PlatformServiceClient-*-com.facebook.internal.NativeProtocol-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.NativeProtocol-*-com.facebook.internal.NativeProtocol-*-com.facebook.internal.LikeActionController$2-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("guideId", $i0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.controller.StandaloneBuild
+com.guidebook.android.model.GuideParams
+com.guidebook.android.app.activity.LaunchActivity$LaunchTask
+com.guidebook.android.network.Task$1
+com.guidebook.android.app.activity.LaunchActivity
+android.os.BaseBundle
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.app.activity.LaunchActivity
+com.guidebook.android.controller.StandaloneBuild
+com.guidebook.android.util.Params
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r4, 1)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+android.content.SharedPreferences$Editor
+com.guidebook.android.network.Task$1
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.controller.UpdateMessages
+com.guidebook.android.util.LocationTracker
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LogUtil", $r0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.network.CheckInRequest$GetAttendance
+com.guidebook.android.network.requestqueue.RequestQueue$OnError
+android.util.Log
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LogUtil
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LogUtil
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.util.LogUtil
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $l0 = virtualinvoke $r2.<android.database.sqlite.SQLiteStatement: long executeInsert()>()
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.persistence.MenuItemsPersistence
+android.database.sqlite.SQLiteStatement
+de.greenrobot.dao.a
+de.greenrobot.dao.a
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.ui.view.TitleView$1
+com.guidebook.android.ui.view.TitleView
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.app.activity.guide.details.TitleViewPresenter
+com.guidebook.android.persistence.MenuItemsPersistence
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.ui.view.TitleView
+Category: de.greenrobot.dao.a-*-de.greenrobot.dao.a-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("object", $r2)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.facebook.internal.LikeActionController
+com.facebook.internal.LikeActionController$8
+com.facebook.internal.LikeActionController$GetOGObjectLikesRequestWrapper
+com.facebook.internal.LikeActionController
+android.os.BaseBundle
+com.guidebook.android.util.LocationTracker$1
+com.facebook.internal.LikeActionController$2
+android.os.Handler
+com.guidebook.android.util.LocationTracker
+com.facebook.internal.LikeActionController
+Category: com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$8-*-com.facebook.internal.LikeActionController$GetOGObjectLikesRequestWrapper-*-com.facebook.internal.LikeActionController-*-com.facebook.internal.LikeActionController$2-*-com.facebook.internal.LikeActionController-*-
+-----------------------------------------------------------------
+Source=> $r2 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("LogUtil", $r0)
+Component=> com.guidebook.android.feature.schedule.adhoc.LocationSearchActivity
+ComponentColor=> GREEN
+android.location.LocationManager
+com.guidebook.android.network.CheckInRequest$GetAttendance
+com.guidebook.android.network.requestqueue.RequestQueue$OnError
+android.util.Log
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LogUtil
+com.guidebook.android.util.LocationTracker$1
+android.os.Handler
+com.guidebook.android.util.AppStateUtil$1
+com.guidebook.android.util.LogUtil
+com.guidebook.android.util.LocationTracker
+com.guidebook.android.util.LogUtil
+Category: LEGIT
+-----------------------------------------------------------------
+com.guidebook.android.apk: 1291974

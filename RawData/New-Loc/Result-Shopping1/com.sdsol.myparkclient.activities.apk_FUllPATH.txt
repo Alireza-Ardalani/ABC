@@ -1,0 +1,258 @@
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> <com.sdsol.myparkclient.utils.Global: double latitude> = $d0
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)>($r5)
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $z0 = virtualinvoke $r7.<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $d0 = <com.sdsol.myparkclient.utils.Global: double latitude>
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $b0 = $d0 cmpl 0.0
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> if $b0 != 0 goto $r1 = r0.<com.sdsol.myparkclient.fragments.SignUpFragment: com.sdsol.myparkclient.pojos.SignInUpInfo params>
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> $z0 = specialinvoke r0.<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> if $z0 == 0 goto return
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onStartWebRequest(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignUpFragment
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void doSignIn(com.sdsol.myparkclient.pojos.SignInUpInfo)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.async.AsyncServer: void post(android.os.Handler,java.lang.Runnable)> --> $r0 := @parameter0: android.os.Handler
+<com.koushikdutta.async.AsyncServer$RunnableWrapper: void run()> --> r0 := @this: com.koushikdutta.async.AsyncServer$RunnableWrapper
+<com.koushikdutta.ion.IonRequestBuilder$4$1: void run()> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4$1
+<com.koushikdutta.ion.IonRequestBuilder: void invokeLoadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.ion.IonRequestBuilder: void loadRequest(com.koushikdutta.async.http.AsyncHttpRequest,com.koushikdutta.ion.IonRequestBuilder$EmitterTransform)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder
+<com.koushikdutta.async.http.AsyncHttpRequest: void logi(java.lang.String)> --> r0 := @this: com.koushikdutta.async.http.AsyncHttpRequest
+<com.koushikdutta.async.http.AsyncHttpRequest: void logi(java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> <com.sdsol.myparkclient.utils.Global: double latitude> = $d0
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)>($r5)
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $z0 = virtualinvoke $r7.<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $d0 = <com.sdsol.myparkclient.utils.Global: double latitude>
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $b0 = $d0 cmpl 0.0
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> if $b0 != 0 goto $r1 = r0.<com.sdsol.myparkclient.fragments.SignUpFragment: com.sdsol.myparkclient.pojos.SignInUpInfo params>
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> $z0 = specialinvoke r0.<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> if $z0 == 0 goto return
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onStartWebRequest(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignUpFragment
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void doSignIn(com.sdsol.myparkclient.pojos.SignInUpInfo)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.koushikdutta.ion.Ion: com.koushikdutta.ion.builder.LoadBuilder 'with'(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.koushikdutta.ion.Ion: com.koushikdutta.ion.Ion getDefault(android.content.Context)> --> $r0 := @parameter0: android.content.Context
+<com.koushikdutta.ion.Ion: com.koushikdutta.ion.Ion getInstance(android.content.Context,java.lang.String)> --> $r0 := @parameter0: android.content.Context
+<com.koushikdutta.ion.Ion: void <init>(android.content.Context,java.lang.String)> --> r0 := @this: com.koushikdutta.ion.Ion
+<com.koushikdutta.ion.Ion: void <init>(android.content.Context,java.lang.String)> --> $r13 = staticinvoke <com.koushikdutta.async.http.cache.ResponseCacheMiddleware: com.koushikdutta.async.http.cache.ResponseCacheMiddleware addCache(com.koushikdutta.async.http.AsyncHttpClient,java.io.File,long)>($r7, $r25, 10485760L)
+<com.koushikdutta.ion.Ion: void <init>(android.content.Context,java.lang.String)> --> r2 := @caughtexception
+<com.koushikdutta.ion.IonLog: void w(java.lang.String,java.lang.Exception)> --> $r0 := @parameter0: java.lang.String
+<com.koushikdutta.ion.IonLog: void w(java.lang.String,java.lang.Exception)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>("ION", $r0, $r1)
+--------------------------------------------------------
+
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> <com.sdsol.myparkclient.utils.Global: double latitude> = $d0
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)>($r5)
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $z0 = virtualinvoke $r7.<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $d0 = <com.sdsol.myparkclient.utils.Global: double latitude>
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $b0 = $d0 cmpl 0.0
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> if $b0 != 0 goto $r1 = r0.<com.sdsol.myparkclient.fragments.SignUpFragment: com.sdsol.myparkclient.pojos.SignInUpInfo params>
+<com.sdsol.myparkclient.service.GPSTracker: boolean getAuthenticLocation()> --> r0 := @this: com.sdsol.myparkclient.service.GPSTracker
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> r0 := @this: com.sdsol.myparkclient.service.GPSTracker
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, "GPS Enabled")
+--------------------------------------------------------
+
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> <com.sdsol.myparkclient.utils.Global: double latitude> = $d0
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)>($r5)
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $z0 = virtualinvoke $r7.<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $d0 = <com.sdsol.myparkclient.utils.Global: double latitude>
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $b0 = $d0 cmpl 0.0
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> if $b0 != 0 goto $r1 = r0.<com.sdsol.myparkclient.fragments.SignUpFragment: com.sdsol.myparkclient.pojos.SignInUpInfo params>
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> $z0 = specialinvoke r0.<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> if $z0 == 0 goto return
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onStartWebRequest(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignUpFragment
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void doSignIn(com.sdsol.myparkclient.pojos.SignInUpInfo)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.async.AsyncServer: void post(android.os.Handler,java.lang.Runnable)> --> $r0 := @parameter0: android.os.Handler
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<io.intercom.com.bumptech.glide.RequestBuilder$1: void run()> --> r0 := @this: io.intercom.com.bumptech.glide.RequestBuilder$1
+<io.intercom.com.bumptech.glide.RequestBuilder: io.intercom.com.bumptech.glide.request.target.Target into(io.intercom.com.bumptech.glide.request.target.Target)> --> r0 := @this: io.intercom.com.bumptech.glide.RequestBuilder
+<io.intercom.com.bumptech.glide.RequestBuilder: io.intercom.com.bumptech.glide.request.Request buildRequest(io.intercom.com.bumptech.glide.request.target.Target)> --> r0 := @this: io.intercom.com.bumptech.glide.RequestBuilder
+<io.intercom.com.bumptech.glide.RequestBuilder: io.intercom.com.bumptech.glide.request.Request buildRequestRecursive(io.intercom.com.bumptech.glide.request.target.Target,io.intercom.com.bumptech.glide.request.ThumbnailRequestCoordinator,io.intercom.com.bumptech.glide.TransitionOptions,io.intercom.com.bumptech.glide.Priority,int,int)> --> r0 := @this: io.intercom.com.bumptech.glide.RequestBuilder
+<io.intercom.com.bumptech.glide.RequestBuilder: io.intercom.com.bumptech.glide.request.Request obtainRequest(io.intercom.com.bumptech.glide.request.target.Target,io.intercom.com.bumptech.glide.request.RequestOptions,io.intercom.com.bumptech.glide.request.RequestCoordinator,io.intercom.com.bumptech.glide.TransitionOptions,io.intercom.com.bumptech.glide.Priority,int,int)> --> r0 := @this: io.intercom.com.bumptech.glide.RequestBuilder
+<io.intercom.com.bumptech.glide.request.SingleRequest: io.intercom.com.bumptech.glide.request.SingleRequest obtain(io.intercom.com.bumptech.glide.GlideContext,java.lang.Object,java.lang.Class,io.intercom.com.bumptech.glide.request.RequestOptions,int,int,io.intercom.com.bumptech.glide.Priority,io.intercom.com.bumptech.glide.request.target.Target,io.intercom.com.bumptech.glide.request.RequestListener,io.intercom.com.bumptech.glide.request.RequestCoordinator,io.intercom.com.bumptech.glide.load.engine.Engine,io.intercom.com.bumptech.glide.request.transition.TransitionFactory)> --> $r0 := @parameter0: io.intercom.com.bumptech.glide.GlideContext
+<io.intercom.com.bumptech.glide.util.pool.FactoryPools$FactoryPool: java.lang.Object acquire()> --> r0 := @this: io.intercom.com.bumptech.glide.util.pool.FactoryPools$FactoryPool
+<io.intercom.com.bumptech.glide.util.pool.FactoryPools$FactoryPool: java.lang.Object acquire()> --> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("FactoryPools", 2)
+--------------------------------------------------------
+
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> <com.sdsol.myparkclient.utils.Global: double latitude> = $d0
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)>($r5)
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $z0 = virtualinvoke $r7.<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $d0 = <com.sdsol.myparkclient.utils.Global: double latitude>
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $b0 = $d0 cmpl 0.0
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> if $b0 != 0 goto $r1 = r0.<com.sdsol.myparkclient.fragments.SignUpFragment: com.sdsol.myparkclient.pojos.SignInUpInfo params>
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> $z0 = specialinvoke r0.<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> if $z0 == 0 goto return
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onStartWebRequest(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignUpFragment
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void doSignIn(com.sdsol.myparkclient.pojos.SignInUpInfo)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.sdsol.myparkclient.webrequest.ForgotPasswordRequest: void onCompleted(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.sdsol.myparkclient.webrequest.ForgotPasswordRequest
+<com.sdsol.myparkclient.webrequest.ForgotPasswordRequest: void onCompleted(java.lang.Exception,com.google.gson.JsonObject)> --> r0 := @this: com.sdsol.myparkclient.webrequest.ForgotPasswordRequest
+<com.sdsol.myparkclient.fragments.SignInFragment: void onWebRequestSuccessful(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignInFragment
+<com.sdsol.myparkclient.utils.SegmentUtil: void logEventsForIdentifySegment(java.lang.String,com.sdsol.myparkclient.pojos.ParkingLots)> --> $r0 := @parameter0: java.lang.String
+<com.sdsol.myparkclient.utils.SegmentUtil: void logEventsForIdentifySegment(java.lang.String,com.sdsol.myparkclient.pojos.ParkingLots)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("SegmentEventLog", "IdentifySegment")
+--------------------------------------------------------
+
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> <com.sdsol.myparkclient.utils.Global: double latitude> = $d0
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)>($r5)
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $z0 = virtualinvoke $r7.<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $d0 = <com.sdsol.myparkclient.utils.Global: double latitude>
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $b0 = $d0 cmpl 0.0
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> if $b0 != 0 goto $r1 = r0.<com.sdsol.myparkclient.fragments.SignUpFragment: com.sdsol.myparkclient.pojos.SignInUpInfo params>
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> $z0 = specialinvoke r0.<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> if $z0 == 0 goto return
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onStartWebRequest(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignUpFragment
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void doSignIn(com.sdsol.myparkclient.pojos.SignInUpInfo)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.sdsol.myparkclient.webrequest.ForgotPasswordRequest: void onCompleted(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.sdsol.myparkclient.webrequest.ForgotPasswordRequest
+<com.sdsol.myparkclient.webrequest.ForgotPasswordRequest: void onCompleted(java.lang.Exception,com.google.gson.JsonObject)> --> r0 := @this: com.sdsol.myparkclient.webrequest.ForgotPasswordRequest
+<com.sdsol.myparkclient.webrequest.ForgotPasswordRequest: void onCompleted(java.lang.Exception,com.google.gson.JsonObject)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r5)
+--------------------------------------------------------
+
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> <com.sdsol.myparkclient.utils.Global: double latitude> = $d0
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)>($r5)
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $z0 = virtualinvoke $r7.<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $d0 = <com.sdsol.myparkclient.utils.Global: double latitude>
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $b0 = $d0 cmpl 0.0
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> if $b0 != 0 goto $r1 = r0.<com.sdsol.myparkclient.fragments.SignUpFragment: com.sdsol.myparkclient.pojos.SignInUpInfo params>
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> $z0 = specialinvoke r0.<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> if $z0 == 0 goto return
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onStartWebRequest(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignUpFragment
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void doSignIn(com.sdsol.myparkclient.pojos.SignInUpInfo)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.sdsol.myparkclient.webrequest.SignInWithFacebookRequest: void onCompleted(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignInWithFacebookRequest
+<com.sdsol.myparkclient.webrequest.SignInWithFacebookRequest: void onCompleted(java.lang.Exception,com.google.gson.JsonObject)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignInWithFacebookRequest
+<com.sdsol.myparkclient.webrequest.SignInWithFacebookRequest: void onCompleted(java.lang.Exception,com.google.gson.JsonObject)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r4, $r6)
+--------------------------------------------------------
+
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> <com.sdsol.myparkclient.utils.Global: double latitude> = $d0
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)>($r5)
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $z0 = virtualinvoke $r7.<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $d0 = <com.sdsol.myparkclient.utils.Global: double latitude>
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $b0 = $d0 cmpl 0.0
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> if $b0 != 0 goto $r1 = r0.<com.sdsol.myparkclient.fragments.SignUpFragment: com.sdsol.myparkclient.pojos.SignInUpInfo params>
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> $z0 = specialinvoke r0.<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> if $z0 == 0 goto return
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onStartWebRequest(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignUpFragment
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void doSignIn(com.sdsol.myparkclient.pojos.SignInUpInfo)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.async.AsyncServer: void post(android.os.Handler,java.lang.Runnable)> --> $r0 := @parameter0: android.os.Handler
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<io.intercom.com.bumptech.glide.RequestBuilder$1: void run()> --> r0 := @this: io.intercom.com.bumptech.glide.RequestBuilder$1
+<io.intercom.com.bumptech.glide.RequestBuilder: io.intercom.com.bumptech.glide.request.target.Target into(io.intercom.com.bumptech.glide.request.target.Target)> --> r0 := @this: io.intercom.com.bumptech.glide.RequestBuilder
+<io.intercom.com.bumptech.glide.RequestManager: void track(io.intercom.com.bumptech.glide.request.target.Target,io.intercom.com.bumptech.glide.request.Request)> --> r0 := @this: io.intercom.com.bumptech.glide.RequestManager
+<io.intercom.com.bumptech.glide.manager.RequestTracker: void runRequest(io.intercom.com.bumptech.glide.request.Request)> --> r0 := @this: io.intercom.com.bumptech.glide.manager.RequestTracker
+<io.intercom.com.bumptech.glide.request.SingleRequest: void begin()> --> r0 := @this: io.intercom.com.bumptech.glide.request.SingleRequest
+<io.intercom.com.bumptech.glide.request.SingleRequest: void logV(java.lang.String)> --> r0 := @this: io.intercom.com.bumptech.glide.request.SingleRequest
+<io.intercom.com.bumptech.glide.request.SingleRequest: void logV(java.lang.String)> --> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Request", $r1)
+--------------------------------------------------------
+
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location> = $r5
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> if $r5 != null goto $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, "GPS Enabled")
+--------------------------------------------------------
+
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> <com.sdsol.myparkclient.utils.Global: double latitude> = $d0
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)>($r5)
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $z0 = virtualinvoke $r7.<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $d0 = <com.sdsol.myparkclient.utils.Global: double latitude>
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $b0 = $d0 cmpl 0.0
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> if $b0 != 0 goto $r1 = r0.<com.sdsol.myparkclient.fragments.SignUpFragment: com.sdsol.myparkclient.pojos.SignInUpInfo params>
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> $z0 = specialinvoke r0.<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> if $z0 == 0 goto return
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onStartWebRequest(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignUpFragment
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void doSignIn(com.sdsol.myparkclient.pojos.SignInUpInfo)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void doSignIn(com.sdsol.myparkclient.pojos.SignInUpInfo)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, "Start Sign up Request")
+--------------------------------------------------------
+
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> <com.sdsol.myparkclient.utils.Global: double latitude> = $d0
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)>($r5)
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $z0 = virtualinvoke $r7.<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $d0 = <com.sdsol.myparkclient.utils.Global: double latitude>
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $b0 = $d0 cmpl 0.0
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> if $b0 != 0 goto $r1 = r0.<com.sdsol.myparkclient.fragments.SignUpFragment: com.sdsol.myparkclient.pojos.SignInUpInfo params>
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> $z0 = specialinvoke r0.<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> if $z0 == 0 goto return
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onStartWebRequest(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignUpFragment
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void doSignIn(com.sdsol.myparkclient.pojos.SignInUpInfo)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.ion.IonRequestBuilder$4: void onCompleted(java.lang.Exception,com.koushikdutta.async.http.AsyncHttpRequest)> --> r0 := @this: com.koushikdutta.ion.IonRequestBuilder$4
+<com.koushikdutta.async.AsyncServer: void post(android.os.Handler,java.lang.Runnable)> --> $r0 := @parameter0: android.os.Handler
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.facebook.AccessTokenManager$1: void run()> --> r0 := @this: com.facebook.AccessTokenManager$1
+<com.facebook.AccessTokenManager: void access$000(com.facebook.AccessTokenManager)> --> $r0 := @parameter0: com.facebook.AccessTokenManager
+<com.facebook.AccessTokenManager: void refreshCurrentAccessTokenImpl()> --> r0 := @this: com.facebook.AccessTokenManager
+<com.facebook.AccessTokenManager: com.facebook.GraphRequest createExtendAccessTokenRequest(com.facebook.AccessToken,com.facebook.GraphRequest$Callback)> --> $r0 := @parameter0: com.facebook.AccessToken
+<com.facebook.AccessTokenManager: com.facebook.GraphRequest createExtendAccessTokenRequest(com.facebook.AccessToken,com.facebook.GraphRequest$Callback)> --> virtualinvoke r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("grant_type", "fb_extend_sso_token")
+--------------------------------------------------------
+
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)> --> <com.sdsol.myparkclient.utils.Global: double latitude> = $d0
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: boolean updateLocationAfterVerification(android.location.Location)>($r5)
+<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()> --> $r5 = r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location location>
+<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()> --> specialinvoke r0.<com.sdsol.myparkclient.service.GPSTracker: android.location.Location getLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $z0 = virtualinvoke $r7.<com.sdsol.myparkclient.service.GPSTracker: boolean canGetLocation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $d0 = <com.sdsol.myparkclient.utils.Global: double latitude>
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> $b0 = $d0 cmpl 0.0
+<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()> --> if $b0 != 0 goto $r1 = r0.<com.sdsol.myparkclient.fragments.SignUpFragment: com.sdsol.myparkclient.pojos.SignInUpInfo params>
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> $z0 = specialinvoke r0.<com.sdsol.myparkclient.fragments.SignUpFragment: boolean formValidation()>()
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onClick(android.view.View)> --> if $z0 == 0 goto return
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onStartWebRequest(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignUpFragment
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void doSignIn(com.sdsol.myparkclient.pojos.SignInUpInfo)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.koushikdutta.async.future.SimpleFuture: com.koushikdutta.async.future.SimpleFuture setCallback(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.koushikdutta.async.future.SimpleFuture: void handleCallbackUnlocked(com.koushikdutta.async.future.FutureCallback)> --> r0 := @this: com.koushikdutta.async.future.SimpleFuture
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void onCompleted(java.lang.Exception,java.lang.Object)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.sdsol.myparkclient.webrequest.SignUpAsyncRequest: void onCompleted(java.lang.Exception,com.google.gson.JsonObject)> --> r0 := @this: com.sdsol.myparkclient.webrequest.SignUpAsyncRequest
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onWebRequestSuccessful(java.lang.Object,int)> --> r0 := @this: com.sdsol.myparkclient.fragments.SignUpFragment
+<com.sdsol.myparkclient.fragments.SignUpFragment: void onWebRequestSuccessful(java.lang.Object,int)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8)
+--------------------------------------------------------
+
+<dummyMainClass: com.sdsol.myparkclient.activities.SplashScreenActivity dummyMainMethod_com_sdsol_myparkclient_activities_SplashScreenActivity(android.content.Intent)> --> virtualinvoke $r4.<com.sdsol.myparkclient.service.GPSTracker: void onLocationChanged(android.location.Location)>(null)
+<dummyMainClass: com.sdsol.myparkclient.activities.SplashScreenActivity dummyMainMethod_com_sdsol_myparkclient_activities_SplashScreenActivity(android.content.Intent)> --> if $i0 == 5 goto $r5 = new com.sdsol.myparkclient.service.GPSTracker
+<com.sdsol.myparkclient.service.GPSTracker: void onProviderDisabled(java.lang.String)> --> r0 := @this: com.sdsol.myparkclient.service.GPSTracker
+<com.sdsol.myparkclient.service.GPSTracker: void onProviderDisabled(java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r1)
+--------------------------------------------------------
+

@@ -1,0 +1,390 @@
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.q
+android.util.Log
+com.moat.analytics.mobile.ogury.l
+com.moat.analytics.mobile.ogury.e$1
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.q-*-com.moat.analytics.mobile.ogury.l-*-com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.e$1
+android.location.LocationManager
+com.moat.analytics.mobile.ogury.m
+android.util.Log
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+Category: com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("PlacedAgent", "No app key, can not start placed service. Make sure you have called PlacedAgent.registerUserWithDialog(activity, appKey).")
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+android.util.Log
+com.placed.client.android.persistent.PlacedReceiver
+com.placed.client.android.ak
+android.location.Location
+com.placed.client.android.persistent.d
+Category: com.placed.client.android.as-*-com.placed.client.android.persistent.PlacedReceiver-*-com.placed.client.android.ak-*-com.placed.client.android.persistent.d-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.e$1
+com.moat.analytics.mobile.ogury.m
+android.util.Log
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PlacedAgent", "registerUser: User has already accepted EULA. Starting the SDK.")
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+com.placed.client.android.persistent.c
+android.util.Log
+com.placed.client.android.au
+android.location.Location
+Category: com.placed.client.android.as-*-com.placed.client.android.persistent.c-*-com.placed.client.android.au-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("opt_in_version", $r1)
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+android.location.LocationManager
+com.placed.client.android.ae$c
+com.placed.client.android.ae
+android.content.SharedPreferences$Editor
+com.placed.client.android.ae
+com.placed.client.android.persistent.PlacedReceiver
+com.placed.client.android.persistent.b
+com.placed.client.android.ak
+com.placed.client.android.persistent.d
+Category: com.placed.client.android.as-*-com.placed.client.android.ae$c-*-com.placed.client.android.ae-*-com.placed.client.android.ae-*-com.placed.client.android.persistent.PlacedReceiver-*-com.placed.client.android.persistent.b-*-com.placed.client.android.ak-*-com.placed.client.android.persistent.d-*-
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PlacedAgent", "registerUser: User has not accepted EULA. Exiting.")
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+com.placed.client.android.persistent.c
+android.location.LocationManager
+android.util.Log
+com.placed.client.android.au
+Category: com.placed.client.android.as-*-com.placed.client.android.persistent.c-*-com.placed.client.android.au-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.e$1
+com.moat.analytics.mobile.ogury.m
+android.util.Log
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PlacedAgent", "registerUser: User has not accepted EULA. Exiting.")
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+com.placed.client.android.persistent.c
+android.location.LocationManager
+android.util.Log
+com.placed.client.android.au
+Category: com.placed.client.android.as-*-com.placed.client.android.persistent.c-*-com.placed.client.android.au-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.e$1
+com.moat.analytics.mobile.ogury.m
+android.util.Log
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.e$1
+com.moat.analytics.mobile.ogury.m
+android.util.Log
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r6, "UTF-8")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.m
+java.net.URLEncoder
+com.moat.analytics.mobile.ogury.l
+android.location.LocationManager
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.l
+com.moat.analytics.mobile.ogury.m
+Category: com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.l-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.l-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("opt_in_version", $r1)
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+android.location.LocationManager
+com.placed.client.android.ae$c
+android.content.SharedPreferences$Editor
+com.placed.client.android.ae
+com.placed.client.android.persistent.PlacedReceiver
+com.placed.client.android.ae
+com.placed.client.android.persistent.b
+com.placed.client.android.ak
+com.placed.client.android.persistent.d
+Category: com.placed.client.android.as-*-com.placed.client.android.ae$c-*-com.placed.client.android.ae-*-com.placed.client.android.persistent.PlacedReceiver-*-com.placed.client.android.ae-*-com.placed.client.android.persistent.b-*-com.placed.client.android.ak-*-com.placed.client.android.persistent.d-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r6, "UTF-8")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+java.net.URLEncoder
+com.moat.analytics.mobile.ogury.l
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.l
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.l-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.l-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PlacedAgent", "registerUser: User has not accepted EULA. Exiting.")
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+com.placed.client.android.persistent.c
+android.util.Log
+android.location.Location
+com.placed.client.android.au
+Category: com.placed.client.android.as-*-com.placed.client.android.persistent.c-*-com.placed.client.android.au-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.q
+android.util.Log
+com.moat.analytics.mobile.ogury.l
+com.moat.analytics.mobile.ogury.e$1
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.q-*-com.moat.analytics.mobile.ogury.l-*-com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.e$1
+android.location.LocationManager
+com.moat.analytics.mobile.ogury.m
+android.util.Log
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+Category: com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("PlacedAgent", "No app key, can not start placed service. Make sure you have called PlacedAgent.registerUserWithDialog(activity, appKey).")
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+android.util.Log
+com.placed.client.android.persistent.PlacedReceiver
+com.placed.client.android.ak
+android.location.Location
+com.placed.client.android.persistent.d
+Category: com.placed.client.android.as-*-com.placed.client.android.persistent.PlacedReceiver-*-com.placed.client.android.ak-*-com.placed.client.android.persistent.d-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.e$1
+com.moat.analytics.mobile.ogury.m
+android.util.Log
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PlacedAgent", "registerUser: User has already accepted EULA. Starting the SDK.")
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+com.placed.client.android.persistent.c
+android.util.Log
+com.placed.client.android.au
+android.location.Location
+Category: com.placed.client.android.as-*-com.placed.client.android.persistent.c-*-com.placed.client.android.au-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("opt_in_version", $r1)
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+android.location.LocationManager
+com.placed.client.android.ae$c
+com.placed.client.android.ae
+android.content.SharedPreferences$Editor
+com.placed.client.android.ae
+com.placed.client.android.persistent.PlacedReceiver
+com.placed.client.android.persistent.b
+com.placed.client.android.ak
+com.placed.client.android.persistent.d
+Category: com.placed.client.android.as-*-com.placed.client.android.ae$c-*-com.placed.client.android.ae-*-com.placed.client.android.ae-*-com.placed.client.android.persistent.PlacedReceiver-*-com.placed.client.android.persistent.b-*-com.placed.client.android.ak-*-com.placed.client.android.persistent.d-*-
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PlacedAgent", "registerUser: User has not accepted EULA. Exiting.")
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+com.placed.client.android.persistent.c
+android.location.LocationManager
+android.util.Log
+com.placed.client.android.au
+Category: com.placed.client.android.as-*-com.placed.client.android.persistent.c-*-com.placed.client.android.au-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.e$1
+com.moat.analytics.mobile.ogury.m
+android.util.Log
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $r8 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PlacedAgent", "registerUser: User has not accepted EULA. Exiting.")
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+com.placed.client.android.persistent.c
+android.location.LocationManager
+android.util.Log
+com.placed.client.android.au
+Category: com.placed.client.android.as-*-com.placed.client.android.persistent.c-*-com.placed.client.android.au-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.e$1
+com.moat.analytics.mobile.ogury.m
+android.util.Log
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.e$1
+com.moat.analytics.mobile.ogury.m
+android.util.Log
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.e$1-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $r3 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r6, "UTF-8")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+com.moat.analytics.mobile.ogury.m
+java.net.URLEncoder
+com.moat.analytics.mobile.ogury.l
+android.location.LocationManager
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.l
+com.moat.analytics.mobile.ogury.m
+Category: com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.l-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.l-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("opt_in_version", $r1)
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+android.location.LocationManager
+com.placed.client.android.ae$c
+android.content.SharedPreferences$Editor
+com.placed.client.android.ae
+com.placed.client.android.persistent.PlacedReceiver
+com.placed.client.android.ae
+com.placed.client.android.persistent.b
+com.placed.client.android.ak
+com.placed.client.android.persistent.d
+Category: com.placed.client.android.as-*-com.placed.client.android.ae$c-*-com.placed.client.android.ae-*-com.placed.client.android.persistent.PlacedReceiver-*-com.placed.client.android.ae-*-com.placed.client.android.persistent.b-*-com.placed.client.android.ak-*-com.placed.client.android.persistent.d-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String,java.lang.String)>($r6, "UTF-8")
+Component=> io.presage.interstitial.InterstitialActivity
+ComponentColor=> RED
+java.net.URLEncoder
+com.moat.analytics.mobile.ogury.l
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.m
+com.moat.analytics.mobile.ogury.l
+com.moat.analytics.mobile.ogury.m
+android.location.Location
+Category: com.moat.analytics.mobile.ogury.l-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.m-*-com.moat.analytics.mobile.ogury.l-*-com.moat.analytics.mobile.ogury.m-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("PlacedAgent", "registerUser: User has not accepted EULA. Exiting.")
+Component=> io.mysdk.pl.MyPlReceiver
+ComponentColor=> RED
+com.placed.client.android.as
+com.placed.client.android.persistent.c
+android.util.Log
+android.location.Location
+com.placed.client.android.au
+Category: com.placed.client.android.as-*-com.placed.client.android.persistent.c-*-com.placed.client.android.au-*-
+-----------------------------------------------------------------

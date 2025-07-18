@@ -1,0 +1,258 @@
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> return $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.ogury.l: void ॱ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.ogury.l: void ॱ(java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> return $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ʽ()> --> r0 := @this: com.moat.analytics.mobile.ogury.m
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> return $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ʽ()> --> r0 := @this: com.moat.analytics.mobile.ogury.m
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z0 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r1)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z0 != 0 goto (branch)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ʽ()> --> r0 := @this: com.moat.analytics.mobile.ogury.m
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z0 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r1)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z0 != 0 goto (branch)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.ogury.l: void ॱ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.ogury.l: void ॱ(java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.ogury.l: void ॱ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> entermonitor class "Lcom/moat/analytics/mobile/ogury/q;"
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> $r0 = new com.moat.analytics.mobile.ogury.q
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ> = $r0
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> $r0 = <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ>
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> if $r0 != null goto $r0 = <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ>
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ> = $r0
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> $r0 = <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ>
+<com.moat.analytics.mobile.ogury.e$1: void ॱ(java.lang.String,java.lang.String)> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()>()
+<com.moat.analytics.mobile.ogury.e$1: void ॱ(java.lang.String,java.lang.String)> --> $z0 = $r2.<com.moat.analytics.mobile.ogury.q: boolean ˏ>
+<com.moat.analytics.mobile.ogury.e$1: void ॱ(java.lang.String,java.lang.String)> --> if $z0 != 0 goto return
+<com.moat.analytics.mobile.ogury.e$1: void ॱ(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($b0, "MoatAnalytics", $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z0 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r1)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z0 != 0 goto (branch)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ʽ()> --> r0 := @this: com.moat.analytics.mobile.ogury.m
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z0 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r1)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z0 != 0 goto (branch)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.ogury.l: void ॱ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.ogury.l: void ॱ(java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.ogury.l: void ॱ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> entermonitor class "Lcom/moat/analytics/mobile/ogury/q;"
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> $r0 = new com.moat.analytics.mobile.ogury.q
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ> = $r0
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> $r0 = <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ>
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> if $r0 != null goto $r0 = <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ>
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ> = $r0
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> $r0 = <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ>
+<com.moat.analytics.mobile.ogury.e$1: void ˏ(java.lang.String,java.lang.Object,java.lang.String,java.lang.Throwable)> --> $r4 = staticinvoke <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()>()
+<com.moat.analytics.mobile.ogury.e$1: void ˏ(java.lang.String,java.lang.Object,java.lang.String,java.lang.Throwable)> --> $z0 = $r4.<com.moat.analytics.mobile.ogury.q: boolean ˏ>
+<com.moat.analytics.mobile.ogury.e$1: void ˏ(java.lang.String,java.lang.Object,java.lang.String,java.lang.Throwable)> --> if $z0 == 0 goto return
+<com.moat.analytics.mobile.ogury.e$1: void ˏ(java.lang.String,java.lang.Object,java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r2, $r0, $r1)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> return $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ʽ()> --> r0 := @this: com.moat.analytics.mobile.ogury.m
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z0 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r1)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z0 != 0 goto (branch)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ʽ()> --> r0 := @this: com.moat.analytics.mobile.ogury.m
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z0 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r1)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z0 != 0 goto (branch)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ʽ()> --> r0 := @this: com.moat.analytics.mobile.ogury.m
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> return $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ʽ()> --> r0 := @this: com.moat.analytics.mobile.ogury.m
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> $i0 := @parameter0: int
+<com.moat.analytics.mobile.ogury.e$1: void ˋ(int,java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $d0 = virtualinvoke $r0.<android.location.Location: double getLongitude()>()
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $b0 = $d0 cmpl 0.0
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $b0 != 0 goto $f0 = virtualinvoke $r0.<android.location.Location: float getAccuracy()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.ogury.l: void ॱ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> entermonitor class "Lcom/moat/analytics/mobile/ogury/q;"
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> $r0 = new com.moat.analytics.mobile.ogury.q
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ> = $r0
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> $r0 = <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ>
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> if $r0 != null goto $r0 = <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ>
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ> = $r0
+<com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()> --> $r0 = <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ʻ>
+<com.moat.analytics.mobile.ogury.e$1: void ˎ(java.lang.String,java.lang.Object,java.lang.String)> --> $r4 = staticinvoke <com.moat.analytics.mobile.ogury.q: com.moat.analytics.mobile.ogury.q ˊ()>()
+<com.moat.analytics.mobile.ogury.e$1: void ˎ(java.lang.String,java.lang.Object,java.lang.String)> --> $z0 = $r4.<com.moat.analytics.mobile.ogury.q: boolean ˎ>
+<com.moat.analytics.mobile.ogury.e$1: void ˎ(java.lang.String,java.lang.Object,java.lang.String)> --> if $z0 == 0 goto return
+<com.moat.analytics.mobile.ogury.e$1: void ˎ(java.lang.String,java.lang.Object,java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>(2, $r2, $r0)
+--------------------------------------------------------
+
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> $r2 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()> --> return $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r3 = specialinvoke r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ॱॱ()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $r1 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> $r0 := @parameter0: android.location.Location
+<com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)> --> if $r0 != null goto $d0 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> $z1 = staticinvoke <com.moat.analytics.mobile.ogury.m: boolean ˋ(android.location.Location)>($r0)
+<com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)> --> if $z1 != 0 goto return $r0
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = staticinvoke <com.moat.analytics.mobile.ogury.m: android.location.Location ˎ(android.location.Location,android.location.Location)>($r2, $r3)
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ> = $r2
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> if $r2 == null goto specialinvoke r0.<com.moat.analytics.mobile.ogury.m: void ʽ()>()
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r2 = r0.<com.moat.analytics.mobile.ogury.m: android.location.Location ʽ>
+<com.moat.analytics.mobile.ogury.m: void ॱ()> --> $r6 := @caughtexception
+<com.moat.analytics.mobile.ogury.l: void ॱ(java.lang.Exception)> --> $r0 := @parameter0: java.lang.Exception
+<com.moat.analytics.mobile.ogury.l: void ॱ(java.lang.Exception)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MoatException", $r2)
+--------------------------------------------------------
+

@@ -1,0 +1,36 @@
+Source=> r14 = virtualinvoke $r16.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Corona", "CoronaRuntimeTaskDispatcher.send() doesn\'t have an available CoronaRuntime to run this task on! Abort!")
+Component=> com.ansca.corona.CoronaActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r14 = virtualinvoke $r16.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Corona", "CoronaRuntimeTaskDispatcher.send() doesn\'t have an event manager to use! Abort!")
+Component=> com.ansca.corona.CoronaActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r14 = virtualinvoke $r16.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Corona", "CoronaRuntimeTaskDispatcher.send() doesn\'t have an available CoronaRuntime to run this task on! Abort!")
+Component=> com.ansca.corona.CoronaActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r14 = virtualinvoke $r16.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Corona", "CoronaRuntimeTaskDispatcher.send() doesn\'t have an available CoronaRuntime to run this task on! Abort!")
+Component=> com.ansca.corona.CoronaActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r14 = virtualinvoke $r16.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Corona", "CoronaRuntimeTaskDispatcher.send() doesn\'t have an event manager to use! Abort!")
+Component=> com.ansca.corona.CoronaActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r14 = virtualinvoke $r16.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Corona", "CoronaRuntimeTaskDispatcher.send() doesn\'t have an event manager to use! Abort!")
+Component=> com.ansca.corona.CoronaActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,35 @@
+<com.urbanairship.location.LastLocationFinder: android.location.Location getLastBestLocation(long)> --> $r7 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.urbanairship.location.LastLocationFinder: android.location.Location getLastBestLocation(long)> --> $r8 = $r7
+<com.urbanairship.location.LastLocationFinder: android.location.Location getLastBestLocation(long)> --> $r4 = $r8
+<com.urbanairship.location.LocationService$1: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = virtualinvoke $r6.<com.urbanairship.location.LastLocationFinder: android.location.Location getLastBestLocation(long)>($l0)
+<com.urbanairship.location.LocationService$1: java.lang.Void doInBackground(java.lang.Void[])> --> if $r7 == null goto staticinvoke <com.urbanairship.Logger: void info(java.lang.String)>("No last best location found.")
+<com.urbanairship.Logger: void <clinit>()> --> nop
+<com.urbanairship.Logger: void <clinit>()> --> <com.urbanairship.Logger: int logLevel> = 6
+<com.urbanairship.location.LocationService$1: java.lang.Void doInBackground(java.lang.Void[])> --> staticinvoke <com.urbanairship.Logger: void info(java.lang.String)>($r11)
+<com.urbanairship.location.LocationService$1: java.lang.Void doInBackground(java.lang.Void[])> --> return null
+<com.urbanairship.location.LocationService$1: java.lang.Object doInBackground(java.lang.Object[])> --> $r1 = virtualinvoke r0.<com.urbanairship.location.LocationService$1: java.lang.Void doInBackground(java.lang.Void[])>($r3)
+<com.urbanairship.location.LocationService: void invokeLastLocationFinder()> --> virtualinvoke $r3.<android.os.AsyncTask: android.os.AsyncTask execute(java.lang.Object[])>($r4)
+<com.urbanairship.push.GCMRegistrar: boolean startService(android.content.Intent)> --> staticinvoke <com.urbanairship.Logger: void error(java.lang.String,java.lang.Throwable)>($r5, $r6)
+<com.urbanairship.push.GCMRegistrar: void register()> --> $z0 = staticinvoke <com.urbanairship.push.GCMRegistrar: boolean startService(android.content.Intent)>($r9)
+<com.urbanairship.Logger: void info(java.lang.String)> --> $i0 = <com.urbanairship.Logger: int logLevel>
+<com.urbanairship.Logger: void info(java.lang.String)> --> if $i0 > 4 goto return
+<com.urbanairship.Logger: void info(java.lang.String)> --> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r0)
+--------------------------------------------------------
+
+<com.urbanairship.location.LastLocationFinder: android.location.Location getLastBestLocation(long)> --> $r7 = virtualinvoke $r1.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+<com.urbanairship.location.LastLocationFinder: android.location.Location getLastBestLocation(long)> --> $r8 = $r7
+<com.urbanairship.location.LastLocationFinder: android.location.Location getLastBestLocation(long)> --> $r4 = $r8
+<com.urbanairship.location.LocationService$1: java.lang.Void doInBackground(java.lang.Void[])> --> $r7 = virtualinvoke $r6.<com.urbanairship.location.LastLocationFinder: android.location.Location getLastBestLocation(long)>($l0)
+<com.urbanairship.location.LocationService$1: java.lang.Void doInBackground(java.lang.Void[])> --> if $r7 == null goto staticinvoke <com.urbanairship.Logger: void info(java.lang.String)>("No last best location found.")
+<com.urbanairship.Logger: void <clinit>()> --> nop
+<com.urbanairship.Logger: void <clinit>()> --> <com.urbanairship.Logger: int logLevel> = 6
+<com.urbanairship.location.LocationService$1: java.lang.Void doInBackground(java.lang.Void[])> --> staticinvoke <com.urbanairship.Logger: void info(java.lang.String)>($r11)
+<com.urbanairship.location.LocationService$1: java.lang.Void doInBackground(java.lang.Void[])> --> return null
+<com.urbanairship.location.LocationService$1: java.lang.Object doInBackground(java.lang.Object[])> --> $r1 = virtualinvoke r0.<com.urbanairship.location.LocationService$1: java.lang.Void doInBackground(java.lang.Void[])>($r3)
+<com.urbanairship.location.LocationService: void invokeLastLocationFinder()> --> virtualinvoke $r3.<android.os.AsyncTask: android.os.AsyncTask execute(java.lang.Object[])>($r4)
+<com.urbanairship.location.LocationService: void setupService()> --> specialinvoke r0.<com.urbanairship.location.LocationService: void invokeLastLocationFinder()>()
+<com.urbanairship.Logger: void error(java.lang.String)> --> $i0 = <com.urbanairship.Logger: int logLevel>
+<com.urbanairship.Logger: void error(java.lang.String)> --> if $i0 > 6 goto return
+<com.urbanairship.Logger: void error(java.lang.String)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r0)
+--------------------------------------------------------
+

@@ -1,0 +1,42 @@
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> com.arcusweather.darksky.service.RequestService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r20 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Network", "Network")
+Component=> com.arcusweather.darksky.service.RequestService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r10 = virtualinvoke $r9.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT _id, location_id, api_data, download_datetime, location_string, timeout_datetime FROM forecasts WHERE _id = ?", r3)
+Component=> com.arcusweather.darksky.service.RequestService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<java.net.HttpURLConnection: void setDoOutput(boolean)>(0)
+Component=> com.arcusweather.darksky.service.RequestService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $l1 = virtualinvoke $r9.<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)>("forecasts", null, $r13)
+Component=> com.arcusweather.darksky.service.RequestService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r20 = virtualinvoke r19.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r3, null)
+Component=> com.arcusweather.darksky.service.RequestService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r9 = virtualinvoke $r5.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.arcusweather.darksky.service.RequestService
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

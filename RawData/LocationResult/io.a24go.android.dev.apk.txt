@@ -1,0 +1,21 @@
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+Component=> com.yourtrainer.android.service.notification.PushNotifService
+ComponentColor=> GREEN
+android.location.Location
+com.clevertap.android.sdk.Logger
+com.clevertap.android.sdk.CleverTapAPI
+android.util.Log
+Category: com.clevertap.android.sdk.Logger-*-com.clevertap.android.sdk.CleverTapAPI-*-
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r8.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("CleverTap", $r0, $r1)
+Component=> com.yourtrainer.android.service.notification.PushNotifService
+ComponentColor=> GREEN
+com.clevertap.android.sdk.Logger
+android.location.Location
+com.clevertap.android.sdk.CleverTapAPI
+android.util.Log
+Category: com.clevertap.android.sdk.Logger-*-com.clevertap.android.sdk.CleverTapAPI-*-
+-----------------------------------------------------------------
+io.a24go.android.dev.apk: 1163289

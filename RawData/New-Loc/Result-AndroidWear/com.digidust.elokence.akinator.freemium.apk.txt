@@ -1,0 +1,60 @@
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("AATKit", $i0)
+Component=> com.ironsource.sdk.controller.OpenUrlActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DataBerriesNatLocation", "catch Exception in DataBerriesNativeLocationReceiver\'s OnReceive")
+Component=> com.databerries.DataBerriesNativeLocationReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DataBerriesNatLocation", "catch Exception in DataBerriesNativeLocationReceiver\'s OnReceive")
+Component=> com.databerries.DataBerriesNativeLocationReceiver
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("AATKit", $i0)
+Component=> com.ironsource.sdk.controller.OpenUrlActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, "AATKit", $r1)
+Component=> com.ironsource.sdk.controller.OpenUrlActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, "AATKit", $r0)
+Component=> com.ironsource.sdk.controller.OpenUrlActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("AATKit", $i0)
+Component=> com.ironsource.sdk.controller.OpenUrlActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, "AATKit", $r1)
+Component=> com.ironsource.sdk.controller.OpenUrlActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, "AATKit", $r0)
+Component=> com.ironsource.sdk.controller.OpenUrlActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $z0 = staticinvoke <android.util.Log: boolean isLoggable(java.lang.String,int)>("AATKit", $i0)
+Component=> com.ironsource.sdk.controller.OpenUrlActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

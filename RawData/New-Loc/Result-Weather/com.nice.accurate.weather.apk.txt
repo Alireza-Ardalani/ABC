@@ -1,0 +1,2124 @@
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS LOG(timestamp LONG PRIMARY KEY, log VARCHAR(4000))")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationError!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS wof(id CHAR(15) PRIMARY KEY,mktime DOUBLE,time DOUBLE, ac INT, bc INT, cc INT);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY, originid VARCHAR(40), frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS bdcltb09(id CHAR(40) PRIMARY KEY,time DOUBLE,tag DOUBLE, type DOUBLE , ac INT);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r0.<java.io.CharArrayWriter: void write(char[],int,int)>($r3, 0, $i0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r12)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DeviceId", "Read IMEI failed", $r7)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS RGCAREA(gridkey VARCHAR(10) PRIMARY KEY, country VARCHAR(100),countrycode VARCHAR(100), province VARCHAR(100), city VARCHAR(100), citycode VARCHAR(100), district VARCHAR(100), timestamp INTEGER, version VARCHAR(50))")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("KEY_LAST_LOCAL_KET", $r0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS bdcltb09(id CHAR(40) PRIMARY KEY,time DOUBLE,tag DOUBLE, type DOUBLE , ac INT);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS RGCAREA(gridkey VARCHAR(10) PRIMARY KEY, country VARCHAR(100),countrycode VARCHAR(100), province VARCHAR(100), city VARCHAR(100), citycode VARCHAR(100), district VARCHAR(100), timestamp INTEGER, version VARCHAR(50))")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy config err, In the release version of the signature should be matched")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r13 = virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r12, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r2 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT count(*) FROM events", null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r14 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT count(*) FROM events", null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("INTENT_KEY_DATA", $r2)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS RGCAREA(gridkey VARCHAR(10) PRIMARY KEY, country VARCHAR(100),countrycode VARCHAR(100), province VARCHAR(100), city VARCHAR(100), citycode VARCHAR(100), district VARCHAR(100), timestamp INTEGER, version VARCHAR(50))")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy lib host missing meta-data,make sure you know the right way to integrate galaxy")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy lib host missing meta-data,make sure you know the right way to integrate galaxy")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>("debuglogs")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>("debuglogs")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS LOG(timestamp LONG PRIMARY KEY, log VARCHAR(4000))")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DeviceId", $r9)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DeviceId", "Read IMEI failed", $r7)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY, originid VARCHAR(40), frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS LOG(timestamp LONG PRIMARY KEY, log VARCHAR(4000))")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY, originid VARCHAR(15), frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("last_alert_id", $i0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r13 = virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r12, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("KEY_LAST_LOCAL_KET", $r0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("KEY_LAST_LOCAL_KET", $r0)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS bdcltb09(id CHAR(40) PRIMARY KEY,time DOUBLE,tag DOUBLE, type DOUBLE , ac INT);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS RGCAREA(gridkey VARCHAR(10) PRIMARY KEY, country VARCHAR(100),countrycode VARCHAR(100), province VARCHAR(100), city VARCHAR(100), citycode VARCHAR(100), district VARCHAR(100), timestamp INTEGER, version VARCHAR(50))")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $i1 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("last_alert_id", $i0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT count(*) FROM events", null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>("debuglogs")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy config err, In the release version of the signature should be matched")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r2 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT count(*) FROM events", null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS wof(id CHAR(15) PRIMARY KEY,mktime DOUBLE,time DOUBLE, ac INT, bc INT, cc INT);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS wof(id CHAR(15) PRIMARY KEY,mktime DOUBLE,time DOUBLE, ac INT, bc INT, cc INT);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r12)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS RGCAREA(gridkey VARCHAR(10) PRIMARY KEY, country VARCHAR(100),countrycode VARCHAR(100), province VARCHAR(100), city VARCHAR(100), citycode VARCHAR(100), district VARCHAR(100), timestamp INTEGER, version VARCHAR(50))")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r0.<java.io.CharArrayWriter: void write(char[],int,int)>($r3, 0, $i0)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS wof(id CHAR(15) PRIMARY KEY,mktime DOUBLE,time DOUBLE, ac INT, bc INT, cc INT);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("INTENT_KEY_DATA", $r2)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS LOG(timestamp LONG PRIMARY KEY, log VARCHAR(4000))")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("last_alert_id", $i0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DeviceId", "Read IMEI failed", $r7)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DeviceId", $r9)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r12)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $i1 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS bdcltb09(id CHAR(40) PRIMARY KEY,time DOUBLE,tag DOUBLE, type DOUBLE , ac INT);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY, originid VARCHAR(15), frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy lib host missing meta-data,make sure you know the right way to integrate galaxy")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: int getResponseCode()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r14 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r0.<java.io.CharArrayWriter: void write(char[],int,int)>($r3, 0, $i0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("last_alert_id", $i0)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationError!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r14 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy config err, In the release version of the signature should be matched")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: int getResponseCode()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY, originid VARCHAR(15), frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy lib host missing meta-data,make sure you know the right way to integrate galaxy")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r13 = virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r12, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY, originid VARCHAR(15), frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i0 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: int getResponseCode()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DeviceId", $r9)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("INTENT_KEY_DATA", $r2)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY, originid VARCHAR(40), frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>("debuglogs")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY, originid VARCHAR(15), frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY, originid VARCHAR(40), frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("KEY_LAST_LOCAL_KET", $r0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS RGCAREA(gridkey VARCHAR(10) PRIMARY KEY, country VARCHAR(100),countrycode VARCHAR(100), province VARCHAR(100), city VARCHAR(100), citycode VARCHAR(100), district VARCHAR(100), timestamp INTEGER, version VARCHAR(50))")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $i1 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY, originid VARCHAR(40), frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r0.<java.io.CharArrayWriter: void write(char[],int,int)>($r3, 0, $i0)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r13 = virtualinvoke $r11.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r12, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("KEY_LAST_LOCAL_KET", $r0)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy config err, In the release version of the signature should be matched")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS RGCAREA(gridkey VARCHAR(10) PRIMARY KEY, country VARCHAR(100),countrycode VARCHAR(100), province VARCHAR(100), city VARCHAR(100), citycode VARCHAR(100), district VARCHAR(100), timestamp INTEGER, version VARCHAR(50))")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $i1 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>("debuglogs")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy lib host missing meta-data,make sure you know the right way to integrate galaxy")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("KEY_LAST_LOCAL_KET", $r0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r2 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT count(*) FROM events", null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationError!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("INTENT_KEY_DATA", $r2)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationError!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationError!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DeviceId", "Read IMEI failed", $r7)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS wof(id CHAR(15) PRIMARY KEY,mktime DOUBLE,time DOUBLE, ac INT, bc INT, cc INT);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DeviceId", "Read IMEI failed", $r7)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DeviceId", "Read IMEI failed", $r7)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS LOG(timestamp LONG PRIMARY KEY, log VARCHAR(4000))")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS LOG(timestamp LONG PRIMARY KEY, log VARCHAR(4000))")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("last_alert_id", $i0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DeviceId", $r9)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r12)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS bdcltb09(id CHAR(40) PRIMARY KEY,time DOUBLE,tag DOUBLE, type DOUBLE , ac INT);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r0.<java.io.CharArrayWriter: void write(char[],int,int)>($r3, 0, $i0)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>("debuglogs")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $i1 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r5 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r4, null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy lib host missing meta-data,make sure you know the right way to integrate galaxy")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r14 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("KEY_LAST_LOCAL_KET", $r0)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT count(*) FROM events", null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY, originid VARCHAR(15), frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $i0 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: int getResponseCode()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r12)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY, originid VARCHAR(15), frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationError!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY, originid VARCHAR(40), frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DeviceId", $r9)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r12)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy lib host missing meta-data,make sure you know the right way to integrate galaxy")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DeviceId", $r9)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r14 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $i0 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: int getResponseCode()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i1 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS wof(id CHAR(15) PRIMARY KEY,mktime DOUBLE,time DOUBLE, ac INT, bc INT, cc INT);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS bdcltb09(id CHAR(40) PRIMARY KEY,time DOUBLE,tag DOUBLE, type DOUBLE , ac INT);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy config err, In the release version of the signature should be matched")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r14 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $i0 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: int getResponseCode()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS AP (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoInput(boolean)>(1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("INTENT_KEY_DATA", $r2)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationError!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("INTENT_KEY_DATA", $r2)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setDoOutput(boolean)>(1)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy config err, In the release version of the signature should be matched")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r4 = virtualinvoke $r1.<android.content.Context: java.io.FileInputStream openFileInput(java.lang.String)>("debuglogs")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r0.<java.io.CharArrayWriter: void write(char[],int,int)>($r3, 0, $i0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS LOG(timestamp LONG PRIMARY KEY, log VARCHAR(4000))")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r32.<java.net.URL: void <init>(java.lang.String)>($r12)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void setRequestMethod(java.lang.String)>("POST")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps")
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("last_alert_id", $i0)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r21.<java.io.OutputStream: void write(byte[])>($r23)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("DeviceId", $r9)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("DeviceId", "Read IMEI failed", $r7)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r7 = interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("last_alert_id", $i0)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r3 = virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>($r1, null)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r0.<java.io.CharArrayWriter: void write(char[],int,int)>($r3, 0, $i0)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS bdcltb09(id CHAR(40) PRIMARY KEY,time DOUBLE,tag DOUBLE, type DOUBLE , ac INT);")
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS wof(id CHAR(15) PRIMARY KEY,mktime DOUBLE,time DOUBLE, ac INT, bc INT, cc INT);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = virtualinvoke $r1.<android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])>("SELECT count(*) FROM events", null)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r12, "close is IOException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> virtualinvoke $r5.<android.database.sqlite.SQLiteDatabase: void close()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("passive")
+Sink=> $i1 = staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r24 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> $r14 = virtualinvoke $r32.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("DeviceId", "galaxy config err, In the release version of the signature should be matched")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: void disconnect()>()
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r12, "https NetworkCommunicationException!")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $i0 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: int getResponseCode()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r2.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>($r1)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r13 = virtualinvoke $r10.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("network")
+Sink=> $r21 = virtualinvoke $r15.<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()>()
+Component=> com.nice.accurate.weather.ui.main.HomeActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()
+Sink=> virtualinvoke $r13.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY,x DOUBLE,y DOUBLE,r INTEGER,cl DOUBLE,timestamp INTEGER, frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r8.<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)>("CREATE TABLE IF NOT EXISTS CL (id LONG PRIMARY KEY, originid VARCHAR(40), frequency INTEGER DEFAULT 0);")
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()
+Sink=> virtualinvoke $r3.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("INTENT_KEY_DATA", $r2)
+Component=> com.baidu.location.f
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

@@ -1,0 +1,90 @@
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke r1.<android.os.Bundle: void putInt(java.lang.String,int)>("whitelabelsignupzonecash", 1)
+Component=> com.passportparking.mobile.ZoneActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Request", $r5)
+Component=> com.passportparking.mobile.ZoneActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> $r4 = virtualinvoke $r3.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> com.passportparking.mobile.parkboston.BostonApp
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> specialinvoke $r9.<java.net.URL: void <init>(java.lang.String)>($r2)
+Component=> com.passportparking.mobile.parkboston.BostonApp
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r4 = virtualinvoke $r3.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> com.passportparking.mobile.ZoneActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, "created")
+Component=> com.passportparking.mobile.ZoneActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2)
+Component=> com.passportparking.mobile.ZoneActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> specialinvoke r4.<java.net.URL: void <init>(java.lang.String)>($r1)
+Component=> com.passportparking.mobile.ZoneActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d0 = virtualinvoke $r7.<android.location.Location: double getLatitude()>()
+Sink=> $r2 = staticinvoke <java.net.URLDecoder: java.lang.String decode(java.lang.String)>($r2)
+Component=> com.passportparking.mobile.parkboston.BostonApp
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> $r4 = virtualinvoke $r3.<java.net.URLConnection: java.io.InputStream getInputStream()>()
+Component=> com.passportparking.mobile.parkboston.BostonApp
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r7 = virtualinvoke r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> $r2 = staticinvoke <java.net.URLDecoder: java.lang.String decode(java.lang.String)>($r2)
+Component=> com.passportparking.mobile.parkboston.BostonApp
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $d1 = virtualinvoke $r7.<android.location.Location: double getLongitude()>()
+Sink=> $r3 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>()
+Component=> com.passportparking.mobile.parkboston.BostonApp
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AQuery", $r3)
+Component=> com.passportparking.mobile.ZoneActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AQuery", $r1)
+Component=> com.passportparking.mobile.ZoneActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("SM", $r4)
+Component=> com.passportparking.mobile.ZoneActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

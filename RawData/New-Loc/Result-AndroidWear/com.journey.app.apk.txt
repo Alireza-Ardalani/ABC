@@ -1,0 +1,24 @@
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Journey", "Doing a backup!")
+Component=> com.journey.app.EditorActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r2.<android.os.Bundle: void putInt(java.lang.String,int)>("option", $i1)
+Component=> com.journey.app.EditorActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> virtualinvoke $r2.<java.io.FileWriter: void write(java.lang.String)>($r1)
+Component=> com.journey.app.EditorActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> $r6 = virtualinvoke $r0.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r5)
+Sink=> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Journey", $r1)
+Component=> com.journey.app.EditorActivity
+ComponentColor=> GREEN
+Category: LEGIT
+-----------------------------------------------------------------

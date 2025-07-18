@@ -1,0 +1,337 @@
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void startTracking()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<net.atomcode.bearing.location.CurrentLocationTask: net.atomcode.bearing.location.CurrentLocationTask start()> --> r0 := @this: net.atomcode.bearing.location.CurrentLocationTask
+<net.atomcode.bearing.location.LocationTask: net.atomcode.bearing.BearingTask start()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<java.util.Timer: void schedule(java.util.TimerTask,long)> --> this := @this: java.util.Timer
+<net.atomcode.bearing.location.LocationTask$1: void run()> --> r0 := @this: net.atomcode.bearing.location.LocationTask$1
+<net.atomcode.bearing.location.LocationTask: void access$000(net.atomcode.bearing.location.LocationTask)> --> $r0 := @parameter0: net.atomcode.bearing.location.LocationTask
+<net.atomcode.bearing.location.LocationTask: void handleTimeoutFallback()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$2: void run()> --> r0 := @this: com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$2
+<com.zendesk.sdk.ui.NetworkAwareActionbarActivity: void onNetworkUnavailable()> --> r0 := @this: com.zendesk.sdk.ui.NetworkAwareActionbarActivity
+<com.zendesk.logger.Logger: void d(java.lang.String,java.lang.String,java.lang.Object[])> --> $r0 := @parameter0: java.lang.String
+<com.zendesk.logger.Logger: void logInternal(com.zendesk.logger.Logger$Priority,java.lang.String,java.lang.String,java.lang.Throwable,java.lang.Object[])> --> $r0 := @parameter0: com.zendesk.logger.Logger$Priority
+<com.zendesk.logger.Logger$Android: void log(com.zendesk.logger.Logger$Priority,java.lang.String,java.lang.String,java.lang.Throwable)> --> r0 := @this: com.zendesk.logger.Logger$Android
+<com.zendesk.logger.Logger$Android: void log(com.zendesk.logger.Logger$Priority,java.lang.String,java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r6, $r2)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: java.lang.String requestSingleLocationUpdate(net.atomcode.bearing.location.LocationProviderRequest,net.atomcode.bearing.location.LocationListener)> --> $r4 = virtualinvoke r0.<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r1)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: java.lang.String requestSingleLocationUpdate(net.atomcode.bearing.location.LocationProviderRequest,net.atomcode.bearing.location.LocationListener)> --> if $r4 == null goto $r7 = staticinvoke <java.util.UUID: java.util.UUID randomUUID()>()
+<net.atomcode.bearing.location.CurrentLocationTask$1: void onUpdate(android.location.Location)> --> r0 := @this: net.atomcode.bearing.location.CurrentLocationTask$1
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void save()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()> --> $r0 = <com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager instance>
+<com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()> --> $r0 = new com.cube.storm.util.lib.manager.FileManager
+<com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()> --> <com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager instance> = $r0
+<com.cube.arc.hzd.feed.fragment.AllAlertFeedFragment: void onActivityCreated(android.os.Bundle)> --> $r4 = staticinvoke <com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()>()
+<com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()> --> $r0 = <com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager instance>
+<com.cube.arc.hzd.feed.fragment.AllAlertFeedFragment: void onActivityCreated(android.os.Bundle)> --> $r4 = staticinvoke <com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()>()
+<com.cube.storm.util.lib.manager.FileManager: byte[] readFile(java.lang.String)> --> r0 := @this: com.cube.storm.util.lib.manager.FileManager
+<com.cube.storm.util.lib.manager.FileManager: byte[] readFile(java.io.File)> --> r0 := @this: com.cube.storm.util.lib.manager.FileManager
+<com.cube.storm.util.lib.manager.FileManager: byte[] readFile(java.io.InputStream)> --> r0 := @this: com.cube.storm.util.lib.manager.FileManager
+<com.cube.storm.util.lib.manager.FileManager: byte[] readFile(java.io.InputStream)> --> r1 = newarray (byte)[8192]
+<com.cube.storm.util.lib.manager.FileManager: byte[] readFile(java.io.InputStream)> --> virtualinvoke $r9.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>(r1, 0, $i0)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void save()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void save()> --> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("locations_last_synced", $l0)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void startTracking()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<net.atomcode.bearing.location.CurrentLocationTask: net.atomcode.bearing.location.CurrentLocationTask start()> --> r0 := @this: net.atomcode.bearing.location.CurrentLocationTask
+<net.atomcode.bearing.location.LocationTask: net.atomcode.bearing.BearingTask start()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<java.util.Timer: void schedule(java.util.TimerTask,long)> --> this := @this: java.util.Timer
+<net.atomcode.bearing.location.LocationTask$1: void run()> --> r0 := @this: net.atomcode.bearing.location.LocationTask$1
+<net.atomcode.bearing.location.LocationTask: void access$000(net.atomcode.bearing.location.LocationTask)> --> $r0 := @parameter0: net.atomcode.bearing.location.LocationTask
+<net.atomcode.bearing.location.LocationTask: void handleTimeoutFallback()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$2: void run()> --> r0 := @this: com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$2
+<com.zendesk.sdk.ui.NetworkAwareActionbarActivity: void onNetworkUnavailable()> --> r0 := @this: com.zendesk.sdk.ui.NetworkAwareActionbarActivity
+<com.zendesk.logger.Logger: void d(java.lang.String,java.lang.String,java.lang.Object[])> --> $r0 := @parameter0: java.lang.String
+<com.zendesk.logger.Logger: void logInternal(com.zendesk.logger.Logger$Priority,java.lang.String,java.lang.String,java.lang.Throwable,java.lang.Object[])> --> $r0 := @parameter0: com.zendesk.logger.Logger$Priority
+<com.zendesk.logger.Logger$Android: void log(com.zendesk.logger.Logger$Priority,java.lang.String,java.lang.String,java.lang.Throwable)> --> r0 := @this: com.zendesk.logger.Logger$Android
+<com.zendesk.logger.Logger$Android: void log(com.zendesk.logger.Logger$Priority,java.lang.String,java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r6, $r2)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void syncToServer(com.cube.alerts.model.MonitoredLocation,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler,int)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.alerts.manager.AlertsAPIManager: net.callumtaylor.asynchttp.AsyncHttpClient updateUserLocations(com.cube.alerts.model.User,net.callumtaylor.asynchttp.response.ResponseHandler)> --> r0 := @this: com.cube.alerts.manager.AlertsAPIManager
+<net.callumtaylor.asynchttp.obj.JsonBody: okhttp3.RequestBody create(com.google.gson.JsonElement)> --> $r0 := @parameter0: com.google.gson.JsonElement
+<net.callumtaylor.asynchttp.obj.JsonBody: okhttp3.RequestBody create(com.google.gson.JsonElement)> --> $r1 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>("application/json")
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void save()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void save()> --> $r6 = interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("locations_last_modified", $l0)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void startTracking()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<net.atomcode.bearing.location.CurrentLocationTask: net.atomcode.bearing.location.CurrentLocationTask start()> --> r0 := @this: net.atomcode.bearing.location.CurrentLocationTask
+<net.atomcode.bearing.location.LocationTask: net.atomcode.bearing.BearingTask start()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<java.util.Timer: void schedule(java.util.TimerTask,long)> --> this := @this: java.util.Timer
+<net.atomcode.bearing.location.LocationTask$1: void run()> --> r0 := @this: net.atomcode.bearing.location.LocationTask$1
+<net.atomcode.bearing.location.LocationTask: void access$000(net.atomcode.bearing.location.LocationTask)> --> $r0 := @parameter0: net.atomcode.bearing.location.LocationTask
+<net.atomcode.bearing.location.LocationTask: void handleTimeoutFallback()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$1: void run()> --> r0 := @this: com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$1
+<com.zendesk.sdk.feedback.ui.ContactZendeskActivity: void onNetworkAvailable()> --> r0 := @this: com.zendesk.sdk.feedback.ui.ContactZendeskActivity
+<com.zendesk.sdk.feedback.ui.ContactZendeskFragment: void onNetworkAvailable()> --> r0 := @this: com.zendesk.sdk.feedback.ui.ContactZendeskFragment
+<com.zendesk.sdk.feedback.ui.ContactZendeskFragment: void preloadSettingsAndInit()> --> r0 := @this: com.zendesk.sdk.feedback.ui.ContactZendeskFragment
+<com.zendesk.sdk.network.impl.ZendeskSettingsHelper: void loadSetting(com.zendesk.service.ZendeskCallback)> --> r0 := @this: com.zendesk.sdk.network.impl.ZendeskSettingsHelper
+<com.zendesk.sdk.network.impl.ZendeskBaseProvider: void getSdkSettings(com.zendesk.service.ZendeskCallback)> --> r0 := @this: com.zendesk.sdk.network.impl.ZendeskBaseProvider
+<com.zendesk.service.SafeZendeskCallback: void onSuccess(java.lang.Object)> --> r0 := @this: com.zendesk.service.SafeZendeskCallback
+<com.zendesk.sdk.feedback.ui.ContactZendeskFragment$RequestCallback: void onSuccess(java.lang.Object)> --> r0 := @this: com.zendesk.sdk.feedback.ui.ContactZendeskFragment$RequestCallback
+<com.zendesk.sdk.feedback.ui.ContactZendeskFragment$RequestCallback: void onSuccess(com.zendesk.sdk.model.request.CreateRequest)> --> r0 := @this: com.zendesk.sdk.feedback.ui.ContactZendeskFragment$RequestCallback
+<com.zendesk.sdk.storage.ZendeskRequestStorage: void setCommentCount(java.lang.String,int)> --> r0 := @this: com.zendesk.sdk.storage.ZendeskRequestStorage
+<com.zendesk.sdk.storage.ZendeskRequestStorage: void setCommentCount(java.lang.String,int)> --> $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r1, 1)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.hzd.toolkit.MakePlanActivity$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.hzd.toolkit.MakePlanActivity$1
+<net.atomcode.bearing.geocoding.GeocodingTask: net.atomcode.bearing.geocoding.GeocodingTask start()> --> r0 := @this: net.atomcode.bearing.geocoding.GeocodingTask
+<net.atomcode.bearing.geocoding.ReverseGeocodingTask: java.lang.Object doInBackground(java.lang.Object[])> --> r0 := @this: net.atomcode.bearing.geocoding.ReverseGeocodingTask
+<net.atomcode.bearing.geocoding.ReverseGeocodingTask: java.util.List doInBackground(java.lang.Double[])> --> r0 := @this: net.atomcode.bearing.geocoding.ReverseGeocodingTask
+<net.atomcode.bearing.geocoding.ReverseGeocodingTask: java.util.List doInBackground(java.lang.Double[])> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("Bearing", "Invalid lat,lng supplied to ReverseGeocoder")
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.hzd.toolkit.MakePlanActivity$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.hzd.toolkit.MakePlanActivity$1
+<net.atomcode.bearing.geocoding.GeocodingTask: net.atomcode.bearing.geocoding.GeocodingTask start()> --> r0 := @this: net.atomcode.bearing.geocoding.GeocodingTask
+<net.atomcode.bearing.geocoding.GeocodingTask: void onPostExecute(java.lang.Object)> --> r0 := @this: net.atomcode.bearing.geocoding.GeocodingTask
+<net.atomcode.bearing.geocoding.GeocodingTask: void onPostExecute(java.util.List)> --> r0 := @this: net.atomcode.bearing.geocoding.GeocodingTask
+<com.cube.arc.hzd.toolkit.MakePlanActivity$1$1: void onFailure()> --> r0 := @this: com.cube.arc.hzd.toolkit.MakePlanActivity$1$1
+<com.cube.storm.util.lib.debug.Debug: void out(java.lang.Object)> --> r0 := @parameter0: java.lang.Object
+<com.cube.storm.util.lib.debug.Debug: void longInfo(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.cube.storm.util.lib.debug.Debug: void longInfo(java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r0)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void startTracking()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<net.atomcode.bearing.location.CurrentLocationTask: net.atomcode.bearing.location.CurrentLocationTask start()> --> r0 := @this: net.atomcode.bearing.location.CurrentLocationTask
+<net.atomcode.bearing.location.LocationTask: net.atomcode.bearing.BearingTask start()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<java.util.Timer: void schedule(java.util.TimerTask,long)> --> this := @this: java.util.Timer
+<net.atomcode.bearing.location.LocationTask$1: void run()> --> r0 := @this: net.atomcode.bearing.location.LocationTask$1
+<net.atomcode.bearing.location.LocationTask: void access$000(net.atomcode.bearing.location.LocationTask)> --> $r0 := @parameter0: net.atomcode.bearing.location.LocationTask
+<net.atomcode.bearing.location.LocationTask: void handleTimeoutFallback()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.nostra13.universalimageloader.core.DisplayBitmapTask: void run()> --> r0 := @this: com.nostra13.universalimageloader.core.DisplayBitmapTask
+<com.nostra13.universalimageloader.utils.L: void d(java.lang.String,java.lang.Object[])> --> $r0 := @parameter0: java.lang.String
+<com.nostra13.universalimageloader.utils.L: void log(int,java.lang.Throwable,java.lang.String,java.lang.Object[])> --> $i0 := @parameter0: int
+<com.nostra13.universalimageloader.utils.L: void log(int,java.lang.Throwable,java.lang.String,java.lang.Object[])> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r3, $r2)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void startTracking()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<net.atomcode.bearing.location.CurrentLocationTask: net.atomcode.bearing.location.CurrentLocationTask start()> --> r0 := @this: net.atomcode.bearing.location.CurrentLocationTask
+<net.atomcode.bearing.location.LocationTask: net.atomcode.bearing.BearingTask start()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<java.util.Timer: void schedule(java.util.TimerTask,long)> --> this := @this: java.util.Timer
+<net.atomcode.bearing.location.LocationTask$1: void run()> --> r0 := @this: net.atomcode.bearing.location.LocationTask$1
+<net.atomcode.bearing.location.LocationTask: void access$000(net.atomcode.bearing.location.LocationTask)> --> $r0 := @parameter0: net.atomcode.bearing.location.LocationTask
+<net.atomcode.bearing.location.LocationTask: void handleTimeoutFallback()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$1: void run()> --> r0 := @this: com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$1
+<com.zendesk.sdk.requests.ViewRequestActivity: void onNetworkAvailable()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestActivity
+<com.zendesk.sdk.requests.ViewRequestFragment: void onNetworkAvailable()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestFragment
+<com.zendesk.sdk.requests.ViewRequestFragment: void checkSendButtonState()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestFragment
+<com.zendesk.sdk.requests.ViewRequestFragment: boolean canGetAttachments()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestFragment
+<com.zendesk.belvedere.Belvedere: boolean oneOrMoreSourceAvailable()> --> r0 := @this: com.zendesk.belvedere.Belvedere
+<com.zendesk.belvedere.BelvedereImagePicker: boolean oneOrMoreSourceAvailable(android.content.Context)> --> r0 := @this: com.zendesk.belvedere.BelvedereImagePicker
+<com.zendesk.belvedere.BelvedereImagePicker: boolean isFunctionalityAvailable(com.zendesk.belvedere.BelvedereSource,android.content.Context)> --> r0 := @this: com.zendesk.belvedere.BelvedereImagePicker
+<com.zendesk.belvedere.BelvedereImagePicker: boolean canPickImageFromCamera(android.content.Context)> --> r0 := @this: com.zendesk.belvedere.BelvedereImagePicker
+<com.zendesk.belvedere.BelvedereImagePicker: boolean hasPermissionInManifest(android.content.Context,java.lang.String)> --> r0 := @this: com.zendesk.belvedere.BelvedereImagePicker
+<com.zendesk.belvedere.BelvedereImagePicker: boolean hasPermissionInManifest(android.content.Context,java.lang.String)> --> $r6 = virtualinvoke $r1.<android.content.Context: android.content.pm.PackageManager getPackageManager()>()
+<com.zendesk.belvedere.BelvedereImagePicker: boolean hasPermissionInManifest(android.content.Context,java.lang.String)> --> r4 := @caughtexception
+<com.zendesk.belvedere.DefaultLogger: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> r0 := @this: com.zendesk.belvedere.DefaultLogger
+<com.zendesk.belvedere.DefaultLogger: void e(java.lang.String,java.lang.String,java.lang.Throwable)> --> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r1, $r2, $r3)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.hzd.toolkit.MakePlanActivity$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.hzd.toolkit.MakePlanActivity$1
+<net.atomcode.bearing.geocoding.GeocodingTask: net.atomcode.bearing.geocoding.GeocodingTask start()> --> r0 := @this: net.atomcode.bearing.geocoding.GeocodingTask
+<net.atomcode.bearing.geocoding.GeocodingTask: void onPostExecute(java.lang.Object)> --> r0 := @this: net.atomcode.bearing.geocoding.GeocodingTask
+<net.atomcode.bearing.geocoding.GeocodingTask: void onPostExecute(java.util.List)> --> r0 := @this: net.atomcode.bearing.geocoding.GeocodingTask
+<com.cube.arc.hzd.toolkit.MakePlanActivity$1$1: void onFailure()> --> r0 := @this: com.cube.arc.hzd.toolkit.MakePlanActivity$1$1
+<com.cube.storm.util.lib.debug.Debug: void out(java.lang.Object)> --> r0 := @parameter0: java.lang.Object
+<com.cube.storm.util.lib.debug.Debug: void longInfo(java.lang.String)> --> $r0 := @parameter0: java.lang.String
+<com.cube.storm.util.lib.debug.Debug: void longInfo(java.lang.String)> --> staticinvoke <android.util.Log: int println(int,java.lang.String,java.lang.String)>($i0, $r1, $r2)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: java.lang.String requestSingleLocationUpdate(net.atomcode.bearing.location.LocationProviderRequest,net.atomcode.bearing.location.LocationListener)> --> $r4 = virtualinvoke r0.<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r1)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: java.lang.String requestSingleLocationUpdate(net.atomcode.bearing.location.LocationProviderRequest,net.atomcode.bearing.location.LocationListener)> --> if $r4 == null goto $r7 = staticinvoke <java.util.UUID: java.util.UUID randomUUID()>()
+<net.atomcode.bearing.location.CurrentLocationTask$1: void onUpdate(android.location.Location)> --> r0 := @this: net.atomcode.bearing.location.CurrentLocationTask$1
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void save()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()> --> $r0 = <com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager instance>
+<com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()> --> $r0 = new com.cube.storm.util.lib.manager.FileManager
+<com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()> --> <com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager instance> = $r0
+<com.cube.arc.hzd.feed.fragment.AllAlertFeedFragment: void onActivityCreated(android.os.Bundle)> --> $r4 = staticinvoke <com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()>()
+<com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()> --> $r0 = <com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager instance>
+<com.cube.arc.hzd.feed.fragment.AllAlertFeedFragment: void handleResponse(java.util.List,boolean)> --> $r15 = staticinvoke <com.cube.storm.util.lib.manager.FileManager: com.cube.storm.util.lib.manager.FileManager getInstance()>()
+<com.cube.storm.util.lib.manager.FileManager: void writeFile(java.lang.String,byte[])> --> r0 := @this: com.cube.storm.util.lib.manager.FileManager
+<com.cube.storm.util.lib.manager.FileManager: void writeFile(java.lang.String,java.lang.String,byte[])> --> r0 := @this: com.cube.storm.util.lib.manager.FileManager
+<com.cube.storm.util.lib.manager.FileManager: void writeFile(java.lang.String,java.lang.String,byte[])> --> virtualinvoke r6.<java.io.FileOutputStream: void write(byte[])>($r3)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void syncToServer(com.cube.alerts.model.MonitoredLocation,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler,int)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.alerts.manager.AlertsAPIManager: net.callumtaylor.asynchttp.AsyncHttpClient updateUserLocations(com.cube.alerts.model.User,net.callumtaylor.asynchttp.response.ResponseHandler)> --> r0 := @this: com.cube.alerts.manager.AlertsAPIManager
+<net.callumtaylor.asynchttp.obj.JsonBody: okhttp3.RequestBody create(com.google.gson.JsonElement)> --> $r0 := @parameter0: com.google.gson.JsonElement
+<okhttp3.RequestBody: okhttp3.RequestBody create(okhttp3.MediaType,java.lang.String)> --> $r1 := @parameter0: okhttp3.MediaType
+<okhttp3.RequestBody: okhttp3.RequestBody create(okhttp3.MediaType,java.lang.String)> --> $r1 = staticinvoke <okhttp3.MediaType: okhttp3.MediaType parse(java.lang.String)>($r5)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void startTracking()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<net.atomcode.bearing.location.CurrentLocationTask: net.atomcode.bearing.location.CurrentLocationTask start()> --> r0 := @this: net.atomcode.bearing.location.CurrentLocationTask
+<net.atomcode.bearing.location.LocationTask: net.atomcode.bearing.BearingTask start()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<java.util.Timer: void schedule(java.util.TimerTask,long)> --> this := @this: java.util.Timer
+<net.atomcode.bearing.location.LocationTask$1: void run()> --> r0 := @this: net.atomcode.bearing.location.LocationTask$1
+<net.atomcode.bearing.location.LocationTask: void access$000(net.atomcode.bearing.location.LocationTask)> --> $r0 := @parameter0: net.atomcode.bearing.location.LocationTask
+<net.atomcode.bearing.location.LocationTask: void handleTimeoutFallback()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$1: void run()> --> r0 := @this: com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$1
+<com.zendesk.sdk.requests.ViewRequestActivity: void onNetworkAvailable()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestActivity
+<com.zendesk.sdk.requests.ViewRequestFragment: void onNetworkAvailable()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestFragment
+<com.zendesk.sdk.requests.ViewRequestFragment: void checkSendButtonState()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestFragment
+<com.zendesk.sdk.requests.ViewRequestFragment: boolean canGetAttachments()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestFragment
+<com.zendesk.sdk.attachment.ZendeskBelvedereProvider: com.zendesk.belvedere.Belvedere getBelvedere(android.content.Context)> --> r0 := @this: com.zendesk.sdk.attachment.ZendeskBelvedereProvider
+<com.zendesk.belvedere.BelvedereConfig$Builder: com.zendesk.belvedere.Belvedere build()> --> r0 := @this: com.zendesk.belvedere.BelvedereConfig$Builder
+<com.zendesk.belvedere.Belvedere: void <init>(android.content.Context,com.zendesk.belvedere.BelvedereConfig)> --> r0 := @this: com.zendesk.belvedere.Belvedere
+<com.zendesk.belvedere.DefaultLogger: void d(java.lang.String,java.lang.String)> --> r0 := @this: com.zendesk.belvedere.DefaultLogger
+<com.zendesk.belvedere.DefaultLogger: void d(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r1, $r2)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void startTracking()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<net.atomcode.bearing.location.CurrentLocationTask: net.atomcode.bearing.location.CurrentLocationTask start()> --> r0 := @this: net.atomcode.bearing.location.CurrentLocationTask
+<net.atomcode.bearing.location.LocationTask: net.atomcode.bearing.BearingTask start()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<java.util.Timer: void schedule(java.util.TimerTask,long)> --> this := @this: java.util.Timer
+<net.atomcode.bearing.location.LocationTask$1: void run()> --> r0 := @this: net.atomcode.bearing.location.LocationTask$1
+<net.atomcode.bearing.location.LocationTask: void access$000(net.atomcode.bearing.location.LocationTask)> --> $r0 := @parameter0: net.atomcode.bearing.location.LocationTask
+<net.atomcode.bearing.location.LocationTask: void handleTimeoutFallback()> --> r0 := @this: net.atomcode.bearing.location.LocationTask
+<android.os.Handler: boolean post(java.lang.Runnable)> --> this := @this: android.os.Handler
+<com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$1: void run()> --> r0 := @this: com.zendesk.sdk.ui.NetworkAwareActionbarActivity$3$1
+<com.zendesk.sdk.requests.ViewRequestActivity: void onNetworkAvailable()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestActivity
+<com.zendesk.sdk.requests.ViewRequestFragment: void onNetworkAvailable()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestFragment
+<com.zendesk.sdk.requests.ViewRequestFragment: void checkSendButtonState()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestFragment
+<com.zendesk.sdk.requests.ViewRequestFragment: boolean canGetAttachments()> --> r0 := @this: com.zendesk.sdk.requests.ViewRequestFragment
+<com.zendesk.belvedere.Belvedere: boolean oneOrMoreSourceAvailable()> --> r0 := @this: com.zendesk.belvedere.Belvedere
+<com.zendesk.belvedere.BelvedereImagePicker: boolean oneOrMoreSourceAvailable(android.content.Context)> --> r0 := @this: com.zendesk.belvedere.BelvedereImagePicker
+<com.zendesk.belvedere.BelvedereImagePicker: boolean isFunctionalityAvailable(com.zendesk.belvedere.BelvedereSource,android.content.Context)> --> r0 := @this: com.zendesk.belvedere.BelvedereImagePicker
+<com.zendesk.belvedere.BelvedereImagePicker: boolean canPickImageFromCamera(android.content.Context)> --> r0 := @this: com.zendesk.belvedere.BelvedereImagePicker
+<com.zendesk.belvedere.DefaultLogger: void w(java.lang.String,java.lang.String)> --> r0 := @this: com.zendesk.belvedere.DefaultLogger
+<com.zendesk.belvedere.DefaultLogger: void w(java.lang.String,java.lang.String)> --> staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r1, $r2)
+--------------------------------------------------------
+
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> $r8 = virtualinvoke $r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r7)
+<net.atomcode.bearing.location.provider.LegacyLocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)> --> r2 = $r8
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> $r1 = interfaceinvoke $r4.<net.atomcode.bearing.location.LocationProvider: android.location.Location getLastKnownLocation(net.atomcode.bearing.location.LocationProviderRequest)>($r3)
+<net.atomcode.bearing.location.LocationTask$2: void run()> --> if $r1 == null goto $r2 = r0.<net.atomcode.bearing.location.LocationTask$2: net.atomcode.bearing.location.LocationTask this$0>
+<com.cube.arc.lib.manager.UserManager$1: void onUpdate(android.location.Location)> --> r0 := @this: com.cube.arc.lib.manager.UserManager$1
+<com.cube.arc.lib.manager.UserManager: void access$000(com.cube.arc.lib.manager.UserManager,android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> $r0 := @parameter0: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void onLocationUpdate(android.location.Location,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: com.cube.alerts.model.MonitoredLocation registerLocation(android.location.Location,android.location.Address,boolean,com.cube.arc.lib.manager.UserManager$RegisterLocationHandler)> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.arc.lib.manager.UserManager: void save()> --> r0 := @this: com.cube.arc.lib.manager.UserManager
+<com.cube.storm.util.lib.manager.FileManager: void writeFile(java.lang.String,java.io.Serializable)> --> r0 := @this: com.cube.storm.util.lib.manager.FileManager
+<com.cube.storm.util.lib.manager.FileManager: void writeFile(java.lang.String,java.io.Serializable)> --> virtualinvoke $r6.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>($r2)
+--------------------------------------------------------
+

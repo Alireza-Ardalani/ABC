@@ -1,0 +1,18 @@
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> $f0 = (float) $d0
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLongitude", $f0)
+--------------------------------------------------------
+
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> $f0 = (float) $d0
+<com.onradar.sdk._RadarSettings: void updateLastMovingLocation(android.content.Context,android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("radar-lastMovingLocationLatitude", $f0)
+--------------------------------------------------------
+
+<com.onradar.sdk._Radar: void backgroundSendLocation(android.location.Location,boolean,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.onradar.sdk._Radar: void backgroundSendLocation(android.location.Location,boolean,boolean)> --> virtualinvoke r3.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("latitude", $d0)
+--------------------------------------------------------
+
+<com.onradar.sdk._Radar: void backgroundSendLocation(android.location.Location,boolean,boolean)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.onradar.sdk._Radar: void backgroundSendLocation(android.location.Location,boolean,boolean)> --> virtualinvoke r3.<android.os.PersistableBundle: void putDouble(java.lang.String,double)>("longitude", $d0)
+--------------------------------------------------------
+

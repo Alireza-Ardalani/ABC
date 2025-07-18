@@ -1,0 +1,14 @@
+<com.gpshopper.sdk.geofences.d: void a(android.location.Location,java.lang.String,java.lang.String)> --> $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.gpshopper.sdk.geofences.d: java.lang.String d(android.location.Location)> --> r0 := @this: com.gpshopper.sdk.geofences.d
+<com.gpshopper.sdk.geofences.d: java.lang.String d(android.location.Location)> --> if $r1 != null goto $r2 = virtualinvoke r0.<com.gpshopper.sdk.geofences.d: org.json.JSONObject c(android.location.Location)>($r1)
+<com.gpshopper.sdk.geofences.d: void a(android.location.Location,java.lang.String,java.lang.String)> --> $r6 = virtualinvoke r0.<com.gpshopper.sdk.geofences.d: java.lang.String d(android.location.Location)>($r1)
+<com.gpshopper.sdk.geofences.d: void a(android.location.Location,java.lang.String,java.lang.String)> --> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("PREF_CURRENT_LOC", $r6)
+--------------------------------------------------------
+
+<com.gpshopper.sdk.geofences.d: void a(android.location.Location,java.lang.String,java.lang.String)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.gpshopper.sdk.geofences.d: java.lang.String d(android.location.Location)> --> r0 := @this: com.gpshopper.sdk.geofences.d
+<com.gpshopper.sdk.geofences.d: java.lang.String d(android.location.Location)> --> if $r1 != null goto $r2 = virtualinvoke r0.<com.gpshopper.sdk.geofences.d: org.json.JSONObject c(android.location.Location)>($r1)
+<com.gpshopper.sdk.geofences.d: void a(android.location.Location,java.lang.String,java.lang.String)> --> $r6 = virtualinvoke r0.<com.gpshopper.sdk.geofences.d: java.lang.String d(android.location.Location)>($r1)
+<com.gpshopper.sdk.geofences.d: void a(android.location.Location,java.lang.String,java.lang.String)> --> interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("PREF_CURRENT_LOC", $r6)
+--------------------------------------------------------
+

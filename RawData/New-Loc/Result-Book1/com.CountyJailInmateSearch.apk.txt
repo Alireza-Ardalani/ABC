@@ -1,0 +1,12 @@
+Source=> $r5 = virtualinvoke $r7.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r9)
+Sink=> staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r0)
+Component=> com.bgjd.ici.MarketService
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------
+Source=> r3 = virtualinvoke $r5.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r6)
+Sink=> staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("UAM Loc Error", $r6)
+Component=> com.mobfox.sdk.interstitialads.InterstitialActivity
+ComponentColor=> RED
+Category: LEGIT
+-----------------------------------------------------------------

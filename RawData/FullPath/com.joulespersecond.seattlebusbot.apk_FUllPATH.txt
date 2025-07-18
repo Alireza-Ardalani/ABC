@@ -1,0 +1,18 @@
+<org.onebusaway.android.report.ui.InfrastructureIssueActivity: void onSaveInstanceState(android.os.Bundle)> --> $d0 = virtualinvoke $r8.<android.location.Location: double getLongitude()>()
+<org.onebusaway.android.report.ui.InfrastructureIssueActivity: void onSaveInstanceState(android.os.Bundle)> --> virtualinvoke $r1.<android.os.Bundle: void putDouble(java.lang.String,double)>(".MapCenterLon", $d0)
+--------------------------------------------------------
+
+<org.onebusaway.android.util.RegionUtils: boolean isLocationWithinRegion(android.location.Location,double[])> --> $d4 = virtualinvoke $r0.<android.location.Location: double getLatitude()>()
+<org.onebusaway.android.util.RegionUtils: boolean isLocationWithinRegion(android.location.Location,double[])> --> $b1 = $d0 cmpg $d4
+<org.onebusaway.android.util.RegionUtils: boolean isLocationWithinRegion(android.location.Location,double[])> --> $i0 = (int) $b1
+<org.onebusaway.android.util.RegionUtils: boolean isLocationWithinRegion(android.location.Location,double[])> --> if $i0 > 0 goto return 0
+<org.onebusaway.android.util.RegionUtils: boolean isLocationWithinRegion(android.location.Location,org.onebusaway.android.io.elements.ObaRegion)> --> $z0 = staticinvoke <org.onebusaway.android.util.RegionUtils: boolean isLocationWithinRegion(android.location.Location,double[])>($r1, $r2)
+<org.onebusaway.android.map.StopMapController: void onLoadFinished(android.support.v4.content.Loader,org.onebusaway.android.map.StopsResponse)> --> $z1 = staticinvoke <org.onebusaway.android.util.RegionUtils: boolean isLocationWithinRegion(android.location.Location,org.onebusaway.android.io.elements.ObaRegion)>($r9, $r11)
+<org.onebusaway.android.map.StopMapController: void onLoadFinished(android.support.v4.content.Loader,org.onebusaway.android.map.StopsResponse)> --> $z0 = $z1
+<org.onebusaway.android.map.StopMapController: void onLoadFinished(android.support.v4.content.Loader,org.onebusaway.android.map.StopsResponse)> --> if $z0 != 0 goto $r13 = virtualinvoke $r6.<org.onebusaway.android.io.request.ObaStopsForLocationResponse: org.onebusaway.android.io.elements.ObaStop[] getStops()>()
+<org.onebusaway.android.map.googlemapsv2.BaseMapFragment: void notifyOutOfRange()> --> r0 := @this: org.onebusaway.android.map.googlemapsv2.BaseMapFragment
+<org.onebusaway.android.map.googlemapsv2.BaseMapFragment: void showDialog(int)> --> r0 := @this: org.onebusaway.android.map.googlemapsv2.BaseMapFragment
+<org.onebusaway.android.map.googlemapsv2.BaseMapFragment$MapDialogFragment: org.onebusaway.android.map.googlemapsv2.BaseMapFragment$MapDialogFragment newInstance(int,org.onebusaway.android.map.googlemapsv2.BaseMapFragment)> --> $i0 := @parameter0: int
+<org.onebusaway.android.map.googlemapsv2.BaseMapFragment$MapDialogFragment: org.onebusaway.android.map.googlemapsv2.BaseMapFragment$MapDialogFragment newInstance(int,org.onebusaway.android.map.googlemapsv2.BaseMapFragment)> --> virtualinvoke $r0.<android.os.Bundle: void putInt(java.lang.String,int)>("dialog_type", 104)
+--------------------------------------------------------
+

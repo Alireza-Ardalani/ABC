@@ -1,0 +1,28 @@
+<com.akasoft.topplaces.restaurant.RestaurantsActivity: void onCreate(android.os.Bundle)> --> $d0 = virtualinvoke $r24.<android.location.Location: double getLongitude()>()
+<com.akasoft.topplaces.restaurant.RestaurantsActivity: void onCreate(android.os.Bundle)> --> r0.<com.akasoft.topplaces.restaurant.RestaurantsActivity: double lon> = $d0
+<com.akasoft.topplaces.restaurant.RestaurantsActivity: void onCreate(android.os.Bundle)> --> r0.<com.akasoft.topplaces.restaurant.RestaurantsActivity: java.lang.String lastKnownLoc> = $r2
+<com.akasoft.topplaces.restaurant.RestaurantsActivity: void onCreate(android.os.Bundle)> --> $d0 = r0.<com.akasoft.topplaces.restaurant.RestaurantsActivity: double lon>
+<com.akasoft.topplaces.restaurant.RestaurantsActivity: void onCreate(android.os.Bundle)> --> $f0 = (float) $d0
+<com.akasoft.topplaces.preferences.SharedPreferencesWrapper: void setFloat(java.lang.String,float)> --> r0 := @this: com.akasoft.topplaces.preferences.SharedPreferencesWrapper
+<com.akasoft.topplaces.preferences.SharedPreferencesWrapper: void setFloat(java.lang.String,float)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r1, $f0)
+--------------------------------------------------------
+
+<com.akasoft.topplaces.preferences.TopPlacesAppPreferences: void setMyLocation(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>()
+<com.akasoft.topplaces.preferences.TopPlacesAppPreferences: void setMyLocation(android.location.Location)> --> $f0 = (float) $d0
+<com.akasoft.topplaces.preferences.TopPlacesAppPreferences: void setMyLocation(android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("myLocationLon", $f0)
+--------------------------------------------------------
+
+<com.akasoft.topplaces.restaurant.RestaurantsActivity: void onCreate(android.os.Bundle)> --> $d0 = virtualinvoke $r24.<android.location.Location: double getLatitude()>()
+<com.akasoft.topplaces.restaurant.RestaurantsActivity: void onCreate(android.os.Bundle)> --> r0.<com.akasoft.topplaces.restaurant.RestaurantsActivity: double lat> = $d0
+<com.akasoft.topplaces.restaurant.RestaurantsActivity: void onCreate(android.os.Bundle)> --> r0.<com.akasoft.topplaces.restaurant.RestaurantsActivity: java.lang.String lastKnownLoc> = $r2
+<com.akasoft.topplaces.restaurant.RestaurantsActivity: void onCreate(android.os.Bundle)> --> $d0 = r0.<com.akasoft.topplaces.restaurant.RestaurantsActivity: double lat>
+<com.akasoft.topplaces.restaurant.RestaurantsActivity: void onCreate(android.os.Bundle)> --> $f0 = (float) $d0
+<com.akasoft.topplaces.preferences.SharedPreferencesWrapper: void setFloat(java.lang.String,float)> --> r0 := @this: com.akasoft.topplaces.preferences.SharedPreferencesWrapper
+<com.akasoft.topplaces.preferences.SharedPreferencesWrapper: void setFloat(java.lang.String,float)> --> $r2 = interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>($r1, $f0)
+--------------------------------------------------------
+
+<com.akasoft.topplaces.preferences.TopPlacesAppPreferences: void setMyLocation(android.location.Location)> --> $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>()
+<com.akasoft.topplaces.preferences.TopPlacesAppPreferences: void setMyLocation(android.location.Location)> --> $f0 = (float) $d0
+<com.akasoft.topplaces.preferences.TopPlacesAppPreferences: void setMyLocation(android.location.Location)> --> interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)>("myLocationLat", $f0)
+--------------------------------------------------------
+

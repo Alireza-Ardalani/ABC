@@ -1,0 +1,16 @@
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLongitude()>()
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r14 := @caughtexception
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DataBerriesNatLocation", "catch Exception in DataBerriesNativeLocationReceiver\'s OnReceive")
+--------------------------------------------------------
+
+<com.askingpoint.android.a.ae: android.location.Location n(android.content.Context)> --> $r9 = virtualinvoke $r4.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r8)
+<com.askingpoint.android.a.ae: android.location.Location n(android.content.Context)> --> $r0 := @caughtexception
+<com.askingpoint.android.a.ae: android.location.Location n(android.content.Context)> --> $r11 := @caughtexception
+<com.askingpoint.android.a.ae: android.location.Location n(android.content.Context)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("AskingPoint", "Failed to fetch last known location", $r11)
+--------------------------------------------------------
+
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>()
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> $r14 := @caughtexception
+<com.databerries.DataBerriesNativeLocationReceiver: void onReceive(android.content.Context,android.content.Intent)> --> staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DataBerriesNatLocation", "catch Exception in DataBerriesNativeLocationReceiver\'s OnReceive")
+--------------------------------------------------------
+
