@@ -1,5 +1,5 @@
 
-This repository contains all code, analysis, and data related to our paper submitted to **ISSTA 2026**.
+This repository contains all code, analysis, and data related to our paper submitted to **ASE 2026**.
 
 ## Repository Structure
 
